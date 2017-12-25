@@ -1,5 +1,5 @@
 from header_sounds import *
-
+from compiler import *
 sounds = [
  ("click", sf_2d|sf_vol_1,["drum_3.ogg"]),
  ("tutorial_1", sf_2d|sf_vol_7,["tutorial_1.ogg"]),

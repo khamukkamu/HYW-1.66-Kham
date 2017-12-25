@@ -8,7 +8,7 @@ from header_troops import *
 from header_music import *
 
 from module_constants import *
-
+from compiler import *
 ####################################################################################################################
 # Simple triggers are the alternative to old style triggers. They do not preserve state, and thus simpler to maintain.
 #

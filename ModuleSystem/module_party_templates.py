@@ -3,6 +3,7 @@ from header_parties import *
 from ID_troops import *
 from ID_factions import *
 from ID_map_icons import *
+from compiler import *
 
 pmf_is_prisoner = 0x0001
 

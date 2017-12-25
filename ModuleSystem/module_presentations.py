@@ -7,7 +7,7 @@ from header_operations import *
 from header_triggers import *
 from module_constants import *
 import string
-
+from compiler import *
 ####################################################################################################################
 #  Each presentation record contains the following fields:
 #  1) Presentation id: used for referencing presentations in other files. The prefix prsnt_ is automatically added before each presentation id.

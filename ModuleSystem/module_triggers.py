@@ -7,7 +7,7 @@ from header_triggers import *
 from header_troops import *
 
 from module_constants import *
-
+from compiler import *
 ####################################################################################################################
 #  Each trigger contains the following fields:
 # 1) Check interval: How frequently this trigger will be checked

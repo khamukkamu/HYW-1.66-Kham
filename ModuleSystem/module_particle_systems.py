@@ -1,4 +1,5 @@
 from header_particle_systems import *
+from compiler import *
 #psf_always_emit         = 0x0000000002
 #psf_global_emit_dir     = 0x0000000010
 #psf_emit_at_water_level = 0x0000000020

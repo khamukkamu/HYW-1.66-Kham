@@ -1,5 +1,6 @@
 from header_skins import *
 from ID_particle_systems import *
+from compiler import *
 ####################################################################################################################
 #  Each skin record contains the following fields:
 #  1) Skin id: used for referencing skins.

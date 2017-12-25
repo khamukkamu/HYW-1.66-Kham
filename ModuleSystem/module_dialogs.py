@@ -10,7 +10,7 @@ from ID_troops import *
 from ID_party_templates import *
 
 from module_constants import *
-
+from compiler import *
 ########################################################  
 # During a dialog, the dialog lines are scanned from top to bottom.
 # If the dialog-line is spoken by the player, all the matching lines are displayed for the player to pick from.
@@ -2402,7 +2402,7 @@ dialogs = [
 
   [anyone|plyr ,"dial_ecuyer_ecur2", [],  "Pourquois ne pas demander ceci a une personne de confiance justement ?", "dial_ecuyer_ecur23", []],
 
-  [anyone ,"dial_ecuyer_ecur23", [],"Impossible, car l'on s'appercevrais que ma lignÃ©e a Ã©tÃ© rompue si ce n'es pas mon pÃ¨re qui m'as remis mon ÃpÃ©e, mon pÃ¨re n'as pas pris les armes au nom de la famille, il etait...souffrant, il vous faudra alors chercher l'Ã©pÃ©e dans le tombeau de mon grand pÃ¨re, acceptez vous Messire ?", "dial_ecuyer_ecur25", []],
+  [anyone ,"dial_ecuyer_ecur23", [],"Impossible, car l'on s'appercevrais que ma lignÃ©e a Ã©tÃ© rompue si ce n'es pas mon pÃ¨re qui m'as remis mon ?Ã©e, mon pÃ¨re n'as pas pris les armes au nom de la famille, il etait...souffrant, il vous faudra alors chercher l'Ã©pÃ©e dans le tombeau de mon grand pÃ¨re, acceptez vous Messire ?", "dial_ecuyer_ecur25", []],
 
   [anyone|plyr ,"dial_ecuyer_ecur25", [],  "Soit, si vous en avez besoin...et pour 200 Ã©cus.", "dial_ecuyer_ecur25oke",
    [
@@ -3478,7 +3478,7 @@ dialogs = [
  [anyone ,"orleans_dialvendeur1j", [],"Admirez cette qualitÃ©e messire.", "orleans_vendeurpredial",[[change_screen_trade]]],
 
 ###vendeurs de bordeau
-  #vendeur de banières
+  #vendeur de bani?es
 
   [anyone,"start", [(eq, "$g_talk_troop", "trp_bordeau_artisant1"),
                      ],
@@ -3709,12 +3709,12 @@ dialogs = [
   [anyone,"predialbordeau_potiersvend2", [],"Merci beaucoup Messire,en voullez vous d'autre ?", "bordeau_potiersvend",[]], 
 
 ### DIALOGUES fleuve pour dijon
-##CAPITAINE :raccourcit voyage si parlé au rebel entre temp
+##CAPITAINE :raccourcit voyage si parl?au rebel entre temp
 ##  
 
  [anyone,"start",
   [    
-   (eq, "$g_talk_troop", "trp_provence6"),##rajouter condition avoir parlé au rebel et payé la place sur le bateau
+   (eq, "$g_talk_troop", "trp_provence6"),##rajouter condition avoir parl?au rebel et pay?la place sur le bateau
    (eq, "$paye_place_bateau", 1),
    (eq, "$talk_to_rebel", 1),
    (eq, "$sanglys_fleuve", 1),
@@ -3733,7 +3733,7 @@ dialogs = [
 #(neg|eq, "$talk_to_rebel", 1),
  [anyone,"start",
   [    
-   (eq, "$g_talk_troop", "trp_provence6"),##rajouter condition avoir parlé au rebel et payé la place sur le bateau
+   (eq, "$g_talk_troop", "trp_provence6"),##rajouter condition avoir parl?au rebel et pay?la place sur le bateau
    (eq, "$paye_place_bateau", 1),
    (eq, "$sanglys_fleuve", 0),
    ],
@@ -3742,11 +3742,11 @@ dialogs = [
 
 
 
-  #mettre bloc avoir payé mais pas parlé au rebel condition " nous partons bientot"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  #mettre bloc avoir pay?mais pas parl?au rebel condition " nous partons bientot"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #(neg|eq, "$talk_to_rebel", 1),
  [anyone,"start",
   [    
-   (eq, "$g_talk_troop", "trp_provence6"),##rajouter condition avoir parlé au rebel et payé la place sur le bateau
+   (eq, "$g_talk_troop", "trp_provence6"),##rajouter condition avoir parl?au rebel et pay?la place sur le bateau
    (eq, "$paye_place_bateau", 1),
    (eq, "$talk_to_rebel", 0),
    ],
@@ -3754,7 +3754,7 @@ dialogs = [
   [anyone|plyr,"provencecapitainecondition2", [], "Tres bien.", "close_window",[]],  
 
 
-##  si pas les deux conditions variable payé place et parlé au rebel
+##  si pas les deux conditions variable pay?place et parl?au rebel
   [anyone,"start", [(eq, "$g_talk_troop", "trp_provence6"),
                      ],
    "Bienvenue Voyageur,trouvez vous une place dans tout ce bazard,si vous voullez que l'on vous enmÃ¨ne a Dijon,il faudra payer d'avance 50 Ã©cus.", "provencecapitaine", [(play_sound, "snd_maitre_guild"),]],
@@ -3766,7 +3766,7 @@ dialogs = [
    [      
     (assign, "$paye_place_bateau", 1),
     (troop_remove_gold,"trp_player",50),
-    ]],#debloquer variable avoir payé la place ici
+    ]],#debloquer variable avoir pay?la place ici
   [anyone|plyr,"provencecapitaine", [], "Ca ne m'arange pas,je n'ai pas assez.", "close_capitaine1",[]],
 
   [anyone,"close_capitaine1", [], "Pas d'argent pas de voyage,je regrette,trouvez une solution ou vous restez ici.", "close_window",[]],
@@ -3775,7 +3775,7 @@ dialogs = [
     (eq, "$talk_to_rebel", 1),
     (eq, "$sanglys_fleuve", 1),    
     ]
-   , "C'est parfait,nous partons sur le champ,etes vous pret ?", "close_debutvoyage_1",[]],#debloque voyage  :!si variable avoir parlé au rebel et on vien de payer
+   , "C'est parfait,nous partons sur le champ,etes vous pret ?", "close_debutvoyage_1",[]],#debloque voyage  :!si variable avoir parl?au rebel et on vien de payer
   
   [anyone,"provence_capitaine_partirdebut",
    [
@@ -3953,7 +3953,7 @@ dialogs = [
   [anyone ,"sanglysmercenairhqcompagnhendd", [],"bonne chance l'ami.", "close_window", [(assign,"$sanglys_fleuve", 1),]],
 
   
-  #vendeur de banières2 anger
+  #vendeur de bani?es2 anger
   [anyone,"start", [(eq, "$g_talk_troop", "trp_anger_baner"),
                      ],
    "Approchez mon Seigneur,dÃ©sirez vous une nouvelles banniÃ¨re ? un instant,pardonez moi ,mais vous etes bien noble n'est ce pas,en tout cas vous en avez l'allure,mais sachez que je me refuserais de confectioner un Ã©tendart a qui n'est point noble,vous savez sans doute que c'est interdit,et je ne voudrais pas me mettre dans l'embaras.", "anger_banner1", []],
@@ -4566,7 +4566,7 @@ dialogs = [
 #  
 
 
-#faire entree au dessus resultat de quete,c'est fait/raté et assigner des variables en combat pour ca
+#faire entree au dessus resultat de quete,c'est fait/rat?et assigner des variables en combat pour ca
   [anyone,"start", [(eq, "$g_talk_troop", "trp_rebel_montpelier_tower_8"),
                     (eq, "$partattaqueconv", 1),                    
                      ],
@@ -4649,7 +4649,7 @@ dialogs = [
  [anyone ,"pin_autechoises", [],"Naturellement,maintenant que tu es des notres,je vais te confier nos secrets,les Rebelles sont aidÃ©s par le peuple,certains font semblant d'avoir une soudaine admiration pour l'angleterre,mais en rÃ©alitÃ© ils mettent de cotÃ© pour nous des armes et d'autres ressources,je ne conais qu'un contact,c'est un marchant de la rue comercante de bordeau,c'est le vendeur de livres,va le voir quand tu sera dans le besoin et il te remettra de l'or,dit lui simplement que l'archange michael a faim,et il saura quois faire.", "pin_autechoises2",[]],
  [anyone|plyr ,"pin_autechoises2", [],"Je m'en souviendrais.", "close_window",[(assign, "$ressourcesrebeladmirbord", 1),]],
   
-#si pas revenu avec les vivre mais pas d'autres possibilités de phrases:couper
+#si pas revenu avec les vivre mais pas d'autres possibilit? de phrases:couper
   [anyone,"start", [(eq, "$g_talk_troop", "trp_rebel_montpelier_tower_8"),
                     (eq, "$wherevivrequestnot", 1),                   
                      ],
@@ -5721,7 +5721,7 @@ dialogs = [
  [anyone|plyr ,"slslslanottravgg", [], "Avez vous du travail pour moi?", "slslslanottravgg2",[]],
  [anyone ,"slslslanottravgg2", [],"Vous tombez bien,les brigands ont quasiment dÃ©clarÃ© la guerre a Bourges,attirÃ©s par les ressources de la ville,leur chef se nome Rodrigue Villandrandro,il a rassemblÃ© avec lui les mercenaires sans contrat et a formÃ© une troupe de malandrins de la pire Ã©spÃ¨ce sans foi ni loi dans le but de s'enrichire en pillage,meurtres et rapine,le pire es qu'ils savent se battre.", "slslslanottravgg3",[]],
  [anyone|plyr ,"slslslanottravgg3", [], "Que dois je faire?", "star_vil_troopp",[]],
- [anyone ,"star_vil_troopp", [],"Ils en veulent aux entrepots de marchandises,il ne font plus dans le dÃ©tail et leur dÃ©rnÃ¨re attaque que nous avons put repousser a tout de meme coutÃ© la vie de dix de mes hommes,ils sont en route plus nombreux,selon nos informateurs ils devraient meme ÃdÃ©ja camper aux allentours de la ville.rassemblez une troupe de volontaires et interceptez les avant qu'ils n'entrent a Bourges,une attaque surprise fera peut etre la diffÃ©rence.", "star_vil_troopp2",[]],
+ [anyone ,"star_vil_troopp", [],"Ils en veulent aux entrepots de marchandises,il ne font plus dans le dÃ©tail et leur dÃ©rnÃ¨re attaque que nous avons put repousser a tout de meme coutÃ© la vie de dix de mes hommes,ils sont en route plus nombreux,selon nos informateurs ils devraient meme ?Ã©ja camper aux allentours de la ville.rassemblez une troupe de volontaires et interceptez les avant qu'ils n'entrent a Bourges,une attaque surprise fera peut etre la diffÃ©rence.", "star_vil_troopp2",[]],
 
 
  [anyone|plyr ,"star_vil_troopp2", [], "Puis je avoir des hommes a vous pour me segonder?", "star_vil_troopp33",[]],
@@ -5812,7 +5812,7 @@ dialogs = [
                      (check_quest_failed, "qst_sl_ivrogne1"),
                      (neg|check_quest_active, "qst_sl_ivrogne1"),
                      (neg|check_quest_succeeded, "qst_sl_ivrogne1"),        
-                     #(check_quest_finished, "qst_sl_patrouil1"),####ne pas prendre en modèle!!! adapté !!!
+                     #(check_quest_finished, "qst_sl_patrouil1"),####ne pas prendre en mod?e!!! adapt?!!!
                      ],
    "Alors?que s'est t'il passÃ©?", "slsfastjoblossekotavlys", []],
   
@@ -5949,7 +5949,7 @@ dialogs = [
 
   [anyone ,"ptrolsslstop22", [], "Comment? vous refusez une mission? Hors de ma vue! je me pose des questions sur l'Ã©fficacitÃ© de nos tests.", "close_window",
    [
-#######quete failled /variable comme accomplie donnée/relation-- /brigandine enlevee/et time reg...#222
+#######quete failled /variable comme accomplie donn?/relation-- /brigandine enlevee/et time reg...#222
        (troop_remove_item, "trp_player", "itm_brigandine_sl"),
        (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-4),
        (assign, "$nojobtimeatteteslys", 1),
@@ -6337,7 +6337,7 @@ dialogs = [
   [anyone|plyr ,"gordaintest_segonch33", [],  "Je suis pret.", "gordaintest_segonrepons",[]],  
   [anyone|plyr ,"gordaintest_segonch33", [],  "Je prÃ©fÃ¨re les taverne crasseuses a vos tests stupides,je devais vous le dire.", "close_window",[]],
   
-  [anyone ,"gordaintest_segonrepons", [], "Bon...je disais,Celui qui me fabrique me vend,Celui qui m'achète ne m'utilise pas,Celui qui m'utilise ne le sait pas.qui suis je?.", "gordaintest_segonrepons2",[]],
+  [anyone ,"gordaintest_segonrepons", [], "Bon...je disais,Celui qui me fabrique me vend,Celui qui m'ach?e ne m'utilise pas,Celui qui m'utilise ne le sait pas.qui suis je?.", "gordaintest_segonrepons2",[]],
 
   [anyone|plyr ,"gordaintest_segonrepons2", [],  "Le vent!", "wrongintell2",[]],
   [anyone|plyr ,"gordaintest_segonrepons2", [],  "L'Ã©cu", "wrongintell2",[]],
@@ -6383,7 +6383,7 @@ dialogs = [
   [anyone|plyr ,"dumydial_testgord2fall", [],  "Je suis engagÃ©?.", "gordencgage",[]],
   [anyone ,"gordencgage", [], "Pas encore,la derniÃ¨re qualitÃ© requise es l'intelligence,un soldat privÃ© de son capitaine doit pouvoir a lui seul terminer un contrat pour un client,la force ,la rapiditÃ© et le savoir,ainssi qu'une facilitÃ© a s'adapter a toutes nouvelles situations font un soldat du SansLys. Et toi dit moi,pensse tu etre intelligent?.", "gordainintelstart",[]],  
   [anyone|plyr ,"gordainintelstart", [],  "Nous verons ca.", "gordencgage2",[]],
-  [anyone ,"gordencgage2", [], "Ecoute bien abrutis: Celui qui me fabrique me vend,Celui qui m'achète ne m'utilise pas,Celui qui m'utilise ne le sait pas.qui suis je?", "gordainintelgot",[]],  #CONTINUER TEST INTELLIGENCE ICIIIIIIIIIIIIIII 
+  [anyone ,"gordencgage2", [], "Ecoute bien abrutis: Celui qui me fabrique me vend,Celui qui m'ach?e ne m'utilise pas,Celui qui m'utilise ne le sait pas.qui suis je?", "gordainintelgot",[]],  #CONTINUER TEST INTELLIGENCE ICIIIIIIIIIIIIIII 
 
   [anyone|plyr ,"gordainintelgot", [],  "Un instructeur!", "wrongintell",[]],
   [anyone|plyr ,"gordainintelgot", [],  "Le vent.", "wrongintell",[]],
@@ -8491,7 +8491,7 @@ dialogs = [
 
 
 
- #en attente si j'ai demandé d'attendre,repossible de lancer quete ici
+ #en attente si j'ai demand?d'attendre,repossible de lancer quete ici
   [anyone,"start", [(eq, "$g_talk_troop", "trp_rebel_verzy1"),
                     (eq, "$waitforatakplacfor", 1),
                      (neg|check_quest_active, "qst_rebel_placeforte"),                    
@@ -8933,7 +8933,7 @@ dialogs = [
 
 #########################################################################################################
   ###################################dial licorn ###################################
-#tout dernier dial licorne si confessé et redonne lettre
+#tout dernier dial licorne si confess?et redonne lettre
   [anyone,"start", [(eq, "$g_talk_troop", "trp_rebel_licorn"),
                     (eq, "$byelicornee", 1),                    
                      ],
@@ -8969,7 +8969,7 @@ dialogs = [
    "{playername},etes vous purifiÃ© de vos pechÃ©s ?", "enfinpurifier_oklettre",[(play_sound, "snd_maitre_guild"),]],
   [anyone|plyr ,"enfinpurifier_oklettre", [],  "Je le suis Messire, allez vous me donner cette lettre pour le roi ?", "enfinpurifier_oklettre2",
    [
- #end quest/relation plus faction rebel/plus de renomée
+ #end quest/relation plus faction rebel/plus de renom?
      (call_script, "script_end_quest", "qst_conffes_chevalier"),     
        ]],
   [anyone ,"enfinpurifier_oklettre2", [],"Naturelement, tennez la voici. je serais heureux de compter parmis nous un homme noble de coeur et fort d'esprit. toutes fois, meme avec cette lettre, il vous faudra encore gagner les faveurs du roi.devenire Chevalier sans un nom noble es plus difficile que vous ne le penssez.", "close_window",
@@ -9049,7 +9049,7 @@ dialogs = [
    "{playername},Vous etes en vie! comment cela c'est t'il passÃ© ?", "retourtuerbanquierreiim",[(play_sound, "snd_maitre_guild"),]],
   [anyone|plyr ,"retourtuerbanquierreiim", [],  "Le marchand es tombÃ©, victime du poison.", "retourtuerbanquierokok",
    [
- #end quest/relation plus faction rebel/plus de renomée
+ #end quest/relation plus faction rebel/plus de renom?
      (call_script, "script_end_quest", "qst_rebel_manoir"),
      (call_script, "script_change_player_relation_with_faction_ex", "$g_talk_troop_faction", 2),     
      (call_script, "script_change_troop_renown", "trp_player", 4),
@@ -9134,7 +9134,7 @@ dialogs = [
    "{playername},je vous en pris, dites moi que ce satanÃ© gouverneur es mort.", "win_killgouv_chass",[(play_sound, "snd_maitre_guild"),]],
   [anyone|plyr ,"win_killgouv_chass", [],  "Le monstre es mort.", "win_killgouv_chass2",
    [
- #end quest/relation plus faction rebel/plus de renomée
+ #end quest/relation plus faction rebel/plus de renom?
      (call_script, "script_end_quest", "qst_rebel_asassin_chasse"),
      (call_script, "script_change_player_relation_with_faction_ex", "$g_talk_troop_faction", 2),     
      (call_script, "script_change_troop_renown", "trp_player", 4),
@@ -9260,7 +9260,7 @@ dialogs = [
 
 
 
- #####en attente d'avoir tué le comte et redone des fausses invitations a l'infini
+ #####en attente d'avoir tu?le comte et redone des fausses invitations a l'infini
   [anyone,"start", [(eq, "$g_talk_troop", "trp_rebel_licorn"),
                      (check_quest_active, "qst_rebel_assas_comtcaen"),
                      (neg|check_quest_succeeded, "qst_rebel_assas_comtcaen"),
@@ -10005,7 +10005,7 @@ dialogs = [
   [anyone ,"siren_clear2", [],"Ho mon Dieu! es ce grave? je part sur le champ...", "siren_action_clear2",[]],
   [anyone|plyr ,"siren_action_clear2", [],  "(Mettre la main dans la poche du Chambellan.)", "close_window",
    [
-#donner la clé/mission accompli allez voir pour la recompensse,jump menu town
+#donner la cl?mission accompli allez voir pour la recompensse,jump menu town
     (troop_add_item, "trp_player", "itm_cle_2", 0),
     (call_script, "script_succeed_quest", "qst_rodrig_vol_cle"),    
     (jump_to_menu, "mnu_town"),
@@ -10071,7 +10071,7 @@ dialogs = [
   [anyone ,"siren_clear", [],"Ho mon Dieu! es ce grave? je part sur le champ...", "siren_action_clear",[]],
   [anyone|plyr ,"siren_action_clear", [],  "(Mettre la main dans la poche du Chambellan.)", "close_window",
    [
-#donner la clé/mission accompli allez voir pour la recompensse,jump menu town
+#donner la cl?mission accompli allez voir pour la recompensse,jump menu town
     (troop_add_item, "trp_player", "itm_cle_2", 0),
     (call_script, "script_succeed_quest", "qst_rodrig_vol_cle"),    
     (jump_to_menu, "mnu_town"),
@@ -10134,7 +10134,7 @@ dialogs = [
                      ],
    "Alerte! un intrus!.", "chavieu_troop5",
    [
-#refaire equipes localisées assigner variable si besoin ?
+#refaire equipes localis?s assigner variable si besoin ?
      (assign, "$premiernivchateau", 1),       
          (team_set_relation, 0, 1, 1),
          (team_set_relation, 0, 2, 1),
@@ -10181,7 +10181,7 @@ dialogs = [
                      ],
    "Alerte! un intrus dans l'enceinte du chateau!.", "chavieu_troop2",
    [
-#refaire equipes localisées assigner variable si besoin ?
+#refaire equipes localis?s assigner variable si besoin ?
          (team_set_relation, 0, 1, -1),
          (team_set_relation, 0, 2, 1),
          (team_set_relation, 0, 3, 1),         
@@ -10203,7 +10203,7 @@ dialogs = [
                      ],
    "Alerte! un intrus dans l'enceinte du chateau!.", "chavieu_troop1",
    [
-#refaire equipes localisées assigner variable si besoin ?
+#refaire equipes localis?s assigner variable si besoin ?
      (assign, "$troisiemnivchateau", 1),       
          (team_set_relation, 0, 1, -1),
          (team_set_relation, 0, 2, 1),
@@ -13004,7 +13004,7 @@ dialogs = [
   [anyone|plyr ,"quel_place_chateautent", [],  "Fort de Troyes", "ren_Troyes", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Donjon de La_Rochelle", "ren_La_Rochelle", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Chateau d'Angouleme", "ren_Angouleme", []],
-  [anyone|plyr ,"quel_place_chateautent", [],  "Moulins le Château", "ren_Moulins", []],
+  [anyone|plyr ,"quel_place_chateautent", [],  "Moulins le Ch?eau", "ren_Moulins", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Fort de Clermont", "ren_Clermont", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Fort de Lyon", "ren_chatLyon", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Forteresse du Mans", "ren_Mans", []],
@@ -13016,7 +13016,7 @@ dialogs = [
   [anyone|plyr ,"quel_place_chateautent", [],  "Donjon de Grenoble", "ren_Grenoble", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Donjon de St.Malo", "ren_Malo", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Chateau d'Antwerp", "ren_Antwerp", []],
-  [anyone|plyr ,"quel_place_chateautent", [],  "Peronne le Château", "ren_Peronne", []],
+  [anyone|plyr ,"quel_place_chateautent", [],  "Peronne le Ch?eau", "ren_Peronne", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Forteresse de Verneuilo", "ren_Verneuilo", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "forteresse de Chateauroux", "ren_Chateauroux", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Forteresse de Laval", "ren_Laval", []],
@@ -13042,7 +13042,7 @@ dialogs = [
   [anyone|plyr ,"quel_place_chateautent", [],  "Pont de Poitiers", "ren_PontPoitiers", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Pont de Tours", "ren_PontTours", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Pont de Bordeau", "ren_PontBordeau", []],
-  [anyone|plyr ,"quel_place_chateautent", [],  "Pont Fortifié", "ren_PontFortifi", []],
+  [anyone|plyr ,"quel_place_chateautent", [],  "Pont Fortifi?", "ren_PontFortifi", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Pont de Blanzy", "ren_PontBourges", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Pont des Tourelles", "ren_PontTourelles", []],
   [anyone|plyr ,"quel_place_chateautent", [],  "Forteresse de Chinon", "ren_ForteresseChinon", []],
@@ -13494,7 +13494,7 @@ dialogs = [
   
   [anyone ,"retcuistotrrrr", [], "Quois, mais de quois parle tu ? non, en fait n'en donne surtout pas au maistre, l'alcool lui es interdit, va servire les autres tu comprend ? tous les convives sauf le Maistre, va...", "close_window",
    [
-#assigner variable dials service aux invités
+#assigner variable dials service aux invit?
      (assign, "$recucruche", 1),
      (display_message, "@Vous avez recu : cruche de Cervoise"),     
        ]],
@@ -16047,7 +16047,7 @@ dialogs = [
   [anyone,"start", [(eq, "$g_talk_troop", "trp_npc9"),
                     (eq, "$entre_camp", 1),
                      ],
-   "Ah messire! comment faire pour ne pas perdre son temps d'aprÃ©s vous? je veux dire comment ne pas rater sa vie ? comment réussir chaques instant et comment vivre chaques secondes du mieux que l'on peut ? je me pose tellement de questions, pas vous ?", "dial_camp_npc9", []],
+   "Ah messire! comment faire pour ne pas perdre son temps d'aprÃ©s vous? je veux dire comment ne pas rater sa vie ? comment r?ssir chaques instant et comment vivre chaques secondes du mieux que l'on peut ? je me pose tellement de questions, pas vous ?", "dial_camp_npc9", []],
   
   [anyone|plyr ,"dial_camp_npc9", [],  "Puis que nous avons le temps, voyons votre Ã©quipement plus en dÃ©tail.", "dial_camp_npc9_retour", [(change_screen_equip_other),]],###  
   [anyone|plyr ,"dial_camp_npc9", [],  "Nous devrions parler de vos spÃ©cialitÃ©s, que savez vous faire ?", "dial_camp_npc9_skill", []],###  
@@ -16055,7 +16055,7 @@ dialogs = [
   [anyone|plyr ,"dial_camp_npc9", [],  "Ca sera tout, a plus tard.", "close_window", []],###  
 
   [anyone ,"dial_camp_npc9_skill", [],"Je suis chevalier Capitaine, le l'oubliez point je vous prie, c'est a cheval et avec la lance que le Chevalier se bat pour des causes.", "dial_camp_npc9_retour", [(change_screen_view_character)]],###
-  [anyone ,"dial_camp_npc9_story", [],"Je suis Gael de Bourbon, noble de France, chevalier de Toulouse où je suis nÃ©, où j'ai grandi et fondÃ© de faux Ã©spoirs sur un monde corompu, mais que joie et dÃ©termination soit miennes, je suis sur la vrais route de la chevalerie loing de toute corumption, je suis sur la voie de la rÃ©demption.", "dial_camp_npc9_retour", []],###
+  [anyone ,"dial_camp_npc9_story", [],"Je suis Gael de Bourbon, noble de France, chevalier de Toulouse o? je suis nÃ©, o? j'ai grandi et fondÃ© de faux Ã©spoirs sur un monde corompu, mais que joie et dÃ©termination soit miennes, je suis sur la vrais route de la chevalerie loing de toute corumption, je suis sur la voie de la rÃ©demption.", "dial_camp_npc9_retour", []],###
 
   
   [anyone ,"dial_camp_npc9_retour", [],"Austre chose ?", "dial_camp_npc9", []],###
@@ -16178,7 +16178,7 @@ dialogs = [
   [anyone|plyr ,"dial_camp_npc15", [],  "Ca sera tout, a plus tard.", "close_window", []],###  
 
   [anyone ,"dial_camp_npc15_skill", [],"Je suis ingÃ©nieur en siÃ¨ge capitaine, aucun chateau ne me rÃ©siste, il y as toujours une faille dans les defenses voyez vous, cela prend du temps mais on finis toujours par la trouver et par l'exploiter.", "dial_camp_npc15_retour", [(change_screen_view_character)]],###
-  [anyone ,"dial_camp_npc15_story", [],"Je suis nÃ© à Paris et j'ai Ã©tudiÃ© les engins de guerre modÃ¨rnes. J'ai aussi certaines compÃ©tences en litÃ©rature et en latin.", "dial_camp_npc15_retour", []],###
+  [anyone ,"dial_camp_npc15_story", [],"Je suis nÃ© ?Paris et j'ai Ã©tudiÃ© les engins de guerre modÃ¨rnes. J'ai aussi certaines compÃ©tences en litÃ©rature et en latin.", "dial_camp_npc15_retour", []],###
 
   
   [anyone ,"dial_camp_npc15_retour", [],"Autre chose ?", "dial_camp_npc15", []],###
@@ -16199,8 +16199,8 @@ dialogs = [
   [anyone|plyr ,"dial_camp_npc16", [],  "Rappellez moi votre histoire.", "dial_camp_npc16_story", []],###
   [anyone|plyr ,"dial_camp_npc16", [],  "Ca sera tout, a plus tard.", "close_window", []],###  
 
-  [anyone ,"dial_camp_npc16_skill", [],"Je sait manier le couteau et les petites lames aussi bien que ma langue et ce dans le sens propre comme au sens figurÃ© ce qui pourais vous etre utile si vous avez des affaires de diplomacie. je peut tuer un homme de sang froid juste aprés lui avoir dit que je lui offre mon ame.Mais de grace capitaine Ã©vitez de m'envoyer a la bataille contre une mongtagne de muscles, avez vous regardÃ© la forme reÃ©le de mes muscles ?", "dial_camp_npc16_retour", [(change_screen_view_character)]],###
-  [anyone ,"dial_camp_npc16_story", [],"Et bien capitaine, je m'appelle Blanche, juste Blanche. je suis nÃ©e dans un village près de Peronne, ma mÃ¨re et mes soeurs Ã©taient servantes dans le chateau d'un noble pervers, jusqu'a ce que je m'en empare a moi toute seule par mes...charmes. ainsi la ou une compagnie n'aurais pas pu prendre ce chateau j'y suit parvenue. on m'as donné beaucoup de surnoms, mais celui qui me va le mieux est la vipÃ¨re blanche.", "dial_camp_npc16_retour", []],###
+  [anyone ,"dial_camp_npc16_skill", [],"Je sait manier le couteau et les petites lames aussi bien que ma langue et ce dans le sens propre comme au sens figurÃ© ce qui pourais vous etre utile si vous avez des affaires de diplomacie. je peut tuer un homme de sang froid juste apr? lui avoir dit que je lui offre mon ame.Mais de grace capitaine Ã©vitez de m'envoyer a la bataille contre une mongtagne de muscles, avez vous regardÃ© la forme reÃ©le de mes muscles ?", "dial_camp_npc16_retour", [(change_screen_view_character)]],###
+  [anyone ,"dial_camp_npc16_story", [],"Et bien capitaine, je m'appelle Blanche, juste Blanche. je suis nÃ©e dans un village pr? de Peronne, ma mÃ¨re et mes soeurs Ã©taient servantes dans le chateau d'un noble pervers, jusqu'a ce que je m'en empare a moi toute seule par mes...charmes. ainsi la ou une compagnie n'aurais pas pu prendre ce chateau j'y suit parvenue. on m'as donn?beaucoup de surnoms, mais celui qui me va le mieux est la vipÃ¨re blanche.", "dial_camp_npc16_retour", []],###
 
   
   [anyone ,"dial_camp_npc16_retour", [],"Autre chose ?", "dial_camp_npc15", []],### 
@@ -19728,7 +19728,7 @@ dialogs = [
 
 
 ### SUITE ########
-  #mettre ici win "pour le duc" (j'ai trouvé le passage des grottes!) et faire partir les quetes suivantes, par ex maintenant le port de nantes...
+  #mettre ici win "pour le duc" (j'ai trouv?le passage des grottes!) et faire partir les quetes suivantes, par ex maintenant le port de nantes...
 
 ### j'ai tue panthievre j'ai la bague
  [anyone ,"lord_start", [(eq, "$g_talk_troop", "trp_kingdom_4_lord"),
@@ -19981,7 +19981,7 @@ dialogs = [
 
 
 
-  ### j'ai tué l'aventurier et mission win
+  ### j'ai tu?l'aventurier et mission win
 
   [anyone ,"start", [(eq, "$g_talk_troop", "trp_dial_Penthiv_troop1"),
                      (check_quest_active, "qst_tuer_mercenaire"),
@@ -20166,7 +20166,7 @@ dialogs = [
 
 
 
-########dial maire village mine attente de volontaires échouée = temps limite passé 24 h
+########dial maire village mine attente de volontaires ?hou? = temps limite pass?24 h
 
   [anyone ,"start", [(eq, "$g_talk_troop", "trp_maire_auberge_broceliand"),
 #si quete active trouver volontaires
@@ -20461,7 +20461,7 @@ dialogs = [
  [anyone|plyr ,"newaub_ofre_unverrmine", [],  "De quois avez vous besoin ?", "newaub_ofre_unverrminevent", []],
  [anyone|plyr ,"newaub_ofre_unverrmine", [],  "Pas pour le moment.", "close_window", []],
 
- [anyone ,"newaub_ofre_unverrminevent", [],"Plus aucune marchandise ne nous parvient et ce a cause du blocus de la porte du lac, si vous arriviez a libÃ©rer la porte les marchands pourraient passer de nouveau et nous serions ravitaillés, nous vous en serons reconnaissants et vous aurrez des vivres en rÃ©compense. qu'en dites vous ?", "newaub_ofre_portelac",[]],    
+ [anyone ,"newaub_ofre_unverrminevent", [],"Plus aucune marchandise ne nous parvient et ce a cause du blocus de la porte du lac, si vous arriviez a libÃ©rer la porte les marchands pourraient passer de nouveau et nous serions ravitaill?, nous vous en serons reconnaissants et vous aurrez des vivres en rÃ©compense. qu'en dites vous ?", "newaub_ofre_portelac",[]],    
 
 
  [anyone|plyr ,"newaub_ofre_portelac", [],  "C'est entendu, j'irai voir ce qu'il se passe la bas.", "newaub_ofre_portelacstart",
@@ -20547,7 +20547,7 @@ dialogs = [
 
 ######### dials otages mineurs
 
-##chef mineur j'ai tué tout le monde = mission win
+##chef mineur j'ai tu?tout le monde = mission win
    [anyone,"start", [(eq, "$g_talk_troop", "trp_otage_mineur1"),
                     (eq, "$mine_fer_broceliand_lvl_3_clear", 1), 
                      ],
@@ -20935,10 +20935,10 @@ dialogs = [
 ######################################## CRANE DE FER BEGIN ################################################################################
 
 
-#capitaine faché plus de dials / faché si : j'ai perdu au chateau et donc tenté l'assaut, si j'ai gagné la prime en tuant penthievre donc j'ai la grosse somme d'argent mais plus de contrats chez le capitaine
+#capitaine fach?plus de dials / fach?si : j'ai perdu au chateau et donc tent?l'assaut, si j'ai gagn?la prime en tuant penthievre donc j'ai la grosse somme d'argent mais plus de contrats chez le capitaine
 ###
   ##
-  #!!!! assigner>  (assign, "$captain_fache", 1),   si je tue le comte et désobéis! juste ca au mission template + menu ou autre..."le comte de penthievre est mort! vous touchez la prime de 10.000 ecus ordonnée par le duc pour l'avoir tué"
+  #!!!! assigner>  (assign, "$captain_fache", 1),   si je tue le comte et d?ob?s! juste ca au mission template + menu ou autre..."le comte de penthievre est mort! vous touchez la prime de 10.000 ecus ordonn? par le duc pour l'avoir tu?
   
 #plus de contrat mais je peut recruter
           [anyone,"start", [(eq, "$g_talk_troop", "trp_crane_de_fercamp_troop1"),
@@ -20973,7 +20973,7 @@ dialogs = [
 
 
 
-  [anyone ,"capit_camp_dials_endrecrut", [],"Nous disposons de {reg3} soldats en attente de contrat, ils serons à vous pour la somme de {reg5} Ã©cus.", "capit_camp_dials_endrecrut2",[(assign, "$premier_dial_cdf", 1),]],
+  [anyone ,"capit_camp_dials_endrecrut", [],"Nous disposons de {reg3} soldats en attente de contrat, ils serons ?vous pour la somme de {reg5} Ã©cus.", "capit_camp_dials_endrecrut2",[(assign, "$premier_dial_cdf", 1),]],
 
 
   [anyone|plyr,"capit_camp_dials_endrecrut2",
@@ -21028,7 +21028,7 @@ dialogs = [
 
 
 
-#capitaine faché plus de dials
+#capitaine fach?plus de dials
          [anyone,"start", [(eq, "$g_talk_troop", "trp_crane_de_fercamp_troop1"),
 
                      (check_quest_active, "qst_siege_penthievre"),
@@ -21055,7 +21055,7 @@ dialogs = [
 
 
 
-###chateau quintin win = pas désobeis ; mais plus de travail
+###chateau quintin win = pas d?obeis ; mais plus de travail
 
          [anyone,"start", [(eq, "$g_talk_troop", "trp_crane_de_fercamp_troop1"),
 
@@ -21219,7 +21219,7 @@ dialogs = [
 
 
 
-  [anyone ,"capit_camp_win_crennesintrorecrut", [],"Nous disposons de {reg3} soldats en attente de contrat, ils serons à vous pour la somme de {reg5} Ã©cus.", "capit_camp_win_crennesintrorecrut2",[(assign, "$premier_dial_cdf", 1),]],
+  [anyone ,"capit_camp_win_crennesintrorecrut", [],"Nous disposons de {reg3} soldats en attente de contrat, ils serons ?vous pour la somme de {reg5} Ã©cus.", "capit_camp_win_crennesintrorecrut2",[(assign, "$premier_dial_cdf", 1),]],
 
 
   [anyone|plyr,"capit_camp_win_crennesintrorecrut2",
@@ -21425,7 +21425,7 @@ dialogs = [
 
 
 
-  [anyone ,"capit_camp_cran_caravanwinintro2", [],"Nous disposons de {reg3} soldats en attente de contrat, ils serons à vous pour la somme de {reg5} Ã©cus..", "capit_camp_cran_caravanwinintro3",[(assign, "$premier_dial_cdf", 1),]],
+  [anyone ,"capit_camp_cran_caravanwinintro2", [],"Nous disposons de {reg3} soldats en attente de contrat, ils serons ?vous pour la somme de {reg5} Ã©cus..", "capit_camp_cran_caravanwinintro3",[(assign, "$premier_dial_cdf", 1),]],
 
 
   [anyone|plyr,"capit_camp_cran_caravanwinintro3",
@@ -21539,7 +21539,7 @@ dialogs = [
 
 
 
-  [anyone ,"capit_camp_cran_fer_paycaravan", [],"Je dispose de {reg3} soldats en attente de contrat, ils serons à vous pour la somme de {reg5} Ã©cus..", "capit_camp_cran_fer_paycaravan2",[(assign, "$premier_dial_cdf", 1),]],
+  [anyone ,"capit_camp_cran_fer_paycaravan", [],"Je dispose de {reg3} soldats en attente de contrat, ils serons ?vous pour la somme de {reg5} Ã©cus..", "capit_camp_cran_fer_paycaravan2",[(assign, "$premier_dial_cdf", 1),]],
 
 
   [anyone|plyr,"capit_camp_cran_fer_paycaravan2",
@@ -21609,7 +21609,7 @@ dialogs = [
 
 
 
-  [anyone ,"capit_camp_cran_fer_pay", [],"Je dispose de {reg3} soldats en attente de contrat, ils serons à vous pour la somme de {reg5} Ã©cus..", "capit_camp_cran_fer_pay2",[(assign, "$premier_dial_cdf", 1),]],
+  [anyone ,"capit_camp_cran_fer_pay", [],"Je dispose de {reg3} soldats en attente de contrat, ils serons ?vous pour la somme de {reg5} Ã©cus..", "capit_camp_cran_fer_pay2",[(assign, "$premier_dial_cdf", 1),]],
 
 
   [anyone|plyr,"capit_camp_cran_fer_pay2",
@@ -26342,7 +26342,7 @@ dialogs = [
 # mettre quete roi justze au dessus rpg!
 
 ###################1429DIPLOMACY#######################################################################################################################################
-#!!!!!!! REMETRE EN PLACE :  (val_sub, ":cur_hours", 4), A   72 /  retirer "plus de relation" //§§§%%666S678JN!!!!!!!!!!!!!!!!!!!!!!!
+#!!!!!!! REMETRE EN PLACE :  (val_sub, ":cur_hours", 4), A   72 /  retirer "plus de relation" //???%%666S678JN!!!!!!!!!!!!!!!!!!!!!!!
 
   [anyone|plyr,"lord_talk", [
                              (eq, "$g_talk_troop", "trp_kingdom_1_lord"),
@@ -26368,7 +26368,7 @@ dialogs = [
 
   [anyone,"diplo_roy_start",
    [
-#si test relation a echoué ou laisser comme ca
+#si test relation a echou?ou laisser comme ca
        
        ],
    "Pour qui vous prennez vous {playername} ? Veillez a rester a vostre place, qui deumeure celle d'un combattant et non d'un consseillÃ©, j'ai bien assez de felons pour m'entourer. Je me suis peut etre fait une mauvaise idÃ©e sur vous, ainsi vous estes donc comme les autres...regrettable.", "diplo_roy_startfail",
@@ -37169,7 +37169,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 
-  #dial viel aventurier mission acceptée en attente sortie taverne
+  #dial viel aventurier mission accept? en attente sortie taverne
   [anyone,"start", [(eq, "$g_talk_troop", "trp_v_aventurier"),
                     (eq, "$quete_templiers_donne", 1),
                      ],
@@ -37184,7 +37184,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 
-  #dial viel aventurier mission refusée mais encore possible
+  #dial viel aventurier mission refus? mais encore possible
   [anyone,"start", [(eq, "$g_talk_troop", "trp_v_aventurier"),
                     (eq, "$quete_templiers_encore_poss", 1),                    
                      ],
@@ -37225,14 +37225,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone ,"maconique_deux_chancevielaok", [],"Vous faites une bonne affaire croyez moi, bien... vous devrez rechercher la carte des temples secrets, c'est la qu'ils entreposaient l'or des croisades et de leurs nombreux revenus. Pour l'heure l'indice vous enmÃ©nera a la bibliothÃ¨que du monastere de Carmel de Micy d'OrlÃ©ans, bonne chance pour la suite.", "close_window",
    [
-       #set flag ou quartier débloqué si quete active reporter a deuxieme chance !!!!!!!!!!!!!!!!
+       #set flag ou quartier d?loqu?si quete active reporter a deuxieme chance !!!!!!!!!!!!!!!!
 #############  ##############  ############  ###################
 (assign, "$quete_templiers_donne", 1),
        
        ]],
 
 
-  #dial viel aventurier  (assign, "$quete_templiers_donne", 1), a mission acceptée !
+  #dial viel aventurier  (assign, "$quete_templiers_donne", 1), a mission accept? !
   [anyone,"start", [(eq, "$g_talk_troop", "trp_v_aventurier"),
                     
                      ],
@@ -37310,7 +37310,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone ,"dia_temp_startt_quetelancee", [],"Vous faites une bonne affaire croyez moi, bien... vous devrez rechercher la carte des temples secrets, c'est la qu'ils entreposaient l'or des croisades et de leurs nombreux revenus. Pour l'heure l'indice vous enmÃ©nera a la bibliothÃ¨que du monastere de Carmel de Micy d'OrlÃ©ans, bonne chance pour la suite.", "close_window",
    [
-       #set flag ou quartier débloqué si quete active reporter a deuxieme chance !!!!!!!!!!!!!!!!
+       #set flag ou quartier d?loqu?si quete active reporter a deuxieme chance !!!!!!!!!!!!!!!!
 #############  ##############  ############  ###################
 (assign, "$quete_templiers_donne", 1),
        
@@ -37380,7 +37380,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 
-#aprés avoir vu fresque et message  
+#apr? avoir vu fresque et message  
 
   [anyone,"start", [(eq, "$g_talk_troop", "trp_moin_orleans_interieur"),
                      (eq, "$debloque_dial_bibliotequaire", 1),                  
@@ -37514,7 +37514,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone ,"moine_orleans_laissepassenui2", [],"Certes, mais tachez de dormir un peut ou vous risquez de tomber malade.", "close_window",
    [
-#script entrée...
+#script entr?...
         (call_script, "script_entree_monastere_orl_fin"),
        ]],
 
@@ -37536,7 +37536,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone ,"moine_orleans_laissepasse12", [],"Certes mon frere, rigueur et discipline sont les pierres qui balisent le chemin du savoir.", "close_window",
    [
-#script entrée...
+#script entr?...
         (call_script, "script_entree_monastere_orl"),
        ]],
 
@@ -37554,7 +37554,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone ,"moine_orleans_laissepasse_encore", [],"Certes mon frere, rigueur et discipline sont les pierres qui balisent le chemin du savoir.", "close_window",
    [
-#script entrée...
+#script entr?...
         (call_script, "script_entree_monastere_orl"),
        ]],
 
@@ -37657,7 +37657,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   [anyone ,"moine_orleans_qwhy22okscript", [],"Une telle fougue fait plaisire a voir, tachez d'en apprendre le plus possible sur l'Ã©criture.", "close_window",
    [
-#script entrée...
+#script entr?...
         (call_script, "script_entree_monastere_orl"),       
        ]],
 
@@ -41527,7 +41527,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   
   [anyone,"bracon_village_finwin2", [], "Des mots doux a mes oreilles, merci mille fois Mon seigneur, comme promis voila les victuailles fraiches, j'Ã©spÃ©re que vous reviendrez bientot patrouiller la foret, ces marauds sont tenaces vous savez.", "village_elder_pretalk",
    [
-# script victuailles aléatoires variable ratachement village a O !
+# script victuailles al?toires variable ratachement village a O !
          (call_script, "script_random_recompensse_braco"),
          (assign,"$village_ancien_braconnier",0),         
        ]],
@@ -41782,7 +41782,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
   
 
-#mette au desus : quete active "avez vous cherché les braconniers ? et vers village_elder_talk et encore au dessus mission accomplie/et failed...
+#mette au desus : quete active "avez vous cherch?les braconniers ? et vers village_elder_talk et encore au dessus mission accomplie/et failed...
   [anyone,"start", [
       (this_or_next|eq, "$g_talk_troop", "trp_village_26_elder"), 
        (this_or_next|eq, "$g_talk_troop", "trp_village_39_elder"), 
@@ -41796,7 +41796,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (this_or_next|eq, "$g_talk_troop", "trp_village_79_elder"), 
       (this_or_next|eq, "$g_talk_troop", "trp_village_70_elder"), 
                     (eq, "$g_talk_troop", "trp_village_18_elder"),
-                   #si pas quete active et temps écoulé avant la prochaine possibilité de refaire 48 heures ou 72
+                   #si pas quete active et temps ?oul?avant la prochaine possibilit?de refaire 48 heures ou 72
             (neg|check_quest_active, "qst_braconage"),
       
             (store_current_hours,":cur_hours"),
@@ -42107,7 +42107,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"aubergiste_pbrob_okgo", [],"Un de mes client ivre est parti se promener dans la foret, et cet idiot risque sa vie avec le froid qu'il reigne la bas, vu que c'est un marchand connu sa mort risque de m'ettre attribuÃ©e et on fermera sans aucun doute mon auberge, si vous me le ramenez vivant il y aura une grosse some en Ã©cus pour vous, si vous etes d'accord surtout dÃ©pÃ©chez vous !", "aubergiste_depech_vous",[]],
 
   
-### lance quete foret glacée 
+### lance quete foret glac? 
 
     [anyone,"start", [
       (eq, "$g_talk_troop", "trp_auberge_troop_11"), 
@@ -42485,7 +42485,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        ]],
 
 
-  [anyone|plyr,"hobelar_ready", [], "PrÃ©parez-vous, nous partirons à l'aube.", "close_window",[]],
+  [anyone|plyr,"hobelar_ready", [], "PrÃ©parez-vous, nous partirons ?l'aube.", "close_window",[]],
  
 
 #######
@@ -42509,7 +42509,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
                      ],
-   "Avez-vous besoin de mercenaires messire ? {reg3} de mes compagnons et moi, sommes a la recherche d'un maitre. Nous nous joindrons à vous pour {reg5} Ã©cus.", "hobelar_start_start",
+   "Avez-vous besoin de mercenaires messire ? {reg3} de mes compagnons et moi, sommes a la recherche d'un maitre. Nous nous joindrons ?vous pour {reg5} Ã©cus.", "hobelar_start_start",
    [
 (assign, "$premier_dial_hobelars", 1),
        ]],
@@ -42547,7 +42547,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 
-  [anyone|plyr,"hobelar_recrut2", [], "PrÃ©parez-vous, nous partirons à l'aube.", "close_window",
+  [anyone|plyr,"hobelar_recrut2", [], "PrÃ©parez-vous, nous partirons ?l'aube.", "close_window",
    [
 #assigner 24 heures condition de presence troupe
      (store_current_hours,":cur_hours"),      
@@ -42568,7 +42568,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        ]],
 
 
-  [anyone|plyr,"hacheur_ready", [], "PrÃ©parez-vous, nous partirons à l'aube.", "close_window",[]],
+  [anyone|plyr,"hacheur_ready", [], "PrÃ©parez-vous, nous partirons ?l'aube.", "close_window",[]],
  ########
 
 
@@ -42594,7 +42594,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
                      ],
-   "Avez-vous besoin de mercenaires messire ? {reg4} de mes compagnons et moi, sommes a la recherche d'un maitre. Nous nous joindrons à vous pour {reg6} Ã©cus.", "hacheur_start_start",
+   "Avez-vous besoin de mercenaires messire ? {reg4} de mes compagnons et moi, sommes a la recherche d'un maitre. Nous nous joindrons ?vous pour {reg6} Ã©cus.", "hacheur_start_start",
    [
 (assign, "$premier_dial_hacheur", 1),
        ]],
@@ -42632,7 +42632,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 
-  [anyone|plyr,"hacheur_recrut2", [], "PrÃ©parez-vous, nous partirons à l'aube.", "close_window",
+  [anyone|plyr,"hacheur_recrut2", [], "PrÃ©parez-vous, nous partirons ?l'aube.", "close_window",
    [
 #assigner 24 heures condition de presence troupe
      (store_current_hours,":cur_hours"),      
@@ -42781,7 +42781,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"med_auberge_no", [],"Comme vous voudrez, mais n'oubliez pas de vous faire soigner si vous estes blessÃ©.", "close_window",[]],
 
 
-# quete cheval terminée <<<
+# quete cheval termin? <<<
 
     [anyone,"start", [
 (eq, "$g_talk_troop", "trp_auberge_client_7"),
@@ -42793,7 +42793,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 
 
-# quete cheval terminée = l'enlever
+# quete cheval termin? = l'enlever
   [anyone,"start", [
 (eq, "$g_talk_troop", "trp_auberge_client_7"),
                      (check_quest_active, "qst_cheval_perdu"),

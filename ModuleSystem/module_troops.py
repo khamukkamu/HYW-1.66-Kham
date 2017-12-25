@@ -8,7 +8,7 @@ from header_skills import *
 from ID_factions import *
 from ID_items import *
 from ID_scenes import *
-
+from compiler import *
 ####################################################################################################################
 #  Each troop contains the following fields:   
 #  1) Troop id (string): used for referencing troops in other files. The prefix trp_ is automatically added before each troop-id .

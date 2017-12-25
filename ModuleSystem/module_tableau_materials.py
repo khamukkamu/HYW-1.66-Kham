@@ -4,7 +4,7 @@ from header_mission_templates import *
 from header_tableau_materials import *
 from header_items import *
 from module_constants import *
-  
+from compiler import * 
 ####################################################################################################################
 #  Each tableau material contains the following fields:
 #  1) Tableau id (string): used for referencing tableaux in other files. The prefix tab_ is automatically added before each tableau-id.

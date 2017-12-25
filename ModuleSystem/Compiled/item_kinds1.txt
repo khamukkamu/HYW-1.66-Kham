@@ -104,7 +104,7 @@ itemsfile version 3
  0
 0
 
- itm_practice_lance Practice_Lance Practice_Lance 1  joust_of_peace 0  2286288900 201326848 18 0 4.250000 100 0 0 0 0 0 58 0 240 0 527 512
+ itm_practice_lance Practice_Lance Practice_Lance 1  joust_of_peace 0  2286288900 9250393634820325632 18 0 4.250000 100 0 0 0 0 0 58 0 240 0 527 512
  0
 0
 
@@ -2421,119 +2421,119 @@ itemsfile version 3
  0
 0
 
- itm_great_lance_2 Grande_lance Grande_lance 1  heavy_lance 0  1212153860 201326848 120 8202 5.000000 100 0 0 0 0 0 55 0 215 0 284 0
+ itm_great_lance_2 Grande_lance Grande_lance 1  heavy_lance 0  1212153860 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 55 0 215 0 284 0
  0
 0
 
- itm_jousting_lanceblueyellow French_Jousting_Lance French_Jousting_Lance 1  jousting_lanceblueyellow 0  1077936132 201326848 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 291 0
+ itm_jousting_lanceblueyellow French_Jousting_Lance French_Jousting_Lance 1  jousting_lanceblueyellow 0  1077936132 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 291 0
  0
 0
 
- itm_jousting_lancebluewhite French_Jousting_Lance French_Jousting_Lance 1  jousting_lancebluewhite 0  1077936132 201326848 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 291 0
+ itm_jousting_lancebluewhite French_Jousting_Lance French_Jousting_Lance 1  jousting_lancebluewhite 0  1077936132 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 291 0
  0
 0
 
- itm_jousting_lanceredyellow English_Jousting_Lance English_Jousting_Lance 1  jousting_lanceredyellow 0  1077936132 201326848 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 291 0
+ itm_jousting_lanceredyellow English_Jousting_Lance English_Jousting_Lance 1  jousting_lanceredyellow 0  1077936132 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 291 0
  0
 0
 
- itm_jousting_lanceredwhite English_Jousting_Lance English_Jousting_Lance 1  jousting_lanceredwhite 0  1077936132 201326848 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 291 0
+ itm_jousting_lanceredwhite English_Jousting_Lance English_Jousting_Lance 1  jousting_lanceredwhite 0  1077936132 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 291 0
  0
 0
 
- itm_jousting_lance Jousting_Lance Jousting_Lance 1  joust_of_peace 0  1212153860 201326848 83 8202 5.000000 100 0 0 0 0 0 61 0 218 0 288 0
+ itm_jousting_lance Jousting_Lance Jousting_Lance 1  joust_of_peace 0  1212153860 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 61 0 218 0 288 0
  0
 0
 
- itm_great_lanceblueyellow French_Great_Lance French_Great_Lance 1  greatlance01f 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
+ itm_great_lanceblueyellow French_Great_Lance French_Great_Lance 1  greatlance01f 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
  0
 0
 
- itm_great_lancebluewhite French_Great_Lance French_Great_Lance 1  greatlance02f 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
+ itm_great_lancebluewhite French_Great_Lance French_Great_Lance 1  greatlance02f 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
  0
 0
 
- itm_great_lanceredyellow English_Great_Lance English_Great_Lance 1  greatlance01e 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
+ itm_great_lanceredyellow English_Great_Lance English_Great_Lance 1  greatlance01e 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
  0
 0
 
- itm_great_lanceredwhite English_Great_Lance English_Great_Lance 1  greatlance02e 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
+ itm_great_lanceredwhite English_Great_Lance English_Great_Lance 1  greatlance02e 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
  0
 0
 
- itm_banner_kite_plain_diamonds French_Banner French_Banner 1  banner_kite_plain_diamonds 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_kite_plain_diamonds French_Banner French_Banner 1  banner_kite_plain_diamonds 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_kite_plain_lys French_Banner French_Banner 1  banner_kite_plain_lys 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_kite_plain_lys French_Banner French_Banner 1  banner_kite_plain_lys 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_kite_plain_ermine French_Banner French_Banner 1  banner_kite_plain_ermine 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_kite_plain_ermine French_Banner French_Banner 1  banner_kite_plain_ermine 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_war_blue French_Banner French_Banner 1  banner_war_blue 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_war_blue French_Banner French_Banner 1  banner_war_blue 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_war_horses French_Banner French_Banner 1  banner_war_horses 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_war_horses French_Banner French_Banner 1  banner_war_horses 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_war_cross French_Banner French_Banner 1  banner_war_cross 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_war_cross French_Banner French_Banner 1  banner_war_cross 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_war_eagle French_Banner French_Banner 1  banner_war_eagle 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_war_eagle French_Banner French_Banner 1  banner_war_eagle 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_heraldric_lys French_Banner French_Banner 1  banner_heraldric_lys 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_heraldric_lys French_Banner French_Banner 1  banner_heraldric_lys 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_heraldric_ermine French_Banner French_Banner 1  banner_heraldric_ermine 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_heraldric_ermine French_Banner French_Banner 1  banner_heraldric_ermine 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_kite_metal_rose English_Banner English_Banner 1  banner_kite_metal_rose 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_kite_metal_rose English_Banner English_Banner 1  banner_kite_metal_rose 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_kite_metal_squares English_Banner English_Banner 1  banner_kite_metal_squares 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_kite_metal_squares English_Banner English_Banner 1  banner_kite_metal_squares 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_kite_plain_cross English_Banner English_Banner 1  banner_kite_plain_cross 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_kite_plain_cross English_Banner English_Banner 1  banner_kite_plain_cross 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_war_red English_Banner English_Banner 1  banner_war_red 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_war_red English_Banner English_Banner 1  banner_war_red 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_war_trees English_Banner English_Banner 1  banner_war_trees 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_war_trees English_Banner English_Banner 1  banner_war_trees 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_war_flowers English_Banner English_Banner 1  banner_war_flowers 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_war_flowers English_Banner English_Banner 1  banner_war_flowers 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_war_wales English_Banner English_Banner 1  banner_war_wales 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_war_wales English_Banner English_Banner 1  banner_war_wales 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_heraldric_lions English_Banner English_Banner 1  banner_heraldric_lions 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_heraldric_lions English_Banner English_Banner 1  banner_heraldric_lions 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_banner_heraldric_stripes English_Banner English_Banner 1  banner_heraldric_stripes 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
+ itm_banner_heraldric_stripes English_Banner English_Banner 1  banner_heraldric_stripes 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 294 0
  0
 0
 
- itm_breton_lance Lance_de_Chevalier Lance_de_Chevalier 1  greatlance_hyw 0  1077936132 201326848 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
+ itm_breton_lance Lance_de_Chevalier Lance_de_Chevalier 1  greatlance_hyw 0  1077936132 9250393634820325632 120 8202 5.000000 100 0 0 0 0 0 65 0 215 0 291 0
  0
 0
 
@@ -3161,23 +3161,23 @@ itemsfile version 3
  0
 0
 
- itm_pitch_fork Pitch_Fork Pitch_Fork 1  trident 0  1212481540 4222124851986688 19 8202 1.500000 100 0 0 0 0 0 87 0 154 0 278 528
+ itm_pitch_fork Pitch_Fork Pitch_Fork 1  trident 0  1212481540 9254615759470988544 19 8202 1.500000 100 0 0 0 0 0 87 0 154 0 278 528
  0
 0
 
- itm_military_fork Military_Fork Military_Fork 1  military_fork 0  1078263812 4222124851986688 153 8202 2.000000 100 0 0 0 0 0 95 0 135 0 286 527
+ itm_military_fork Military_Fork Military_Fork 1  military_fork 0  1078263812 9254615759470988544 153 8202 2.000000 100 0 0 0 0 0 95 0 135 0 286 527
  0
 0
 
- itm_battle_fork Battle_Fork Battle_Fork 1  battle_fork 0  1078263812 4222124851986688 282 8202 2.200000 100 0 0 0 0 0 90 0 144 0 291 527
+ itm_battle_fork Battle_Fork Battle_Fork 1  battle_fork 0  1078263812 9254615759470988544 282 8202 2.200000 100 0 0 0 0 0 90 0 144 0 291 527
  0
 0
 
- itm_boar_spear Boar_Spear Boar_Spear 1  spear 0  138739716 4222131026002176 76 8202 1.500000 100 0 0 0 0 0 90 0 157 0 279 26
+ itm_boar_spear Boar_Spear Boar_Spear 1  spear 0  138739716 9254615765645004032 76 8202 1.500000 100 0 0 0 0 0 90 0 157 0 279 26
  0
 0
 
- itm_jousting_lance Jousting_Lance Jousting_Lance 1  joust_of_peace 0  2286223364 201326848 158 8202 5.000000 100 0 0 0 0 0 61 0 240 0 281 0
+ itm_jousting_lance Jousting_Lance Jousting_Lance 1  joust_of_peace 0  2286223364 9250393634820325632 158 8202 5.000000 100 0 0 0 0 0 61 0 240 0 281 0
  0
 0
 
@@ -3241,7 +3241,7 @@ itemsfile version 3
  0
 0
 
- itm_great_lance Great_Lance Great_Lance 1  heavy_lance 0  2286223364 201326848 410 8202 5.000000 100 0 0 0 11 0 55 0 240 0 290 0
+ itm_great_lance Great_Lance Great_Lance 1  heavy_lance 0  2286223364 9250393634820325632 410 8202 5.000000 100 0 0 0 11 0 55 0 240 0 290 0
  0
 0
 
@@ -3325,67 +3325,67 @@ itemsfile version 3
  0
 0
 
- itm_awlpike_1 Awlpike Awlpike 1  awlpike_1 0  409272324 4222124851987200 225 8202 3.000000 100 0 0 0 0 0 81 0 186 0 289 529
+ itm_awlpike_1 Awlpike Awlpike 1  awlpike_1 0  409272324 9236601360760176896 225 8202 3.000000 100 0 0 0 0 0 81 0 186 0 289 529
  0
 0
 
- itm_awlpike_2 Awlpike Awlpike 1  awlpike_2 0  409272324 4222124851987200 265 8202 3.000000 100 0 0 0 0 0 80 0 187 0 289 529
+ itm_awlpike_2 Awlpike Awlpike 1  awlpike_2 0  409272324 9236601360760176896 265 8202 3.000000 100 0 0 0 0 0 80 0 187 0 289 529
  0
 0
 
- itm_awlpike_3 Awlpike Awlpike 1  awlpike_3 0  409272324 4222124851987200 235 8202 3.000000 100 0 0 0 0 0 80 0 188 0 289 530
+ itm_awlpike_3 Awlpike Awlpike 1  awlpike_3 0  409272324 9236601360760176896 235 8202 3.000000 100 0 0 0 0 0 80 0 188 0 289 530
  0
 0
 
- itm_awlpike_4 Awlpike Awlpike 1  awlpike_4 0  409272324 4222124851987200 255 8202 2.900000 100 0 0 0 0 0 80 0 187 0 289 529
+ itm_awlpike_4 Awlpike Awlpike 1  awlpike_4 0  409272324 9236601360760176896 255 8202 2.900000 100 0 0 0 0 0 80 0 187 0 289 529
  0
 0
 
- itm_awlpike_5 Awlpike Awlpike 1  awlpike_5 0  409272324 4222124851987200 255 8202 2.900000 100 0 0 0 0 0 80 0 181 0 289 527
+ itm_awlpike_5 Awlpike Awlpike 1  awlpike_5 0  409272324 9236601360760176896 255 8202 2.900000 100 0 0 0 0 0 80 0 181 0 289 527
  0
 0
 
- itm_awlpike_6 Awlpike Awlpike 1  awlpike_6 0  409272324 4222124851987200 265 8202 2.900000 100 0 0 0 0 0 82 0 187 0 286 528
+ itm_awlpike_6 Awlpike Awlpike 1  awlpike_6 0  409272324 9236601360760176896 265 8202 2.900000 100 0 0 0 0 0 82 0 187 0 286 528
  0
 0
 
- itm_partisan_1 Partisan Partisan 1  partisan_1 0  1212481540 4222131026005760 185 8202 2.350000 100 0 0 0 0 0 94 0 129 0 36 536
+ itm_partisan_1 Partisan Partisan 1  partisan_1 0  1212481540 9254615765645004032 185 8202 2.350000 100 0 0 0 0 0 94 0 129 0 36 536
  0
 0
 
- itm_partisan_2 Partisan Partisan 1  partisan_2 0  1212481540 4222131026005760 195 8202 2.450000 100 0 0 0 0 0 93 0 137 0 37 536
+ itm_partisan_2 Partisan Partisan 1  partisan_2 0  1212481540 9254615765645004032 195 8202 2.450000 100 0 0 0 0 0 93 0 137 0 37 536
  0
 0
 
- itm_partisan_3 Partisan Partisan 1  partisan_3 0  1212481540 4222131026005760 200 8202 2.450000 100 0 0 0 0 0 92 0 146 0 39 537
+ itm_partisan_3 Partisan Partisan 1  partisan_3 0  1212481540 9254615765645004032 200 8202 2.450000 100 0 0 0 0 0 92 0 146 0 39 537
  0
 0
 
- itm_partisan_1 Partisan Partisan 1  partisan_1 0  1212481540 4222131026005760 175 8202 2.350000 100 0 0 0 0 0 95 0 125 0 35 536
+ itm_partisan_1 Partisan Partisan 1  partisan_1 0  1212481540 9254615765645004032 175 8202 2.350000 100 0 0 0 0 0 95 0 125 0 35 536
  0
 0
 
- itm_ranseur_1 Ranseur Ranseur 1  ranseur_1 0  1212481540 4222131026005760 240 8202 2.400000 100 0 0 0 0 0 96 0 124 0 287 526
+ itm_ranseur_1 Ranseur Ranseur 1  ranseur_1 0  1212481540 9254615765645004032 240 8202 2.400000 100 0 0 0 0 0 96 0 124 0 287 526
  0
 0
 
- itm_ranseur_2 Ranseur Ranseur 1  ranseur_2 0  1212481540 4222131026005760 290 8202 2.600000 100 0 0 0 0 0 93 0 165 0 289 529
+ itm_ranseur_2 Ranseur Ranseur 1  ranseur_2 0  1212481540 9254615765645004032 290 8202 2.600000 100 0 0 0 0 0 93 0 165 0 289 529
  0
 0
 
- itm_spetum_1 Spetum Spetum 1  spetum_1 0  1212481540 4222131026005760 140 8202 2.400000 100 0 0 0 0 0 95 0 154 0 284 540
+ itm_spetum_1 Spetum Spetum 1  spetum_1 0  1212481540 9254615765645004032 140 8202 2.400000 100 0 0 0 0 0 95 0 154 0 284 540
  0
 0
 
- itm_spetum_2 Spetum Spetum 1  spetum_2 0  1212481540 4222131026005760 160 8202 2.400000 100 0 0 0 0 0 94 0 156 0 285 540
+ itm_spetum_2 Spetum Spetum 1  spetum_2 0  1212481540 9254615765645004032 160 8202 2.400000 100 0 0 0 0 0 94 0 156 0 285 540
  0
 0
 
- itm_spetum_3 Spetum Spetum 1  spetum_3 0  1212481540 4222131026005760 150 8202 2.400000 100 0 0 0 0 0 95 0 154 0 283 541
+ itm_spetum_3 Spetum Spetum 1  spetum_3 0  1212481540 9254615765645004032 150 8202 2.400000 100 0 0 0 0 0 95 0 154 0 283 541
  0
 0
 
- itm_spetum_4 Spetum Spetum 1  spetum_4 0  1212481540 4222131026005760 145 8202 2.300000 100 0 0 0 0 0 96 0 126 0 286 539
+ itm_spetum_4 Spetum Spetum 1  spetum_4 0  1212481540 9254615765645004032 145 8202 2.300000 100 0 0 0 0 0 96 0 126 0 286 539
  0
 0
 
@@ -3441,11 +3441,11 @@ itemsfile version 3
  0
 0
 
- itm_voulge_long Longue_Voulge Longue_Voulge 1  pike 0  1077936132 201326848 185 8202 5.000000 100 0 0 0 0 0 90 0 180 0 295 0
+ itm_voulge_long Longue_Voulge Longue_Voulge 1  pike 0  1077936132 9250393634820325632 185 8202 5.000000 100 0 0 0 0 0 90 0 180 0 295 0
  0
 0
 
- itm_voulge_long_blunt Longue_Voulge_de_Hobelar Longue_Voulge_de_Hobelar 1  pike 0  1077936132 201326848 185 8202 5.000000 100 0 0 0 0 0 90 0 180 0 551 0
+ itm_voulge_long_blunt Longue_Voulge_de_Hobelar Longue_Voulge_de_Hobelar 1  pike 0  1077936132 9250393634820325632 185 8202 5.000000 100 0 0 0 0 0 90 0 180 0 551 0
  0
 0
 
@@ -3493,11 +3493,11 @@ itemsfile version 3
  0
 0
 
- itm_fork_1 Fork Fork 1  fork_1 0  1212481540 4222124851986688 253 8202 3.500000 100 0 0 0 0 0 88 0 135 0 288 512
+ itm_fork_1 Fork Fork 1  fork_1 0  1212481540 9254615759470988544 253 8202 3.500000 100 0 0 0 0 0 88 0 135 0 288 512
  0
 0
 
- itm_fork_2 Fork Fork 1  fork_2 0  1212481540 4222124851986688 253 8202 3.300000 100 0 0 0 0 0 90 0 126 0 286 512
+ itm_fork_2 Fork Fork 1  fork_2 0  1212481540 9254615759470988544 253 8202 3.300000 100 0 0 0 0 0 90 0 126 0 286 512
  0
 0
 
@@ -3513,95 +3513,95 @@ itemsfile version 3
  0
 0
 
- itm_lance_1 Wooden_Great_Lance Wooden_Great_Lance 1  lance_1 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 278 0
+ itm_lance_1 Wooden_Great_Lance Wooden_Great_Lance 1  lance_1 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 278 0
  0
 0
 
- itm_lance_2 Great_Lance Great_Lance 1  lance_2 0  2286223364 201326848 400 8202 6.300000 100 0 0 0 12 0 59 0 226 0 282 0
+ itm_lance_2 Great_Lance Great_Lance 1  lance_2 0  2286223364 9250393634820325632 400 8202 6.300000 100 0 0 0 12 0 59 0 226 0 282 0
  0
 0
 
- itm_lance_3 Great_Lance Great_Lance 1  lance_3 0  2286223364 201326848 460 8202 6.300000 100 0 0 0 12 0 59 0 251 0 282 0
+ itm_lance_3 Great_Lance Great_Lance 1  lance_3 0  2286223364 9250393634820325632 460 8202 6.300000 100 0 0 0 12 0 59 0 251 0 282 0
  0
 0
 
- itm_lance_4 Wooden_Great_Lance Wooden_Great_Lance 1  lance_4 0  2286223364 201326848 440 8202 6.300000 100 0 0 0 12 0 59 0 251 0 279 0
+ itm_lance_4 Wooden_Great_Lance Wooden_Great_Lance 1  lance_4 0  2286223364 9250393634820325632 440 8202 6.300000 100 0 0 0 12 0 59 0 251 0 279 0
  0
 0
 
- itm_lance_5 Wooden_Great_Lance Wooden_Great_Lance 1  lance_5 0  2286223364 201326848 412 8202 5.800000 100 0 0 0 12 0 64 0 251 0 280 0
+ itm_lance_5 Wooden_Great_Lance Wooden_Great_Lance 1  lance_5 0  2286223364 9250393634820325632 412 8202 5.800000 100 0 0 0 12 0 64 0 251 0 280 0
  0
 0
 
- itm_lance_6 Great_Lance Great_Lance 1  lance_6 0  2286223364 201326848 560 8202 6.300000 100 0 0 0 12 0 52 0 242 0 283 0
+ itm_lance_6 Great_Lance Great_Lance 1  lance_6 0  2286223364 9250393634820325632 560 8202 6.300000 100 0 0 0 12 0 52 0 242 0 283 0
  0
 0
 
- itm_lance_f2 Great_Lance Great_Lance 1  lance_f1 0  2286223364 201326848 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 283 0
+ itm_lance_f2 Great_Lance Great_Lance 1  lance_f1 0  2286223364 9250393634820325632 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 283 0
  0
 0
 
- itm_lance_f1 Great_Lance Great_Lance 1  lance_f2 0  2286223364 201326848 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 283 0
+ itm_lance_f1 Great_Lance Great_Lance 1  lance_f2 0  2286223364 9250393634820325632 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 283 0
  0
 0
 
- itm_lance_f3 Great_Lance Great_Lance 1  lance_f3 0  2286223364 201326848 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 283 0
+ itm_lance_f3 Great_Lance Great_Lance 1  lance_f3 0  2286223364 9250393634820325632 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 283 0
  0
 0
 
- itm_lance_e1 Great_Lance Great_Lance 1  lance_e1 0  2286223364 201326848 460 8202 6.300000 100 0 0 0 12 0 59 0 251 0 281 0
+ itm_lance_e1 Great_Lance Great_Lance 1  lance_e1 0  2286223364 9250393634820325632 460 8202 6.300000 100 0 0 0 12 0 59 0 251 0 281 0
  0
 0
 
- itm_lance_e2 Great_Lance Great_Lance 1  lance_e2 0  2286223364 201326848 460 8202 6.300000 100 0 0 0 12 0 59 0 251 0 281 0
+ itm_lance_e2 Great_Lance Great_Lance 1  lance_e2 0  2286223364 9250393634820325632 460 8202 6.300000 100 0 0 0 12 0 59 0 251 0 281 0
  0
 0
 
- itm_lance_e3 Great_Lance Great_Lance 1  lance_e3 0  2286223364 201326848 460 8202 6.300000 100 0 0 0 12 0 59 0 264 0 281 0
+ itm_lance_e3 Great_Lance Great_Lance 1  lance_e3 0  2286223364 9250393634820325632 460 8202 6.300000 100 0 0 0 12 0 59 0 264 0 281 0
  0
 0
 
- itm_lance_banner_e1 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_e1 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_e1 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_e1 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_banner_e2 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_e2 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_e2 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_e2 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_banner_e3 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_e3 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_e3 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_e3 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_banner_e4 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_e4 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_e4 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_e4 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_banner_f1 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_f1 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_f1 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_f1 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_banner_f2 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_f2 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_f2 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_f2 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_banner_f3 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_f3 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_f3 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_f3 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_banner_f4 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_f4 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_f4 Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_f4 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_banner_tut Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_tut 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
+ itm_lance_banner_tut Wooden_Great_Lance Wooden_Great_Lance 1  lance_banner_tut 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 294 0
  0
 0
 
- itm_lance_white Wooden_Great_Lance Wooden_Great_Lance 1  lance_white 0  2286223364 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 288 0
+ itm_lance_white Wooden_Great_Lance Wooden_Great_Lance 1  lance_white 0  2286223364 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 288 0
  0
 0
 
- itm_lance_banner_jeanne Baniere_de_jeanne_d'arc Baniere_de_jeanne_d'arc 1  lance_banner_jeanne 0  2286157828 201326848 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 298 0
+ itm_lance_banner_jeanne Baniere_de_jeanne_d'arc Baniere_de_jeanne_d'arc 1  lance_banner_jeanne 0  2286157828 9250393634820325632 410 8202 6.000000 100 0 0 0 12 0 60 0 266 0 298 0
  0
 0
 
@@ -3991,7 +3991,7 @@ itemsfile version 3
 1
 -51.000000  4 600 1 1152921504606847102 720 2 1 0 721 2 1 107 1969 3 1008806316530991133 1 15 
 
- itm_torch Torche Torche 1  new_torch 0  262151 0 11 0 0.500000 100 0 1 0 0 783 1 0 1 0 0 0
+ itm_torch Torche Torche 1  new_torch 0  262151 0 11 0 0.500000 100 0 1 0 0 9999 1 0 1 0 0 0
  0
 1
 -50.000000  5 1955 3 43 32 -5 1965 1 1008806316530991114 1965 1 1008806316530991117 1950 3 150 130 70 1960 2 20 40 
@@ -4235,7 +4235,7 @@ itemsfile version 3
  0
 0
 
- itm_arrows_speciale fléches_empoisonèes fléches_empoisonèes 3  arrow 0  flying_missile 2305843009213693952  quiver 3458764513820540928  32773 2147483648 372 4398046511112 3.000000 160 0 0 0 0 0 0 0 95 20 286 0
+ itm_arrows_speciale fl?hes_empoison?s fl?hes_empoison?s 3  arrow 0  flying_missile 2305843009213693952  quiver 3458764513820540928  32773 2147483648 372 4398046511112 3.000000 160 0 0 0 0 0 0 0 95 20 286 0
  0
 0
 
@@ -4353,11 +4353,11 @@ itemsfile version 3
  0
 0
 
- itm_weapon_lanceier_f1 Grande_Lance_de_Noble_chevalier Grande_Lance_de_Noble_chevalier 1  weapon_lanceier_f1 0  2286223364 201326848 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 291 0
+ itm_weapon_lanceier_f1 Grande_Lance_de_Noble_chevalier Grande_Lance_de_Noble_chevalier 1  weapon_lanceier_f1 0  2286223364 9250393634820325632 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 291 0
  0
 0
 
- itm_weapon_lanceier_f2 Grande_Lance_de_Noble_chevalier Grande_Lance_de_Noble_chevalier 1  weapon_lanceier_f2 0  2286223364 201326848 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 291 0
+ itm_weapon_lanceier_f2 Grande_Lance_de_Noble_chevalier Grande_Lance_de_Noble_chevalier 1  weapon_lanceier_f2 0  2286223364 9250393634820325632 560 8202 6.300000 100 0 0 0 12 0 52 0 251 0 291 0
  0
 0
 
@@ -4462,19 +4462,19 @@ itemsfile version 3
  0
 0
 
- itm_newlance_joutes_training_enemi Lance_de_Joute Lance_de_Joute 1  new_jousting_l 0  1077936132 201326848 83 8202 5.000000 100 0 0 0 0 0 68 0 280 0 487 0
+ itm_newlance_joutes_training_enemi Lance_de_Joute Lance_de_Joute 1  new_jousting_l 0  1077936132 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 68 0 280 0 487 0
  0
 0
 
- itm_newlance_joutes_training_joueur Lance_de_Joute Lance_de_Joute 1  new_jousting_l 0  1077936132 201326848 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 487 0
+ itm_newlance_joutes_training_joueur Lance_de_Joute Lance_de_Joute 1  new_jousting_l 0  1077936132 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 487 0
  0
 0
 
- itm_newlance_joutes_enemi Lance_de_Joute Lance_de_Joute 1  new_l_joutes_rouge 0  1077936132 201326848 83 8202 5.000000 100 0 0 0 0 0 68 0 280 0 487 0
+ itm_newlance_joutes_enemi Lance_de_Joute Lance_de_Joute 1  new_l_joutes_rouge 0  1077936132 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 68 0 280 0 487 0
  0
 0
 
- itm_newlance_joutes_joueur Lance_de_Joute Lance_de_Joute 1  new_l_joutes_bleu 0  1077936132 201326848 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 487 0
+ itm_newlance_joutes_joueur Lance_de_Joute Lance_de_Joute 1  new_l_joutes_bleu 0  1077936132 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 68 0 218 0 487 0
  0
 0
 

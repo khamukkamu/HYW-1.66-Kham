@@ -12,7 +12,7 @@ from header_terrain_types import *
 from header_music import *
 from ID_animations import *
 from module_items import *
-
+from compiler import *
 ####################################################################################################################
 # scripts is a list of script records.
 # Each script record contns the following two fields:

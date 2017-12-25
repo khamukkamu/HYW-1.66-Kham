@@ -1,5 +1,5 @@
 from header_factions import *
-
+from compiler import *
 ####################################################################################################################
 #  Each faction record contains the following fields:
 #  1) Faction id: used for referencing factions in other files.

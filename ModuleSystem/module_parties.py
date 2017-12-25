@@ -5,6 +5,7 @@ from ID_troops import *
 from ID_factions import *
 from ID_party_templates import *
 from ID_map_icons import *
+from compiler import *
 
 ####################################################################################################################
 #  Each party record contains the following fields:
