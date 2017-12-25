@@ -6,7 +6,7 @@
 # Several possible variants for export_dir variable:
 
 # Warband being installed to C:/Games
-export_dir = "C:/Users/prdeleon/Downloads/Modding/HYW Module System/"
+export_dir = "C:/Users/prdeleon/Downloads/Modding/HYW Git Master/Compiled/"
 
 # Warband being installed to default path on Windows XP or Vista
 #export_dir = "C:/Programs Files/Mount&Blade Warband/Modules/Native/"

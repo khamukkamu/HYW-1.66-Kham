@@ -159,7 +159,7 @@ def load_variables(export_dir,variable_uses):
       if vv:
         variables.append(vv)
   except:
-    print "variables.txt not found. Creating new variables.txt file"
+    print "variables.txt not found on compiled folder. Creating new variables.txt file"
 
   try:
     file = open(export_dir + "variable_uses.txt","r")

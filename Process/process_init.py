@@ -40,4 +40,4 @@ try:
       variable_uses.append(int(1))
   save_variables(export_dir, variables, variable_uses)
 except:
-  print "variables.txt not found. Creating new variables.txt file"
+  print "variables.txt not found on source folder. Bad for save comp. Creating new variables.txt file"

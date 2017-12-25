@@ -979,6 +979,10 @@ scripts = [
   #kham additions
 
   (assign, "$first_time", 0), #squelch compiler warnings
+  (assign, "$g_tournament_last_bet_tier", -1), #squelch compiler warnings
+  (assign, "$g_tournament_cur_tier", 0), #squelch compiler warnings
+  (assign, "$g_dplmc_battle_continuation", 0), #squelch compiler warnings
+  (assign, "$g_tournament_num_participants_for_fight", 0), #squelch compiler warnings
 
   
    ]),
