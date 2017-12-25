@@ -1,0 +1,9 @@
+To revert back to HYW Animations (papa lazarou's)
+
+= add skeleton.brf to the resources folder
+
+= replace the file "module"  with the one in this folder
+
+= replace the actions.txt with the one in this folder
+
+= Make sure to have backups
