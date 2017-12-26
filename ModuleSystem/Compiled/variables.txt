@@ -1441,3 +1441,6 @@ formai_ai_no_defense
 formai_player_in_division
 formai_autorotate
 g_there_is_no_avaliable_centers
+number_of_controversial_policy_decisions
+g_advantegous_faction
+g_give_advantage_to_original_faction

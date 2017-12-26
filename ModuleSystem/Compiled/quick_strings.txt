@@ -1,4 +1,4 @@
-895
+903
 qstr_Next_Page Next_Page
 qstr_Game_Rules:^ Game_Rules:^
 qstr_0 0
@@ -894,3 +894,11 @@ qstr_{!}DEBUG____Total_pro {!}DEBUG_--_Total_production_for_{s4}:_{reg4}
 qstr_{!}DEBUG____Total_ru {!}DEBUG_--_Total_rural_production_for_{s4}_region:_{reg4}
 qstr_{!}DEBUG____Total_tr {!}DEBUG_--_Total_trade_for_{s4}:_{reg4}
 qstr_{!}DEBUG____Total_at {!}DEBUG_--_Total_attacks_for_{s4}:_{reg4}
+qstr_{!}DEBUG___{s4}_fact {!}DEBUG_-_{s4}_faction_changed_in_normal_faction_change
+qstr_{!}DEBUG___{s4}_facti {!}DEBUG_-_{s4}_faction_changed_by_guardian_moving
+qstr_{!}DEBUG_:_{s1}_is_t {!}DEBUG_:_{s1}_is_trading_with_villagers
+qstr_{!}DEBUG____Trade_of_ {!}DEBUG_--_Trade_of_{s5}_from_{s3}_to_{s4}_brings_price_from_{reg4}_to_{reg5}
+qstr_{!}DEBUG___{s4}_factio {!}DEBUG_-_{s4}_faction_changed_by_marriage,_case_1
+qstr_{!}DEBUG___{s4}_faction {!}DEBUG_-_{s4}_faction_changed_by_marriage,_case_3
+qstr_{!}DEBUG___{s4}_faction_ {!}DEBUG_-_{s4}_faction_changed_by_marriage,_case_2
+qstr_{!}DEBUG____Total_pol {!}DEBUG_--_Total_policy_dispute_changes:_{reg4}_from_{reg5}_decisions

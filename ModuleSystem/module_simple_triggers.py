@@ -571,37 +571,42 @@ simple_triggers = [
 
      #this is moved up from below , from a 24 x 15 slot to a 24 slot
      (try_for_range, ":center_no", centers_begin, centers_end),
-       (neg|is_between, ":center_no", castles_begin, castles_end),
+       #(neg|is_between, ":center_no", castles_begin, castles_end),
+       (store_random_in_range, ":random", 0, 30),
+       (le, ":random", 10),
+	   
        (call_script, "script_get_center_ideal_prosperity", ":center_no"),
        (assign, ":ideal_prosperity", reg0),
-       (party_get_slot, ":prosperity", ":center_no", slot_town_prosperity),
+       (party_get_slot, ":prosperity", ":center_no", slot_town_prosperity),       
        (try_begin),
-         (gt, ":prosperity", ":ideal_prosperity"),
+	     (eq, ":random", 0), #with 3% probability it will gain +10/-10 prosperity even it has higher prosperity than its ideal prosperity.
+         (try_begin),
+           (store_random_in_range, ":random", 0, 2),
+           (try_begin),
+             (eq, ":random", 0),
+             (neg|is_between, ":center_no", castles_begin, castles_end), #castles always gain positive prosperity from surprise income to balance their prosperity.
+             (call_script, "script_change_center_prosperity", ":center_no", -10),
+             (val_add, "$newglob_total_prosperity_from_convergence", -10),
+           (else_try),     
+             (call_script, "script_change_center_prosperity", ":center_no", 10),
+             (val_add, "$newglob_total_prosperity_from_convergence", 10),
+           (try_end),
+         (try_end),
+	   (else_try),
+         (gt, ":prosperity", ":ideal_prosperity"),		 
          (call_script, "script_change_center_prosperity", ":center_no", -1),
          (val_add, "$newglob_total_prosperity_from_convergence", -1),
        (else_try),
-         (lt, ":prosperity", ":ideal_prosperity"),
+         (lt, ":prosperity", ":ideal_prosperity"),		 
          (call_script, "script_change_center_prosperity", ":center_no", 1),
          (val_add, "$newglob_total_prosperity_from_convergence", 1),
-       (try_end),
+	   (try_end),
      (try_end),	   	   	   
     ]),
 
   #Converging center prosperity to ideal prosperity once in every 15 days
   (24*15,
-   [#(try_for_range, ":center_no", centers_begin, centers_end),
-    #  (call_script, "script_get_center_ideal_prosperity", ":center_no"),
-    #  (assign, ":ideal_prosperity", reg0),
-    #  (party_get_slot, ":prosperity", ":center_no", slot_town_prosperity),
-    #  (try_begin),
-    #    (gt, ":prosperity", ":ideal_prosperity"),
-    #    (call_script, "script_change_center_prosperity", ":center_no", -1),
-    #  (else_try),
-    #    (lt, ":prosperity", ":ideal_prosperity"),
-    #    (call_script, "script_change_center_prosperity", ":center_no", 1),
-    #  (try_end),
-    #(try_end),
-    ]),
+   []),
 
   #Checking if the troops are resting at a half payment point
   (6,
@@ -936,6 +941,10 @@ simple_triggers = [
     [	  
 	(call_script, "script_cf_random_political_event"),
 	
+	#Added Nov 2010 begins - do this twice
+	(call_script, "script_cf_random_political_event"),
+	#Added Nov 2010 ends
+	
 	#This generates quarrels and occasional reconciliations and interventions	
 	]),
 	
@@ -947,17 +956,17 @@ simple_triggers = [
         (try_begin),
           (neg|is_between, "$g_lord_long_term_count", "trp_kingdom_heroes_including_player_begin", active_npcs_end),
           (assign, "$g_lord_long_term_count", "trp_kingdom_heroes_including_player_begin"),
-		(try_end),
+        (try_end),
 
         (assign, ":troop_no", "$g_lord_long_term_count"),
 	
         (try_begin),
           (eq, ":troop_no", "trp_kingdom_heroes_including_player_begin"),	
           (assign, ":troop_no", "trp_player"),
-		(try_end),
-		
-	    (try_begin),
-	      (eq, "$cheat_mode", 2),
+        (try_end),
+
+        (try_begin),
+          (eq, "$cheat_mode", 1),
           (str_store_troop_name, s9, ":troop_no"),
           (display_message, "@{!}DEBUG -- Doing political calculations for {s9}"),
         (try_end),
@@ -980,7 +989,7 @@ simple_triggers = [
             (faction_get_slot, ":faction_leader", ":original_faction", slot_faction_leader),
             (troop_get_slot, ":troop_reputation", ":troop_no", slot_lord_reputation_type),
 			
-			(try_begin),
+            (try_begin),
               (neq, ":faction_leader", ":troop_no"),
               (try_begin),
                 (this_or_next|eq, ":troop_reputation", lrep_quarrelsome),
@@ -988,11 +997,11 @@ simple_triggers = [
                 (this_or_next|eq, ":troop_reputation", lrep_cunning),
                 (eq, ":troop_reputation", lrep_debauched),
                 (call_script, "script_troop_change_relation_with_troop", ":troop_no", ":faction_leader", -4),
-				(val_add, "$total_no_fief_changes", -4),
+                (val_add, "$total_no_fief_changes", -4),
               (else_try),
                 (eq, ":troop_reputation", lrep_martial),
                 (call_script, "script_troop_change_relation_with_troop", ":troop_no", ":faction_leader", -2),
-				(val_add, "$total_no_fief_changes", -2),
+                (val_add, "$total_no_fief_changes", -2),
               (try_end),
             (try_end),
           (try_end),
@@ -1165,21 +1174,16 @@ simple_triggers = [
 			(troop_set_slot, ":troop_no", slot_troop_stance_on_faction_issue, reg0),
         (try_end),
 
-		(try_for_range, ":active_npc", active_npcs_begin, active_npcs_end),
-			(call_script, "script_troop_get_relation_with_troop", ":troop_no", ":active_npc"),
-			(lt, reg0, 0),
-			(assign, ":relation", reg0),
-			(store_sub, ":chance_of_convergence", 0, ":relation"),
-			(store_random_in_range, ":random", 0, 200),
-			(lt, ":random", ":chance_of_convergence"),
-			(call_script, "script_troop_change_relation_with_troop", ":troop_no", ":active_npc", 1),
-			(assign, "$total_relation_changes_through_convergence", 1),
-		(try_end),
-
-		(try_begin),
-		 (troop_set_slot, "trp_knight_1_5", slot_troop_controversy, 0),
-		(try_end), 
-        
+        (try_for_range, ":active_npc", active_npcs_begin, active_npcs_end),
+          (call_script, "script_troop_get_relation_with_troop", ":troop_no", ":active_npc"),
+          (lt, reg0, 0),
+          (assign, ":relation", reg0),
+          (store_sub, ":chance_of_convergence", 0, ":relation"),
+          (store_random_in_range, ":random", 0, 300),
+          (lt, ":random", ":chance_of_convergence"),
+          (call_script, "script_troop_change_relation_with_troop", ":troop_no", ":active_npc", 1),
+          (val_add, "$total_relation_changes_through_convergence", 1),
+        (try_end),				
         ]),
 	
 #TEMPORARILY DISABLED, AS READINESS IS NOW A PRODUCT OF NPC_DECISION_CHECKLIST	
@@ -1453,84 +1457,77 @@ simple_triggers = [
 
   # Refresh number of cattle in villages
   (24 * 7,
-   [(try_for_range, ":village_no", centers_begin, centers_end),
-	  (neg|is_between, ":village_no", castles_begin, castles_end),
-      (party_get_slot, ":num_cattle", ":village_no", slot_center_head_cattle),
-      (party_get_slot, ":num_sheep", ":village_no", slot_center_head_sheep),
-      (party_get_slot, ":num_acres", ":village_no", slot_center_acres_pasture),
-	  (val_max, ":num_acres", 1),
-	  
-	  (store_mul, ":grazing_capacity", ":num_cattle", 400),
-	  (store_mul, ":sheep_addition", ":num_sheep", 200),
-	  (val_add, ":grazing_capacity", ":sheep_addition"),
-	  (val_div, ":grazing_capacity", ":num_acres"),
-	  (try_begin),
-		(eq, "$cheat_mode", 1),
-	    (assign, reg4, ":grazing_capacity"),
-		(str_store_party_name, s4, ":village_no"),
-	    #(display_message, "@{!}DEBUG -- Herd adjustment: {s4} at {reg4}% of grazing capacity"),
-	  (try_end),
-	  
-	  
-      (store_random_in_range, ":random_no", 0, 100),
-      (try_begin), #Disaster
-        (eq, ":random_no", 0),#1% chance of epidemic - should happen once every two years
-        #(assign, ":num_cattle", 0), #formerly
-        (val_min, ":num_cattle", 10),
+   [
+     (try_for_range, ":village_no", centers_begin, centers_end),
+	   (neg|is_between, ":village_no", castles_begin, castles_end),
+	   (party_get_slot, ":num_cattle", ":village_no", slot_center_head_cattle),
+	   (party_get_slot, ":num_sheep", ":village_no", slot_center_head_sheep),
+	   (party_get_slot, ":num_acres", ":village_no", slot_center_acres_pasture),
+	   (val_max, ":num_acres", 1),
+	   
+	   (store_mul, ":grazing_capacity", ":num_cattle", 400),
+	   (store_mul, ":sheep_addition", ":num_sheep", 200),
+	   (val_add, ":grazing_capacity", ":sheep_addition"),
+	   (val_div, ":grazing_capacity", ":num_acres"),
+	   
+	   (store_random_in_range, ":random_no", 0, 100),
+	   (try_begin), #Disaster
+	     (eq, ":random_no", 0),#1% chance of epidemic - should happen once every two years
+		 (val_min, ":num_cattle", 10),
+		 
+       (else_try), #Overgrazing
+         (gt, ":grazing_capacity", 100),
 		
-        (try_begin),
-#          (eq, "$cheat_mode", 1),
-#          (str_store_party_name, s1, ":village_no"),
-#          (display_message, "@{!}Cattle in {s1} are exterminated due to famine."),
-        (try_end),
+         (val_mul, ":num_sheep", 90), #10% decrease at number of cattles
+         (val_div, ":num_sheep", 100),
 		
-      (else_try), #Overgrazing
-	    (gt, ":grazing_capacity", 100),
-		
-		(val_mul, ":num_sheep", 9),
-		(val_div, ":num_sheep", 10),
-		(val_mul, ":num_cattle", 9),
-		(val_div, ":num_cattle", 10),
-     (else_try), #Population boom
-	    (lt, ":grazing_capacity", 50),
+         (val_mul, ":num_cattle", 90), #10% decrease at number of sheeps
+         (val_div, ":num_cattle", 100),
+		 
+       (else_try), #superb grazing
+         (lt, ":grazing_capacity", 30),
 
-        (val_mul, ":num_cattle", 6),
-        (val_div, ":num_cattle", 5),
-		(val_add, ":num_cattle", 1),
+         (val_mul, ":num_cattle", 120), #20% increase at number of cattles
+         (val_div, ":num_cattle", 100),
+         (val_add, ":num_cattle", 1),
 		
-        (val_mul, ":num_sheep", 6),
-        (val_div, ":num_sheep", 5),
-		(val_add, ":num_sheep", 1),
+         (val_mul, ":num_sheep", 120), #20% increase at number of sheeps
+         (val_div, ":num_sheep", 100),
+         (val_add, ":num_sheep", 1),
 		
-     (else_try), #good grazing
-	    (lt, ":grazing_capacity", 100),
-        (lt, ":random_no", 50),#double growth
+       (else_try), #very good grazing
+         (lt, ":grazing_capacity", 60),
 
-        (val_mul, ":num_cattle", 21),
-        (val_div, ":num_cattle", 20),
-		(try_begin),
-			(lt, ":num_cattle", 21),
-			(val_add, ":num_cattle", 1),
-		(try_end),
+         (val_mul, ":num_cattle", 110), #10% increase at number of cattles
+         (val_div, ":num_cattle", 100),
+         (val_add, ":num_cattle", 1),
 		
-        (val_mul, ":num_sheep", 21),
-        (val_div, ":num_sheep", 20),
-		(try_begin),
-			(lt, ":num_sheep", 21),
-			(val_add, ":num_sheep", 1),
-		(try_end),
+         (val_mul, ":num_sheep", 110), #10% increase at number of sheeps
+         (val_div, ":num_sheep", 100),
+         (val_add, ":num_sheep", 1),
 
+       (else_try), #good grazing
+         (lt, ":grazing_capacity", 100),
+         (lt, ":random_no", 50),
+
+         (val_mul, ":num_cattle", 105), #5% increase at number of cattles
+         (val_div, ":num_cattle", 100),
+         (try_begin), #if very low number of cattles and there is good grazing then increase number of cattles also by one
+           (le, ":num_cattle", 20),
+           (val_add, ":num_cattle", 1),
+         (try_end),
 		
+         (val_mul, ":num_sheep", 105), #5% increase at number of sheeps
+         (val_div, ":num_sheep", 100),
+         (try_begin), #if very low number of sheeps and there is good grazing then increase number of sheeps also by one
+           (le, ":num_sheep", 20),
+           (val_add, ":num_sheep", 1),
+         (try_end),		
+       (try_end),
+
+       (party_set_slot, ":village_no", slot_center_head_cattle, ":num_cattle"),
+       (party_set_slot, ":village_no", slot_center_head_sheep, ":num_sheep"),	  	  	  
      (try_end),
-
-     (party_set_slot, ":village_no", slot_center_head_cattle, ":num_cattle"),
-     (party_set_slot, ":village_no", slot_center_head_sheep, ":num_sheep"),
-	  	  	  
-#Reassigning the cattle production in the village   
-#      (store_sub, ":production", ":num_cattle", 10),
-#      (val_div, ":production", 2),
-#      (call_script, "script_center_change_trade_good_production", ":village_no", "itm_cattle_meat", ":production", 0),
-    (try_end),
     ]),
 
    #Accumulate taxes
@@ -1890,6 +1887,9 @@ simple_triggers = [
    [
        (try_for_range, ":troop_no", active_npcs_begin, active_npcs_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+
+         (str_store_troop_name, s1, ":troop_no"),
+       
          (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
          (neg|troop_slot_ge, ":troop_no", slot_troop_leaded_party, 1),
 
@@ -1907,14 +1907,18 @@ simple_triggers = [
            (assign, ":center_no", reg0),
 
            (try_begin),
-             (eq, "$cheat_mode", 2),
-             (assign, reg7, ":center_no"),
+             (eq, "$cheat_mode", 2),             
              (str_store_party_name, s7, ":center_no"),
+			 (str_store_troop_name, s0, ":troop_no"),
              (display_message, "str_debug__s0_is_spawning_around_party__s7"),
            (try_end),
        
            (call_script, "script_create_kingdom_hero_party", ":troop_no", ":center_no"),
-           (party_attach_to_party, "$pout_party", ":center_no"),
+
+		   (try_begin),
+		     (eq, "$g_there_is_no_avaliable_centers", 0),
+             (party_attach_to_party, "$pout_party", ":center_no"),
+           (try_end),
            
            #new
            #(troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
@@ -2143,7 +2147,7 @@ simple_triggers = [
              #Adding 1 to village prosperity
              (try_begin),
                (store_random_in_range, ":rand", 0, 100),
-               (lt, ":rand", 35),
+               (lt, ":rand", 5), #was 35
                (call_script, "script_change_center_prosperity", ":home_center", 1),
 			   (val_add, "$newglob_total_prosperity_from_village_trade", 1),
              (try_end),
@@ -3258,7 +3262,7 @@ simple_triggers = [
        (lt, ":dist", 15),
        (assign, "$g_player_follow_army_warnings", 0),
        (store_current_hours, ":cur_hours"),
-       (faction_get_slot, ":last_offensive_time", "$players_kingdom", slot_faction_ai_last_offensive_time),
+       (faction_get_slot, ":last_offensive_time", "$players_kingdom", slot_faction_last_offensive_concluded),
        (store_sub, ":passed_time", ":cur_hours", ":last_offensive_time"),
 
        (assign, ":result", -1),
@@ -3837,7 +3841,7 @@ simple_triggers = [
 
        (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
        (assign, ":num_deserters_total", 0),
-       (try_for_range, ":i_stack", 0, ":num_stacks"),
+       (try_for_range_backwards, ":i_stack", 0, ":num_stacks"),
          (party_stack_get_troop_id, ":stack_troop", "p_main_party", ":i_stack"),
          (neg|troop_is_hero, ":stack_troop"),
          (party_stack_get_size, ":stack_size", "p_main_party", ":i_stack"),
@@ -4030,6 +4034,24 @@ simple_triggers = [
    (party_set_slot, "p_village_5", slot_center_fishing_fleet, 15), #Kulum
    
    
+   #The following scripts are to end quests which should have cancelled, but did not because of a bug
+   (try_begin),
+	(check_quest_active, "qst_formal_marriage_proposal"),
+	(check_quest_failed, "qst_formal_marriage_proposal"),
+    (call_script, "script_end_quest", "qst_formal_marriage_proposal"),
+   (try_end),
+   
+   (try_begin),
+	(check_quest_active, "qst_lend_companion"),
+	(quest_get_slot, ":giver_troop", "qst_lend_companion", slot_quest_giver_troop),
+	(store_faction_of_troop, ":giver_troop_faction", ":giver_troop"),
+    (store_relation, ":faction_relation", ":giver_troop_faction", "$players_kingdom"),
+    (this_or_next|lt, ":faction_relation", 0),
+    (neg|is_between, ":giver_troop_faction", kingdoms_begin, kingdoms_end),
+    (call_script, "script_abort_quest", "qst_lend_companion", 0),
+   (try_end),
+
+
    
    (try_begin),
 	(is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
@@ -4081,7 +4103,38 @@ simple_triggers = [
   #   (party_upgrade_with_xp, ":training_camp_no", ":xp_gain", 0),
  #   (try_end),
        ]),
-  
+  (24,
+   [
+	  # Setting food bonuses in every 6 hours again and again because of a bug (we could not find its reason) which decreases especially slot_item_food_bonus slots of items to 0.
+	  #Staples
+      (item_set_slot, "itm_bread", slot_item_food_bonus, 8), #brought up from 4
+      (item_set_slot, "itm_grain", slot_item_food_bonus, 2), #new - can be boiled as porridge
+	  
+	  #Fat sources - preserved
+      (item_set_slot, "itm_smoked_fish", slot_item_food_bonus, 4),
+      (item_set_slot, "itm_dried_meat", slot_item_food_bonus, 5),
+      (item_set_slot, "itm_cheese", slot_item_food_bonus, 5),
+      (item_set_slot, "itm_sausages", slot_item_food_bonus, 5),
+      (item_set_slot, "itm_butter", slot_item_food_bonus, 4), #brought down from 8
+
+	  #Fat sources - perishable
+      (item_set_slot, "itm_chicken", slot_item_food_bonus, 8), #brought up from 7
+      (item_set_slot, "itm_cattle_meat", slot_item_food_bonus, 7), #brought down from 7
+      (item_set_slot, "itm_pork", slot_item_food_bonus, 6), #brought down from 6
+	  
+	  #Produce
+      (item_set_slot, "itm_raw_olives", slot_item_food_bonus, 1),
+      (item_set_slot, "itm_cabbages", slot_item_food_bonus, 2),
+      (item_set_slot, "itm_raw_grapes", slot_item_food_bonus, 3),
+      (item_set_slot, "itm_apples", slot_item_food_bonus, 4), #brought down from 5
+
+	  #Sweet items
+      (item_set_slot, "itm_raw_date_fruit", slot_item_food_bonus, 4), #brought down from 8
+      (item_set_slot, "itm_honey", slot_item_food_bonus, 6), #brought down from 12
+      
+      (item_set_slot, "itm_wine", slot_item_food_bonus, 5),
+      (item_set_slot, "itm_ale", slot_item_food_bonus, 4),
+   ]),
   (24,
    [
     (try_for_range, ":cur_center", castles_begin, castles_end),
@@ -4140,18 +4193,64 @@ simple_triggers = [
     (try_end), 
     ]),
 
-  (24,
-   []),  
-  (24,
-   []),
-  (24,
-   []),
-  (24,
-   []),
-  (24,
-   []),
-  (24,
-   []),
-  (24,
-   []),
+#trigger reserved for future save game compatibility
+(999,[]),
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+
 ]
