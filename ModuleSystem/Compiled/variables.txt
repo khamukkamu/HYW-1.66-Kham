@@ -1444,3 +1444,8 @@ g_there_is_no_avaliable_centers
 number_of_controversial_policy_decisions
 g_advantegous_faction
 g_give_advantage_to_original_faction
+freelancer_state
+enlisted_lord
+player_cur_troop
+enlisted_party
+g_next_pay_time

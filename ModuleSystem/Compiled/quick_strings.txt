@@ -1,4 +1,4 @@
-903
+935
 qstr_Next_Page Next_Page
 qstr_Game_Rules:^ Game_Rules:^
 qstr_0 0
@@ -902,3 +902,35 @@ qstr_{!}DEBUG___{s4}_factio {!}DEBUG_-_{s4}_faction_changed_by_marriage,_case_1
 qstr_{!}DEBUG___{s4}_faction {!}DEBUG_-_{s4}_faction_changed_by_marriage,_case_3
 qstr_{!}DEBUG___{s4}_faction_ {!}DEBUG_-_{s4}_faction_changed_by_marriage,_case_2
 qstr_{!}DEBUG____Total_pol {!}DEBUG_--_Total_policy_dispute_changes:_{reg4}_from_{reg5}_decisions
+qstr_You_have_been_enlist You_have_been_enlisted!
+qstr_Current_rank:_{s5} Current_rank:_{s5}
+qstr_You_have_left_your_c You_have_left_your_commander!
+qstr_You_have_been_grante You_have_been_granted_leave!
+qstr_You_have_rejoined_yo You_have_rejoined_your_commander!
+qstr_{s3}_{s2} {s3},_{s2}
+qstr_The_equipment_of_a_{ The_equipment_of_a_{s1}:_{s2}is_assigned_to_you.
+qstr_The_equipment_of_a_{s The_equipment_of_a_{s1}:_{s2}is_taken_from_you.
+qstr_CURRENT_COMMANDER_S_ CURRENT_COMMANDER'S_REPORT!
+qstr_Your_Commander:_{s19 Your_Commander:_{s19}
+qstr_Commander_Relation:_ Commander_Relation:_{reg0}
+qstr_Enlisted_Faction:_{s Enlisted_Faction:_{s20}
+qstr_Current_Rank:_{s21} Current_Rank:_{s21}
+qstr_Experience_to_next_p Experience_to_next_promotion:_{s1}
+qstr_Days_in_service:_{re Days_in_service:_{reg20}
+qstr_Current_Wage:_{reg23 Current_Wage:_{reg23}_denars.
+qstr_Next_Pay/Promotion_d Next_Pay/Promotion_day:_{s25}
+qstr_Army_size:_{reg26} Army_size:_{reg26}
+qstr_Commander_s_Army Commander's_Army
+qstr_Done Done
+qstr_You_have_deserted_a You_have_deserted,_and_are_now_wanted!
+qstr_You_are_not_strong_e You_are_not_strong_enough_to_lift_a_weapon_fit_for_your_promotion!
+qstr_You_are_not_strong_en You_are_not_strong_enough_to_hold_all_that_weight_required_with_promotion!.
+qstr_Your_arms_are_to_wea Your_arms_are_to_weak_to_advance_in_the_artillary_at_this_moment.
+qstr_You_require_more_hor You_require_more_horse_riding_skills_to_fit_your_next_poisition!
+qstr_The_released_prisone The_released_prisoners_were_not_be_trusted_and_they_are_preparing_to_attack_you!
+qstr_Warning! Warning!
+qstr_The_released_prisoner The_released_prisoners_scattered_as_soon_as_the_battle_finished._You_will_not_be_seeing_them_again.
+qstr_Notice! Notice!
+qstr_The_released_prisoners The_released_prisoners_have_remained_loyal_and_will_join_your_party
+qstr_You_have_{reg0}_days_ You_have_{reg0}_days_left_till_you_are_declared_as_a_deserter!
+qstr_You_have_now_been_de You_have_now_been_declared_as_a_deserter!

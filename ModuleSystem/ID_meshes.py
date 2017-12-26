@@ -578,3 +578,6 @@ mesh_flag_horsemen = 576
 mesh_flag_d7 = 577
 mesh_flag_d8 = 578
 mesh_flag_d9 = 579
+mesh_pic_soldier_world_map = 580
+mesh_pic_soldier_rebel = 581
+mesh_pic_soldier_desert = 582

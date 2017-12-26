@@ -26514,6 +26514,7 @@ dialogs = [
 							 (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_leader, "trp_player"),
 							 (neg|troop_slot_eq, "trp_player", slot_troop_spouse, "$g_talk_troop"),
 							 #                             (eq,"$g_talk_troop_faction","$players_kingdom")
+               (eq,  "$freelancer_state", 0), #Freelancer
                              ],
    "Do you have any tasks for me?", "lord_request_mission_ask",[]],
 
@@ -26610,6 +26611,7 @@ dialogs = [
                              (neq, "$players_kingdom", "$g_talk_troop_faction"),
                              (store_partner_quest, ":lords_quest"),
                              (neq, ":lords_quest", "qst_join_faction"),
+                             (eq,  "$freelancer_state", 0), #Freelancer
                             ],
    "{s66}, I have come to offer you my sword in vassalage!", "lord_ask_enter_service",[]],###
 
@@ -26620,6 +26622,7 @@ dialogs = [
                              (eq, "$player_has_homage", 0),
                              (store_partner_quest, ":lords_quest"),
                              (neq, ":lords_quest", "qst_join_faction"),
+                             (eq,  "$freelancer_state", 0), #Freelancer
                             ],
    "{s66}, I wish to become your sworn {man/woman} and fight for your honour.", "lord_ask_enter_service",[]],
 
@@ -31765,6 +31768,135 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"enemy_lord_tell_mission", [(str_store_quest_name, s7, "$random_quest_no")],
    "{!}ERROR: MATCHED WITH QUEST: {s7}.", "close_window",
    []],
+
+#### Freelancer - Kham Implementation ####
+
+# dialog_accept_enlistment
+
+    [anyone,"lord_request_enlistment",
+    [
+        (ge, "$g_talk_troop_relation", 0),
+    (try_begin),
+      (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_freelancer_troop, 0),
+      (faction_get_slot, reg1, "$g_talk_troop_faction", slot_faction_freelancer_troop),
+    (else_try),
+      (faction_get_slot, reg1, "$g_talk_troop_faction", slot_faction_tier_1_troop),
+    (try_end),
+    (str_store_troop_name, s1, reg1),
+    (store_character_level, reg1, reg1),
+    (val_mul, reg1, 10),    
+    (str_store_string, s2, "str_reg1_denars"),
+    ], "I've got room in my ranks for a {man/woman} of your disposition, {playername}.  I can take you on as a {s1}, with a weekly pay of {s2}. And food, of course.  Plenty of room for promotion and you'll be equipped as befits your rank. You'll have your take of what you can scavange in battle, too.  What do you say?", "lord_request_enlistment_confirm", []],
+    
+    [anyone|plyr,"lord_request_enlistment_confirm", [],
+    "Seems a fair lot and steady work in these lands. I'm with you, my lord.", "close_window",
+  [
+      (party_clear, "p_freelancer_party_backup"),
+        (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
+    (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
+        (call_script, "script_event_player_enlists"),
+    (assign, "$g_infinite_camping", 1),
+        (rest_for_hours_interactive, 24 * 365, 5, 1),
+    (eq,"$talk_context",tc_party_encounter),
+    (assign, "$g_leave_encounter", 1),
+  ]],
+
+  [anyone|plyr,"lord_request_enlistment_confirm",[],
+    "Well, on second thought my lord, I might try my luck alone a bit longer. My thanks.", "lord_pretalk",[]],
+  
+# dialog_reject_enlistment
+
+    [anyone,"lord_request_enlistment", [(lt, "$g_talk_troop_relation", 0)],
+    "I do not trust you enough to allow you to serve for me.", "lord_pretalk",[]],
+
+   
+
+# dialog_lord_accept_retire 
+
+    [anyone,"lord_request_retire",
+    [   
+    ],
+    "Very well {playername}. You are relieved of duty.", "lord_pretalk",[
+  (call_script, "script_event_player_discharge"),
+  (call_script, "script_party_restore"),
+  (change_screen_map),
+  ],
+  ],  
+  
+#dialog_accept_leave  
+    [anyone,"lord_request_vacation",
+        [
+        (ge, "$g_talk_troop_relation", 0),
+    ],
+            "Very well {playername}. You shall take some time off from millitary duty. Return in two weeks.", "lord_pretalk",[
+    (call_script, "script_event_player_vacation"),
+        (call_script, "script_party_restore"),
+    (change_screen_map),
+    ],
+    ],
+          
+
+        
+  
+#dialog_accept_ask_return_from_leave
+        [anyone,"ask_return_from_leave",
+        [
+        (ge, "$g_talk_troop_relation", 0),
+    ],
+        "Welcome back {playername}. Your regiment has missed you I daresay, Now return to your post.", "lord_pretalk",[
+        (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
+    (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
+        (call_script, "script_event_player_returns_vacation"),
+    (change_screen_map),
+    ],
+    ],  
+#+freelancer end
+
+
+# dialog_ask_enlistment
+
+    [anyone|plyr,"lord_talk", [
+        (eq, "$freelancer_state", 0),
+    (ge, "$g_talk_troop_faction_relation", 0),
+        #(neq, "$players_kingdom", "$g_talk_troop_faction"),
+        (eq, "$players_kingdom", 0),
+        ],
+    "My Lord, I would like to like to enlist in your army.", "lord_request_enlistment",[]],
+  
+  # dialog_advise_retirement
+
+    [anyone|plyr,"lord_talk", [
+        (eq, "$g_talk_troop", "$enlisted_lord"),
+    (neq, "$freelancer_state", 0),
+        (ge, "$g_talk_troop_faction_relation", 0),
+        (neq, "$players_kingdom", "$g_talk_troop_faction"),
+        (eq, "$players_kingdom", 0),
+        ],
+    "My Lord, I would like to like to retire from service.", "lord_request_retire",[]],
+  
+  #dialog_ask_leave
+    [anyone|plyr,"lord_talk",[
+    (eq, "$g_talk_troop", "$enlisted_lord"),
+    (eq, "$freelancer_state", 1),
+        (ge, "$g_talk_troop_faction_relation", 0),
+        (neq, "$players_kingdom", "$g_talk_troop_faction"),
+        (eq, "$players_kingdom", 0),
+        ],
+        "My Lord, I would like to request some personal leave", "lord_request_vacation",[]],  
+    
+  #dialog_ask_return_from_leave
+    [anyone|plyr,"lord_talk",[
+    (eq, "$g_talk_troop", "$enlisted_lord"),
+    (eq, "$freelancer_state", 2),
+        (ge, "$g_talk_troop_faction_relation", 0),
+        (neq, "$players_kingdom", "$g_talk_troop_faction"),
+        (eq, "$players_kingdom", 0),
+        ],
+        "My Lord, I am ready to return to your command.", "ask_return_from_leave",[]],  
+
+
+#### Freelancer - Kham Implementation END ####
+
 
   [anyone,"lord_leave_prison", [],
    "We'll meet again.", "close_window",[]],

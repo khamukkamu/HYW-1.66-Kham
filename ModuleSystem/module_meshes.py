@@ -639,4 +639,12 @@ meshes = [
   ("flag_d7", 0, "flag_infantry", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("flag_d8", 0, "flag_archers", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("flag_d9", 0, "flag_cavalry", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+#+freelancer begin
+  ("pic_soldier_world_map", 0, "pic_soldier_world_map", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("pic_soldier_rebel", 0, "pic_soldier_rebel", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("pic_soldier_desert", 0, "pic_soldier_desert", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+#+freelancer end
+
+
 ]

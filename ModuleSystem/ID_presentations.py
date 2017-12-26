@@ -45,3 +45,4 @@ prsnt_multiplayer_duel_start_counter = 43
 prsnt_order_display = 44
 prsnt_formation_mod_option = 45
 prsnt_battle = 46
+prsnt_taragoth_lords_report = 47

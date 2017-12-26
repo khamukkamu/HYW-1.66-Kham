@@ -5042,6 +5042,20 @@ mission_templates = [
       common_battle_check_victory_condition,
       common_battle_victory_display,
 
+      (ti_on_agent_spawn, 0, 0, [(eq, "$freelancer_state", 1)],
+        [
+          (get_player_agent_no, ":player"),
+          (ge, ":player", 0),
+          (agent_is_active, ":player"),
+          (store_trigger_param_1, ":agent_no"),
+          (eq, ":player", ":agent_no"),
+          (agent_get_team, ":player_team", ":player"),
+          (team_set_order_listener, ":player_team", -1),
+          (val_add, ":player_team", 2),
+          (agent_set_team, ":player", ":player_team"),
+        ]),
+        
+      common_battle_mission_start, #+Freelancer addition of native field battle trigger to sieges
 
       (1, 4,
       ##diplomacy begin
@@ -5140,6 +5154,20 @@ mission_templates = [
       common_battle_check_victory_condition,
       common_battle_victory_display,
 
+      (ti_on_agent_spawn, 0, 0, [(eq, "$freelancer_state", 1)],
+        [
+          (get_player_agent_no, ":player"),
+          (ge, ":player", 0),
+          (agent_is_active, ":player"),
+          (store_trigger_param_1, ":agent_no"),
+          (eq, ":player", ":agent_no"),
+          (agent_get_team, ":player_team", ":player"),
+          (team_set_order_listener, ":player_team", -1),
+          (val_add, ":player_team", 2),
+          (agent_set_team, ":player", ":player_team"),
+        ]),
+        
+      common_battle_mission_start, #+Freelancer addition of native field battle trigger to sieges
 
       (1, 4,
       ##diplomacy begin
@@ -5384,6 +5412,21 @@ mission_templates = [
         (try_end),
        ]),
 
+      (ti_on_agent_spawn, 0, 0, [(eq, "$freelancer_state", 1)],
+        [
+          (get_player_agent_no, ":player"),
+          (ge, ":player", 0),
+          (agent_is_active, ":player"),
+          (store_trigger_param_1, ":agent_no"),
+          (eq, ":player", ":agent_no"),
+          (agent_get_team, ":player_team", ":player"),
+          (team_set_order_listener, ":player_team", -1),
+          (val_add, ":player_team", 2),
+          (agent_set_team, ":player", ":player_team"),
+        ]),
+        
+      common_battle_mission_start, #+Freelancer addition of native field battle trigger to sieges
+
       common_siege_ai_trigger_init_after_2_secs,
       common_siege_defender_reinforcement_check,
       common_siege_defender_reinforcement_archer_reposition,
@@ -5470,6 +5513,21 @@ mission_templates = [
           (party_wound_members, "p_total_enemy_casualties", ":dead_agent_troop_id", 1), 
         (try_end),
        ]),
+
+      (ti_on_agent_spawn, 0, 0, [(eq, "$freelancer_state", 1)],
+        [
+          (get_player_agent_no, ":player"),
+          (ge, ":player", 0),
+          (agent_is_active, ":player"),
+          (store_trigger_param_1, ":agent_no"),
+          (eq, ":player", ":agent_no"),
+          (agent_get_team, ":player_team", ":player"),
+          (team_set_order_listener, ":player_team", -1),
+          (val_add, ":player_team", 2),
+          (agent_set_team, ":player", ":player_team"),
+        ]),
+        
+      common_battle_mission_start, #+Freelancer addition of native field battle trigger to sieges
 
 ##      (15, 0, 0,
 ##       [
