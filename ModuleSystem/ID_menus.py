@@ -335,3 +335,6 @@ mnu_revolt = 337
 mnu_ask_desert = 338
 mnu_desert = 339
 mnu_upgrade_path = 340
+mnu_freelancer_training_choose = 341
+mnu_freelancer_training_fight = 342
+mnu_freelancer_training_conclusion = 343

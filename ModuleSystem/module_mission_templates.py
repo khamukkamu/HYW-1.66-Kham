@@ -35620,5 +35620,32 @@ mission_templates = [
       ],
   ),
 
+### Kham Freelancer Improvements Mission Template 
+ (
+    "freelancer_training",mtf_arena_fight|mtf_commit_casualties,-1,
+    "You begin your training.",
+    [    
+    (0, mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+    (16, mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+    ],
+    [
+      common_inventory_not_available,
+      (ti_tab_pressed, 0, 0, [(display_message, "str_cannot_leave_now")], []),
+      (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest"),(assign, "$g_arena_training_kills", 0),]),
 
+      (0, 0, ti_once, [],
+       [
+         (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+         ]),
+
+      (1, 4, ti_once, [
+        (this_or_next|main_hero_fallen),
+        (num_active_teams_le,1)],
+       [
+         (get_player_agent_no, ":player_agent"),
+         (agent_get_kill_count, "$g_arena_training_kills", ":player_agent", 1),
+         (finish_mission),
+       ]),
+    ],
+  ),  
 ]

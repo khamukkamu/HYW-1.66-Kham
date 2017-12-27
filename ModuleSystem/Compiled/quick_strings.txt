@@ -1,4 +1,4 @@
-938
+937
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -611,6 +611,9 @@ qstr_Notice! Notice!
 qstr_The_released_prisoners The_released_prisoners_have_remained_loyal_and_will_join_your_party
 qstr_You_have_{reg0}_days_ You_have_{reg0}_days_left_till_you_are_declared_as_a_deserter!
 qstr_You_have_now_been_de You_have_now_been_declared_as_a_deserter!
+qstr_You_have_{reg0}_days_l You_have_{reg0}_days_left_on_your_vacation.
+qstr_Speed:_{reg22} Speed:_{reg22}
+qstr_You_are_now_enlisted You_are_now_enlisted!_You_will_be_following_the_lord/lady_you_chose_and_will_be_joining_in_battles_they_get_into._You_can_also_get_promoted_as_you_gain_experience._^Lastly,_you_can_increase_the_map_speed_while_enlisted_by_pressing_the_'='_key_(next_to_the_backspace_key).
 qstr_Next_Page Next_Page
 qstr_Game_Rules:^ Game_Rules:^
 qstr_0 0
@@ -661,12 +664,13 @@ qstr_F5___Shield_Wall F5_-_Shield_Wall
 qstr_F6___Wedge F6_-_Wedge
 qstr_F7___Square F7_-_Square
 qstr_F8___No_Formation F8_-_No_Formation
-qstr_Extended_Formations_ Extended_Formations_and_AI_Options
+qstr_1429_Hundred_Years_W 1429_Hundred_Years_War_Mod_Options
 qstr_Disable_mod_formatio Disable_mod_formations:_
 qstr_Put_player_in_divisi Put_player_in_division:_
 qstr_{s1} {s1}
 qstr_Army_rotates_to_face Army_rotates_to_face_enemy_center:_
 qstr_Prevent_AI_from_taki Prevent_AI_from_taking_defensive:_
+qstr_Freelancer:_Prevent_ Freelancer:_Prevent_Desertion_During_Vacation:
 qstr_Orders Orders
 qstr_Attack_Order Attack_Order
 qstr_Retreat Retreat
@@ -930,10 +934,5 @@ qstr_{s3}_est_l_unique_vo {s3}_est_l'unique_volontaire_?vouloir_rejoindre_votre_
 qstr_{reg5}_{s3}_souhaite {reg5}_{s3}_souhaitent_vous_suivre.
 qstr___{reg1}_écus_par_n _({reg1}_écus_par_nuitée.)
 qstr_You_have_deserted_a You_have_deserted,_and_are_now_wanted!
-qstr_Speed:_{reg22} Speed:_{reg22}
-qstr_You_are_now_enlisted You_are_now_enlisted!_You_will_be_following_the_lord/lady_you_chose_and_will_be_joining_in_battles_they_get_into._You_can_also_get_promoted_as_you_gain_experience._^Lastly,_you_can_increase_the_map_speed_while_enlisted_by_pressing_the_'='_key_(next_to_the_backspace_key).
-qstr_You_have_{reg0}_days_l You_have_{reg0}_days_left_on_your_vacation.
-qstr_Freelancer:_Automati Freelancer:_Automatically_Go_Back_to_Lord_After_Vacation_(Prevents_Desertion):_
-qstr_Freelancer:_Automatic Freelancer:_Automatically_Go_Back_to_Lord^_After_Vacation_(Prevents_Desertion):_
-qstr_Freelancer:_Prevent_ Freelancer:_Prevent_Desertion_During_Vacation:
-qstr_1429_Hundred_Years_W 1429_Hundred_Years_War_Mod_Options
+qstr_You_defeated_{reg5}_ You_defeated_{reg5}_enemies.
+qstr_You_failed_to_defeat You_failed_to_defeat_any_enemy.

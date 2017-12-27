@@ -4288,11 +4288,24 @@ simple_triggers = [
   
   #+freelancer end  
 
+#Kham Freelancer Improvement triggers
 
+#Random Missions
+(5,[
+
+  (eq, "$freelancer_state", 1),
+  (store_random_in_range, ":rand", 0, 100),
+  #(ge, ":random", 50), #50% chance for a mission
+
+  #(try_begin),
+    (jump_to_menu, "mnu_freelancer_training_choose"),
+  #(try_end),
+
+]),   
 
 
 #trigger reserved for future save game compatibility
-(999,[]),   
+#(999,[]),   
 #trigger reserved for future save game compatibility
 (999,[]),   
 #trigger reserved for future save game compatibility

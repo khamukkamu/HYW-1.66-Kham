@@ -6375,7 +6375,7 @@ game_menus = [
         (change_screen_mission),
       ]),
 
-      ("encounter_hold",[(eq, "$encountered_party_friendly", 0), (neg|troop_is_wounded, "trp_player"),],"Start battle holding position.", [
+      ("encounter_hold",[(neq, "$freelancer_state", 1),(eq, "$encountered_party_friendly", 0), (neg|troop_is_wounded, "trp_player"),],"Start battle holding position.", [
         (assign, "$player_deploy_troops", 1),
         (assign, "$g_battle_result", 0),
         (assign, "$g_engaged_enemy", 1),
@@ -6413,7 +6413,7 @@ game_menus = [
         (change_screen_mission),]),
       
       ("encounter_order_attack",
-      [
+      [ (neq, "$freelancer_state", 1),
         (eq, "$encountered_party_friendly", 0),
         (call_script, "script_party_count_members_with_full_health", "p_main_party"),(ge, reg0, 4),
       ],
@@ -6424,6 +6424,7 @@ game_menus = [
       ]),
       
       ("encounter_leave",[
+          (neq, "$freelancer_state", 1),
           (eq,"$cant_leave_encounter", 0),
           ],"Leave.",[
 
@@ -24939,6 +24940,120 @@ game_menus = [
     ]),
 #+freelancer end
 
+#Kham Freelancer Improvements Start
+  ("freelancer_training_choose", 0,
+    "Your Commander has asked you to train. Choose the number of opponents you'd like to face.",
+    "none",[],
+    [
+      ("opponent_one", [], "One",
+        [(assign, "$freelancer_training_opponents", 1),
+         (jump_to_menu, "mnu_freelancer_training_fight"),],
+      ),
+      ("opponent_two", [], "Two",
+        [(assign, "$freelancer_training_opponents", 2),
+         (jump_to_menu, "mnu_freelancer_training_fight"),],
+      ),
+      ("opponent_three", [], "Three",
+        [(assign, "$freelancer_training_opponents", 3),
+         (jump_to_menu, "mnu_freelancer_training_fight"),],
+      ),
+      ("opponent_four", [], "Four",
+        [(assign, "$freelancer_training_opponents", 4),
+         (jump_to_menu, "mnu_freelancer_training_fight"),],
+      ),
+      ("opponent_five", [], "Five",
+        [(assign, "$freelancer_training_opponents", 5),
+         (jump_to_menu, "mnu_freelancer_training_fight"),],
+      ),
+      ("opponent_six", [], "Six",
+        [(assign, "$freelancer_training_opponents", 6),
+        (jump_to_menu, "mnu_freelancer_training_fight"),],
+      ),
+      ("opponent_seven", [], "Seven",
+        [(assign, "$freelancer_training_opponents", 7),
+         (jump_to_menu, "mnu_freelancer_training_fight"),],
+      ),
+      ("opponent_eight", [], "Eight",
+        [(assign, "$freelancer_training_opponents", 8),
+         (jump_to_menu, "mnu_freelancer_training_fight"),],
+      ),
+      ("reject_training", [], "Reject today's training",
+        [(change_screen_map)]),
+      ("training_wounded", [(troop_is_wounded, "trp_player"),], "You are too wounded to train.",
+        [(change_screen_map)]),
+    ]),
+
+
+  ("freelancer_training_fight",0,
+   "You will be facing {reg5} opponents. Are you ready?",
+   "none",
+   [(assign, reg5, "$freelancer_training_opponents")],
+   [
+     ("training_continue",[],"Begin training...",
+      [
+        (assign, "$g_leave_encounter", 0),
+        (party_get_attached_to, ":cur_center", "$enlisted_party"),
+
+        (try_begin),
+          (is_between, ":cur_center", towns_begin, towns_end),
+          (party_get_slot, ":duel_scene", ":cur_center", slot_town_arena),
+        (else_try),
+          (eq, "$g_start_arena_fight_at_nearest_town", 1),
+          (assign, ":closest_town", -1),
+          (assign, ":minimum_dist", 10000),
+          (try_for_range, ":cur_town", towns_begin, towns_end),
+            (store_distance_to_party_from_party, ":dist", ":cur_town", "$enlisted_party"),
+            (lt, ":dist", ":minimum_dist"),
+            (assign, ":minimum_dist", ":dist"),
+            (assign, ":closest_town", ":cur_town"),
+          (try_end),           
+          (try_begin),         
+            (ge, ":closest_town", 0),
+            (party_get_slot, ":duel_scene", ":closest_town", slot_town_arena),          
+          (try_end),
+          (assign, "$g_start_arena_fight_at_nearest_town", 0),
+        (else_try),
+          (party_get_current_terrain, ":terrain", "$enlisted_party"),
+          (eq, ":terrain", 4),
+          (assign, ":duel_scene", "scn_training_ground_ranged_melee_3"),
+        (else_try),
+          (eq, ":terrain", 5),
+          (assign, ":duel_scene", "scn_training_ground_ranged_melee_4"),
+        (else_try),
+          (assign, ":duel_scene", "scn_training_ground_ranged_melee_1"),
+        (try_end),
+        
+        (modify_visitors_at_site, ":duel_scene"),
+        (reset_visitors),
+        (set_visitor, 0, "trp_player"),
+        (set_visitors, 1, "$player_cur_troop", "$freelancer_training_opponents"),
+        (set_jump_mission, "mt_freelancer_training"),
+        (jump_to_scene, ":duel_scene"),
+        (jump_to_menu, "mnu_freelancer_training_conclusion"),
+        (change_screen_mission),        
+      ]),
+
+     ("training_go_back", [], "Choose number of opponents again...",
+      [(jump_to_menu, "mnu_freelancer_training_choose")],
+      ),
+    ]
+  ),
+
+("freelancer_training_conclusion",0,
+   "{s5}",
+   "none",
+   [(assign, reg5, "$g_arena_training_kills"),
+   (try_begin),
+    (ge, reg5, 1),
+    (str_store_string, s5, "@You defeated {reg5} enemies."),
+   (else_try),
+    (str_store_string, s5, "@You failed to defeat any enemy."),
+   (try_end),],
+   [
+     ("freelancer_training_finish",[],"Go back to your post...",
+      [(change_screen_map)],
+     ),
+  ]),
 
 
   
