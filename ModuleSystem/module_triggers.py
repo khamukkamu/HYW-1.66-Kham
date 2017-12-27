@@ -1660,6 +1660,7 @@ triggers = [
 
 (24.0, 0, 0, [
         (eq, "$freelancer_state", 2),
+        (eq, "$freelancer_allow_desertion", 1),
     ],
     [
     (troop_get_slot, ":days_left", "trp_player", slot_troop_days_on_mission),
@@ -1670,18 +1671,91 @@ triggers = [
     (else_try),     
       (is_between, ":days_left", 1, 5),
       (assign, reg0, ":days_left"),
-      (display_message, "@You have {reg0} days left till you are declared as a deserter!"),
+      (display_message, "@You have {reg0} days left till you are declared as a deserter!", color_bad_news),
       (val_sub, ":days_left", 1),
       (troop_set_slot, "trp_player", slot_troop_days_on_mission, ":days_left"),
     (else_try), #declare deserter
       (eq, ":days_left", 0),
       (call_script, "script_event_player_deserts"),
-          (display_message, "@You have now been declared as a deserter!"),
+          (display_message, "@You have now been declared as a deserter!", color_bad_news),
+    (try_end),  
+    ]),
+
+(24.0, 0, 0, [
+        (eq, "$freelancer_state", 2),
+        (eq, "$freelancer_allow_desertion", 0),
+    ],
+    [
+    (troop_get_slot, ":days_left", "trp_player", slot_troop_days_on_mission),
+    (try_begin),
+      (gt, ":days_left", 5),
+      (val_sub, ":days_left", 1),
+      (troop_set_slot, "trp_player", slot_troop_days_on_mission, ":days_left"),
+    (else_try),     
+      (is_between, ":days_left", 1, 5),
+      (assign, reg0, ":days_left"),
+      (display_message, "@You have {reg0} days left on your vacation.", color_good_news),
+      (val_sub, ":days_left", 1),
+      (troop_set_slot, "trp_player", slot_troop_days_on_mission, ":days_left"),
+    (else_try),
+      (eq, ":days_left", 0),
+      (assign, "$talk_context", tc_vacation_over),
+      #Assign Troop Reporter
+      (store_faction_of_troop, ":fac", "$enlisted_lord"),
+      (try_begin), 
+        (eq, ":fac", "fac_kingdom_1"), #France
+        (assign, ":troop", "trp_swadian_messenger"),
+      (else_try),
+        (eq, ":fac", "fac_kingdom_2"), #England
+        (assign, ":troop", "trp_vaegir_messenger"),
+      (else_try),
+        (eq, ":fac", "fac_kingdom_3"), #Burgandy 
+        (assign, ":troop", "trp_bourg_messenger"),     
+      (else_try), 
+         (assign, ":troop", "trp_breton_messenger"),
+      (try_end),
+      (start_map_conversation, ":troop"),
     (try_end),  
     ]),
 
 
 #+freelancer end
 
+#Freelancer Change Speed (Kham)
+
+
+(0, 0, 0, [
+  (eq, "$freelancer_state", 1),
+  (key_clicked, key_equals),],
+  [ 
+    (val_add, "$freelancer_speed", 1),
+    (val_mod, "$freelancer_speed", 5),
+    #debug
+    (assign, reg22, "$freelancer_speed"),
+    (display_message, "@Speed: {reg22}"),
+  ]),
+
+(0, 0, 0, [(eq, "$freelancer_state", 1),],
+  [
+  (try_begin),
+    (eq, "$freelancer_speed", 0),
+    (rest_for_hours_interactive, 24 * 365, 5, 1),
+  (else_try),
+    (eq, "$freelancer_speed", 1),
+    (rest_for_hours_interactive, 24 * 365, 7, 1),
+  (else_try),
+    (eq, "$freelancer_speed", 2),
+    (rest_for_hours_interactive, 24 * 365, 9, 1),
+  (else_try),
+    (eq, "$freelancer_speed", 3),
+    (rest_for_hours_interactive, 24 * 365, 11, 1),
+  (else_try),
+    (eq, "$freelancer_speed", 4),
+    (rest_for_hours_interactive, 24 * 365, 13, 1),
+  (try_end),
+]),
+
+#Save Compat Trigger
+(0.1, 0, ti_once, [(eq, "$freelancer_state", 1)], [(dialog_box,"@You are now enlisted! You will be following the lord/lady you chose and will be joining in battles they get into. You can also get promoted as you gain experience. ^Lastly, you can increase the map speed while enlisted by pressing the '=' key (next to the backspace key).")]),
 
 ]

@@ -2053,7 +2053,7 @@ Screen_Border_Width = 24
 Screen_Width = 1024-Screen_Border_Width
 Screen_Height = 768-Screen_Border_Width
 Screen_Text_Height = 35
-Screen_Checkbox_Height_Adj = 4
+Screen_Checkbox_Height_Adj = 17
 Screen_Numberbox_Width = 64
 Screen_Title_Height = Screen_Height-Screen_Border_Width-Screen_Text_Height
 Screen_Check_Box_Dimension = 20
@@ -2109,4 +2109,12 @@ slot_troop_freelancer_start_xp   =  slot_troop_signup   #110 -only used for play
 slot_troop_freelancer_start_date =  slot_troop_signup_2 #111 -only used for player
 
 plyr_mission_vacation = 1
+
+tc_vacation_over = 22
 #+Freelancer end
+
+# color-coded messages
+color_good_news    = 0x50FF50
+color_bad_news     = 0xFF5050
+color_neutral_news = 0xFFAA00
+

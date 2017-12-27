@@ -915,6 +915,8 @@ scripts = [
   (assign, "$g_dplmc_battle_continuation", 0), #squelch compiler warnings
   (assign, "$g_tournament_num_participants_for_fight", 0), #squelch compiler warnings
   (assign, "$freelancer_state", 0), #Freelancer
+  (assign, "$FormAI_autorotate", 1), #Formations Default
+  (assign, "$freelancer_allow_desertion", 1), #Freelancer - Allow Desertion
   
     ]),
 
@@ -60973,7 +60975,7 @@ scripts = [
     ("event_player_vacation",
     [
       (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation), ###move to quests, not missions
-    (troop_set_slot, "trp_player", slot_troop_days_on_mission, 14),
+    (troop_set_slot, "trp_player", slot_troop_days_on_mission, 2),
   
     #removes faction relation given at enlist
     (store_troop_faction, ":commander_faction", "$enlisted_lord"),

@@ -4218,16 +4218,17 @@ simple_triggers = [
            (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
            (gt, ":upgrade_troop", 1), #make sure troop is valid and not player troop
            
-       (call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
-       (assign, ":required_xp", reg0),       
-       ##THIS  BLOCK IS ALMOST DEFINITELY BE BETTER than the above two lines which could be commented out in exchange for them.
-       # (store_character_level, ":cur_level", "$player_cur_troop"),
-           # (val_sub, ":cur_level", 1),
-           # (get_level_boundary, ":cur_level", ":cur_level"),
-       # (store_character_level, ":required_xp", ":upgrade_troop"),
-       # (val_sub, ":required_xp", 1),
-       # (get_level_boundary, ":required_xp", ":required_xp"),
-       # (val_sub, ":required_xp", ":cur_level"),      
+       #(call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
+       #(assign, ":required_xp", reg0),  
+
+       ##THIS  BLOCK IS ALMOST DEFINITELY BE BETTER than the above two lines which could be commented out in exchange for them. - Implemented (Kham)
+        (store_character_level, ":cur_level", "$player_cur_troop"),
+        (val_sub, ":cur_level", 1),
+        (get_level_boundary, ":cur_level", ":cur_level"),
+        (store_character_level, ":required_xp", ":upgrade_troop"),
+        (val_sub, ":required_xp", 1),
+        (get_level_boundary, ":required_xp", ":required_xp"),
+        (val_sub, ":required_xp", ":cur_level"),      
        ##
              
            (ge, ":service_xp_cur", ":required_xp"),
@@ -4288,8 +4289,8 @@ simple_triggers = [
   #+freelancer end  
 
 
-#trigger reserved for future save game compatibility
-(999,[]),
+
+
 #trigger reserved for future save game compatibility
 (999,[]),   
 #trigger reserved for future save game compatibility

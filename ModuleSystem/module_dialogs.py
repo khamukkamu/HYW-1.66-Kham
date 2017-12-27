@@ -222,6 +222,20 @@ dialogs = [
                     (eq, 1, 0)],  
    "{!}Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
+#Dialogue Auto-Return from Vacation (Kham)
+
+[anyone,"event_triggered",
+  [
+    (eq, "$talk_context", tc_vacation_over),
+  ],
+    "{playername}, I am here to tell you that your vacation is over. Join me and return to your post.", "close_window",[
+      (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
+      (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
+      (call_script, "script_event_player_returns_vacation"),
+      (change_screen_map),
+  ],
+],    
+
   [anyone ,"event_triggered", [(store_conversation_troop, "$g_talk_troop"),
                            (try_begin),
                                (is_between, "$g_talk_troop", companions_begin, companions_end),
@@ -31703,6 +31717,49 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 ##### TODO: QUESTS COMMENT OUT END
 
+## Freelancer 
+# dialog_ask_enlistment
+
+    [anyone|plyr,"lord_talk", [
+        (eq, "$freelancer_state", 0),
+    (ge, "$g_talk_troop_faction_relation", 0),
+        #(neq, "$players_kingdom", "$g_talk_troop_faction"),
+        (eq, "$players_kingdom", 0),
+        ],
+    "My {Lord/Lady}, I would like to like to enlist in your army.", "lord_request_enlistment",[]],
+  
+  # dialog_advise_retirement
+
+    [anyone|plyr,"lord_talk", [
+        (eq, "$g_talk_troop", "$enlisted_lord"),
+    (neq, "$freelancer_state", 0),
+        (ge, "$g_talk_troop_faction_relation", 0),
+        (neq, "$players_kingdom", "$g_talk_troop_faction"),
+        (eq, "$players_kingdom", 0),
+        ],
+    "My {Lord/Lady}, I would like to like to retire from service.", "lord_request_retire",[]],
+  
+  #dialog_ask_leave
+    [anyone|plyr,"lord_talk",[
+    (eq, "$g_talk_troop", "$enlisted_lord"),
+    (eq, "$freelancer_state", 1),
+        (ge, "$g_talk_troop_faction_relation", 0),
+        (neq, "$players_kingdom", "$g_talk_troop_faction"),
+        (eq, "$players_kingdom", 0),
+        ],
+        "My {Lord/Lady}, I would like to request some personal leave", "lord_request_vacation",[]],  
+    
+  #dialog_ask_return_from_leave
+    [anyone|plyr,"lord_talk",[
+    (eq, "$g_talk_troop", "$enlisted_lord"),
+    (eq, "$freelancer_state", 2),
+        (ge, "$g_talk_troop_faction_relation", 0),
+        (neq, "$players_kingdom", "$g_talk_troop_faction"),
+        (eq, "$players_kingdom", 0),
+        ],
+        "My {Lord/Lady}, I am ready to return to your command.", "ask_return_from_leave",[]],  
+
+## Freelancer END
 
 #Leave
   [anyone|plyr,"lord_talk", 
@@ -31797,12 +31854,13 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (call_script, "script_event_player_enlists"),
     (assign, "$g_infinite_camping", 1),
         (rest_for_hours_interactive, 24 * 365, 5, 1),
+        (assign, "$freelancer_speed", 0),
     (eq,"$talk_context",tc_party_encounter),
     (assign, "$g_leave_encounter", 1),
   ]],
 
   [anyone|plyr,"lord_request_enlistment_confirm",[],
-    "Well, on second thought my lord, I might try my luck alone a bit longer. My thanks.", "lord_pretalk",[]],
+    "Well, on second thought my {Lord/Lady}, I might try my luck alone a bit longer. My thanks.", "lord_pretalk",[]],
   
 # dialog_reject_enlistment
 
@@ -31828,9 +31886,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         [
         (ge, "$g_talk_troop_relation", 0),
     ],
-            "Very well {playername}. You shall take some time off from millitary duty. Return in two weeks.", "lord_pretalk",[
+            "Very well {playername}. You shall take some time off from military duty. Return in two weeks.", "lord_pretalk",[
     (call_script, "script_event_player_vacation"),
-        (call_script, "script_party_restore"),
+    (call_script, "script_party_restore"),
     (change_screen_map),
     ],
     ],
@@ -31849,51 +31907,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (call_script, "script_event_player_returns_vacation"),
     (change_screen_map),
     ],
-    ],  
+    ],
+
 #+freelancer end
-
-
-# dialog_ask_enlistment
-
-    [anyone|plyr,"lord_talk", [
-        (eq, "$freelancer_state", 0),
-    (ge, "$g_talk_troop_faction_relation", 0),
-        #(neq, "$players_kingdom", "$g_talk_troop_faction"),
-        (eq, "$players_kingdom", 0),
-        ],
-    "My Lord, I would like to like to enlist in your army.", "lord_request_enlistment",[]],
-  
-  # dialog_advise_retirement
-
-    [anyone|plyr,"lord_talk", [
-        (eq, "$g_talk_troop", "$enlisted_lord"),
-    (neq, "$freelancer_state", 0),
-        (ge, "$g_talk_troop_faction_relation", 0),
-        (neq, "$players_kingdom", "$g_talk_troop_faction"),
-        (eq, "$players_kingdom", 0),
-        ],
-    "My Lord, I would like to like to retire from service.", "lord_request_retire",[]],
-  
-  #dialog_ask_leave
-    [anyone|plyr,"lord_talk",[
-    (eq, "$g_talk_troop", "$enlisted_lord"),
-    (eq, "$freelancer_state", 1),
-        (ge, "$g_talk_troop_faction_relation", 0),
-        (neq, "$players_kingdom", "$g_talk_troop_faction"),
-        (eq, "$players_kingdom", 0),
-        ],
-        "My Lord, I would like to request some personal leave", "lord_request_vacation",[]],  
-    
-  #dialog_ask_return_from_leave
-    [anyone|plyr,"lord_talk",[
-    (eq, "$g_talk_troop", "$enlisted_lord"),
-    (eq, "$freelancer_state", 2),
-        (ge, "$g_talk_troop_faction_relation", 0),
-        (neq, "$players_kingdom", "$g_talk_troop_faction"),
-        (eq, "$players_kingdom", 0),
-        ],
-        "My Lord, I am ready to return to your command.", "ask_return_from_leave",[]],  
-
 
 #### Freelancer - Kham Implementation END ####
 

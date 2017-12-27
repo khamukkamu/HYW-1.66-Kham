@@ -3818,7 +3818,7 @@ game_menus = [
         ]
        ),
 
-      ("formation_mod_option",[],"Formations mod options.", [(start_presentation, "prsnt_formation_mod_option")]),
+      ("formation_mod_option",[],"1429: HYW Mod Options.", [(start_presentation, "prsnt_formation_mod_option")]),
 
       ("camp_action",[],"Take an action.",
        [(jump_to_menu, "mnu_camp_action"),
@@ -7177,7 +7177,7 @@ game_menus = [
             (leave_encounter),
             (change_screen_return),
           (else_try),
-            (neq, "$freelancer_state", 1),            
+            (eq,  "$freelancer_state", 0),           
             (try_begin), #my kingdom
               #(change_screen_return),              
               (eq, "$g_next_menu", "mnu_castle_taken"),
@@ -24746,6 +24746,7 @@ game_menus = [
         [(change_screen_map),
     (assign, "$g_infinite_camping", 1),
         (rest_for_hours_interactive, 24 * 365, 5, 1),
+        (assign, "$freelancer_speed", 0),
     ]),
     ]),
   

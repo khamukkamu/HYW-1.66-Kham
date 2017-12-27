@@ -10460,13 +10460,13 @@ presentations = [
         (presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
-        (create_text_overlay, reg1, "@Extended Formations and AI Options", tf_center_justify),
+        (create_text_overlay, reg1, "@1429 Hundred Years War Mod Options", tf_center_justify),
         (position_set_x, pos0, Screen_Width/2),
-        #  (position_set_y, pos0, Screen_Title_Height),
+        #(position_set_y, pos0, Screen_Title_Height),
         (position_set_y, pos0, 600),
         (overlay_set_position, reg1, pos0),
         
-        #  (assign, ":y_pos", Screen_Title_Height-Screen_Text_Height-Screen_Text_Height),
+        #(assign, ":y_pos", Screen_Title_Height-Screen_Text_Height-Screen_Text_Height),
         (assign, ":y_pos", 450),
         
         #Disable formations option
@@ -10488,10 +10488,11 @@ presentations = [
         (create_text_overlay, reg1, "@Put player in division: ", tf_right_align),
         (position_set_y, pos0, ":y_pos"),
         (overlay_set_position, reg1, pos0),
-        
         (create_number_box_overlay, "$form_options_overlay_2", 0, 10),
         (copy_position, pos1, pos0),
-        (overlay_set_position, "$form_options_overlay_2", pos0),
+        (store_add, reg2, ":y_pos", Screen_Checkbox_Height_Adj),
+        (position_set_y, pos1, reg2),
+        (overlay_set_position, "$form_options_overlay_2", pos1),
         
         (overlay_set_val, "$form_options_overlay_2", "$FormAI_player_in_division"),
         
@@ -10539,6 +10540,21 @@ presentations = [
         (overlay_set_val, "$form_options_overlay_4", "$FormAI_AI_no_defense"),
         
         (val_sub, ":y_pos", Screen_Text_Height),
+
+        #Freelancer - Automatically go back to lord party to prevent desertion
+        (create_text_overlay, reg1, "@Freelancer: Prevent Desertion During Vacation:", tf_right_align),
+        (position_set_y, pos0, ":y_pos"),
+        (overlay_set_position, reg1, pos0),
+        
+        (create_check_box_overlay, "$form_options_overlay_5", "mesh_checkbox_on", "mesh_checkbox_off"),
+        (copy_position, pos1, pos0),
+        (store_add, reg2, ":y_pos", Screen_Checkbox_Height_Adj),
+        (position_set_y, pos1, reg2),
+        (overlay_set_position, "$form_options_overlay_5", pos1),
+        
+        (overlay_set_val, "$form_options_overlay_5", "$freelancer_allow_desertion"),
+        
+        (val_sub, ":y_pos", Screen_Text_Height),
         
         # This is for Done button
         (assign, "$form_options_overlay_exit", 0), # forced initialization
@@ -10573,6 +10589,9 @@ presentations = [
         (else_try),
           (eq, ":object", "$form_options_overlay_4"),
           (assign, "$FormAI_AI_no_defense", ":value"),
+        (else_try),
+          (eq, ":object", "$form_options_overlay_5"),
+          (assign, "$freelancer_allow_desertion", ":value"),
         (else_try),
           (eq, ":object", "$form_options_overlay_exit"),
           (presentation_set_duration, 0),
