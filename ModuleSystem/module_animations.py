@@ -1888,10 +1888,40 @@ animations = [
  ["unequip_pistol_melee", 0, amf_priority_equip|amf_play|amf_restart|amf_client_prediction,
    [0.3, "equip_pistol", 0, 10, arf_blend_in_0],
  ],
- ["unused_human_anim_44", 0, 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_45", 0, 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_46", 0, 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_47", 0, 0, [1.0, "anim_human", 0, 1, 0]],
+
+ # TLD PLAYER CHEERING (mtarini) 
+ # ----------------------
+
+   
+  # on foot ( shorter versions than for ai)
+ ["cheer_player", acf_parallels_for_look_slope|acf_enforce_rightside, amf_client_prediction|amf_priority_jump_end|amf_play,
+   [6.0, "man_cheer",  12,  185, arf_blend_in_5],
+   [6.0, "man_cheer", 217, 397, arf_blend_in_5],
+   [6.0, "man_cheer", 338, 518, arf_blend_in_5],
+   #[3.0, "man_cheer", 465, 555, arf_blend_in_5],
+ ],
+
+   # mounted version 
+  ["cheer_player_ride", acf_parallels_for_look_slope|acf_enforce_rightside, amf_client_prediction|amf_priority_die|amf_play,
+   [6.0, "ani_cheer_ride",  12, 185, arf_blend_in_5],
+   [6.0, "ani_cheer_ride", 217, 397, arf_blend_in_5],
+   [6.0, "ani_cheer_ride", 338, 518, arf_blend_in_5],
+   #[3.0, "ani_cheer_ride", 465, 555, arf_blend_in_5],
+ ],
+ 
+ # cancel ani... using thse two to cancel ongoin animations...
+ ["cancel_ani_stand", 0, amf_client_prediction|amf_priority_die|amf_play,
+   [0.25, "anim_human", 50, 50, arf_blend_in_15, 0, (0, 0, 0), 0],
+ ],
+ 
+ ["cancel_ani_ride", 0, amf_client_prediction|amf_priority_die|amf_play,
+   [0.25, "stand_onhorse", 0, 0, arf_blend_in_15, 0, (0, 0, 0), 0],
+ ],
+
+ #["unused_human_anim_44", 0, 0, [1.0, "anim_human", 0, 1, 0]], #Replaced by TLD Cheer Anims
+ #["unused_human_anim_45", 0, 0, [1.0, "anim_human", 0, 1, 0]], #Replaced by TLD Cheer Anims
+ #["unused_human_anim_46", 0, 0, [1.0, "anim_human", 0, 1, 0]], #Replaced by TLD Cheer Anims
+ #["unused_human_anim_47", 0, 0, [1.0, "anim_human", 0, 1, 0]], #Replaced by TLD Cheer Anims
  ["unused_human_anim_48", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_49", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_50", 0, 0, [1.0, "anim_human", 0, 1, 0]],
@@ -2030,8 +2060,13 @@ animations = [
  ["lyre_standing", acf_enforce_all, amf_priority_die|amf_play,
    [2.05, "dedal_lyre_standing", 3, 7, arf_use_stand_progress|arf_cyclic, 0, (0, 0, 0), 0.25],],
 
+  # TLD - For Cheer - To cancel ani...(mtarini)
+ ["horse_cancel_ani", 0, amf_client_prediction|amf_priority_die|amf_play,
+   [0.25, "anim_horse", 600, 601, arf_use_stand_progress|arf_blend_in_5, 0, (0, 0, 0), 0.0],
+  ],
+
  ### Unused horse animations start from here.
- ["unused_horse_anim_1", 0, 0, [1.0, "anim_horse", 0, 1, 0]],
+ #["unused_horse_anim_1", 0, 0, [1.0, "anim_horse", 0, 1, 0]], #Replaced for Cancel Horse Anim
  ["unused_horse_anim_2", 0, 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_3", 0, 0, [1.0, "anim_horse", 0, 1, 0]],
  ["unused_horse_anim_4", 0, 0, [1.0, "anim_horse", 0, 1, 0]],

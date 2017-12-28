@@ -25817,8 +25817,10 @@ scripts = [
       (else_try),
 
      (try_end),
-      
+
+      (assign, "$scene_to_use", ":scene_to_use"), #Kham
       (jump_to_scene,":scene_to_use"),
+
   ]),
 
   # script_enter_dungeon
@@ -60865,62 +60867,72 @@ scripts = [
   ]),
 
 # ADDS THE PLAYER TO THE LORD'S PARTY  
-    ("event_player_enlists",
-    [
-      #initialize service variables
-        (troop_get_xp, ":xp", "trp_player"),
+  ("event_player_enlists",[
+  
+    #initialize service variables
+    (troop_get_xp, ":xp", "trp_player"),
     (troop_set_slot, "trp_player", slot_troop_freelancer_start_xp, ":xp"),
-        (store_current_day, ":day"), 
-        (troop_set_slot, "trp_player", slot_troop_freelancer_start_date, ":day"),   
+    (store_current_day, ":day"), 
+    (troop_set_slot, "trp_player", slot_troop_freelancer_start_date, ":day"),   
     (party_get_morale, ":morale", "p_main_party"),
     (party_set_slot, "p_main_party", slot_party_orig_morale, ":morale"),
-        #(assign, "$freelancer_state", 1), #moved to script
-  
-        #needed to stop bug where parties attack the old player party
-        (call_script, "script_set_parties_around_player_ignore_player", 2, 4),
-        #set lord as your commander
+    #(assign, "$freelancer_state", 1), #moved to script
+
+    #needed to stop bug where parties attack the old player party
+    (call_script, "script_set_parties_around_player_ignore_player", 2, 4),
+
+    #set lord as your commander
     (assign, "$enlisted_lord", "$g_talk_troop"),
     (troop_get_slot, "$enlisted_party", "$enlisted_lord", slot_troop_leaded_party), 
-        #removes troops from player party
-        (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
-        (try_for_range_backwards, ":cur_stack", 1, ":num_stacks"), #lower bound is 1 to ignore player character
-           (party_stack_get_troop_id, ":cur_troops", "p_main_party", ":cur_stack"),
-           (party_stack_get_size, ":cur_size", "p_main_party", ":cur_stack"),
-           (party_remove_members, "p_main_party", ":cur_troops", ":cur_size"),
-        (try_end),
-        
+
+    #removes troops from player party
+    (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+    (try_for_range_backwards, ":cur_stack", 1, ":num_stacks"), #lower bound is 1 to ignore player character
+      (party_stack_get_troop_id, ":cur_troops", "p_main_party", ":cur_stack"),
+      (party_stack_get_size, ":cur_size", "p_main_party", ":cur_stack"),
+      (party_remove_members, "p_main_party", ":cur_troops", ":cur_size"),
+    (try_end),
+
     #set faction relations to allow player to join battles
-        (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
     (try_begin),
       (store_relation, ":player_relation", ":commander_faction", "fac_player_supporters_faction"),
       (lt, ":player_relation", 5),
       (call_script, "script_set_player_relation_with_faction", ":commander_faction", 5),
     (try_end),
-        (try_for_range, ":cur_faction", kingdoms_begin, kingdoms_end),
-           (neq, ":commander_faction", ":cur_faction"),
-       (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
-       (store_relation, ":player_relation", ":cur_faction", "fac_player_supporters_faction"),
-       (ge, ":player_relation", 0),
-           (call_script, "script_set_player_relation_with_faction", ":cur_faction", -5),
-        (try_end),    
+    (try_for_range, ":cur_faction", kingdoms_begin, kingdoms_end),
+      (neq, ":commander_faction", ":cur_faction"),
+      (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
+      (store_relation, ":player_relation", ":cur_faction", "fac_player_supporters_faction"),
+      (ge, ":player_relation", 0),
+      (call_script, "script_set_player_relation_with_faction", ":cur_faction", -5),
+    (try_end),    
 
-        #adds standard issued equipment
+    #adds standard issued equipment
     (try_begin),
       (neg|faction_slot_eq, ":commander_faction", slot_faction_freelancer_troop, 0),
       (faction_get_slot, "$player_cur_troop", ":commander_faction", slot_faction_freelancer_troop),
     (else_try),
       (faction_get_slot, "$player_cur_troop", ":commander_faction", slot_faction_tier_1_troop),
     (try_end),    
+    
     (call_script, "script_freelancer_equip_troop", "$player_cur_troop"),
 
     (call_script, "script_freelancer_attach_party"),
+    
     #makes Lords banner the players
     (troop_get_slot, ":banner", "$enlisted_lord", slot_troop_banner_scene_prop),
     (troop_set_slot, "trp_player", slot_troop_banner_scene_prop, ":banner"),
-        (display_message, "@You have been enlisted!"),  
+    (display_message, "@You have been enlisted!"),  
 
-    
-        (str_store_troop_name_link, s13, "$enlisted_lord"),
+    #Track Player's Freelancer Rank in the Faction. If never enlisted, assign 1st rank - Kham
+    (faction_get_slot, ":freelancer_rank", "$g_talk_troop_faction", slot_freelancer_rank),
+    (try_begin),
+      (lt, ":freelancer_rank", 1),
+      (faction_set_slot, "$g_talk_troop_faction", slot_freelancer_rank , 1),
+    (try_end),
+
+    (str_store_troop_name_link, s13, "$enlisted_lord"),
     (str_store_faction_name_link, s14, ":commander_faction"),
     (quest_set_slot, "qst_freelancer_enlisted", slot_quest_target_party, "$enlisted_party"),
     (quest_set_slot, "qst_freelancer_enlisted", slot_quest_importance, 5),
@@ -60928,11 +60940,11 @@ scripts = [
     (quest_set_slot, "qst_freelancer_enlisted", slot_quest_gold_reward, 100),
     (setup_quest_text, "qst_freelancer_enlisted"),
     (str_clear, s2), #description. necessary?
-        (call_script, "script_start_quest", "qst_freelancer_enlisted", "$enlisted_lord"),
+    (call_script, "script_start_quest", "qst_freelancer_enlisted", "$enlisted_lord"),
     (str_store_troop_name, s5, "$player_cur_troop"),
     (str_store_string, s5, "@Current rank: {s5}"),
-        (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),    
-    ]),
+    (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),    
+  ]),
 
 #  RUNS IF THE PLAYER LEAVES THE ARMY
 
@@ -61498,5 +61510,18 @@ scripts = [
    ]), 
 #+freelancer end
 
+#Kham - TLD Scripts (mtarini)
+("troop_get_cheer_sound", [
+  (store_script_param_1, ":trp"),   
+  (troop_get_type, ":race",":trp"),
+  (try_begin),(eq,":race",0x0),(assign,reg1,"snd_man_victory"),
+  (else_try), (eq,":race",0x1),(assign,reg1,"snd_woman_yell"), # woman
+  (else_try), (eq,":race",0x2),(assign,reg1,"snd_jeanne_yell"),
+  (else_try), (eq,":race",0x3),(assign,reg1,"snd_eng_man_victory"),
+  (else_try), (eq,":race",0x4),(assign,reg1,"snd_bourg_man_victory"),
+  (else_try), (eq,":race",0x5),(assign,reg1,"snd_bandit_man_victory"),
+  (else_try),(assign,reg1,"snd_man_victory"), 
+  (try_end),
+]),
 
 ]

@@ -1,4 +1,4 @@
-937
+944
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -936,3 +936,10 @@ qstr___{reg1}_écus_par_n _({reg1}_écus_par_nuitée.)
 qstr_You_have_deserted_a You_have_deserted,_and_are_now_wanted!
 qstr_You_defeated_{reg5}_ You_defeated_{reg5}_enemies.
 qstr_You_failed_to_defeat You_failed_to_defeat_any_enemy.
+qstr_you_and_some_men_fro you_and_some_men_from_your_division
+qstr_You_and_your_men You_and_your_men
+qstr_You You
+qstr_You_defeated_the_ene You_defeated_the_enemies.
+qstr_You_failed_to_defeat_ You_failed_to_defeat_the_enemy.
+qstr_Freelancer_Rank___{r Freelancer_Rank_-_{reg3}
+qstr_Enlisted_Lord_Set_to Enlisted_Lord_Set_to_Jeanne

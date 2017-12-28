@@ -153,3 +153,4 @@ mt_grotte_vers_panth = 152
 mt_penthievre_chat_cour = 153
 mt_multiplayer_duel = 154
 mt_freelancer_training = 155
+mt_freelancer_charge = 156

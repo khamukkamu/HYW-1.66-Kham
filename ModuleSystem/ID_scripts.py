@@ -784,3 +784,4 @@ script_freelancer_keep_field_loot = 782
 script_cf_freelancer_player_can_upgrade = 783
 script_freelancer_equip_troop = 784
 script_freelancer_unequip_troop = 785
+script_troop_get_cheer_sound = 786

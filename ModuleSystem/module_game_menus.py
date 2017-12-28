@@ -196,7 +196,9 @@ game_menus = [
 #         (change_screen_return),
  #      ]),
 #HYW
-	   
+	    ("cheat_quick_start", [], 
+        "Cheat Quick Start", [(jump_to_menu, "mnu_start_pirates_victoire")]),
+
       ("tutorial_cheat",[(eq,1,0)],"{!}CHEAT!",
        [
          (change_screen_return),
@@ -3818,6 +3820,8 @@ game_menus = [
         ]
        ),
 
+      ("camp_test_kham",[],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
+
       ("formation_mod_option",[],"1429: HYW Mod Options.", [(start_presentation, "prsnt_formation_mod_option")]),
 
       ("camp_action",[],"Take an action.",
@@ -5423,6 +5427,32 @@ game_menus = [
        ),
       ]
   ),
+
+#Kham Test Menu
+( "camp_khamtest",0,
+  "Kham Test","none",[],
+    [
+    ("test_freelancer_looters",[],"Test Looters Mission", [(assign, "$player_cur_troop", "trp_swadian_militia"),(jump_to_menu, "mnu_freelancer_looter_accept"),]),
+    ("set_freelancer_rank",[],"Set Freelancer Rank", [
+      (assign, "$enlisted_lord", "trp_knight_1_5"),
+      (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+      (faction_set_slot, ":commander_faction", slot_freelancer_rank, 1),
+      (display_message, "@Enlisted Lord Set to Jeanne", color_good_news)]),
+
+    ("add_freelancer_rank",[], "Add Freelancer Rank", [
+      (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+      (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+      (val_add, ":freelancer_rank", 1),
+      (val_mod, ":freelancer_rank", 10),
+      (assign, reg3, ":freelancer_rank"),
+      (display_message, "@Freelancer Rank - {reg3}"),
+      (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_rank"),]),
+    ("resume_travelling",[],"Resume travelling.",[(change_screen_return),]),
+    
+ ]),
+
+## Kham Test End
+
   ("camp_cheat",0,
    "Select a cheat:",
    "none",
@@ -24903,44 +24933,59 @@ game_menus = [
     ),
   
     #menu_upgrade_path
-   ("upgrade_path",0,
-    "In recognition of your excellent service, you have been promoted.",
-    "none",[
-    (set_background_mesh, "mesh_pic_soldier_world_map"),
-    (call_script, "script_freelancer_unequip_troop", "$player_cur_troop"),
-    ],
-    [
+    ("upgrade_path",0,
+      "In recognition of your excellent service, you have been promoted.",
+      "none",
+      [
+        (set_background_mesh, "mesh_pic_soldier_world_map"),
+        (call_script, "script_freelancer_unequip_troop", "$player_cur_troop"),
+      ],
+      [
         ("upgrade_path_1",[
-            (troop_get_upgrade_troop, ":path_1_troop", "$player_cur_troop", 0),
-            (ge, ":path_1_troop", 0),
-            (str_store_troop_name, s66, ":path_1_troop"),],
+          (troop_get_upgrade_troop, ":path_1_troop", "$player_cur_troop", 0),
+          (ge, ":path_1_troop", 0),
+          (str_store_troop_name, s66, ":path_1_troop"),],
         "{s66}",[
             (troop_get_upgrade_troop, "$player_cur_troop", "$player_cur_troop", 0),
-      (store_troop_faction, ":commander_faction", "$enlisted_lord"),
-      (faction_set_slot, ":commander_faction", slot_faction_freelancer_troop, "$player_cur_troop"),
-      (call_script, "script_freelancer_equip_troop", "$player_cur_troop"),
-      (str_store_troop_name, s5, "$player_cur_troop"),
-        (str_store_string, s5, "@Current rank: {s5}"),
+            (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+            (faction_set_slot, ":commander_faction", slot_faction_freelancer_troop, "$player_cur_troop"),
+            (call_script, "script_freelancer_equip_troop", "$player_cur_troop"),
+            (str_store_troop_name, s5, "$player_cur_troop"),
+            
+            #Kham - Add to rank
+            (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+            (val_add, ":freelancer_rank", 1),
+            (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_Rank"),
+
+            (str_store_string, s5, "@Current rank: {s5}"),
             (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
             (change_screen_map),]),
 
         ("upgrade_path_2",[
-            (troop_get_upgrade_troop, ":path_2_troop", "$player_cur_troop", 1),
-            (ge, ":path_2_troop", 1),
-            (str_store_troop_name, s67, ":path_2_troop"),],
+          (troop_get_upgrade_troop, ":path_2_troop", "$player_cur_troop", 1),
+          (ge, ":path_2_troop", 1),
+          (str_store_troop_name, s67, ":path_2_troop"),],
         "{s67}",[
             (troop_get_upgrade_troop, "$player_cur_troop", "$player_cur_troop", 1),
-      (store_troop_faction, ":commander_faction", "$enlisted_lord"),
-      (faction_set_slot, ":commander_faction", slot_faction_freelancer_troop, "$player_cur_troop"),
-      (call_script, "script_freelancer_equip_troop", "$player_cur_troop"),
-      (str_store_troop_name, s5, "$player_cur_troop"),
-        (str_store_string, s5, "@Current rank: {s5}"),
+            (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+            (faction_set_slot, ":commander_faction", slot_faction_freelancer_troop, "$player_cur_troop"),
+            (call_script, "script_freelancer_equip_troop", "$player_cur_troop"),
+            (str_store_troop_name, s5, "$player_cur_troop"),
+
+            #Kham - Add to rank
+            (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+            (val_add, ":freelancer_rank", 1),
+            (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_Rank"),
+
+            (str_store_string, s5, "@Current rank: {s5}"),
             (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
             (change_screen_map),]),
     ]),
 #+freelancer end
 
 #Kham Freelancer Improvements Start
+
+#Kham Freelancer - Training START
   ("freelancer_training_choose", 0,
     "Your Commander has asked you to train. Choose the number of opponents you'd like to face.",
     "none",[],
@@ -25055,7 +25100,121 @@ game_menus = [
      ),
   ]),
 
+#Kham Freelancer - Training END
+#Kham Freelancer - Looters START
 
-  
+("freelancer_looters", 0,
+  "Your commander has asked {s5} to hunt down looters near the camp.",
+  "none",
+  [ (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+    (try_begin),
+      (ge, ":freelancer_rank", 3),
+      (str_store_string, s5, "@you and some men from your division"),
+    (else_try),
+      (str_store_string, s5, "@you"),
+    (try_end)],
+  [      
+    ("looter_accept", [], "Accept this mission", 
+      [(jump_to_menu, "mnu_freelancer_looter_accept")]),
+
+    ("reject_training", [], "Reject today's training",
+      [(change_screen_map)]),
+
+    ("training_wounded", [(troop_is_wounded, "trp_player"),], "You are too wounded to train.",
+      [(change_screen_map)]),
+    ]
+  ),
+
+("freelancer_looter_accept", 0,
+  "{s5} found the looters nearby. You get ready to attack them.",
+  "none",
+  [ (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+    (try_begin),
+      (ge, ":freelancer_rank", 3),
+      (str_store_string, s5, "@You and your men"),
+    (else_try),
+      (str_store_string, s5, "@You"),
+    (try_end)],
+  [      
+    ("looter_attack", [
+      (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+      (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+      (lt, ":freelancer_rank", 3),
+    ], "Attack them", 
+      [
+        (store_character_level, ":level"),
+        (try_begin),
+          (lt, ":level", 4),
+          (assign, ":num_looters", 4),
+        (else_try),
+          (assign, ":num_looters", ":level"),
+          (val_min, ":num_looters", 10),
+        (try_end),
+        (assign, "$g_leave_encounter", 0),
+        (call_script, "script_setup_random_scene"),
+        (modify_visitors_at_site, "$scene_to_use"),
+        (reset_visitors),
+        (set_visitor, 0, "trp_player"),
+        (set_visitors, 3, "trp_looter", ":num_looters"),
+        (set_jump_mission,"mt_freelancer_charge"),
+        (jump_to_scene, "$scene_to_use"),
+        (assign, "$g_next_menu", "mnu_freelancer_looter_conclusion"),
+        (jump_to_menu, "mnu_battle_debrief"),
+        (change_screen_mission),  
+        ]),
+
+
+    ("looter_attack_with_troops", [
+      (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+      (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+      (ge, ":freelancer_rank", 3),
+    ], "You and your men attack them.", 
+      [
+        (store_character_level, ":level"),
+        (try_begin),
+          (lt, ":level", 4),
+          (assign, ":num_looters", 8),
+          (assign, ":num_friends", 3),
+        (else_try),
+          (store_random_in_range, ":rand", 5, 11),
+          (assign, ":num_looters", ":level"),
+          (val_add, ":num_looters", ":level"),
+          (val_add, ":num_looters", ":rand"),
+          (val_min, ":num_looters", 22),
+          (assign, ":num_friends", ":rand"),
+        (try_end),
+        (assign, "$g_leave_encounter", 0),
+        (call_script, "script_setup_random_scene"),
+        (modify_visitors_at_site, "$scene_to_use"),
+        (reset_visitors),
+        (set_visitor, 0, "trp_player"),
+        (set_visitors, 0, "$player_cur_troop", ":num_friends"),
+        (set_visitors, 3, "trp_looter", ":num_looters"),
+        (set_jump_mission,"mt_freelancer_charge"),
+        (jump_to_scene, "$scene_to_use"),
+        (assign, "$g_next_menu", "mnu_freelancer_looter_conclusion"),
+        (jump_to_menu, "mnu_battle_debrief"),
+        (change_screen_mission),  
+        ]),              
+    ]
+  ),
+
+("freelancer_looter_conclusion",0,
+   "{s5}",
+   "none",
+   [
+   (try_begin),
+    (ge, "$g_battle_result", 1),
+    (str_store_string, s5, "@You defeated the enemies."),
+   (else_try),
+    (str_store_string, s5, "@You failed to defeat the enemy."),
+   (try_end),],
+   [
+     ("freelancer_training_finish",[],"Go back to your post...",
+      [(change_screen_map)],
+     ),
+  ]),
 
  ]

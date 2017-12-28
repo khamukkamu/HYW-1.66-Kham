@@ -1453,3 +1453,6 @@ g_give_advantage_to_original_faction
 formai_ai_no_defense
 formai_player_in_division
 g_next_pay_time
+scene_to_use
+player_cheering
+freelancer_rank

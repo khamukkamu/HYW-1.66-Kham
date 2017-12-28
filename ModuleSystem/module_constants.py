@@ -2111,6 +2111,8 @@ slot_troop_freelancer_start_date =  slot_troop_signup_2 #111 -only used for play
 plyr_mission_vacation = 1
 
 tc_vacation_over = 22
+slot_freelancer_rank = 113 #track how many upgrades the player has had in their faction.
+
 #+Freelancer end
 
 # color-coded messages

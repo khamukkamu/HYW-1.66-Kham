@@ -1260,6 +1260,41 @@ formations_triggers = [ #4 triggers
   ]),
 ]#end formations triggers
 
+#TLD cheer instead of jump on space if battle is won  (mtarini)
+
+tld_cheer_on_space_when_battle_over_press = (0,1.5,0,[
+  (game_key_clicked, gk_jump),
+  (all_enemies_defeated, 2),
+    (get_player_agent_no, reg10),
+  (agent_is_alive, reg10),
+  (try_begin),(agent_get_horse, reg12, reg10),(ge, reg12, 0), 
+    (agent_set_animation, reg10, "anim_cheer_player_ride"),
+    (agent_set_animation, reg12, "anim_horse_cancel_ani"), # to remove horse jump
+  (else_try),
+    (agent_set_animation, reg10, "anim_cheer_player"),
+  (try_end),
+  (agent_get_troop_id, reg11, reg10),
+  (try_begin), 
+    (eq,"$player_cheering",0), # don't reshout if just shouted
+    (call_script, "script_troop_get_cheer_sound", reg11),
+          (gt, reg1, -1), #MV fix
+    (agent_play_sound, reg10, reg1),    
+  (try_end),
+  (assign,"$player_cheering",1),
+  ],
+  [(assign,"$player_cheering",2), # after 1 sec, can end ani
+])
+
+tld_cheer_on_space_when_battle_over_release = (0,0,0,[(eq,"$player_cheering",2),(neg|game_key_is_down, gk_jump)],[
+  (get_player_agent_no, reg10),
+  (agent_get_horse, reg12, reg10),
+  (try_begin),(ge, reg12, 0),(agent_set_animation, reg10, "anim_cancel_ani_ride"),
+   (else_try),               (agent_set_animation, reg10, "anim_cancel_ani_stand"),
+  (try_end),
+  (assign,"$player_cheering",0),
+])
+
+# END TLD 
 
 ##diplomacy
 
@@ -1376,6 +1411,10 @@ dplmc_battle_mode_triggers = [
     dplmc_death_camera,
   ]
 ##diplomacy end
+
+hyw_common_battle_scripts = [
+tld_cheer_on_space_when_battle_over_press,
+tld_cheer_on_space_when_battle_over_release] + dplmc_battle_mode_triggers + utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers + AI_triggers + battle_panel_triggers
 
 
 pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
@@ -2518,6 +2557,8 @@ tournament_triggers = [
     (finish_mission,0),
     ]),
 
+  tld_cheer_on_space_when_battle_over_release,
+  tld_cheer_on_space_when_battle_over_press,
 
 
   (1, 0, ti_once, [], [
@@ -3913,7 +3954,7 @@ mission_templates = [
      (0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
-     ],
+     ], hyw_common_battle_scripts + 
     [show_hide_helmet_view,
       (ti_on_agent_spawn, 0, 0, [],
        [
@@ -3983,6 +4024,7 @@ mission_templates = [
           (call_script, "script_simulate_retreat", 10, 20, 1),
         (try_end),
         (call_script, "script_count_mission_casualties_from_agents"),
+        (call_script, "script_freelancer_keep_field_loot"), #Freelancer keep field loot 
         (finish_mission,0),]),
 
       (ti_before_mission_start, 0, 0, [],
@@ -4615,9 +4657,6 @@ mission_templates = [
       common_battle_order_panel_tick,
 
     ]
-    ##diplomacy begin
-    + dplmc_battle_mode_triggers + utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers + AI_triggers
-    ##diplomacy end
   ),
 
   (
@@ -4627,7 +4666,7 @@ mission_templates = [
      (3,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
      (1,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed, 7,[]),
      (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-     ],
+     ], hyw_common_battle_scripts + 
     [show_hide_helmet_view,
       common_battle_tab_press,
       common_battle_init_banner,
@@ -4701,9 +4740,7 @@ mission_templates = [
       common_battle_order_panel_tick,
       
     ]
-    ##diplomacy begin
-    + dplmc_battle_mode_triggers + utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers + AI_triggers
-    ##diplomacy end
+    
   ),
 
 
@@ -4716,7 +4753,7 @@ mission_templates = [
      (3,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
      (1,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
      (1,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
-     ],
+     ], hyw_common_battle_scripts + 
     [show_hide_helmet_view,
       common_battle_tab_press,
       common_battle_init_banner,
@@ -4828,9 +4865,7 @@ mission_templates = [
 ##          (call_script, "script_battle_tactic_apply"),
 ##          ], []),
     ]
-    ##diplomacy begin
-    + dplmc_battle_mode_triggers + utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers + AI_triggers
-    ##diplomacy end
+    
   ),
 
 
@@ -5041,6 +5076,8 @@ mission_templates = [
       common_battle_check_friendly_kills,
       common_battle_check_victory_condition,
       common_battle_victory_display,
+      tld_cheer_on_space_when_battle_over_release,
+      tld_cheer_on_space_when_battle_over_press,
 
       (ti_on_agent_spawn, 0, 0, [(eq, "$freelancer_state", 1)],
         [
@@ -5168,6 +5205,8 @@ mission_templates = [
         ]),
         
       common_battle_mission_start, #+Freelancer addition of native field battle trigger to sieges
+      tld_cheer_on_space_when_battle_over_press,
+      tld_cheer_on_space_when_battle_over_release,
 
       (1, 4,
       ##diplomacy begin
@@ -5243,6 +5282,8 @@ mission_templates = [
 
       common_battle_tab_press,
       common_battle_init_banner,
+      tld_cheer_on_space_when_battle_over_press,
+      tld_cheer_on_space_when_battle_over_release,
 
       (ti_on_agent_killed_or_wounded, 0, 0, [], #new
        [
@@ -5379,6 +5420,8 @@ mission_templates = [
       common_music_situation_update,
       common_siege_ai_trigger_init,
       common_siege_ai_trigger_init_2,
+      tld_cheer_on_space_when_battle_over_release,
+      tld_cheer_on_space_when_battle_over_press,
 
       (0, 0, ti_once,
        [
@@ -5490,6 +5533,8 @@ mission_templates = [
       common_battle_order_panel,
       common_battle_order_panel_tick,
       common_inventory_not_available,
+      tld_cheer_on_space_when_battle_over_press,
+      tld_cheer_on_space_when_battle_over_release,
 
       (ti_on_agent_killed_or_wounded, 0, 0, [],
        [
@@ -10101,7 +10146,7 @@ mission_templates = [
       (29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-     ],
+     ], hyw_common_battle_scripts + 
     [
       common_custom_battle_tab_press,
       common_custom_battle_question_answered,
@@ -10125,9 +10170,7 @@ mission_templates = [
       common_battle_victory_display,
       custom_battle_check_defeat_condition,
     ]
-	##diplomacy begin
-	+ dplmc_battle_mode_triggers,
-	##diplomacy end
+
   ),
 
   (
@@ -35621,6 +35664,7 @@ mission_templates = [
   ),
 
 ### Kham Freelancer Improvements Mission Template 
+### kham Freelancer Training START
  (
     "freelancer_training",mtf_arena_fight|mtf_commit_casualties,-1,
     "You begin your training.",
@@ -35630,6 +35674,8 @@ mission_templates = [
     ],
     [
       common_inventory_not_available,
+      tld_cheer_on_space_when_battle_over_press,
+      tld_cheer_on_space_when_battle_over_release,
       (ti_tab_pressed, 0, 0, [(display_message, "str_cannot_leave_now")], []),
       (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest"),(assign, "$g_arena_training_kills", 0),]),
 
@@ -35647,5 +35693,147 @@ mission_templates = [
          (finish_mission),
        ]),
     ],
-  ),  
+  ),
+### Kham Freelancer Training END
+### Kham Freelancer Charge MT start
+
+
+  ("freelancer_charge",mtf_battle_mode,charge,
+    "You lead your men to battle.",
+    [
+     (0,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,12,[]),
+     (1,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,12,[]),
+     (2,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,12,[]),
+     (3,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,12,[]),
+
+     ], hyw_common_battle_scripts +
+    [show_hide_helmet_view,
+
+      common_battle_init_banner,
+     
+      (ti_on_agent_killed_or_wounded, 0, 0, [],
+       [
+        (store_trigger_param_1, ":dead_agent_no"),
+        (store_trigger_param_2, ":killer_agent_no"),
+
+        (call_script, "script_apply_death_effect_on_courage_scores", ":dead_agent_no", ":killer_agent_no"),
+       ]),
+
+      (ti_tab_pressed, 0, 0, [],
+        [
+          (try_begin),
+            (eq, "$g_battle_won", 1),
+            (call_script, "script_count_mission_casualties_from_agents"),
+            (finish_mission,0),
+         (else_try),
+            (this_or_next|main_hero_fallen),   #CABA EDIT/FIX FOR DEATH CAM
+            (eq, "$pin_player_fallen", 1),
+            (question_box,"str_do_you_want_to_retreat"),
+            (assign, "$g_battle_result", -1),
+          (else_try),
+            (display_message,"str_cannot_leave_now"),
+          (try_end),
+          ]),
+
+      (ti_question_answered, 0, 0, [],
+       [(store_trigger_param_1,":answer"),
+        (eq,":answer",0),
+        (assign, "$pin_player_fallen", 0),
+        (try_begin),
+          (store_mission_timer_a, ":elapsed_time"),
+          (gt, ":elapsed_time", 20),
+          (str_store_string, s5, "str_cannot_leave_now"),
+        (try_end),
+        (call_script, "script_count_mission_casualties_from_agents"),
+        #(call_script, "script_freelancer_keep_field_loot"), #Freelancer keep field loot 
+        (finish_mission,0),]),
+
+
+      (ti_before_mission_start, 0, 0, [],
+       [
+         (team_set_relation, 0, 2, 1),
+         (team_set_relation, 1, 3, 1),
+         (call_script, "script_place_player_banner_near_inventory_bms"),
+      
+         ]),
+
+      
+      (0, 0, ti_once, [], [(assign,"$g_battle_won",0),
+                           (assign,"$defender_reinforcement_stage",0),
+                           (assign,"$attacker_reinforcement_stage",0),
+                           (call_script, "script_place_player_banner_near_inventory"),
+                           (call_script, "script_combat_music_set_situation_with_culture"),
+                           (assign, "$g_defender_reinforcement_limit", 2),
+    ##diplomacy begin
+                           (assign, "$g_dplmc_cam_activated", 0),
+                           (assign, "$g_dplmc_charge_when_dead", 0),
+    ##diplomacy end
+                           ]),
+
+      common_music_situation_update,
+      common_battle_check_friendly_kills,
+      common_battle_check_victory_condition,
+      common_battle_victory_display,
+
+
+      (1, 4,
+      ##diplomacy begin
+      0,
+      ##diplomacy end
+       [(main_hero_fallen)],
+          [
+              ##diplomacy begin
+              (try_begin),
+                (eq, "$g_dplmc_battle_continuation", 0),
+                (assign, ":num_allies", 0),
+                (try_for_agents, ":agent"),
+                 (agent_is_ally, ":agent"),
+                 (agent_is_alive, ":agent"),
+                 (val_add, ":num_allies", 1),
+                (try_end),
+                (gt, ":num_allies", 0),
+                (try_begin),
+                  (eq, "$g_dplmc_cam_activated", 0),
+                  #(store_mission_timer_a, "$g_dplmc_main_hero_fallen_seconds"),
+                  (assign, "$g_dplmc_cam_activated", 1),
+                  (display_message, "@Vous etes hors de combat,regardez vos hommes se battres sans vous ou pressez TAB pour ordonner la retraite."),
+                  (display_message, "@Pour regarder le combat pressez 'w, a, s, d, numpad_+/numpad_-' pour avancer et 'numpad_1,2,3,4,6,8' pour tourner la camera."),
+                (try_end),
+              (else_try),
+              ##diplomacy end
+              (assign, "$pin_player_fallen", 1),
+              (str_store_string, s5, "str_retreat"),
+              (call_script, "script_simulate_retreat", 10, 20, 1),
+              (assign, "$g_battle_result", -1),
+              (set_mission_result,-1),
+              (call_script, "script_count_mission_casualties_from_agents"),
+              (finish_mission,0),
+              ##diplomacy begin
+              (try_end),
+              ##diplomacy end
+            ]),
+
+      common_battle_inventory,
+
+      
+      (3, 0, 0, [
+          (call_script, "script_apply_effect_of_other_people_on_courage_scores"),
+              ], []), #calculating and applying effect of people on others courage scores
+
+      (3, 0, 0, [
+          (try_for_agents, ":agent_no"),
+            (agent_is_human, ":agent_no"),
+            (agent_is_alive, ":agent_no"),          
+            (store_mission_timer_a,":mission_time"),
+            (ge,":mission_time",3),          
+            (call_script, "script_decide_run_away_or_not", ":agent_no", ":mission_time"),
+          (try_end),          
+              ], []), #controlling courage score and if needed deciding to run away for each agent
+
+      common_battle_order_panel,
+      common_battle_order_panel_tick,
+
+    ]
+  ),
+
 ]
