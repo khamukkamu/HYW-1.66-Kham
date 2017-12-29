@@ -2319,6 +2319,7 @@ common_battle_check_victory_condition = (
     (assign,"$g_battle_won",1),
     (assign, "$g_battle_result", 1),
     (call_script, "script_play_victorious_sound"),
+    (call_script, "script_freelancer_keep_field_loot"), #Freelancer keep field loot 
     ],
   [
     (call_script, "script_count_mission_casualties_from_agents"),
@@ -35709,21 +35710,12 @@ mission_templates = [
      ], hyw_common_battle_scripts +
     [show_hide_helmet_view,
 
-      common_battle_init_banner,
-     
-      (ti_on_agent_killed_or_wounded, 0, 0, [],
-       [
-        (store_trigger_param_1, ":dead_agent_no"),
-        (store_trigger_param_2, ":killer_agent_no"),
-
-        (call_script, "script_apply_death_effect_on_courage_scores", ":dead_agent_no", ":killer_agent_no"),
-       ]),
+      common_battle_init_banner,     
 
       (ti_tab_pressed, 0, 0, [],
         [
           (try_begin),
             (eq, "$g_battle_won", 1),
-            (call_script, "script_count_mission_casualties_from_agents"),
             (finish_mission,0),
          (else_try),
             (this_or_next|main_hero_fallen),   #CABA EDIT/FIX FOR DEATH CAM
@@ -35744,8 +35736,6 @@ mission_templates = [
           (gt, ":elapsed_time", 20),
           (str_store_string, s5, "str_cannot_leave_now"),
         (try_end),
-        (call_script, "script_count_mission_casualties_from_agents"),
-        #(call_script, "script_freelancer_keep_field_loot"), #Freelancer keep field loot 
         (finish_mission,0),]),
 
 

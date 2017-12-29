@@ -1,4 +1,4 @@
-944
+947
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -943,3 +943,6 @@ qstr_You_defeated_the_ene You_defeated_the_enemies.
 qstr_You_failed_to_defeat_ You_failed_to_defeat_the_enemy.
 qstr_Freelancer_Rank___{r Freelancer_Rank_-_{reg3}
 qstr_Enlisted_Lord_Set_to Enlisted_Lord_Set_to_Jeanne
+qstr_You_defeated_{reg5}_e You_defeated_{reg5}_enemies_and_have_impressed_your_commander.
+qstr_You_will_be_followin You_will_be_following_the_Lord/Lady_you_chose_and_will_be_joining_in_battles_they_get_into.^_You_can_also_get_promoted_as_you_gain_experience._^^Lastly,_you_can_increase_the_map_speed_while_enlisted_by_pressing_the_'='_key_(next_to_the_backspace_key).
+qstr_You_are_now_enlisted! You_are_now_enlisted!

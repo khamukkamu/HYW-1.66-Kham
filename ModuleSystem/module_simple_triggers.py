@@ -4295,11 +4295,15 @@ simple_triggers = [
 
   (eq, "$freelancer_state", 1),
   (store_random_in_range, ":rand", 0, 100),
-  #(ge, ":random", 50), #50% chance for a mission
+  #(ge, ":rand", 50), #50% chance for a mission
 
-  #(try_begin),
-    (jump_to_menu, "mnu_freelancer_training_choose"),
-  #(try_end),
+  (store_random_in_range, ":chance", 0, 100),
+  (try_begin),
+    (le, ":chance", 50),
+    (jump_to_menu, "mnu_freelancer_training_choose"), #Training
+  (else_try),
+    (jump_to_menu, "mnu_freelancer_looters"), #Looters
+  (try_end),
 
 ]),   
 

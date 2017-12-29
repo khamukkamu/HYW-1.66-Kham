@@ -1756,6 +1756,6 @@ triggers = [
 ]),
 
 #Save Compat Trigger
-(0.1, 0, ti_once, [(eq, "$freelancer_state", 1)], [(dialog_box,"@You are now enlisted! You will be following the lord/lady you chose and will be joining in battles they get into. You can also get promoted as you gain experience. ^Lastly, you can increase the map speed while enlisted by pressing the '=' key (next to the backspace key).")]),
+(0.1, 0, ti_once, [(eq, "$freelancer_state", 1)], [(dialog_box,"@You will be following the Lord/Lady you chose and will be joining in battles they get into.^ You can also get promoted as you gain experience. ^^Lastly, you can increase the map speed while enlisted by pressing the '=' key (next to the backspace key).", "@You are now enlisted!")]),
 
 ]

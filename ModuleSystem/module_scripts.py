@@ -60986,11 +60986,16 @@ scripts = [
 
     ("event_player_vacation",
     [
-      (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation), ###move to quests, not missions
-    (troop_set_slot, "trp_player", slot_troop_days_on_mission, 2),
+    #Kham Changes begin
+    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+    (val_add, ":freelancer_rank", 2), #add 2 days per rank for vacation. So a rank 1 only gets 3 days, rank 2, gets 4, etc...  Tweakable
+    (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation), ###move to quests, not missions
+    (troop_set_slot, "trp_player", slot_troop_days_on_mission, ":freelancer_rank"),
+    #Kham Changes END
   
     #removes faction relation given at enlist
-    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+  
     (try_for_range, ":cur_faction", kingdoms_begin, kingdoms_end),
             (neq, ":commander_faction", ":cur_faction"),
       (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
@@ -61007,7 +61012,7 @@ scripts = [
     (quest_set_slot, "qst_freelancer_vacation", slot_quest_target_party, "$enlisted_party"),
     (quest_set_slot, "qst_freelancer_vacation", slot_quest_importance, 0),
     (quest_set_slot, "qst_freelancer_vacation", slot_quest_xp_reward, 50),
-    (quest_set_slot, "qst_freelancer_vacation", slot_quest_expiration_days, 14),
+    (quest_set_slot, "qst_freelancer_vacation", slot_quest_expiration_days, ":freelancer_rank"),
     (setup_quest_text, "qst_freelancer_vacation"),
     (str_clear, s2), #description. necessary?
         (call_script, "script_start_quest", "qst_freelancer_vacation", "$enlisted_lord"),

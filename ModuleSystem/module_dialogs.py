@@ -31933,10 +31933,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   
 #dialog_accept_leave  
     [anyone,"lord_request_vacation",
-        [
-        (ge, "$g_talk_troop_relation", 0),
+    [
+      (ge, "$g_talk_troop_relation", 0),
+      (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+      (faction_get_slot, reg3, ":commander_faction", slot_freelancer_rank),
+      (val_add, reg3, 2), #add 2 days per rank for vacation. So a rank 1 only gets 3 days, rank 2, gets 4, etc...  
+
     ],
-            "Very well {playername}. You shall take some time off from military duty. Return in two weeks.", "lord_pretalk",[
+            "Very well {playername}. You shall take some time off from military duty. Return in {reg3} days.", "lord_pretalk",[
     (call_script, "script_event_player_vacation"),
     (call_script, "script_party_restore"),
     (change_screen_map),

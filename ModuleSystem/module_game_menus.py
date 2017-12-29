@@ -25090,7 +25090,14 @@ game_menus = [
    [(assign, reg5, "$g_arena_training_kills"),
    (try_begin),
     (ge, reg5, 1),
-    (str_store_string, s5, "@You defeated {reg5} enemies."),
+    (try_begin),
+      (ge, reg5, 6),
+      (store_div, ":rel_gain", reg5, 2),
+      (call_script, "script_change_player_relation_with_troop", "$enlisted_lord", ":rel_gain"), #Increase relationship by kills/2.
+      (str_store_string, s5, "@You defeated {reg5} enemies and have impressed your commander."),
+    (else_try),
+      (str_store_string, s5, "@You defeated {reg5} enemies."),
+    (try_end),
    (else_try),
     (str_store_string, s5, "@You failed to defeat any enemy."),
    (try_end),],
@@ -25118,10 +25125,10 @@ game_menus = [
     ("looter_accept", [], "Accept this mission", 
       [(jump_to_menu, "mnu_freelancer_looter_accept")]),
 
-    ("reject_training", [], "Reject today's training",
+    ("looter_reject", [], "Reject today's mission.",
       [(change_screen_map)]),
 
-    ("training_wounded", [(troop_is_wounded, "trp_player"),], "You are too wounded to train.",
+    ("looter_wounded", [(troop_is_wounded, "trp_player"),], "You are too wounded for this mission.",
       [(change_screen_map)]),
     ]
   ),
@@ -25207,8 +25214,15 @@ game_menus = [
    [
    (try_begin),
     (ge, "$g_battle_result", 1),
+    (set_background_mesh, "mesh_pic_victory"),
     (str_store_string, s5, "@You defeated the enemies."),
+    (store_character_level, ":level", "trp_player"),
+    (val_mul, ":level", 8),
+    (val_min, ":level", 100),
+    (add_xp_as_reward, ":level"),
+    (troop_add_gold,  "trp_player", ":level"),
    (else_try),
+    (set_background_mesh, "mesh_pic_defeat"),
     (str_store_string, s5, "@You failed to defeat the enemy."),
    (try_end),],
    [
