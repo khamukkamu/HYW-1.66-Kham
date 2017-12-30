@@ -1862,13 +1862,13 @@ warriors_horses_refill_rate = 7
 # rel. 02/12/2016
 
 #AI variables
-AI_long_range	= 13000	#do not put over 130m if you want archers to always fire
+AI_long_range	= 8000	#do not put over 130m if you want archers to always fire
 AI_firing_distance	= AI_long_range / 2
 AI_for_kingdoms_only	= 0
 Percentage_Cav_For_New_Dest	= 40
 Hold_Point	= 100	#archer hold if outnumbered
 Advance_More_Point	= 100 - Hold_Point * 100 / (Hold_Point + 100)	#advance 'cause expect other side is holding
-AI_Max_Reinforcements	= 2	#maximum number of reinforcement stages in a battle
+AI_Max_Reinforcements	= 1000000	#maximum number of reinforcement stages in a battle
 AI_Replace_Dead_Player	= 1
 AI_Poor_Troop_Level	= 12	#average level of troops under which a division may lose discipline
 
@@ -1985,7 +1985,7 @@ formation_minimum_spacing	= 67	#historical shieldwall was spaced about 47cm, the
 formation_minimum_spacing_horse_length	= 300
 formation_minimum_spacing_horse_width	= 200
 formation_start_spread_out	= 2	#extra 50cm spacings for ease of movement for new formations
-formation_min_foot_troops	= 12	#minimum to make foot formation
+formation_min_foot_troops	= 13	#minimum to make foot formation
 formation_min_cavalry_troops	= 5	#minimum to make cavalry wedge
 formation_native_ai_use_formation = 1
 formation_delay_for_spawn	= .4	#used for M&B 1.011 implementation

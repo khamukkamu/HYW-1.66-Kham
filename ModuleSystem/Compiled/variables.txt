@@ -1470,3 +1470,5 @@ troop_detail_dummy_angle
 presentation_leave_button
 temp_troop
 mouse_coordinates
+spawn_party_max_size
+loot_value_before

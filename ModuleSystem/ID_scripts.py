@@ -800,3 +800,4 @@ script_troop_detail_update_dummy_gear_aux = 798
 script_troop_detail_change_screen = 799
 script_add_troop_to_cur_tableau_for_troop_detail_dummy = 800
 script_game_troop_upgrades_button_clicked = 801
+script_store_item_price = 802

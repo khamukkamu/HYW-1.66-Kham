@@ -1,4 +1,4 @@
-988
+990
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -987,3 +987,5 @@ qstr_French_Noble_Line French_Noble_Line
 qstr_English_Noble_Line English_Noble_Line
 qstr_Burgandy_Noble_Line Burgandy_Noble_Line
 qstr_Breton_Noble_Line Breton_Noble_Line
+qstr_{!}DEBUG_:_Doing_scr {!}DEBUG_:_Doing_script_update_party_creation_random_limits
+qstr_{s1}_of_the_{s3}_was {s1}_of_the_{s3}_was_defeated_in_battle_but_managed_to_escape.
