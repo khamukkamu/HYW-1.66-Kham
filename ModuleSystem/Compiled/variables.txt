@@ -1456,3 +1456,17 @@ g_next_pay_time
 scene_to_use
 player_cheering
 freelancer_rank
+troop_tree_pic_height
+troop_tree_counter
+troop_tree_pic_width
+g_presentation_leave_button
+g_presentation_obj_1
+checkbox_show_item_details
+checkbox_show_item_details_val
+checkbox_show_item_details_label
+default_troop_portrait
+temp2
+troop_detail_dummy_angle
+presentation_leave_button
+temp_troop
+mouse_coordinates

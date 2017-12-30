@@ -581,3 +581,5 @@ mesh_flag_d9 = 579
 mesh_pic_soldier_world_map = 580
 mesh_pic_soldier_rebel = 581
 mesh_pic_soldier_desert = 582
+mesh_pic_troop_trees = 583
+mesh_pic_units_details = 584

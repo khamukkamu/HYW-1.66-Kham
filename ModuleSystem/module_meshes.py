@@ -646,5 +646,8 @@ meshes = [
   ("pic_soldier_desert", 0, "pic_soldier_desert", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 #+freelancer end
 
+###VC presentations
+    ("pic_troop_trees", 0, "meeting_window", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+    ("pic_units_details", 0, "meeting_window", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
 ]

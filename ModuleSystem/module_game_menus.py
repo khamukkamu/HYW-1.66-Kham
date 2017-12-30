@@ -3824,6 +3824,11 @@ game_menus = [
 
       ("formation_mod_option",[],"1429: HYW Mod Options.", [(start_presentation, "prsnt_formation_mod_option")]),
 
+      ("check_troop_tree",[],"Consult Troop Tree.",[
+        (assign, "$g_presentation_obj_sliders_1_val", 0),
+        (start_presentation, "prsnt_troop_tree"),
+      ]),
+      
       ("camp_action",[],"Take an action.",
        [(jump_to_menu, "mnu_camp_action"),
         ]

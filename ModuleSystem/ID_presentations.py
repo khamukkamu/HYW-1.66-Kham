@@ -46,3 +46,6 @@ prsnt_order_display = 44
 prsnt_formation_mod_option = 45
 prsnt_battle = 46
 prsnt_taragoth_lords_report = 47
+prsnt_game_troop_tree = 48
+prsnt_troop_tree = 49
+prsnt_troop_detail = 50

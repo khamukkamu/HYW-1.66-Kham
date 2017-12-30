@@ -322,7 +322,7 @@ troops = [
 
 ["priest", "Piquier millicien", "Piquiers milliciens", tf_guarantee_boots|tf_guarantee_armor, no_scene, reserved, fac_commoners, [itm_long_mail_coat,itm_mail_shirt,itm_leather_boots,itm_mail_chausses,itm_club,itm_knife,itm_staff,itm_staff,itm_voulge_3,itm_voulge_1,itm_2glaive], def_attrib|level(13)|str_14, wp(80), knows_common|knows_wound_treatment_3|knows_first_aid_3, man_face_older_2, man_face_young_1 ],
 
-["executioner","Torturer","Torturers",tf_guarantee_boots|tf_guarantee_armor,no_scene,reserved,fac_commoners,[itm_leather_gloves,itm_mail_chausses,itm_robeblack,itm_common_hoodblack,itm_battle_axe,itm_war_axe],def_attrib|level(18),wp(95),knows_common|knows_surgery_5|knows_prisoner_management_5|knows_ironflesh_2|knows_shield_3|knows_athletics_3,swadian_face_young_1,swadian_face_old_2],
+["executioner","Executioner","Executioner",tf_guarantee_boots|tf_guarantee_armor,no_scene,reserved,fac_commoners,[itm_leather_gloves,itm_mail_chausses,itm_robeblack,itm_common_hoodblack,itm_battle_axe,itm_war_axe],def_attrib|level(18),wp(95),knows_common|knows_surgery_5|knows_prisoner_management_5|knows_ironflesh_2|knows_shield_3|knows_athletics_3,swadian_face_young_1,swadian_face_old_2],
 
 ["sentry","Sentry","Sentries",tf_guarantee_boots|tf_guarantee_armor,no_scene,reserved,fac_commoners,[itm_splinted_greaves,itm_mail_boots,itm_mail_shirtdeer,itm_mail_shirtgreen,itm_mail_hauberk,itm_kettle_hat,itm_nasal_helmet,itm_mail_coif_full,itm_templar,itm_bayeux,itm_hospitaller,itm_nordic_shield,itm_tab_shield_kite_c],def_attrib|level(18),wp(95),knows_common|knows_trainer_5|knows_spotting_5|knows_ironflesh_2|knows_shield_3|knows_athletics_4,swadian_face_young_1,swadian_face_old_2],
 
@@ -3055,8 +3055,8 @@ upgrade(troops,"follower_woman","hunter_woman")
 upgrade(troops,"hunter_woman","fighter_woman")
 
 upgrade(troops,"fighter_woman","sword_sister")
-upgrade(troops,"refugee","follower_woman")
-upgrade(troops,"peasant_woman","follower_woman")
+upgrade(troops,"refugee","follower_woman") #
+upgrade(troops,"peasant_woman","follower_woman") #
 
 
 

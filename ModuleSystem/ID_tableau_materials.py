@@ -53,3 +53,5 @@ tableau_positioning_selection = 51
 tableau_retired_troop_alpha_mask = 52
 tableau_retired_troop_color = 53
 tableau_retirement_troop = 54
+tableau_troop_tree_pic = 55
+tableau_troop_detail_dummy_pic = 56
