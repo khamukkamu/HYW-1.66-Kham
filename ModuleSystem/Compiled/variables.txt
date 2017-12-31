@@ -1472,3 +1472,4 @@ temp_troop
 mouse_coordinates
 spawn_party_max_size
 loot_value_before
+cheat_imposed_quest

@@ -917,6 +917,8 @@ scripts = [
   (assign, "$freelancer_state", 0), #Freelancer
   (assign, "$FormAI_autorotate", 1), #Formations Default
   (assign, "$freelancer_allow_desertion", 1), #Freelancer - Allow Desertion
+  (assign, "$g_next_pay_time", 0), #Freelancer - Init Paytime
+  
   
     ]),
 
@@ -17431,7 +17433,10 @@ scripts = [
 	  
 	  (try_begin), #get dynamic quest is a separate script, so that we can scan a number of different troops at once for it
 	   	(call_script, "script_get_dynamic_quest", "$g_talk_troop"),
-	   		   	
+	   	
+      #Kham - For Testing and Freelancer Quests
+      (try_begin), (ge, "$cheat_imposed_quest", 0),(assign, ":quest_no", "$cheat_imposed_quest"),(try_end),
+
 	    (assign, ":result", reg0),
 	    (assign, ":relevant_troop", reg1),
 	    (assign, ":relevant_party", reg2),
@@ -61094,7 +61099,8 @@ scripts = [
     (troop_get_xp, ":xp", "trp_player"),
     (troop_set_slot, "trp_player", slot_troop_freelancer_start_xp, ":xp"),
     (store_current_day, ":day"), 
-    (troop_set_slot, "trp_player", slot_troop_freelancer_start_date, ":day"),   
+    (troop_set_slot, "trp_player", slot_troop_freelancer_start_date, ":day"), 
+    (store_add, "$g_next_pay_time", ":day", 7), #Payday every 7 days. We initiate it here.  
     (party_get_morale, ":morale", "p_main_party"),
     (party_set_slot, "p_main_party", slot_party_orig_morale, ":morale"),
     #(assign, "$freelancer_state", 1), #moved to script
@@ -61273,6 +61279,71 @@ scripts = [
       (call_script, "script_set_player_relation_with_faction", ":commander_faction", 5),
     (try_end),
 
+    (call_script, "script_freelancer_attach_party"),
+    (display_message, "@You have rejoined your commander!"),    
+    ]),
+
+#  RUNS IF THE PLAYER GOES ON A MISSION - Kham
+
+    ("event_player_mission",
+    [
+
+    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (quest_get_slot, ":mission_days", "$cheat_imposed_quest", slot_quest_expiration_days), #We check how many days the mission should be completed
+    (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation), ###move to quests, not missions
+    (troop_set_slot, "trp_player", slot_troop_days_on_mission, ":mission_days"),
+
+    #removes faction relation given at enlist
+    (try_for_range, ":cur_faction", kingdoms_begin, kingdoms_end),
+            (neq, ":commander_faction", ":cur_faction"),
+      (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
+            (call_script, "script_set_player_relation_with_faction", ":cur_faction", 0),
+        (try_end),
+
+    (assign, "$freelancer_state", 2),
+    (troop_set_slot, "trp_player", slot_freelancer_mission, 1),
+    (call_script, "script_freelancer_detach_party"),
+    (rest_for_hours, 0,0,0),
+    (display_message, "@You set forth on your mission."),   
+    ]),
+
+# RUNS WHEN PLAYER RETURNS FROM MISSION - KHAM
+
+  ("event_player_returns_mission",
+    [
+     (troop_set_slot, "trp_player", slot_troop_current_mission, 0),
+     (troop_set_slot, "trp_player", slot_troop_days_on_mission, 0),
+     (troop_set_slot, "trp_player", slot_freelancer_mission, 0),
+     (assign, "$cheat_imposed_quest", -1),
+
+    #needed to stop bug where parties attack the old player party
+     (call_script, "script_set_parties_around_player_ignore_player", 2, 4),
+
+        #removes troops from player party #Caba--could use party_clear? and then add the player back?
+        (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+        (try_for_range_backwards, ":cur_stack", 1, ":num_stacks"), #lower bound is 1 to ignore player character
+           (party_stack_get_troop_id, ":cur_troops", "p_main_party", ":cur_stack"),
+           (party_stack_get_size, ":cur_size", "p_main_party", ":cur_stack"),
+           (party_remove_members, "p_main_party", ":cur_troops", ":cur_size"),
+        (try_end),
+    
+        #To fix any errors of the lord changing parties
+    (troop_get_slot, "$enlisted_party", "$enlisted_lord", slot_troop_leaded_party), 
+    
+    #set faction relations to allow player to join battles
+    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (try_for_range, ":cur_faction", kingdoms_begin, kingdoms_end),
+           (neq, ":commander_faction", ":cur_faction"),
+       (faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
+           (call_script, "script_set_player_relation_with_faction", ":cur_faction", -5),
+        (try_end),  
+    (try_begin),
+      (store_relation, ":player_relation", ":commander_faction", "fac_player_supporters_faction"),
+      (lt, ":player_relation", 5),
+      (call_script, "script_set_player_relation_with_faction", ":commander_faction", 5),
+    (try_end),
+
+    (assign, "$freelancer_state", 1),
     (call_script, "script_freelancer_attach_party"),
     (display_message, "@You have rejoined your commander!"),    
     ]),
@@ -61734,6 +61805,30 @@ scripts = [
   (try_end),  
   (troop_equip_items, "trp_player"),
    ]), 
+
+
+#Kham - script_get_freelancer_mission - Used in Simple Triggers.
+#Input: n/a
+#Output: Freelancer mission
+
+("get_freelancer_mission", [
+  (store_random_in_range, ":chance", 0, 1000),
+  (try_begin),
+    (le, ":chance", 20),
+    (assign, "$cheat_imposed_quest", "qst_deliver_message"),
+    (start_map_conversation, "$enlisted_lord"),
+  (else_try),
+    (le, ":chance", 35),    
+    (assign, "$cheat_imposed_quest", "qst_hunt_down_fugitive"),
+    (start_map_conversation, "$enlisted_lord"),
+  (else_try),
+    (le, ":chance", 50),
+    (jump_to_menu, "mnu_freelancer_training_choose"), #Training
+  (else_try),
+      (jump_to_menu, "mnu_freelancer_looters"), #Looters
+  (try_end),
+]),
+
 #+freelancer end
 
 #Kham - TLD Scripts (mtarini)

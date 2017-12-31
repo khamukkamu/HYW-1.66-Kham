@@ -4235,15 +4235,15 @@ dlga_lord_intro_henry:lord_intro|Certainly...
 dlga_lord_intro_henryusurpateur:lord_intro_henry|Mind your manners, miserable beggar. Do you know who you are talking to?
 dlga_start:lord_meet_neutral_duc|Burgundian, pay respects to your Duke.
 dlga_lord_meet_neutral_duc:lord_intro_duc|My name is {playername}, mighty Duke.
-dlga_lord_meet_neutral_duc:lord_intro_Ducnorespet|Je suis {playername},et vous vous meprenez Duc,je ne suis pas Bourgignon.
-dlga_lord_meet_neutral_duc:lord_intro_Ducnorespet.1|Je suis {playername}.
+dlga_lord_meet_neutral_duc:lord_intro_Ducnorespet|My name is {playername}, and you're are mistaken, Duke, I'm not Burgandian.
+dlga_lord_meet_neutral_duc:lord_intro_Ducnorespet.1|I am {playername}.
 dlga_lord_intro_duc:lord_intro_insultduc|I guess you're one of the mercenaries I enlisted to fight those French dogs...
-dlga_lord_intro_Ducnorespet:lord_introducreponsse|D'habitude seuleument deux categories de soldats s'adresse a moi,mes alliés et mes enemis...dans laquelle vous rangez vous ?
+dlga_lord_intro_Ducnorespet:lord_introducreponsse|Usually only two categories of soldiers are sent to me, my allies and my enemies ... where do you stand?
 dlga_lord_introducreponsse:lord_intro|I'm with you... great Duke.
 dlga_lord_introducreponsse:lord_intro.1|I'm just looking for work. I'm not really a soldier and I won't make history.
 dlga_lord_introducreponsse:lord_intro.2|I work for the highest bidder.
 dlga_lord_intro_insultduc:lord_intro_insultduc2|I'm a mercenary, working for the French.
-dlga_lord_intro_insultduc:lord_intro|This is my lord...
+dlga_lord_intro_insultduc:lord_intro|You are correct, my Lord...
 dlga_lord_intro_insultduc2:lord_intro|What insolence... the soldiers of your kind are only carrions who loot the corpses on the battlefield, to pay for drink in taverns... However, since your lives have a price and I happen to need vultures like you, I'm willing to listen.
 dlga_start:lord_meet_neutral_ducb|Who are you, clown?
 dlga_lord_meet_neutral_ducb:lord_intro_ducbmsduc|I'm {playername}, respected Duke. A mercenary, the best one you can find.

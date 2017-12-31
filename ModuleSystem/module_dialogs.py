@@ -236,6 +236,90 @@ dialogs = [
   ],
 ],    
 
+#Dialogue for Freelancer Outbound Missions START - Kham
+
+[anyone,"event_triggered", [(eq, "$g_talk_troop", "$enlisted_lord"), (ge, "$cheat_imposed_quest", 0)], "{playername}, I have a task for you.", "freelancer_mission_start",[
+(call_script, "script_get_quest", "$enlisted_lord"),
+(assign, "$random_quest_no", reg0),]],
+
+
+
+#Dialogue for Freelancer Deliver Message
+[anyone,"freelancer_mission_start", [(eq, "$random_quest_no", "qst_deliver_message")],
+   "I need to send a letter to {s13} who should be currently at {s4}.\
+ If you will be heading towards there, would you deliver it to him?\
+ The letter needs to be in his hands in 10 days.", "freelancer_mission_deliver_message",
+   [
+     (quest_get_slot, ":quest_target_troop", "$random_quest_no", slot_quest_target_troop),
+     (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+     (quest_set_slot, "$random_quest_no", slot_quest_expiration_days, 10),
+     (quest_set_slot, "$random_quest_no", slot_quest_dont_give_again_period, 0),
+     (str_store_troop_name_link,s9,"$g_talk_troop"),
+     (str_store_troop_name_link,s13,":quest_target_troop"),
+     (str_store_party_name_link,s4,":quest_target_center"),
+     (setup_quest_text,"$random_quest_no"),
+     (str_store_string, s2, "@{s9} asked you to take a message to {s13}. {s13} was believed to be at {s4} when you were given this quest."),
+   ]],
+
+[anyone|plyr,"freelancer_mission_deliver_message", [], "Certainly, I intend to pass by {s4} and it would be no trouble.", "freelancer_mission_deliver_message_accepted",[]],
+
+[anyone,"freelancer_mission_deliver_message_accepted", [], "I appreciate it, {playername}. Here's the letter,\
+ and a small sum to cover your travel expenses. Give my regards to {s13} when you see him.", "close_window",
+   [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    (call_script, "script_troop_add_gold", "trp_player", 30),
+    (call_script, "script_event_player_mission"), (call_script, "script_party_restore"),
+    (assign, "$g_leave_encounter",1),
+   ]],
+
+[anyone|plyr,"freelancer_mission_deliver_message", [], "Apologies, I cannot do this mission. You'd best send it with someone else.", "freelancer_mission_deliver_message_rejected",[]],
+[anyone,"freelancer_mission_deliver_message_rejected", [], "That is too bad, {playername}. Go back to your post, then.", "close_window",[]],
+#Dialogue for Freelancer Deliver Message END
+
+#Dialogue for Freelancer Hunt Fugitive START
+
+#Hunt down fugitive
+  [anyone,"freelancer_mission_start", [(eq,"$random_quest_no","qst_hunt_down_fugitive")],
+   "I have something you could help with, an issue with the lawless villain known as {s4}. \
+ He murdered one of my men and has been on the run from his judgment ever since.\
+ I can't let him get away with avoiding justice, so I've put a bounty of 300 denars on his head.\
+ Friends of the murdered man reckon that this assassin may have taken refuge with his kinsmen at {s3}.\
+ You might be able to hunt him down and give him what he deserves, and claim the bounty for yourself.", "freelancer_mission_hunt_down_fugitive_told",
+   [
+     (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+     (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),
+     (quest_set_slot, "$random_quest_no", slot_quest_expiration_days, 10),
+     (quest_set_slot, "$random_quest_no", slot_quest_dont_give_again_period, 0),
+     (str_store_troop_name_link,s9, "$g_talk_troop"),
+     (str_store_party_name_link,s3, ":quest_target_center"),
+     (call_script, "script_get_name_from_dna_to_s50", ":quest_target_dna"),
+     (str_store_string, s4, s50),
+     (setup_quest_text, "$random_quest_no"),
+     (str_store_string, s2, "@{s9} asked you to hunt down a fugitive named {s4}. He is currently believed to be at {s3}."),
+   ]],
+
+  [anyone|plyr,"freelancer_mission_hunt_down_fugitive_told", [],
+   "Then I will hunt him down and execute the law.", "freelancer_mission_hunt_down_fugitive_accepted",[]],
+
+  [anyone|plyr,"freelancer_mission_hunt_down_fugitive_told", [], "Apologies, I cannot do this mission. You'd best send it with someone else.", "freelancer_mission_hunt_down_fugitive_rejected",[]],
+
+  [anyone,"freelancer_mission_hunt_down_fugitive_accepted", [], "That's excellent, {playername}.\
+ I will be grateful to you and so will the family of the man he murdered.\
+ And of course the bounty on his head will be yours if you can get him.\
+ Well, good hunting to you.", "close_window",
+   [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+    (call_script, "script_event_player_mission"), (call_script, "script_party_restore"),
+    (assign, "$g_leave_encounter",1),
+   ]],
+
+  [anyone,"freelancer_mission_hunt_down_fugitive_rejected", [], "As you wish, {playername}.\
+Go back to your post.", "close_window",
+   []],
+
+  
+##Dialogue For Freelancer Outbound missions END - Kham
+
+
   [anyone ,"event_triggered", [(store_conversation_troop, "$g_talk_troop"),
                            (try_begin),
                                (is_between, "$g_talk_troop", companions_begin, companions_end),
@@ -31954,11 +32038,26 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         [anyone,"ask_return_from_leave",
         [
         (ge, "$g_talk_troop_relation", 0),
+        (neg|troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
     ],
         "Welcome back {playername}. Your regiment has missed you I daresay, Now return to your post.", "lord_pretalk",[
         (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
     (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
         (call_script, "script_event_player_returns_vacation"),
+    (change_screen_map),
+    ],
+    ],
+
+#dialog_accept_ask_return_from_leave - For Mission Completion (Kham)
+        [anyone,"ask_return_from_leave",
+        [
+        (ge, "$g_talk_troop_relation", 0),
+        (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
+    ],
+        "Welcome back {playername}. Thank you for completing the mission. Now return to your post.", "close_window",[
+        (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
+    (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
+        (call_script, "script_event_player_returns_mission"),
     (change_screen_map),
     ],
     ],

@@ -3828,7 +3828,7 @@ game_menus = [
         (assign, "$g_presentation_obj_sliders_1_val", 0),
         (start_presentation, "prsnt_troop_tree"),
       ]),
-      
+
       ("camp_action",[],"Take an action.",
        [(jump_to_menu, "mnu_camp_action"),
         ]
@@ -5452,6 +5452,8 @@ game_menus = [
       (assign, reg3, ":freelancer_rank"),
       (display_message, "@Freelancer Rank - {reg3}"),
       (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_rank"),]),
+    ("impose_messenger_quest",[],"Impose Deliver Message", [(assign, "$cheat_imposed_quest", "qst_deliver_message"),(display_message, "@Quest Imposed!", color_good_news),]),
+    ("impose_none",[],"Reset Impose Quest", [(assign, "$cheat_imposed_quest", -1),(display_message, "@Impose Quest Cleared!", color_good_news),]),
     ("resume_travelling",[],"Resume travelling.",[(change_screen_return),]),
     
  ]),
@@ -7602,8 +7604,7 @@ game_menus = [
         (change_screen_mission),
       ]),
 
-      ("join_hold",[(neg|troop_is_wounded, "trp_player"),],"Start battle holding position.", [
-        (neq, "$freelancer_state", 1),
+      ("join_hold",[(neq, "$freelancer_state", 1),(neg|troop_is_wounded, "trp_player"),],"Start battle holding position.", [
         (assign, "$player_deploy_troops", 1),
         (assign, "$g_joined_battle_to_help", 1),
         (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
@@ -7639,9 +7640,8 @@ game_menus = [
       "You are too wounded to fight.",[(leave_encounter),(change_screen_map)]),
       #Freelancer END
       
-      ("join_leave",[],"Leave.",
-      [ (neq, "$freelancer_state", 1),
-        (try_begin),
+      ("join_leave",[(neq, "$freelancer_state", 1),],"Leave.",
+      [ (try_begin),
            (neg|troop_is_wounded, "trp_player"),
            (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
            (party_stack_get_troop_id, ":enemy_leader","$g_enemy_party",0),

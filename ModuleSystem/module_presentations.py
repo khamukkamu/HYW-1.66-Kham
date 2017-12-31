@@ -12456,8 +12456,11 @@ presentations = [
     (val_sub, ":cur_y", ":cur_y_adder"),
     
     #next_pay
-    (str_store_date, s25, "$g_next_pay_time"),
-    (create_text_overlay, reg0, "@Next Pay/Promotion day: {s25}", tf_left_align),
+    (store_current_day, ":cur_day"),
+    (store_sub, ":next_pay_day", "$g_next_pay_time", ":cur_day"),
+    (assign, reg21, ":next_pay_day"),
+    #(str_store_date, s25, "$g_next_pay_time"),
+    (create_text_overlay, reg0, "@Days until next payday: {reg21}", tf_left_align),
     (position_set_y, pos1, ":cur_y"),
     (overlay_set_position, reg0, pos1),
     (val_sub, ":cur_y", ":cur_y_adder"),
