@@ -3822,7 +3822,7 @@ game_menus = [
 
       ("camp_test_kham",[],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
 
-      ("formation_mod_option",[],"1429: HYW Mod Options.", [(start_presentation, "prsnt_formation_mod_option")]),
+      ("hyw_mod_option",[],"1429: HYW Mod Options.", [(start_presentation, "prsnt_hyw_mod_option")]),
 
       ("check_troop_tree",[],"Consult Troop Tree.",[
         (assign, "$g_presentation_obj_sliders_1_val", 0),
@@ -5437,13 +5437,42 @@ game_menus = [
 ( "camp_khamtest",0,
   "Kham Test","none",[],
     [
+    ("choose_scene",[],"** Scene Chooser **", [(jump_to_menu, "mnu_choose_scenes_0"),]),
     ("test_freelancer_looters",[],"Test Looters Mission", [(assign, "$player_cur_troop", "trp_swadian_militia"),(jump_to_menu, "mnu_freelancer_looter_accept"),]),
     ("set_freelancer_rank",[],"Set Freelancer Rank", [
       (assign, "$enlisted_lord", "trp_knight_1_5"),
       (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
       (faction_set_slot, ":commander_faction", slot_freelancer_rank, 1),
       (display_message, "@Enlisted Lord Set to Jeanne", color_good_news)]),
-
+    ("freelancer_level_test", [], "Become Low Level Freelancer - Get Level", [
+      (assign, "$player_cur_troop", "trp_swadian_recruit"), 
+      (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
+      (store_character_level, ":cur_level", "$player_cur_troop"),
+      (val_sub, ":cur_level", 1),
+      (assign, reg4, ":cur_level"),
+      (display_message, "@Cur Level minus 1 - {reg4}", color_bad_news),
+      (get_level_boundary, ":cur_level", ":cur_level"),
+      (assign, reg6, ":cur_level"),
+      (display_message, "@Level Boundary of {reg4} - {reg6}"),
+      (store_character_level, ":required_xp", ":upgrade_troop"),
+      ##Kham Changes Begin
+      (try_begin),
+        (gt, ":required_xp", 19),
+        (assign, ":sub_amount", 1),
+      (else_try),
+        (assign, ":sub_amount", 3),
+      (try_end),
+      #Kham Changes END
+      (val_sub, ":required_xp", ":sub_amount"),
+      (assign, reg5, ":required_xp"),
+      (display_message, "@Upgrade Troop Level minus  4 - {reg5}", color_bad_news),
+      (get_level_boundary, ":required_xp", ":required_xp"),
+      (assign, reg7, ":required_xp"),
+      (display_message, "@Level Boundary of {reg5} - {reg7}"),
+      (val_sub, ":required_xp", ":cur_level"), 
+      (assign, reg2, ":cur_level"),
+      (assign, reg3, ":required_xp"), 
+      (display_message, "@Cur XP {reg2} - Required {reg3}", color_good_news),]),
     ("add_freelancer_rank",[], "Add Freelancer Rank", [
       (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
       (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
@@ -25237,3 +25266,31 @@ game_menus = [
   ]),
 
  ]
+
+ ## quick scene chooser
+import header_scenes
+from template_tools import *
+from module_scenes import scenes
+
+sorted_scenes = sorted(scenes)
+for i in xrange(len(sorted_scenes)):
+  current_scene = list(sorted_scenes[i])
+  current_scene[1] = get_flags_from_bitmap(header_scenes, "sf_", current_scene[1])
+  sorted_scenes[i] = tuple(current_scene)
+
+choose_scene_template = Game_Menu_Template(
+  id="choose_scenes_",
+  text="Choose a scene: (Page {current_page} of {num_pages})",
+  optn_id="choose_scene_",
+  optn_text="{list_item[0]}{list_item[1]}",
+  optn_consq = [
+    (modify_visitors_at_site,"scn_{list_item[0]}"),
+  (reset_visitors,0),
+    (set_visitor,0,"trp_player"),    
+  (set_jump_mission,"mt_scene_chooser"),
+  (jump_to_scene, "scn_{list_item[0]}"),
+    (change_screen_mission)
+  ]
+)
+
+game_menus += choose_scene_template.generate_menus(sorted_scenes)

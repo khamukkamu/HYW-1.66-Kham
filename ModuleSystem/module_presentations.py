@@ -10496,19 +10496,19 @@ presentations = [
     ]),
 ]),
 
-("formation_mod_option", 0, mesh_load_window, [
+("hyw_mod_option", 0, mesh_load_window, [
     (ti_on_presentation_load, [
         (presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
         (create_text_overlay, reg1, "@1429 Hundred Years War Mod Options", tf_center_justify),
         (position_set_x, pos0, Screen_Width/2),
-        #(position_set_y, pos0, Screen_Title_Height),
-        (position_set_y, pos0, 600),
+        (position_set_y, pos0, Screen_Title_Height),
+        #(position_set_y, pos0, 600),
         (overlay_set_position, reg1, pos0),
         
-        #(assign, ":y_pos", Screen_Title_Height-Screen_Text_Height-Screen_Text_Height),
-        (assign, ":y_pos", 450),
+        (assign, ":y_pos", Screen_Title_Height-Screen_Text_Height-Screen_Text_Height),
+        #(assign, ":y_pos", 450),
         
         #Disable formations option
         (create_text_overlay, reg1, "@Disable mod formations: ", tf_right_align),
@@ -10596,7 +10596,26 @@ presentations = [
         (overlay_set_val, "$form_options_overlay_5", "$freelancer_allow_desertion"),
         
         (val_sub, ":y_pos", Screen_Text_Height),
+
+        #Freelancer - Enhanced Upgrade Choice
+        (create_text_overlay, reg1, "@Freelancer: Promotion / Levelling Type: ", tf_right_align),
+        (position_set_y, pos0, ":y_pos"),
+        (overlay_set_position, reg1, pos0),
         
+        (create_combo_button_overlay, "$form_options_overlay_6"),
+        (overlay_add_item, "$form_options_overlay_6", "@Simple (Easy)"),
+        (overlay_add_item, "$form_options_overlay_6", "@Advanced (Hard)"),
+
+        (copy_position, pos1, pos0),
+        (store_add, reg2, ":y_pos", Screen_Checkbox_Height_Adj),
+        (position_set_y, pos1, reg2),
+        (position_get_x, ":x_pos", pos1),
+        (val_add, ":x_pos", 130),
+        (position_set_x, pos1, ":x_pos"),
+        (overlay_set_position, "$form_options_overlay_6", pos1),
+        (overlay_set_val, "$form_options_overlay_6", "$freelancer_enhanced_upgrade"),
+        (val_sub, ":y_pos", Screen_Text_Height),
+
         # This is for Done button
         (assign, "$form_options_overlay_exit", 0), # forced initialization
         (create_game_button_overlay, "$form_options_overlay_exit", "str_done"),
@@ -10623,7 +10642,7 @@ presentations = [
         (else_try),
           (eq, ":object", "$form_options_overlay_2"),
           (assign, "$FormAI_player_in_division", ":value"),
-          (start_presentation, "prsnt_formation_mod_option"),
+          (start_presentation, "prsnt_hyw_mod_option"),
         (else_try),
           (eq, ":object", "$form_options_overlay_3"),
           (assign, "$FormAI_autorotate", ":value"),
@@ -10633,6 +10652,9 @@ presentations = [
         (else_try),
           (eq, ":object", "$form_options_overlay_5"),
           (assign, "$freelancer_allow_desertion", ":value"),
+        (else_try),
+          (eq, ":object", "$form_options_overlay_6"),
+          (assign, "$freelancer_enhanced_upgrade", ":value"),
         (else_try),
           (eq, ":object", "$form_options_overlay_exit"),
           (presentation_set_duration, 0),
@@ -12417,19 +12439,46 @@ presentations = [
     (overlay_set_position, reg0, pos1),
     (val_sub, ":cur_y", ":cur_y_adder"),
     
-    #xp-to-next promotion
-    (troop_get_slot, ":service_xp_start", "trp_player", slot_troop_freelancer_start_xp),
-        (troop_get_xp, ":service_xp_cur", "trp_player"),
-        (val_sub, ":service_xp_cur", ":service_xp_start"),
-    (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
+    #xp-to-next promotion, modified by Kham
     (str_store_string, s1, "@N/A"),
-    (try_begin),
+    
+    (try_begin), #Start Enhanced Upgrade Choice - Kham
+      (eq, "$freelancer_enhanced_upgrade", 0),
+      (troop_get_slot, ":service_xp_start", "trp_player", slot_troop_freelancer_start_xp),
+      (troop_get_xp, ":service_xp_cur", "trp_player"),
+      (val_sub, ":service_xp_cur", ":service_xp_start"),
+      (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
+      (try_begin),
+        (gt, ":upgrade_troop", 1), #make sure troop is valid and not player troop
+        (call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
+        (store_sub, reg0, reg0, ":service_xp_cur"), #required XP from script
+        (gt, reg0, 0),
+        (str_store_string, s1, "str_reg0"),
+      (try_end),
+    (else_try),
+    #This is using the 'better formula' as per the simple triggers (UPGRADE CHECK)
+      (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
       (gt, ":upgrade_troop", 1), #make sure troop is valid and not player troop
-      (call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
-      (store_sub, reg0, reg0, ":service_xp_cur"), #required XP from script
-      (gt, reg0, 0),
+      (try_begin),
+        (store_character_level, ":cur_level", "$player_cur_troop"),
+        (val_sub, ":cur_level", 1),
+        (get_level_boundary, ":cur_level", ":cur_level"),
+        (store_character_level, ":required_xp", ":upgrade_troop"),
+        (try_begin),
+          (gt, ":required_xp", 19),
+          (assign, ":sub_amount", 1),
+        (else_try),
+          (assign, ":sub_amount", 3),
+        (try_end),
+      (val_sub, ":required_xp", ":sub_amount"),
+      (get_level_boundary, ":required_xp", ":required_xp"),
+      (val_sub, ":required_xp", ":cur_level"),      
+      (assign, reg0, ":required_xp"),
       (str_store_string, s1, "str_reg0"),
-    (try_end),
+      (try_end),
+    (try_end), #End Enhance Upgrade Choice     
+    ##
+
     (create_text_overlay, reg0, "@Experience to next promotion: {s1}", tf_left_align),
     (position_set_y, pos1, ":cur_y"),
     (overlay_set_position, reg0, pos1),

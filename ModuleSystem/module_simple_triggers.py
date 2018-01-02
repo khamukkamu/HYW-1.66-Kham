@@ -4236,19 +4236,30 @@ simple_triggers = [
         (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
         (gt, ":upgrade_troop", 1), #make sure troop is valid and not player troop
 
-        (call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
-        (assign, ":required_xp", reg0),  
-
-        ##THIS  BLOCK IS ALMOST DEFINITELY BE BETTER than the above two lines which could be commented out in exchange for them.
-        #(store_character_level, ":cur_level", "$player_cur_troop"),
-        #(val_sub, ":cur_level", 1),
-        #(get_level_boundary, ":cur_level", ":cur_level"),
-        #(store_character_level, ":required_xp", ":upgrade_troop"),
-        #(val_sub, ":required_xp", 1),
-        #(get_level_boundary, ":required_xp", ":required_xp"),
-        #(val_sub, ":required_xp", ":cur_level"),      
+        (try_begin),
+          (eq, "$freelancer_enhanced_upgrade", 0), #Let's put this as a choice for players.
+          (call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
+          (assign, ":required_xp", reg0),  
+        (else_try),    
+          ##THIS  BLOCK IS ALMOST DEFINITELY BE BETTER than the above two lines which could be commented out in exchange for them. - Implemented by Kham
+          (store_character_level, ":cur_level", "$player_cur_troop"),
+          (val_sub, ":cur_level", 1),
+          (get_level_boundary, ":cur_level", ":cur_level"),
+          (store_character_level, ":required_xp", ":upgrade_troop"),
+          ##Kham Changes Begin
+          (try_begin),
+            (gt, ":required_xp", 19),
+            (assign, ":sub_amount", 1),
+          (else_try),
+            (assign, ":sub_amount", 3),
+          (try_end),
+          #Kham Changes END
+          (val_sub, ":required_xp", ":sub_amount"),
+          (get_level_boundary, ":required_xp", ":required_xp"),
+          (val_sub, ":required_xp", ":cur_level"),      
+        (try_end),
         ##
-         
+
         (ge, ":service_xp_cur", ":required_xp"),
       
         (try_begin),

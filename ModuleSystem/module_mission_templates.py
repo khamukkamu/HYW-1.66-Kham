@@ -35826,4 +35826,12 @@ mission_templates = [
     ]
   ),
 
+( "scene_chooser",mtf_battle_mode,-1,
+    "You go to the scene",
+    [(0 ,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[]),(4 ,mtef_visitor_source|mtef_team_2,0,aif_start_alarmed,1,[])
+  ],[
+  (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
+]),
+
+
 ]

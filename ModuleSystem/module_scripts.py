@@ -918,6 +918,7 @@ scripts = [
   (assign, "$FormAI_autorotate", 1), #Formations Default
   (assign, "$freelancer_allow_desertion", 1), #Freelancer - Allow Desertion
   (assign, "$g_next_pay_time", 0), #Freelancer - Init Paytime
+  (assign, "$freelancer_enhanced_upgrade", 1), #Freelancer - Default to Advanced Upgrade system
   
   
     ]),
@@ -61812,7 +61813,7 @@ scripts = [
 #Output: Freelancer mission
 
 ("get_freelancer_mission", [
-  (store_random_in_range, ":chance", 0, 1000),
+  (store_random_in_range, ":chance", 0, 100),
   (try_begin),
     (le, ":chance", 20),
     (assign, "$cheat_imposed_quest", "qst_deliver_message"),
