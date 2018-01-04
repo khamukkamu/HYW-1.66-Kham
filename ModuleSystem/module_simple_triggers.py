@@ -4388,7 +4388,7 @@ simple_triggers = [
 #Kham Freelancer Improvement triggers
 
 #Random Missions
-(5,[
+(12,[
 
   (eq, "$freelancer_state", 1),
   (store_random_in_range, ":rand", 0, 100),

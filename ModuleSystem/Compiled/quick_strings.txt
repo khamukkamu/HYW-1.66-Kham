@@ -1,4 +1,4 @@
-1036
+1039
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1035,3 +1035,6 @@ qstr_You_are_given_new_tr You_are_given_new_troops_under_your_command
 qstr_a_coat_of_plates_fit a_coat_of_plates_fit_for_a_Lord,_or_an_{s7}
 qstr_a_coat_of_plates_fit_ a_coat_of_plates_fit_for_a_Lord,_or_a_{s7}
 qstr_You_have_{reg0}_days_lef You_have_{reg0}_days_left_on_your_leave.
+qstr__I_ve_heard_that_you _I've_heard_that_you_were_already_an_officer_under_{s4}._However,_you_will_have_to_earn_my_trust._So_for_now,_
+qstr__ _
+qstr__I_ve_heard_that_you_ _I've_heard_that_you_were_already_an_officer_under_{s4}._However,_you_will_have_to_earn_my_trust_and_that_of_my_men._So_for_now,_

@@ -61176,6 +61176,14 @@ scripts = [
       (faction_set_slot, "$g_talk_troop_faction", slot_freelancer_rank , 1),
     (try_end),
 
+    #Kham - Freelancer Captain
+    (try_begin),
+      (faction_get_slot, ":is_captain", ":commander_faction", slot_faction_freelancer_captain), #Are they currently a captain for this faction?
+      (lt, ":is_captain", 0),
+      (faction_set_slot, ":commander_faction", slot_faction_freelancer_captain, 0), #-1 means no longer sarge / captain. They will have to prove themselves again, so we set it back to 0.
+    (try_end),
+    #Kham - Freelancer Captain END
+
     (str_store_troop_name_link, s13, "$enlisted_lord"),
     (str_store_faction_name_link, s14, ":commander_faction"),
     (quest_set_slot, "qst_freelancer_enlisted", slot_quest_target_party, "$enlisted_party"),
@@ -61859,6 +61867,10 @@ scripts = [
     (start_map_conversation, "$enlisted_lord"),
   (else_try),
     (le, ":chance", 35),
+    (jump_to_menu, "mnu_freelancer_bandits"),
+    (start_map_conversation, "$enlisted_lord"),
+  (else_try),
+    (le, ":chance", 45),
     (assign, ":continue", 0),    
     (assign, "$cheat_imposed_quest", "qst_hunt_down_fugitive"),
     (call_script, "script_get_quest", "$enlisted_lord"),
@@ -61867,9 +61879,8 @@ scripts = [
       (assign, ":continue", 1),
     (try_end),
     (eq, ":continue", 1),
-    (start_map_conversation, "$enlisted_lord"),
   (else_try),
-    (le, ":chance", 50),
+    (le, ":chance", 70),
     (jump_to_menu, "mnu_freelancer_training_choose"), #Training
   (else_try),
       (jump_to_menu, "mnu_freelancer_looters"), #Looters

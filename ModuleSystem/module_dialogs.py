@@ -350,7 +350,7 @@ dialogs = [
   [ (troop_add_item, "trp_player", "itm_early_transitional_heraldic", imod_reinforced)],
 ],
 
-[anyone|plyr, "freelancer_sarge_3",
+[anyone|plyr, "freelancer_cap_3",
   [],
     "The weapon will help me destroy your enemies. I will continue bringing honour to your house.", "freelancer_cap_finish",
   [
@@ -32134,7 +32134,16 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (store_character_level, reg1, reg1),
     (val_mul, reg1, 10),    
     (str_store_string, s2, "str_reg1_denars"),
-    ], "I've got room in my ranks for a {man/woman} of your disposition, {playername}.  I can take you on as a {s1}, with a weekly pay of {s2}. And food, of course.  Plenty of room for promotion and you'll be equipped as befits your rank. You'll have your take of what you can scavange in battle, too.  What do you say?", "lord_request_enlistment_confirm", []],
+    (try_begin),
+      (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+      (str_store_troop_name, s4, "$enlisted_lord"),
+      (faction_get_slot, ":is_captain", ":commander_faction", slot_faction_freelancer_captain), #Are they currently a captain for this faction?
+      (lt, ":is_captain", 0),
+      (str_store_string, s3, "@ I've heard that you were already an officer under {s4}. However, you will have to earn my trust and that of my men. So for now, "),
+    (else_try),
+      (str_store_string, s3, "@ "),
+    (try_end),
+    ], "I've got room in my ranks for a {man/woman} of your disposition, {playername}.{s3}I can take you on as a {s1}, with a weekly pay of {s2}. And food, of course.  Plenty of room for promotion and you'll be equipped as befits your rank. You'll have your take of what you can scavange in battle, too.  What do you say?", "lord_request_enlistment_confirm", []],
     
     [anyone|plyr,"lord_request_enlistment_confirm", [        
         (troop_get_type, reg3, "$g_talk_troop"),
