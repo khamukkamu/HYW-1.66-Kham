@@ -5438,41 +5438,102 @@ game_menus = [
   "Kham Test","none",[],
     [
     ("choose_scene",[],"** Scene Chooser **", [(jump_to_menu, "mnu_choose_scenes_0"),]),
-    ("test_freelancer_looters",[],"Test Looters Mission", [(assign, "$player_cur_troop", "trp_swadian_militia"),(jump_to_menu, "mnu_freelancer_looter_accept"),]),
+    ("test_freelancer_looters",[],"Become High Level Freelancer Troop", [(assign, "$player_cur_troop", "trp_swadian_sergent"),
+      (assign, "$enlisted_lord", "trp_knight_1_5"),
+      (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+      (faction_set_slot,  ":commander_faction", slot_faction_freelancer_troop, "$player_cur_troop"),
+      (faction_set_slot, ":commander_faction", slot_faction_freelancer_captain, 0),
+      (display_message, "@Enlisted Lord Set to Jeanne, Player now French Sergeant", color_good_news)]),
     ("set_freelancer_rank",[],"Set Freelancer Rank", [
       (assign, "$enlisted_lord", "trp_knight_1_5"),
       (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
       (faction_set_slot, ":commander_faction", slot_freelancer_rank, 1),
       (display_message, "@Enlisted Lord Set to Jeanne", color_good_news)]),
+
+    ("become_sarge",[],"Become Sarge / Captain", [
+      (assign, "$enlisted_lord", "trp_knight_1_5"),
+      (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+      (faction_set_slot, ":commander_faction", slot_faction_freelancer_captain, 1),
+      (display_message, "@Enlisted Lord Set to Jeanne - Now a Sarge", color_good_news)]),
+
+    ("set_freelancer_xp", [], "Set Freelancer Start XP Slot", [
+      (troop_get_xp, ":xp", "trp_player"),
+      (troop_set_slot, "trp_player", slot_troop_freelancer_start_xp, ":xp"),]),
+
     ("freelancer_level_test", [], "Become Low Level Freelancer - Get Level", [
-      (assign, "$player_cur_troop", "trp_swadian_recruit"), 
+      (assign, "$player_cur_troop", "trp_swadian_recruit"),
+      (troop_get_slot, ":service_xp_start", "trp_player", slot_troop_freelancer_start_xp),
+      (troop_get_xp, ":player_xp_cur", "trp_player"),
+      (store_sub, ":service_xp_cur", ":player_xp_cur", ":service_xp_start"), 
       (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
-      (store_character_level, ":cur_level", "$player_cur_troop"),
-      (val_sub, ":cur_level", 1),
-      (assign, reg4, ":cur_level"),
-      (display_message, "@Cur Level minus 1 - {reg4}", color_bad_news),
-      (get_level_boundary, ":cur_level", ":cur_level"),
-      (assign, reg6, ":cur_level"),
-      (display_message, "@Level Boundary of {reg4} - {reg6}"),
-      (store_character_level, ":required_xp", ":upgrade_troop"),
-      ##Kham Changes Begin
-      (try_begin),
-        (gt, ":required_xp", 19),
-        (assign, ":sub_amount", 1),
+      (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+      (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+      (try_begin), #Captain / Sarge Check
+        (gt, ":is_sarge", 0),
+        (store_character_level, ":player_level", "trp_player"),
+        (store_sub, ":cur_xp", ":player_level", 1),
+        (assign, reg4, ":cur_xp"),
+        (display_message, "@Cur Level minus 1 - {reg4}", color_bad_news),
+        (get_level_boundary, ":cur_xp", ":cur_xp"),
+        (assign, reg6, ":cur_xp"),
+        (display_message, "@Level Boundary of {reg4} - {reg6}"),
+        (val_add, ":player_level", 5), #add 5 levels to current level to become sarge / captain
+        (assign, reg5, ":player_level"),
+        (get_level_boundary, ":required_xp", ":player_level"),
+        (assign, reg7, ":required_xp"),
+        (display_message, "@Level Boundary of {reg5} - {reg7}"),
+        (val_sub, ":required_xp", ":cur_xp"),
+        (assign, reg2, ":cur_xp"),
+        (assign, reg3, ":required_xp"), 
+        (display_message, "@Cur XP {reg2} - Required {reg3}", color_good_news), 
       (else_try),
-        (assign, ":sub_amount", 3),
+        (store_character_level, ":cur_level", "$player_cur_troop"),
+        (val_sub, ":cur_level", 1),
+        (assign, reg4, ":cur_level"),
+        (display_message, "@Cur Level minus 1 - {reg4}", color_bad_news),
+        (get_level_boundary, ":cur_level", ":cur_level"),
+        (assign, reg6, ":cur_level"),
+        (display_message, "@Level Boundary of {reg4} - {reg6}"),
+        (store_character_level, ":required_xp", ":upgrade_troop"),
+        ##Kham Changes Begin
+        (try_begin),
+          (gt, ":required_xp", 19),
+          (assign, ":sub_amount", 1),
+        (else_try),
+          (assign, ":sub_amount", 3),
+        (try_end),
+        #Kham Changes END
+        (val_sub, ":required_xp", ":sub_amount"),
+        (assign, reg5, ":required_xp"),
+        (display_message, "@Upgrade Troop Level minus  4 - {reg5}", color_bad_news),
+        (get_level_boundary, ":required_xp", ":required_xp"),
+        (assign, reg7, ":required_xp"),
+        (display_message, "@Level Boundary of {reg5} - {reg7}"),
+        (val_sub, ":required_xp", ":cur_level"), 
+        (assign, reg2, ":cur_level"),
+        (assign, reg3, ":required_xp"), 
+        (display_message, "@Cur XP {reg2} - Required {reg3}", color_good_news),
       (try_end),
-      #Kham Changes END
-      (val_sub, ":required_xp", ":sub_amount"),
-      (assign, reg5, ":required_xp"),
-      (display_message, "@Upgrade Troop Level minus  4 - {reg5}", color_bad_news),
-      (get_level_boundary, ":required_xp", ":required_xp"),
-      (assign, reg7, ":required_xp"),
-      (display_message, "@Level Boundary of {reg5} - {reg7}"),
-      (val_sub, ":required_xp", ":cur_level"), 
-      (assign, reg2, ":cur_level"),
-      (assign, reg3, ":required_xp"), 
-      (display_message, "@Cur XP {reg2} - Required {reg3}", color_good_news),]),
+
+      (assign, reg10, ":service_xp_cur"),
+      (display_message, "@Current Service XP = {reg10}"),
+
+      (try_begin),
+        (ge, ":service_xp_cur", ":required_xp"),
+        (display_message, "@Can upgrade"),
+      (else_try),
+        (display_message, "@Cant Upgrade"),
+      (try_end),]),
+
+   ("freelancer_commander_report",[],"Commander's Report", [
+      (start_presentation, "prsnt_taragoth_lords_report")]),
+
+    ("freelance_upgrade_menu",[],"Freelancer Cheat Upgrade", [
+      (jump_to_menu, "mnu_upgrade_path")]),
+
+    ("freelancer_script_add_sarge",[],"Freelancer Promote To Sarge", [
+      (call_script, "script_freelancer_promoted_to_commander", 1, 7)]),
+
     ("add_freelancer_rank",[], "Add Freelancer Rank", [
       (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
       (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
@@ -18013,6 +18074,20 @@ game_menus = [
          (call_script, "script_event_player_captured_as_prisoner"),
          (call_script, "script_stay_captive_for_hours", ":random_hours"),
          (assign,"$auto_menu","mnu_captivity_wilderness_check"),
+         #Freelancer
+         (assign, "$freelancer_state", 2),
+         (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation), ###move to quests, not missions
+         (troop_set_slot, "trp_player", slot_troop_days_on_mission, 50),
+         (str_store_troop_name_link, s13, "$enlisted_lord"),
+         (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+         (str_store_faction_name_link, s14, ":commander_faction"),
+         (quest_set_slot, "qst_freelancer_captured", slot_quest_target_party, "$enlisted_party"),
+         (quest_set_slot, "qst_freelancer_captured", slot_quest_importance, 0),
+         (quest_set_slot, "qst_freelancer_captured", slot_quest_xp_reward, 50),
+         (quest_set_slot, "qst_freelancer_captured", slot_quest_expiration_days, 50),
+         (setup_quest_text, "qst_freelancer_captured"),
+         (str_clear, s2), #description. necessary?
+         (call_script, "script_start_quest", "qst_freelancer_captured", "$enlisted_lord"),
          (change_screen_return),
          ]),
       ]
@@ -24958,6 +25033,14 @@ game_menus = [
             (jump_to_menu, "mnu_captivity_start_wilderness"),
             (else_try),
           (call_script, "script_party_restore"),
+          #If player is a sarge or captain, remove his party - Kham
+          (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+          (try_begin),
+            (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+            (gt, ":is_sarge", 0),
+            (call_script, "script_freelancer_remove_player_party"),
+          (try_end), 
+          #End Removal of Player Party
                 (call_script, "script_set_parties_around_player_ignore_player", 2, 4),
             (try_end),
             (change_screen_map),
@@ -24973,11 +25056,16 @@ game_menus = [
       [
         (set_background_mesh, "mesh_pic_soldier_world_map"),
         (call_script, "script_freelancer_unequip_troop", "$player_cur_troop"),
+        (troop_get_upgrade_troop, ":path_1_troop", "$player_cur_troop", 0),
+        (troop_get_upgrade_troop, ":path_2_troop", "$player_cur_troop", 1),
+        (assign, reg1, ":path_1_troop"),
+        (assign, reg2, ":path_2_troop"),
+        (display_message, "@{reg1} Path 1 troop -- {reg2} Path2 Troop"),
       ],
       [
         ("upgrade_path_1",[
           (troop_get_upgrade_troop, ":path_1_troop", "$player_cur_troop", 0),
-          (ge, ":path_1_troop", 0),
+          (ge, ":path_1_troop", 1),
           (str_store_troop_name, s66, ":path_1_troop"),],
         "{s66}",[
             (troop_get_upgrade_troop, "$player_cur_troop", "$player_cur_troop", 0),
@@ -25014,6 +25102,92 @@ game_menus = [
             (str_store_string, s5, "@Current rank: {s5}"),
             (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
             (change_screen_map),]),
+
+        ("upgrade_path_1_sarge",[ #For Infantry Division
+          (troop_get_upgrade_troop, ":path_1_troop", "$player_cur_troop", 0),
+          (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+          (le, ":path_1_troop", 0),
+          (faction_slot_eq, ":commander_faction", slot_faction_freelancer_captain, 0), #neither sarge or captain
+          (str_store_string, s67, "@Infantry Division Sergeant"),],
+        "{s67}",[
+            (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+            (faction_set_slot, ":commander_faction", slot_faction_freelancer_captain, 1,), #Now a Sergeant
+            (assign, "$talk_context", tc_freelancer_infantry_captain), #We talk to the player to reward him + give him the troops
+            (quest_set_slot, "qst_freelancer_enlisted", slot_quest_current_state, 1), #Let us exploit this for infantry sarge / captain
+            (call_script, "script_freelancer_equip_troop", "$player_cur_troop"), #Give us the same stuff as before
+            #Kham - Add to rank
+            (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+            (val_add, ":freelancer_rank", 1),
+            (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_Rank"),
+            (str_store_troop_name, s6, "$enlisted_lord"),
+            (str_store_string, s5, "@Current rank: Infantry Division Sergeant for {s5}"),
+            (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
+            (change_screen_map),
+            (start_map_conversation, "$enlisted_lord"),
+          ]),
+
+      ("upgrade_path_2_sarge",[ #For Ranged Division
+          (troop_get_upgrade_troop, ":path_2_troop", "$player_cur_troop", 1),
+          (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+          (le, ":path_2_troop", 0),
+          (faction_slot_eq, ":commander_faction", slot_faction_freelancer_captain, 0), #neither sarge or captain
+          (str_store_string, s67, "@Ranged Division Sergeant"),],
+        "{s67}",[
+            (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+            (faction_set_slot, ":commander_faction", slot_faction_freelancer_captain, 1,), #Now a Sergeant
+            (assign, "$talk_context", tc_freelancer_ranged_captain), #We talk to the player to reward him + give him the troops
+            (quest_set_slot, "qst_freelancer_enlisted", slot_quest_current_state, 2), #Let us exploit this for ranged sarge / captain
+            (call_script, "script_freelancer_equip_troop", "$player_cur_troop"), #Give us the same stuff as before
+            #Kham - Add to rank
+            (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+            (val_add, ":freelancer_rank", 1),
+            (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_Rank"),
+            (str_store_troop_name, s6, "$enlisted_lord"),
+            (str_store_string, s5, "@Current rank: Ranged Division Sergeant for {s5}"),
+            (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
+            (change_screen_map),
+            (start_map_conversation, "$enlisted_lord"),
+          ]),
+
+        ("upgrade_path_1_captain",[ #For Infantry Division
+          (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+          (faction_slot_eq, ":commander_faction", slot_faction_freelancer_captain, 1), #Is sarge already
+          (quest_slot_eq, "qst_freelancer_enlisted", slot_quest_current_state, 1), #Is Infantry Sarge?
+          (str_store_string, s67, "@Infantry Division Captain"),],
+        "{s67}",[
+            (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+            (faction_set_slot, ":commander_faction", slot_faction_freelancer_captain, 2,), #Now a Captain
+            (assign, "$talk_context", tc_freelancer_infantry_captain), #We talk to the player to reward him + give him the troops
+            #Kham - Add to rank
+            (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+            (val_add, ":freelancer_rank", 1),
+            (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_Rank"),
+            (str_store_troop_name, s6, "$enlisted_lord"),
+            (str_store_string, s5, "@Current rank: Infantry Division Captain for {s5}"),
+            (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
+            (change_screen_map),
+            (start_map_conversation, "$enlisted_lord"),
+          ]),
+
+      ("upgrade_path_2_captain",[ #For Ranged Division
+          (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+          (faction_slot_eq, ":commander_faction", slot_faction_freelancer_captain, 1), #Is sarge already
+           (quest_slot_eq, "qst_freelancer_enlisted", slot_quest_current_state, 2), #Is Ranged Sarge?
+          (str_store_string, s67, "@Ranged Division Captain"),],
+        "{s67}",[
+            (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+            (faction_set_slot, ":commander_faction", slot_faction_freelancer_captain, 2,), #Now a Captain
+            (assign, "$talk_context", tc_freelancer_ranged_captain), #We talk to the player to reward him + give him the troops
+            #Kham - Add to rank
+            (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
+            (val_add, ":freelancer_rank", 1),
+            (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_Rank"),
+            (str_store_troop_name, s6, "$enlisted_lord"),
+            (str_store_string, s5, "@Current rank: Ranged Division Captain for {s5}"),
+            (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
+            (change_screen_map),
+            (start_map_conversation, "$enlisted_lord"),
+          ]),
     ]),
 #+freelancer end
 
@@ -25024,39 +25198,39 @@ game_menus = [
     "Your Commander has asked you to train. Choose the number of opponents you'd like to face.",
     "none",[],
     [
-      ("opponent_one", [], "One",
+      ("opponent_one", [(neg|troop_is_wounded, "trp_player")], "One",
         [(assign, "$freelancer_training_opponents", 1),
          (jump_to_menu, "mnu_freelancer_training_fight"),],
       ),
-      ("opponent_two", [], "Two",
+      ("opponent_two", [(neg|troop_is_wounded, "trp_player")], "Two",
         [(assign, "$freelancer_training_opponents", 2),
          (jump_to_menu, "mnu_freelancer_training_fight"),],
       ),
-      ("opponent_three", [], "Three",
+      ("opponent_three", [(neg|troop_is_wounded, "trp_player")], "Three",
         [(assign, "$freelancer_training_opponents", 3),
          (jump_to_menu, "mnu_freelancer_training_fight"),],
       ),
-      ("opponent_four", [], "Four",
+      ("opponent_four", [(neg|troop_is_wounded, "trp_player")], "Four",
         [(assign, "$freelancer_training_opponents", 4),
          (jump_to_menu, "mnu_freelancer_training_fight"),],
       ),
-      ("opponent_five", [], "Five",
+      ("opponent_five", [(neg|troop_is_wounded, "trp_player")], "Five",
         [(assign, "$freelancer_training_opponents", 5),
          (jump_to_menu, "mnu_freelancer_training_fight"),],
       ),
-      ("opponent_six", [], "Six",
+      ("opponent_six", [(neg|troop_is_wounded, "trp_player")], "Six",
         [(assign, "$freelancer_training_opponents", 6),
         (jump_to_menu, "mnu_freelancer_training_fight"),],
       ),
-      ("opponent_seven", [], "Seven",
+      ("opponent_seven", [(neg|troop_is_wounded, "trp_player")], "Seven",
         [(assign, "$freelancer_training_opponents", 7),
          (jump_to_menu, "mnu_freelancer_training_fight"),],
       ),
-      ("opponent_eight", [], "Eight",
+      ("opponent_eight", [(neg|troop_is_wounded, "trp_player")], "Eight",
         [(assign, "$freelancer_training_opponents", 8),
          (jump_to_menu, "mnu_freelancer_training_fight"),],
       ),
-      ("reject_training", [], "Reject today's training",
+      ("reject_training", [(neg|troop_is_wounded, "trp_player"),], "Reject today's training",
         [(change_screen_map)]),
       ("training_wounded", [(troop_is_wounded, "trp_player"),], "You are too wounded to train.",
         [(change_screen_map)]),
@@ -25156,10 +25330,10 @@ game_menus = [
       (str_store_string, s5, "@you"),
     (try_end)],
   [      
-    ("looter_accept", [], "Accept this mission", 
+    ("looter_accept", [(neg|troop_is_wounded, "trp_player")], "Accept this mission", 
       [(jump_to_menu, "mnu_freelancer_looter_accept")]),
 
-    ("looter_reject", [], "Reject today's mission.",
+    ("looter_reject", [(neg|troop_is_wounded, "trp_player")], "Reject today's mission.",
       [(change_screen_map)]),
 
     ("looter_wounded", [(troop_is_wounded, "trp_player"),], "You are too wounded for this mission.",

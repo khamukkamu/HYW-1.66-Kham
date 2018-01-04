@@ -2103,6 +2103,9 @@ slot_freelancer_version     = slot_freelancer_equip_start - 2 #only used for fre
 
 #Faction Slot
 slot_faction_freelancer_troop = 101 #should be unused
+slot_faction_freelancer_captain = 163 #Kham - To Check if Player is Sarge/Captain (1 or 2)
+#kham added
+slot_faction_tier_1_archer        = 164
 
 #Troop Slots
 slot_troop_freelancer_start_xp   =  slot_troop_signup   #110 -only used for player
@@ -2113,6 +2116,8 @@ slot_freelancer_mission = 162
 
 tc_vacation_over = 22
 slot_freelancer_rank = 113 #track how many upgrades the player has had in their faction.
+tc_freelancer_infantry_captain = 114 #To Reward Player as an Infantry Sarge / Captain
+tc_freelancer_ranged_captain = 115 #To Reward Player as an Ranged Sarge / Captain
 
 #+Freelancer end
 

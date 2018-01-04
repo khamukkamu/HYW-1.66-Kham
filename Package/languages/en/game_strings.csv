@@ -573,38 +573,38 @@ str_npc13_signup_response_2|Actually, having you in my company might cause a mut
 str_npc14_signup_response_2|On second thought, I would not have an obvious charlatan like you in my ranks. Good day to you.
 str_npc15_signup_response_2|I would do better with an actual warrior. Good day, doctor.
 str_npc16_signup_response_2|To be honest, I'd prefer someone who was a little less tempted to larceny.
-str_npc1_payment|You shall find my uses in time, {sir/madame}, of that you can be sure. Before we leave, however, could you give me a gift of {reg3} Florins? I am afraid that most of my wealth was robbed alongside my baggage train when I crossed the border from the German lands and I have need of coin to pay the inn-keep here.
-str_npc2_payment|Wonderful, but there is one more request I have of you. Before we leave, I have need of {reg3} Florins to pay for my equipment and to buy some supplies.
+str_npc1_payment|You shall find my uses in time, {sir/madame}, of that you can be sure. Before we leave, however, could you give me a gift of {reg3} Denars? I am afraid that most of my wealth was robbed alongside my baggage train when I crossed the border from the German lands and I have need of coin to pay the inn-keep here.
+str_npc2_payment|Wonderful, but there is one more request I have of you. Before we leave, I have need of {reg3} Denars to pay for my equipment and to buy some supplies.
 str_npc3_payment|.
-str_npc4_payment|Excellent. Before we depart, would you be so kind to lend me {reg3} Florins? I had to pawn a family heirloom at a pawnbroker here in {s20}, and I would like to retrieve it before we leave.
-str_npc5_payment|Thank you. Now, to seal off our agreement, I ask for {reg3} Florins from you. It's an advice my father gave me. He told me 'Baheshtur, never fight for a barbarian before {he/she} pays you your worth of gold first'.
+str_npc4_payment|Excellent. Before we depart, would you be so kind to lend me {reg3} Denars? I had to pawn a family heirloom at a pawnbroker here in {s20}, and I would like to retrieve it before we leave.
+str_npc5_payment|Thank you. Now, to seal off our agreement, I ask for {reg3} Denars from you. It's an advice my father gave me. He told me 'Baheshtur, never fight for a barbarian before {he/she} pays you your worth of gold first'.
 str_npc6_payment|.
-str_npc7_payment|All right then. I will come with you. But I want a payment of {reg3} Florins first. You aren't expecting me to work for free, do you?
-str_npc8_payment|If you'll have me, then give me a purse of {reg3} Florins as a sign of riches to come. I need the money and you need a warrior by your side.
-str_npc9_payment|That would be great. But, before we depart, I want {reg3} Florins up-front to make sure I'm dealing with a serious captain who knows how to treat his men, and not some glory-seeking princeling.
-str_npc10_payment|That would be wonderful captain, but I require a small sum before we leave as a token of your seriousness as an employer. It's a principle of mine to receive at least a symbolic sum before pledging service to someone. {reg3} Florins should be enough.
-str_npc11_payment|Hey thank you captain. But before joining up with you, I would ask for a payment of {reg3} Florins. I know that in war parties soldiers can go on for weeks without seeing any wages. I am wise enough not to sign anywhere without having myself covered.
+str_npc7_payment|All right then. I will come with you. But I want a payment of {reg3} Denars first. You aren't expecting me to work for free, do you?
+str_npc8_payment|If you'll have me, then give me a purse of {reg3} Denars as a sign of riches to come. I need the money and you need a warrior by your side.
+str_npc9_payment|That would be great. But, before we depart, I want {reg3} Denars up-front to make sure I'm dealing with a serious captain who knows how to treat his men, and not some glory-seeking princeling.
+str_npc10_payment|That would be wonderful captain, but I require a small sum before we leave as a token of your seriousness as an employer. It's a principle of mine to receive at least a symbolic sum before pledging service to someone. {reg3} Denars should be enough.
+str_npc11_payment|Hey thank you captain. But before joining up with you, I would ask for a payment of {reg3} Denars. I know that in war parties soldiers can go on for weeks without seeing any wages. I am wise enough not to sign anywhere without having myself covered.
 str_npc12_payment|.
-str_npc13_payment|Before I come with you, however, there is the matter of a debt I have to the innkeeper here for some tables and chairs I broke in a brawl with two zealous fellows -- {reg3} Florins. Do you think you could pay that out of your purse, to show your friendship?
-str_npc14_payment|And you should know that the tradition in my country is for every Free Lancer to be paid before embarking on campaign. I believe the token sum of {reg3} Florins should do.
-str_npc15_payment|Great. But as I've said, I am desperately in need of money. If you had {reg3} Florins to spare, I would be most grateful, captain.
+str_npc13_payment|Before I come with you, however, there is the matter of a debt I have to the innkeeper here for some tables and chairs I broke in a brawl with two zealous fellows -- {reg3} Denars. Do you think you could pay that out of your purse, to show your friendship?
+str_npc14_payment|And you should know that the tradition in my country is for every Free Lancer to be paid before embarking on campaign. I believe the token sum of {reg3} Denars should do.
+str_npc15_payment|Great. But as I've said, I am desperately in need of money. If you had {reg3} Denars to spare, I would be most grateful, captain.
 str_npc16_payment|Now, that's good news, captain. So, how about paying me a little something to seal off our agreement? A mere {reg3} would be enough. Please don't take this the wrong way, but I've had some bad luck with employers in the past. 
-str_npc1_payment_response|Very well, here's {reg3} Florins. Now, fall in with the rest.
-str_npc2_payment_response|Of course, here's {reg3} Florins for your expenses.
+str_npc1_payment_response|Very well, here's {reg3} Denars. Now, fall in with the rest.
+str_npc2_payment_response|Of course, here's {reg3} Denars for your expenses.
 str_npc3_payment_response|.
-str_npc4_payment_response|Certainly. Here's {reg3} Florins.
-str_npc5_payment_response|Well... here's {reg3} Florins, then. Your first payment.
+str_npc4_payment_response|Certainly. Here's {reg3} Denars.
+str_npc5_payment_response|Well... here's {reg3} Denars, then. Your first payment.
 str_npc6_payment_response|.
-str_npc7_payment_response|No, of course not. Here's {reg3} Florins.
-str_npc8_payment_response|Of course. Here's {reg3} Florins for you.
-str_npc9_payment_response|That shouldn't be a problem, here's {reg3} Florins.
-str_npc10_payment_response|Of course. Here, {reg3} Florins.
-str_npc11_payment_response|Very well, here's {reg3} Florins. Make yourself ready. We leave soon.
+str_npc7_payment_response|No, of course not. Here's {reg3} Denars.
+str_npc8_payment_response|Of course. Here's {reg3} Denars for you.
+str_npc9_payment_response|That shouldn't be a problem, here's {reg3} Denars.
+str_npc10_payment_response|Of course. Here, {reg3} Denars.
+str_npc11_payment_response|Very well, here's {reg3} Denars. Make yourself ready. We leave soon.
 str_npc12_payment_response|.
-str_npc13_payment_response|Of course, here's {reg3} Florins. Make ready to leave soon.
-str_npc14_payment_response|All right, here's {reg3} Florins. You are most welcome in our company.
-str_npc15_payment_response|All right, here's {reg3} Florins. Glad to have you with us.
-str_npc16_payment_response|All right, here's {reg3} Florins for you. Make yourself ready.
+str_npc13_payment_response|Of course, here's {reg3} Denars. Make ready to leave soon.
+str_npc14_payment_response|All right, here's {reg3} Denars. You are most welcome in our company.
+str_npc15_payment_response|All right, here's {reg3} Denars. Glad to have you with us.
+str_npc16_payment_response|All right, here's {reg3} Denars for you. Make yourself ready.
 str_npc1_morality_speech|Oy -- boss. Please don't take this the wrong way, but it's a hard life and it's a bit much that we {s21}. Take a little more care in the future, captain, if you don't mind my saying.
 str_npc2_morality_speech|I hope you don't mind my saying so, but I am rather dismayed to see us {s21}. Perhaps I ought to be more open to such things for such is the way of war, but if we could show some mercy to our foes as is chivalrous, I'd sleep better.
 str_npc3_morality_speech|I do not know if I should say this, {sir/madame}, but I admit that I am somewhat surprised that we {s21}. I knew war was cruel, but not like this. The bards and minstrels should have a word with me for the truths of this 'chivalrous' war.
@@ -805,7 +805,7 @@ str_npc7_home_description_2|We were allowed to fish the river, raise pigs amid t
 str_npc8_home_description_2|These French seem to think that if the English longbows are so bloody common among the English, why not have their own? But they bring it up a notch! They're French, after all. They have their longbowmen, Scottish longbowmen mind you, be a company of elite troops and usually follow the king around! Compare that to plain English longbowmen that are usually peasants. Yes, skilled and dangerous peasants but peasants all the same. But I feel slighted when I look at all these Scots coming here to put their lives on the line for France. If only the bastards did that for their own country, the English wouldn't be holding us by the balls, like they are now.
 str_npc9_home_description_2|I could have slain him there and there, but I deemed not to do so for the sake of his wife. When she started saying that I had seduced her, however, I could have strangled both of them. Luckily for them several guardsmen stormed into the room. Then that duel took place. After my lord died, his estate was inherited by his younger son, who now rules it. I think you can imagine his anger if he were to see me now and my anger at the sight of his whore of a mother would be even greater. You can understand if I'll wait for you in the tavern, right?
 str_npc10_home_description_2|Of course, these Frenchmen couldn't hold a candle to hardened English knights when on foot, but mounted on one of their destriers, they might just stand a chance. If ever there is an open-minded commander in this land, he would have French horsemen and scouts along with English footmen and archers. Few could beat such a host, and I would wager my life on that, captain.
-str_npc11_home_description_2|The Swadian king will tell you that Praven was the biggest city in Calradia back under the Empire, and that's why he should rule the whole land today. Mind you, I don't care much about politics, {sir/madame} -- I've sold provisions to every army that ever marched in Calradia, and I tell you that I wouldn't give a single one of them a single biscuit unless I had the cold, hard Florins in my hand first. Why these high and mighty kings and nobles can't pay their bills, I'll never know. But I prattle on a bit, there, don't I?
+str_npc11_home_description_2|The Swadian king will tell you that Praven was the biggest city in Calradia back under the Empire, and that's why he should rule the whole land today. Mind you, I don't care much about politics, {sir/madame} -- I've sold provisions to every army that ever marched in Calradia, and I tell you that I wouldn't give a single one of them a single biscuit unless I had the cold, hard Denars in my hand first. Why these high and mighty kings and nobles can't pay their bills, I'll never know. But I prattle on a bit, there, don't I?
 str_npc12_home_description_2|One bad turn came to another and I was eventually caught by the castellan while I was drinking the chapel wine. I was also taking some liberties with a scullion. But that is not what matters! I have since reedemed myself by leading the souls of many repentant sinners to salvation, whether they wished it or not. The Lord does work in mysterious ways, wouldn't you agree, captain?
 str_npc13_home_description_2|Now, though, these English who also fight the French here have gotten involved in our wars, and it might be to our favour. The crown of the king of Castile, King Juan, is contested by the English prince John of Gaunt who claims that his wife, Constance I believe, is the rightful queen of Castile. Matters are complicated, but from what I understand, the father of King Juan, the late King Enrique, who was a bastard of the former King Alfonso the Eleventh, took the crown by killing his half-brother Pedro, who was Alfonso's rightful son. Constance is Pedro's daughter, so she has royal blood and could claim her cousin's throne. God willing, Granada will come out better from this conflict.
 str_npc14_home_description_2|But then again, that is good for us Genoese, and for our rivals the Venetians and for any Italian actually coming here to sell his sword, or his crossbow, or increasingly enough, his halberd. The Swiss, however, are doing the same thing and so are the Germans. But if someone were ever to unite the French, I doubt that all the mercenaries in this world could hope to stop them from defeating the English. I doubt that will happen even in fifty years, however.

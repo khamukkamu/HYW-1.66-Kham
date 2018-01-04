@@ -4203,9 +4203,21 @@ simple_triggers = [
 
       #kham - removed upgrade condition from this block as it takes too long. 
 
+      (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+      (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+
       (store_character_level, ":level", "$player_cur_troop"),
       #pays player 10 times the troop level
-      (store_mul, ":weekly_pay", 10, ":level"),
+      (try_begin),
+        (eq, ":is_sarge", 1), #sarge
+        (store_mul, ":weekly_pay", 15, ":level"),
+      (else_try),
+        (eq, ":is_sarge", 2), #cap
+        (store_mul, ":weekly_pay", 22, ":level"),
+      (else_try),
+        (store_mul, ":weekly_pay", 10, ":level"),
+      (try_end),
+
       (troop_add_gold, "trp_player", ":weekly_pay"),
       (add_xp_to_troop, 70, "trp_player"),
       (play_sound, "snd_money_received", 0),
@@ -4219,7 +4231,37 @@ simple_triggers = [
       (troop_get_slot, ":service_xp_start", "trp_player", slot_troop_freelancer_start_xp),
       (troop_get_xp, ":player_xp_cur", "trp_player"),
       (store_sub, ":service_xp_cur", ":player_xp_cur", ":service_xp_start"),
+
+      (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+      (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+
+      #Piggy Backing for Sarge / Captain Troop Replenishment
+
+      (try_begin),
+        (ge, ":is_sarge", 1),
+        (party_get_num_companions, ":num_companions", "p_main_party"),
+        (try_begin),
+          (eq, ":is_sarge", 1),
+          (assign, ":amount_required", 9), #Sarge
+        (else_try),
+          (assign, ":amount_required", 16), #Captain
+        (try_end),
+        (lt, ":num_companions", ":amount_required"),
+        (store_sub, ":required_replenish", ":amount_required", ":num_companions"),
+        (quest_get_slot, ":type", "qst_freelancer_enlisted", slot_quest_current_state), #if 1 = infantry / if 2 = ranged
+        (try_begin),
+          (eq, ":type", 1), 
+          (faction_get_slot, ":troop_to_add", ":commander_faction", slot_faction_tier_2_troop),
+        (else_try),
+          (faction_get_slot, ":troop_to_add", ":commander_faction", slot_faction_tier_1_archer),
+        (try_end),
+        (gt, ":troop_to_add", 0),
+        (party_add_members, "p_main_party", ":troop_to_add", ":required_replenish"),
+        (display_message, "@You are given new troops under your command", color_good_news),
+      (try_end),
       
+      #END Troop Replenishment
+
 
       #ranks for pay levels and to upgrade player equipment based on upgrade troop level times 1000
       # (try_begin),
@@ -4234,30 +4276,53 @@ simple_triggers = [
      
       (try_begin),
         (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
-        (gt, ":upgrade_troop", 1), #make sure troop is valid and not player troop
+        #(gt, ":upgrade_troop", 1), #make sure troop is valid and not player troop
 
         (try_begin),
           (eq, "$freelancer_enhanced_upgrade", 0), #Let's put this as a choice for players.
-          (call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
-          (assign, ":required_xp", reg0),  
+          (try_begin), #Captain / Sarge Check
+            (gt, ":is_sarge", 0),
+            (store_character_level, ":player_level", "trp_player"),
+            (store_sub, ":cur_xp", ":player_level", 1),
+            (get_level_boundary, ":cur_xp", ":cur_xp"),
+            (val_add, ":player_level", 5), #add 5 levels to current level to become sarge / captain
+            (get_level_boundary, ":required_xp", ":player_level"),
+            (val_sub, ":required_xp", ":cur_xp"),
+          (else_try), 
+            (call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
+            (assign, ":required_xp", reg0),
+          (try_end),  
+        
         (else_try),    
+          
           ##THIS  BLOCK IS ALMOST DEFINITELY BE BETTER than the above two lines which could be commented out in exchange for them. - Implemented by Kham
-          (store_character_level, ":cur_level", "$player_cur_troop"),
-          (val_sub, ":cur_level", 1),
-          (get_level_boundary, ":cur_level", ":cur_level"),
-          (store_character_level, ":required_xp", ":upgrade_troop"),
-          ##Kham Changes Begin
-          (try_begin),
-            (gt, ":required_xp", 19),
-            (assign, ":sub_amount", 1),
+          
+          (try_begin), #Captain / Sarge Check
+            (gt, ":is_sarge", 0),
+            (store_character_level, ":player_level", "trp_player"),
+            (store_sub, ":cur_xp", ":player_level", 1),
+            (get_level_boundary, ":cur_xp", ":cur_xp"),
+            (val_add, ":player_level", 5), #add 5 levels to current level to become sarge / captain
+            (get_level_boundary, ":required_xp", ":player_level"),
+            (val_sub, ":required_xp", ":cur_xp"), 
           (else_try),
-            (assign, ":sub_amount", 3),
+            (store_character_level, ":cur_level", "$player_cur_troop"),
+            (val_sub, ":cur_level", 1),
+            (get_level_boundary, ":cur_level", ":cur_level"),
+            (store_character_level, ":required_xp", ":upgrade_troop"),
+            ##Kham Changes Begin
+            (try_begin),
+              (gt, ":required_xp", 19),
+              (assign, ":sub_amount", 1),
+            (else_try),
+              (assign, ":sub_amount", 3),
+            (try_end),
+            #Kham Changes END
+            (val_sub, ":required_xp", ":sub_amount"),
+            (get_level_boundary, ":required_xp", ":required_xp"),
+            (val_sub, ":required_xp", ":cur_level"),      
           (try_end),
-          #Kham Changes END
-          (val_sub, ":required_xp", ":sub_amount"),
-          (get_level_boundary, ":required_xp", ":required_xp"),
-          (val_sub, ":required_xp", ":cur_level"),      
-        (try_end),
+        (try_end), #End Captain / Sarge Check
         ##
 
         (ge, ":service_xp_cur", ":required_xp"),
@@ -4283,6 +4348,7 @@ simple_triggers = [
           (try_end),        
         (try_end),     
       (try_end),
+
     ]),
     
 #  HOURLY CHECKS
@@ -4301,9 +4367,19 @@ simple_triggers = [
            (is_between, ":cur_item", food_begin, food_end),
            (val_add, ":num_food", 1),
         (try_end),
+        (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+        (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
         (try_begin),
-           (lt, ":num_food", 2),
-           (troop_add_item, "trp_player", "itm_bread"),
+          (lt, ":num_food", 2),
+          (try_begin),
+            (eq, ":is_sarge", 1), #sarge
+            (troop_add_item, "trp_player", "itm_dried_meat"),
+          (else_try),
+            (eq, ":is_sarge", 2), #cap
+            (troop_add_item, "trp_player", "itm_cattle_meat"),
+          (else_try),
+            (troop_add_item, "trp_player", "itm_bread"),
+          (try_end),
         (try_end),
     ]),
   

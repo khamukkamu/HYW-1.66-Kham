@@ -222,13 +222,165 @@ dialogs = [
                     (eq, 1, 0)],  
    "{!}Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
 
+#Dialogue for Sarge / Captain Promotions
+
+#Sarge Dialogues START
+[anyone,"event_triggered",
+  [
+    (this_or_next|eq, "$talk_context", tc_freelancer_infantry_captain),
+    (eq, "$talk_context", tc_freelancer_ranged_captain),
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_slot_eq, ":commander_faction", slot_faction_freelancer_captain, 1), #Sarge
+  ],
+    "{playername}, I've been watching you and I am quite impressed with your progress.^ I've spoken to the men and they agree with my decision.", "freelancer_sarge_1",
+  [],
+],
+
+[anyone|plyr, "freelancer_sarge_1",
+  [
+    (troop_get_type, reg65, "$enlisted_lord"),
+    (try_begin),
+      (eq, reg3, 2),
+      (assign, reg3, 1), #Kham - Jeanne is female
+    (else_try),
+       (gt, reg3, 2), #Kham: other skins are male
+       (assign, reg3, 0),
+    (try_end),
+  ],
+    "Thank you, my {reg3?Lady:Lord}, I try my best to bring honour to your house.^ What decision is that?", "freelancer_sarge_2",
+  [],
+],
+
+[anyone, "freelancer_sarge_2",
+  [(try_begin),
+    (eq, "$talk_context", tc_freelancer_ranged_captain),
+    (str_store_string, s5, "@Ranged Division Sergeants"),
+    (str_store_string, s6, "@A modified shield, or an improved crossbow"),
+  (else_try),
+    (eq, "$talk_context", tc_freelancer_infantry_captain),
+    (str_store_string, s5, "@Infantry Division Sergeants"),
+    (str_store_string, s6, "@A modified shield, or an improved bastard sword"),
+  (try_end),],
+    "You will now be one of my {s5}, commanding a group of 7 men. Your new salary should cover theirs, so will the improved rations I will be giving you.^ Also, as a symbol of your new authority, I will reward you a choice of a two things.^ {s6}, both made by my personal blacksmith.", "freelancer_sarge_3",
+  [],
+],
+
+[anyone|plyr, "freelancer_sarge_3",
+  [],
+    "I choose the shield. I will not let you nor the men down. You can count on me.", "freelancer_sarge_finish",
+  [ (try_begin),
+      (eq, "$talk_context", tc_freelancer_infantry_captain),
+      (troop_add_item, "trp_player", "itm_tab_shield_kite_d", imod_reinforced),
+    (else_try),
+      (troop_add_item, "trp_player", "itm_tab_shield_pavise_d", imod_reinforced),
+    (try_end)],
+],
+
+[anyone|plyr, "freelancer_sarge_3",
+  [],
+    "I choose the weapon. I will not let you nor the men down. You can count on me.", "freelancer_sarge_finish",
+  [
+  (try_begin),
+      (eq, "$talk_context", tc_freelancer_infantry_captain),
+      (troop_add_item, "trp_player", "itm_bastard_sword_b", imod_tempered),
+    (else_try),
+      (troop_add_item, "trp_player", "itm_sniper_crossbow", imod_balanced),
+    (try_end)],
+],
+
+[anyone, "freelancer_sarge_finish",
+  [],
+    "Good to hear it, {playername}. I'll have someone deliver it to you. Now go and meet your men.", "close_window",
+  [ (try_begin),
+      (eq, "$talk_context", tc_freelancer_infantry_captain),
+      (call_script, "script_freelancer_promoted_to_commander", 1, 7), #Infantry Sarge with 7 troops
+    (else_try),
+      (call_script, "script_freelancer_promoted_to_commander", 2, 7),
+    (try_end),
+    (assign, "$talk_context", 0)], 
+],         
+#Sarge Dialogues END
+
+#Captain Dialogues START
+[anyone,"event_triggered",
+  [
+    (this_or_next|eq, "$talk_context", tc_freelancer_infantry_captain),
+    (eq, "$talk_context", tc_freelancer_ranged_captain),
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_slot_eq, ":commander_faction", slot_faction_freelancer_captain, 2), #Captain
+  ],
+    "{playername}, You have once again truly proved your worth. You are an example to all of our men.", "freelancer_cap_1",
+  [],
+],
+
+[anyone|plyr, "freelancer_cap_1",
+  [
+    (troop_get_type, reg65, "$enlisted_lord"),
+    (try_begin),
+      (eq, reg3, 2),
+      (assign, reg3, 1), #Kham - Jeanne is female
+    (else_try),
+       (gt, reg3, 2), #Kham: other skins are male
+       (assign, reg3, 0),
+    (try_end),
+  ],
+    "Thank you, my {reg3?Lady:Lord}. A soldier is only as good as their commander.", "freelancer_cap_2",
+  [],
+],
+
+[anyone, "freelancer_cap_2",
+  [(try_begin),
+    (eq, "$talk_context", tc_freelancer_ranged_captain),
+    (str_store_string, s5, "@Ranged Division Captain"),
+    (str_store_item_name, s7, "itm_matchlock_2"),
+    (str_store_string, s6, "@a coat of plates fit for a Lord, or an {s7}"),
+  (else_try),
+    (eq, "$talk_context", tc_freelancer_infantry_captain),
+    (str_store_string, s5, "@Infantry Division Captain"),
+    (str_store_item_name, s7, "itm_realflambergeb"),
+    (str_store_string, s6, "@a coat of plates fit for a Lord, or a {s7}"),
+  (try_end),],
+    "From now on, you will be my {s5}, commanding a group of 15 men. You will also be given a considerable wage increase, as befit your station.^ I have also something to give you, choose between {s6}, straight from our family's treasures...^", "freelancer_cap_3",
+  [],
+],
+
+[anyone|plyr, "freelancer_cap_3",
+  [],
+    "The armour will help me defend you from your enemies. I will continue bringing honour to your house.", "freelancer_cap_finish",
+  [ (troop_add_item, "trp_player", "itm_early_transitional_heraldic", imod_reinforced)],
+],
+
+[anyone|plyr, "freelancer_sarge_3",
+  [],
+    "The weapon will help me destroy your enemies. I will continue bringing honour to your house.", "freelancer_cap_finish",
+  [
+  (try_begin),
+      (eq, "$talk_context", tc_freelancer_infantry_captain),
+      (troop_add_item, "trp_player", "itm_realflambergeb", imod_balanced),
+    (else_try),
+      (troop_add_item, "trp_player", "itm_matchlock_2", imod_balanced),
+    (try_end)],
+],
+
+[anyone, "freelancer_cap_finish",
+  [],
+    "I know you will, {playername}. Now go and meet your men.", "close_window",
+  [ (try_begin),
+      (eq, "$talk_context", tc_freelancer_infantry_captain),
+      (call_script, "script_freelancer_promoted_to_commander", 1, 15), #Infantry Cap with 15 troops
+    (else_try),
+      (call_script, "script_freelancer_promoted_to_commander", 2, 15),
+    (try_end),
+    (assign, "$talk_context", 0)], 
+],        
+
 #Dialogue Auto-Return from Vacation (Kham)
 
 [anyone,"event_triggered",
   [
     (eq, "$talk_context", tc_vacation_over),
   ],
-    "{playername}, I am here to tell you that your vacation is over. Join me and return to your post.", "close_window",[
+    "{playername}, I am here to tell you that your leave is over. Join me and return to your post.", "close_window",[
       (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
       (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
       (call_script, "script_event_player_returns_vacation"),
@@ -238,10 +390,7 @@ dialogs = [
 
 #Dialogue for Freelancer Outbound Missions START - Kham
 
-[anyone,"event_triggered", [(eq, "$g_talk_troop", "$enlisted_lord"), (ge, "$cheat_imposed_quest", 0)], "{playername}, I have a task for you.", "freelancer_mission_start",[
-(call_script, "script_get_quest", "$enlisted_lord"),
-(assign, "$random_quest_no", reg0),]],
-
+[anyone,"event_triggered", [(eq, "$g_talk_troop", "$enlisted_lord"), (ge, "$cheat_imposed_quest", 0)], "{playername}, I have a task for you.", "freelancer_mission_start",[]],
 
 
 #Dialogue for Freelancer Deliver Message
@@ -267,6 +416,14 @@ dialogs = [
  and a small sum to cover your travel expenses. Give my regards to {s13} when you see him.", "close_window",
    [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_troop_add_gold", "trp_player", 30),
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    #If player is a sarge or captain, remove his party - Kham
+    (try_begin),
+      (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+      (gt, ":is_sarge", 0),
+      (call_script, "script_freelancer_remove_player_party"),
+    (try_end), 
+    #End Removal of Player Party
     (call_script, "script_event_player_mission"), (call_script, "script_party_restore"),
     (assign, "$g_leave_encounter",1),
    ]],
@@ -308,6 +465,14 @@ dialogs = [
  Well, good hunting to you.", "close_window",
    [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    #If player is a sarge or captain, remove his party - Kham
+    (try_begin),
+      (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+      (gt, ":is_sarge", 0),
+      (call_script, "script_freelancer_remove_player_party"),
+    (try_end), 
+    #End Removal of Player Party
     (call_script, "script_event_player_mission"), (call_script, "script_party_restore"),
     (assign, "$g_leave_encounter",1),
    ]],
@@ -318,6 +483,14 @@ Go back to your post.", "close_window",
 
   
 ##Dialogue For Freelancer Outbound missions END - Kham
+
+#Error Handling
+[anyone,"freelancer_mission_start", [],
+   "Nevermind... (This is an error)", "close_window",
+   [
+     (str_store_quest_name, s1, "$cheat_imposed_quest"),
+     (display_message, "@Attempting to Trigger {s1}. Failed", color_bad_news),
+   ]],
 
 
   [anyone ,"event_triggered", [(store_conversation_troop, "$g_talk_troop"),
@@ -32010,6 +32183,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ],
     "Very well {playername}. You are relieved of duty.", "lord_pretalk",[
   (call_script, "script_event_player_discharge"),
+  #If player is a sarge or captain, remove his party - Kham
+  (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+  (try_begin),
+    (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+    (gt, ":is_sarge", 0),
+    (call_script, "script_freelancer_remove_player_party"),
+  (try_end), 
+  #End Removal of Player Party
   (call_script, "script_party_restore"),
   (change_screen_map),
   ],
@@ -32026,6 +32207,14 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ],
             "Very well {playername}. You shall take some time off from military duty. Return in {reg3} days.", "lord_pretalk",[
     (call_script, "script_event_player_vacation"),
+    #If player is a sarge or captain, remove his party - Kham
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (try_begin),
+      (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+      (gt, ":is_sarge", 0),
+      (call_script, "script_freelancer_remove_player_party"),
+    (try_end), 
+    #End Removal of Player Party
     (call_script, "script_party_restore"),
     (change_screen_map),
     ],

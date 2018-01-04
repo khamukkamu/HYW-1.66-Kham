@@ -12432,8 +12432,18 @@ presentations = [
     (overlay_set_position, reg0, pos1),
     (val_sub, ":cur_y", ":cur_y_adder"),
 
-    #Rank_name
-    (str_store_troop_name, s21, "$player_cur_troop"),
+    #Rank_name - Added Captain / Sarge
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain),
+    (try_begin),
+      (eq, ":is_sarge", 1),
+      (str_store_string, s21, "@Division Sergeant"),
+    (else_try),
+      (eq, ":is_sarge", 2),
+      (str_store_string, s21, "@Division Captain"),
+    (else_try),
+      (str_store_troop_name, s21, "$player_cur_troop"),
+    (try_end),
     (create_text_overlay, reg0, "@Current Rank: {s21}", tf_left_align),
     (position_set_y, pos1, ":cur_y"),
     (overlay_set_position, reg0, pos1),
@@ -12448,7 +12458,17 @@ presentations = [
       (troop_get_xp, ":service_xp_cur", "trp_player"),
       (val_sub, ":service_xp_cur", ":service_xp_start"),
       (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
-      (try_begin),
+      (try_begin), #Captain / Sarge Check
+        (gt, ":is_sarge", 0),
+        (store_character_level, ":player_level", "trp_player"),
+        (store_sub, ":cur_xp", ":player_level", 1),
+        (get_level_boundary, ":cur_xp", ":cur_xp"),
+        (val_add, ":player_level", 5), #add 5 levels to current level to become sarge / captain
+        (get_level_boundary, ":required_xp", ":player_level"),
+        (val_sub, ":required_xp", ":cur_xp"),
+        (assign, reg0, ":required_xp"),
+        (str_store_string, s1, "str_reg0"),
+      (else_try), 
         (gt, ":upgrade_troop", 1), #make sure troop is valid and not player troop
         (call_script, "script_game_get_upgrade_xp", "$player_cur_troop"),
         (store_sub, reg0, reg0, ":service_xp_cur"), #required XP from script
@@ -12459,7 +12479,17 @@ presentations = [
     #This is using the 'better formula' as per the simple triggers (UPGRADE CHECK)
       (troop_get_upgrade_troop, ":upgrade_troop", "$player_cur_troop", 0),
       (gt, ":upgrade_troop", 1), #make sure troop is valid and not player troop
-      (try_begin),
+      (try_begin), #Captain / Sarge Check
+        (gt, ":is_sarge", 0),
+        (store_character_level, ":player_level", "trp_player"),
+        (store_sub, ":cur_xp", ":player_level", 1),
+        (get_level_boundary, ":cur_xp", ":cur_xp"),
+        (val_add, ":player_level", 5), #add 5 levels to current level to become sarge / captain
+        (get_level_boundary, ":required_xp", ":player_level"),
+        (val_sub, ":required_xp", ":cur_xp"),
+        (assign, reg0, ":required_xp"),
+        (str_store_string, s1, "str_reg0"),
+      (else_try),
         (store_character_level, ":cur_level", "$player_cur_troop"),
         (val_sub, ":cur_level", 1),
         (get_level_boundary, ":cur_level", ":cur_level"),
@@ -12470,12 +12500,12 @@ presentations = [
         (else_try),
           (assign, ":sub_amount", 3),
         (try_end),
-      (val_sub, ":required_xp", ":sub_amount"),
-      (get_level_boundary, ":required_xp", ":required_xp"),
-      (val_sub, ":required_xp", ":cur_level"),      
-      (assign, reg0, ":required_xp"),
-      (str_store_string, s1, "str_reg0"),
-      (try_end),
+        (val_sub, ":required_xp", ":sub_amount"),
+        (get_level_boundary, ":required_xp", ":required_xp"),
+        (val_sub, ":required_xp", ":cur_level"),      
+        (assign, reg0, ":required_xp"),
+        (str_store_string, s1, "str_reg0"),
+      (try_end), #Sarge / Captain Check END
     (try_end), #End Enhance Upgrade Choice     
     ##
 
