@@ -1936,3 +1936,8 @@ items = [
 
 ["items_end", "Items End", [("small_shield",0)], 0, 0, 1, 0, 0],
 ]
+
+#MOTO generate no-swing versions of weapons
+#Warning: this makes additions to item table non-save compatible, as the system only reads in the "new" ones, effectively overwriting the real new ones
+#It may be best to comment out until the table is set
+#append_noswing_items(items)
