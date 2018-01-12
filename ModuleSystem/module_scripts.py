@@ -923,6 +923,8 @@ scripts = [
   (assign, "$freelancer_allow_desertion", 1), #Freelancer - Allow Desertion
   (assign, "$g_next_pay_time", 0), #Freelancer - Init Paytime
   (assign, "$freelancer_enhanced_upgrade", 1), #Freelancer - Default to Advanced Upgrade system
+  (assign, "$allow_permadeath", 1), #Permadeath default ON
+  (assign, "$allow_injuries", 1), #Injuries default ON
   
   
     ]),
@@ -49416,6 +49418,19 @@ scripts = [
   [
   (store_random_in_range, "$rand5", 0, 7),
 #
+  #Kham - Make death and injuries optional
+
+  (try_begin),
+    (eq, "$allow_permadeath", 0),
+    (eq, "$allow_injuries", 1),
+    (eq, "$rand5", 4),
+    (assign, "$rand5", 3),
+  (else_try),
+    (eq, "$allow_permadeath", 0),
+    (eq, "$allow_injuries", 0),
+    (assign, "$rand5", 7),
+  (try_end),
+
       (try_begin),
        (eq,"$rand5",0),
       (display_message, "@Bléssures: Vous vous en sortez indèmne !", 0x33DD33),#vert

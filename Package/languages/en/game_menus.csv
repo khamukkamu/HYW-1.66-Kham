@@ -234,10 +234,10 @@ mno_castle_taken_claim_2|Request that {s3} be awarded to your {wife/husband}.
 mno_castle_taken_no_claim|Ask no rewards.
 menu_requested_castle_granted_to_player|You receive a message from your liege, {s3}.^^ {reg4?She:He} has decided to grant {s2}{reg3? and the nearby village of {s4}:} to you, with all due incomes and titles, to hold in {reg4?her:his} name for as long as you maintain your oath of homage..
 menu_requested_castle_granted_to_player_husband|You receive a message from your liege, {s3}.^^ {reg4?She:He} has decided to grant {s2}{reg3? and the nearby village of {s4}:} to your husband, {s7}.
-menu_requested_castle_granted_to_another|You receive a message from your monarch, {s3}.^^ 'I was most pleased to hear of your valiant efforts in the capture of {s2}. Your victory has gladdened all our hearts. You also requested me to give you ownership of the castle, but that is a favour which I fear I cannot grant, as you already hold significant estates in my realm. Instead I have sent you {reg6} denars to cover the expenses of your campaign, but {s2} I give to {s5}.' 
+menu_requested_castle_granted_to_another|You receive a message from your monarch, {s3}.^^ 'I was most pleased to hear of your valiant efforts in the capture of {s2}. Your victory has gladdened all our hearts. You also requested me to give you ownership of the castle, but that is a favour which I fear I cannot grant, as you already hold significant estates in my realm. Instead I have sent you {reg6} crowns to cover the expenses of your campaign, but {s2} I give to {s5}.' 
 mno_accept_decision|Accept the decision.
 mno_leave_faction|You have been wronged! Renounce your oath to your liege! 
-menu_requested_castle_granted_to_another_female|You receive a message from your monarch, {s3}.^^ 'I was most pleased to hear of your valiant efforts in the capture of {s2}. Your victory has gladdened all our hearts. You also requested me to give ownership of the castle to your husband, but that is a favour which I fear I cannot grant, as he already holds significant estates in my realm. Instead I have sent you {reg6} denars to cover the expenses of your campaign, but {s2} I give to {s5}.' 
+menu_requested_castle_granted_to_another_female|You receive a message from your monarch, {s3}.^^ 'I was most pleased to hear of your valiant efforts in the capture of {s2}. Your victory has gladdened all our hearts. You also requested me to give ownership of the castle to your husband, but that is a favour which I fear I cannot grant, as he already holds significant estates in my realm. Instead I have sent you {reg6} crowns to cover the expenses of your campaign, but {s2} I give to {s5}.' 
 menu_leave_faction|Renouncing your oath is a grave act. Your lord may condemn you and confiscate your lands and holdings. However, if you return them of your own free will, he may let the betrayal go without a fight.
 mno_leave_faction_give_back|Renounce your oath and give up your holdings.
 mno_leave_faction_hold|Renounce your oath and rule your lands, including {s2}, in your own name.
@@ -274,7 +274,7 @@ mno_village_steal_cattle|Steal cattle.
 mno_village_loot|Loot and burn this village.
 menu_recruit_volunteers|{s18}
 mno_continue_not_enough_gold|I don't have enough money...
-mno_recruit_them|Recruit them ({reg6} denars).
+mno_recruit_them|Recruit them ({reg6} crowns).
 menu_village_hunt_down_fugitive_defeated|A heavy blow from the fugitive sends you to the ground, and your vision spins and goes dark. Time passes. When you open your eyes again you find yourself battered and bloody, but luckily none of the wounds appear to be lethal.
 menu_village_infest_bandits_result|{s9}
 menu_village_infestation_removed|In a battle worthy of song, you and your men drive the bandits out of the village, making it safe once more. The villagers have little left in the way of wealth after their ordeal, but they offer you all they can find.
@@ -287,7 +287,7 @@ mno_center_build_watch_tower|Build a watch tower.
 mno_center_build_school|Build a school.
 mno_center_build_messenger_post|Build a messenger post.
 mno_center_build_prisoner_tower|Build a prisoner tower.
-menu_center_improve|{s19} As the party member with the highest engineer skill ({reg2}), {reg3?you reckon:{s3} reckons} that building the {s4} will cost you {reg5} denars and will take {reg6} days.
+menu_center_improve|{s19} As the party member with the highest engineer skill ({reg2}), {reg3?you reckon:{s3} reckons} that building the {s4} will cost you {reg5} crowns and will take {reg6} days.
 mno_improve_cont|Go on.
 mno_improve_not_enough_gold|I don't have enough money for that.
 menu_town_bandits_failed|{s4} {s5}
@@ -304,7 +304,7 @@ menu_village_start_attack|Some of the angry villagers grab their tools and prepa
 mno_village_raid_attack|Charge them.
 mno_village_raid_leave|Leave this village alone.
 menu_village_loot_no_resist|The villagers here are few and frightened, and they quickly scatter and run before you. The village is at your mercy.
-menu_village_loot_complete|On your orders your troops sack the village, pillaging everything of any value, and then put the buildings to the torch. From the coins and valuables that are found, you get your share of {reg1} denars.
+menu_village_loot_complete|On your orders your troops sack the village, pillaging everything of any value, and then put the buildings to the torch. From the coins and valuables that are found, you get your share of {reg1} crowns.
 menu_village_loot_defeat|Fighting with courage and determination, the villagers manage to hold together and drive off your forces.
 menu_village_loot_continue|Do you wish to continue looting this village?
 mno_disembark_yes|Yes.
@@ -394,9 +394,9 @@ mno_visit_lady_7|Visit {s12}
 mno_visit_lady_8|Visit {s12}
 menu_town_tournament_lost|You have been eliminated from the tournament. {s8}
 menu_tournois_lost|You are eliminated from the tournament. {s53}
-menu_town_tournament_victoire|You won the tournament! Besides the glory, you win the grand prize of {reg15} denars and a unique item offered by the organizing lord (go to the castle). {s58}
+menu_town_tournament_victoire|You won the tournament! Besides the glory, you win the grand prize of {reg15} crowns and a unique item offered by the organizing lord (go to the castle). {s58}
 mno_continue_t|Continue
-menu_town_tournament_won|You have won the tournament of {s3}! You are overjoyed and filled with pride as the crowd cheers your name. In addition to honor, fame and glory, you earn a prize of {reg9} denars. {s8}
+menu_town_tournament_won|You have won the tournament of {s3}! You are overjoyed and filled with pride as the crowd cheers your name. In addition to honor, fame and glory, you earn a prize of {reg9} crowns. {s8}
 menu_town_tournament_won_by_another|As the only {reg3?fighter:man} to remain undefeated this day, {s1} wins the lists and the glory of this tournament.
 menu_town_tournament_autre_vainqueur|The winner of the tournament: {s54}
 menu_town_tournament_pay|{s28}
@@ -424,17 +424,17 @@ mno_tournament_withdraw_no|No, not as long as there is a chance of victory!
 menu_tournament_withdraw_verify_a_cheval_a_pied|Are you sure you want to exit the tournament?
 menu_tournament_withdraw_verify_a_cheval|Are you sure you want to exit the tournament?
 menu_tournament_withdraw_verify_a_cheval_joute|Are you sure you want to exit the tournament?
-menu_reglement_joutes_entree|Tournament rules.^^The jouster will start by choosing a category: jousting with lances on horseback or jousting on foot with swords.^^    Rules of jousting on horseback.^     The two jousters facing each other in their lane will try to knock out their opponent by striking with a spear.^     Hurting the opponent's horse leads to disqualification.^     If neither competitor falls, the round will be declared void.^     The jouster has to abide by the rules of courtly chivalry and noble joust.^^The amount of denars paid to the grand prize winner is determined by the organizing lord, who will also provide a unique item.
-menu_reglement_joutes|Tournament rules.^The jouster will start by choosing a category: jousting with lances on horseback or jousting on foot with swords.^^    Rules of jousting on horseback.^     The two jousters facing each other in their lane will try to knock out their opponent by striking with a spear.^     Hurting the opponent's horse leads to disqualification.^     If neither competitor falls, the round will be declared void.^     The jouster has to abide by the rules of courtly chivalry and noble joust.^^The amount of denars paid to the grand prize winner is determined by the organizing lord, who will also provide a unique item.
-menu_reglement_joutes_cheval|Tournament rules.^^The jouster will start by choosing a category: jousting with lances on horseback or jousting on foot with swords.^^    Rules of jousting on horseback.^    The two jousters facing each other in their lane will try to knock out their opponent by striking with a spear.^     Hurting the opponent's horse leads to disqualification.^     If neither competitor falls, the round will be declared void.^     The jouster has to abide by the rules of courtly chivalry and noble joust.^^The amount of denars paid to the grand prize winner is determined by the organizing lord, who will also provide a unique item.
+menu_reglement_joutes_entree|Tournament rules.^^The jouster will start by choosing a category: jousting with lances on horseback or jousting on foot with swords.^^    Rules of jousting on horseback.^     The two jousters facing each other in their lane will try to knock out their opponent by striking with a spear.^     Hurting the opponent's horse leads to disqualification.^     If neither competitor falls, the round will be declared void.^     The jouster has to abide by the rules of courtly chivalry and noble joust.^^The amount of crowns paid to the grand prize winner is determined by the organizing lord, who will also provide a unique item.
+menu_reglement_joutes|Tournament rules.^The jouster will start by choosing a category: jousting with lances on horseback or jousting on foot with swords.^^    Rules of jousting on horseback.^     The two jousters facing each other in their lane will try to knock out their opponent by striking with a spear.^     Hurting the opponent's horse leads to disqualification.^     If neither competitor falls, the round will be declared void.^     The jouster has to abide by the rules of courtly chivalry and noble joust.^^The amount of crowns paid to the grand prize winner is determined by the organizing lord, who will also provide a unique item.
+menu_reglement_joutes_cheval|Tournament rules.^^The jouster will start by choosing a category: jousting with lances on horseback or jousting on foot with swords.^^    Rules of jousting on horseback.^    The two jousters facing each other in their lane will try to knock out their opponent by striking with a spear.^     Hurting the opponent's horse leads to disqualification.^     If neither competitor falls, the round will be declared void.^     The jouster has to abide by the rules of courtly chivalry and noble joust.^^The amount of crowns paid to the grand prize winner is determined by the organizing lord, who will also provide a unique item.
 menu_tournament_participants|You ask one of the criers for the names of the tournament participants. They are:^{s11}
 menu_tournament_participants_cheval|List of participants still in contention:^{s32}
 menu_collect_taxes|As the party member with the highest trade skill ({reg2}), {reg3?you expect:{s1} expects} that collecting taxes from here will take {reg4} days...
 mno_start_collecting|Start collecting.
 mno_collect_later|Put it off until later.
-menu_collect_taxes_complete|You've collected {reg3} denars in taxes from {s3}. {s19} will be expecting you to take the money to him.
+menu_collect_taxes_complete|You've collected {reg3} crowns in taxes from {s3}. {s19} will be expecting you to take the money to him.
 menu_collect_taxes_rebels_killed|Your quick action and strong arm have successfully put down the revolt. Surely, anyone with a mind to rebel against you will think better of it after this.
-menu_collect_taxes_failed|You could collect only {reg3} denars as tax from {s3} before the revolt broke out. {s1} won't be happy, but some silver will placate him better than nothing at all...
+menu_collect_taxes_failed|You could collect only {reg3} crowns as tax from {s3} before the revolt broke out. {s1} won't be happy, but some silver will placate him better than nothing at all...
 menu_collect_taxes_revolt_warning|The people of {s3} are outraged at your demands and decry it as nothing more than extortion. They're getting very restless, and they may react badly if you keep pressing them.
 mno_continue_collecting_taxes|Ignore them and continue.
 mno_halve_taxes|Agree to reduce your collection by half. ({s1} may be upset)
@@ -453,7 +453,7 @@ menu_disembark|Do you wish to disembark?
 menu_ship_reembark|Do you wish to embark?
 mno_reembark_yes|Yes.
 mno_reembark_no|No.
-menu_center_reports|Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days
+menu_center_reports|Town Name: {s1}^Rent Income: {reg1} crowns^Tariff Income: {reg2} crowns^Food Stock: for {reg3} days
 mno_to_price_and_productions|Show prices and productions.
 menu_price_and_production|Productions are:^(Note: base/modified by raw materials/modified by materials plus prosperity)^{s1}^^Price factors are:^{s2}
 menu_town_trade|You head towards the marketplace.
@@ -471,7 +471,7 @@ mno_sneak_caught_fight|Try to fight your way out!
 mno_sneak_caught_surrender|Surrender.
 menu_sneak_into_town_caught_dispersed_guards|You drive off the guards and cover your trail before running off, easily losing your pursuers in the maze of streets.
 menu_sneak_into_town_caught_ran_away|You make your way back through the gates and quickly retreat to the safety of the countryside.{s11}
-menu_enemy_offer_ransom_for_prisoner|{s2} offers you a sum of {reg12} denars in silver if you are willing to sell him {s1}.
+menu_enemy_offer_ransom_for_prisoner|{s2} offers you a sum of {reg12} crowns in silver if you are willing to sell him {s1}.
 mno_ransom_accept|Accept the offer.
 mno_ransom_reject|Reject the offer.
 menu_training_ground|You approach a training field where you can practice your martial skills. What kind of training do you want to do?
@@ -523,7 +523,7 @@ menu_captivity_castle_taken_prisoner|You are quickly surrounded by guards who ta
 menu_captivity_rescue_lord_taken_prisoner|You remain in disguise for as long as possible before revealing yourself. The guards are outraged and beat you savagely before throwing you back into the cell for God knows how long...
 menu_captivity_castle_check|stub
 menu_captivity_end_exchanged_with_prisoner|After days of imprisonment, you are finally set free when your captors exchange you with another prisoner.
-menu_captivity_end_propose_ransom|You spend long hours in the sunless dank of the dungeon, more than you can count. Suddenly one of your captors enters your cell with an offer; he proposes to free you in return for {reg5} denars of your hidden wealth. You decide to...
+menu_captivity_end_propose_ransom|You spend long hours in the sunless dank of the dungeon, more than you can count. Suddenly one of your captors enters your cell with an offer; he proposes to free you in return for {reg5} crowns of your hidden wealth. You decide to...
 mno_captivity_end_ransom_accept|Accept the offer.
 mno_captivity_end_ransom_deny|Refuse him, wait for something better.
 menu_captivity_castle_remain|More days pass in the darkness of your cell. You get through them as best you can, enduring the kicks and curses of the guards, watching your underfed body waste away more and more...
@@ -607,7 +607,7 @@ menu_start_phase_4|{s11}
 menu_lost_tavern_duel|{s11}
 menu_establish_court|To establish {s4} as your court will require a small refurbishment. In particular, you will need a set of tools and a bolt of velvet. it may also take a short while for some of your followers to relocate here. Do you wish to proceed?
 mno_establish|Establish {s4} as your court
-menu_notification_relieved_as_marshal|{s4} wishes to inform you that your services as marshal are no longer required. In honor of valiant efforts on behalf of the realm over the last {reg4} days, however, {reg8?she:he} offers you a purse of {reg5} denars.
+menu_notification_relieved_as_marshal|{s4} wishes to inform you that your services as marshal are no longer required. In honor of valiant efforts on behalf of the realm over the last {reg4} days, however, {reg8?she:he} offers you a purse of {reg5} crowns.
 menu_town_recruit_volunteers_2|{s18}
 menu_courtesan_accept|You follow the young woman to the inn. Once in her room you drop the question "Voulez-vous coucher avec moi"? She blushes with a grin and a wink and it won't be the only delightful reaction you get out of her tonight. You feel great when it's over.
 menu_courtesan_accept_2|You follow the girl to a dark corner. Deep french kissing ensues. Somehow you still end up connecting more emotionally than physically and continue by sharing your thoughts over a meal. It turned out to be quite the girlfriend experience. You feel emancipated when it's over.

@@ -60,6 +60,7 @@ itp_food                 = 0x0000000000080000
 itp_cant_reload_on_horseback = 0x0000000000100000
 itp_two_handed               = 0x0000000000200000
 itp_primary                  = 0x0000000000400000
+itp_replaces_helm            = 0x0000000000400000 #in VC some hoods are attached to tunics
 itp_secondary                = 0x0000000000800000
 itp_covers_legs              = 0x0000000001000000
 itp_doesnt_cover_hair        = 0x0000000001000000
@@ -454,7 +455,8 @@ itc_poleaxe    = itc_parry_polearm| itcf_overswing_polearm |itcf_thrust_polearm|
 itc_voulge    = itc_parry_polearm| itcf_overswing_polearm |itcf_slashright_polearm|itcf_slashleft_polearm
 
 itc_staff      = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback| itcf_overswing_polearm |itcf_thrust_polearm|itcf_slashright_polearm|itcf_slashleft_polearm
-itc_spear      = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm
+itc_spear      = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm| itcf_overswing_spear|itcf_slashright_polearm|itcf_slashleft_polearm|itcf_overswing_musket
+itc_jav_melee  = itc_parry_polearm| itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm| itcf_overswing_spear|itcf_slashright_polearm|itcf_slashleft_polearm
 itc_cutting_spear = itc_spear|itcf_overswing_polearm
 itc_pike       = itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm
 itc_guandao    = itc_parry_polearm|itcf_overswing_polearm|itcf_thrust_polearm|itcf_slashright_polearm|itcf_slashleft_polearm|itcf_horseback_slashright_onehanded|itcf_horseback_slashleft_onehanded|itcf_horseback_slash_polearm

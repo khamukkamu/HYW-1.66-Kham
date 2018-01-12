@@ -7679,7 +7679,7 @@ game_menus = [
         (neg|troop_is_wounded, "trp_player"),
       ],
       "Charge the enemy.",
-      [
+      [ 
         (assign, "$g_joined_battle_to_help", 1),
         (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
         (assign, "$g_battle_result", 0),
@@ -7715,7 +7715,7 @@ game_menus = [
         (ge, reg0, 3),
       ],
       "Order your troops to attack with your allies while you stay back.",
-      [
+      [ (neq, "$freelancer_state", 1),
         (assign, "$g_joined_battle_to_help", 1),
         (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
         (jump_to_menu,"mnu_join_order_attack"),
