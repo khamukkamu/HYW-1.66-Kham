@@ -126,7 +126,7 @@ quests = [
  ("screen_army", "Screen the Advance of {s13}'s Army", qf_random_quest,
   "{!}None"
   ),
- ("scout_waypoints", "Scout {s13}, {s14} and {s15}", qf_random_quest,
+ ("scout_waypoints", "Scout the assigned areas", qf_random_quest,
   "{!}None"
   ),
 

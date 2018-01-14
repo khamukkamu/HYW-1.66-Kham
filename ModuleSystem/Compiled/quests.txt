@@ -22,7 +22,7 @@ qst_report_to_army Report_to_{s13},_the_Marshall 2 {!}None
 qst_deliver_cattle_to_army Deliver_{reg3}_Heads_of_Cattle_to_{s13} 2 {!}None 
 qst_join_siege_with_army Join_the_Siege_of_{s14} 2 {!}None 
 qst_screen_army Screen_the_Advance_of_{s13}'s_Army 2 {!}None 
-qst_scout_waypoints Scout_{s13},_{s14}_and_{s15} 2 {!}None 
+qst_scout_waypoints Scout_the_assigned_areas 2 {!}None 
 qst_rescue_lord_by_replace Rescue_{s13}_from_{s14} 2 {!}None 
 qst_deliver_message_to_prisoner_lord Deliver_Message_to_{s13}_at_{s14} 2 {!}None 
 qst_duel_for_lady Challenge_{s13}_to_a_Trial_of_Arms 2 {!}None 

@@ -1,4 +1,4 @@
-1041
+1054
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1040,3 +1040,16 @@ qstr__ _
 qstr__I_ve_heard_that_you_ _I've_heard_that_you_were_already_an_officer_under_{s4}._However,_you_will_have_to_earn_my_trust_and_that_of_my_men._So_for_now,_
 qstr_Allow_Player_Permane Allow_Player_Permanent_DEATH:_
 qstr_Allow_Player_Injurie Allow_Player_Injuries:_
+qstr_Simply_pass_near_{s1 Simply_pass_near_{s13}
+qstr_Simply_pass_near_{s13 Simply_pass_near_{s13}_and_{s14}
+qstr_Simply_pass_near_{s13} Simply_pass_near_{s13},_{s14},_and_{s15}
+qstr_{s13} {s13}
+qstr_{s13}_and_{s14 {s13}_and_{s14
+qstr_{s13}_{s14}_and_{s1 {s13},_{s14}_and_{s15}
+qstr_{s9}_asked_you_to_sco {s9}_asked_you_to_scout_{s5},_then_report_back.
+qstr_{s9}_asked_you_to_scou {s9}_asked_you_to_scout_{s7},_then_report_back.
+qstr_{s13}_and_{s14} {s13}_and_{s14}
+qstr_{reg6}_Freelancer_Ra {reg6}_Freelancer_Rank
+qstr_{s13}_TRIGGERED {s13}_TRIGGERED
+qstr_{s13}_and_{s14}_TRIG {s13}_and_{s14}_TRIGGERED
+qstr_{s13}_{s14}_and_{s15 {s13},_{s14}_and_{s15}_TRIGGERED

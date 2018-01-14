@@ -20,7 +20,7 @@ qst_report_to_army|Report to {s13}, the Marshall
 qst_deliver_cattle_to_army|Deliver {reg3} Heads of Cattle to {s13}
 qst_join_siege_with_army|Join the Siege of {s14}
 qst_screen_army|Screen the Advance of {s13}'s Army
-qst_scout_waypoints|Scout {s13}, {s14} and {s15}
+qst_scout_waypoints|Scout the assigned areas.
 qst_rescue_lord_by_replace|Rescue {s13} from {s14}
 qst_deliver_message_to_prisoner_lord|Deliver Message to {s13} at {s14}
 qst_duel_for_lady|Challenge {s13} to a Trial of Arms
