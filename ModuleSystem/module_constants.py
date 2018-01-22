@@ -579,10 +579,10 @@ spt_town               = 3
 spt_village            = 4
 ##spt_forager            = 5
 ##spt_war_party          = 6
-##spt_patrol             = 7
+spt_patrol             = 7
 ##spt_messenger          = 8
 ##spt_raider             = 9
-##spt_scout              = 10
+spt_scout              = 10
 spt_kingdom_caravan    = 11
 ##spt_prisoner_train     = 12
 spt_kingdom_hero_party = 13
@@ -2142,3 +2142,6 @@ Troop_Tree_Area_Width = Screen_Width-2*Screen_Border_Width
 Troop_Tree_Line_Color = 0x000000
 Troop_Tree_Tableau_Height = 800
 Troop_Tree_Tableau_Width = Troop_Tree_Tableau_Height*Screen_Undistort_Width_Num/Screen_Undistort_Width_Den
+
+#Debug mode - Turn off before deploying to production
+debug_mode = 1

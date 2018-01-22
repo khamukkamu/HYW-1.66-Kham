@@ -467,9 +467,9 @@ scripts = [
           
           (try_begin),
             (faction_slot_eq, ":kingdom_hero_faction", slot_faction_leader, ":kingdom_hero"),
-            (store_random_in_range, ":random_renown", 250, 400),
+            (store_random_in_range, ":random_renown", 350, 500),
           (else_try),
-            (store_random_in_range, ":random_renown", 0, 100),
+            (store_random_in_range, ":random_renown", 100, 300),
           (try_end),
           (val_add, ":renown", ":random_renown"),
           
@@ -926,6 +926,7 @@ scripts = [
       (assign, "$freelancer_enhanced_upgrade", 1), #Freelancer - Default to Advanced Upgrade system
       (assign, "$allow_permadeath", 1), #Permadeath default ON
       (assign, "$allow_injuries", 1), #Injuries default ON
+      (assign, "$freelancer_missions", 1), #Allow Freelancer Missions
       
       
   ]),
@@ -6298,6 +6299,7 @@ scripts = [
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_a, "pt_kingdom_3_reinforcements_a"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_b, "pt_kingdom_3_reinforcements_b"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_c, "pt_kingdom_3_reinforcements_c"),
+          (faction_set_slot, ":faction_no",  slot_faction_reinforcements_d, "pt_kingdom_3_reinforcements_d"),
           
         (else_try),
           (faction_slot_eq, ":faction_no", slot_faction_culture, "fac_culture_4"),
@@ -6310,6 +6312,7 @@ scripts = [
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_a, "pt_kingdom_4_reinforcements_a"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_b, "pt_kingdom_4_reinforcements_b"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_c, "pt_kingdom_4_reinforcements_c"),
+          (faction_set_slot, ":faction_no",  slot_faction_reinforcements_d, "pt_kingdom_4_reinforcements_d"),
           #HYW
           # (else_try),
           # (faction_slot_eq, ":faction_no", slot_faction_culture, "fac_culture_3"),
@@ -13470,6 +13473,13 @@ scripts = [
           (set_result_string, "@+1 to {s1} while in inventory"),
           (set_trigger_result, 0xFFEEDD),
         (try_end),
+      (else_try),
+        (eq, debug_mode,1),
+        (eq, "$cheat_mode", 1),
+        (eq, ":extra_text_id", 0),
+        (assign, reg1, ":item_no"),
+        (set_result_string, "@Item ID: {reg1}"),
+        (set_trigger_result, color_bad_news),
       (try_end),
   ]),
   
@@ -21118,6 +21128,65 @@ scripts = [
         (call_script, "script_party_inflict_attrition", ":party_no", ":percent_under", 1),
       (try_end),
       
+      #### F&B begin make AI upgrade their settlements
+      (try_begin),
+        (ge, ":cur_wealth", 5000),
+        (assign, ":upgrade_possible", 0),
+        (call_script, "script_list_clear", "trp_upgrades"),
+        (try_for_range, ":center_no", centers_begin, centers_end),
+          (party_slot_eq, ":center_no", slot_town_lord, ":party_no"),
+          (party_slot_eq, ":center_no", slot_center_current_improvement, 0),
+          (call_script, "script_list_add", "trp_upgrades", ":center_no"),
+          (assign, ":upgrade_possible", 1),
+        (try_end),
+        (eq, ":upgrade_possible", 1),
+        (call_script, "script_list_random", "trp_upgrades"),
+        (assign, ":center_to_upgrade", reg1),
+        (try_begin),
+          (party_slot_eq, ":center_to_upgrade", slot_party_type, spt_village),
+          (call_script, "script_list_clear", "trp_upgrades"),
+          (assign, ":upgrade_available", 0),
+          (try_for_range, ":upgrade", village_improvements_begin, village_improvements_end),
+            (neg|party_slot_eq, ":center_to_upgrade", ":upgrade", 1),   #ignore already built upgrades
+            (call_script, "script_list_add", "trp_upgrades", ":upgrade"),
+            (assign, ":upgrade_available", 1),
+          (try_end),
+        (else_try),
+          (party_slot_eq, ":center_to_upgrade", slot_party_type, spt_castle),
+          (call_script, "script_list_clear", "trp_upgrades"),
+          (assign, ":upgrade_available", 0),
+          (try_for_range, ":upgrade", walled_center_improvements_begin, walled_center_improvements_end),
+            (neg|party_slot_eq, ":center_to_upgrade", ":upgrade", 1),
+            (call_script, "script_list_add", "trp_upgrades", ":upgrade"),
+            (assign, ":upgrade_available", 1),
+          (try_end),
+        (else_try),
+          (party_slot_eq, ":center_to_upgrade", slot_party_type, spt_town),
+          (call_script, "script_list_clear", "trp_upgrades"),
+          (assign, ":upgrade_available", 0),
+          (try_for_range, ":upgrade", walled_center_improvements_begin, walled_center_improvements_end),
+            (neg|party_slot_eq, ":center_to_upgrade", ":upgrade", 1),
+            (call_script, "script_list_add", "trp_upgrades", ":upgrade"),
+            (assign, ":upgrade_available", 1),
+          (try_end),
+        (try_end),
+        (eq, ":upgrade_available", 1),
+        (call_script, "script_list_random", "trp_upgrades"),
+        (assign, ":new_upgrade", reg1),
+        (call_script, "script_get_improvement_details", reg1),
+        (assign, ":improvement_cost", reg0),
+        (store_div, ":improvement_time", ":improvement_cost", 150),
+        (party_set_slot, ":center_to_upgrade", slot_center_current_improvement, ":new_upgrade"),
+        (store_current_hours, ":cur_hours"),
+        (store_mul, ":hours_takes", ":improvement_time", 24),
+        (val_add, ":hours_takes", ":cur_hours"),
+        (party_set_slot, ":center_to_upgrade", slot_center_improvement_end_hour, ":hours_takes"),
+        (val_sub, ":cur_wealth", ":improvement_cost"),
+        (str_store_party_name, s0, ":center_to_upgrade"),
+        #      (display_message, "@ {s0} is building an upgrade. Final wealth: {reg7}"),
+      (try_end),
+      #### F&B end make AI upgrade their settlements
+      ##############################################################################
       (val_max, ":cur_wealth", 0),
       (troop_set_slot, ":troop_no", slot_troop_wealth, ":cur_wealth"),
   ]),
@@ -21565,20 +21634,24 @@ scripts = [
       (assign, ":party_count_limit", 0),
       
       (faction_get_slot, ":num_towns", ":faction_no", slot_faction_num_towns),
+      (faction_get_slot, ":num_castles", ":faction_no", slot_faction_num_castles),
       
       (try_begin),
         ##        (eq, ":party_type", spt_forager),
         ##        (assign, ":party_count_limit", 1),
         ##      (else_try),
-        ##        (eq, ":party_type", spt_scout),
-        ##        (assign, ":party_count_limit", 1),
-        ##      (else_try),
-        ##        (eq, ":party_type", spt_patrol),
-        ##        (assign, ":party_count_limit", 1),
+        (eq, ":party_type", spt_scout),
+        (store_add, ":total_scouts", ":num_towns", ":num_castles"),
+        (assign, ":party_count_limit", ":total_scouts"),
+      (else_try),
+        (eq, ":party_type", spt_patrol),
+        (store_add, ":total_patrols", ":num_towns", ":num_castles"),
+        (val_add, ":total_patrols", 10),
+        (assign, ":party_count_limit", ":total_patrols"),
         ##      (else_try),
         ##        (eq, ":party_type", spt_messenger),
         ##        (assign, ":party_count_limit", 1),
-        ##      (else_try),
+      (else_try),
         (eq, ":party_type", spt_kingdom_caravan),
         (try_begin),
           (eq, ":num_towns", 0),
@@ -21616,23 +21689,23 @@ scripts = [
       (str_store_faction_name, s7, ":faction_no"),
       (assign, ":party_name_str", "str_no_string"),
       
-      ##      (faction_get_slot, ":reinforcements_a", ":faction_no", slot_faction_reinforcements_a),
+      (faction_get_slot, ":reinforcements_a", ":faction_no", slot_faction_reinforcements_a),
       (faction_get_slot, ":reinforcements_b", ":faction_no", slot_faction_reinforcements_b),
-      ##      (faction_get_slot, ":reinforcements_c", ":faction_no", slot_faction_reinforcements_c),
+      (faction_get_slot, ":reinforcements_c", ":faction_no", slot_faction_reinforcements_c),
       
       (try_begin),
         ##        (eq, ":party_type", spt_forager),
         ##        (assign, ":party_template", "pt_forager_party"),
         #        (assign, ":party_name_str", "str_s7_foragers"),
         ##      (else_try),
-        ##        (eq, ":party_type", spt_scout),
-        ##        (assign, ":party_template", "pt_scout_party"),
+        (eq, ":party_type", spt_scout),
+        (assign, ":party_template", "pt_scout_party"),
         #        (assign, ":party_name_str", "str_s7_scouts"),
-        ##      (else_try),
-        ##        (eq, ":party_type", spt_patrol),
-        ##        (assign, ":party_template", "pt_patrol_party"),
+      (else_try),
+        (eq, ":party_type", spt_patrol),
+        (assign, ":party_template", "pt_patrol_party"),
         #        (assign, ":party_name_str", "str_s7_patrol"),
-        ##      (else_try),
+      (else_try),
         (eq, ":party_type", spt_kingdom_caravan),
         (assign, ":party_template", "pt_kingdom_caravan_party"),
         #        (assign, ":party_name_str", "str_s7_caravan"),
@@ -21681,13 +21754,20 @@ scripts = [
           ##          (eq, ":party_type", spt_forager),
           ##          (party_add_template, ":result", ":reinforcements_a"),
           ##        (else_try),
-          ##          (eq, ":party_type", spt_scout),
-          ##          (party_add_template, ":result", ":reinforcements_c"),
-          ##        (else_try),
-          ##          (eq, ":party_type", spt_patrol),
-          ##          (party_add_template, ":result", ":reinforcements_a"),
-          ##          (party_add_template, ":result", ":reinforcements_b"),
-          ##        (else_try),
+          (eq, ":party_type", spt_scout),
+          (store_random_in_range, ":scout_end", 2, 6), #Max of 5 iterations for varying scout strengths
+          (try_for_range, ":unused", 0, ":scout_end"),
+            (party_add_template, ":result", ":reinforcements_c"),
+            (party_add_template, ":result", ":reinforcements_a"),
+          (try_end),
+        (else_try),
+          (eq, ":party_type", spt_patrol),
+          (store_random_in_range, ":patrol_end", 4, 10), #Max of 9 iterations for varying patrol strengths
+          (try_for_range, ":unused", 0, ":patrol_end"),
+            (party_add_template, ":result", ":reinforcements_a"),
+            (party_add_template, ":result", ":reinforcements_b"),
+          (try_end),
+        (else_try),
           (eq, ":party_type", spt_kingdom_caravan),
           (try_begin),
             (eq, ":faction_no", "fac_player_supporters_faction"),
@@ -61890,11 +61970,11 @@ scripts = [
         (start_map_conversation, "$enlisted_lord"),
         
       (else_try),
-        (le, ":chance", 45),
+        (le, ":chance", 55),
         (jump_to_menu, "mnu_freelancer_bandits"), #Troublesome Bandits
         
       (else_try),
-        (le, ":chance", 65),
+        (le, ":chance", 70),
         (assign, ":continue", 0),
         (assign, "$cheat_imposed_quest", "qst_hunt_down_fugitive"), #hunt down fugitive
         (call_script, "script_get_quest", "$enlisted_lord"),
@@ -61905,7 +61985,7 @@ scripts = [
         (eq, ":continue", 1),
         
       (else_try),
-        (le, ":chance", 85),
+        (le, ":chance", 90),
         (jump_to_menu, "mnu_freelancer_training_choose"), #Training
         
       (else_try),
@@ -63074,4 +63154,44 @@ scripts = [
       (try_end),
       
       (assign, reg0, ":price"),]),
+  
+  #-## List management by Lumos
+  ## The list's zero slot holds the number of current items in it
+  # script_list_random
+  # Returns a random element from the list, along with its index
+  # INPUT: none
+  # OUTPUT: reg1 - the value of the item, reg2 - its index
+  ("list_random", [
+      (store_script_param, ":list_type", 1),
+      (troop_get_slot, ":num_elements", ":list_type", 0),
+      (val_add, ":num_elements", 1),
+      (store_random_in_range, reg2, 1, ":num_elements"),
+      (troop_get_slot, reg1, ":list_type", reg2),
+  ]),
+  # script_list_add
+  # Appends an item to the list
+  # INPUT: arg1 - the value which we will add to the list
+  # OUTPUT: none
+  ("list_add", [
+      (store_script_param, ":list_type", 1),
+      (store_script_param, ":value", 2),
+      (troop_get_slot, ":num_elements", ":list_type", 0),
+      (val_add, ":num_elements", 1),
+      (troop_set_slot, ":list_type", ":num_elements", ":value"),
+      (troop_set_slot, ":list_type", 0, ":num_elements"),
+  ]),
+  # script_list_clear
+  # Clears all items from the list
+  # INPUT: ":list_type"
+  # OUTPUT: none
+  ("list_clear", [
+      (store_script_param, ":list_type", 1),
+      (troop_get_slot, ":num_elements", ":list_type", 0),
+      (val_add, ":num_elements", 1),
+      (try_for_range, ":slot", 1, ":num_elements"),
+        (troop_set_slot, ":list_type", ":slot", 0),
+      (try_end),
+      (troop_set_slot, ":list_type", 0, 0), # Reset number of elements
+  ]),
+  
 ]

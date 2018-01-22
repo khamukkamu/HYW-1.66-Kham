@@ -478,14 +478,14 @@ trp_npc15|Godefroi de Cherbourg
 trp_npc15_pl|Godefroi de Cherbourg
 trp_npc16|Blanche
 trp_npc16_pl|Blanche
-trp_kingdom_1_lord|Charles V, King of France
-trp_kingdom_1_lord_pl|Charles V, King of France
-trp_kingdom_2_lord|Edward lll, King of England
-trp_kingdom_2_lord_pl|Edward lll, King of England
-trp_kingdom_3_lord|Philip, Duke of Burgundy
-trp_kingdom_3_lord_pl|Philip, Duke of Burgundy
-trp_kingdom_4_lord|Jean V, Duke of Brittany
-trp_kingdom_4_lord_pl|Jean V, Duke of Brittany
+trp_kingdom_1_lord|Charles VII
+trp_kingdom_1_lord_pl|King of France
+trp_kingdom_2_lord|John Lancaster
+trp_kingdom_2_lord_pl|Duke of Bedford
+trp_kingdom_3_lord|Philippe III
+trp_kingdom_3_lord_pl|Duke of Burgundy
+trp_kingdom_4_lord|Jean V
+trp_kingdom_4_lord_pl|Duke of Brittany
 trp_knight_1_1|Alain de Rohan
 trp_knight_1_1_pl|Alain de Rohan
 trp_knight_1_2|La Hire

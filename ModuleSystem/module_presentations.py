@@ -10611,6 +10611,21 @@ presentations = [
   (overlay_set_val, "$form_options_overlay_8", "$allow_injuries"),
   
   (val_sub, ":y_pos", Screen_Text_Height),
+
+  #Freelancer Missions
+  (create_text_overlay, reg1, "@Freelancer Missions: ", tf_right_align),
+  (position_set_y, pos0, ":y_pos"),
+  (overlay_set_position, reg1, pos0),
+  
+  (create_check_box_overlay, "$form_options_overlay_9", "mesh_checkbox_off", "mesh_checkbox_on"),
+  (copy_position, pos1, pos0),
+  (store_add, reg2, ":y_pos", Screen_Checkbox_Height_Adj),
+  (position_set_y, pos1, reg2),
+  (overlay_set_position, "$form_options_overlay_9", pos1),
+  
+  (overlay_set_val, "$form_options_overlay_9", "$freelancer_missions"),
+  
+  (val_sub, ":y_pos", Screen_Text_Height),
   
   #Freelancer - Automatically go back to lord party to prevent desertion
   (create_text_overlay, reg1, "@Freelancer: Prevent Desertion During Vacation:", tf_right_align),
@@ -10688,6 +10703,9 @@ presentations = [
   (else_try),
     (eq, ":object", "$form_options_overlay_8"),
     (assign, "$allow_injuries", ":value"),
+  (else_try),
+    (eq, ":object", "$form_options_overlay_9"),
+    (assign, "$freelancer_missions", ":value"),
   (else_try),
     (eq, ":object", "$form_options_overlay_6"),
     (assign, "$freelancer_enhanced_upgrade", ":value"),

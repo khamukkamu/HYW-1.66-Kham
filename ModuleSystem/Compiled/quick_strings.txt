@@ -1,4 +1,4 @@
-1104
+1106
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1103,3 +1103,5 @@ qstr_{!}Event_no.{reg5}_type {!}Event_no.{reg5},_type_{reg6},_time_{reg8}._Playe
 qstr_{!}Entries_up_to_no. {!}Entries_up_to_no._{reg5}_skipped
 qstr_{s9}_wants_you_to_hu {s9}_wants_you_to_hunt_down_deserters_and_end_them.
 qstr_{s6}_faction_with_{s {s6}_faction_with_{s5}_culture
+qstr_Item_ID:_{reg1} Item_ID:_{reg1}
+qstr_Freelancer_Missions: Freelancer_Missions:_

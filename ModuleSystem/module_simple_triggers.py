@@ -4390,6 +4390,7 @@ simple_triggers = [
     #Random Missions
     (12,[
         
+        (eq, "$freelancer_missions", 1),
         (eq, "$freelancer_state", 1),
         (store_random_in_range, ":rand", 0, 100),
         (ge, ":rand", 50), #50% chance for a mission

@@ -809,3 +809,6 @@ script_troop_detail_change_screen = 807
 script_add_troop_to_cur_tableau_for_troop_detail_dummy = 808
 script_game_troop_upgrades_button_clicked = 809
 script_store_item_price = 810
+script_list_random = 811
+script_list_add = 812
+script_list_clear = 813

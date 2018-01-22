@@ -196,7 +196,7 @@ game_menus = [
       #         (change_screen_return),
       #      ]),
       #HYW
-      ("cheat_quick_start", [],
+      ("cheat_quick_start", [(eq, debug_mode, 1)],
         "Cheat Quick Start", [(jump_to_menu, "mnu_start_pirates_victoire")]),
       
       ("tutorial_cheat",[(eq,1,0)],"{!}CHEAT!",
@@ -3820,7 +3820,7 @@ game_menus = [
         ]
       ),
       
-      ("camp_test_kham",[],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
+      ("camp_test_kham",[(eq, debug_mode, 1)],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
       
       ("hyw_mod_option",[],"1429: HYW Mod Options.", [(start_presentation, "prsnt_hyw_mod_option")]),
       
