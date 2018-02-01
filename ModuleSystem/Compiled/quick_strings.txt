@@ -1,4 +1,4 @@
-1106
+1110
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1105,3 +1105,7 @@ qstr_{s9}_wants_you_to_hu {s9}_wants_you_to_hunt_down_deserters_and_end_them.
 qstr_{s6}_faction_with_{s {s6}_faction_with_{s5}_culture
 qstr_Item_ID:_{reg1} Item_ID:_{reg1}
 qstr_Freelancer_Missions: Freelancer_Missions:_
+qstr_{s9}_wants_you_to_pa {s9}_wants_you_to_pacify_his_unhappy_troops.
+qstr_Oh_Hello_Captain_s Oh,_Hello_Captain,_sorry,_didn't_see_you_there._I_hope_all_is_well...
+qstr_Hey_Sarge_I_bet_you Hey_Sarge,_I_bet_you_know_all_about_blood_and_guts,_eh?
+qstr_Oi_{playername}__d Oi,_{playername},__don't_be_sneaking_about._What_do_you_want?

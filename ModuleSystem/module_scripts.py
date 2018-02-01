@@ -61951,7 +61951,7 @@ scripts = [
   
   ("get_freelancer_mission", [
       (assign, "$cheat_imposed_quest", 0),
-      (store_random_in_range, ":chance", 0, 120),
+      (store_random_in_range, ":chance", 0, 135),
       (try_begin),
         (le, ":chance", 20),
         (assign, ":continue", 0),
@@ -61992,7 +61992,13 @@ scripts = [
         (le, ":chance", 100),
         (assign, "$cheat_imposed_quest", "qst_freelancer_mission_1"), #Hunt down deserters
         (start_map_conversation, "$enlisted_lord"),
-        
+
+      (else_try),
+        (le, ":chance", 115),
+        (party_get_morale, ":morale", "$enlisted_party"),
+        (le, ":morale", 30),
+        (assign, "$cheat_imposed_quest", "qst_freelancer_mission_2"), #Pacify Lord's Unhappy Troops
+        (start_map_conversation, "$enlisted_lord"),
         
       (else_try),
         (jump_to_menu, "mnu_freelancer_looters"), #Looters

@@ -25597,6 +25597,31 @@ game_menus = [
   ]),
   
   ## Freelancer Bandits END
+  ## Freelancer Pacify Troops Start
+
+  ("freelancer_pacify_troops", 0,
+    "You approach your fellow troops...",
+    "none",
+    [],
+    [
+      ("pacify_talk", [], "Talk to them...",
+        [ (assign, "$talk_context", tc_garden), #Piggyback on this tc...
+          (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+          (try_begin),
+            (eq, ":commander_faction", "fac_kingdom_1"),
+            (assign, ":troop", "trp_unhappy_french_troop"),
+          (else_try),
+            (eq, ":commander_faction", "fac_kingdom_2"),
+            (assign, ":troop", "trp_unhappy_english_troop"),
+          (else_try),
+            (eq, ":commander_faction", "fac_kingdom_3"),
+            (assign, ":troop", "trp_unhappy_burgandy_troop"),
+          (else_try),
+            (assign, ":troop", "trp_unhappy_breton_troop"),
+          (try_end),
+          (start_map_conversation, ":troop")]),
+    ]
+  ),
   
   
 ]

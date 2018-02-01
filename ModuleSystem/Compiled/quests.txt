@@ -182,7 +182,7 @@ qst_freelancer_enlisted Enlisted_in_the_Party_of_{s13} 0 {!}You_are_currently_en
 qst_freelancer_vacation Enlisted:_On_Leave 0 {!}You_have_been_granted_leave_from_the_party_of_{s13}_of_{s14}. 
 qst_freelancer_captured Enlisted:_Captured 0 {!}Your_commander's_party_has_been_defeated_and_you_have_been_captured._Return_to_the_service_of_{s13}_of_{s14}. 
 qst_freelancer_mission_1 Freelancer_Mission:_Hunt_Down_Deserters 0 {!}Placeholder 
-qst_freelancer_mission_2 Freelancer_Mission:_ 0 {!}Placeholder 
+qst_freelancer_mission_2 Freelancer_Mission:_Pacify_Unhappy_Troops 0 {!}Placeholder 
 qst_freelancer_mission_3 Freelancer_Mission:_ 0 {!}Placeholder 
 qst_freelancer_mission_4 Freelancer_Mission:_ 0 {!}Placeholder 
 qst_freelancer_mission_5 Freelancer_Mission:_ 0 {!}Placeholder 

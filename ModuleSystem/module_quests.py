@@ -804,7 +804,7 @@ quests = [
 ("freelancer_mission_1", "Freelancer Mission: Hunt Down Deserters", 0,
   "{!}Placeholder"),
 
-("freelancer_mission_2", "Freelancer Mission: ", 0,
+("freelancer_mission_2", "Freelancer Mission: Pacify Unhappy Troops", 0,
   "{!}Placeholder"),
 ("freelancer_mission_3", "Freelancer Mission: ", 0,
   "{!}Placeholder"),

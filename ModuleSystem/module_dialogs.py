@@ -392,6 +392,70 @@ dialogs = [
   
   [anyone,"event_triggered", [(eq, "$g_talk_troop", "$enlisted_lord"), (ge, "$cheat_imposed_quest", 0)], "{playername}, I have a task for you.", "freelancer_mission_start",[]],
   
+  #Dialogue for Pacify Unhappy Troops
+
+  [anyone, "freelancer_mission_start", [(eq, "$cheat_imposed_quest", "qst_freelancer_mission_2")],
+    "{playername}, as you are probably well aware, some of are troops are unhappy. Whether it is the losses we have suffered, or perhaps a lack of beer or ale, there are rumblings among the men." +
+    "This cannot stand. I want you to go and placate them. Do what you must, as long as we can continue on without this air of dissatisfaction.", "freelancer_lord_mission_told_pacify",
+    []],
+
+  [anyone|plyr, "freelancer_lord_mission_told_pacify", [],
+    "I will do what I can to pacify the men.", "freelancer_lord_mission_pacify_accepted",
+    []],
+  
+  [anyone|plyr, "freelancer_lord_mission_told_pacify", [],
+    "I cannot accept this mission.", "freelancer_lord_mission_pacify_declined",
+    []],
+
+  [anyone, "freelancer_lord_mission_told_pacify_accepted", [],
+    "Very good. I look forward to hearing back from you.", "close_window",[
+    #Init the quest
+      (str_store_troop_name_link, s9, "$enlisted_lord"),
+      (setup_quest_text, "qst_freelancer_mission_2"),
+      (str_store_string, s2, "@{s9} wants you to pacify his unhappy troops."),
+      (call_script, "script_start_quest", "qst_freelancer_mission_2", "$enlisted_lord"),
+    #Gold and XP reward based on level.
+      (store_character_level, ":level", "trp_player"),
+      (assign, ":xp", 150),
+      (assign, ":gold", 100),
+      (try_begin),
+        (le, ":level", 5),
+        (assign, ":xp", 100),
+        (assign, ":gold", 50),
+      (else_try),
+        (ge, ":level", 12),
+        (assign, ":xp", 200),
+        (assign, ":gold", 150),
+      (try_end),
+      (quest_set_slot, "qst_freelancer_mission_1", slot_quest_xp_reward, ":xp"),
+      (quest_set_slot, "qst_freelancer_mission_1", slot_quest_importance, 8),
+      (quest_set_slot, "qst_freelancer_mission_1", slot_quest_gold_reward, ":gold"),
+      (jump_to_menu, "mnu_freelancer_pacify_troops")]],
+
+  [anyone, "freelancer_lord_mission_told_pacify_declined", [],
+    "That is unfortunate, {playername}. Perhaps you are one of the unhappy ones too... Go back to your post.", "close_window",
+    []],
+
+  #Unhappy Troops Dialogue Start
+
+  [anyone, "start", [
+    (check_quest_active, "qst_freelancer_mission_2"),
+    (eq, "$talk_context", tc_garden),
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain),
+    (try_begin),
+      (eq, ":is_sarge", 2),
+      (str_store_string, s5, "@Oh, Hello Captain, sorry, didn't see you there. I hope all is well..."),
+    (else_try),
+      (eq, ":is_sarge", 1),
+      (str_store_string, s5, "@Hey Sarge, I bet you know all about blood and guts, eh?"),
+    (else_try),
+      (str_store_string, s5, "@Oi, {playername},  don't be sneaking about. What do you want?"),
+    (try_end)],
+    "...blood and guts everywhere, then the rats eat the blood and guts! At least they are feasting, eh! Unlike us, covered with blood, guts, and shit!" + 
+    "{s5}", "freelancer_pacify_start",
+    []],
+
   #Dialogue for Hunt Down Deserters
   
   [anyone, "freelancer_mission_start", [(eq, "$cheat_imposed_quest", "qst_freelancer_mission_1")],
