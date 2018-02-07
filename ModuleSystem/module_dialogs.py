@@ -387,7 +387,34 @@ dialogs = [
       (change_screen_map),
     ],
   ],
+
+# Event Triggers for Pacify Unhappy Troops
+  [anyone,"event_triggered", [(check_quest_active, "qst_freelancer_mission_2"), (quest_slot_eq, "qst_freelancer_mission_2", slot_quest_current_state, 1),], 
+    "Ha! Good fight, good fight! Exactly what the men were looking for. We should do this more, eh?", "freelancer_pacify_duel_win",[]],
+
+  [anyone,"event_triggered", [(check_quest_active, "qst_freelancer_mission_2"), (quest_slot_eq, "qst_freelancer_mission_2", slot_quest_current_state, 2),], 
+    "Alright, we've entertained the men, now for the good stuff. Pay up!", "freelancer_pacify_duel_lose",[]],
   
+  [anyone, "event_triggered", [
+    (check_quest_active, "qst_freelancer_mission_2"),
+    (eq, "$talk_context", tc_garden), #piggybacking on this tc...
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain),
+    (try_begin),
+      (eq, ":is_sarge", 2),
+      (str_store_string, s5, "@Oh, Hello Captain, sorry, didn't see you there. I hope all is well..."),
+    (else_try),
+      (eq, ":is_sarge", 1),
+      (str_store_string, s5, "@Hey Sarge, I bet you know all about blood and guts, eh?"),
+    (else_try),
+      (str_store_string, s5, "@Oi, {playername},  don't be sneaking about. What do you want?"),
+    (try_end)],
+    "...blood and guts everywhere, then the rats eat the blood and guts! At least they are feasting, eh! Unlike us, covered with blood, guts, and shit!" + 
+    "{s5}", "freelancer_pacify_start",
+    []],
+
+  # END Event Triggers for Pacify Unhappy Troops
+
   #Dialogue for Freelancer Outbound Missions START - Kham
   
   [anyone,"event_triggered", [(eq, "$g_talk_troop", "$enlisted_lord"), (ge, "$cheat_imposed_quest", 0)], "{playername}, I have a task for you.", "freelancer_mission_start",[]],
@@ -407,13 +434,10 @@ dialogs = [
     "I cannot accept this mission.", "freelancer_lord_mission_pacify_declined",
     []],
 
-  [anyone, "freelancer_lord_mission_told_pacify_accepted", [],
+
+  [anyone, "freelancer_lord_mission_pacify_accepted", [],
     "Very good. I look forward to hearing back from you.", "close_window",[
-    #Init the quest
-      (str_store_troop_name_link, s9, "$enlisted_lord"),
-      (setup_quest_text, "qst_freelancer_mission_2"),
-      (str_store_string, s2, "@{s9} wants you to pacify his unhappy troops."),
-      (call_script, "script_start_quest", "qst_freelancer_mission_2", "$enlisted_lord"),
+
     #Gold and XP reward based on level.
       (store_character_level, ":level", "trp_player"),
       (assign, ":xp", 150),
@@ -427,34 +451,264 @@ dialogs = [
         (assign, ":xp", 200),
         (assign, ":gold", 150),
       (try_end),
-      (quest_set_slot, "qst_freelancer_mission_1", slot_quest_xp_reward, ":xp"),
-      (quest_set_slot, "qst_freelancer_mission_1", slot_quest_importance, 8),
-      (quest_set_slot, "qst_freelancer_mission_1", slot_quest_gold_reward, ":gold"),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_xp_reward, ":xp"),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_importance, 8),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_gold_reward, ":gold"),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_expiration_days, 30),
+    #Init the quest
+      (str_store_troop_name_link, s9, "$enlisted_lord"),
+      (setup_quest_text, "qst_freelancer_mission_2"),
+      (str_store_string, s2, "@{s9} wants you to pacify his unhappy troops."),
+      (call_script, "script_start_quest", "qst_freelancer_mission_2", "$enlisted_lord"),
       (jump_to_menu, "mnu_freelancer_pacify_troops")]],
 
-  [anyone, "freelancer_lord_mission_told_pacify_declined", [],
+  [anyone, "freelancer_lord_mission_pacify_declined", [],
     "That is unfortunate, {playername}. Perhaps you are one of the unhappy ones too... Go back to your post.", "close_window",
     []],
 
   #Unhappy Troops Dialogue Start
 
-  [anyone, "start", [
-    (check_quest_active, "qst_freelancer_mission_2"),
-    (eq, "$talk_context", tc_garden),
+  
+
+  [anyone|plyr, "freelancer_pacify_start", [
     (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
     (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain),
     (try_begin),
       (eq, ":is_sarge", 2),
-      (str_store_string, s5, "@Oh, Hello Captain, sorry, didn't see you there. I hope all is well..."),
+      (str_store_string, s5, "@At ease, soldier. I've been hearing that there is some discord among the men. What can you tell me about it?"),
     (else_try),
       (eq, ":is_sarge", 1),
-      (str_store_string, s5, "@Hey Sarge, I bet you know all about blood and guts, eh?"),
+      (str_store_string, s5, "@I do, yes. But I bet you know more about shit, eh? So what is it that I am hearing, that there are rumblings about the men, eh?"),
     (else_try),
-      (str_store_string, s5, "@Oi, {playername},  don't be sneaking about. What do you want?"),
+      (str_store_string, s5, "@I just want to know why the men have been disquiet these days. I know I don't feel any better myself, but wanted to hear how it is with the other men."),
     (try_end)],
-    "...blood and guts everywhere, then the rats eat the blood and guts! At least they are feasting, eh! Unlike us, covered with blood, guts, and shit!" + 
-    "{s5}", "freelancer_pacify_start",
+    "{s5}", "freelancer_pacify_explain", 
     []],
+
+  [anyone, "freelancer_pacify_explain", [
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain),
+    (try_begin),
+      (eq, ":is_sarge", 2),
+      (str_store_string, s5, "@Well, {sir/ma'am}. The men are not happy, that is true. There is just too much walking, too much fighting, but not enough feasting, not enough drinks, not enough fun! We are paid well, yes, but maybe we deserve a bit more. Respectfully, {sir/ma'am}."),
+    (else_try),
+      (eq, ":is_sarge", 1),
+      (str_store_string, s5, "@Sarge, you know that we don't complain unless things are bad, right? Well, things do feel bad. Too much walking, and fighting, but there is not enough fun to be had! When we do stop by town, we don't have enough to enjoy ourselves."),
+    (else_try),
+      (str_store_string, s5, "@You are in the frontlines with us, don't you feel a bit down with all this walking and fighting? But not enough drinking, feasting, and fun? When you go to town, what do you do? I bet you don't do shit, cause you ain't got enough to do shit! Like all of us..."),
+    (try_end)],
+    "{s5}", "freelancer_pacify_attempt", 
+    []],
+
+#Pacify - Choices
+  [anyone|plyr, "freelancer_pacify_attempt", [],
+    "Perhaps I can change your mind... (Persuasion + Leadership Check)", "freelancer_pacify_persuade", 
+    [(call_script, "script_freelancer_pacify_quest_persuade")]],
+
+  [anyone, "freelancer_pacify_persuade", [
+    (store_random_in_range, ":random", 0, 100),
+    (le, ":random", reg0), #Success
+
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain),
+    (try_begin),
+      (eq, ":is_sarge", 2),
+      (str_store_string, s5, "@Well, {sir/ma'am}. You have a very good point, {sir/ma'm}. We shouldn't be complaining at all... Thank you for setting us straight."),
+    (else_try),
+      (eq, ":is_sarge", 1),
+      (str_store_string, s5, "@Sarge, you really do know us better than we know ourselves. You are going to make the men cry! I'll make sure to tell the men what you said, and we'll straighten up, you'll see."),
+    (else_try),
+      (str_store_string, s5, "@You have a good point, {playername}. I don't know why you aren't being promoted yet. Anyways, I'll tell the men what you told me. Tell the commander that we'll march on."),
+    (try_end)],
+    "{s5}", "freelancer_pacify_persuade_success", 
+    []],
+
+  [anyone, "freelancer_pacify_persuade", [
+    (store_random_in_range, ":random", 0, 100),
+    (gt, ":random", reg0), #fail
+
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain),
+    (try_begin),
+      (eq, ":is_sarge", 2),
+      (str_store_string, s5, "@Captain, with all due respect, we do not agree with you. If anything, your attempt just made it worse."),
+    (else_try),
+      (eq, ":is_sarge", 1),
+      (str_store_string, s5, "@What is this Sarge? I thought you knew us better! The men will start to think you are full of shit. This is pointless, just leave us be."),
+    (else_try),
+      (str_store_string, s5, "@What are you babbling on about? You know nothing about what we are going through, go away and leave us be."),
+    (try_end)],
+    "{s5}", "freelancer_pacify_persuade_fail", 
+    []],
+
+  [anyone|plyr, "freelancer_pacify_persuade_success", [], 
+    "Good. I'll let the commander know.", "close_window", 
+    [(call_script, "script_succeed_quest", "qst_freelancer_mission_2"),
+     (party_get_morale, ":cur_morale", "$enlisted_party"),
+     (store_sub, ":to_add", 60, ":cur_morale"), #Target Morale is 60 when we successfully persuade
+     (call_script, "script_change_party_morale", "$enlisted_party", ":to_add"), 
+     (display_message, "@The men are hearthened by your speech. (Morale Improved)", color_good_news)]],
+
+  [anyone|plyr, "freelancer_pacify_persuade_fail", [], 
+    "I am sorry that I cannot convince you. I'll let the commander know.", "close_window", 
+    [(call_script, "script_fail_quest", "qst_freelancer_mission_2"),
+     (party_get_morale, ":cur_morale", "$enlisted_party"),
+     (call_script, "script_change_party_morale", "$enlisted_party", -10), #Failure leads to reduction of morale 
+     (display_message, "@The men are dishearthened by your failed attempt. (Morale Worsened)", color_bad_news)]],
+
+
+  [anyone|plyr, "freelancer_pacify_attempt", [], 
+    "So, the men wants to have fun? They want a bit of entertainment? (Duel)", "freelancer_pacify_fight", 
+    []],
+
+  [anyone|plyr, "freelancer_pacify_fight", [], 
+    "So, the men wants to have fun? They want a bit of entertainment? Well, we can give them a show right now. You and I have a friendly duel, and if I win, convince the men to stop their grumbling. If you win, well, I'll pay the men 15 crowns each. What do you say?", "freelancer_pacify_fight_ask", 
+    []],
+
+  [anyone, "freelancer_pacify_fight_ask", [], 
+    "Sounds good. With weapons or fists?", "freelancer_pacify_fight_ask_weapons", 
+    []],
+
+  [anyone|plyr, "freelancer_pacify_fight_ask_weapons", [], 
+    "Weapons.", "freelancer_pacify_fight_ask_weapons_choose_weapons", 
+    []],
+
+  [anyone|plyr, "freelancer_pacify_fight_ask_weapons", [], 
+    "Fists.", "freelancer_pacify_fight_ask_weapons_choose_fists", 
+    []],
+
+  [anyone, "freelancer_pacify_fight_ask_weapons_choose_weapons", [], 
+    "Let's begin then! En garde!", "close_window", 
+    [ (assign, "$talk_context", tc_back_alley), #piggyback
+      (jump_to_menu, "mnu_freelancer_pacify_duel")]],
+
+  [anyone, "freelancer_pacify_fight_ask_weapons_choose_fists", [], 
+    "Let's begin then! Put em up!", "close_window", 
+    [ (assign, "$talk_context", tc_garden), #piggyback
+      (jump_to_menu, "mnu_freelancer_pacify_duel")]],
+
+  
+  [anyone|plyr, "freelancer_pacify_duel_win", [], 
+    "Definitely. Now that the fun is over, the men seems to be in better spirits. I'll let the commander know. Good fight.", "close_window", 
+    [(call_script, "script_succeed_quest", "qst_freelancer_mission_2"),
+     (party_get_morale, ":cur_morale", "$enlisted_party"),
+     (store_sub, ":to_add", 50, ":cur_morale"), #Target Morale is 50 when we successfully win the duel
+     (call_script, "script_change_party_morale", "$enlisted_party", ":to_add"), 
+     (display_message, "@The men respects you more now, and was also entertained. (Morale Improved)", color_good_news)]],
+
+  [anyone|plyr, "freelancer_pacify_duel_lose", [
+     (party_get_num_companions, ":num_companions", "$enlisted_party"),
+     (val_sub, ":num_companions", 2), #No player nor lord
+     (store_mul, ":payoff", ":num_companions", 15),
+     (store_troop_gold, ":gold", "trp_player"),
+     (ge, ":gold", ":payoff")], 
+    "Good fight... I am a man of my word. Here, distribute it to the men.", "close_window", 
+    [(call_script, "script_succeed_quest", "qst_freelancer_mission_2"),
+     (party_get_morale, ":cur_morale", "$enlisted_party"),
+     (store_sub, ":to_add", 40, ":cur_morale"), #Target Morale is 40 when we lose the duel
+     (call_script, "script_change_party_morale", "$enlisted_party", ":to_add"), 
+     (display_message, "@The men thinks you are weak, but are happy to see you pay. (Morale Slightly Improved)", color_good_news),
+     (party_get_num_companions, ":num_companions"),
+     (val_sub, ":num_companions", 2), #no player nor lord
+     (store_mul, ":payoff", ":num_companions", 15),
+     (troop_remove_gold, "trp_player", ":payoff"),
+     (assign, reg1, ":payoff"),
+     (display_message, "@You paid {reg1} gold to the men.", color_bad_news),
+    ]],
+
+  [anyone|plyr, "freelancer_pacify_duel_lose", [
+     (party_get_num_companions, ":num_companions", "$enlisted_party"),
+     (val_sub, ":num_companions", 2), #No player nor lord
+     (store_mul, ":payoff", ":num_companions", 15),
+     (store_troop_gold, ":gold", "trp_player"),
+     (lt, ":gold", ":payoff")], 
+    "Good fight... I am a man of my word. But I do not have enough... here, take all that I have", "close_window", 
+    [(call_script, "script_succeed_quest", "qst_freelancer_mission_2"),
+     (party_get_morale, ":cur_morale", "$enlisted_party"),
+     (store_sub, ":to_add", 37, ":cur_morale"), #Target Morale is 37 when we lose the duel AND can't pay
+     (call_script, "script_change_party_morale", "$enlisted_party", ":to_add"), 
+     (display_message, "@The men thinks you are weak, and disappointed that you cannot pay the full sum. (Morale Slightly Improved)", color_good_news),
+     (store_troop_gold, ":gold"),
+     (troop_remove_gold, "trp_player", ":gold"),
+     (assign, reg1, ":gold"),
+     (display_message, "@You paid {reg1} gold to the men.", color_bad_news),
+    ]],
+
+  [anyone|plyr, "freelancer_pacify_attempt", [(this_or_next|player_has_item, "itm_bier"), (player_has_item, "itm_ale")], 
+    "Well, it so happens that I have some booze that we can all share. What do you say?", "freelancer_pacify_booze", 
+    []],
+
+  [anyone, "freelancer_pacify_booze", [], 
+    "Now you are talking! Let the merry-making begin!", "close_window", 
+    [(call_script, "script_succeed_quest", "qst_freelancer_mission_2"),
+     (party_get_morale, ":cur_morale", "$enlisted_party"),
+     (store_sub, ":to_add", 70, ":cur_morale"), #Target Morale is 70 when give them beer
+     (call_script, "script_change_party_morale", "$enlisted_party", ":to_add"), 
+     (display_message, "@You distribute the alcohol to the men and join the festivities. (Morale Greatly Improved)", color_good_news),
+     (try_begin),
+      (player_has_item, "itm_bier"),
+      (troop_remove_item, "trp_player", "itm_bier"),
+    (else_try),
+      (player_has_item, "itm_ale"),
+      (troop_remove_item, "trp_player", "itm_ale"),
+    (try_end),
+    (rest_for_hours, 5, 2, 1)]],
+
+  [anyone|plyr, "freelancer_pacify_attempt", [], 
+    "If crowns are what the men want, crowns are what I can offer. How much do you think the men want?", "freelancer_pacify_bribe", 
+    []],
+
+  [anyone, "freelancer_pacify_bribe", [
+    (store_item_value, reg4, "itm_bier"),
+    (party_get_num_companions, reg5, "$enlisted_party"),
+    (val_sub, reg5, 2), #Do not count player & lord
+    (store_mul, reg6, reg5, reg4), #Multiply Value of Beer with number of companions
+    (val_div, reg6, 8),
+    (val_min, reg6, 2000),
+    (val_max, reg6, 1000),], 
+    "Now we are talking, eh? Beer is expensive, at {reg4} for a few cases, and there are quite a lot of us men that would like to drink and enjoy ourselves. So we think {reg6} crowns should cover it and whatever extras we want.", "freelancer_pacify_bribe_ask", 
+    []],
+
+  [anyone|plyr, "freelancer_pacify_bribe_ask", [
+    (store_troop_gold, ":gold", "trp_player"),
+    (ge, ":gold", reg6),], 
+    "I see... I have that amount. Here are your {reg6} crowns. Spend it wisely, and no more grumblings.", "freelancer_pacify_bribe_pay", 
+    []],
+
+  [anyone|plyr, "freelancer_pacify_bribe_ask", [
+    (store_troop_gold, ":gold", "trp_player"),
+    (lt, ":gold", reg6),], 
+    "I see... I do not have enough money.", "freelancer_pacify_bribe_not_enough", 
+    []],
+
+  [anyone|plyr, "freelancer_pacify_bribe_ask", [
+    (store_troop_gold, ":gold", "trp_player"),
+    (store_skill_level, ":trade", skl_trade),
+    (ge, ":trade", 1),
+    (val_mul, ":trade", 100), 
+    (val_sub, reg6, ":trade"),
+    (ge, ":gold", reg6),
+    ], 
+    "I see... I do know a place where we can get your beer for cheaper. Here, for {reg6} crowns, you will get everything you need.", "freelancer_pacify_bribe_pay", 
+    []],
+
+  [anyone, "freelancer_pacify_bribe_pay", [], 
+    "Great! Let us go buy it now and distribute it to the men. Once they are all drunk, there will be no more complaining. ", "close_window", 
+    [
+     (call_script, "script_succeed_quest", "qst_freelancer_mission_2"),
+     (party_get_morale, ":cur_morale", "$enlisted_party"),
+     (store_sub, ":to_add", 65, ":cur_morale"), #Target Morale is 65 when give them cash
+     (call_script, "script_change_party_morale", "$enlisted_party", ":to_add"), 
+     (display_message, "@You give the men {reg6} crowns and leave them to their festivities. (Morale Improved)", color_good_news),
+     (troop_remove_gold, "trp_player", reg6),]],
+
+  [anyone, "lord_start", [(check_quest_active, "qst_freelancer_mission_2"), (check_quest_succeeded, "qst_freelancer_mission_2")],
+    "{playername}, It seems our men are of better spirits. I do not need to know what you did, just know that I am thankful.", "freelancer_pacify_success",
+    []],
+  
+  [anyone|plyr, "freelancer_pacify_success", [],
+    "The men just needed something to occupy their time. I will go back to my post.", "close_window",
+    [(call_script, "script_finish_quest", "qst_freelancer_mission_2", 100)]],
 
   #Dialogue for Hunt Down Deserters
   

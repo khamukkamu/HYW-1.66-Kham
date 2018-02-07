@@ -1,5 +1,5 @@
 scenesfile version 1
- 833
+ 834
 scn_random_scene random_scene 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x300028000003e8fa0000034e00004b34000059be 
   0 
   0 
@@ -3332,3 +3332,7 @@ scn_enterprise_oil_press enterprise_oil_press 1 oil_press_interior bo_oil_press_
   0 
   0 
  0 
+scn_duel_scene duel_scene 256 none none -40.000000 -40.000000 40.000000 40.000000 -100.000000 0x00000006300005000002308c00003005000018b300001d92 
+  0 
+  0 
+ outer_terrain_plain 

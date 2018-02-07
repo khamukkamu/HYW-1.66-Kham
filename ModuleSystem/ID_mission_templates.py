@@ -154,4 +154,6 @@ mt_penthievre_chat_cour = 153
 mt_multiplayer_duel = 154
 mt_freelancer_training = 155
 mt_freelancer_charge = 156
-mt_scene_chooser = 157
+mt_arena_challenge_fight_weapons = 157
+mt_arena_challenge_fight_fists = 158
+mt_scene_chooser = 159

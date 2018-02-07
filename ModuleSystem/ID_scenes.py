@@ -830,4 +830,5 @@ scn_enterprise_linen_weavery = 829
 scn_enterprise_wool_weavery = 830
 scn_enterprise_brewery = 831
 scn_enterprise_oil_press = 832
+scn_duel_scene = 833
 scn_exit = 100000

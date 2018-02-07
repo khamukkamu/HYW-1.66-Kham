@@ -5438,6 +5438,14 @@ game_menus = [
     "Kham Test","none",[],
     [
       ("choose_scene",[],"** Scene Chooser **", [(jump_to_menu, "mnu_choose_scenes_0"),]),
+       ("test_low_morale_quest",[],"Test Low Morale Freelancer Quest", [(assign, "$player_cur_troop", "trp_swadian_sergent"),
+          (assign, "$enlisted_lord", "trp_knight_1_5"),
+          (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+          (faction_set_slot,  ":commander_faction", slot_faction_freelancer_troop, "$player_cur_troop"),
+          (faction_set_slot, ":commander_faction", slot_faction_freelancer_captain, 0),
+          (display_message, "@Enlisted Lord Set to Jeanne, Player now French Sergeant", color_good_news),
+          (assign, "$cheat_imposed_quest", "qst_freelancer_mission_2"), #Pacify Lord's Unhappy Troops
+          (start_map_conversation, "$enlisted_lord"),]),
       ("test_freelancer_looters",[],"Become High Level Freelancer Troop", [(assign, "$player_cur_troop", "trp_swadian_sergent"),
           (assign, "$enlisted_lord", "trp_knight_1_5"),
           (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
@@ -25619,11 +25627,81 @@ game_menus = [
           (else_try),
             (assign, ":troop", "trp_unhappy_breton_troop"),
           (try_end),
-          (start_map_conversation, ":troop")]),
+          (start_map_conversation, ":troop"),
+          (change_screen_map)]),
     ]
   ),
   
-  
+ ("freelancer_pacify_duel", 0,
+    "You begin your duel with the soldier. Some of the men have gathered to watch...",
+    "none",
+    [],
+    [
+      ("pacify_duel_weapons", [(eq, "$talk_context", tc_back_alley)], "You pick up a training weapon...",
+      [
+      (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+      (try_begin),
+        (eq, ":commander_faction", "fac_kingdom_1"),
+        (assign, ":troop", "trp_unhappy_french_troop"),
+      (else_try),
+        (eq, ":commander_faction", "fac_kingdom_2"),
+        (assign, ":troop", "trp_unhappy_english_troop"),
+      (else_try),
+        (eq, ":commander_faction", "fac_kingdom_3"),
+        (assign, ":troop", "trp_unhappy_burgandy_troop"),
+      (else_try),
+        (assign, ":troop", "trp_unhappy_breton_troop"),
+      (try_end),
+      (modify_visitors_at_site, "scn_duel_scene"),
+      (reset_visitors),
+      (set_jump_entry, 0), 
+      (set_visitor, 0, "trp_player"),
+      (set_visitor, 1, ":troop"),
+      (call_script, "script_party_copy", "p_encountered_party_backup", "$enlisted_party"),
+      (party_remove_members, "p_encountered_party_backup", "trp_player", 1),
+      (try_for_range, ":entry", 2, 29), # populate spectators
+        (call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"), #returns reg0
+        (store_random_in_range, reg1,1, 100000), #rnd dna
+        (set_visitor,":entry",reg0, reg1),
+      (try_end),
+      (set_jump_mission, "mt_arena_challenge_fight_weapons"),
+      (jump_to_scene, "scn_duel_scene"),
+      (change_screen_mission),
+    ]),
+
+    ("pacify_duel_fists", [(eq, "$talk_context", tc_garden)], "You ready your fists...",
+      [
+      (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+      (try_begin),
+        (eq, ":commander_faction", "fac_kingdom_1"),
+        (assign, ":troop", "trp_unhappy_french_troop"),
+      (else_try),
+        (eq, ":commander_faction", "fac_kingdom_2"),
+        (assign, ":troop", "trp_unhappy_english_troop"),
+      (else_try),
+        (eq, ":commander_faction", "fac_kingdom_3"),
+        (assign, ":troop", "trp_unhappy_burgandy_troop"),
+      (else_try),
+        (assign, ":troop", "trp_unhappy_breton_troop"),
+      (try_end),
+      (modify_visitors_at_site, "scn_duel_scene"),
+      (reset_visitors),
+      (set_jump_entry, 0), 
+      (set_visitor, 0, "trp_player"),
+      (set_visitor, 1, ":troop"),
+      (call_script, "script_party_copy", "p_encountered_party_backup", "$enlisted_party"),
+      (party_remove_members, "p_encountered_party_backup", "trp_player", 1),
+      (try_for_range, ":entry", 2, 29), # populate spectators
+        (call_script, "script_cf_party_remove_random_regular_troop", "p_encountered_party_backup"), #returns reg0
+        (store_random_in_range, reg1,1, 100000), #rnd dna
+        (set_visitor,":entry",reg0, reg1),
+      (try_end),
+      (set_jump_mission, "mt_arena_challenge_fight_fists"),
+      (jump_to_scene, "scn_duel_scene"),
+      (change_screen_mission),
+    ]),
+    ]
+  ),
 ]
 
 ## quick scene chooser

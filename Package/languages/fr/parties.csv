@@ -1,0 +1,231 @@
+p_zendar|Zendar
+p_town_1|Paris
+p_town_2|Reims
+p_town_3|Nantes
+p_town_4|Bourges
+p_town_5|Metz
+p_town_6|Dijon
+p_town_7|Montpellier
+p_town_8|Marseille
+p_town_9|Caen
+p_town_10|Limoges
+p_town_11|Calais
+p_town_12|Rouen
+p_town_13|Toulouse
+p_town_14|Bordeaux
+p_town_15|Orleans
+p_town_16|Tours
+p_town_17|Poitiers
+p_town_18|Avignon
+p_town_19|Cherbourg
+p_town_20|Lyon
+p_town_21|Auxerre
+p_town_22|Rennes
+p_castle_1|Château de Cherbourg
+p_castle_2|Château d'Amiens
+p_castle_3|Château de Chartres
+p_castle_4|Fort de Tremazan
+p_castle_5|Fort de Tonnerre
+p_castle_6|Donjon de La_Rochelle
+p_castle_7|Château d'Angouleme
+p_castle_8|Moulins le Château
+p_castle_9|Fort de Busseol
+p_castle_10|Fort de Fallavier
+p_castle_11|Forteresse du Mans
+p_castle_12|Forteresse de Bayonne
+p_castle_13|Château d'Auch
+p_castle_14|Fort de Tarbes
+p_castle_15|Château d'Albe
+p_castle_16|Forteresse de Carcassonne
+p_castle_17|Donjon de Grenoble
+p_castle_18|Donjon de St.Malo
+p_castle_19|Château d'Antwerp
+p_castle_20|Peronne le Château
+p_castle_21|Forteresse de de Lassay
+p_castle_22|forteresse de Chateauroux
+p_castle_23|Forteresse de Chateaubriant
+p_castle_24|Château de Chantilly
+p_castle_25|Forteresse des Plas
+p_castle_26|Château de Castelnau
+p_castle_27|Forteresse de Sagonne
+p_castle_28|Forteresse de Monterean
+p_castle_29|Château de d'Arques
+p_castle_30|Onet le Chateau
+p_castle_31|Château de Polignac
+p_castle_32|Forteresse de Rauzan
+p_castle_33|Château de Careil
+p_castle_34|Fort de Lafauche
+p_castle_35|Château de Montmort
+p_castle_36|Donjon d'Albret
+p_castle_37|Fort de Landon
+p_castle_38|Château de Gand
+p_castle_39|Château de Moncontour
+p_castle_40|Château d'Agincourt
+p_castle_41|Mont saint Michel
+p_castle_42|Pont de Chatellerault
+p_castle_43|Pont de Tours
+p_castle_44|Pont de Bordeau
+p_castle_45|Pont Fortifié
+p_castle_46|Pont de Blanzy
+p_castle_47|Pont des Tourelles
+p_castle_48|Forteresse de Chinon
+p_village_1|Bruges
+p_village_2|Boulogne
+p_village_3|Lille
+p_village_4|Abbeville
+p_village_5|Nemours
+p_village_6|La Fleche
+p_village_7|Laon
+p_village_8|Soissons
+p_village_9|Senlis
+p_village_10|Beaumont
+p_village_11|Chalons
+p_village_12|Bar
+p_village_13|Joinville
+p_village_14|Melun
+p_village_15|Sens
+p_village_16|Dieppe
+p_village_17|Harcourt
+p_village_18|Bayeux
+p_village_19|Lisieux
+p_village_20|Harfleur
+p_village_21|Honflew
+p_village_22|Quimper
+p_village_23|Laval
+p_village_24|Graon
+p_village_25|Blois
+p_village_26|Levet
+p_village_27|Vierzon
+p_village_28|Retiers
+p_village_29|Nevers
+p_village_30|Guérande
+p_village_31|Chateaubourg
+p_village_32|La Tremouille
+p_village_33|Gueret
+p_village_34|Rochefort
+p_village_35|Saintes
+p_village_36|Soyaux
+p_village_37|Turenne
+p_village_38|Perigueux
+p_village_39|Aurillac
+p_village_40|Moulins
+p_village_41|Langres
+p_village_42|Beaune
+p_village_43|Chalon
+p_village_44|Macon
+p_village_45|Vienne
+p_village_46|Clermont
+p_village_47|Valence
+p_village_48|Briancon
+p_village_49|Fecamp
+p_village_50|Verneuilo
+p_village_51|Castillon
+p_village_52|Cahors
+p_village_53|Agen
+p_village_54|Montauban
+p_village_55|Foix
+p_village_56|Narbonne
+p_village_57|Lunel
+p_village_58|Nimes
+p_village_59|Arles
+p_village_60|Toulon
+p_village_61|Dax
+p_village_62|Alencon
+p_village_63|Albret
+p_village_64|Bretigny
+p_village_65|Thouars
+p_village_66|Peronne
+p_village_67|Agincourt
+p_village_68|Ghent
+p_village_69|Vannes
+p_village_70|Guines
+p_village_71|Le martel
+p_village_72|Elaye
+p_village_73|Maupertuis
+p_village_74|Hesdin
+p_village_75|Le creusot
+p_village_76|Arras
+p_village_77|Monterean
+p_village_78|Montargis
+p_village_79|Evreux
+p_village_80|Rennes le Château
+p_village_81|La Teste de Buch
+p_village_82|Beauvoir
+p_village_83|Le Puy
+p_village_84|Rodez
+p_village_85|Boves
+p_village_86|Gien
+p_village_87|Formigny
+p_village_88|Neufchateau
+p_village_89|Cosne
+p_village_90|Vaucouleurs
+p_village_91|Brest
+p_village_92|St Brieut
+p_village_93|Tonnerre
+p_village_94|Lunery
+p_salt_mine|Mine de sel
+p_four_ways_inn|Auberge des Quatre Chemins
+p_test_scene|scène de test
+p_battlefields|champs de bataille
+p_dhorak_keep|Donjon de Dhorak
+p_training_ground|Terrain d'entraînement
+p_training_ground_1|Terrain d'entraînement
+p_training_ground_2|Terrain d'entraînement
+p_training_ground_3|Terrain d'entraînement
+p_training_ground_4|Terrain d'entraînement
+p_training_ground_5|Terrain d'entraînement
+p_Bridge_1|1
+p_Bridge_2|2
+p_Bridge_3|3
+p_Bridge_4|4
+p_Bridge_5|5
+p_Bridge_6|6
+p_Bridge_7|7
+p_Bridge_8|8
+p_Bridge_9|9
+p_Bridge_10|10
+p_Bridge_11|11
+p_Bridge_12|12
+p_Bridge_13|13
+p_Bridge_14|14
+p_Bridge_15|15
+p_camp_anglais|Camp Anglois
+p_toul_village|Village de Toul
+p_camp_ofrebels|Camp des Rebels
+p_place_forte_b|Place forte Bourgignone
+p_tour_despins|Tour des pins
+p_fermemat|Ferme de Mathieu
+p_chasse_camp|Camp de chasse
+p_fierbois|Sainte Catherine de Fierbois
+p_rouen_foret|Foret de Rouen
+p_quest_forest1|Foret de Levet
+p_quest_forest2|Foret d'Aurillac
+p_quest_forest3|Foret de Narbonne
+p_quest_forest4|Foret de Rodez
+p_quest_forest5|Foret de Arles
+p_quest_forest6|Foret du Puy
+p_quest_forest7|Foret de Vierzon
+p_quest_forest8|Foret de Beaune
+p_quest_forest9|Foret de Montargis
+p_quest_forest10|Foret d'Evreux
+p_quest_forest11|Foret de Guines
+p_quest_forest12|Foret de Bayeux
+p_auberge_1|Auberge
+p_auberge_2|Auberge
+p_auberge_3|Auberge
+p_auberge_4|Auberge
+p_prairie_bourges|Prairies de Bourges
+p_foret_lorges|Foret de Lorges
+p_camp_crane_fer|Camp de la Compagnie des Cranes de Fer
+p_quintin|Citadelle de Quintin
+p_looter_spawn_point|looter sp
+p_steppe_bandit_spawn_point|vallées
+p_taiga_bandit_spawn_point|toundra
+p_forest_bandit_spawn_point|forêts
+p_mountain_bandit_spawn_point|hautes-plaines
+p_sea_raider_spawn_point_1|côte
+p_sea_raider_spawn_point_2|côte
+p_black_khergit_spawn_point_1|black khergit sp
+p_black_khergit_spawn_point_2|black khergit sp2
+p_sang_lys_spawn_point_1|sang lys spawn point 1
+p_cranede_fer_spawn_point_1|cranede fer spawn point 1

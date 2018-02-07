@@ -4,7 +4,7 @@ itemsfile version 3
  0
 0
 
- itm_tutorial_spear Spear Spear 1  spear 0  138674180 4222124851986688 0 8202 4.500000 100 0 0 0 0 0 80 0 158 0 275 0
+ itm_tutorial_spear Spear Spear 1  spear 0  138674180 31243722616212736 0 8202 4.500000 100 0 0 0 0 0 80 0 158 0 275 0
  0
 0
 
@@ -572,7 +572,7 @@ itemsfile version 3
  0
 0
 
- itm_tutorial_spear Spear Spear 1  spear 0  138674180 4222124851986688 0 8202 4.500000 100 0 0 0 0 0 80 0 158 0 275 0
+ itm_tutorial_spear Spear Spear 1  spear 0  138674180 31243722616212736 0 8202 4.500000 100 0 0 0 0 0 80 0 158 0 275 0
  0
 0
 
@@ -1528,11 +1528,11 @@ itemsfile version 3
  0
 0
 
- itm_greathelm1 Great_Helm Great_Helm 1  greathelm1 0  2147549196 0 1020 704643238 2.750000 100 50 0 0 10 0 0 0 0 0 0 0
+ itm_greathelm1_orig Great_Helm Great_Helm 1  greathelm1 0  2147549196 0 1020 704643238 2.750000 100 50 0 0 10 0 0 0 0 0 0 0
  0
 0
 
- itm_greathelmwhat Great_Helm Great_Helm 1  greathelmwhat 0  2147549196 0 1020 704643238 2.750000 100 50 0 0 10 0 0 0 0 0 0 0
+ itm_greathelmwhat_orig Great_Helm Great_Helm 1  greathelmwhat 0  2147549196 0 1020 704643238 2.750000 100 50 0 0 10 0 0 0 0 0 0 0
  0
 0
 
@@ -1985,7 +1985,7 @@ itemsfile version 3
  0
 0
 
- itm_kettle_hat Kettle_Hat Kettle_Hat 1  kettle_hat_new 0  65548 0 240 704643238 1.750000 100 35 0 0 7 0 0 0 0 0 0 0
+ itm_kettle_hat_orig Kettle_Hat Kettle_Hat 1  kettle_hat_new 0  65548 0 240 704643238 1.750000 100 35 0 0 7 0 0 0 0 0 0 0
  0
 0
 
@@ -2441,7 +2441,7 @@ itemsfile version 3
  0
 0
 
- itm_jousting_lance Jousting_Lance Jousting_Lance 1  joust_of_peace 0  1212153860 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 61 0 218 0 288 0
+ itm_jousting_lance_orig Jousting_Lance Jousting_Lance 1  joust_of_peace 0  1212153860 9250393634820325632 83 8202 5.000000 100 0 0 0 0 0 61 0 218 0 288 0
  0
 0
 
@@ -2537,11 +2537,11 @@ itemsfile version 3
  0
 0
 
- itm_glaive Glaive Glaive 1  glaive 0  1348534276 4222131026005760 352 8202 4.500000 100 0 0 0 0 0 81 0 157 0 285 35
+ itm_glaive_dupe_a Glaive Glaive 1  glaive 0  1348534276 4222131026005760 352 8202 4.500000 100 0 0 0 0 0 81 0 157 0 285 35
  0
 0
 
- itm_glaive Glaive Glaive 1  glaive 0  1348534276 4222131026005760 220 8202 4.500000 100 0 0 0 0 0 81 0 157 0 288 38
+ itm_glaive_dupe_b Glaive Glaive 1  glaive 0  1348534276 4222131026005760 220 8202 4.500000 100 0 0 0 0 0 81 0 157 0 288 38
  0
 0
 
@@ -2561,7 +2561,7 @@ itemsfile version 3
  0
 0
 
- itm_poleaxe Poleaxe Poleaxe 1  pole_ax 0  1348534276 4222131026005760 336 8202 6.500000 100 0 0 0 0 0 85 0 180 0 294 39
+ itm_poleaxe_orig Poleaxe Poleaxe 1  pole_ax 0  1348534276 4222131026005760 336 8202 6.500000 100 0 0 0 0 0 85 0 180 0 294 39
  0
 0
 
@@ -2597,7 +2597,7 @@ itemsfile version 3
  0
 0
 
- itm_polehammer Polehammer Polehammer 1  pole_hammer 0  1348534276 4222131026005760 206 8202 7.000000 100 0 0 0 14 0 89 0 130 0 540 542
+ itm_polehammer_orig Polehammer Polehammer 1  pole_hammer 0  1348534276 4222131026005760 206 8202 7.000000 100 0 0 0 14 0 89 0 130 0 540 542
  0
 0
 
@@ -2709,7 +2709,7 @@ itemsfile version 3
  0
 0
 
- itm_lui_knightaxetwoha Knight's_Battle_Axe Knight's_Battle_Axe 1  lui_baronaxeoneh 0  80019458 9223388530091229198 187 262164 2.100000 100 0 0 0 9 0 90 0 100 0 256 39
+ itm_lui_knightaxetwoha_a Knight's_Battle_Axe Knight's_Battle_Axe 1  lui_baronaxeoneh 0  80019458 9223388530091229198 187 262164 2.100000 100 0 0 0 9 0 90 0 100 0 256 39
  0
 0
 
@@ -2753,11 +2753,11 @@ itemsfile version 3
  0
 0
 
- itm_spiked_mace Spiked_Mace Spiked_Mace 1  spiked_mace_new 0  274882428930 9223388532775583758 180 270356 3.500000 100 0 0 0 0 0 98 0 70 0 256 540
+ itm_spiked_mace_new Spiked_Mace Spiked_Mace 1  spiked_mace_new 0  274882428930 9223388532775583758 180 270356 3.500000 100 0 0 0 0 0 98 0 70 0 256 540
  0
 0
 
- itm_military_hammer Military_Hammer Military_Hammer 1  military_hammer 0  274882428930 9223388530091229198 317 262164 2.000000 100 0 0 0 0 0 95 0 70 0 256 543
+ itm_military_hammer_orig Military_Hammer Military_Hammer 1  military_hammer 0  274882428930 9223388530091229198 317 262164 2.000000 100 0 0 0 0 0 95 0 70 0 256 543
  0
 0
 
@@ -2865,7 +2865,7 @@ itemsfile version 3
  0
 0
 
- itm_voulge Voulge Voulge 1  voulge 0  73728003 9223635923965575392 129 262164 4.500000 100 0 0 0 8 0 87 0 119 0 256 46
+ itm_voulge_0 Voulge Voulge 1  voulge 0  73728003 9223635923965575392 129 262164 4.500000 100 0 0 0 8 0 87 0 119 0 256 46
  0
 0
 
@@ -3225,19 +3225,19 @@ itemsfile version 3
  0
 0
 
- itm_military_scythe Military_Scythe Military_Scythe 2  spear_e_2-5m 0  spear_c_2-5m 6291486  1212481540 4222131026002688 155 8202 2.500000 100 0 0 0 10 0 89 0 155 0 281 36
+ itm_military_scythe Military_Scythe Military_Scythe 2  spear_e_2-5m 0  spear_c_2-5m 6291486  1212481540 31243728790228736 155 8202 2.500000 100 0 0 0 10 0 89 0 155 0 281 36
  0
 0
 
- itm_light_lance Light_Lance Light_Lance 1  spear_b_2-75m 0  3359965188 4222124851987200 180 8202 2.500000 100 0 0 0 0 0 85 0 175 0 283 528
+ itm_light_lance Light_Lance Light_Lance 1  spear_b_2-75m 0  3359965188 31243722616213248 180 8202 2.500000 100 0 0 0 0 0 85 0 175 0 283 528
  0
 0
 
- itm_lance Lance Lance 1  spear_d_2-8m 0  3359965188 4222124851987200 270 8202 2.500000 100 0 0 0 0 0 80 0 180 0 282 528
+ itm_lance Lance Lance 1  spear_d_2-8m 0  3359965188 31243722616213248 270 8202 2.500000 100 0 0 0 0 0 80 0 180 0 282 528
  0
 0
 
- itm_heavy_lance Heavy_Lance Heavy_Lance 1  spear_f_2-9m 0  3359965188 4222124851987200 360 8202 2.750000 100 0 0 0 10 0 75 0 190 0 288 528
+ itm_heavy_lance Heavy_Lance Heavy_Lance 1  spear_f_2-9m 0  3359965188 31243722616213248 360 8202 2.750000 100 0 0 0 10 0 75 0 190 0 288 528
  0
 0
 
@@ -3245,23 +3245,23 @@ itemsfile version 3
  0
 0
 
- itm_pike Pike Pike 1  spear_a_3m 0  409272324 4222124851987200 125 8202 3.000000 100 0 0 0 0 0 81 0 245 0 282 528
+ itm_pike Pike Pike 1  spear_a_3m 0  409272324 31243722616213248 125 8202 3.000000 100 0 0 0 0 0 81 0 245 0 282 528
  0
 0
 
- itm_ashwood_pike Ashwood_Pike Ashwood_Pike 1  pike 0  1080360964 4222124851987200 205 8202 3.500000 100 0 0 0 11 0 90 0 170 0 295 531
+ itm_ashwood_pike Ashwood_Pike Ashwood_Pike 1  pike 0  1080360964 31243722616213248 205 8202 3.500000 100 0 0 0 11 0 90 0 170 0 295 531
  0
 0
 
- itm_awlpike Awlpike Awlpike 1  awl_pike_b 0  1212481540 4222131026002688 345 8202 2.250000 100 0 0 0 0 0 92 0 165 0 289 532
+ itm_awlpike Awlpike Awlpike 1  awl_pike_b 0  1212481540 31243728790228736 345 8202 2.250000 100 0 0 0 0 0 92 0 165 0 289 532
  0
 0
 
- itm_awlpike_long Long_Awlpike Long_Awlpike 1  awl_pike_a 0  1212481540 4222131026002688 385 8202 2.250000 100 0 0 0 0 0 89 0 185 0 288 532
+ itm_awlpike_long Long_Awlpike Long_Awlpike 1  awl_pike_a 0  1212481540 31243728790228736 385 8202 2.250000 100 0 0 0 0 0 89 0 185 0 288 532
  0
 0
 
- itm_bec_de_corbin_a War_Hammer War_Hammer 1  bec_de_corbin_a 0  409272324 4222131026002688 125 8202 3.000000 100 0 0 0 0 0 81 0 120 0 294 555
+ itm_bec_de_corbin_a War_Hammer War_Hammer 1  bec_de_corbin_a 0  409272324 31243728790228736 125 8202 3.000000 100 0 0 0 0 0 81 0 120 0 294 555
  0
 0
 
@@ -3361,7 +3361,7 @@ itemsfile version 3
  0
 0
 
- itm_partisan_1 Partisan Partisan 1  partisan_1 0  1212481540 9254615765645004032 175 8202 2.350000 100 0 0 0 0 0 95 0 125 0 35 536
+ itm_partisan_4 Partisan Partisan 1  partisan_4 0  1212481540 9254615765645004032 175 8202 2.350000 100 0 0 0 0 0 95 0 125 0 35 536
  0
 0
 
@@ -3437,7 +3437,7 @@ itemsfile version 3
  0
 0
 
- itm_voulge_2 Voulge Voulge 1  voulge_2 0  1080360964 4222130824678912 275 8202 3.800000 100 0 0 0 10 0 93 0 154 0 0 38
+ itm_voulge_6 Voulge Voulge 1  voulge_6 0  1080360964 4222130824678912 275 8202 3.800000 100 0 0 0 10 0 93 0 154 0 0 38
  0
 0
 
@@ -3453,11 +3453,11 @@ itemsfile version 3
  0
 0
 
- itm_fauchard_2 Fauchard Fauchard 1  fauchard_2 0  1080360964 4222131026005760 275 8202 2.000000 100 0 0 0 9 0 93 0 182 0 293 24
+ itm_fauchard_3 Fauchard Fauchard 1  fauchard_2 0  1080360964 4222131026005760 275 8202 2.000000 100 0 0 0 9 0 93 0 182 0 293 24
  0
 0
 
- itm_fauchard_1 Fauchard Fauchard 1  fauchard_1 0  1080360964 4222131026005760 295 8202 2.000000 100 0 0 0 9 0 94 0 178 0 292 25
+ itm_fauchard_4 Fauchard Fauchard 1  fauchard_1 0  1080360964 4222131026005760 295 8202 2.000000 100 0 0 0 9 0 94 0 178 0 292 25
  0
 0
 

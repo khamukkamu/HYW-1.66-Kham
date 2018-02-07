@@ -1163,7 +1163,7 @@ formations_triggers = [ #4 triggers
         (try_end),
       (try_end),
       
-      (call_script, "script_init_noswing_weapons"),
+      #(call_script, "script_init_noswing_weapons"),
   ]),
   
   #kludge formation superiority
@@ -1254,10 +1254,10 @@ formations_triggers = [ #4 triggers
   ]),
   
   # Trigger file: formations_on_agent_killed_or_wounded
-  (ti_on_agent_killed_or_wounded, 0, 0, [], [ #prevent leaving noswing weapons around for player to pick up
-      (store_trigger_param_1, ":dead_agent_no"),
-      (call_script, "script_switch_from_noswing_weapons", ":dead_agent_no"),
-  ]),
+  #(ti_on_agent_killed_or_wounded, 0, 0, [], [ #prevent leaving noswing weapons around for player to pick up
+  #    (store_trigger_param_1, ":dead_agent_no"),
+  #    (call_script, "script_switch_from_noswing_weapons", ":dead_agent_no"),
+  #]),
 ]#end formations triggers
 
 #TLD cheer instead of jump on space if battle is won  (mtarini)
@@ -35825,6 +35825,180 @@ mission_templates = [
       
     ]
   ),
+
+#Troop Duel for Freelancer Pacify quest - Credits to TLD
+
+( "arena_challenge_fight_weapons",mtf_team_fight, -1, # used for pacify troops freelancer quest
+  "You enter a melee fight.",
+    [ 
+    (0, mtef_visitor_source|mtef_team_0, af_override_everything,aif_start_alarmed,1,[itm_practice_staff, itm_practice_boots]),
+    (1, mtef_visitor_source|mtef_team_1, af_override_everything,aif_start_alarmed,1,[itm_practice_staff, itm_practice_boots]),
+    #spectators
+    (2, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(3, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(4, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(5, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []), 
+    (6, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(7, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(8, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(9, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (10,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(11,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(12,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(13,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (14,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(15,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(16,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(17,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (18,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(19,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(20,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(21,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (22,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(23,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(24,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(25,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (26,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(27,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(28,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(29,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    ],[
+  common_inventory_not_available,
+      
+  (ti_tab_pressed,0,0,[],[
+    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (try_begin),
+      (eq, ":commander_faction", "fac_kingdom_1"),
+      (assign, ":troop", "trp_unhappy_french_troop"),
+    (else_try),
+      (eq, ":commander_faction", "fac_kingdom_2"),
+      (assign, ":troop", "trp_unhappy_english_troop"),
+    (else_try),
+      (eq, ":commander_faction", "fac_kingdom_3"),
+      (assign, ":troop", "trp_unhappy_burgandy_troop"),
+    (else_try),
+      (assign, ":troop", "trp_unhappy_breton_troop"),
+    (try_end),
+    (try_begin),#If the battle is won, missions ends.
+      (num_active_teams_le,2),
+      (neg|main_hero_fallen, 0),
+      (finish_mission),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_current_state, 1), #1 meams win duel
+      (start_map_conversation, ":troop"),
+    (else_try),
+      (main_hero_fallen),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_current_state, 2), #2 meams lose duel
+      (start_map_conversation, ":troop"),
+      (finish_mission),
+    (else_try),
+      (display_message, "@Cannot leave now."),
+    (try_end)]),
+      
+  (ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 1, -1),(team_set_relation, 0, 2, 0),(team_set_relation, 1, 2, 0)]),
+  (0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
+    (0.3, 0, 0, [], [ # spectators cheer
+    (try_for_agents,":agent"),
+      (agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,1), # main guys do not cheer
+      (agent_get_slot,":counter",":agent",slot_agent_is_in_scripted_mode),
+      (try_begin),
+        (gt, ":counter", 0), (val_sub,":counter", 1),(agent_set_slot,":agent",slot_agent_is_in_scripted_mode,":counter"), # pass cheering cycles
+      (else_try),
+        (store_random_in_range,reg1,0,100),(lt,reg1,10), # 10% of times
+        (agent_set_slot,":agent",slot_agent_is_in_scripted_mode,13), # remember that the guy is cheering now, pass 13 cycles after that
+        (agent_set_animation, ":agent", "anim_cheer"),
+        (agent_play_sound, ":agent", "snd_man_yell"),
+      (try_end),
+    (try_end)]),
+    tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
+  (1, 60, 1,[(store_mission_timer_a,reg1),(ge,reg1,10)],[
+    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (try_begin),
+      (eq, ":commander_faction", "fac_kingdom_1"),
+      (assign, ":troop", "trp_unhappy_french_troop"),
+    (else_try),
+      (eq, ":commander_faction", "fac_kingdom_2"),
+      (assign, ":troop", "trp_unhappy_english_troop"),
+    (else_try),
+      (eq, ":commander_faction", "fac_kingdom_3"),
+      (assign, ":troop", "trp_unhappy_burgandy_troop"),
+    (else_try),
+      (assign, ":troop", "trp_unhappy_breton_troop"),
+    (try_end),
+    (try_begin),
+      (main_hero_fallen),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_current_state, 2), #2 meams lose duel
+      (start_map_conversation, ":troop"),
+      (finish_mission),
+    (else_try),
+      (num_active_teams_le,2),
+      (display_message,"str_msg_battle_won"),
+    (try_end)]),
+]),
+
+( "arena_challenge_fight_fists",mtf_team_fight, -1, # used for pacify troops freelancer quest
+  "You enter a melee fight.",
+    [ 
+    (0, mtef_visitor_source|mtef_team_0, af_override_everything,aif_start_alarmed,1,[itm_practice_boots]),
+    (1, mtef_visitor_source|mtef_team_1, af_override_everything,aif_start_alarmed,1,[itm_practice_boots]),
+    #spectators
+    (2, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(3, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(4, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(5, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []), 
+    (6, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(7, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(8, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(9, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (10,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(11,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(12,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(13,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (14,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(15,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(16,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(17,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (18,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(19,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(20,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(21,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (22,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(23,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(24,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(25,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (26,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(27,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(28,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(29,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    ],[
+  common_inventory_not_available,
+      
+  (ti_tab_pressed,0,0,[],[
+    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (try_begin),
+      (eq, ":commander_faction", "fac_kingdom_1"),
+      (assign, ":troop", "trp_unhappy_french_troop"),
+    (else_try),
+      (eq, ":commander_faction", "fac_kingdom_2"),
+      (assign, ":troop", "trp_unhappy_english_troop"),
+    (else_try),
+      (eq, ":commander_faction", "fac_kingdom_3"),
+      (assign, ":troop", "trp_unhappy_burgandy_troop"),
+    (else_try),
+      (assign, ":troop", "trp_unhappy_breton_troop"),
+    (try_end),
+    (try_begin),#If the battle is won, missions ends.
+      (num_active_teams_le,2),
+      (neg|main_hero_fallen, 0),
+      (finish_mission),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_current_state, 1), #1 meams win duel
+      (start_map_conversation, ":troop"),
+    (else_try),
+      (main_hero_fallen),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_current_state, 2), #2 meams lose duel
+      (start_map_conversation, ":troop"),
+      (finish_mission),
+    (else_try),
+      (display_message, "@Cannot leave now."),
+    (try_end)]),
+      
+  (ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 1, -1),(team_set_relation, 0, 2, 0),(team_set_relation, 1, 2, 0)]),
+  (0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
+    (0.3, 0, 0, [], [ # spectators cheer
+    (try_for_agents,":agent"),
+      (agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,1), # main guys do not cheer
+      (agent_get_slot,":counter",":agent",slot_agent_is_in_scripted_mode),
+      (try_begin),
+        (gt, ":counter", 0), (val_sub,":counter", 1),(agent_set_slot,":agent",slot_agent_is_in_scripted_mode,":counter"), # pass cheering cycles
+      (else_try),
+        (store_random_in_range,reg1,0,100),(lt,reg1,10), # 10% of times
+        (agent_set_slot,":agent",slot_agent_is_in_scripted_mode,13), # remember that the guy is cheering now, pass 13 cycles after that
+        (agent_set_animation, ":agent", "anim_cheer"),
+        (agent_play_sound, ":agent", "snd_man_yell"),
+      (try_end),
+    (try_end)]),
+    tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
+  (1, 60, 1,[(store_mission_timer_a,reg1),(ge,reg1,10)],[
+    (store_troop_faction, ":commander_faction", "$enlisted_lord"),
+    (try_begin),
+      (eq, ":commander_faction", "fac_kingdom_1"),
+      (assign, ":troop", "trp_unhappy_french_troop"),
+    (else_try),
+      (eq, ":commander_faction", "fac_kingdom_2"),
+      (assign, ":troop", "trp_unhappy_english_troop"),
+    (else_try),
+      (eq, ":commander_faction", "fac_kingdom_3"),
+      (assign, ":troop", "trp_unhappy_burgandy_troop"),
+    (else_try),
+      (assign, ":troop", "trp_unhappy_breton_troop"),
+    (try_end),
+    (try_begin),
+      (main_hero_fallen),
+      (quest_set_slot, "qst_freelancer_mission_2", slot_quest_current_state, 2), #2 meams lose duel
+      (start_map_conversation, ":troop"),
+      (finish_mission),
+    (else_try),
+      (num_active_teams_le,2),
+      (display_message,"str_msg_battle_won"),
+    (try_end)]),
+]),
   
   ( "scene_chooser",mtf_battle_mode,-1,
     "You go to the scene",

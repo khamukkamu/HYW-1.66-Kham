@@ -1475,3 +1475,9 @@ loot_value_before
 cheat_imposed_quest
 freelancer_enhanced_upgrade
 form_options_overlay_6
+allow_permadeath
+allow_injuries
+form_options_overlay_7
+form_options_overlay_8
+freelancer_missions
+form_options_overlay_9

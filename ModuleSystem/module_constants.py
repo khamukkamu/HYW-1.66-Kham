@@ -2144,4 +2144,4 @@ Troop_Tree_Tableau_Height = 800
 Troop_Tree_Tableau_Width = Troop_Tree_Tableau_Height*Screen_Undistort_Width_Num/Screen_Undistort_Width_Den
 
 #Debug mode - Turn off before deploying to production
-debug_mode = 1
+debug_mode = 0

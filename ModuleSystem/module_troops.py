@@ -778,13 +778,13 @@ troops = [
 
 
 #governers olgrel rasevas                                                                        Horse          Bodywear                Footwear_in                     Footwear_out                    Armor                       Weapon                  Shield                  Headwaer
-["kingdom_1_lord", "Charles_VII,", "King of France", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_nobleman_outfit_charles,itm_blue_hose,itm_iron_greaves,itm_bb_complet_plates_charles,itm_bastard_sword_b,itm_battle_shieldcharlesv,itm_pigface_klappvisor_open,itm_shynbaulds,itm_tab_shield_heater_a], king_attrib, wp(420), king_skills, 0x000000063608200156dbc68dcb3226a400000000001c39320000000000000000, 0 ],
+["kingdom_1_lord", "Charles_VII,", "Roi de France", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_nobleman_outfit_charles,itm_blue_hose,itm_iron_greaves,itm_bb_complet_plates_charles,itm_bastard_sword_b,itm_battle_shieldcharlesv,itm_pigface_klappvisor_open,itm_shynbaulds,itm_tab_shield_heater_a], king_attrib, wp(420), king_skills, 0x000000063608200156dbc68dcb3226a400000000001c39320000000000000000, 0 ],
 
-["kingdom_2_lord", "John_Lancaster, Duke of Bedford", "Edward_lll, King of England", tf_hero, no_scene, reserved, fac_kingdom_2, [itm_warhorseedwardiii,itm_nobleman_outfit_anglais,itm_courtly_outfitred,itm_woolen_hose,itm_iron_greaves,itm_bb_complet_plates_r,itm_battle_shieldedwardiii,itm_landgraf,itm_bayeux,itm_mail_coif,itm_hourglass_gauntlets,itm_nobleman_outfit_charles], king_attrib, wp(420), king_skills, 0x0000000e8000d00d271b6d371a4a36dc00000000001db6e30000000000000000, 0 ],
+["kingdom_2_lord", "John_Lancaster, Duke of Bedford", "Edward_lll, King of England", tf_hero, no_scene, reserved, fac_kingdom_2, [itm_warhorseedwardiii,itm_nobleman_outfit_anglais,itm_courtly_outfitred,itm_woolen_hose,itm_iron_greaves,itm_bb_complet_plates_r,itm_battle_shieldedwardiii,itm_landgraf,itm_bayeux,itm_mail_coif,itm_hourglass_gauntlets,itm_nobleman_outfit_charles], king_attrib, wp(420), king_skills, 0x0000000a800030d4371b6d371a4a36e500000000001db6fb0000000000000000, 0 ],
 
-["kingdom_3_lord", "Philip the Good", "Duke of Burgandy", tf_hero, no_scene, reserved, fac_kingdom_3, [itm_warhorse_en3,itm_nobleman_outfit_charles,itm_woolen_hose,itm_iron_greaves,itm_sword_two_handed_a,itm_sugarloaf,itm_mail_coif,itm_churburg_13_mail,itm_hourglass_gauntlets_ornate], king_attrib, wp(420), king_skills, 0x00000003ff01150422db8e3b1c8db91b00000000001db6db0000000000000000, 0 ],
+["kingdom_3_lord", "Philip the Good", "Duke of Burgandy", tf_hero, no_scene, reserved, fac_kingdom_3, [itm_warhorse_en3,itm_nobleman_outfit_charles,itm_woolen_hose,itm_iron_greaves,itm_sword_two_handed_a,itm_sugarloaf,itm_mail_coif,itm_churburg_13_mail,itm_hourglass_gauntlets_ornate], king_attrib, wp(420), king_skills, 0x0000000d9000300622db8e3bcce5b21400000000001da6240000000000000000, 0 ],
 
-["kingdom_4_lord", "Jean V", "Duke of Brittany", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_breton_warhorse_2,itm_nobleman_out_fr,itm_woolen_hose,itm_breton_complet_plates,itm_pigface_klappvisor_open,itm_wisby_gauntlets_black,itm_steel_greaves,itm_tab_shield_heater_a,itm_agincourt], king_attrib, wp(420), king_skills, 0x00000009ff01118a251b89c6dca6491a00000000001e36db0000000000000000, 0x00000009ff01118a251b89c6dca6491a00000000001e36db0000000000000000 ],
+["kingdom_4_lord", "Jean V de Montfort", "Duke of Brittany", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_breton_warhorse_2,itm_nobleman_out_fr,itm_woolen_hose,itm_breton_complet_plates,itm_pigface_klappvisor_open,itm_wisby_gauntlets_black,itm_steel_greaves,itm_tab_shield_heater_a,itm_agincourt], king_attrib, wp(420), king_skills, 0x0000000b8e10300c16e471b6ebb227a500000000001d4a5a0000000000000000, 0x0000000b8e10300c16e471b6ebb227a500000000001d4a5a0000000000000000 ],
 
 #  ["kingdom_5_lord",  "King Graveth",  "Graveth",  tf_hero, 0,reserved,  fac_kingdom_5,[itm_warhorse,  itm_tabard,             itm_leather_boots,              itm_splinted_leather_greaves,   itm_heraldic_mail_with_tabard,  itm_gauntlets,         itm_bastard_sword_b,         itm_tab_shield_heater_cav_b,        itm_spiked_helmet],         knight_attrib_4,wp(220),knight_skills_4|knows_trainer_5, 0x0000000efc04119225848dac5d50d62400000000001d48b80000000000000000, rhodok_face_old_2],
 #  ["kingdom_6_lord",  "Sultan Hakim",  "Hakim",  tf_hero, 0,reserved,  fac_kingdom_6,[itm_warhorse_sarranid,     itm_mamluke_mail,          itm_sarranid_boots_c,       itm_sarranid_mail_coif,  itm_mail_mittens,      itm_sarranid_cavalry_sword,    itm_tab_shield_small_round_c],         knight_attrib_4,wp(220),knight_skills_5|knows_trainer_5, 0x0000000a4b103354189c71d6d386e8ac00000000001e24eb0000000000000000, rhodok_face_old_2],
@@ -799,19 +799,19 @@ troops = [
 #Swadian civilian clothes: itm_courtly_outfit itm_gambeson itm_blue_gambeson itm_red_gambeson itm_nobleman_outfit itm_rich_outfit itm_short_tunic itm_tabard
 ["knight_1_1", "Jean II d'Alençon", "Duc d'Alençon", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_pigface_klappvisor_open,itm_nobleman_out_fr,itm_blue_hose,itm_bayeux,itm_4mace,itm_hourglass_gauntlets,itm_shynbaulds,itm_tab_shield_heater_cav_a,itm_bb_complet_plates_charles], 
   lord_attrib,wp(380),knows_lord_1, 
-    0x000000002400e00f49255229948d172300000000001d551a0000000000000000, 0x000000002400e00f49255229948d172300000000001d551a0000000000000000 ],
+    0x000000000000800f49255229948d172300000000001d551a0000000000000000, 0x000000000000800f49255229948d172300000000001d551a0000000000000000 ],
 
 ["knight_1_2", "La Hire", "Seigneur de Vignolles", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsechandos,itm_pigface_klappvisor_open,itm_gambeson,itm_blue_hose,itm_bastard_sword_a,itm_hourglass_gauntlets,itm_shynbaulds,itm_tab_shield_heater_cav_a,itm_bb_complet_plates_b], 
   lord_attrib,wp(380),knows_lord_1, 
     0x0000000a0d00620d36db6db6db6db6db00000000001e5afb0000000000000000, 0x0000000a0d00620d36db6db6db6db6db00000000001e5afb0000000000000000 ],
-
+    
 ["knight_1_3", "Gilles de Rais", "Baron de Rais", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_pigface_klappvisor_open,itm_nobleman_out_fr,itm_blue_hose,itm_bayeux,itm_4mace,itm_hourglass_gauntlets,itm_shynbaulds,itm_tab_shield_heater_cav_a,itm_bb_complet_plates_charles], 
   lord_attrib,wp(380),knows_lord_1, 
     0x000000002b0c600946dc8e391c69c8db00000000001db6eb0000000000000000, 0x000000002b0c600946dc8e391c69c8db00000000001db6eb0000000000000000 ],
-
+    
 ["knight_1_4", "Charles II d'Albret", "Vicomte de Tartas", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f1,itm_nobleman_out,itm_woolen_hose,itm_churburg_13_mail,itm_iron_greaves,itm_pigface_klappvisor_open,itm_bastard_sword_a,itm_tab_shield_heater_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000000240850140cf485c59720494b00000000001d76a40000000000000000, 0x00000000240850140cf485c59720494b00000000001d76a40000000000000000 ],
+    0x000000095e0850140cf485c59720494b00000000001d76a40000000000000000, 0x000000095e0850140cf485c59720494b00000000001d76a40000000000000000 ],
 
 ["knight_1_5", "Jeanne la Pucelle", "Jeanne la Pucelle", tf_hero|tf_jeanne, no_scene, reserved, fac_kingdom_1, [itm_warhorseduguesclin,itm_nobleman_outfit,itm_pigface_klappvisor_open,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_banner_jhoan, itm_prince, itm_tab_shield_kite_cav_b], 
   lord_attrib,wp(380),knows_lord_1,
@@ -819,15 +819,15 @@ troops = [
 
 ["knight_1_6", "Jean Poton de Xaintrailles", "Capitaine", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f3,itm_nobleman_out,itm_churburg_13_mail,itm_woolen_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_4hammer,itm_tab_shield_heater_c,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1, 
-    0x00000009ba08c14f4b22cad5527297a400000000001e66a30000000000000000, 0x00000009ba08c14f4b22cad5527297a400000000001e66a30000000000000000 ],
-
+    0x000000093a08c10f4b22cad5527297a400000000001e66a30000000000000000, 0x000000093a08c10f4b22cad5527297a400000000001e66a30000000000000000 ],
+    
 ["knight_1_7", "Louis d'Amboise", "Vicomte de Thouars", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse2lys,itm_rich_outfitblue,itm_churburg_13_mail,itm_woolen_hose,itm_steel_greaves,itm_sword_medieval_c,itm_sword_two_handed_a,itm_tab_shield_heater_c,itm_great_helmet,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000a3f05100c359b6dd8e46e44e400000000001db4a90000000000000000, 0x0000000a3f05100c359b6dd8e46e44e400000000001db4a90000000000000000 ],
+    0x00000008a800f0064cae5128746d48e700000000001e45240000000000000000, 0x00000008a800f0064cae5128746d48e700000000001e45240000000000000000 ],
 
 ["knight_1_8", "Pierre d'Amboise", "Seigneur de Chaumont", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_rich_outfitblue,itm_churburg_13_mail,itm_woolen_hose,itm_iron_greaves,itm_bastard_sword_a,itm_tab_shield_heater_cav_a,itm_hourglass_gauntlets,itm_hounskull], 
   lord_attrib,wp(380),knows_lord_1, 
-    0x00000003ff051011359b6dd8e46e44e400000000001db4a90000000000000000, 0x00000003ff051011359b6dd8e46e44e400000000001db4a90000000000000000 ],
+    0x000000000800800c4cae5128746d48e700000000001e45240000000000000000, 0x000000000800800c4cae5128746d48e700000000001e45240000000000000000 ],
 
 ["knight_1_9", "Jean de Dunois", "Comte de Dunois", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f3,itm_rich_outfit,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_4hammer,itm_sword_two_handed_a,itm_tab_shield_heater_cav_a,itm_hourglass_gauntlets,itm_mail_coif_full], 
   lord_attrib,wp(380),knows_lord_1, 
@@ -843,11 +843,11 @@ troops = [
 
 ["knight_1_12", "Charles de Culant", "Capitaine", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_hounskull,itm_blue_gambeson,itm_woolen_hose,itm_iron_greaves,itm_sugarloaf,itm_two_handed_axe,itm_bastard_sword_b,itm_tab_shield_heater_cav_b,itm_bb_complet_plates_charles,itm_shynbaulds,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000009fa0515cf44e98a28e38f48e300000000001d98ea0000000000000000, 0x00000009fa0515cf44e98a28e38f48e300000000001d98ea0000000000000000 ],
+    0x000000021a04b5cf44e98a28e38f48e300000000001d98ea0000000000000000, 0x000000021a04b5cf44e98a28e38f48e300000000001d98ea0000000000000000 ],
 
 ["knight_1_13", "Philippe de Culant", "Seigneur de Jalognes", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f2,itm_blue_gambeson,itm_churburg_13_mail,itm_woolen_hose,itm_iron_greaves,itm_sword_two_handed_a,itm_tab_shield_heater_cav_a,itm_hourglass_gauntlets,itm_mail_coif], 
   lord_attrib,wp(380),knows_lord_1, 
-    0x00000002bf05101044e98a28a38f48da00000000001da8ea0000000000000000, 0x00000002bf05101044e98a28a38f48da00000000001da8ea0000000000000000 ],
+    0x000000003f04b01044e98a28a38f48da00000000001da8ea0000000000000000, 0x000000003f04b01044e98a28a38f48da00000000001da8ea0000000000000000 ],
 
 ["knight_1_14", "Raoul VI de Gaucourt", "Seigneur de Gaucourt", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_red_gambeson,itm_bb_complet_plates_charles,itm_woolen_hose,itm_iron_greaves,itm_bastard_sword_a,itm_tab_shield_heater_cav_b,itm_hourglass_gauntlets,itm_great_helmet], 
   lord_attrib,wp(380),knows_lord_1, 
@@ -855,7 +855,7 @@ troops = [
 
 ["knight_1_15", "Jean de Brosse", "Seigneur de Boussac", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f1,itm_nobleman_outfit,itm_woolen_hose,itm_churburg_13_mail,itm_steel_greaves,itm_steel_greaves,itm_bastard_sword_b,itm_tab_shield_heater_d,itm_hourglass_gauntlets,itm_great_helmet], 
   lord_attrib,wp(380),knows_lord_1,
-  0x0000000efd0114c114db6e36dcae46db00000000001e26e30000000000000000, 0x0000000efd0114c114db6e36dcae46db00000000001e26e30000000000000000 ],
+  0x0000000afe0115c114db6e36dcae46db00000000001e26e30000000000000000, 0x0000000afe0115c114db6e36dcae46db00000000001e26e30000000000000000 ],
 
 ["knight_1_16", "Charles I de Bourbon", "Comte de Clermont", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f2,itm_nobleman_out,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_4hammer,itm_sword_two_handed_a,itm_tab_shield_heater_cav_a,itm_hounskull,itm_hourglass_gauntlets,itm_bayeux], 
   lord_attrib,wp(380),knows_lord_1, 
@@ -912,7 +912,7 @@ troops = [
 
 ["knight_2_9", "Jean V de Bueil", "Seigneur de Bueil, Capitaine de Tours", tf_hero|tf_english, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f1,itm_nobleman_out,itm_bb_complet_plates_b,itm_woolen_hose,itm_iron_greaves,itm_great_bardiche,itm_tab_shield_kite_d,itm_mail_coif_full,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000003ec0c50014af3323d6c41c76900000000001d448f0000000000000000, 0x00000003ec0c50014af3323d6c41c76900000000001d448f0000000000000000 ],
+    0x00000006180080014d1a92451a6e33b500000000001db8e30000000000000000, 0x00000006180080014d1a92451a6e33b500000000001db8e30000000000000000 ],
 
 ["knight_2_10", "Thomas Beaufort", "Count of Perche", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_out,itm_churburg_13_mail,itm_woolen_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_lui_knightaxeonehe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
@@ -924,27 +924,27 @@ troops = [
 
 ["knight_2_12", "Richard of York", "Duke of York", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseredwhite,itm_nobleman_out,itm_churburg_13_mail,itm_woolen_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_great_bardiche,itm_tab_shield_kite_cav_a,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000007f05000f255c91b4da2e36dc00000000001cd8a20000000000000000, 0x000000007f05000f255c91b4da2e36dc00000000001cd8a20000000000000000 ],
+    0x00000006f404c00f255c91b4da2e36dc00000000001cd8a20000000000000000, 0x00000006f404c00f255c91b4da2e36dc00000000001cd8a20000000000000000 ],
 
 ["knight_2_13", "John Mowbray ", "Duke of Norfolk ", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_out,itm_bb_complet_plates_rlyon,itm_woolen_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_great_bardiche,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000cc10c129455548d4a67b5b2e400000000001eca9a0000000000000000, 0x0000000cc10c129455548d4a67b5b2e400000000001eca9a0000000000000000 ],
+    0x00000009870c141455548d4a67b5b2e400000000001eca9a0000000000000000, 0x00000009870c141455548d4a67b5b2e400000000001eca9a0000000000000000 ],
 
 ["knight_2_14", "Richard le Strange", "Baron Strange", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_courtly_outfit,itm_churburg_13_mail,itm_woolen_hose,itm_iron_greaves,itm_pigface,itm_shortened_military_scythe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000a401035c466db50c86496a8da00000000001daa590000000000000000, 0x0000000a401035c466db50c86496a8da00000000001daa590000000000000000 ],
+    0x0000000000084085299445d35c96b55400000000001dc4dd0000000000000000, 0x0000000000084085299445d35c96b55400000000001dc4dd0000000000000000 ],
 
 ["knight_2_15", "Reginald Grey", "Baron Grey de Ruthyn", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_out,itm_churburg_13_mail,itm_woolen_hose,itm_iron_greaves,itm_bastard_sword_b,itm_pigface_klappvisor_open,itm_shortened_military_scythe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000003304e18b251c6cc3a5b9e75b00000000001dca6a0000000000000000, 0x000000003304e18b251c6cc3a5b9e75b00000000001dca6a0000000000000000 ],
+    0x000000077f08510b339c99e569764add00000000001d48ab0000000000000000, 0x000000077f08510b339c99e569764add00000000001d48ab0000000000000000 ],
 
 ["knight_2_16", "John Grey", "Lord Grey de Ruthyn", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseredwhite,itm_nobleman_outfit,itm_churburg_13_mail,itm_woolen_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_great_bardiche,itm_tab_shield_kite_c,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000003504e010251c6cc395a4e71b00000000001dc26a0000000000000000, 0x000000003504e010251c6cc395a4e71b00000000001dc26a0000000000000000 ],
+    0x00000000260450102a95a92926469ade00000000001ea32c0000000000000000, 0x00000000260450102a95a92926469ade00000000001ea32c0000000000000000 ],
 
 ["knight_2_17", "Jean de Penhoët", "Seigneur de Penhoët", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_nobleman_outfit_anglais,itm_woolen_hose,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000b670051cc12db8db6d482b6db00000000001db6db0000000000000000, 0x0000000b670051cc12db8db6d482b6db00000000001db6db0000000000000000 ],
+    0x000000000804400434dc66470b74a6cb00000000001d467b0000000000000000, 0x000000000804400434dc66470b74a6cb00000000001d467b0000000000000000 ],
 
 ["knight_2_18", "Thomas Stanley", "Baron Stanley", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseedwardiii,itm_nobleman_outfit,itm_bb_complet_plates_r,itm_woolen_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_poitiers,itm_hourglass_gauntlets,itm_tab_shield_heater_cav_a], 
   lord_attrib,wp(380),knows_lord_1,
@@ -969,19 +969,19 @@ troops = [
 
 ["knight_3_3", "Jean IV de Termes d’Armagnac", "Seigneur de Termes", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsechandos,itm_nobleman_out_fr,itm_bb_complet_plates_b,itm_woolen_hose,itm_steel_greaves,itm_pigface_klappvisor_open,itm_lui_knightaxeonehe,itm_war_shield3lys,itm_hourglass_gauntlets_ornate], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000e2208e3c4491d2e17594a36db00000000001dc6ad0000000000000000, 0x0000000e2208e3c4491d2e17594a36db00000000001dc6ad0000000000000000 ],
+    0x00000009e20863c4491d2e17594a36db00000000001dc6ad0000000000000000, 0x00000009e20863c4491d2e17594a36db00000000001dc6ad0000000000000000 ],
 
 ["knight_3_4", "Géraud de Termes d'Armagnac", "Géraud de Termes d'Armagnac", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f1,itm_nobleman_out_fr,itm_mail_and_plate,itm_blue_hose,itm_steel_greaves,itm_pigface_klappvisor_open,itm_shortened_military_scythe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000a2208e007491d2e17594a375b00000000001dc6ad0000000000000000, 0x0000000a2208e007491d2e17594a375b00000000001dc6ad0000000000000000 ],
+    0x00000009e20863c4491d2e17594a36db00000000001dc6ad0000000000000000, 0x00000009e20863c4491d2e17594a36db00000000001dc6ad0000000000000000 ],
 
 ["knight_3_5", "Thilbault de Termes d'Armagnac", "Thilbault de Termes d'Armagnac", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f2,itm_nobleman_out,itm_gothic_armour,itm_blue_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_lui_knightaxeonehe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000032208e001650d7a172645c79400000000001dca9d0000000000000000, 0x000000032208e001650d7a172645c79400000000001dca9d0000000000000000 ],
+    0x0000000022086001650d7a172645c79400000000001dca9d0000000000000000, 0x0000000022086001650d7a172645c79400000000001dca9d0000000000000000 ],
 
 ["knight_3_6", "Renaud de Termes d'Armagnac", "Renaud de Termes d'Armagnac", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_nobleman_out,itm_bb_complet_plates_charles,itm_woolen_hose,itm_steel_greaves,itm_pigface_klappvisor_open,itm_lui_knightaxeonehc,itm_tab_shield_heater_cav_a,itm_hourglass_gauntlets_ornate], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000a2208e009490d7a171d4a579400000000001dca9d0000000000000000, 0x0000000a2208e009490d7a171d4a579400000000001dca9d0000000000000000 ],
+    0x0000000962086009490d7a171d4a579400000000001dca9d0000000000000000, 0x0000000962086009490d7a171d4a579400000000001dca9d0000000000000000 ],
 
 ["knight_3_7", "Jacques de Chabannes", "Seigneur de La Palice", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f3,itm_nobleman_out,itm_churburg_13_mail,itm_woolen_hose,itm_blue_hose,itm_klappvisier,itm_tilting_helmet,itm_lui_knightaxeonehd,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets_ornate], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1005,15 +1005,15 @@ troops = [
 
 ["knight_3_12", "Nicolas de Giresme", "Chevalier Hospitalier de Rhodes, commandeur de la Croix-en-Brie", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsechandos,itm_nobleman_outfit,itm_milanese_armour,itm_blue_hose,itm_iron_greaves,itm_hounskull,itm_lui_knightaxeonehc,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000004f604e188325b924722961b5400000000001cc6760000000000000000, 0x00000004f604e188325b924722961b5400000000001cc6760000000000000000 ],
+    0x000000070f048188325b924722961b5400000000001cc6760000000000000000, 0x000000070f048188325b924722961b5400000000001cc6760000000000000000 ],
 
 ["knight_3_13", "Louis I de Bourbon-Vendôme", "Comte de Vendôme", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f3,itm_nobleman_outfit,itm_bb_complet_plates_b,itm_woolen_hose,itm_steel_greaves,itm_pigface_klappvisor_open,itm_lui_knightaxeonehd,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets,itm_bayeux], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000001004800127792659238d3bb100000000001ee85b0000000000000000, 0x000000001004800127792659238d3bb100000000001ee85b0000000000000000 ],
+    0x000000000d00900c455b699d1a8de6e6000000000011cba30000000000000000, 0x000000000d00900c455b699d1a8de6e6000000000011cba30000000000000000 ],
 
 ["knight_3_14", "Jean de Linières", "Baron de Linières", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f2,itm_nobleman_out_fr,itm_gothic_armour,itm_blue_hose,itm_steel_greaves,itm_pigface_klappvisor_open,itm_shortened_military_scythe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000000110035cb519bb1b75b7a216a00000000001cc8eb0000000000000000, 0x00000000110035cb519bb1b75b7a216a00000000001cc8eb0000000000000000],
+    0x00000004d608b0012c8d8ec69d70caec00000000001d26640000000000000000, 0x00000004d608b0012c8d8ec69d70caec00000000001d26640000000000000000 ],
 
 ["knight_3_15", "Jean Malet de Graville", "Seigneur de Graville, Grand Maître des Arbalétriers", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_nobleman_out_fr,itm_bb_complet_plates_charles,itm_blue_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_lui_knightaxeonehc,itm_shortened_military_scythe,itm_hourglass_gauntlets_ornate,itm_tab_shield_kite_cav_a,itm_bayeux], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1033,7 +1033,7 @@ troops = [
 
 ["knight_3_19", "Walter Hungerford", "Baron Hungerford", tf_hero, no_scene, reserved, fac_kingdom_2, [itm_warhorse_f3,itm_nobleman_out,itm_milanese_armour,itm_woolen_hose,itm_steel_greaves,itm_pigface_klappvisor_open,itm_lui_knightaxeonehc,itm_shortened_military_scythe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets,itm_bayeux],
   lord_attrib,wp(380),knows_lord_1,
-    0x00000009d004358d58db4e096b66396400000000001e675b0000000000000000, 0x00000009d004358d58db4e096b66396400000000001e675b0000000000000000 ],
+    0x000000095d04358d58db4e096b66396400000000001e675b0000000000000000, 0x000000095d04358d58db4e096b66396400000000001e675b0000000000000000 ],
 
 ["knight_3_20", "Richard de Beauchamp", "Earl of Warwick", tf_hero, no_scene, reserved, fac_kingdom_2, [itm_warhorseblackprince,itm_nobleman_out,itm_gothic_armour,itm_blue_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_lui_knightaxeonehd,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets_ornate,itm_bayeux], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1066,15 +1066,15 @@ troops = [
 
 ["knight_4_7", "Richard Neville", "Earl of Salisbury", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseredwhite,itm_nobleman_outfit,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_greatbascinet1,itm_4hammer,itm_shortened_military_scythe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000001460030092ad372351b4a36d900000000001db6e30000000000000000, 0x00000001460030092ad372351b4a36d900000000001db6e30000000000000000 ],
+    0x00000009480cc3c158dd6e28e355b4c300000000001e6ad30000000000000000, 0x00000009480cc3c158dd6e28e355b4c300000000001e6ad30000000000000000 ],
 
 ["knight_4_8", "Edward Neville", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseredwhite,itm_nobleman_outfit_anglais,itm_mail_and_plate,itm_woolen_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_war_axe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000001460040492ad372351b4a36d900000000001db6e30000000000000000, 0x00000001460040492ad372351b4a36d900000000001db6e30000000000000000 ],
+    0x00000007080cc01058dd6e28e855b4c300000000001e5cd30000000000000000, 0x00000007080cc01058dd6e28e855b4c300000000001e5cd30000000000000000 ],
 
-["knight_4_9", "Baron Bonville", "Baron Bonville", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse,itm_nobleman_outfit_anglais,itm_gothic_armour,itm_blue_hose,itm_iron_greaves,itm_greathelm1,itm_one_handed_battle_axe_c,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
+["knight_4_9", "William Bonville", "Baron Bonville", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse,itm_nobleman_outfit_anglais,itm_gothic_armour,itm_blue_hose,itm_iron_greaves,itm_greathelm1,itm_one_handed_battle_axe_c,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000003de0060131924b2265a75451400000000001d58540000000000000000, 0x00000003de0060131924b2265a75451400000000001d58540000000000000000 ],
+    0x00000009560050131924b226da75451400000000001d58540000000000000000, 0x00000009560050131924b226da75451400000000001d58540000000000000000 ],
 
 ["knight_4_10", "William Fitzhugh", "Baron Fitzhugh", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_out,itm_coat_of_plates,itm_woolen_hose,itm_steel_greaves,itm_great_axe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets,itm_bb_greathelm_rp], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1086,11 +1086,11 @@ troops = [
 
 ["knight_4_12", "Richard II Woodville", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse,itm_nobleman_out,itm_gothic_armour,itm_blue_hose,itm_steel_greaves,itm_pigface_klappvisor_open,itm_one_handed_battle_axe_c,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000024f0c60083924d2249546c53500000000001e68920000000000000000, 0x000000024f0c60083924d2249546c53500000000001e68920000000000000000 ],
+    0x000000000f0c60083924d2249546c53500000000001e68920000000000000000, 0x000000000f0c60083924d2249546c53500000000001e68920000000000000000 ],
 
 ["knight_4_13", "Thomas Dacre", "Baron Dacre", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseedwardiii,itm_nobleman_out,itm_bb_complet_plates_r,itm_woolen_hose,itm_iron_greaves,itm_greatbascinet1,itm_war_axe,itm_battle_shieldedwardiii,itm_hourglass_gauntlets_ornate,itm_bayeux], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000bb200159422da8e3b1c81b91b00000000001db6db0000000000000000, 0x0000000bb200159422da8e3b1c81b91b00000000001db6db0000000000000000 ],
+    0x000000098000659422da8e3b1c81b91b00000000001db6db0000000000000000, 0x000000098000659422da8e3b1c81b91b00000000001db6db0000000000000000 ],
 
 ["knight_4_14", "John De Vere", "Earl of Oxford", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseredwhite,itm_nobleman_out,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_pigface_klappvisor_open,itm_4hammer,itm_tab_shield_kite_cav_b,itm_bayeux,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1114,19 +1114,19 @@ troops = [
 
 ["knight_4_19", "Baudot de Noyelles", "Seigneur de Noyelles", tf_hero|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_warhorse,itm_nobleman_outfit,itm_gothic_armour,itm_blue_hose,itm_iron_greaves,itm_greathelm1,itm_one_handed_battle_axe_c,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000003f0104c234db8e38ada5d53300000000001db6db0000000000000000, 0x000000003f0104c234db8e38ada5d53300000000001db6db0000000000000000 ],
+    0x000000074000a5c634db8e38ada5d53300000000001db6db0000000000000000, 0x000000074000a5c634db8e38ada5d53300000000001db6db0000000000000000 ],
 
 ["knight_4_20", "Pierre de Bauffremont", "Comte de Charny et Seigneur de Montfort", tf_hero|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_warhorse3lions,itm_courtly_outfit,itm_coat_of_plates,itm_woolen_hose,itm_steel_greaves,itm_bb_hounskull_bp,itm_great_axe,itm_tab_shield_kite_cav_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000007ff0004c034dbae38ada5d53300000000001db6db0000000000000000, 0x00000007ff0004c034dbae38ada5d53300000000001db6db0000000000000000 ],
+    0x00000008c008b44c070a6d25282658ae00000000001e38540000000000000000, 0x00000008c008b44c070a6d25282658ae00000000001e38540000000000000000 ],
 
 ["knight_5_1", "Henry Percy", "Earl of Northumberland", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_tabard,itm_bb_complet_plates_r,itm_woolen_hose,itm_iron_greaves,itm_klappvisier,itm_4hammer,itm_tab_shield_heater_c,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000008f80c10013ad56d972296c76d00000000001ea96b0000000000000000, 0x00000008f80c10013ad56d972296c76d00000000001ea96b0000000000000000 ],
+    0x00000009b80cc0013ad56d972296c76d00000000001ea96b0000000000000000, 0x00000009b80cc0013ad56d972296c76d00000000001ea96b0000000000000000 ],
 
-["knight_5_2", "John Sutton de Dudley", "Baron Dudley", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_outfit,itm_bb_complet_plates_r,itm_woolen_hose,itm_iron_greaves,itm_greatbascinet1,itm_lui_vaegirhallberd,itm_sword_two_handed_a,itm_tab_shield_heater_c,itm_hourglass_gauntlets], 
+["knight_5_2", "John Sutton", "Baron Dudley", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_outfit,itm_bb_complet_plates_r,itm_woolen_hose,itm_iron_greaves,itm_greatbascinet1,itm_lui_vaegirhallberd,itm_sword_two_handed_a,itm_tab_shield_heater_c,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000091408100628ca9a5764ae59d200000000001d290b0000000000000000, 0x000000091408100628ca9a5764ae59d200000000001d290b0000000000000000 ],
+    0x000000097f0400062ad391b9224d97a100000000001cdc4e0000000000000000, 0x000000097f0400062ad391b9224d97a100000000001cdc4e0000000000000000 ],
 
 ["knight_5_3", "John Fitzalan", "Earl of Arundel", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_outfit_anglais,itm_bb_complet_plates_rlyon,itm_woolen_hose,itm_steel_greaves,itm_klappvisier,itm_shortened_military_scythe,itm_tab_shield_heater_d,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1134,7 +1134,7 @@ troops = [
 
 ["knight_5_4", "Henry Bourchier", "Lord Bourchier", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_outfit,itm_gothic_armour,itm_woolen_hose,itm_steel_greaves,itm_greatbascinet1,itm_bastard_sword_a,itm_tab_shield_heater_d,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000091408100628ca9a5764ae59d200000000001d290b0000000000000000, 0x000000091408100628ca9a5764ae59d200000000001d290b0000000000000000 ],
+    0x00000005a508e0103b8b6aca99b1a71600000000001ccc660000000000000000, 0x00000005a508e0103b8b6aca99b1a71600000000001ccc660000000000000000 ],
 
 ["knight_5_5", "John Seymour", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_outfit_anglais,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_great_helmet,itm_shortened_military_scythe,itm_tab_shield_heater_d,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1142,19 +1142,19 @@ troops = [
 
 ["knight_5_6", "Guy III de Chauvigny", "Baron de Châteauroux", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_charger,itm_nobleman_outfit,itm_gothic_armour,itm_woolen_hose,itm_steel_greaves,itm_klappvisier,itm_sword_two_handed_b,itm_tab_shield_heater_c,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000003a0ce010066992b55c4a38a400000000001da8da0000000000000000, 0x000000003a0ce010066992b55c4a38a400000000001da8da0000000000000000 ],
+    0x00000008930040102ad372351b4a36d900000000001db6e30000000000000000, 0x00000008930040102ad372351b4a36d900000000001db6e30000000000000000 ],
 
 ["knight_5_7", "William Trussell", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseredwhite,itm_nobleman_outfit,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_greatbascinet1,itm_bastard_sword_a,itm_tab_shield_heater_c,itm_hourglass_gauntlets,itm_bastard_sword_a], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000093f0501904ceb92936389596b00000000001dc6e40000000000000000, 0x000000093f0501904ceb92936389596b00000000001dc6e40000000000000000 ],
+    0x000000097f0401904ceb92936389596b00000000001dc6e40000000000000000, 0x000000097f0401904ceb92936389596b00000000001dc6e40000000000000000 ],
 
 ["knight_5_8", "William ap Thomas", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorseblackprince,itm_nobleman_outfit_anglais,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_greatbascinet1,itm_lui_vaegirhallberd,itm_sword_two_handed_b,itm_tab_shield_heater_c,itm_bastard_sword_a,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000005120c158b27136237166d5dab00000000001dc45a0000000000000000, 0x00000005120c158b27136237166d5dab00000000001dc45a0000000000000000 ],
+    0x000000086e0c158b27136237166d5dab00000000001dc45a0000000000000000, 0x000000086e0c158b27136237166d5dab00000000001dc45a0000000000000000 ],
 
 ["knight_5_9", "Robert Howard of Tendring", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse,itm_nobleman_outfit,itm_milanese_armour,itm_woolen_hose,itm_steel_greaves,itm_klappvisier,itm_great_bardiche,itm_tab_shield_heater_d,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000006dd00d408369a51275575e2b300000000001d456b0000000000000000, 0x00000006dd00d408369a51275575e2b300000000001d456b0000000000000000 ],
+    0x000000079900d5052d9c7133a369285d00000000001e45a50000000000000000, 0x000000079900d5052d9c7133a369285d00000000001e45a50000000000000000 ],
 
 # ["knight_5_10", "Lord Falsevor", "knight_5_0", tf_hero, 0, reserved,  fac_kingdom_2,[itm_warhorse,           itm_rich_outfit,  itm_milanese_armour,     itm_blue_hose,  itm_iron_greaves,       itm_great_helmet,       itm_bastard_sword_a,   itm_tab_shield_heater_d],  knight_attrib_5,wp(130),knight_skills_5|knows_trainer_4, 0x00000008e20011063d9b6d4a92ada53500000000001cc1180000000000000000, rhodok_face_older_2],
 
@@ -1173,31 +1173,31 @@ troops = [
 
 ["knight_5_14", "Bertrand V de La Tour d'Auvergne", "Seigneur de La Tour", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f1,itm_leather_jacket,itm_milanese_armour,itm_woolen_hose,itm_steel_greaves,itm_greatbascinet1,itm_bastard_sword_a,itm_tab_shield_heater_d,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000727005009409b6eb56e70e4ec00000000001d37090000000000000000, 0x0000000727005009409b6eb56e70e4ec00000000001d37090000000000000000 ],
+    0x000000002e0c700c372449a8cbcea29d00000000001d17230000000000000000, 0x000000002e0c700c372449a8cbcea29d00000000001d17230000000000000000 ],
 
 ["knight_5_15", "Ambroise de Loré", "Capitaine de Sainte-Suzanne", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsecharlesv,itm_nobleman_outfit_charles,itm_bb_complet_plates_charles,itm_woolen_hose,itm_iron_greaves,itm_great_helmet,itm_sword_two_handed_a,itm_hourglass_gauntlets_ornate,itm_tab_shield_heater_cav_a], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000009bd05114f2b9b723789ce2ae200000000001cb6650000000000000000, 0x00000009bd05114f2b9b723789ce2ae200000000001cb6650000000000000000 ],
+    0x000000000010b00f25228928ea66d75300000000001d471d0000000000000000, 0x000000000010b00f25228928ea66d75300000000001d471d0000000000000000 ],
 
 ["knight_5_16", "Jean Foucault", "Seigneur de Saint-Germain", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorsechandos,itm_nobleman_outfit_charles,itm_bb_complet_plates_b,itm_woolen_hose,itm_steel_greaves,itm_klappvisier,itm_4hammer,itm_bastard_sword_a,itm_war_shield3lys], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000002a0c10104b43d9571b51272b00000000001d352c0000000000000000, 0x000000002a0c10104b43d9571b51272b00000000001d352c0000000000000000 ],
+    0x000000094504b0064593a2d7624a137400000000001edad30000000000000000, 0x000000094504b0064593a2d7624a137400000000001edad30000000000000000 ],
 
 ["knight_5_17", "Théodore de Valpergue", "Comte de Valpergue", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f2,itm_nobleman_outfit_charles,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_greatbascinet1,itm_bastard_sword_a,itm_tab_shield_heater_c,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000bef04c51422a66dd6dd9a28d200000000001dd9750000000000000000, 0x0000000bef04c51422a66dd6dd9a28d200000000001dd9750000000000000000 ],
+    0x000000000a0c758f569a89c51a4d396d00000000001d5adb0000000000000000, 0x000000000a0c758f569a89c51a4d396d00000000001d5adb0000000000000000 ],
 
 ["knight_5_18", "Robert de Baudricourt", "Seigneur de Baudricourt", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f3,itm_nobleman_outfit_charles,itm_gothic_armour,itm_woolen_hose,itm_iron_greaves,itm_greatbascinet1,itm_lui_vaegirhallberd,itm_tab_shield_heater_d,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000eca0c958f569a89c51a4d396d00000000001d5adb0000000000000000, 0x0000000eca0c958f569a89c51a4d396d00000000001d5adb0000000000000000 ],
+    0x000000001904e006596cea38d44a359400000000001e39b40000000000000000, 0x000000001904e006596cea38d44a359400000000001e39b40000000000000000 ],
 
 ["knight_5_19", "Bertrand de Poulengy", "Seigneur de Gondrecourt", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f2,itm_nobleman_outfit_charles,itm_bb_complet_plates_b,itm_woolen_hose,itm_steel_greaves,itm_pigface_klappvisor_open,itm_4hammer,itm_sword_two_handed_a,itm_war_shield3lys,itm_hourglass_gauntlets_ornate], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000edf087209799c8ea92c75c74e00000000001d49a20000000000000000, 0x0000000edf087209799c8ea92c75c74e00000000001d49a20000000000000000 ],
+    0x0000000000044004128bad276a7aa89600000000001d24e40000000000000000, 0x0000000000044004128bad276a7aa89600000000001d24e40000000000000000 ],
 
 ["knight_5_20", "Guillaume Bellier", "Seigneur de Chérelles, Grand Veneur du Roi", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f2,itm_nobleman_outfit_charles,itm_bb_complet_plates_b,itm_blue_hose,itm_iron_greaves,itm_great_helmet,itm_bastard_sword_b,itm_tab_shield_heater_d,itm_hourglass_gauntlets_ornate,itm_bastard_sword_b], 
   lord_attrib,wp(380),knows_lord_1,
-     0x0000000bef04c51422a66dd6dd9a28d200000000001dd9750000000000000000, 0x0000000bef04c51422a66dd6dd9a28d200000000001dd9750000000000000000 ],
+     0x000000000500900228aa45c6514ab60c00000000001d385b0000000000000000, 0x000000000500900228aa45c6514ab60c00000000001d385b0000000000000000 ],
 
 ["knight_6_1", "Pierre Bessonneau", "Maître de l'Artillerie", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f3,itm_nobleman_out,itm_woolen_hose,itm_gothic_armour,itm_blue_tourney_armor,itm_iron_greaves,itm_pigface_klappvisor,itm_bastard_sword_a,itm_tab_shield_heater_d,itm_bastard_sword_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1205,11 +1205,11 @@ troops = [
 
 ["knight_6_2", "Guillaume de Chaumont-Quitry", "Capitaine", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f3,itm_nobleman_out,itm_woolen_hose,itm_gothic_armour,itm_blue_tourney_armor,itm_iron_greaves,itm_pigface_klappvisor,itm_bastard_sword_b,itm_tab_shield_heater_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000008030c72c568d3aad71d92375b00000000001d649c0000000000000000, 0x00000008030c72c568d3aad71d92375b00000000001d649c0000000000000000 ],
+    0x00000007c30ca00568d3aad71d92375b00000000001d649c0000000000000000, 0x00000007c30ca00568d3aad71d92375b00000000001d649c0000000000000000 ],
 
 ["knight_6_3", "Bernard de Comminges", "Capitaine", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse,itm_nobleman_out,itm_woolen_hose,itm_gothic_armour,itm_blue_tourney_armor,itm_iron_greaves,itm_pigface_klappvisor,itm_bastard_sword_b,itm_tab_shield_heater_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000003bf1115c126938a32e5ab476300000000001ddba4000000000000000, 0x00000003bf1115c126938a32e5ab476300000000001ddba4000000000000000 ],
+    0x00000006c008400f2505a9c8e1b0573400000000001dc6fe0000000000000000, 0x00000006c008400f2505a9c8e1b0573400000000001dc6fe0000000000000000 ],
 
 ["knight_6_4", "Girault de La Paillière", "Capitaine", tf_hero, no_scene, reserved, fac_kingdom_1, [itm_warhorse_f1,itm_nobleman_out_fr,itm_blue_hose,itm_gothic_armour,itm_iron_greaves,itm_pigface_klappvisor_open,itm_bastard_sword_b,itm_tab_shield_heater_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1229,11 +1229,11 @@ troops = [
 
 ["knight_6_8", "Jacques de Brimeu", "Seigneur de Grigny", tf_hero|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_warhorse_en2,itm_nobleman_outfit,itm_woolen_hose,itm_milanese_armour,itm_iron_greaves,itm_great_helm_wings_teut,itm_bastard_sword_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000021041584189c731b5991e50e00000000001e1ea20000000000000000, 0x0000000021041584189c731b5991e50e00000000001e1ea20000000000000000 ],
+    0x000000000c04300b44ad52545e6ac89600000000001d4aaa0000000000000000, 0x000000000c04300b44ad52545e6ac89600000000001d4aaa0000000000000000 ],
 
 ["knight_6_9", "Colart de Brimeu", "Seigneur de Maizicourt", tf_hero|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_warhorse_en2,itm_nobleman_outfit,itm_woolen_hose,itm_milanese_armour,itm_iron_greaves,itm_greathelm1,itm_sword_two_handed_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000000210425c4189c731b5991e50e00000000001e1ea20000000000000000, 0x00000000210425c4189c731b5991e50e00000000001e1ea20000000000000000 ],
+    0x0000000021040005189c731b5991e50e00000000001e16a20000000000000000, 0x0000000021040005189c731b5991e50e00000000001e16a20000000000000000 ],
 
 #ANGLAIS+
 ["knight_6_10", "Walter Fitzwalter", "Lord Fitzwalter", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse_en2,itm_nobleman_out,itm_woolen_hose,itm_gothic_armour,itm_iron_greaves,itm_hounskull,itm_tab_shield_kite_cav_b,itm_bastard_sword_a,itm_hourglass_gauntlets],
@@ -1242,7 +1242,7 @@ troops = [
 
 ["knight_6_11", "Owen Tudor", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse_en2,itm_nobleman_out,itm_woolen_hose,itm_gothic_armour,itm_iron_greaves,itm_hounskull,itm_tab_shield_kite_cav_b,itm_bastard_sword_a,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x00000000210450c5189c931b5991e50e00000000001e1ea20000000000000000, 0x00000000210450c5189c931b5991e50e00000000001e1ea20000000000000000 ],
+    0x0000000000046005189c93175991e50e00000000001e18a20000000000000000, 0x0000000000046005189c93175991e50e00000000001e18a20000000000000000 ],
 
 ["knight_6_12", "Prigent VII de Coëtivy", "Seigneur de Coëtivy", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_nobleman_out,itm_woolen_hose,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1287,7 +1287,7 @@ troops = [
 
 ["knight_6_22", "Thomas Rempston", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [itm_warhorse3lions,itm_nobleman_out,itm_woolen_hose,itm_gothic_armour,itm_iron_greaves,itm_pigface_klappvisor_open,itm_tab_shield_kite_cav_b,itm_bastard_sword_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000086504e0106322a9d56429daea00000000001e469c0000000000000000, 0x000000086504e0106322a9d56429daea00000000001e469c0000000000000000 ],
+    0x00000007f004c00622cbae395b99356e00000000001d54d30000000000000000, 0x00000007f004c00622cbae395b99356e00000000001d54d30000000000000000 ],
 
 ["knight_6_23", "Alain IX de Rohan", "Jean de Derval", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_woolen_hose,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight,itm_nobleman_outfit_charles], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1311,7 +1311,7 @@ troops = [
 
 ["knight_6_28", "Guillaume IV de Vienne", "Seigneur de Saint-Georges et de Sainte-Croix", tf_hero|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_warhorse_en2,itm_nobleman_out,itm_woolen_hose,itm_gothic_armour,itm_iron_greaves,itm_greatbascinet1,itm_tab_shield_kite_cav_b,itm_bastard_sword_b,itm_hourglass_gauntlets], 
   lord_attrib,wp(380),knows_lord_1,
-    0x0000000ecb0013d431226ab6ea4dc8e400000000001e371d0000000000000000, 0x0000000ecb0013d431226ab6ea4dc8e400000000001e371d0000000000000000 ],
+    0x000000002904618c229b7335544a9d5900000000001d24590000000000000000, 0x000000002904618c229b7335544a9d5900000000001d24590000000000000000 ],
 
 ["knight_6_29", "Guillaume de Rosmadec", "Baron de Rosmadec", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_woolen_hose,itm_nobleman_outfit_charles,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1319,14 +1319,14 @@ troops = [
 
 ["knight_6_30", "Pierre de Rochefort", "Seigneur de Rieux et de Rochefort", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_nobleman_outfit_charles,itm_woolen_hose,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000095700e5d0251b7259536d36dc00000000001e36db0000000000000000, 0x000000095700e5d0251b7259536d36dc00000000001e36db0000000000000000 ],
+    0x00000004ef0cd00424592ab29acd479d00000000001ccb240000000000000000, 0x00000004ef0cd00424592ab29acd479d00000000001ccb240000000000000000 ],
 
 #["knight_6_31", "EmirX Raddoun", "Raddoun", tf_hero, no_scene, reserved, fac_kingdom_3, [itm_warhorse_en2,itm_rich_outfit,itm_woolen_hose,itm_gothic_armour,itm_iron_greaves,itm_greatbascinet1,itm_tab_shield_kite_cav_b,itm_bastard_sword_b], knight_attrib_2, wp(150), knight_skills_2|knows_riding_5, 0x000000007f0462c32419f47a1aba8bcf00000000001e7e090000000000000000, rhodok_face_old_2 ],
 
 #bretagne_edition_acier
 ["knight_6_31", "Richard de Montfort", "Comte d'Etampes", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_woolen_hose,itm_nobleman_outfit_charles,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000018000000236db8e495b6db6db00000000001d46db0000000000000000, 0x000000018000000236db8e495b6db6db00000000001d46db0000000000000000 ],
+    0x000000000010400457538a258d69271300000000001e38f30000000000000000, 0x000000000010400457538a258d69271300000000001e38f30000000000000000 ],
 
 ["knight_6_32", "Bertrand de Dinan", "", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_nobleman_outfit_anglais,itm_woolen_hose,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight], 
   lord_attrib,wp(380),knows_lord_1,
@@ -1342,11 +1342,11 @@ troops = [
 
 ["knight_6_35", "Olivier de Blois", "Comte de Penthievre", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_woolen_hose,itm_nobleman_outfit_anglais,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight],
   lord_attrib,wp(380),knows_lord_1,
-    0x000000079b00514f251b8a3ae465249b00000000001e36db0000000000000000, 0x000000079b00514f251b8a3ae465249b00000000001e36db0000000000000000 ],
+    0x000000000000a00f251b8a3ae465249b00000000001e36db0000000000000000, 0x000000000000a00f251b8a3ae465249b00000000001e36db0000000000000000 ],
 
 ["knight_6_36", "Rolland de Coëtmen", "", tf_hero, no_scene, reserved, fac_kingdom_4, [itm_nobleman_outfit_charles,itm_woolen_hose,itm_breton_warhorse_2,itm_breton_warhorse_2,itm_breton_complet_plates,itm_bb_armet2,itm_bb_greathelm_bp,itm_wisby_gauntlets_black,itm_plate_mittens,itm_shynbaulds,itm_steel_greaves,itm_tab_shield_heater_a,itm_tab_shield_heater_cav_a,itm_caithness,itm_agincourt,itm_knight], 
   lord_attrib,wp(380),knows_lord_1,
-    0x000000079b006150251b8a3ae465249b00000000001e36db0000000000000000, 0x000000079b006150251b8a3ae465249b00000000001e36db0000000000000000 ],
+    0x000000001b003191251b8a3ae465249b00000000001e36db0000000000000000, 0x000000001b003191251b8a3ae465249b00000000001e36db0000000000000000 ],
 
 #["knight_6_37", "Seigneur breton 7", "Albert de Macon", tf_hero|tf_bourgignon, no_scene, reserved, fac_kingdom_4, [], knight_attrib_1, wp(120), knight_skills_1|knows_riding_5, 0x00000006fd10a29034a38234dc86475900000000001f370a0000000000000000, 0x00000006fd10a29034a38234dc86475900000000001f370a0000000000000000 ],
 #["knight_6_38", "Seigneur breton 8", "Albert de Macon", tf_hero|tf_bourgignon, no_scene, reserved, fac_kingdom_4, [], knight_attrib_1, wp(120), knight_skills_1|knows_riding_5, 0x00000006fd10a29034a38234dc86475900000000001f370a0000000000000000, 0x00000006fd10a29034a38234dc86475900000000001f370a0000000000000000 ],

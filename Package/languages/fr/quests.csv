@@ -1,0 +1,165 @@
+qst_deliver_message|Deliver Message to {s13}
+qst_deliver_message_to_enemy_lord|Porter un message à {s13}
+qst_raise_troops|Former {reg1} {s14}
+qst_escort_lady|Escorter {s13} jusqu'à {s14}
+qst_deal_with_bandits_at_lords_village|Sauver le village de {s15} des bandits
+qst_collect_taxes|Collecter les taxes de {s3}
+qst_hunt_down_fugitive|Pourchasser {s4}
+qst_kill_local_merchant|Assassiner un marchand à {s3}
+qst_bring_back_runaway_serfs|Ramener les serfs en fuite
+qst_follow_spy|Suivre un espion jusqu'à son lieu de rendez-vous
+qst_capture_enemy_hero|Capturer un seigneur du {s13}
+qst_lend_companion|Accorder l'aide de votre compagnon {s3} à {s9}
+qst_collect_debt|Récupérer l'argent que doit {s3} à {s9}
+qst_incriminate_loyal_commander|Faire accuser {s16}, le loyal Commandant de {s13}
+qst_meet_spy_in_enemy_town|Rencontrer un espion à {s13}
+qst_capture_prisoners|Amener {reg1} {s3} prisonniers
+qst_lend_surgeon|Accorder à {s1} l'aide de {s3}, votre chirurgien 
+qst_follow_army|Suivre l'armée de {s9}
+qst_report_to_army|Rendre compte au Maréchal, {s13}
+qst_deliver_cattle_to_army|Ramener {reg3} têtes de bétail à {s13}
+qst_join_siege_with_army|Participer au siège de {s14}
+qst_screen_army|Jalonner l'avance de l'armée de {s13}
+qst_scout_waypoints|Partir en éclaireur les lieux assignés
+qst_rescue_lord_by_replace|Délivrer {s13} du {s14}
+qst_deliver_message_to_prisoner_lord|Porter un message à {s13} à {s14}
+qst_duel_for_lady|Défier {s13} en duel
+qst_duel_courtship_rival|Défier {s13} en duel (facultatif)
+qst_duel_avenge_insult|Défier {s13} en duel
+qst_move_cattle_herd|Mener le bétail à {s13}
+qst_escort_merchant_caravan|Escorter la caravane du marchand jusqu'à {s8}
+qst_deliver_wine|Apporter {reg5} unités de {s6} à {s4}
+qst_troublesome_bandits|Pourchasser les bandits gêneurs
+qst_kidnapped_girl|Payer la rançon d'une fille aux bandits
+qst_persuade_lords_to_make_peace|S'assurer que les deux seigneurs ne puissent s'opposer à la paix
+qst_deal_with_looters|S'occuper des pilleurs
+qst_deal_with_night_bandits|S'occuper des bandits nocturnes
+qst_deliver_grain|Apporter du blé à {s3}
+qst_deliver_cattle|Amener {reg5} têtes de bétail à {s3}
+qst_train_peasants_against_bandits|Entraîner les paysans de {s13} à combattre les bandits.
+qst_eliminate_bandits_infesting_village|Sauver le village de {s7} des bandits
+qst_visit_lady|Rendre visite à une dame
+qst_formal_marriage_proposal|Demander en mariage sa dulcinée
+qst_obtain_liege_blessing|Obtenir l'aval du père de la mariée
+qst_wed_betrothed|Épouser votre fiancée
+qst_wed_betrothed_female|Épouser votre fiancé
+qst_join_faction|Prêter serment d'allégeance à {s1}
+qst_rebel_against_kingdom|Aider {s13} à revendiquer le trône de {s14}
+qst_consult_with_minister|Consulter le ministre
+qst_organize_feast|Organiser un banquet
+qst_resolve_dispute|Résoudre un différend
+qst_offer_gift|Offrir un cadeau
+qst_denounce_lord|Dénoncer un seigneur
+qst_intrigue_against_lord|Intriguer contre un seigneur
+qst_track_down_bandits|Traquer les bandits
+qst_track_down_provocateurs|Traquer les provocateurs
+qst_retaliate_for_border_incident|Riposter à un incident frontalier
+qst_raid_caravan_to_start_war|Attaquer une caravane pour provoquer une guerre
+qst_cause_provocation|Pousser un royaume à en attaquer un autre
+qst_rescue_prisoner|Libérer un prisonnier
+qst_destroy_bandit_lair|Détruire le repaire des bandits
+qst_collect_men|Recruter cinq hommes
+qst_learn_where_merchant_brother_is|Découvrir où sont retenus les otages.
+qst_save_relative_of_merchant|Attaquer le repaire des bandits
+qst_save_town_from_bandits|Sauver la ville des bandits
+qst_rebelc1|[Rebels] Rencontrer le chef rebel de Montpellier.
+qst_rebelvivre_montpelier|[Rebels] Trouver des provisions pour les rebels de Montpellier.
+qst_rebel_attack_c1|[Rebels] Attaquer le convoi d'armes pret du village de Rodez.
+qst_sl_1caserne|[Compagnie du SansLys] Passer le test d'admission pour travailler avec les SansLys.
+qst_sl_patrouil1|[Compagnie du SansLys] Patrouiller a Bourges en renfort de la millice.
+qst_sl_ivrogne1|[Compagnie du SansLys] Débarasser la taverne des trois Lys de Bourges du mercenaire ivre.
+qst_sl_viland_troop1|[Compagnie du SansLys] Débarasser Bourges de la troupe de brigands rodant aux allentours de la ville.
+qst_sl_viland_attack1|[Compagnie du SansLys] Rejoindre la bataille des entrepots de Bourges.
+qst_sl_deffensse_benezet|[Compagnie du SansLys] Ralier Avignon deffendue par le SansLys pour soutenire le siege.
+qst_rebel_camp_atck1|[Rebels] Attaquer le camp Anglais qui attend des renforts pret du chateau du Puy.
+qst_rebel_toul|[Rebels] Rejoindre les rebels au village de Toul autrefois gagné par la peste.
+qst_rebel_chearchcamp|[Rebels] Fouiller les ruines de Toul pour retrouver les rebels de Bourgogne.
+qst_rebel_entrepmetz|[Rebels] Attaquer l'entrepot de nouriture de Metz.
+qst_rebel_placeforte|[Rebels] Prendre la place forte Bourgignone.
+qst_rebel_shearchlico|[La Licorne] Rencontrer le heros rebel que tout le monde appelle la Licorne.
+qst_rebel_assas_comtcaen|[La Licorne] Assassiner des perssonages enemis importants.
+qst_rebel_asassin_chasse|[La Licorne] Tuer le gouverneur Anglois dans son campement de chasse.
+qst_rebel_manoir|[La Licorne] Empoisoner le banquier au manoire de Reims.
+qst_rodrig_vol_cle|[Brigands] Récuperer une clé pour Villandrandro.
+qst_cambriolage_chateau|[Brigands] Cambrioler le chateau a Tours.
+qst_extorsion|[Brigands] Réclamer le verssement des marchands de Paris.
+qst_kill_mathieu|[Brigands] Tuer le traitre.
+qst_conffes_chevalier|[Licorne] Se conffesser aux fins de devenire Chevalier.
+qst_rebel_catahugry|[Rebels] Trouver des victuailles pour les rebels de Paris cachés dans les catacombes.
+qst_rebel_cataparang|[Rebels] débarasser les rebels des catacombes de Paris de la patrouille Anglaise.
+qst_crypt_sworr|Retrouver l'épée de l'écuyer.
+qst_find_epeepour_jeanne|[Jeanne la Lorraine] Retrouver une mysterieuse épée.
+qst_foret_filleroeun|Retrouver la fille du riche marchand de Rouen.
+qst_cata_compagnon|Retrouver le mari de Madeleine de Montpellier.
+qst_messager_qst0|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Montpellier.
+qst_messager_qst1|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Marseille.
+qst_messager_qst2|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Paris.
+qst_messager_qst3|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Dijon.
+qst_messager_qst4|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Caen.
+qst_messager_qst5|[Guilde des Messagers de France] Apporter la cargaison au vendeur de livres de Bordeau.
+qst_messager_qst6|[Guilde des Messagers de France] Apporter la cargaison a l'armurier de Paris.
+qst_messager_qst7|[Guilde des Messagers de France] Apporter la cargaison a l'armurier d'Avignon.
+qst_messager_qst9|[Guilde des Messagers de France] Apporter la cargaison au forgeron de Reims.
+qst_messager_qst0b|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Montpellier.
+qst_messager_qst1b|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Marseille.
+qst_messager_qst2b|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Paris.
+qst_messager_qst3b|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Dijon.
+qst_messager_qst4b|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Caen.
+qst_messager_qst5b|[Guilde des Messagers de France] Apporter la cargaison au vendeur de livres de Bordeau.
+qst_messager_qst6b|[Guilde des Messagers de France] Apporter la cargaison a l'armurier de Paris.
+qst_messager_qst7b|[Guilde des Messagers de France] Apporter la cargaison a l'armurier d'Avignon.
+qst_messager_qst9b|[Guilde des Messagers de France] Apporter la cargaison au forgeron de Reims.
+qst_messager_qst0d|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Montpellier.
+qst_messager_qst1d|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Marseille.
+qst_messager_qst2d|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Paris.
+qst_messager_qst3d|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Dijon.
+qst_messager_qst4d|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Caen.
+qst_messager_qst5d|[Guilde des Messagers de France] Apporter la cargaison au vendeur de livres de Bordeau.
+qst_messager_qst6d|[Guilde des Messagers de France] Apporter la cargaison a l'armurier de Paris.
+qst_messager_qst7d|[Guilde des Messagers de France] Apporter la cargaison a l'armurier d'Avignon.
+qst_messager_qst9d|[Guilde des Messagers de France] Apporter la cargaison au forgeron de Reims.
+qst_messager_qst0m|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Montpellier.
+qst_messager_qst1m|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Marseille.
+qst_messager_qst2m|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Paris.
+qst_messager_qst3m|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Dijon.
+qst_messager_qst4m|[Guilde des Messagers de France] Apporter la lettre au Maistre de guilde des Marchands de Caen.
+qst_messager_qst5m|[Guilde des Messagers de France] Apporter la cargaison au vendeur de livres de Bordeau.
+qst_messager_qst6m|[Guilde des Messagers de France] Apporter la cargaison a l'armurier de Paris.
+qst_messager_qst7m|[Guilde des Messagers de France] Apporter la cargaison a l'armurier d'Avignon.
+qst_messager_qst9m|[Guilde des Messagers de France] Apporter la cargaison au forgeron de Reims.
+qst_banque30|[Banquiers] Remboursser 3300 écus au Banquiers.
+qst_banque60|[Banquiers] Remboursser 6600 écus au Banquiers.
+qst_banque90|[Banquiers] Remboursser 9900 écus au Banquiers.
+qst_banque14|[Banquiers] Remboursser 15.400 écus au Banquiers.
+qst_braconage|Les braconniers.
+qst_tresort_t|Le tresor des Templiers.
+qst_rennes_chateau|Une piste improbable.
+qst_ouvrire_loge|La loge secrete.
+qst_loge_s_paris|Prés du but.
+qst_auberge_quete_1|Le manoir dans la vallée.
+qst_cheval_perdu|Le cheval dans la prairie.
+qst_pour_le_duc|Pour le Duc !
+qst_fer_pour_la_guerre|Du fer pour la guerre.
+qst_volntaires_mine|Des volontaires.
+qst_expedition_mine|Vers le centre de la terre.
+qst_terrier|Le terrier des hermines de fer.
+qst_tuer_mercenaire|Par tous les moyens.
+qst_bois_descerfs|Le bois des cerfs.
+qst_port_lac|La porte du lac.
+qst_pnj_perdu_foretaub|La foret glacée.
+qst_vangeance_cravane|La revanche des Caravaniers.
+qst_surveillance1|Le poste de garde.
+qst_siege_penthievre|Le siège de Quintin.
+qst_freelancer_enlisted|Enlisted in the Party of {s13}
+qst_freelancer_vacation|Enlisted: On Leave
+qst_freelancer_captured|Enlisted: Captured
+qst_freelancer_mission_1|Freelancer Mission: Hunt Down Deserters
+qst_freelancer_mission_2|Freelancer Mission: Pacify Unhappy Troops
+qst_freelancer_mission_3|Freelancer Mission: 
+qst_freelancer_mission_4|Freelancer Mission: 
+qst_freelancer_mission_5|Freelancer Mission: 
+qst_freelancer_mission_6|Freelancer Mission: 
+qst_freelancer_mission_7|Freelancer Mission: 
+qst_freelancer_mission_8|Freelancer Mission: 
+qst_freelancer_mission_9|Freelancer Mission: 
+qst_quests_end|Fin des quêtes

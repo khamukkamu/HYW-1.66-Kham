@@ -1,0 +1,2230 @@
+trp_multiplayer_profile_troop_male|Profil multijoueur homme
+trp_multiplayer_profile_troop_male_pl|Profils multijoueurs hommes
+trp_multiplayer_profile_troop_female|Profil multijoueur femme
+trp_multiplayer_profile_troop_female_pl|Profils multijoueurs femmes
+trp_temp_troop|Troupe temporaire
+trp_temp_troop_pl|Troupes temporaires
+trp_find_item_cheat|trouver objet
+trp_find_item_cheat_pl|trouver objets
+trp_random_town_sequence|Série aléatoire de villes
+trp_random_town_sequence_pl|Séries aléatoires de villes
+trp_tournament_participants|Participants du tournoi
+trp_tournament_participants_pl|Participants du tournoi
+trp_tutorial_maceman|Brute
+trp_tutorial_maceman_pl|Brute
+trp_tutorial_archer|Ber l'archer
+trp_tutorial_archer_pl|Ber l'archer
+trp_tutorial_swordsman|Bob l'épéiste
+trp_tutorial_swordsman_pl|Bob l'épéiste
+trp_novice_fighter|Novice
+trp_novice_fighter_pl|Novices
+trp_regular_fighter|Combattant
+trp_regular_fighter_pl|Combattants
+trp_veteran_fighter|Vétéran
+trp_veteran_fighter_pl|Vétérans
+trp_champion_fighter|Champion
+trp_champion_fighter_pl|Champions
+trp_arena_training_fighter_1|Combattant maladroit
+trp_arena_training_fighter_1_pl|Combattants maladroits
+trp_arena_training_fighter_2|Lutteur novice
+trp_arena_training_fighter_2_pl|Lutteurs novices
+trp_arena_training_fighter_3|Brute
+trp_arena_training_fighter_3_pl|Brutes
+trp_arena_training_fighter_4|Bretteur
+trp_arena_training_fighter_4_pl|Bretteurs 
+trp_arena_training_fighter_5|Soldat régulier
+trp_arena_training_fighter_5_pl|Soldats réguliers 
+trp_arena_training_fighter_6|Lutteur accompli
+trp_arena_training_fighter_6_pl|Lutteurs accomplis
+trp_arena_training_fighter_7|Bretteur expérimenté
+trp_arena_training_fighter_7_pl|Bretteurs expérimentés
+trp_arena_training_fighter_8|Soldat vétéran
+trp_arena_training_fighter_8_pl|Soldats vétérans
+trp_arena_training_fighter_9|Tournoyeur aguerri
+trp_arena_training_fighter_9_pl|Tournoyeurs aguerris
+trp_arena_training_fighter_10|Champion
+trp_arena_training_fighter_10_pl|Champions
+trp_cattle|Bétail
+trp_cattle_pl|Bétail
+trp_farmer|Fermier
+trp_farmer_pl|Fermiers
+trp_townsman|Habitant du bourg
+trp_townsman_pl|Habitants du bourg
+trp_watchman|Guetteur
+trp_watchman_pl|Guetteurs
+trp_caravan_guard|Gardien de convoi
+trp_caravan_guard_pl|Gardiens de convoi
+trp_mercenary_crossbowman|Arbalétrier mercenaire
+trp_mercenary_crossbowman_pl|Arbalétriers mercenaires
+trp_mercenary_horseman|Cavalier mercenaire
+trp_mercenary_horseman_pl|Cavaliers mercenaires
+trp_mercenary_cavalry|Cavalerie mercenaire
+trp_mercenary_cavalry_pl|Cavaleries mercenaires
+trp_mercenary_swordsman|Épéiste mercenaire
+trp_mercenary_swordsman_pl|Épéistes mercenaires
+trp_genoese_crossbowman|Arbalétrier Génois
+trp_genoese_crossbowman_pl|Arbalétrier Génois
+trp_german_knight|Mercenaire allemand
+trp_german_knight_pl|Mercenaries allemandes
+trp_hired_blade|Spadassin
+trp_hired_blade_pl|Spadassins
+trp_swiss_veteran_halberdier|hallebardier suisse
+trp_swiss_veteran_halberdier_pl|hallebardiers suisses
+trp_coulveriners|Couleuvrinier
+trp_coulveriners_pl|Couleuvriniers
+trp_arquebusier|Arquebusier
+trp_arquebusier_pl|Arquebusiers
+trp_sang_lysrecruit|Mercenaire du SansLys
+trp_sang_lysrecruit_pl|Mercenaire du SansLys
+trp_mercenaries_end|Objectif des mercenaires
+trp_mercenaries_end_pl|Objectifs de mercenaires 
+trp_recruiter|Recruiter
+trp_recruiter_pl|Recruiter
+trp_monk|Moine
+trp_monk_pl|Millice
+trp_lumberman|Millice
+trp_lumberman_pl|Bûcherons
+trp_priest|Prêtre
+trp_priest_pl|Piquier millicien
+trp_executioner|Piquiers milliciens
+trp_executioner_pl|Bourreaus
+trp_sentry|Sentinelle
+trp_sentry_pl|Sentinelles
+trp_chaplain|Aumônier
+trp_chaplain_pl|Piquier millicien lourd
+trp_torturer|Piquiers millicien lourd
+trp_torturer_pl|Exécuteurs
+trp_city_guard|City Guard
+trp_city_guard_pl|City Guards
+trp_bishop|Hallbardier
+trp_bishop_pl|Hallbardiers
+trp_rider|Chevalier
+trp_rider_pl|Chevaliers
+trp_master_rider|Master Rider
+trp_master_rider_pl|Master Riders
+trp_swadian_recruit|Recrue francaise
+trp_swadian_recruit_pl|Recrues francaises
+trp_swadian_militia|Milicien francais
+trp_swadian_militia_pl|Miliciens francais
+trp_swadian_footman|Fantassin de france
+trp_swadian_footman_pl|Fantassins francais
+trp_french_spearmen|Piquier français
+trp_french_spearmen_pl|Piquiers français
+trp_swadian_infantry|Fantassin lourd francais
+trp_swadian_infantry_pl|Fantassins lourds francais
+trp_swadian_sergent|Sergent Francais
+trp_swadian_sergent_pl|Sergents Francais
+trp_french_hallebardier|Hallbardier français
+trp_french_hallebardier_pl|Hallbardiers français
+trp_french_pikemen|Vougier francais
+trp_french_pikemen_pl|Vougiers francais
+trp_swadian_sergeant|Massier francais 
+trp_swadian_sergeant_pl|Massiers francais
+trp_french_javelinier|Paysan Archer français
+trp_french_javelinier_pl|Paysans Archers français
+trp_swadian_skirmisher|Tirailleur francais
+trp_swadian_skirmisher_pl|Tirailleurs francais
+trp_french_bowmen|Archer français
+trp_french_bowmen_pl|Archers français
+trp_swadian_crossbowman|Arbalétrier francais
+trp_swadian_crossbowman_pl|Arbalétriers francais
+trp_swadian_sharpshooter|Arbalétrier lourd francais
+trp_swadian_sharpshooter_pl|Arbalétriers lourds francais
+trp_swadian_man_at_arms|écuyer francais
+trp_swadian_man_at_arms_pl|écuyers francais
+trp_swadian_knight|Chevalier bachelier francais
+trp_swadian_knight_pl|Chevaliers bacheliers francais
+trp_french_chevalier_banneret|Chevalier Banneret français
+trp_french_chevalier_banneret_pl|Chevaliers Bannerets français
+trp_french_chevalier_lancier|Lancier francais
+trp_french_chevalier_lancier_pl|Lancier francais
+trp_french_chevalier_bachelier_a_pied|Chevalier Bachelier français à Pied
+trp_french_chevalier_bachelier_a_pied_pl|Chevaliers Bacheliers français à Pied
+trp_french_chevalier_banneret_a_pied|Chevalier Banneret français à Pied
+trp_french_chevalier_banneret_a_pied_pl|Chevaliers Bannerets français à Pied
+trp_french_chevalier_lancier_a_pied|Lancier francais a pieds
+trp_french_chevalier_lancier_a_pied_pl|Lancier francais a pieds
+trp_swadian_messenger|Messager francais
+trp_swadian_messenger_pl|Messagers francais
+trp_swadian_deserter|Déserteur francais
+trp_swadian_deserter_pl|Déserteurs francais
+trp_swadian_prison_guard|geolier
+trp_swadian_prison_guard_pl|geoliers
+trp_swadian_castle_guard|Garde
+trp_swadian_castle_guard_pl|Gardes
+trp_coulveriners_f|Couleuvrinier Francais
+trp_coulveriners_f_pl|Couleuvriniers Francais
+trp_arquebusier_f|Arquebusier Francais
+trp_arquebusier_f_pl|Arquebusiers Francais
+trp_vaegir_recruit|Recrue Anglaise
+trp_vaegir_recruit_pl|Recrues Anglaises
+trp_vaegir_footman|Millicen Anglais
+trp_vaegir_footman_pl|Millicens Anglais
+trp_english_spearman|Piquier anglais
+trp_english_spearman_pl|Piquiers anglais
+trp_vaegir_veteran|Fantassin anglais
+trp_vaegir_veteran_pl|Fantassins anglais
+trp_english_pikeman|Vougier lourd Anglais
+trp_english_pikeman_pl|Vougiers lourds Anglais
+trp_english_halberdier|Guisarmier Anglais
+trp_english_halberdier_pl|Guisarmiers Anglais
+trp_vaegir_guard|Garde Anglais 
+trp_vaegir_guard_pl|Gardes Anglais
+trp_vaegir_infantry|Infanterie lourde Anglaise
+trp_vaegir_infantry_pl|Infanteries lourdes Anglaises
+trp_vaegir_sergent|Sergent Anglais
+trp_vaegir_sergent_pl|Sergents Anglais
+trp_english_peasant_crossbowman|Arbalétrier paysan anglais
+trp_english_peasant_crossbowman_pl|Arbalétriers paysans anglais
+trp_vaegir_skirmisher|Tirailleur Anglais
+trp_vaegir_skirmisher_pl|Tirailleurs Anglais
+trp_vaegir_archer|Archer Anglais
+trp_vaegir_archer_pl|Archers Anglais
+trp_vaegir_marksman|Archer long Anglais
+trp_vaegir_marksman_pl|Archers longs Anglais
+trp_vaegir_horseman|Ecuyer Anglais
+trp_vaegir_horseman_pl|Ecuyers Anglais
+trp_vaegir_knight|Chevalier Anglais
+trp_vaegir_knight_pl|Chevaliers Anglais
+trp_english_heavy_knight|English Heavy Knight
+trp_english_heavy_knight_pl|English Heavy Knights
+trp_saint_georges_knight|Order Of Saint Georges Knight
+trp_saint_georges_knight_pl|Order Of Saint Georges Knights
+trp_english_longbowman_captain|English Longbowman Captain
+trp_english_longbowman_captain_pl|English Longbowman Captains
+trp_english_captain|English Captain
+trp_english_captain_pl|English Captains
+trp_three_lions_guard|Three Lions Guard
+trp_three_lions_guard_pl|Three Lions Guards
+trp_vaegir_messenger|Messager Anglais
+trp_vaegir_messenger_pl|Messagers Anglais
+trp_vaegir_deserter|Déserteur Anglais
+trp_vaegir_deserter_pl|Déserteurs Anglais
+trp_vaegir_prison_guard|Geôlier
+trp_vaegir_prison_guard_pl|Geôliers
+trp_vaegir_castle_guard|Garde
+trp_vaegir_castle_guard_pl|Gardes
+trp_coulveriners_anglais|Couleuvrinier anglais
+trp_coulveriners_anglais_pl|Couleuvrinier anglais
+trp_bourg_recruit|Recrue Bourguignonne
+trp_bourg_recruit_pl|Recrues Bourguignonnes
+trp_bourg_veteran|Veteran Bourguignon
+trp_bourg_veteran_pl|Veteran Bourguignons
+trp_bourg_spearman|Vougier Bourguignon
+trp_bourg_spearman_pl|Vougiers Bourguignons
+trp_bourg_pikeman|Piquier long Bourguignons
+trp_bourg_pikeman_pl|Piquiers long Bourguignons
+trp_bourg_halberdier|Hallbardier Bourguignon
+trp_bourg_halberdier_pl|Hallbardiers Bourguignons
+trp_bourg_footman|Millicien bourguignon
+trp_bourg_footman_pl|Milliciens bourguignons
+trp_bourg_infantry|Infanterie lourde bourguignone
+trp_bourg_infantry_pl|Infanteries lourdes bourguignones
+trp_bourg_guard|Garde Bourguignon
+trp_bourg_guard_pl|Gardes Bourguignons
+trp_bourg_sergent|Garde du Duc
+trp_bourg_sergent_pl|Gardes du Duc
+trp_bourg_skirmisher|Archer paysan Borguignon
+trp_bourg_skirmisher_pl|Archers paysans Borguignons
+trp_bourg_peasant_crossbowman|Arbalitier Bourguignon
+trp_bourg_peasant_crossbowman_pl|Arbalitiers Bourguignons
+trp_bourg_archer|Archer Bourguignon
+trp_bourg_archer_pl|Archers Bourguignons
+trp_bourg_marksman|Archer lourd Bourguignon
+trp_bourg_marksman_pl|Archers lourds Bourguignons
+trp_bourg_horseman|Burgundian Horseman
+trp_bourg_horseman_pl|Burgundian Horsemen
+trp_bourg_knight|Burgundian Knight
+trp_bourg_knight_pl|Burgundian Knights
+trp_burgandy_heavy_knight|Burgandian Heavy Knight
+trp_burgandy_heavy_knight_pl|Burgandian Heavy Knights
+trp_burgandy_iron_knight|Burgandian Iron Knight
+trp_burgandy_iron_knight_pl|Burgandian Iron Knights
+trp_burgandy_mounted_crossbowman_captain|Burgandian Mounted Crossbowman Captain
+trp_burgandy_mounted_crossbowman_captain_pl|Burgandian Mounted Crossbowman Captains
+trp_burgandy_captain|Burgundian Captain
+trp_burgandy_captain_pl|Burgundian Captains
+trp_burgandy_elite_guard|Burgandian Elite Guard
+trp_burgandy_elite_guard_pl|Burgandian Elite Guards
+trp_bourg_messenger|Messager Bourguignon
+trp_bourg_messenger_pl|Messagers Bourguignons
+trp_bourg_deserter|Deserteur Bourguignon
+trp_bourg_deserter_pl|Deserteurs Bourguignons
+trp_bourg_prison_guard|Garde du cachot Bourguignon
+trp_bourg_prison_guard_pl|Gardes du cachot Bourguignon
+trp_bourg_castle_guard|Garde du Donjon Bourguignon
+trp_bourg_castle_guard_pl|Gardes du Donjon Bourguignon
+trp_breton_recruit|Recrue Bretonne
+trp_breton_recruit_pl|Recrues Bretonnes
+trp_breton_veteran|Fantassin Breton
+trp_breton_veteran_pl|Fantassins Bretons
+trp_breton_spearman|Piquier Breton
+trp_breton_spearman_pl|Piquiers Bretons
+trp_breton_pikeman|Coutillier Breton
+trp_breton_pikeman_pl|Coutilliers Bretons
+trp_breton_halberdier|Fauchard Breton
+trp_breton_halberdier_pl|Fauchard Breton
+trp_breton_footman|Millicien Breton
+trp_breton_footman_pl|Milliciens Bretons
+trp_breton_guard|Fantassin lourd Breton
+trp_breton_guard_pl|Fantassins lourds Bretons
+trp_breton_infantry|Epeiste Breton
+trp_breton_infantry_pl|Epeistes Bretons
+trp_breton_sergent|Sergent Breton
+trp_breton_sergent_pl|Sergents Bretons
+trp_breton_skirmisher|Archer paysan Breton
+trp_breton_skirmisher_pl|Archers paysans Bretons
+trp_breton_peasant_crossbowman|Archer Breton lourd
+trp_breton_peasant_crossbowman_pl|Archers Bretons lourds
+trp_breton_archer|Archer Breton
+trp_breton_archer_pl|Archers Bretons
+trp_breton_marksman|Franc Archer Breton
+trp_breton_marksman_pl|Francs Archers Bretons
+trp_breton_horseman|Breton Squire
+trp_breton_horseman_pl|Breton Squires
+trp_breton_knight|Breton Knight
+trp_breton_knight_pl|Breton Knights
+trp_breton_heavy_knight|Breton Heavy Knight
+trp_breton_heavy_knight_pl|Breton Heavy Knights
+trp_breton_hermine_knight|Order Of The Ermine Knight
+trp_breton_hermine_knight_pl|Order Of The Ermine Knights
+trp_breton_noble_swordsman|Breton Noble Swordsman
+trp_breton_noble_swordsman_pl|Breton Noble Swordsmen
+trp_breton_noble|Breton Noble
+trp_breton_noble_pl|Breton Nobles
+trp_breton_honour_guard|Breton Honour Guard
+trp_breton_honour_guard_pl|Breton Honour Guards
+trp_breton_messenger|Messager Breton
+trp_breton_messenger_pl|Messagers Bretons
+trp_breton_deserter|Deserteur Breton
+trp_breton_deserter_pl|Deserteurs Bretons
+trp_breton_prison_guard|Garde du cachot Breton
+trp_breton_prison_guard_pl|Gardes du cachot Bretons
+trp_breton_castle_guard|Garde du Donjon Breton
+trp_breton_castle_guard_pl|Gardes du Donjon Bretons
+trp_crane_de_fer_sergent|Sergent de la Compagnie des Cranes de Fer
+trp_crane_de_fer_sergent_pl|Sergents de la Compagnie des Cranes de Fer
+trp_crane_de_fer_archer|Archer de la Compagnie des Cranes de Fer
+trp_crane_de_fer_archer_pl|Archers de la Compagnie des Cranes de Fer
+trp_crane_de_fer_fantassin|Fantassin de la Compagnie des Cranes de Fer
+trp_crane_de_fer_fantassin_pl|Fantassins de la Compagnie des Cranes de Fer
+trp_looter|bandit de grand chemin
+trp_looter_pl|bandits de grand chemin
+trp_bandit|Pillard
+trp_bandit_pl|Pillards
+trp_brigand|Brigand
+trp_brigand_pl|Brigands
+trp_mountain_bandit|écorcheur
+trp_mountain_bandit_pl|écorcheurs
+trp_mountain_bandit_2|écorcheur Archer
+trp_mountain_bandit_2_pl|écorcheurs Archers
+trp_mountain_bandit_3|écorcheur Vougier
+trp_mountain_bandit_3_pl|écorcheurs Vougiers
+trp_forest_bandit|routier
+trp_forest_bandit_pl|routiers
+trp_forest_bandit_2|routier Archer
+trp_forest_bandit_2_pl|routiers Archers
+trp_sea_raider|retondeur
+trp_sea_raider_pl|retondeurs
+trp_sea_raider_2|retondeur Archer
+trp_sea_raider_2_pl|retondeurs Archers
+trp_steppe_bandit|maraudeur basque
+trp_steppe_bandit_pl|maraudeurs basques
+trp_taiga_bandit|Tard Venu
+trp_taiga_bandit_pl|Tard Venus
+trp_taiga_bandit_2|Tard Venu Archer
+trp_taiga_bandit_2_pl|Tard Venu Archers
+trp_taiga_bandit_3|Tard Venu Vougier
+trp_taiga_bandit_3_pl|Tard Venus Vougiers
+trp_desert_bandit|Bandit maure
+trp_desert_bandit_pl|Bandits maures
+trp_black_khergit_horseman|Cavalier noir Khergit
+trp_black_khergit_horseman_pl|Cavaliers noirs Khergit
+trp_manhunter|Chasseur de primes
+trp_manhunter_pl|Chasseurs de primes
+trp_slave_driver|Meneur d'esclaves
+trp_slave_driver_pl|Meneurs d'esclaves
+trp_slave_hunter|Chasseur d'esclaves
+trp_slave_hunter_pl|Chasseurs d'esclaves
+trp_slave_crusher|Bourreau d'esclaves
+trp_slave_crusher_pl|Bourreaux d'esclaves
+trp_slaver_chief|Esclavagiste
+trp_slaver_chief_pl|Esclavagistes
+trp_follower_woman|Paysan Rebel
+trp_follower_woman_pl|Paysans Rebels
+trp_hunter_woman|Défenseur des opprimés
+trp_hunter_woman_pl|Défenseurs des opprimés
+trp_fighter_woman|Vengeur
+trp_fighter_woman_pl|Vengeurs
+trp_sword_sister|Champion
+trp_sword_sister_pl|Champion
+trp_refugee|Réfugié
+trp_refugee_pl|Réfugiés
+trp_peasant_woman|Paysan revolté
+trp_peasant_woman_pl|Paysans revoltés
+trp_caravan_master|Maître de caravane
+trp_caravan_master_pl|Maîtres de caravane
+trp_kidnapped_girl|Fille enlevée
+trp_kidnapped_girl_pl|Filles enlevées
+trp_town_walker_1|Habitant du bourg
+trp_town_walker_1_pl|Habitants du bourg
+trp_town_walker_2|Habitante du bourg
+trp_town_walker_2_pl|Habitantes du bourg
+trp_khergit_townsman|Habitant du bourg
+trp_khergit_townsman_pl|Habitants du bourg
+trp_khergit_townswoman|Habitante du bourg
+trp_khergit_townswoman_pl|Habitantes du bourg
+trp_sarranid_townsman|Habitant du bourg
+trp_sarranid_townsman_pl|Habitants du bourg
+trp_sarranid_townswoman|Habitante du bourg
+trp_sarranid_townswoman_pl|Habitantes du bourg
+trp_village_walker_1|Villageois
+trp_village_walker_1_pl|Villageois
+trp_village_walker_2|Villageoise
+trp_village_walker_2_pl|Villageoises
+trp_spy_walker_1|Habitant
+trp_spy_walker_1_pl|Habitants
+trp_spy_walker_2|Habitante
+trp_spy_walker_2_pl|Habitantes
+trp_tournament_master|Maître du tournoi
+trp_tournament_master_pl|Maîtres du tournoi
+trp_trainer|Entraîneur
+trp_trainer_pl|Entraîneurs
+trp_Constable_Hareck|Constable Hareck
+trp_Constable_Hareck_pl|Constable Hareck
+trp_Ramun_the_slave_trader|Ramun, the slave trader
+trp_Ramun_the_slave_trader_pl|Ramun, the slave trader
+trp_guide|S'rar le vif
+trp_guide_pl|S'rar le vif
+trp_Xerina|Xerina
+trp_Xerina_pl|Xerina
+trp_Dranton|Dranton
+trp_Dranton_pl|Dranton
+trp_Kradus|Kradus
+trp_Kradus_pl|Kradus
+trp_tutorial_trainer|Maître du terrain d'entraînement
+trp_tutorial_trainer_pl|Maîtres du terrain d'entraînement
+trp_Galeas|Galeas
+trp_Galeas_pl|Galeas
+trp_farmer_from_bandit_village|Fermier
+trp_farmer_from_bandit_village_pl|Fermiers
+trp_trainer_1|maistre d'arme
+trp_trainer_1_pl|maistres d'arme
+trp_trainer_2|maistre d'arme
+trp_trainer_2_pl|maistres d'arme
+trp_trainer_3|maistre d'arme
+trp_trainer_3_pl|maistres d'arme
+trp_trainer_4|maistre d'arme
+trp_trainer_4_pl|maistres d'arme
+trp_trainer_5|maistre d'arme
+trp_trainer_5_pl|maistres d'arme
+trp_ransom_broker_1|Rançonneur 
+trp_ransom_broker_1_pl|Rançonneurs
+trp_ransom_broker_2|Rançonneur 
+trp_ransom_broker_2_pl|Rançonneurs
+trp_ransom_broker_3|Rançonneur 
+trp_ransom_broker_3_pl|Rançonneurs
+trp_ransom_broker_4|Rançonneur 
+trp_ransom_broker_4_pl|Rançonneurs
+trp_ransom_broker_5|Rançonneur 
+trp_ransom_broker_5_pl|Rançonneurs
+trp_ransom_broker_6|Rançonneur 
+trp_ransom_broker_6_pl|Rançonneurs
+trp_ransom_broker_7|Rançonneur 
+trp_ransom_broker_7_pl|Rançonneurs
+trp_ransom_broker_8|Rançonneur 
+trp_ransom_broker_8_pl|Rançonneurs
+trp_ransom_broker_9|Rançonneur 
+trp_ransom_broker_9_pl|Rançonneurs
+trp_ransom_broker_10|Rançonneur 
+trp_ransom_broker_10_pl|Rançonneurs
+trp_tavern_traveler_1|Voyageur
+trp_tavern_traveler_1_pl|Voyageurs
+trp_tavern_traveler_2|Voyageur
+trp_tavern_traveler_2_pl|Voyageurs
+trp_tavern_traveler_3|Voyageur
+trp_tavern_traveler_3_pl|Voyageurs
+trp_tavern_traveler_4|Voyageur
+trp_tavern_traveler_4_pl|Voyageurs
+trp_tavern_traveler_5|Voyageur
+trp_tavern_traveler_5_pl|Voyageurs
+trp_tavern_traveler_6|Voyageur
+trp_tavern_traveler_6_pl|Voyageurs
+trp_tavern_traveler_7|Voyageur
+trp_tavern_traveler_7_pl|Voyageurs
+trp_tavern_traveler_8|Voyageur
+trp_tavern_traveler_8_pl|Voyageurs
+trp_tavern_traveler_9|Voyageur
+trp_tavern_traveler_9_pl|Voyageurs
+trp_tavern_traveler_10|Voyageur
+trp_tavern_traveler_10_pl|Voyageurs
+trp_tavern_bookseller_1|Marchand de livres
+trp_tavern_bookseller_1_pl|Marchands de livres
+trp_tavern_bookseller_2|Marchand de livres
+trp_tavern_bookseller_2_pl|Marchands de livres
+trp_tavern_minstrel_1|Ménestrel itinérant
+trp_tavern_minstrel_1_pl|Ménestrels
+trp_tavern_minstrel_2|Barde itinérant
+trp_tavern_minstrel_2_pl|Bardes
+trp_tavern_minstrel_3|Barde itinérant
+trp_tavern_minstrel_3_pl|Bardes
+trp_tavern_minstrel_4|Ménestrel itinérant
+trp_tavern_minstrel_4_pl|Ménestrel
+trp_tavern_minstrel_5|Troubadour itinérant
+trp_tavern_minstrel_5_pl|Troubadours
+trp_kingdom_heroes_including_player_begin|Héros du royaume au début dont le joueur
+trp_kingdom_heroes_including_player_begin_pl|Héros du royaume au début dont le joueur
+trp_npc1|Perceval de Blois
+trp_npc1_pl|Perceval de Blois
+trp_npc2|Roland de Paris
+trp_npc2_pl|Roland de Paris
+trp_npc3|Enguerrand
+trp_npc3_pl|Enguerrand
+trp_npc4|Gaspard
+trp_npc4_pl|Gaspard
+trp_npc5|Hermance de Bordeaux
+trp_npc5_pl|Hermance de Bordeaux
+trp_npc6|Guillaume
+trp_npc6_pl|Guillaume
+trp_npc7|Pierrick
+trp_npc7_pl|Pierrick
+trp_npc8|Renaud
+trp_npc8_pl|Renaud
+trp_npc9|Gael
+trp_npc9_pl|Gael
+trp_npc10|Gauvin
+trp_npc10_pl|Gauvin
+trp_npc11|Florentin
+trp_npc11_pl|Florentin
+trp_npc12|Hubert
+trp_npc12_pl|Hubert
+trp_npc13|Mathieu
+trp_npc13_pl|Mathieu
+trp_npc14|Michel
+trp_npc14_pl|Michel
+trp_npc15|Godefroi de Cherbourg
+trp_npc15_pl|Godefroi de Cherbourg
+trp_npc16|Blanche
+trp_npc16_pl|Blanche
+trp_kingdom_1_lord|Dauphin Charles VII
+trp_kingdom_1_lord_pl|Charles VII
+trp_kingdom_2_lord|Regent John de Lancaster 
+trp_kingdom_2_lord_pl|Regent John de Lancaster
+trp_kingdom_3_lord|philippe le bon duc de Bourgogne
+trp_kingdom_3_lord_pl|philippe le bon
+trp_kingdom_4_lord|Jean V Duc de Bretagne
+trp_kingdom_4_lord_pl|Jean V Duc de Bretagne
+trp_kingdom_1_pretender|Jean sans peur
+trp_kingdom_1_pretender_pl|Jean sans peur
+trp_kingdom_2_pretender|Owain Lawgoch
+trp_kingdom_2_pretender_pl|Owain Lawgoch
+trp_kingdom_3_pretender|Hugues de Lannoy
+trp_kingdom_3_pretender_pl|Hugues de Lannoy
+trp_kingdom_4_pretender|Jean de Cournailles
+trp_kingdom_4_pretender_pl|Jean de Cournailles
+trp_knight_1_1_wife|Dame Anna
+trp_knight_1_1_wife_pl|Anna
+trp_kingdom_1_lady_1|Dame Beatrice de Clisson
+trp_kingdom_1_lady_1_pl|Beatrice de Clisson
+trp_kingdom_1_lady_2|Dame Joan de Kent
+trp_kingdom_1_lady_2_pl|Joan de Kent
+trp_knight_1_lady_3|Dame Beatrice de Chalon
+trp_knight_1_lady_3_pl|Beatrice de Chalon
+trp_knight_1_lady_4|Dame Margaret of Bourbon
+trp_knight_1_lady_4_pl|Margaret of Bourbon
+trp_kingdom_l_lady_5|Dame Constanis
+trp_kingdom_l_lady_5_pl|Constanis
+trp_kingdom_1_lady_6|Dame Philippa de Hainault
+trp_kingdom_1_lady_6_pl|Philippa de Hainault
+trp_kingdom_1_lady_7|Dame Isabella de Coucy
+trp_kingdom_1_lady_7_pl|Isabella de Coucy
+trp_kingdom_1_lady_8|Dame Violante
+trp_kingdom_1_lady_8_pl|Dame Violante
+trp_kingdom_1_lady_9|Infante Isabella de Castile
+trp_kingdom_1_lady_9_pl|Isabella de Castile
+trp_kingdom_1_lady_10|Dame Catherine de Vernon
+trp_kingdom_1_lady_10_pl|Catherine de Vernon
+trp_kingdom_1_lady_11|Dame Alice Holland
+trp_kingdom_1_lady_11_pl|Alice Holland
+trp_kingdom_1_lady_12|Dame Joanna de Bourbon
+trp_kingdom_1_lady_12_pl|Joanna de Bourbon
+trp_kingdom_l_lady_13|Dame Isabella de Valois
+trp_kingdom_l_lady_13_pl|Isabella de Valois
+trp_kingdom_1_lady_14|Dame Tiphaine
+trp_kingdom_1_lady_14_pl|Tiphaine
+trp_kingdom_1_lady_15|Dame Isabelle de Bourbon
+trp_kingdom_1_lady_15_pl|Isabelle de Bourbon
+trp_kingdom_1_lady_16|Dame Jeanne de Coucy
+trp_kingdom_1_lady_16_pl|Jeanne de Coucy
+trp_kingdom_1_lady_17|Dame Pernelle de Villiers
+trp_kingdom_1_lady_17_pl|Pernelle de Villiers
+trp_kingdom_1_lady_18|Dame Isabeau de Craon
+trp_kingdom_1_lady_18_pl|Isabeau de Craon
+trp_kingdom_1_lady_19|Dame Cecily de Weyland
+trp_kingdom_1_lady_19_pl|Cecily de Weyland
+trp_kingdom_1_lady_20|Dame Elizabeth Burghersh
+trp_kingdom_1_lady_20_pl|Elizabeth Burghersh
+trp_kingdom_2_lady_1|Dame Cicely
+trp_kingdom_2_lady_1_pl|Cicely
+trp_kingdom_2_lady_2|Dame Katia
+trp_kingdom_2_lady_2_pl|Katia
+trp_kingdom_2_lady_3|Dame Seomis
+trp_kingdom_2_lady_3_pl|Seomis
+trp_kingdom_2_lady_4|Dame Drina
+trp_kingdom_2_lady_4_pl|Drina
+trp_kingdom_2_lady_5|Dame Margaret
+trp_kingdom_2_lady_5_pl|Margaret
+trp_kingdom_2_lady_6|Dame Isabelle
+trp_kingdom_2_lady_6_pl|Isabelle
+trp_kingdom_2_lady_7|Dame Isabeau
+trp_kingdom_2_lady_7_pl|Isabeau
+trp_kingdom_2_lady_8|Dame Mathilde
+trp_kingdom_2_lady_8_pl|Mathilde
+trp_kingdom_2_lady_9|Dame Vayen
+trp_kingdom_2_lady_9_pl|Vayen
+trp_kingdom_2_lady_10|Dame Constance
+trp_kingdom_2_lady_10_pl|Constance
+trp_kingdom_2_lady_11|Dame Tejina
+trp_kingdom_2_lady_11_pl|Tejina
+trp_kingdom_2_lady_12|Dame R�mie
+trp_kingdom_2_lady_12_pl|R�mie
+trp_kingdom_2_lady_13|Dame Myntha
+trp_kingdom_2_lady_13_pl|Myntha
+trp_kingdom_2_lady_14|Dame No�mie
+trp_kingdom_2_lady_14_pl|No�mie
+trp_kingdom_2_lady_15|Dame Alice
+trp_kingdom_2_lady_15_pl|Alice
+trp_kingdom_2_lady_16|Dame Margarette
+trp_kingdom_2_lady_16_pl|Margarette
+trp_kingdom_2_lady_17|Dame Elisabette
+trp_kingdom_2_lady_17_pl|Elisabette
+trp_kingdom_2_lady_18|Dame Elise
+trp_kingdom_2_lady_18_pl|Elise
+trp_kingdom_2_lady_19|Dame Victoria
+trp_kingdom_2_lady_19_pl|Victoria
+trp_kingdom_2_lady_20|Dame Valka
+trp_kingdom_2_lady_20_pl|Valka
+trp_kingdom_3_lady_1|Dame Borge
+trp_kingdom_3_lady_1_pl|Borge
+trp_kingdom_3_lady_2|Dame Namie
+trp_kingdom_3_lady_2_pl|Namie
+trp_kingdom_3_lady_3|Dame Valentine
+trp_kingdom_3_lady_3_pl|Valentine
+trp_kingdom_3_lady_4|Dame Eleonore
+trp_kingdom_3_lady_4_pl|Eleonore
+trp_kingdom_3_lady_5|Dame Helene
+trp_kingdom_3_lady_5_pl|Helene
+trp_kingdom_3_lady_6|Dame Ruha
+trp_kingdom_3_lady_6_pl|Ruha
+trp_kingdom_3_lady_7|Dame Chedina
+trp_kingdom_3_lady_7_pl|Chedina
+trp_kingdom_3_lady_8|Dame Magalie
+trp_kingdom_3_lady_8_pl|Magalie
+trp_kingdom_3_lady_9|Dame Nera
+trp_kingdom_3_lady_9_pl|Nera
+trp_kingdom_3_lady_10|Dame Elisa
+trp_kingdom_3_lady_10_pl|Elisa
+trp_kingdom_3_lady_11|Dame Constance de Buisson
+trp_kingdom_3_lady_11_pl|Constance de Buisson
+trp_kingdom_3_lady_12|Dame Eglantine
+trp_kingdom_3_lady_12_pl|Eglantine
+trp_kingdom_3_lady_13|Dame Yaren
+trp_kingdom_3_lady_13_pl|Yaren
+trp_kingdom_3_lady_14|Dame Mathilda
+trp_kingdom_3_lady_14_pl|Mathilda
+trp_kingdom_3_lady_15|Dame Germaine
+trp_kingdom_3_lady_15_pl|Germaine
+trp_kingdom_3_lady_16|Dame Valentine
+trp_kingdom_3_lady_16_pl|Valentine
+trp_kingdom_3_lady_17|Dame Allessia
+trp_kingdom_3_lady_17_pl|Allessia
+trp_kingdom_3_lady_18|Dame Quella
+trp_kingdom_3_lady_18_pl|Quella
+trp_kingdom_3_lady_19|Dame Hindal
+trp_kingdom_3_lady_19_pl|Hindal
+trp_kingdom_3_lady_20|Dame Mechet
+trp_kingdom_3_lady_20_pl|Mechet
+trp_kingdom_4_lady_1|Dame Jadeth
+trp_kingdom_4_lady_1_pl|Jadeth
+trp_kingdom_4_lady_2|Dame Miar
+trp_kingdom_4_lady_2_pl|Miar
+trp_kingdom_4_lady_3|Dame Dria
+trp_kingdom_4_lady_3_pl|Dria
+trp_kingdom_4_lady_4|Dame Glunde
+trp_kingdom_4_lady_4_pl|Glunde
+trp_kingdom_4_lady_5|Dame Miria
+trp_kingdom_4_lady_5_pl|Miria
+trp_kingdom_4_lady_6|Dame Artemis
+trp_kingdom_4_lady_6_pl|Artemis
+trp_kingdom_4_lady_7|Dame Aurelie
+trp_kingdom_4_lady_7_pl|Aurelie
+trp_knight_4_2b_daughter_1|Dame Thera
+trp_knight_4_2b_daughter_1_pl|Thera
+trp_kingdom_4_lady_9|Dame Hild
+trp_kingdom_4_lady_9_pl|Hild
+trp_knight_4_2c_wife_1|Dame Endegrid
+trp_knight_4_2c_wife_1_pl|Endegrid
+trp_kingdom_4_lady_11|Dame Ingrid
+trp_kingdom_4_lady_11_pl|Ingrid
+trp_knight_4_2c_daughter|Dame Sylva
+trp_knight_4_2c_daughter_pl|Sylva
+trp_knight_4_1b_wife|Dame Ingunn
+trp_knight_4_1b_wife_pl|Ingunn
+trp_kingdom_4_lady_14|Dame Catheline
+trp_kingdom_4_lady_14_pl|Catheline
+trp_knight_4_1b_daughter|Dame Catherine
+trp_knight_4_1b_daughter_pl|Catherine
+trp_knight_4_2b_daughter_2|Dame Gudrun
+trp_knight_4_2b_daughter_2_pl|Gudrun
+trp_kingdom_4_lady_17|Dame Bergit
+trp_kingdom_4_lady_17_pl|Bergit
+trp_knight_4_2c_wife_2|Dame Aesa
+trp_knight_4_2c_wife_2_pl|Aesa
+trp_knight_4_1c_daughter|Dame Alfrun
+trp_knight_4_1c_daughter_pl|Alfrun
+trp_kingdom_4_lady_20|Dame Elmina
+trp_kingdom_4_lady_20_pl|Elmina
+trp_kingdom_5_lady_1|Dame Brina
+trp_kingdom_5_lady_1_pl|Brina
+trp_kingdom_5_lady_2|Dame Aline
+trp_kingdom_5_lady_2_pl|Aline
+trp_kingdom_5_lady_3|Dame Aneth
+trp_kingdom_5_lady_3_pl|Aneth
+trp_kingdom_5_lady_4|Dame Anessa
+trp_kingdom_5_lady_4_pl|Anessa
+trp_kingdom_5_5_wife|Dame Anetta
+trp_kingdom_5_5_wife_pl|Anetta
+trp_kingdom_5_2b_wife_1|Dame Baotheia
+trp_kingdom_5_2b_wife_1_pl|Baotheia
+trp_kingdom_5_1c_daughter_1|Dame Eleandra
+trp_kingdom_5_1c_daughter_1_pl|Eleandra
+trp_kingdom_5_2c_daughter_1|Dame Meraced
+trp_kingdom_5_2c_daughter_1_pl|Meraced
+trp_kingdom_5_1c_wife_1|Dame Adelisa
+trp_kingdom_5_1c_wife_1_pl|Adelisa
+trp_kingdom_5_2c_wife_1|Dame Calantina
+trp_kingdom_5_2c_wife_1_pl|Calantina
+trp_kingdom_5_1c_daughter_2|Dame Forbesa
+trp_kingdom_5_1c_daughter_2_pl|Forbesa
+trp_kingdom_5_2c_daughter_2|Dame Claudora
+trp_kingdom_5_2c_daughter_2_pl|Claudora
+trp_kingdom_5_1b_wife|Dame Anais
+trp_kingdom_5_1b_wife_pl|Anais
+trp_kingdom_5_2b_wife_2|Dame Miraeia
+trp_kingdom_5_2b_wife_2_pl|Miraeia
+trp_kingdom_5_1c_daughter_3|Dame Agasia
+trp_kingdom_5_1c_daughter_3_pl|Agasia
+trp_kingdom_5_lady_16|Dame Geneiava
+trp_kingdom_5_lady_16_pl|Geneiava
+trp_kingdom_5_1c_wife_2|Dame Gwenael
+trp_kingdom_5_1c_wife_2_pl|Gwenael
+trp_kingdom_5_2c_wife_2|Dame Ysueth
+trp_kingdom_5_2c_wife_2_pl|Ysueth
+trp_kingdom_5_1c_daughter_4|Dame Ellian
+trp_kingdom_5_1c_daughter_4_pl|Ellian
+trp_kingdom_5_lady_20|Dame Timethi
+trp_kingdom_5_lady_20_pl|Timethi
+trp_kingdom_6_lady_1|Dame Victorine
+trp_kingdom_6_lady_1_pl|Victorine
+trp_kingdom_6_lady_2|Dame Hellena
+trp_kingdom_6_lady_2_pl|Hellena
+trp_kingdom_6_lady_3|Dame Suhalla
+trp_kingdom_6_lady_3_pl|Suhalla
+trp_kingdom_6_lady_4|Dame Satine
+trp_kingdom_6_lady_4_pl|Satine
+trp_kingdom_6_lady_5|Dame Roberte
+trp_kingdom_6_lady_5_pl|Roberte
+trp_kingdom_6_lady_6|Dame Mathilda
+trp_kingdom_6_lady_6_pl|Mathilda
+trp_kingdom_6_lady_7|Dame Marie
+trp_kingdom_6_lady_7_pl|Marie
+trp_kingdom_6_lady_8|Dame Maria
+trp_kingdom_6_lady_8_pl|Maria
+trp_kingdom_6_lady_9|Dame Constancine
+trp_kingdom_6_lady_9_pl|Constancine
+trp_kingdom_6_lady_10|Dame Berta
+trp_kingdom_6_lady_10_pl|Berta
+trp_kingdom_6_lady_11|Dame Berthe
+trp_kingdom_6_lady_11_pl|Berthe
+trp_kingdom_6_lady_12|Dame Marla
+trp_kingdom_6_lady_12_pl|Marla
+trp_kingdom_6_lady_13|Dame Licia
+trp_kingdom_6_lady_13_pl|Licia
+trp_kingdom_6_lady_14|Dame Lise
+trp_kingdom_6_lady_14_pl|Lise
+trp_kingdom_6_lady_15|Dame Eloise
+trp_kingdom_6_lady_15_pl|Eloise
+trp_kingdom_6_lady_16|Dame Varina
+trp_kingdom_6_lady_16_pl|Varina
+trp_kingdom_6_lady_17|Dame Lisandra
+trp_kingdom_6_lady_17_pl|Lisandra
+trp_kingdom_6_lady_18|Dame Khalisa
+trp_kingdom_6_lady_18_pl|Khalisa
+trp_kingdom_6_lady_19|Dame Janetta
+trp_kingdom_6_lady_19_pl|Janetta
+trp_kingdom_6_lady_20|Dame Suria
+trp_kingdom_6_lady_20_pl|Suria
+trp_town_1_arena_master|Maître du tournoi de Paris
+trp_town_2_arena_master|Maître du tournoi de Reims
+trp_town_3_arena_master|Maître du tournoi de Nantes
+trp_town_4_arena_master|Maître du tournoi de Bourges
+trp_town_5_arena_master|Maître du tournoi de Metz
+trp_town_6_arena_master|Maître du tournoi de Dijon
+trp_town_7_arena_master|Maître du tournoi de Montpellier
+trp_town_8_arena_master|Maître du tournoi de Marseille
+trp_town_9_arena_master|Maître du tournoi de Caen  
+trp_town_10_arena_master|Maître du tournoi de Limoges
+trp_town_11_arena_master|Maître du tournoi de Calais
+trp_town_12_arena_master|Maître du tournoi de Rouen
+trp_town_13_arena_master|Maître du tournoi de Toulouse
+trp_town_14_arena_master|Maître du tournoi de Bordeaux
+trp_town_15_arena_master|Maître du tournoi d'Orleans
+trp_town_16_arena_master|Maître du tournoi de Tours
+trp_town_17_arena_master|Maître du tournoi de Poitiers
+trp_town_18_arena_master|Maître du tournoi d'Avignon
+trp_town_19_arena_master|Maître du tournoi
+trp_town_20_arena_master|Maître du tournoi
+trp_town_21_arena_master|Maître du tournoi
+trp_town_22_arena_master|Maître du tournoi
+trp_town_1_armorer|Armurier de Paris
+trp_town_2_armorer|Armurier de Reims
+trp_town_3_armorer|Armurier de nantes
+trp_town_4_armorer|Armurier de Bourges
+trp_town_5_armorer|Armurier de Metz 
+trp_town_6_armorer|Armurier de Dijon
+trp_town_7_armorer|Armurier de Montpellier
+trp_town_8_armorer|Armurier de Marseille
+trp_town_9_armorer|Armurier de Caen  
+trp_town_10_armorer|Armurier de Limoges
+trp_town_11_armorer|Armurier de Calais
+trp_town_12_armorer|Armurier de Rouen
+trp_town_13_armorer|Armurier de Toulouse
+trp_town_14_armorer|Armurier de Bordeaux
+trp_town_15_armorer|Armurier d'Orleans
+trp_town_16_armorer|Armurier de Tours
+trp_town_17_armorer|Armurier de Poitiers
+trp_town_18_armorer|Armurier d'Avignon
+trp_town_19_armorer|Armurier 
+trp_town_20_armorer|Armurier
+trp_town_21_armorer|Armurier
+trp_town_22_armorer|Armurier
+trp_town_1_weaponsmith|Forgeron de Paris
+trp_town_2_weaponsmith|Forgeron de Reims
+trp_town_3_weaponsmith|Forgeron de Nantes
+trp_town_4_weaponsmith|Forgeron de Bourges
+trp_town_5_weaponsmith|Forgeron de Metz
+trp_town_6_weaponsmith|Forgeron de Dijon
+trp_town_7_weaponsmith|Forgeron de Montpellier
+trp_town_8_weaponsmith|Forgeron de Marseille
+trp_town_9_weaponsmith|Forgeron  de Caen 
+trp_town_10_weaponsmith|Forgeron de Limoges
+trp_town_11_weaponsmith|Forgeron de Calais
+trp_town_12_weaponsmith|Forgeron de Rouen 
+trp_town_13_weaponsmith|Forgeron de Toulouse
+trp_town_14_weaponsmith|Forgeron de Bordeaux
+trp_town_15_weaponsmith|Forgeron d'Orleans
+trp_town_16_weaponsmith|Forgeron de Tours
+trp_town_17_weaponsmith|Forgeron de Poitiers
+trp_town_18_weaponsmith|Forgeron d'Avignon
+trp_town_19_weaponsmith|Forgeron
+trp_town_20_weaponsmith|Forgeron
+trp_town_21_weaponsmith|Forgeron
+trp_town_22_weaponsmith|Forgeron
+trp_town_1_tavernkeeper|Tavernier de Paris
+trp_town_2_tavernkeeper|Tavernier de Reims
+trp_town_3_tavernkeeper|Tavernier de Nantes
+trp_town_4_tavernkeeper|Tavernier de Bourges
+trp_town_5_tavernkeeper|Tavernier de Metz
+trp_town_6_tavernkeeper|Tavernier de Dijon
+trp_town_7_tavernkeeper|Tavernier de Montpellier
+trp_town_8_tavernkeeper|Tavernier de Marseille
+trp_town_9_tavernkeeper|Tavernier de Caen
+trp_town_10_tavernkeeper|Tavernier de Limoges
+trp_town_11_tavernkeeper|Tavernier de Calais
+trp_town_12_tavernkeeper|Tavernier de Rouen
+trp_town_13_tavernkeeper|Tavernier de Toulouse
+trp_town_14_tavernkeeper|Tavernier de Bordeaux
+trp_town_15_tavernkeeper|Tavernier d'Orleans
+trp_town_16_tavernkeeper|Tavernier de Tours
+trp_town_17_tavernkeeper|Tavernier de Poitiers
+trp_town_18_tavernkeeper|Tavernier d'Avignon
+trp_town_19_tavernkeeper|Tavernier
+trp_town_20_tavernkeeper|Tavernier
+trp_town_21_tavernkeeper|Tavernier
+trp_town_22_tavernkeeper|Tavernier
+trp_town_1_merchant|Marchand de Paris
+trp_town_2_merchant|Marchand de Reims
+trp_town_3_merchant|Marchand de nantes
+trp_town_4_merchant|Marchand de Bourges
+trp_town_5_merchant|Marchand de Metz
+trp_town_6_merchant|Marchand de Dijon
+trp_town_7_merchant|Marchand de Montpellier
+trp_town_8_merchant|Marchand de Marseille
+trp_town_9_merchant|Marchand de Caen
+trp_town_10_merchant|Marchand de Limoges
+trp_town_11_merchant|Marchand de Calais
+trp_town_12_merchant|Marchand de Rouen
+trp_town_13_merchant|Marchand de Toulouse
+trp_town_14_merchant|Marchand de Bordeaux
+trp_town_15_merchant|Marchand d'Orleans
+trp_town_16_merchant|Marchand de Tours
+trp_town_17_merchant|Marchand de Poitiers
+trp_town_18_merchant|Marchand d'Avignon
+trp_town_19_merchant|Marchand 
+trp_town_20_merchant|Marchand
+trp_town_21_merchant|Marchand
+trp_town_22_merchant|Marchand
+trp_salt_mine_merchant|Barezan
+trp_salt_mine_merchant_pl|Barezan
+trp_town_1_horse_merchant|Marchand de chevaux
+trp_town_2_horse_merchant|Marchand de chevaux
+trp_town_3_horse_merchant|Marchand de chevaux
+trp_town_4_horse_merchant|Marchand de chevaux
+trp_town_5_horse_merchant|Marchand de chevaux
+trp_town_6_horse_merchant|Marchand de chevaux
+trp_town_7_horse_merchant|Marchand de chevaux
+trp_town_8_horse_merchant|Marchand de chevaux
+trp_town_9_horse_merchant|Marchand de chevaux
+trp_town_10_horse_merchant|Marchand de chevaux
+trp_town_11_horse_merchant|Marchand de chevaux
+trp_town_12_horse_merchant|Marchand de chevaux
+trp_town_13_horse_merchant|Marchand de chevaux
+trp_town_14_horse_merchant|Marchand de chevaux
+trp_town_15_horse_merchant|Marchand de chevaux
+trp_town_16_horse_merchant|Marchand de chevaux
+trp_town_17_horse_merchant|Marchand de chevaux
+trp_town_18_horse_merchant|Marchand de chevaux
+trp_town_19_horse_merchant|Marchand de chevaux
+trp_town_20_horse_merchant|Marchand de chevaux
+trp_town_21_horse_merchant|Marchand de chevaux
+trp_town_22_horse_merchant|Marchand de chevaux
+trp_town_1_mayor|Maîstre de guilde
+trp_town_2_mayor|Maîstre de guilde
+trp_town_3_mayor|Maîstre de guilde
+trp_town_4_mayor|Maîstre de guilde
+trp_town_5_mayor|Maîstre de guilde
+trp_town_6_mayor|Maîstre de guilde
+trp_town_7_mayor|Maîstre de guilde
+trp_town_8_mayor|Maîstre de guilde
+trp_town_9_mayor|Maîstre de guilde
+trp_town_10_mayor|Maîstre de guilde
+trp_town_11_mayor|Maîstre de guilde
+trp_town_12_mayor|Maîstre de guilde
+trp_town_13_mayor|Maîstre de guilde
+trp_town_14_mayor|Maîstre de guilde
+trp_town_15_mayor|Maîstre de guilde
+trp_town_16_mayor|Maîstre de guilde
+trp_town_17_mayor|Maîstre de guilde
+trp_town_18_mayor|Maîstre de guilde
+trp_town_19_mayor|Maîstre de guilde 
+trp_town_20_mayor|Maîstre de guilde
+trp_town_21_mayor|Maîstre de guilde
+trp_town_22_mayor|Maîstre de guilde
+trp_village_1_elder|Ancien du village de Bruges
+trp_village_2_elder|Ancien du village de Boulogne
+trp_village_3_elder|Ancien du village de Lille
+trp_village_4_elder|Ancien du village de Abbeville
+trp_village_5_elder|Ancien du village de Nemours
+trp_village_6_elder|Ancien du village La Fleche
+trp_village_7_elder|Ancien du village de Laon
+trp_village_8_elder|Ancien du village de Soissons
+trp_village_9_elder|Ancien du village de Senlis
+trp_village_10_elder|Ancien du village de Beaumont
+trp_village_11_elder|Ancien du village de Chalons
+trp_village_12_elder|Ancien du village de Bar
+trp_village_13_elder|Ancien du village de Joinville
+trp_village_14_elder|Ancien du village de Melun
+trp_village_15_elder|Ancien du village de Sens
+trp_village_16_elder|Ancien du village de Dieppe
+trp_village_17_elder|Ancien du village de Harcourt
+trp_village_18_elder|Ancien du village de Bayeux
+trp_village_19_elder|Ancien du village de Lisieux
+trp_village_20_elder|Ancien du village de Harfleur
+trp_village_21_elder|Ancien du village de Honflew
+trp_village_22_elder|Ancien du village de Quimper
+trp_village_23_elder|Ancien du village de Laval
+trp_village_24_elder|Ancien du village de Graon
+trp_village_25_elder|Ancien du village de Blois
+trp_village_26_elder|Ancien du village de Levet
+trp_village_27_elder|Ancien du village de Vierzon
+trp_village_28_elder|Ancien du village de Cholet
+trp_village_29_elder|Ancien du village de Nevers
+trp_village_30_elder|Ancien du village de Fontenay
+trp_village_31_elder|Ancien du village de Niort
+trp_village_32_elder|Ancien du village de La Tremouille
+trp_village_33_elder|Ancien du village de Gueret
+trp_village_34_elder|Ancien du village de Rochefort
+trp_village_35_elder|Ancien du village de Saintes
+trp_village_36_elder|Ancien du village de Soyaux
+trp_village_37_elder|Ancien du village de Turenne
+trp_village_38_elder|Ancien du village de Perigueux
+trp_village_39_elder|Ancien du village d' Aurillac
+trp_village_40_elder|Ancien du village de Moulins
+trp_village_41_elder|Ancien du village de Langres
+trp_village_42_elder|Ancien du village de Beaune
+trp_village_43_elder|Ancien du village de Chalon
+trp_village_44_elder|Ancien du village de Macon
+trp_village_45_elder|Ancien du village de Vienne
+trp_village_46_elder|Ancien du village de Clermont
+trp_village_47_elder|Ancien du village de Valence
+trp_village_48_elder|Ancien du village de Briancon
+trp_village_49_elder|Ancien du village de Fecamp
+trp_village_50_elder|Ancien du village de Verneuilo
+trp_village_51_elder|Ancien du village de Castillon
+trp_village_52_elder|Ancien du village de Cahors
+trp_village_53_elder|Ancien du village d'Agen
+trp_village_54_elder|Ancien du village de Montauban
+trp_village_55_elder|Ancien du village de Foix
+trp_village_56_elder|Ancien du village de Narbonne
+trp_village_57_elder|Ancien du village de Sete
+trp_village_58_elder|Ancien du village de Nimes
+trp_village_59_elder|Ancien du village d'Arles
+trp_village_60_elder|Ancien du village de Toulon
+trp_village_61_elder|Ancien du village de Dax
+trp_village_62_elder|Ancien du village d'Alencon
+trp_village_63_elder|Ancien du village d'Albret 
+trp_village_64_elder|Ancien du village de Bretigny
+trp_village_65_elder|Ancien du village de Thouars
+trp_village_66_elder|Ancien du village de Peronne
+trp_village_67_elder|Ancien du village d'Agincourt
+trp_village_68_elder|Ancien du village de Ghent
+trp_village_69_elder|Ancien du village de Vannes
+trp_village_70_elder|Ancien du village de Guines
+trp_village_71_elder|Ancien du village de Le martel
+trp_village_72_elder|Ancien du village d'Elaye
+trp_village_73_elder|Ancien du village de Maupertuis
+trp_village_74_elder|Ancien du village d'Hesdin
+trp_village_75_elder|Ancien du village de creusot
+trp_village_76_elder|Ancien du village d'Arras
+trp_village_77_elder|Ancien du village de Monterean
+trp_village_78_elder|Ancien du village de Montargis
+trp_village_79_elder|Ancien du village d'Evreux
+trp_village_80_elder|Ancien du village de Rennes le Chateau
+trp_village_81_elder|Ancien du village de La Teste de Buch
+trp_village_82_elder|Ancien du village de Rennes
+trp_village_83_elder|Ancien du village du Puy
+trp_village_84_elder|Ancien du village de Rodez
+trp_village_85_elder|Ancien du village de Boves
+trp_village_86_elder|Ancien du village de Gien
+trp_village_87_elder|Ancien du village de Formigny
+trp_village_88_elder|Ancien du village de Neufchateau
+trp_village_89_elder|Ancien du village de Cosne
+trp_village_90_elder|Ancien du village de Vaucouleurs
+trp_village_91_elder|Ancien du village
+trp_village_92_elder|Ancien du village
+trp_village_93_elder|Ancien du village
+trp_village_94_elder|Ancien du village
+trp_village_95_elder|Ancien du village
+trp_village_96_elder|Ancien du village
+trp_village_97_elder|Ancien du village
+trp_village_98_elder|Ancien du village
+trp_village_99_elder|Ancien du village
+trp_village_100_elder|Ancien du village
+trp_village_101_elder|Ancien du village
+trp_village_102_elder|Ancien du village
+trp_village_103_elder|Ancien du village
+trp_village_104_elder|Ancien du village
+trp_village_105_elder|Ancien du village
+trp_village_106_elder|Ancien du village
+trp_village_107_elder|Ancien du village
+trp_village_108_elder|Ancien du village
+trp_village_109_elder|Ancien du village
+trp_village_110_elder|Ancien du village
+trp_merchants_end|Objectif des marchands
+trp_merchants_end_pl|Objectifs des marchands
+trp_local_merchant|Marchand local
+trp_local_merchant_pl|Marchands locaux
+trp_tax_rebel|Paysan rebelle
+trp_tax_rebel_pl|Paysans rebelles
+trp_trainee_peasant|Paysan
+trp_trainee_peasant_pl|Paysans
+trp_fugitive|Homme nerveux
+trp_fugitive_pl|Hommes nerveux
+trp_belligerent_drunk|Ivrogne
+trp_belligerent_drunk_pl|Ivrognes
+trp_hired_assassin|Homme ivre
+trp_hired_assassin_pl|Hommes ivres
+trp_fight_promoter|Bagarreur
+trp_fight_promoter_pl|Bagarreurs
+trp_spy|Citadin ordinaire
+trp_spy_pl|Citadins ordinaires
+trp_spy_partner|Citadin quelconque
+trp_spy_partner_pl|Citadins quelconques
+trp_nurse_for_lady|Dame de compagnie
+trp_nurse_for_lady_pl|Dames de compagnie
+trp_temporary_minister|Ministre
+trp_temporary_minister_pl|Ministres
+trp_swadian_crossbowman_multiplayer_ai|Arbalétrier francais
+trp_swadian_crossbowman_multiplayer_ai_pl|Arbalétriers francais
+trp_swadian_infantry_multiplayer_ai|Infanterie francaise
+trp_swadian_infantry_multiplayer_ai_pl|Fantassins francais
+trp_swadian_man_at_arms_multiplayer_ai|Homme d'armes francais
+trp_swadian_man_at_arms_multiplayer_ai_pl|Hommes d'armes francais
+trp_vaegir_archer_multiplayer_ai|Archer Anglais
+trp_vaegir_archer_multiplayer_ai_pl|Archers Anglais
+trp_vaegir_spearman_multiplayer_ai|Lancier Anglais
+trp_vaegir_spearman_multiplayer_ai_pl|Lanciers Anglais
+trp_vaegir_horseman_multiplayer_ai|Cavalier Anglais
+trp_vaegir_horseman_multiplayer_ai_pl|Cavaliers Anglais
+trp_swadian_crossbowman_multiplayer|Arbalétrier francais
+trp_swadian_crossbowman_multiplayer_pl|Arbalétriers francais
+trp_swadian_infantry_multiplayer|Infanterie francais
+trp_swadian_infantry_multiplayer_pl|Fantassins francais
+trp_swadian_man_at_arms_multiplayer|Homme d'armes francais
+trp_swadian_man_at_arms_multiplayer_pl|Hommes d'armes francais
+trp_vaegir_archer_multiplayer|Archer Anglais
+trp_vaegir_archer_multiplayer_pl|Archers Anglais
+trp_vaegir_spearman_multiplayer|Lancier Anglais
+trp_vaegir_spearman_multiplayer_pl|Lanciers Anglais
+trp_vaegir_horseman_multiplayer|Cavalier Anglais
+trp_vaegir_horseman_multiplayer_pl|Cavaliers Anglais
+trp_nurse|Infirmière
+trp_quick_battle_troop_1|Rodrigo de Braganca
+trp_quick_battle_troop_1_pl|Rodrigo de Braganca
+trp_quick_battle_troop_2|Usiatra
+trp_quick_battle_troop_2_pl|Usiatra
+trp_quick_battle_troop_3|Hegen
+trp_quick_battle_troop_3_pl|Hegen
+trp_quick_battle_troop_4|Konrad
+trp_quick_battle_troop_4_pl|Konrad
+trp_quick_battle_troop_5|Sverre
+trp_quick_battle_troop_5_pl|Sverre
+trp_quick_battle_troop_6|Borislav
+trp_quick_battle_troop_6_pl|Borislav
+trp_quick_battle_troop_7|Stavros
+trp_quick_battle_troop_7_pl|Stavros
+trp_quick_battle_troop_8|Gamara
+trp_quick_battle_troop_8_pl|Gamara
+trp_quick_battle_troop_9|Aethrod
+trp_quick_battle_troop_9_pl|Aethrod
+trp_quick_battle_troop_10|Zaira
+trp_quick_battle_troop_10_pl|Zaira
+trp_quick_battle_troop_11|Argo Sendnar
+trp_quick_battle_troop_11_pl|Argo Sendnar
+trp_tutorial_fighter_1|Combattant novice
+trp_tutorial_fighter_1_pl|Combattants
+trp_tutorial_fighter_2|Combattant novice
+trp_tutorial_fighter_2_pl|Combattants
+trp_tutorial_fighter_3|Combattant régulier
+trp_tutorial_fighter_3_pl|Combattants
+trp_tutorial_fighter_4|Combattant vétéran
+trp_tutorial_fighter_4_pl|Combattants
+trp_tutorial_archer_1|Archer
+trp_tutorial_archer_1_pl|Archers
+trp_tutorial_master_archer|Maître d'archerie
+trp_tutorial_master_archer_pl|Maîtres d'archerie
+trp_tutorial_rider_1|Cavalier
+trp_tutorial_rider_2|Archer monté
+trp_tutorial_master_horseman|Maître d'équitation
+trp_tutorial_master_horseman_pl|Maîtres d'équitation
+trp_swadian_merchant|Marchand de Dijon
+trp_vaegir_merchant|Marchand de Grenoble
+trp_startup_merchants_end|fin des marchands du départ
+trp_startup_merchants_end_pl|fin des marchands du départ
+trp_sea_raider_leader|Capitaine
+trp_sea_raider_leader_pl|Capitaines
+trp_looter_leader|Chef des pillards
+trp_looter_leader_pl|Chefs des pillards
+trp_bandit_leaders_end|fin chef des bandits
+trp_bandit_leaders_end_pl|fin chef des bandits
+trp_relative_of_merchant|Frère du marchand
+trp_relative_of_merchants_end|fin de ce qui se rapporte aux marchands
+trp_relative_of_merchants_end_pl|fin de ce qui se rapporte aux marchands 
+trp_paris_merchant|Marchand des bas cartiers
+trp_paris_merchant_pl|Marchand des bas cartiers
+trp_paris_mendiant1|Mendiant des bas cartiers
+trp_paris_mendiant1_pl|Mendiant des bas cartiers
+trp_paris_formateurch|Instructeur
+trp_paris_formateurch_pl|Instructeur
+trp_paris_vendeurchevauxtop|Maitre dresseur
+trp_paris_vendeurchevauxtop_pl|Maitre dresseur
+trp_paris_ecuyer|Ecuyer
+trp_paris_ecuyer_pl|Ecuyer
+trp_dijon_moine_guer_troup|Pere Jacob
+trp_dijon_moine_guer_troup_pl|Pere Jacob
+trp_dijon_moine_discut_troup|Pretre
+trp_dijon_moine_discut_troup_pl|Pretre
+trp_dijon_blesse_troop|Blesse de guerre
+trp_dijon_blesse_troop_pl|Blesse de guerre
+trp_jacobin_gueris|pere Michel
+trp_jacobin_gueris_pl|pere Michel
+trp_jacobin_vendor|pere Jaques
+trp_jacobin_vendor_pl|pere Jaques
+trp_jacobin_chief|pere Mathieu
+trp_jacobin_chief_pl|pere Mathieu
+trp_jacobin_benis|pere Guillaume
+trp_jacobin_benis_pl|pere Guillaume
+trp_soeur_1d|Soeur
+trp_soeur_1d_pl|Soeur
+trp_soeur_2d|Soeur
+trp_soeur_2d_pl|Soeur
+trp_soeur_3d|Mere superieure
+trp_soeur_3d_pl|Mere superieure
+trp_soeur_4d|Soeur
+trp_soeur_4d_pl|Soeur
+trp_limoge_artisant1|Ingenieur
+trp_limoge_artisant1_pl|Ingenieur
+trp_limoge_artisant2|Cordier
+trp_limoge_artisant2_pl|Cordier
+trp_limoge_artisant3|Chef Ingenieur
+trp_limoge_artisant3_pl|Chef Ingenieur
+trp_tour_caserne_1|Soldat en garnison
+trp_tour_caserne_1_pl|Soldat en garnison
+trp_tour_caserne_2|Soldat en garnison
+trp_tour_caserne_2_pl|Soldat en garnison
+trp_tour_caserne_3|Soldat en garnison
+trp_tour_caserne_3_pl|Soldat en garnison
+trp_tour_caserne_4|Instructeur
+trp_tour_caserne_4_pl|Instructeur
+trp_tour_caserne_5|Soldat en garnison
+trp_tour_caserne_5_pl|Soldat en garnison
+trp_tour_caserne_6|Soldat en garnison
+trp_tour_caserne_6_pl|Soldat en garnison
+trp_orleans_maitre|Maistre forgeron
+trp_orleans_maitre_pl|Maistre forgeron
+trp_orleans_aprentis|Compagnon Forgeron
+trp_orleans_aprentis_pl|Compagnon Forgeron
+trp_bordeau_artisant1|Fabriquant de Bannieres
+trp_bordeau_artisant1_pl|Fabriquant de Bannieres
+trp_bordeau_artisant2|Sommelier
+trp_bordeau_artisant2_pl|Sommelier
+trp_bordeau_artisant3|Vendeur de Livres
+trp_bordeau_artisant3_pl|Vendeur de Livres
+trp_bordeau_artisant4|Potier
+trp_bordeau_artisant4_pl|Potier
+trp_provence|Paysan
+trp_provence_pl|Paysan
+trp_provence2|Marchant itinerant
+trp_provence2_pl|Marchant itinerant
+trp_provence3|Marchant de chevaux
+trp_provence3_pl|Marchant de chevaux
+trp_provence4|Passager
+trp_provence4_pl|Passager
+trp_provence5|Passager
+trp_provence5_pl|Passager
+trp_provence6|Capitaine
+trp_provence6_pl|Capitaine
+trp_provence7|Equipage
+trp_provence7_pl|Equipage
+trp_anger_baner|Fabriquant de bannieres
+trp_anger_baner_pl|Fabriquant de bannieres
+trp_caen_spec_guard|Garde du Chateau
+trp_caen_spec_guard_pl|Garde du Chateau
+trp_caen_spec_guard_int1|Garde du Chateau
+trp_caen_spec_guard_int1_pl|Garde du Chateau
+trp_caen_spec_guard_int2|Garde du Chateau
+trp_caen_spec_guard_int2_pl|Garde du Chateau
+trp_caen_chateau_conte|Comte
+trp_caen_chateau_conte_pl|Comte
+trp_caen_chateau_garde1|Garde du Chateau
+trp_caen_chateau_garde1_pl|Garde du Chateau
+trp_caen_chateau_garde2|Garde du Chateau
+trp_caen_chateau_garde2_pl|Garde du Chateau
+trp_caen_chateau_armurier|Armurier du chateau
+trp_caen_chateau_armurier_pl|Armurier du chateau
+trp_caen_chateau_archer|Garde du Chateau
+trp_caen_chateau_archer_pl|Garde du Chateau
+trp_caen_chateau_garde3|Garde du Chateau
+trp_caen_chateau_garde3_pl|Garde du Chateau
+trp_caen_chateau_garde4|Garde du Chateau
+trp_caen_chateau_garde4_pl|Garde du Chateau
+trp_caen_chateau_garde5|Garde du Chateau
+trp_caen_chateau_garde5_pl|Garde du Chateau
+trp_caen_chateau_gardecour|Garde du Chateau
+trp_caen_chateau_gardecour_pl|Garde du Chateau
+trp_caen_chateau_invitespec|Convive
+trp_caen_chateau_invitespec_pl|Convive
+trp_caen_chateau_rebel|Rebelle
+trp_caen_chateau_rebel_pl|Rebelle
+trp_caen_chateau_invitee1|Convive
+trp_caen_chateau_invitee1_pl|Convive
+trp_caen_chateau_invitee2|Convive
+trp_caen_chateau_invitee2_pl|Convive
+trp_caen_chateau_invitee3|Convive
+trp_caen_chateau_invitee3_pl|Convive
+trp_caen_chateau_invitee4|Convive
+trp_caen_chateau_invitee4_pl|Convive
+trp_caen_chateau_invitee5|Convive
+trp_caen_chateau_invitee5_pl|Convive
+trp_mathieu_farm|Mathieu
+trp_mathieu_farm_pl|Mathieu
+trp_femme_farm|Femme de Mathieu
+trp_femme_farm_pl|Femme de Mathieu
+trp_chasse_camp_gouv|Gouverneur
+trp_chasse_camp_gouv_pl|Gouverneur
+trp_chasse_camp_1|Garde du gouverneur
+trp_chasse_camp_1_pl|Garde du gouverneur
+trp_chasse_camp_2|Garde du gouverneur
+trp_chasse_camp_2_pl|Garde du gouverneur
+trp_chasse_camp_cond|Paysan
+trp_chasse_camp_cond_pl|Paysan
+trp_chasse_camp_bour|Paysan
+trp_chasse_camp_bour_pl|Paysan
+trp_banquier|Convive
+trp_banquier_pl|Convive
+trp_manoire_conviv_invit1|Convive
+trp_manoire_conviv_invit1_pl|Convive
+trp_manoire_conviv_invit2|Convive
+trp_manoire_conviv_invit2_pl|Convive
+trp_manoire_conviv_medic|Convive
+trp_manoire_conviv_medic_pl|Convive
+trp_manoire_chevalier|Chevalier de Bourgogne
+trp_manoire_chevalier_pl|Chevalier de Bourgogne
+trp_manoire_halberdier1|Hallbardier Bourguignon
+trp_manoire_halberdier1_pl|Hallbardiers Bourguignons
+trp_manoire_halberdier2|Hallbardier Bourguignon
+trp_manoire_halberdier2_pl|Hallbardiers Bourguignons
+trp_manoire_cuistot|Cuisinier
+trp_manoire_cuistot_pl|Cuisinier
+trp_cata_miliceparis|Milicien de Paris
+trp_cata_miliceparis_pl|Milicien de Paris
+trp_catarebel_dsentinel|Sentinele
+trp_catarebel_dsentinel_pl|Sentinele
+trp_catarebel_redid1|Rebelle de Paris
+trp_catarebel_redid1_pl|Rebelle de Paris
+trp_catarebel_redid2|Rebelle de Paris
+trp_catarebel_redid2_pl|Rebelle de Paris
+trp_catarebel_rvend|Rebelle de Paris
+trp_catarebel_rvend_pl|Rebelle de Paris
+trp_catarebel_rchef|Chef des Rebelles de Paris
+trp_catarebel_rchef_pl|Chef des Rebelles de Paris
+trp_catarebel_womanrebel|Rebelle de Paris
+trp_catarebel_womanrebel_pl|Rebelle de Paris
+trp_catarebel_womanresid|Rebelle de Paris
+trp_catarebel_womanresid_pl|Rebelle de Paris
+trp_catacomando_dsentinel|Sentinele
+trp_catacomando_dsentinel_pl|Sentinele
+trp_catacomando_redid1|Rebelle de Paris
+trp_catacomando_redid1_pl|Rebelle de Paris
+trp_catacomando_redid2|Rebelle de Paris
+trp_catacomando_redid2_pl|Rebelle de Paris
+trp_catacomando|Chef des Rebelles de Paris
+trp_catacomando_pl|Chef des Rebelles de Paris
+trp_catacomando_womanrebel|Rebelle de Paris
+trp_catacomando_womanrebel_pl|Rebelle de Paris
+trp_catacom_serg|Sergent Anglais
+trp_catacom_serg_pl|Sergent Anglais
+trp_catacom_serg2|Sergent Anglais
+trp_catacom_serg2_pl|Sergent Anglais
+trp_catacom1|Millice Anglaise
+trp_catacom1_pl|Millice Anglaise
+trp_catacom2|Millice Anglaise
+trp_catacom2_pl|Millice Anglaise
+trp_catacom3|Millice Anglaise
+trp_catacom3_pl|Millice Anglaise
+trp_campement_troupe_1|Soldat
+trp_campement_troupe_1_pl|Soldat
+trp_campement_troupe_2|Soldat
+trp_campement_troupe_2_pl|Soldat
+trp_campement_troupe_3|Soldat
+trp_campement_troupe_3_pl|Soldat
+trp_campement_troupe_4|Soldat
+trp_campement_troupe_4_pl|Soldat
+trp_campement_troupe_5|Soldat
+trp_campement_troupe_5_pl|Soldat
+trp_campement_troupe_6|Soldat
+trp_campement_troupe_6_pl|Soldat
+trp_campement_troupe_7|Soldat
+trp_campement_troupe_7_pl|Soldat
+trp_campement_troupe_8|Soldat
+trp_campement_troupe_8_pl|Soldat
+trp_campement_troupe_9|Soldat
+trp_campement_troupe_9_pl|Soldat
+trp_campement_troupe_10|Soldat
+trp_campement_troupe_10_pl|Soldat
+trp_campement_troupe_11|Soldat
+trp_campement_troupe_11_pl|Soldat
+trp_campement_troupe_12|Soldat
+trp_campement_troupe_12_pl|Soldat
+trp_campement_troupe_chant_1|Soldat
+trp_campement_troupe_chant_1_pl|Soldat
+trp_campement_troupe_chant_2|Soldat
+trp_campement_troupe_chant_2_pl|Soldat
+trp_campement_troupe_chant_3|Soldat
+trp_campement_troupe_chant_3_pl|Soldat
+trp_campement_troupe_chant_4|Soldat
+trp_campement_troupe_chant_4_pl|Soldat
+trp_campement_troupe_serg_1|Sergent
+trp_campement_troupe_serg_1_pl|Sergent
+trp_campement_troupe_spec_1|Sergent
+trp_campement_troupe_spec_1_pl|Sergent
+trp_campement_troupe_serg_2|Sergent
+trp_campement_troupe_serg_2_pl|Sergent
+trp_campement_troupe_spec_2|Sergent
+trp_campement_troupe_spec_2_pl|Sergent
+trp_campement_troupe_serg_3|Sergent
+trp_campement_troupe_serg_3_pl|Sergent
+trp_campement_troupe_spec_3|Sergent
+trp_campement_troupe_spec_3_pl|Sergent
+trp_campement_troupe_serg_4|Sergent
+trp_campement_troupe_serg_4_pl|Sergent
+trp_campement_troupe_spec_4|Sergent
+trp_campement_troupe_spec_4_pl|Sergent
+trp_ribaude_1|Ribaude
+trp_ribaude_1_pl|Ribaude
+trp_ribaude_2|Ribaude
+trp_ribaude_2_pl|Ribaude
+trp_ribaude_3|Ribaude
+trp_ribaude_3_pl|Ribaude
+trp_rebel_montpelier_tower_1|Sentinelle
+trp_rebel_montpelier_tower_1_pl|Sentinelle
+trp_rebel_montpelier_tower_2|Archer Rebelle
+trp_rebel_montpelier_tower_2_pl|Archer Rebelle
+trp_rebel_montpelier_tower_3|Fantassin Rebelle
+trp_rebel_montpelier_tower_3_pl|Fantassin Rebelle
+trp_rebel_montpelier_tower_4|Archer Rebelle
+trp_rebel_montpelier_tower_4_pl|Archer Rebelle
+trp_rebel_montpelier_tower_5|Arbaletier Rebelle
+trp_rebel_montpelier_tower_5_pl|Arbaletier Rebelle
+trp_rebel_montpelier_tower_6|Arbaletier Rebelle
+trp_rebel_montpelier_tower_6_pl|Arbaletier Rebelle
+trp_rebel_montpelier_tower_7|Francis
+trp_rebel_montpelier_tower_7_pl|Francis
+trp_rebel_montpelier_tower_8|Chef Rebelle
+trp_rebel_montpelier_tower_8_pl|Chef Rebelle
+trp_covoy_english_guard|Garde du convoi Anglais
+trp_covoy_english_guard_pl|Garde du convoi Anglais
+trp_covoy_english_guard2|Fantassin du convoi Anglais
+trp_covoy_english_guard2_pl|Fantassin du convoi Anglais
+trp_covoy_english_guard3|Archer du convoi Anglais
+trp_covoy_english_guard3_pl|Archer du convoi Anglais
+trp_covoy_english_guard_end|Garde du convoi Anglais
+trp_covoy_english_guard_end_pl|Garde du convoi Anglais
+trp_pirate_troupe_1|Chef des pirates
+trp_pirate_troupe_1_pl|Chef des pirates
+trp_pirate_troupe_2|Pirate
+trp_pirate_troupe_2_pl|Pirate
+trp_pirate_troupe_3|Pirate
+trp_pirate_troupe_3_pl|Pirate
+trp_pirate_troupe_4|Pirate
+trp_pirate_troupe_4_pl|Pirate
+trp_pirate_troupe_5|Pirate
+trp_pirate_troupe_5_pl|Pirate
+trp_pirate_troupe_6|Pirate
+trp_pirate_troupe_6_pl|Pirate
+trp_pirate_troupe_7|Pirate
+trp_pirate_troupe_7_pl|Pirate
+trp_pirate_troupe_8|Pirate
+trp_pirate_troupe_8_pl|Pirate
+trp_pirate_troupe_9|Pirate
+trp_pirate_troupe_9_pl|Pirate
+trp_pirate_troupe_10|Pirate
+trp_pirate_troupe_10_pl|Pirate
+trp_pirate_troupe_11|Pirate
+trp_pirate_troupe_11_pl|Pirate
+trp_pirate_troupe_12|Pirate
+trp_pirate_troupe_12_pl|Pirate
+trp_pirate_troupe_13|Pirate
+trp_pirate_troupe_13_pl|Pirate
+trp_provence2_p|Marchant itinerant
+trp_provence2_p_pl|Marchant itinerant
+trp_provence3_p|Marchant de chevaux
+trp_provence3_p_pl|Marchant de chevaux
+trp_provence4_p|Passager
+trp_provence4_p_pl|Passager
+trp_provence5_p|Passager
+trp_provence5_p_pl|Passager
+trp_provence6_p|Capitaine
+trp_provence6_p_pl|Capitaine
+trp_provence7_p|Equipage
+trp_provence7_p_pl|Equipage
+trp_sang_lysbateau|Soldat
+trp_sang_lysbateau_pl|Soldat
+trp_sang_lysbateau_p|Soldat
+trp_sang_lysbateau_p_pl|Soldat
+trp_gordaine_sang_lys1|Instructeur
+trp_gordaine_sang_lys1_pl|Instructeur
+trp_gordaine_sang_lys2|Soldat
+trp_gordaine_sang_lys2_pl|Soldat
+trp_gordaine_sang_lys3|Soldat
+trp_gordaine_sang_lys3_pl|Soldat
+trp_gordaine_sang_lys4|Soldat
+trp_gordaine_sang_lys4_pl|Soldat
+trp_gordaine_sang_lys5|Soldat
+trp_gordaine_sang_lys5_pl|Soldat
+trp_gordaine_sang_lys6|Soldat
+trp_gordaine_sang_lys6_pl|Soldat
+trp_gordaine_sang_lys7|Garde
+trp_gordaine_sang_lys7_pl|Garde
+trp_gordaine_sang_lys8|Maitre de la Compagnie du SansLys
+trp_gordaine_sang_lys8_pl|Maitre de la Compagnie du SansLys
+trp_ressource_merchant_paris|Marchand de matières premières de Paris
+trp_ressource_merchant_paris_pl|Marchand de matières premières
+trp_ressource_merchant_roen|Marchand de matières premières de Rouen
+trp_ressource_merchant_roen_pl|Marchand de matières premières
+trp_ressource_merchant_caen|Marchand de matières premières de Caen
+trp_ressource_merchant_caen_pl|Marchand de matières premières
+trp_ressource_merchant_anger|Marchand de matières premières de Nantes
+trp_ressource_merchant_anger_pl|Marchand de matières premières
+trp_ressource_merchant_orleans|Marchand de matières premières d'Orléans
+trp_ressource_merchant_orleans_pl|Marchand de matières premières
+trp_ressource_merchant_tours|Marchand de matières premières de Tours
+trp_ressource_merchant_tours_pl|Marchand de matières premières
+trp_ressource_merchant_bordeau|Marchand de matières premières de Bordeau
+trp_ressource_merchant_bordeau_pl|Marchand de matières premières
+trp_ressource_merchant_dijon|Marchand de matières premières de Dijon
+trp_ressource_merchant_dijon_pl|Marchand de matières premières
+trp_entrepot_bandit_1|Brigand
+trp_entrepot_bandit_1_pl|Brigand
+trp_entrepot_bandit_2|Brigand
+trp_entrepot_bandit_2_pl|Brigand
+trp_entrepot_contremaitre|Contremaitre
+trp_entrepot_contremaitre_pl|Contremaitre
+trp_tlys_bookseller|Book Merchant
+trp_tlys_bookseller_pl|Book Merchant
+trp_sang_lysivretlys|Mercenaire ivre
+trp_sang_lysivretlys_pl|Mercenaire ivre
+trp_tlys_tavernkeeper|Tavernier
+trp_tlys_tavernkeeper_pl|Tavernier
+trp_rebel_paysan|Paysan Rebelle
+trp_rebel_paysan_pl|Paysans Rebelles
+trp_rebel_archer|Archer Rebelle
+trp_rebel_archer_pl|Archers Rebelles
+trp_rebel_arbaletier|Arbaletier Rebelle
+trp_rebel_arbaletier_pl|Arbaletiers Rebelles
+trp_rebel_fantassin|Fantassin Rebelle
+trp_rebel_fantassin_pl|Fantassins Rebelles
+trp_rebel_piquier|Piquier Rebelle
+trp_rebel_piquier_pl|Piquiers Rebelles
+trp_rebel_heros|Heros de la Rebellion
+trp_rebel_heros_pl|Heros de la Rebellion
+trp_sang_lysbasetroop|Mercenaire du SansLys
+trp_sang_lysbasetroop_pl|Mercenaires du SansLys
+trp_serg_sang_lysbasetroop|Sergent Mercenaire du SansLys
+trp_serg_sang_lysbasetroop_pl|Sergents Mercenaire du SansLys
+trp_vilandrandro_quest_fanta|Fantassin de Vilandrandro
+trp_vilandrandro_quest_fanta_pl|Fantassin de Vilandrandro
+trp_vilandrandro_quest_fanta2|Fantassin de Vilandrandro
+trp_vilandrandro_quest_fanta2_pl|Fantassin de Vilandrandro
+trp_vilandrandro_quest_arbaletier|Archer de Vilandrandro
+trp_vilandrandro_quest_arbaletier_pl|Archer de Vilandrandro
+trp_vilandrandro_quest_fanta_end|Archer de Vilandrandro
+trp_vilandrandro_quest_fanta_end_pl|Archer de Vilandrandro
+trp_sang_lysbatb1|Sergent Mercenaire du SansLys
+trp_sang_lysbatb1_pl|Mercenaire du SansLys
+trp_sang_lysbatb2|Mercenaire du SansLys
+trp_sang_lysbatb2_pl|Mercenaire du SansLys
+trp_sang_lysbatb3|Mercenaire du SansLys
+trp_sang_lysbatb3_pl|Mercenaire du SansLys
+trp_sang_lysbatb4|Mercenaire du SansLys
+trp_sang_lysbatb4_pl|Mercenaire du SansLys
+trp_sang_lysbatb5|Mercenaire du SansLys
+trp_sang_lysbatb5_pl|Mercenaire du SansLys
+trp_sang_lysbatb6|Mercenaire du SansLys
+trp_sang_lysbatb6_pl|Mercenaire du SansLys
+trp_sang_lysbatb7|Mercenaire du SansLys
+trp_sang_lysbatb7_pl|Mercenaire du SansLys
+trp_sang_lysbatb8|Mercenaire du SansLys
+trp_sang_lysbatb8_pl|Mercenaire du SansLys
+trp_sang_lysbatb9|Mercenaire du SansLys
+trp_sang_lysbatb9_pl|Mercenaire du SansLys
+trp_sang_lysbatb10|Mercenaire du SansLys
+trp_sang_lysbatb10_pl|Mercenaire du SansLys
+trp_sang_lysbatb11|Mercenaire du SansLys
+trp_sang_lysbatb11_pl|Mercenaire du SansLys
+trp_vilandrandro_bat_bourg1|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg1_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg2|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg2_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg3|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg3_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg4|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg4_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg5|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg5_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg6|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg6_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg7|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg7_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg8|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg8_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg9|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg9_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg10|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg10_pl|Fantassin de Vilandrandro
+trp_vilandrandro_bat_bourg11|Archer de Vilandrandro
+trp_vilandrandro_bat_bourg11_pl|Archer de Vilandrandro
+trp_vilandrandro_bat_bourg12|Archer de Vilandrandro
+trp_vilandrandro_bat_bourg12_pl|Archer de Vilandrandro
+trp_vilandrandro_bat_bourg13|Archer de Vilandrandro
+trp_vilandrandro_bat_bourg13_pl|Archer de Vilandrandro
+trp_vilandrandro_bat_bourg14|Archer de Vilandrandro
+trp_vilandrandro_bat_bourg14_pl|Archer de Vilandrandro
+trp_sang_lyspont1|Sergent du SansLys
+trp_sang_lyspont1_pl|Mercenaire du SansLys
+trp_sang_lyspont2|Mercenaire du SansLys
+trp_sang_lyspont2_pl|Mercenaire du SansLys
+trp_sang_lyspont3|Mercenaire du SansLys
+trp_sang_lyspont3_pl|Mercenaire du SansLys
+trp_sang_lyspont4|Mercenaire du SansLys
+trp_sang_lyspont4_pl|Mercenaire du SansLys
+trp_sang_lyspont5|Mercenaire du SansLys
+trp_sang_lyspont5_pl|Mercenaire du SansLys
+trp_sang_lyspont6|Mercenaire du SansLys
+trp_sang_lyspont6_pl|Mercenaire du SansLys
+trp_sang_lyspont7|Mercenaire du SansLys
+trp_sang_lyspont7_pl|Mercenaire du SansLys
+trp_pontbenezet_troop1|Inquisiteur
+trp_pontbenezet_troop1_pl|Inquisiteur
+trp_pontbenezet_troop2|Mercenaire
+trp_pontbenezet_troop2_pl|Mercenaire
+trp_pontbenezet_troop3|Mercenaire
+trp_pontbenezet_troop3_pl|Mercenaire
+trp_pontbenezet_troop4|Mercenaire
+trp_pontbenezet_troop4_pl|Mercenaire
+trp_pontbenezet_troop5|Mercenaire
+trp_pontbenezet_troop5_pl|Mercenaire
+trp_pontbenezet_troop6|Mercenaire
+trp_pontbenezet_troop6_pl|Mercenaire
+trp_pontbenezet_troop7|Mercenaire
+trp_pontbenezet_troop7_pl|Mercenaire
+trp_pontbenezet_troop8|Mercenaire
+trp_pontbenezet_troop8_pl|Mercenaire
+trp_pontbenezet_troop9|Mercenaire
+trp_pontbenezet_troop9_pl|Mercenaire
+trp_pontbenezet_troop10|Mercenaire
+trp_pontbenezet_troop10_pl|Mercenaire
+trp_pontbenezet_troop11|Mercenaire
+trp_pontbenezet_troop11_pl|Mercenaire
+trp_pontbenezet_troop12|Mercenaire
+trp_pontbenezet_troop12_pl|Mercenaire
+trp_pontbenezet_troop13|Mercenaire
+trp_pontbenezet_troop13_pl|Mercenaire
+trp_pontbenezet_troop14|Mercenaire
+trp_pontbenezet_troop14_pl|Mercenaire
+trp_pontbenezet_troop15|Mercenaire
+trp_pontbenezet_troop15_pl|Mercenaire
+trp_pontbenezet_troop16|Mercenaire
+trp_pontbenezet_troop16_pl|Mercenaire
+trp_pontbenezet_troop17|Hallbardier Suisse
+trp_pontbenezet_troop17_pl|Hallbardier Suisse
+trp_pontbenezet_troop18|Hallbardier Suisse
+trp_pontbenezet_troop18_pl|Hallbardier Suisse
+trp_pontbenezet_troop19|Hallbardier Suisse
+trp_pontbenezet_troop19_pl|Hallbardier Suisse
+trp_pontbenezet_troop20|Hallbardier Suisse
+trp_pontbenezet_troop20_pl|Hallbardier Suisse
+trp_pontbenezet_troop21|Hallbardier Suisse
+trp_pontbenezet_troop21_pl|Hallbardier Suisse
+trp_milliceneutre1|Mercenaire
+trp_milliceneutre1_pl|Mercenaire
+trp_milliceneutre2|Mercenaire
+trp_milliceneutre2_pl|Mercenaire
+trp_rebel_quest_ca1|Arbaletier Rebelle
+trp_rebel_quest_ca1_pl|Arbaletiers Rebelles
+trp_rebel_quest_ca2|Arbaletier Rebelle
+trp_rebel_quest_ca2_pl|Arbaletiers Rebelles
+trp_rebel_quest_ca3|Arbaletier Rebelle
+trp_rebel_quest_ca3_pl|Arbaletiers Rebelles
+trp_rebel_quest_ca4|Arbaletier Rebelle
+trp_rebel_quest_ca4_pl|Arbaletiers Rebelles
+trp_rebel_quest_ca5|Arbaletier Rebelle
+trp_rebel_quest_ca5_pl|Arbaletiers Rebelles
+trp_rebel_quest_ca6|Arbaletier Rebelle
+trp_rebel_quest_ca6_pl|Arbaletiers Rebelles
+trp_rebel_quest_ca7|Archer Rebelle
+trp_rebel_quest_ca7_pl|Archers Rebelles
+trp_rebel_quest_ca8|Archer Rebelle
+trp_rebel_quest_ca8_pl|Archers Rebelles
+trp_rebel_quest_ca9|Fantassin Rebelle
+trp_rebel_quest_ca9_pl|Fantassins Rebelles
+trp_rebel_quest_ca10|Fantassin Rebelle
+trp_rebel_quest_ca10_pl|Fantassins Rebelles
+trp_rebel_quest_ca11|Arbaletier Rebelle
+trp_rebel_quest_ca11_pl|Arbaletiers Rebelles
+trp_eng_quest_ca1|Sentinele
+trp_eng_quest_ca1_pl|Sentinele
+trp_eng_quest_ca2|Archer long Anglais
+trp_eng_quest_ca2_pl|Archer long Anglais
+trp_eng_quest_ca3|Guisarmier Anglais
+trp_eng_quest_ca3_pl|Guisarmier Anglais
+trp_eng_quest_ca4|Guisarmier Anglais
+trp_eng_quest_ca4_pl|Guisarmier Anglais
+trp_eng_quest_ca5|Sergent Anglais
+trp_eng_quest_ca5_pl|Sergent Anglais
+trp_eng_quest_ca6|Chevalier Anglais
+trp_eng_quest_ca6_pl|Chevalier Anglais
+trp_rebel_verzy1|Chef Rebelle
+trp_rebel_verzy1_pl|Chef Rebelle
+trp_rebel_verzy2|Antoine
+trp_rebel_verzy2_pl|Antoine
+trp_rebel_verzy3|Poignard
+trp_rebel_verzy3_pl|Poignard
+trp_rebel_verzy4|La Ripaille
+trp_rebel_verzy4_pl|La Ripaille
+trp_rebel_verzy5|Tibaut
+trp_rebel_verzy5_pl|Tibaut
+trp_rebel_verzy6|Foureau
+trp_rebel_verzy6_pl|Foureau
+trp_rebel_verzentrep1|Chef Rebelle
+trp_rebel_verzentrep1_pl|Chef Rebelle
+trp_rebel_verzentrep2|Antoine
+trp_rebel_verzentrep2_pl|Antoine
+trp_rebel_verzentrep3|Poignard
+trp_rebel_verzentrep3_pl|Poignard
+trp_rebel_verzentrep4|La Ripaille
+trp_rebel_verzentrep4_pl|La Ripaille
+trp_rebel_verzentrep5|Tibaut
+trp_rebel_verzentrep5_pl|Tibaut
+trp_bourg_entrep_metz1|Hallbardier
+trp_bourg_entrep_metz1_pl|Hallbardiers Bourguignons
+trp_bourg_entrep_metz2|Piquier
+trp_bourg_entrep_metz2_pl|Piquiers lourds Bourguignon
+trp_bourg_entrep_metz3|Piquier
+trp_bourg_entrep_metz3_pl|Piquiers lourds Bourguignon
+trp_bourg_entrep_metz4|Hallbardier
+trp_bourg_entrep_metz4_pl|Hallbardiers Bourguignons
+trp_bourg_entrep_metz5|Vougier
+trp_bourg_entrep_metz5_pl|Vougiers Bourguignons
+trp_bourg_entrep_metz6|Vougier
+trp_bourg_entrep_metz6_pl|Vougiers Bourguignons
+trp_bourg_entrep_metz7|Archer
+trp_bourg_entrep_metz7_pl|Archers Bourguignons
+trp_bourg_entrep_metz8|Archer
+trp_bourg_entrep_metz8_pl|Archers Bourguignons
+trp_bourg_entrep_copie1|Hallbardier
+trp_bourg_entrep_copie1_pl|Hallbardiers Bourguignons
+trp_bourg_entrep_copie2|Piquier
+trp_bourg_entrep_copie2_pl|Piquiers lourds Bourguignon
+trp_bourg_entrep_copie3|Piquier
+trp_bourg_entrep_copie3_pl|Piquiers lourds Bourguignon
+trp_bourg_entrep_copie4|Hallbardier
+trp_bourg_entrep_copie4_pl|Hallbardiers Bourguignons
+trp_bourg_entrep_copie5|Vougier
+trp_bourg_entrep_copie5_pl|Vougiers Bourguignons
+trp_bourg_entrep_copie6|Vougier
+trp_bourg_entrep_copie6_pl|Vougiers Bourguignons
+trp_bourg_entrep_copie7|Archer
+trp_bourg_entrep_copie7_pl|Archers Bourguignons
+trp_bourg_entrep_copie8|Archer
+trp_bourg_entrep_copie8_pl|Archers Bourguignons
+trp_caen_foss|Fossoyeur de Calais
+trp_caen_foss_pl|Fossoyeur de Calais
+trp_rebel_pfort1|Antoine
+trp_rebel_pfort1_pl|Antoine
+trp_rebel_pfort2|Poignard
+trp_rebel_pfort2_pl|Poignard
+trp_rebel_pfort3|La Ripaille
+trp_rebel_pfort3_pl|La Ripaille
+trp_rebel_pfort4|Tibaut
+trp_rebel_pfort4_pl|Tibaut
+trp_rebel_pfort5|Foureau
+trp_rebel_pfort5_pl|Foureau
+trp_bourg_pfort1|Arbaletier lourd Bourguignon
+trp_bourg_pfort1_pl|Arbaletier lourd Bourguignon
+trp_bourg_pfort2|Arbaletier lourd Bourguignon
+trp_bourg_pfort2_pl|Arbaletier lourd Bourguignon
+trp_bourg_pfort3|Arbaletier Lourd Bourguignon
+trp_bourg_pfort3_pl|Arbaletier lourd Bourguignon
+trp_bourg_pfort4|Arbaletier lourd Bourguignon
+trp_bourg_pfort4_pl|Arbaletier lourd Bourguignon
+trp_bourg_pfort5|Garde Bourguignon
+trp_bourg_pfort5_pl|Gardes Bourguignons
+trp_bourg_pfort6|Archer Bourguignons
+trp_bourg_pfort6_pl|Archers Bourguignons
+trp_bourg_pfort7|Hallbardier Bourguignons
+trp_bourg_pfort7_pl|Hallbardiers Bourguignons
+trp_bourg_pfort8|Hallbardier Bourguignons
+trp_bourg_pfort8_pl|Hallbardiers Bourguignons
+trp_pfrebel_neutre1|Chef Rebelle
+trp_pfrebel_neutre1_pl|Chef Rebelle
+trp_pfrebel_neutre2|Fantassin Rebelle
+trp_pfrebel_neutre2_pl|Fantassin Rebelle
+trp_pfrebel_neutre3|Fantassin Rebelle
+trp_pfrebel_neutre3_pl|Fantassin Rebelle
+trp_pfrebel_neutre4|Archer Rebelle
+trp_pfrebel_neutre4_pl|Archer Rebelle
+trp_pfrebel_neutre5|Arbaletier Rebelle
+trp_pfrebel_neutre5_pl|Arbaletier Rebelle
+trp_pfrebel_neutre6|Arbaletier Rebelle
+trp_pfrebel_neutre6_pl|Arbaletier Rebelle
+trp_rebel_licorn|La Licorne
+trp_rebel_licorn_pl|La Licorne
+trp_parisvilan_entry|Homme louche
+trp_parisvilan_entry_pl|Homme louche
+trp_parisvilan_guide|Guide
+trp_parisvilan_guide_pl|Guide
+trp_rodrigo_villandrandro|Rodrigo de Villandrandro
+trp_rodrigo_villandrandro_pl|Rodrigo de Villandrandro
+trp_cata_vilain1|Brigand
+trp_cata_vilain1_pl|Brigand
+trp_cata_ribaude1|Ribaude
+trp_cata_ribaude1_pl|Ribaude
+trp_cata_gard1|Garde du corp
+trp_cata_gard1_pl|Garde du corp
+trp_cata_gard2|Garde du corp
+trp_cata_gard2_pl|Garde du corp
+trp_sirene_1|Lady Laura
+trp_sirene_1_pl|Lady Laura
+trp_sirene_2|Dame Catherine
+trp_sirene_2_pl|Dame Catherine
+trp_sirene_3|La belle Beatrice
+trp_sirene_3_pl|La belle Beatrice
+trp_sirene_client|Client
+trp_sirene_client_pl|Client
+trp_sirene_chambellan|Chambellan
+trp_sirene_chambellan_pl|Chambellan
+trp_sirene_4|Georgia
+trp_sirene_4_pl|Georgia
+trp_chateautours_1|Sergent d'Arme
+trp_chateautours_1_pl|Sergent d'Arme
+trp_chateautours_2|Sergent d'Arme
+trp_chateautours_2_pl|Sergent d'Arme
+trp_chateautours_4|Sergent d'Arme
+trp_chateautours_4_pl|Sergent d'Arme
+trp_chateautours_5|Arbaletrier
+trp_chateautours_5_pl|Arbaletriers
+trp_chateautours_6|Arbaletrier
+trp_chateautours_6_pl|Arbaletriers
+trp_chateautours_7|Sergent d'Arme
+trp_chateautours_7_pl|Sergent d'Arme
+trp_parisassau_rchef|Chef des Rebelles de Paris
+trp_parisassau_rchef_pl|Chef des Rebelles de Paris
+trp_parisassau_troop1|Rebelle de Paris
+trp_parisassau_troop1_pl|Rebelles de Paris
+trp_parisassau_troop2|Rebelle de Paris
+trp_parisassau_troop2_pl|Rebelles de Paris
+trp_parisassau_troop_wo|Rebelle de Paris
+trp_parisassau_troop_wo_pl|Rebelles de Paris
+trp_pretre_fierbois1|pretre
+trp_pretre_fierbois1_pl|pretre
+trp_pretre_fierbois2|pretre
+trp_pretre_fierbois2_pl|pretre
+trp_pretre_fierbois3|pretre
+trp_pretre_fierbois3_pl|pretre
+trp_rouen_merchantquest|Marchand
+trp_rouen_merchantquest_pl|Marchand
+trp_rouen_mercenaire|Garde du marchand
+trp_rouen_mercenaire_pl|Garde du marchant
+trp_rouenf_traire1|Garde du marchand
+trp_rouenf_traire1_pl|Garde du marchant
+trp_rouenf_traire2|Garde du marchand
+trp_rouenf_traire2_pl|Garde du marchant
+trp_rouenf_traire3|Garde du marchand
+trp_rouenf_traire3_pl|Garde du marchant
+trp_rouenf_fill|Fille du marchand
+trp_rouenf_fill_pl|Fille du marchand
+trp_comp_catas|Chevalier solitaire
+trp_comp_catas_pl|Chevalier solitaire
+trp_dame_jardin|Madeleine
+trp_dame_jardin_pl|Madeleine
+trp_comp_orleans|Champion Arbaletier
+trp_comp_orleans_pl|Champion Arbaletier
+trp_comp_marseille|Messager
+trp_comp_marseille_pl|Messager
+trp_comps_bourges|Mercenaire du SansLys
+trp_comps_bourges_pl|Mercenaire du SansLys
+trp_comps_dijon|Pere Daniel
+trp_comps_dijon_pl|Pere Daniel
+trp_comps_calais|Aventurier
+trp_comps_calais_pl|Aventurier
+trp_comps_limoge|Ingenieur Arquebusier
+trp_comps_limoge_pl|Ingenieur Arquebusier
+trp_alcolo_1|Pilier de Taverne
+trp_alcolo_1_pl|Pilier de Taverne
+trp_courtisane_taverne|Ribaude
+trp_courtisane_taverne_pl|Ribaude
+trp_organisateur|Organisateur de combats
+trp_organisateur_pl|Organisateur de combats
+trp_parieur_1|Parieur
+trp_parieur_1_pl|Parieur
+trp_spectapugilat_1|Spectacteur
+trp_spectapugilat_1_pl|Spectacteur
+trp_spectapugilat_2|Spectacteur
+trp_spectapugilat_2_pl|Spectacteur
+trp_spectapugilat_3|Spectacteur
+trp_spectapugilat_3_pl|Spectacteur
+trp_combatant_pugilat|Combatant
+trp_combatant_pugilat_pl|Combatant
+trp_parieur_12|Parieur
+trp_parieur_12_pl|Parieur
+trp_spectapugilat_12|Spectacteur
+trp_spectapugilat_12_pl|Spectacteur
+trp_spectapugilat_22|Spectacteur
+trp_spectapugilat_22_pl|Spectacteur
+trp_spectapugilat_32|Spectacteur
+trp_spectapugilat_32_pl|Spectacteur
+trp_combatant_pugilat2|Combatant
+trp_combatant_pugilat2_pl|Combatant
+trp_parieur_13|Parieur
+trp_parieur_13_pl|Parieur
+trp_spectapugilat_13|Spectacteur
+trp_spectapugilat_13_pl|Spectacteur
+trp_spectapugilat_23|Spectacteur
+trp_spectapugilat_23_pl|Spectacteur
+trp_spectapugilat_33|Spectacteur
+trp_spectapugilat_33_pl|Spectacteur
+trp_combatant_pugilat3|Combatant
+trp_combatant_pugilat3_pl|Combatant
+trp_parieur_14|Parieur
+trp_parieur_14_pl|Parieur
+trp_spectapugilat_14|Spectacteur
+trp_spectapugilat_14_pl|Spectacteur
+trp_spectapugilat_24|Spectacteur
+trp_spectapugilat_24_pl|Spectacteur
+trp_spectapugilat_34|Spectacteur
+trp_spectapugilat_34_pl|Spectacteur
+trp_combatant_pugilat4|Combatant
+trp_combatant_pugilat4_pl|Combatant
+trp_messenger_master|Maitre de Guilde des Messagers de Calais
+trp_messenger_master_pl|Maitre de Guilde des Messagers de Calais
+trp_messenger_master_bourges|Maitre de Guilde des Messagers de Bourges
+trp_messenger_master_bourges_pl|Maitre de Guilde des Messagers de Bourges
+trp_messenger_master_bordeau|Maitre de Guilde des Messagers de Bordeau
+trp_messenger_master_bordeau_pl|Maitre de Guilde des Messagers de Bordeau
+trp_messenger_master_calais|Maitre de Guilde des Messagers de Marseille
+trp_messenger_master_calais_pl|Maitre de Guilde des Messagers de Marseille
+trp_paris_evec_troop1|Cardinal de Paris
+trp_paris_evec_troop1_pl|évêque de Paris
+trp_paris_moine_segond|Pretre de Paris
+trp_paris_moine_segond_pl|Pretre de Paris
+trp_bourges_evec_troop1|Cardinal de Bourges
+trp_bourges_evec_troop1_pl|Cardinal de Bourges
+trp_bourges_moine_segond|Pretre de Bourges
+trp_bourges_moine_segond_pl|Pretre de Bourges
+trp_Bourges_banquier|Banquier de Bourges
+trp_Bourges_banquier_pl|Banquier de Bourges
+trp_paris_banquier|Banquier de Paris
+trp_paris_banquier_pl|Banquier de Bourges
+trp_marseille_banquier|Banquier de Marseille
+trp_marseille_banquier_pl|Banquier de Marseille
+trp_mercenary_bourges|Garde du banquier
+trp_mercenary_bourges_pl|Garde du banquier
+trp_mercenary_paris|Garde du banquier
+trp_mercenary_paris_pl|Garde du banquier
+trp_mercenary_marseille|Garde du banquier
+trp_mercenary_marseille_pl|Garde du banquier
+trp_lyon_caserne_1|Garde frontière Lyonnais
+trp_lyon_caserne_1_pl|Soldat en garnison
+trp_lyon_caserne_2|Garde frontière Lyonnais
+trp_lyon_caserne_2_pl|Garde frontière Lyonnais
+trp_lyon_caserne_3|Garde frontière Lyonnais
+trp_lyon_caserne_3_pl|Soldat en garnison
+trp_lyon_caserne_4|Instructeur
+trp_lyon_caserne_4_pl|Instructeur
+trp_lyon_caserne_5|Garde frontière Lyonnais
+trp_lyon_caserne_5_pl|Soldat en garnison
+trp_lyon_caserne_6|Garde frontière Lyonnais
+trp_lyon_caserne_6_pl|aaSoldat en garnison
+trp_braconnier_1|Villageois
+trp_braconnier_1_pl|Villageois
+trp_braconnier_2|Villageois
+trp_braconnier_2_pl|Villageois
+trp_braconnier_3|Villageois
+trp_braconnier_3_pl|Villageois
+trp_v_aventurier|Vieil Aventurier
+trp_v_aventurier_pl|Vieil Aventurier
+trp_moin_orleans|Frere Patrique
+trp_moin_orleans_pl|Frere Patrique
+trp_moin_orleans2|Moine
+trp_moin_orleans2_pl|Moine
+trp_moin_orleans_interieur|Moine Scribe
+trp_moin_orleans_interieur_pl|Moine Scribe
+trp_f_macon_bouclier|Disciple Franc Macon
+trp_f_macon_bouclier_pl|Disciple Franc Macon
+trp_f_macon_hache_bouclier|Disciple Franc Macon
+trp_f_macon_hache_bouclier_pl|Disciple Franc Macon
+trp_f_macon_hache2m|Maistre Franc Macon
+trp_f_macon_hache2m_pl|Maistre Franc Macon
+trp_mendiant_rc|mendiant
+trp_mendiant_rc_pl|mendiant
+trp_f_macon_bouclier1|Maistre Franc Macon
+trp_f_macon_bouclier1_pl|Disciple Franc Macon
+trp_f_macon_hache_bouclier2|Disciple Franc Macon
+trp_f_macon_hache_bouclier2_pl|Disciple Franc Macon
+trp_f_macon_hache2m3|Maistre Franc Macon
+trp_f_macon_hache2m3_pl|Maistre Franc Macon
+trp_jouteur_training|Jouteur
+trp_jouteur_training_pl|Jouteur
+trp_jouteur_tournament_1|Jouteur débutant
+trp_jouteur_tournament_1_pl|Jouteur
+trp_jouteur_tournament_2|Jeune Jouteur
+trp_jouteur_tournament_2_pl|Jouteur
+trp_jouteur_tournament_3|Jouteur confirmé
+trp_jouteur_tournament_3_pl|Jouteur
+trp_jouteur_tournament_4|Jouteur expert
+trp_jouteur_tournament_4_pl|Jouteur
+trp_jouteur_tournament_5|Jouteur vétéran
+trp_jouteur_tournament_5_pl|Jouteur
+trp_jouteur_tournament_6|Jouteur vétéran
+trp_jouteur_tournament_6_pl|Jouteur
+trp_jouteur_tournament_7|Jouteur vétéran 
+trp_jouteur_tournament_7_pl|Jouteur
+trp_jouteur_tournament_8|Jouteur vétéran
+trp_jouteur_tournament_8_pl|Jouteur
+trp_jouteur_tournament_9|Jouteur maladroit
+trp_jouteur_tournament_9_pl|Jouteur
+trp_jouteur_tournament_10|Jouteur nerveux
+trp_jouteur_tournament_10_pl|Jouteur
+trp_jouteur_tournament_11|Jouteur anonyme
+trp_jouteur_tournament_11_pl|Jouteur
+trp_jouteur_tournament_12|Jouteur experimenté
+trp_jouteur_tournament_12_pl|Jouteur
+trp_jouteur_tournament_13|Jouteur inconnu
+trp_jouteur_tournament_13_pl|Jouteur
+trp_jouteur_tournament_14|Jouteur maladroit
+trp_jouteur_tournament_14_pl|Jouteur
+trp_jouteur_tournament_15|Jouteur occasionnel
+trp_jouteur_tournament_15_pl|Jouteur
+trp_jouteur_tournament_16|Jouteur 
+trp_jouteur_tournament_16_pl|Jouteur
+trp_jouteur_tournament_17|Jouteur
+trp_jouteur_tournament_17_pl|Jouteur
+trp_auberge_troop_1|Vendeur de chevaux
+trp_auberge_troop_1_pl|Vendeur de chevaux
+trp_auberge_troop_2|Garde de l'Auberge
+trp_auberge_troop_2_pl|Jouteur
+trp_auberge_troop_3|Vendeur de chevaux
+trp_auberge_troop_3_pl|Vendeur de chevaux
+trp_auberge_troop_4|Garde de l'Auberge
+trp_auberge_troop_4_pl|Garde de l'Auberge
+trp_auberge_troop_5|Vendeur de chevaux
+trp_auberge_troop_5_pl|Vendeur de chevaux
+trp_auberge_troop_6|Garde de l'Auberge
+trp_auberge_troop_6_pl|Garde de l'Auberge
+trp_auberge_troop_7|Vendeur de chevaux
+trp_auberge_troop_7_pl|Vendeur de chevaux
+trp_auberge_troop_8|Garde de l'Auberge
+trp_auberge_troop_8_pl|Garde de l'Auberge
+trp_auberge_troop_9|Aubergiste
+trp_auberge_troop_9_pl|Aubergiste
+trp_auberge_troop_10|Aubergiste
+trp_auberge_troop_10_pl|Aubergiste
+trp_auberge_troop_11|Aubergiste
+trp_auberge_troop_11_pl|Aubergiste
+trp_auberge_troop_12|Aubergiste
+trp_auberge_troop_12_pl|Aubergiste
+trp_manoir_troop_1|Refugié
+trp_manoir_troop_1_pl|Refugié
+trp_manoir_troop_2|Refugiée
+trp_manoir_troop_2_pl|Refugiée
+trp_auberge_client_1|Hobelar
+trp_auberge_client_1_pl|Hobelars
+trp_auberge_client_2|Hacheur
+trp_auberge_client_2_pl|Hacheurs
+trp_auberge_client_3|Messager
+trp_auberge_client_3_pl|Messagers
+trp_auberge_client_4|Pilier d'Auberge
+trp_auberge_client_4_pl|Pilier d'Auberge
+trp_auberge_client_5|Jouteur
+trp_auberge_client_5_pl|Jouteurs
+trp_auberge_client_6|Paysans joyeux
+trp_auberge_client_6_pl|Paysans joyeux
+trp_auberge_client_7|Homme ivre
+trp_auberge_client_7_pl|Hommes ivres
+trp_auberge_client_8|Medecin
+trp_auberge_client_8_pl|Medecin
+trp_camelot_1|Camelot
+trp_camelot_1_pl|Camelot
+trp_camelot_2|Camelot
+trp_camelot_2_pl|Camelot
+trp_camelot_3|Camelot
+trp_camelot_3_pl|Camelot
+trp_camelot_4|Camelot
+trp_camelot_4_pl|Camelot
+trp_cvalier_invisible_quete_prairie|Cheval exceptionnel
+trp_cvalier_invisible_quete_prairie_pl|Cheval exceptionnel
+trp_cvalier_invisible_quete_prairie_barder|Cheval exceptionnel bardé
+trp_cvalier_invisible_quete_prairie_barder_pl|Cheval exceptionnel bardé
+trp_auberge_barde|Barde
+trp_auberge_barde_pl|Barde
+trp_auberge_barde_end| 
+trp_auberge_barde_end_pl| 
+trp_auberge_walker|Villageois
+trp_auberge_walker_pl|Villageois
+trp_auberge_walker2|Villageois
+trp_auberge_walker2_pl|Villageois
+trp_auberge_walker3|Villageois
+trp_auberge_walker3_pl|Villageois
+trp_auberge_walker4|Villageois
+trp_auberge_walker4_pl|Villageois
+trp_auberge_walker5|Villageois
+trp_auberge_walker5_pl|Villageois
+trp_auberge_walker_end| 
+trp_auberge_walker_end_pl| 
+trp_volontaire_grotte1|Villageois
+trp_volontaire_grotte1_pl|Villageois
+trp_volontaire_grotte2|Brandon
+trp_volontaire_grotte2_pl|Brandon
+trp_volontaire_grotte3|Coupe gorge
+trp_volontaire_grotte3_pl|Coupe gorge
+trp_volontaire_grotte4|Artus
+trp_volontaire_grotte4_pl|Artus
+trp_penthiv_troop1|Fantassin lourd de Penthièvre
+trp_penthiv_troop1_pl|Fantassin lourd de Penthièvre
+trp_Penthiv_troop2|Troupe de Penthièvre
+trp_Penthiv_troop2_pl|Troupe de Penthièvre
+trp_Penthiv_troop3|Troupe de Penthièvre
+trp_Penthiv_troop3_pl|Troupe de Penthièvre
+trp_Penthiv_troop4|Troupe de Penthièvre
+trp_Penthiv_troop4_pl|Troupe de Penthièvre
+trp_Penthiv_troop5|Lancier de Penthièvre
+trp_Penthiv_troop5_pl|Lancier de Penthièvre
+trp_Penthiv_troop6|Troupe de Penthièvre
+trp_Penthiv_troop6_pl|Troupe de Penthièvre
+trp_Penthiv_troop7|Troupe de Penthièvre
+trp_Penthiv_troop7_pl|Troupe de Penthièvre
+trp_Penthiv_troop8|Troupe de Penthièvre
+trp_Penthiv_troop8_pl|Troupe de Penthièvre
+trp_Penthiv_troop9|Troupe de Penthièvre
+trp_Penthiv_troop9_pl|Troupe de Penthièvre
+trp_Penthiv_troop10|Troupe de Penthièvre
+trp_Penthiv_troop10_pl|Troupe de Penthièvre
+trp_Penthiv_troop11|Epeiste de Penthièvre
+trp_Penthiv_troop11_pl|Epeiste de Penthièvre
+trp_dial_Penthiv_troop1|Fantassin lourd de Penthièvre
+trp_dial_Penthiv_troop1_pl|Fantassin lourd de Penthièvre
+trp_dial_Penthiv_troop2|Troupe de Penthièvre
+trp_dial_Penthiv_troop2_pl|Troupe de Penthièvre
+trp_penthiv_troopporte_lac1|Fantassin lourd de Penthièvre
+trp_penthiv_troopporte_lac1_pl|Fantassin lourd de Penthièvre
+trp_penthiv_troopporte_lac2|Troupe de Penthièvre
+trp_penthiv_troopporte_lac2_pl|Troupe de Penthièvre
+trp_penthiv_troopporte_lac3|Troupe de Penthièvre
+trp_penthiv_troopporte_lac3_pl|Troupe de Penthièvre
+trp_dial_Penthiv_aubtrp1|Troupe de Penthièvre
+trp_dial_Penthiv_aubtrp1_pl|Troupe de Penthièvre
+trp_dial_Penthiv_aubtrp2|Troupe de Penthièvre
+trp_dial_Penthiv_aubtrp2_pl|Troupe de Penthièvre
+trp_dial_Penthiv_aubtrp3|Troupe de Penthièvre
+trp_dial_Penthiv_aubtrp3_pl|Troupe de Penthièvre
+trp_dial_Penthiv_aubtrp4|Troupe de Penthièvre
+trp_dial_Penthiv_aubtrp4_pl|Troupe de Penthièvre
+trp_cordon_breton_guard1|Fantassin lourd Breton
+trp_cordon_breton_guard1_pl|Fantassins lourds Bretons
+trp_cordon_breton_guard2|Fantassin lourd Breton
+trp_cordon_breton_guard2_pl|Fantassins lourds Bretons
+trp_cordon_breton_guard3|Fantassin lourd Breton
+trp_cordon_breton_guard3_pl|Fantassins lourds Bretons
+trp_cordon_breton_guard4|Fantassin lourd Breton
+trp_cordon_breton_guard4_pl|Fantassins lourds Bretons
+trp_maire_auberge_broceliand|Echanson
+trp_maire_auberge_broceliand_pl|Echanson
+trp_aubergiste_auberge_broceliand|Aubergiste
+trp_aubergiste_auberge_broceliand_pl|Aubergiste
+trp_mercenair_aventurier|Aventurier
+trp_mercenair_aventurier_pl|Aventurier
+trp_otage_mineur1|Chef mineur
+trp_otage_mineur1_pl|Mineur
+trp_otage_mineur2|Mineur
+trp_otage_mineur2_pl|Mineur
+trp_otage_mineur3|Mineur
+trp_otage_mineur3_pl|Mineur
+trp_otage_mineur4|Mineur
+trp_otage_mineur4_pl|Mineur
+trp_guide_auberge|Guide forestier
+trp_guide_auberge_pl|Guide forestier
+trp_chasseur_auberge|Chasseur
+trp_chasseur_auberge_pl|Chasseur
+trp_pnj_mort_df|Client de l'auberge perdu
+trp_pnj_mort_df_pl|Client de l'auberge perdu
+trp_crane_de_fercamp_troop1|Capitaine des Cranes de Fer
+trp_crane_de_fercamp_troop1_pl|Capitaine des Cranes de Fer
+trp_crane_de_fercamp_troop2|Garde des Cranes de Fer
+trp_crane_de_fercamp_troop2_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop3|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop3_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop4|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop4_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop5|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop5_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop6|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop6_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop7|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop7_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop8|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop8_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop9|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop9_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop10|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop10_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop11|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop11_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop12|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop12_pl|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop13|Fantassin des Cranes de Fer
+trp_crane_de_fercamp_troop13_pl|Fantassin des Cranes de Fer
+trp_crane_de_fer_mercenaire|Mercenaire de la compagnie des Cranes de Fer
+trp_crane_de_fer_mercenaire_pl|Mercenaires de la compagnie des Cranes de Fer
+trp_crane_de_fer_mercenaire_up1|Epeiste de la compagnie des Cranes de Fer
+trp_crane_de_fer_mercenaire_up1_pl|Epeiste de la compagnie des Cranes de Fer
+trp_crane_de_fer_mercenaire_up2|Maistre d'arme de la compagnie des Cranes de Fer
+trp_crane_de_fer_mercenaire_up2_pl|Maistre d'arme de la compagnie des Cranes de Fer
+trp_tueur_caravane_chef|Tueur de caravaniers
+trp_tueur_caravane_chef_pl|Tueur de caravaniers
+trp_tueur_caravane_1|écorcheur Archer
+trp_tueur_caravane_1_pl|écorcheurs Archers
+trp_tueur_caravane_2|écorcheur Vougier
+trp_tueur_caravane_2_pl|écorcheur Vougiers
+trp_tueur_caravane_end|écorcheur
+trp_tueur_caravane_end_pl|écorcheurs
+trp_rue_dame_comte|Comte de Rennes
+trp_rue_dame_comte_pl|Comte de Rennes
+trp_rue_dame_interlocuteur|Invité du Comte
+trp_rue_dame_interlocuteur_pl|Invité du Comte
+trp_rue_dame_assassin1|Habitant du Bourg
+trp_rue_dame_assassin1_pl|Habitant du Bourg
+trp_rue_dame_assassin2|Habitant du Bourg
+trp_rue_dame_assassin2_pl|Habitant du Bourg
+trp_rue_dame_assassin3|Habitant du Bourg
+trp_rue_dame_assassin3_pl|Habitant du Bourg
+trp_rue_dame_assassin4|Habitant du Bourg
+trp_rue_dame_assassin4_pl|Habitant du Bourg
+trp_rue_dame_assassin5|Habitant du Bourg
+trp_rue_dame_assassin5_pl|Habitant du Bourg
+trp_penthiv_garde_pass1|Garde de Penthièvre
+trp_penthiv_garde_pass1_pl|Gardes Bretons
+trp_penthiv_garde_pass2|Garde de Penthièvre
+trp_penthiv_garde_pass2_pl|Gardes Bretons
+trp_penthievre|Etienne de Penthièvre
+trp_penthievre_pl|Etienne de Penthièvre
+trp_cour_pant_garde1|Chevalier Breton a pied
+trp_cour_pant_garde1_pl|Chevaliers Bretons a pied
+trp_cour_pant_garde2|Garde de Penthièvre
+trp_cour_pant_garde2_pl|Gardes Bretons
+trp_cour_pant_garde3|Coutillier de Penthièvre
+trp_cour_pant_garde3_pl|Coutilliers Bretons
+trp_cour_pant_garde4|Coutillier de Penthièvre
+trp_cour_pant_garde4_pl|Coutilliers Bretons
+trp_cour_pant_garde5|Garde de Penthièvre
+trp_cour_pant_garde5_pl|Gardes Bretons
+trp_cour_pant_garde6|Garde de Penthièvre
+trp_cour_pant_garde6_pl|Gardes Bretons
+trp_cour_pant_garde7|Garde de Penthièvre
+trp_cour_pant_garde7_pl|Gardes Bretons
+trp_cour_pant_garde8|Garde de Penthièvre
+trp_cour_pant_garde8_pl|Gardes Bretons
+trp_cour_pant_garde9|Irégulier
+trp_cour_pant_garde9_pl|Troupe de Penthièvre
+trp_cour_pant_garde10|Irégulier
+trp_cour_pant_garde10_pl|Troupe de Penthièvre
+trp_cour_pant_garde11|Irégulier
+trp_cour_pant_garde11_pl|Troupe de Penthièvre
+trp_cour_pant_garde12|Irégulier
+trp_cour_pant_garde12_pl|Troupe de Penthièvre
+trp_siege_crane_de_fercamp_troop1|Sergent des Cranes de Fer
+trp_siege_crane_de_fercamp_troop1_pl|Sergent des Cranes de Fer
+trp_siege_crane_de_fercamp_troop2|Soldat
+trp_siege_crane_de_fercamp_troop2_pl|Soldat
+trp_siege_crane_de_fercamp_troop3|Soldat
+trp_siege_crane_de_fercamp_troop3_pl|Soldat
+trp_siege_crane_de_fercamp_troop4|Soldat
+trp_siege_crane_de_fercamp_troop4_pl|Soldat
+trp_siege_crane_de_fercamp_troop5|Soldat
+trp_siege_crane_de_fercamp_troop5_pl|Soldat
+trp_siege_crane_de_fercamp_troop6|Soldat
+trp_siege_crane_de_fercamp_troop6_pl|Soldat
+trp_siege_crane_de_fercamp_troop7|Soldat
+trp_siege_crane_de_fercamp_troop7_pl|Soldat
+trp_siege_crane_de_fercamp_troop8|Soldat
+trp_siege_crane_de_fercamp_troop8_pl|Soldat
+trp_siege_crane_de_fercamp_troop9|Soldat
+trp_siege_crane_de_fercamp_troop9_pl|Soldat
+trp_unhappy_french_troop|Dissatisfied Soldier
+trp_unhappy_french_troop_pl|Infanteries lourdes Francaise
+trp_unhappy_english_troop|Dissatisfied Soldier
+trp_unhappy_english_troop_pl|Infanteries lourdes Anglaise
+trp_unhappy_burgandy_troop|Dissatisfied Soldier
+trp_unhappy_burgandy_troop_pl|Piquiers long Bourguignons
+trp_unhappy_breton_troop|Dissatisfied Soldier
+trp_unhappy_breton_troop_pl|Coutilliers Bretons

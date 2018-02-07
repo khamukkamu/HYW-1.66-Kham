@@ -56841,7 +56841,7 @@ scripts = [
         
         (try_for_agents, ":agent"),
           (call_script, "script_cf_valid_formation_member", ":fteam", ":fdivision", ":fleader", ":agent"),
-          (call_script, "script_switch_to_noswing_weapons", ":agent", ":distance"),
+          #(call_script, "script_switch_to_noswing_weapons", ":agent", ":distance"),
           
           (try_begin),
             (eq, "$battle_phase", BP_Deploy),
@@ -56912,7 +56912,7 @@ scripts = [
         (assign, ":max_level", 0),
         (try_for_agents, ":agent"),
           (call_script, "script_cf_valid_formation_member", ":fteam", ":fdivision", ":fleader", ":agent"),
-          (call_script, "script_switch_to_noswing_weapons", ":agent", ":distance"),
+          #(call_script, "script_switch_to_noswing_weapons", ":agent", ":distance"),
           (agent_get_troop_id, ":troop_id", ":agent"),
           (store_character_level, ":troop_level", ":troop_id"),
           (troop_set_slot, "trp_temp_array_a", ":troop_level", 1),
@@ -57030,7 +57030,7 @@ scripts = [
         (assign, ":max_level", 0),
         (try_for_agents, ":agent"),
           (call_script, "script_cf_valid_formation_member", ":fteam", ":fdivision", ":fleader", ":agent"),
-          (call_script, "script_switch_to_noswing_weapons", ":agent", ":distance"),
+          #(call_script, "script_switch_to_noswing_weapons", ":agent", ":distance"),
           (agent_get_troop_id, ":troop_id", ":agent"),
           (store_character_level, ":troop_level", ":troop_id"),
           (troop_set_slot, "trp_temp_array_a", ":troop_level", 1),
@@ -57174,7 +57174,7 @@ scripts = [
         
         (try_for_agents, ":agent"),
           (call_script, "script_cf_valid_formation_member", ":fteam", ":fdivision", ":fleader", ":agent"),
-          (call_script, "script_switch_to_noswing_weapons", ":agent", ":distance"),
+          #(call_script, "script_switch_to_noswing_weapons", ":agent", ":distance"),
           
           (assign, ":cur_score", 0),
           (try_for_range, ":item_slot", ek_item_0, ek_head),
@@ -57700,7 +57700,7 @@ scripts = [
           (agent_get_division, ":bgdivision", ":agent"),
           (eq, ":bgdivision", ":fdivision"),
           (agent_clear_scripted_mode, ":agent"),
-          (call_script, "script_switch_from_noswing_weapons", ":agent"),
+          #(call_script, "script_switch_from_noswing_weapons", ":agent"),
           (agent_ai_set_always_attack_in_melee, ":agent", 0),
           (agent_set_speed_limit, ":agent", 100),
           (agent_set_slot, ":agent", slot_agent_formation_rank, 0),
@@ -60859,7 +60859,7 @@ scripts = [
       
       (assign, reg0, ":ret_val"),]),
   
-  ("init_noswing_weapons", make_noswing_weapons(items)),
+  #("init_noswing_weapons", make_noswing_weapons(items)),
   
   # # M&B Standard AI with changes for formations #CABA - OK; Need expansion when new AI divisions to work with
   # script_formation_battle_tactic_init_aux
@@ -62193,14 +62193,45 @@ scripts = [
       (str_store_troop_name_link, s9, "$enlisted_lord"),
       (setup_quest_text, "qst_freelancer_mission_1"),
       (str_store_string, s2, "@{s9} wants you to hunt down deserters and end them."),
-      (call_script, "script_start_quest", "qst_freelancer_mission_1", "$enlisted_lord"),
       (quest_set_slot, "qst_freelancer_mission_1", slot_quest_target_party, ":deserter_party"),
       (quest_set_slot, "qst_freelancer_mission_1", slot_quest_xp_reward, ":xp"),
       (quest_set_slot, "qst_freelancer_mission_1", slot_quest_importance, 8),
       (quest_set_slot, "qst_freelancer_mission_1", slot_quest_gold_reward, ":gold"),
       (quest_set_slot, "qst_freelancer_mission_1", slot_quest_expiration_days, 15),
+      (call_script, "script_start_quest", "qst_freelancer_mission_1", "$enlisted_lord"),
       
   ]),
+
+  ("freelancer_pacify_quest_persuade", [ #Stores success chance in reg0
+
+    (store_skill_level, ":persuade", "skl_persuasion", "trp_player"),
+    (store_skill_level, ":leadership", "skl_persuasion", "trp_player"),
+    (assign, ":success_chance", 10), #starting success chance at 10%
+    
+    (val_mul, ":persuade", 15),
+    (val_div, ":persuade", 2),
+    (val_min, ":persuade", 100),
+
+    (val_mul, ":leadership", 5),
+    (val_div, ":leadership", 2),
+    (val_min, ":leadership", 20), #Max Leadership Gain should be 20
+
+    (val_add, ":success_chance", ":persuade"), 
+    (val_add, ":success_chance", ":leadership"),
+
+    (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+    (faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain),
+    (try_begin),
+      (eq, ":is_sarge", 2),
+      (val_add, ":success_chance", 5), # +5 if sarge
+    (else_try),
+      (eq, ":is_sarge", 1),
+      (val_add, ":success_chance", 10), # +10 if captain
+    (try_end),
+
+    (assign, reg0, ":success_chance"),
+
+    ]),
   
   #+freelancer end
   
