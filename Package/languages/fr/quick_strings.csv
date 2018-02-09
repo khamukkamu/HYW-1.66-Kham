@@ -1,232 +1,60 @@
-qstr_Breaking_camp...|Le groupe lève le camp.
-qstr_Your_party_is_spotte|Votre groupe est visible de {s1}.
-qstr_Party_has_nothing_to|Vous n'avez n'a rien à manger !
-qstr_{reg1}_{s1}_{reg2?ha|{reg1} {s1} {reg2?ont:a} profité de la nuit pour s'enfuir.
-qstr_{s1}_of_{s3}_has_bee|{s1} du {s3} a été relâché.
-qstr_Building_of_{s0}_in_|La construction de {s0} à {s4} est terminée.
-qstr_{s1}_has_won_the_tou|{s1} a remporté le tournoi à {s2}.
-qstr_{s1}_is_no_longer_in|{s1} n'a plus rien à craindre des bandits.
-qstr_You_pay_for_accommod|Paiement des frais d'hébergement.
-qstr_Betrothal_to_{s5}_ex|Les fiançailles {s5} ont expiré.
-qstr__Your_tactics_skill_| Votre compétence Tactique augmente de 1.
-qstr__Your_persuasion_ski| Votre compétence Persuasion augmente de 1.
-qstr__Your_leadership_ski| Votre compétence Commandement augmente de 1.
-qstr__Your_intelligence_h| Votre Intelligence augmente de 1.
-qstr__Your_trade_skill_ha| Votre compétence Marchandage augmente de 1.
-qstr__Your_weapon_master_| Votre compétence Maître d'armes augmente de 1.
-qstr__Your_engineer_skill| Votre compétence Ingénierie augmente de 1.
-qstr_You_have_finished_re|Vous avez terminé {s1}. {s2}
-qstr_Book_Read|Livre terminé.
-qstr_You_have_{reg0}_days|Vous avez {reg0} jours pour finir cette quête.
-qstr_{s1}_is_scouted.|Vous avez exploré {s1}.
-qstr_{s1}_has_switched_fr|{s1} est passé du {s2} au {s3}.
-qstr_Paiement_des_frais_d|Paiement des frais des camps d'entrainement.
-qstr_Plus_d_argent_pour_l|Plus d'argent pour l'entrainement de vos troupes.
-qstr_Payement_de_l_Auberg|Payement de l'Auberge.
-qstr_You_are_not_strong_e|You are not strong enough to lift a weapon fit for your promotion!
-qstr_You_are_not_strong_en|You are not strong enough to hold all that weight required with promotion!.
-qstr_Your_arms_are_to_wea|Your arms are to weak to advance in the artillary at this moment.
-qstr_You_require_more_hor|You require more horse riding skills to fit your next poisition!
-qstr_{reg65?my_Lady:my_Lo|{reg65?ma noble dame:monseigneur}
-qstr_{reg65?My_Lady:My_Lo|{reg65?Ma noble dame:Monseigneur}
-qstr_{reg65?madame:sir}|{reg65?madame:Messire}
-qstr_{reg65?Madame:Sir}|{reg65?Madame:Messire}
-qstr__no_fiefs_|(pas de fief)
-qstr__fiefs:_{s0}_|(fiefs: {s0})
-qstr_It_s_your_money_or_y|La bourse ou la vie, {mon gars/fillette}, et pas de gestes brusques ou on vous rentre dans le lard.
-qstr_Lucky_for_you_you_c|Lucky for you, you caught me in a good mood. Give us all your coin and I might just let you live.
-qstr_This_a_robbery_eh?_|This a robbery, eh? I givin' you one chance to hand over everythin' you got, or me and my mates'll kill you. Understand?
-qstr_we_have_made_very_li|nous n'avons fait que peu de progrès jusqu'à présent.
-qstr_we_have_suceeded_in_|nous avons réussi à obtenir quelques terres mais nous avons encore un long chemin à parcourir.
-qstr_we_have_become_a_sig|nous avons acquis une certaine puissance et je pense que nous avons nos chances.
-qstr_we_are_winning_the_w|nous sommes en passe de gagner, mais nos ennemis n'ont toujours pas lâché prise.
-qstr_we_are_on_the_verge_|nous sommes sur le point de l'emporter. Les quelques ennemis qui restent ne sont plus une menace, mais nous devons continuer à les pourchasser.
-qstr_Un_écuyer_dans_les_|Un écuyer dans les quartiers des écuries de Paris m'a demandé de lui ramener son épée des catacombes, elle se trouve dans un un tombeau dans les cryptes profondes, il me donnera 200 écus si je parviens a la lui ramener.
-qstr_Michelun_passager_d|Michel,un passager du bateau pour Dijon,m'as compté la situation en France,il appartient au cercle discret des Rebelles,et m'as proposé d'en faire partie en rencontrant le chef Rebelle d'un petit groupe local,a la tour en ruines, aux portes de Montpellier.
-qstr_Aller_passer_le_test|Aller passer le test d'admission pour travailler en tant que mercenaire pour la compagnie du SansLys,ils ont une caserne sur la place Gordaine a Bourges.
-qstr_Le_chef_des_Rebelles|Le chef des Rebelles de Montpelier veux raser le camp qui s'est établis pret du chateau du Puy,il compte sur l'effet de surprise pour que nous puissons l'emporter,des autres Rebelles m'attendent la bas.
-qstr_Le_chef_Rebelle_de_M|Le chef Rebelle de Montpellier m'as chargé d'intercepter le convoi d'armes pret du village de Rodez,je peut enroller des Rebelles qui patrouillent pret de Bourges si j'ai besoin de reforts.
-qstr_J_ai_été_chargé_d|J'ai été chargé de ravitailler en provisions la troupe de Rebelles dissimulés a {s9},sur le point de mourire de faim,ils m'ont comendé un tonneau d'hydromel,une unité de pain,de fromage et un jambon.
-qstr_Le_maitre_de_la_comp|Le maitre de la compagnie du SansLys, m'a ordonné de rejoindre le pont St Benezet a Avignon assiegée,sans prendre la peine de me preciser qui etaient les assaillants,j'ai toutefois le temps de m'y rendre.
-qstr_Le_maitre_de_la_compa|Le maitre de la compagnie du SansLys, m'a ordonné de rejoindre immédiatement la bataille aux entrepots de Bourges les opposants aux brigands de Vilandrandro.
-qstr_Le_maitre_de_la_compag|Le maitre de la compagnie du SansLys, m'a demandé d'anéantire une troupe de brigands,ils roderais aux allentours de Bourges,pret a réaliser leur mauvais coup.
-qstr_Le_maitre_de_la_compagn|Le maitre de la compagnie du SansLys, m'a demandé de le débarasser d'un problème génant,un de ses hommes s'est réfugié ivre a la taverne des trois Lys dans le quartier pauvre de Bourges,il aurais déja tué un garde de la ville dans une folie meurtrière.
-qstr_Le_maitre_de_la_compagni|Le maitre de la compagnie du SansLys, m'a donné ma première affectation, patrouiller dans les quartiers suivants et parler a leurs résponssables:le maistre de guilde sur la place principale,le tavernier a la taverne,le grossiste au magasin et le contremaitre dans le quartier des entrpots.de plus je doit éviter a tout pris d'etre mis hors de combat si je rencontre des brigands.
-qstr_Ecu|Écu
-qstr_Lys|Lys
-qstr_Licorne_veux_me_renc|Licorne veux me rencontrer dans les jardins de la ville de Poitiers,il dit avoir du travail pour moi.
-qstr_Le_chef_des_Rebelles_|Le chef des Rebelles du camp de la foret de Verzy,m'a demandé de mener ses hommes a la place forte Bourgignone au sud ouest de Dijon,de planifier l'attaque et de capturer la place en controlant la troupe au combat.
-qstr_Le_chef_Rebelle_de_l|Le chef Rebelle de la troupe cachée dans la foret de Verzy,m'a envoyé en éclaireur a Metz dans le quartier de la porte des Allemands afin de préparer une opération visant a s'emparer des vivres entreposés.
-qstr_Licorne_m_envoie_me_|Licorne m'envoie me conffesser de mes assasinats pour devenire Chevalier au cloitre des Jacobins a Toulouse.il me donneras la lettre de recomandation a donner au roi une fois cette tache effectuée.
-qstr_Licorne_m_envoie_a_l|Licorne m'envoie a la mort une foie de plus, il veux que j'enpoisonne un riche marchand Bourgignon qui finance les armées du Duc de Bourgogne.Je le trouverais a sa manoire a Reims, Licorne me verssera 1000 écus dés qu'il apprendra sa mort.
-qstr_Licorne_me_payeras_1|Licorne me payeras 1000 écus si je le débarasse d'un gouverneur Anglois qui chasse pret de senlis,il me faudra trouver un moyen de l'areter car je doit approcher du camp sans armes.
-qstr_Licorne_m_a_demandé|Licorne m'a demandé d'assassiner des personnages importants ou des generaux ennemis pour le bien de la cause,je doit le débarasser du comte de Caen en premier.il me faut remettre la fausse invitation au banquet au garde de l'entré,et approcher le compte pour en finire.
-qstr_Villandrandro_m_as_c|Villandrandro m'as comandé de tuer un traitre du surnom de Mathieu le fileux, je le trouverais a la ferme ou il s'es établis pres de Rennes.
-qstr_Villandrandro_m_as_ch|Villandrandro m'as chargé de récolter l'argent qu'il extorque aux marchands de Paris,je doit aller voir le forgeron,l'armurier et le grossiste, et revenire voir Villandrandro avec la somme.
-qstr_Villandrandro_veux_q|Villandrandro veux que je vole une bague dans la salle des coffres d'un vieux chateau a Tours,je devrais faire attention a ne pas me faire prendre ou le Royaume de France ne me le pardonera jamais.
-qstr_Rodrigue_de_Villandr|Rodrigue de Villandrandro veux que je récupere pour lui une clé,je la trouverais dans la poche d'un Noble a Tours,a la maison des trois Sirènes..
-qstr_Le_chef_des_Rebelles_c|Le chef des Rebelles cachés dans les catacombes de Paris m'as demandé de le débarasser de la troupes Angloise qui campe dans une crypte prés du camp Rebelle.
-qstr_Le_chef_des_Rebelles_ca|Le chef des Rebelles cachés dans les catacombes de Paris m'as supplié de ramener du pain et du fromage pour ses gens affamés.
-qstr_Un_riche_marchand_de|Un riche marchand de Rouen m'offre la somme de 10.000 écus si je parviens a retrouver sa fille enlevée récament, je doit commencer par questioner le tavernier de Rouen a propos des etrangers qu'il a servi le jour de l'enlevement.
-qstr_Une_dame_du_nom_de_M|Une dame du nom de Madeleine de montpellier, m'a demandé de retrouver son mari a Paris, elle dit qu'il a été jugé coupable de trahison par le Dauphin Charles de France, et qu'il s'es exillé a Paris, il est brun, porte une moustache et se nomme Bernard, c'est Bernard lui meme qui doit me versser une solde pour la commission.
-qstr_Le_maitre_de_la_guil|Le maitre de la guilde des Messagers m'a donné une lettre a remetre au maitre de la guilde des Marchands de Montpellier.
-qstr_Le_maitre_de_la_guild|Le maitre de la guilde des Messagers m'a donné une lettre a remetre au maitre de la guilde des Marchands de Marseille.
-qstr_Le_maitre_de_la_guilde|Le maitre de la guilde des Messagers m'a donné une lettre a remetre au maitre de la guilde des Marchands de Paris.
-qstr_Le_maitre_de_la_guilde_|Le maitre de la guilde des Messagers m'a donné une lettre a remetre au maitre de la guilde des Marchands de Dijon.
-qstr_Le_maitre_de_la_guilde_d|Le maitre de la guilde des Messagers m'a donné une lettre a remetre au maitre de la guilde des Marchands de Caen.
-qstr_Le_maitre_de_la_guilde_de|Le maitre de la guilde des Messagers veux que j'enmène une caisse de livres au marchand de Bordeau au quartier Sainte Catherine.
-qstr_Le_maitre_de_la_guilde_des|Le maitre de la guilde des Messagers veux que j'enmène une caisse de marchandise a l'armurier de Paris.
-qstr_Le_maitre_de_la_guilde_des_|Le maitre de la guilde des Messagers veux que j'enmène une caisse de marchandise a l'armurier d'Avignon.
-qstr_Le_maitre_de_la_guilde_des_M|Le maitre de la guilde des Messagers m'a donné une caisse a remettre au forgeron de Reims.
-qstr_Vous_avez_recu_:_cru|Vous avez recu : cruche de Cervoise
-qstr_Objet_perdu_:_Potion|Objet perdu : Potion pour le Maistre
-qstr_Vous_avez_recu_:_Pot|Vous avez recu : Potion pour le Maistre
-qstr_Vous_etes_pardonné_|Vous etes pardonné de vos pechés par votre faction !
-qstr_Je_doit_remboursser_|Je doit remboursser la Somme de 3300 écus avant le delai imparti, sans quois je risque de gros ennuis.
-qstr_Je_doit_remboursser_l|Je doit remboursser la Somme de 6600 écus avant le delai imparti, sans quois je risque de gros ennuis.
-qstr_Je_doit_remboursser_la|Je doit remboursser la Somme de 9900 écus avant le delai imparti, sans quois je risque de gros ennuis.
-qstr_Je_doit_remboursser_la_|Je doit remboursser la Somme de 15.400 écus avant le delai imparti, sans quois je risque de gros ennuis.
-qstr_{playername}_when_w|{playername}, when we started our long walk, few people had the courage to support me. And fewer still would be willing to put their lives at risk for my cause. But you didn't hesitate for a moment in throwing yourself at my enemies. We have gone through a lot together, and there were times I came close to losing all hope. But with God's help, we prevailed. It is now time for me to leave your company and take what's rightfully mine. From now on, I will carry out the great responsibility of ruling {s3}. There still lie many challanges ahead and I count on your help in overcoming those. And of course, you will always remain as my foremost vassal.
-qstr_Find_and_speak_with_|Trouvez {s3} du {s4} pour lui prêter serment d'allégeance.
-qstr__We_will_of_course_n|Nous attendrons bien entendu que la campagne ait pris fin.
-qstr_{s6}_has_joined_your|{s6} a rejoint votre groupe.
-qstr_{s1}_Rebels|{s1} Rebelle
-qstr_Le_Duc_de_Bretagne_m|Le Duc de Bretagne m'a chargé d'enqueter sur les agissement de son rival, je doit comprendre comment les troupes irrégulière d'Etienne de Penthièvre arrivent a passer le cordon qui est censsé les empécher de continuer a réduire l'économie et le pouvoir du Duc de Bretagne.
-qstr_Le_Duc_de_Bretagne_m_|Le Duc de Bretagne m'a chargé d'enqueter sur les agissement de son rival Etienne de Penthièvre, je doit aller voir pour l'instant pourquois la mine du Duc ne produit plus.
-qstr_I_am_{s4}_the_ruler|I am {s4}, the ruler of {s6}
-qstr_I_am_{s4}_a_vassal_|I am {s4}, a vassal of {s6}
-qstr_{s7}_and_{s8}|{s7} et {s8}
-qstr_{s9}{reg5?_and_the_l|{s9}{reg5? et seigneur de {s8}.:.
-qstr_Jeanne_m_a_demandé_|Jeanne m'a demandé de retrouver une épée spéciale et de la lui ramener, je devrais la chercher a la chapelle de Sainte Catherine de Fierbois au sud de Tours.
-qstr_La_porte_est_dévero|La porte est déverouillée.
-qstr_Je_doit_aller_voir_l|Je doit aller voir l'Echanson du Duc qui est a l'auberge du village de la mine dans la foret de Lorges pour en apprendre plus, mais l'entrée de l'auberge est défendue par un garde, il me demande de tuer un aventurier qui pose des questions aux mineurs du village, et le garde pense qu'il est contre eux. Il di qu'il me laissera entrer si je tue l'aventurier.
-qstr_L_Echanson_du_Duc_pe|L'Echanson du Duc pense avoir découvert comment les troupes de De Penthièvre font pour sortir du cordon, si cela s'avère exact j'aurais remplis ma mission, Je touche peut etre au but.
-qstr_Mon_expedition_est_p|Mon expedition est prete a descendre dans les tunels de la mine, nous devrons tuer tous les soldats que nous croiserons et surtout libérer les mineurs.
-qstr_L_Echanson_du_Duc_m_|L'Echanson du Duc m'as revelé que les mineurs sont prisoniers des troupes de De penthièvre au fond de la mine, je doit rassembler des volontaires pour partir a la recherche des survivants dans les tunels sérieusement gardés pour les libérer et faire repartir la production de la mine pour le compte du Duc.
-qstr_L_aubergiste_de_l_au|L'aubergiste de l'auberge du village de la mine dans la foret de Lorges, m'as demandé de lever le blocus de la porte du lac pour que les marchandises puissent parvenir de nouveau au village, il me donnera des vivres en retour.
-qstr_Un_chasseur_dans_l_a|Un chasseur dans l'auberge de la foret de Lorges m'as demandé de retrouver son arbalète perdue dans le bois des cerfs, il me faut retrouver ce secteur de la foret et l'arbalète de grande valeure.
-qstr_Le_Capitaine_de_la_c|Le Capitaine de la compagnie des mercenaires des Cranes de Fer de Bretagne m'envoie tenir le siége du donjon du comte de Penthièvre a Quintin, il faut empécher que les troupes du Comte puisse sortire. J'ai entendu dire qu'il y avais une somme énorme pour qui tuerais le Comte, je voudrais voir si je peut l'approcher lui et sa famille quite a désobeir au Capitaine des Cranes de Fer.
-qstr_Le_Capitaine_de_la_co|Le Capitaine de la compagnie des mercenaires des Cranes de Fer de Bretagne m'as donné un contrat qui consiste a surveiller l'entrée du manoir d'un noble Breton a Rennes qui as recu des menaces de mort, je doit etre son garde du corp quelques temps dans la journée pour empécher qu'il soit tué.
-qstr_Le_Capitaine_de_la_com|Le Capitaine de la compagnie des mercenaires des Cranes de Fer de Bretagne m'as donné mon premier contrat, intercepter des bandits qui ont attaqués une caravane et tué tous les marchands et leur éscorte.
-qstr_{s13}_asked_you_to_g|{s13} vous demande de rassembler {reg3} têtes de bétail et de les lui livrer.
-qstr_{s9}_wants_you_to_fo|{s9} souhaite que vous suiviez son armée jusqu'à nouvel ordre.
-qstr_{s9}_asked_you_to_sc|{s9} vous demande d'explorer {s13}, {s14} et {s15}, puis de lui rapporter ce que vous y avez vu.
-qstr_you|Vous
-qstr_You_are_challenging_|Vous me provoquez en duel ? Comme c'est amusant, c'est comme vous voudrez, {playername}. Vous défoncer le crâne sera pour moi un bon exercice.
-qstr_{s16}_and_{s17}|{s16} et {s17}
-qstr_Very_well_I_will_ac|Very well, I will accept you back into my ranks, if you're ready to swear your solemn oath once more.
-qstr_A_pardon_will_only_b|Vous serez peut-être pardonné si vous consentez à me livrer {s17}. Acceptez-vous ces conditions ?
-qstr_No._There_is_no_chan|Non, cela ne m'intéresse pas, je ne vois pas pourquoi je vous accorderais cette grâce.
-qstr_Our_marshal_{s1}|Notre maréchal, {s1}
-qstr_{s11}_and_{s12}|{s11} et {s12}
-qstr_We_are_not_at_war_wi|Nous vivons enfin des heures de paix.
-qstr_We_are_at_war_with_{|Nous sommes en guerre avec le {s12}.
-qstr_go_on_the_offensive_|Attaquez maintenant.
-qstr_act_to_defend_our_la|Défendez nos terres.
-qstr_take_more_time_to_ga|Prenez un peu plus de temps pour recruter plus d'hommes.
-qstr_You_promised_to_help|Vous avez promis d'aider {s13} à récupérer le trône de {s14}.
-qstr_What_do_you_say_to_e|Que diriez-vous d'entrer au service de {s9} en tant que capitaine mercenaires ? Il ne fait pour moi aucun doute que vous serez à la hauteur de cette tâche.
-qstr_{s9}_asked_you_to_ta|{s9} vous a demandé de porter un message à {s13}. {s13} se trouvait à {s4} au moment où cette quête vous a été confiée.
-qstr_{s9}_asked_you_to_tak|{s9} vous a demandé de transmettre une lettre à {s13} du {s15}. {s13} se trouvait à {s4} au moment où cette quête vous a été confiée.
-qstr_{s11}_asked_you_to_e|{s11} vous a demandé d'escorter sa {s17} {s13} à {s14}.
-qstr_{s13}_asked_you_to_d|{s13} vous a demandé de vous occuper des bandits qui terrorisent les habitants de {s15} et de lui faire ensuite votre rapport.
-qstr_{s9}_asked_you_to_ra|{s9} vous a demandé d'entraîner {reg1} {s14} et de les lui amener.
-qstr_{s9}_asked_you_to_co|Le {s9} vous a demandé de collecter les taxes de {s3}. Il vous accordera un cinquième du montant récolté.
-qstr_{s9}_asked_you_to_hu|{s9} vous a demandé de traquer un fugitif du nom de {s4}. On raconte qu'il se cache à {s3}.
-qstr_{s9}_asked_you_to_as|{s9} vous a demandé d'assassiner un marchand de {s3}.
-qstr_{s9}_has_asked_you_t|{s9} vous a demandé de rencontrer un espion à {s13}.
-qstr_{s11}_asked_you_to_f|{s11} vous a demandé de suivre l'espion qui quittera bientôt {s12}. Vous devez veiller à rester hors de sa vue car il pourrait se douter de quelque chose et faire demi-tour. Une fois que l'espion rencontrera son complice, vous devrez les capturer tous les deux et les amener à {s11}.
-qstr_{s11}_asked_you_to_c|{s11} vous a demandé de capturer un seigneur du {s13}, n'importe lequel, et de le lui amener.
-qstr_{s9}_asked_you_to_le|{s9} vous a demandé de lui prêter {s3} pour la semaine.
-qstr_{s9}_asked_you_to_col|{s9} vous a demandé de récupérer une dette s'élevant à {reg4} écus auprès de {s3}. {s3} était à {s4} lorsque la quête vous a été confiée.
-qstr_{s11}_gave_you_a_fak|{s11} vous a donné une fausse lettre afin que {s13} se débarrasse de son fidèle vassal, {s16}. Vous devez vous rendre près de {s14}, donner la lettre à l'un de vos {s15} et l'envoyer en ville en tant que messager. Il est important qu'il n'ait pas conscience de vos motivations réelles.
-qstr_{s9}_has_requested_y|{s9} vous a demandé de capturer {reg1} {s3}.
-qstr_Lend_your_experience|Prêtez votre chirurgien, {s3}, au {s1}.
-qstr_Then_take_it_with_m|Then take it, with my eternal thanks. You are a noble {man/woman}. I will never forget that you helped me in my time of need.
-qstr_Forgive_me_{playern|Forgive me, {playername}, but I must insist you accept it. The money means little to me, and I owe you so much. Here, take it, and let us speak no more of this.
-qstr_{playername}_what_a|{playername}, what a dear {man/woman} you are, but I will not allow you to refuse this. I owe you far more than I can say, and I am sure you can put this money to far better use than I.
-qstr_{s11}_asked_you_to_r|{s11} vous a demandé de sauver son {s17}, {s13}, retenu à {s14}, en échangeant vos vêtements afin que vous puissiez prendre sa place en prison.
-qstr_{s11}_asked_you_to_re|{s11} vous a demandé de sauver sa {s17}, {s13}, retenue à {s14}.
-qstr_{s11}_asked_you_to_d|{s11} vous a demandé de transmettre un message à {s13}, qui est emprisonné à {s14}.
-qstr_You_agreed_to_challe|Vous avez accepté de défier {s13} pour défendre l'honneur de {s11}.
-qstr_{s5}__Persuasion_str|{s5} (Facteur de persuasion : {reg5})
-qstr_Persuasion_Attempt|Tentative de Persuasion
-qstr_Un_Aventurier_d_un_a|Un Aventurier d'un age avancé m'as vendu une histoire aussi incroyable que cela puisse paraitre j'ai accepté son offre, je doit trouver la carte des temples secrets de l'ordre des templiers afin de retrouver leurs trésorts, le viel aventurier m'as aussi parlé de l'ordre des francs macons a la recherche de l'or du temple également, je ferais mieux d'etre prudent.Le prochain indice indique qu'il faut trouver le manuscrit secret des croyances et rites des templiers dissimulé dans une logue secrete de la bibliothèque du monastere de Carmel de Micy a Orléans
-qstr_Un_Aventurier_d_un_ag|Un Aventurier d'un age avancé m'as vendu une histoire ! aussi incroyable que cela puisse paraitre j'ai accepté son offre, je doit trouver la carte des temples secrets de l'ordre des templiers afin de retrouver leurs trésorts, le viel aventurier m'as aussi parlé de l'ordre des francs macons a la recherche de l'or du temple également, je ferais mieux d'etre prudent.Le prochain indice indique qu'il faut trouver le manuscrit secret des croyances et rites des templiers dissimulé dans une logue secrete de la  du monastere de Carmel de Micy a Orléans
-qstr_Le_moine_scribe_de_l|Le moine scribe de la bibliothèque d'Orléans m'as remis malgrés lui sur la piste du tréort des templiers. Je doit enqueter sur le personnage peint sur la fresque du mur dans le monastere d'Orléans, ils semblerais que les armoiries peintes correspondes avec celles du seigneur de Rennes le chateau en Provence.
-qstr_A_villager_from_{s7}|Un villageois de {s7} vous a supplié de sauver son village des bandits qui s'y sont installés.
-qstr_You_chose_well_{sir|You chose well, {sir/madam}. My lads know how to keep their word and earn their pay.
-qstr_Well_done_{sir/mada|Well done, {sir/madam}. Keep the money and wine coming our way, and there's no foe in France you need fear.
-qstr_We_are_at_your_servi|Nous sommes à votre service, {Messire/madame}. Montrez-nous ceux qui ont besoin d'une leçon et nous nous occupons du reste.
-qstr_town|la ville
-qstr_village|le village
-qstr_The_Guildmaster_of_{|Le maître de Guilde de {s13} vous a demandé de vous occuper des pilleurs qui rôdent autour de la ville.
-qstr_{s9}_of_{s3}_asked_y|{s9} de {s3} vous a demandé de livrer {reg5} {s6} à la taverne de {s4} dans les 7 jours.
-qstr_Escort_the_merchant_|Escortez la caravane marchande jusqu'à {s8}.
-qstr_Merchant_{s9}_of_{s4|Les marchands {s9} de {s4} vous ont demandé de débarrasser {s4} des bandits particulièrement virulents qui sévissent aux alentours de la ville.
-qstr_Guildmaster_of_{s4}_|Le maître de Guilde de {s4} vous a donné {reg12} écus pour payer la rançon d'une jeune fille enlevée par des bandits. Vous devez trouver ces bandits qui se trouvent près de {s3} et payer la rançon. Ensuite, vous devrez raccompagner la jeune fille à {s4}.
-qstr_Guildmaster_of_{s4}_p|Le maître de Guilde de {s4} vous a promis {reg12} écus si vous vous assurez que {s12} et {s13} cessent de s'opposer à une trêve entre {s15} et {s14}. Pour cela, vous devez les convaincre ou les faire prisonniers jusqu'à ce que la paix soit effective.
-qstr_The_Guildmaster_of_{s|Le maître de Guilde de {s14} vous a demandé de vous occuper des bandits qui terrorisent {s14}. Ils n'attaquent que de nuit et seulement ceux qui se promènent seuls.
-qstr_Guildmaster_of_{s10}|Le maître de la guilde de {s10} vous a demandé de mener un troupeau de vaches jusqu'à {s13}. Vous gagnerez {reg8} écus en récompense.
-qstr_L_ancien_du_village_|L'ancien du village de {s9} m'a demandé de patrouiller das la foret de {s9} pour en chasser les braconniers, la chasse étant interdite aux paysants.
-qstr_Le_patron_de_l_auber|Le patron de l'auberge proche de Rouen m'as demandé d'aller secourir un client important perdu dans la foret, il va mourrir de froid si je ne le retrouve pas rapidement, l'aubergiste m'as aussi parlé d'une belle somme en récompense.
-qstr_Un_ivrogne_dans_une_|Un ivrogne dans une auberge m'as dit avoir perdu son cheval dans les prés de Bourges, peut etre que la monture de valeure n'as pas voulu d'un tel cavalier, le cheval est peut etre encore la bas, je devrais aller voir.
-qstr_Vous_avez_terminé_v|Vous avez terminé votre tour de garde.
-qstr_He_is_not_commanding|Il n'a aucun homme sous ses ordres pour le moment.
-qstr_He_currently_command|Il commande en ce moment {reg0} hommes{reg1?, dont {reg1} avec des blessures:}.
-qstr_The_elder_of_the_vil|L'Ancien du village de {s3} vous a demandé de lui apporter {reg5} sacs de grain.
-qstr_The_elder_of_the_vill|L'Ancien du village de {s13} vous a demandé d'entraîner {reg5} fermiers afin d'organiser la défense contre les bandits. 
-qstr_The_elder_of_the_villa|L'Ancien du village de {s3} vous a demandé de lui apporter {reg5} têtes de bétail.
-qstr_{s16}_and_{s15}|{s16} et {s15}
-qstr_I_can_smell_a_fat_pu|Je n'irai pas par quatre chemins, l'odeur de votre bourse attise ma convoitise, puis-je convenablement l'alléger ?
-qstr_Why_it_be_another_t|Why, it be another traveller, chance met upon the road! I should warn you, country here's a mite dangerous for a good {fellow/woman} like you. But for a small donation my boys and I'll make sure you get rightways to your destination, eh?
-qstr_Well_well_look_at_t|Well well, look at this! You'd best start coughing up some silver, friend, or me and my boys'll have to break you.
-qstr_There_s_a_toll_for_p|Il faut acquitter un droit de passage pour pouvoir continuer sa route en toute quiétude. Donc si cela ne vous fait rien, on va se servir nous-mêmes dans votre bourse.
-qstr_Another_fool_come_to|Il ne faut pas contrarier les imbéciles qui veulent s'empaler sur ma lame, qu'on leur donne ce plaisir !
-qstr_We_re_not_afraid_of_|Point de peur à vous rencontrer, la mort vous guette et nous vous délesterons de tout l'or qui embarrasse vos poches !
-qstr_That_was_a_mistake._|J'admire votre erreur, il est maintenant temps de la payer, une mort lente et douloureuse vous attend.
-qstr_Brave_words._Let_s_s|Les belles paroles ne sont qu'illusions, les actes feront la différence, les miens seront destructeurs et se solderont par votre mort.
-qstr_A_{s5}?_Well..._Yes|A {s5}? Well... Yes, I suppose it is. What a strange thing to ask.
-qstr_Eh?_No_it_most_cert|Eh? No, it most certainly is not a {s5}. I'd start questioning my eyesight if I were you.
-qstr_This_is_the_{reg4?to|C'est {reg4?la ville:le village} qui a pour nom {s5}, {Messire/madame}.
-qstr_{s6}_Our_{reg4?town:|{s6} Notre {reg4?ville:village} et ses environs vous appartiennent.
-qstr_{s6}_Our_{reg4?town:v|{s6} Notre {reg4?ville:village} et ses environs appartiennent à l'honorable {s7} du {s8}.
-qstr_{s3}_and_{s5}|{s3} et {s5}
-qstr_{reg20?We_mostly_pro|{reg20? Ici nous produisons surtout: {s5}:Nous ne produisons pas grand-chose ces temps-ci}. Si vous voulez en apprendre davantage, vous devriez vous adresser {reg4?au maître de Guilde:à l'ancien du village}. Il est sans doute dans le coin.
-qstr_You_got_keys_of_dung|Vous obtenez les clés du donjon.
-qstr_Vous_etes_hors_de_co|Vous êtes hors de combat, regardez vos hommes se battre sans vous, ou pressez TAB pour ordonner la retraite.
-qstr_Pour_regarder_le_com|Pour regarder le combat et bouger, pressez W, A, S, D, numpad +/numpad -, pour utiliser la camera pressez Numpad 1,2,3,4,6,8.
-qstr_Division_Placement|Division Placement
-qstr_Complex_Formations|Complex Formations
-qstr_Formations_turned_OF|Formations turned OFF in options menu
-qstr_Division_{reg1}_{s2}|Division {reg1} {s2} goes to its memorized position...
-qstr_Division_{reg1}_{s2}_|Division {reg1} {s2} forms line (memorized).
-qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms {reg0} lines (memorized).
-qstr_You_must_stay_behind|Vous devez rester derrière la ligne, le point ne compte pas.
-qstr_Tutorial|Tutoriel
-qstr_Vous_etes_hors_de_com|Vous êtes hors de combat, regardez vos hommes se battre sans vous, ou pressez TAB pour ordonner la retraite.
-qstr_Pour_regarder_le_comb|Pour regarder le combat, pressez 'W, A, S, D, numpad +/numpad -' pour avancer, et 'numpad 1,2,3,4,6,8' pour orienter la camera.
-qstr_Retournez_voire_l_in|Retournez voire l'instructeur.
-qstr_Vous_avez_gagné_re|Vous avez gagné, reccuperez vos gains.
-qstr_Passez_par_la_limite|Passez par la limite des bois
-qstr_FUYEZ_!!!|FUYEZ !!!
-qstr_La_cible_es_morte_!|La cible es morte !
-qstr_Passez_par_les_porte|Passez par les portes!
-qstr_Vous_avez_términé_|Vous avez términé la patrouille.
-qstr_Cette_fresque_semble|Cette fresque semble étrange dans un tel lieux.
-qstr_Quelqu_un_as_fait_du|Quelqu'un as fait du feu récament.
-qstr_Aucun_jouteur_ne_s_e|Aucun jouteur ne s'est distingué, vous re-commancez la joute.
-qstr_Vous_avez_blessé_le|Vous avez blessé le cheval du concurent, vous etes disqualifié.
-qstr_Vous_avez_perdu_cett|Vous avez perdu cette joute.
-qstr_Vous_avez_remporté_|Vous avez remporté cette joute !
-qstr_Aucun_jouteur_ne_s_es|Aucun jouteur ne s'est distingué.
-qstr_La_porte_est_fermée|La porte est fermée a clef.
-qstr_Vous_ne_pouvez_pas_p|Vous ne pouvez pas partir.
-qstr_Vous_avez_récupper�|Vous avez récupperé une clé.
-qstr_Vous_devez_trouver_u|Vous devez trouver une porte.
-qstr_Vous_devez_trouver_un|Vous devez trouver un chemin rapidement !
-qstr_Inutile_de_retourner|Inutile de retourner la bas.
-qstr_Vous_devez_repasser_|Vous devez repasser par le passage secret du chateau.
+﻿qstr_Next_Page|Page suivante
+qstr_Game_Rules:^|Règles du jeu :^
+qstr_0|0
+qstr_Show_game_rules|Afficher les règles du jeu
+qstr_Continue...|Continuer.
+qstr_Candidate_#1:_{s1}|Candidat #1 : {s1}
+qstr_Candidate_#2:_{s1}|Candidat #2 : {s1}
+qstr_{s3}_of_{s4}_wishes_|{s3} du {s4} souhaite choisir un nouveau maréchal et prend conseil auprès de ses vassaux. {s1} et {s2} sont les candidats.
+qstr_Who_do_you_wish_to_s|Qui voulez-vous soutenir ?
+qstr_{s1}_gives_his_suppo|{s1} vote pour {s2}.
+qstr_Number_of_Supporters|Nombre de partisans : {reg0}
+qstr_{s2}_has_heard_his_v|{s2} a écouté le conseil de ses vassaux. Il nomme {s1} maréchal du {s3}.
+qstr_Action|Action
+qstr_Mount|En selle
+qstr_Attack_Type|Type d'attaque
+qstr_Stand_Ground|Restez là
+qstr_Charge|À l'assaut
+qstr_Follow_Me|Suivez moi
+qstr_Hold_This_Position|Tenez la position
+qstr_Spread_Out|Dispersez les rangs
+qstr_Stand_Closer|Resserrez les rangs
+qstr_Fall_Back|Reculez
+qstr_Advance|Avancez
+qstr_Dismount|Pied à terre
+qstr_Fire_At_Will|Feu à volonté
+qstr_Hold_Your_Fire|Cessez le feu
+qstr_Use_Blunt_Weapons|Utilisez des armes contondantes
+qstr_Use_Any_Weapon|Utilisez tous les types d'armes
+qstr_Ready|Prêts
+qstr_Wounded|Avec blessures
+qstr_Dead|Décés
+qstr_Number_of_men_knocke|Nombre d'hommes blessés : {reg1}
+qstr_Number_of_men_left:_|Nombre d'hommes perdus : {reg1}
+qstr_Opponents_Beaten:_{r|Ennemis vaincus : {reg1}
+qstr_Opponents_Remaining:|Ennemis restants : {reg1}
+qstr_Remain_in_retirement|Rester en retrait.
+qstr_Go_back_to_the_adven|Retourner à l'aventure.
+qstr_You_have_retired_at_|Vous avez pris votre retraite au niveau {reg4} après {reg5} jours d'aventure.
+qstr_Effect_on_Score|Effet sur le score
+qstr_Settlements_owned_by|Domaines en votre possession : {reg0}
+qstr_Friendly_Settlements|Villages amis : {reg0}
+qstr_Hostile_Settlements:|Villages hostiles : {reg0}
+qstr_Friendly_Lords:_{reg|Seigneurs amis : {reg0}
+qstr_Enemy_Lords:_{reg0}|Seigneurs ennemis : {reg0}
+qstr_Victories:_{reg0}|Victoires : {reg0}
+qstr_Defeats:_{reg0}|Défaites : {reg0}
+qstr_Quests_Completed:_{r|Quêtes accomplies : {reg0}
+qstr_Companions_Found:_{r|Compagnons trouvés : {reg0}
+qstr_Companions_Lost/Depa|Compagnons perdus/partis : {reg0}
+qstr_Wealth:_{reg0}_denar|Fortune : {reg0} écus
+qstr_Inventory:_{reg0}_de|Inventaire : {reg0} écus
+qstr_Renown:_{reg0}|Renommée : {reg0}
+qstr_Experience:_{reg0}|Expérience : {reg0}
+qstr_Days_Passed:_{reg0}|Jours écoulés : {reg0}
+qstr_Difficulty:_{reg0}%|Difficulté : {reg0}%
+qstr_TOTAL_SCORE:_{reg0}|SCORE TOTAL : {reg0}
+qstr_None|Rien
 qstr_{s1}_of_{s3}_was_def|{s1} du {s3} a été vaincu mais est parvenu à s'enfuir.
 qstr_{s54}_is_a_claimant_|{s54} est prétendant au trône du {s56}.
 qstr_nowhere|Nulle part
@@ -235,6 +63,7 @@ qstr_{reg3?She:He}|{reg3?Elle:Il}
 qstr_The_town_of_{s50}|La ville de {s50}
 qstr_The_village_of_{s50}|Le village de {s50} près de {s52}
 qstr_{s51}_belongs_to_{s1|{s51} appartient au {s1} du {s2}.^
+qstr_{s7}_and_{s8}|{s7} et {s8}
 qstr_{s2}It_has_no_villag|{s2} n'a pas de village.^
 qstr_{s2}{reg0?Its_villag|{s2}{reg0?Ses fiefs sont:Son fief est} {s8}.^
 qstr_{s2}Its_prosperity_i|{s2}Sa Prospérité est : {s50}
@@ -256,7 +85,6 @@ qstr_Accompany|Accompagner
 qstr_killed|morts
 qstr_wounded|avec blessures
 qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL : {reg3}^{s2}
-qstr_None|Rien
 qstr_^None|^Aucune
 qstr_nothing|Rien
 qstr_{reg0}_village{reg1?|{reg0} village{reg1?s:}
@@ -300,6 +128,7 @@ qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?était:est} parti guerroyer et {reg4?elle:i
 qstr_{s2}_{reg3?was:is}_b|{s2} {reg3?était:est} prisonnier à {s3}.
 qstr_{s2}_{reg3?was:has_b|{s2} {reg3?était:est} aux mains de ses ennemis.
 qstr_{reg3?{s2}_s_locatio|{reg3?L'endroit où {s2} se trouvait était inconnu: Je ne sais pas où est {s2}}.
+qstr_{s6}_has_joined_your|{s6} a rejoint votre groupe.
 qstr_You_now_owe_{reg2}_d|Vous devez maintenant {reg2} écus à {s1}.
 qstr_Renown_value_for_thi|La victoire augmente votre renommée de {reg8}.
 qstr_You_have_run_into_a_|Vous êtes tombé dans une embuscade !
@@ -314,12 +143,12 @@ qstr_Spreading_Out|Disperser les rangs
 qstr_Standing|Rester en position
 qstr_N/A|N/A
 qstr_Free|Libre
-qstr_Mount|En selle
-qstr_Dismount|Pied à terre
 qstr_Any_Weapon|Toute arme
 qstr_Blunt_Weapons|Armes contondantes
+qstr_{s1}_Rebels|{s1} Rebelle
 qstr_Given_by:_{s62}|Donnée par : {s62}
 qstr_Given_on:_{s60}|Donnée le : {s60}
+qstr_You_have_{reg0}_days|Vous avez {reg0} jours pour finir cette quête.
 qstr_This_quest_has_been_|Cette quête est un succès, aller voir {s59} pour la valider.
 qstr_This_quest_has_been_s|Cette quête est un succès, aller voir {s59} pour obtenir votre récompense.
 qstr_This_quest_has_faile|Cette quête est un échec, aller voir {s59} pour lui expliquer la situation.
@@ -360,179 +189,18 @@ qstr_You_gain_right_to_ru|Vous gagnez en droit de régner.
 qstr_You_lose_right_to_ru|Vous perdez en droit de régner.
 qstr_Vous_gagnez_1_point_|Vous gagnez 1 point en équitation.
 qstr_Vous_etes_retablis.|Vous êtes rétabli.
-qstr_Vous_gagnez_1_point_e|Vous gagnez 1 point en ingenieurie.
-qstr_Vous_gagnez_50_point|Vous gagnez 50 points en maitrise des armes a deux mains.
-qstr_Vous_gagnez_50_points|Vous gagnez 50 points en maitrise des armes a une main et un point de maitrise des boucliers.
-qstr_Je_doit_chercher_la_|Je doit chercher la trace des rebels dans la ville phantome de Toul.
-qstr_Vous_etes_rassasié_|Vous etes rassasié !
-qstr_Bléssures:_Vous_vou|Bléssures: Vous vous en sortez indèmne !
-qstr_Bléssures:_Vous_ete|Bléssures: Vous etes blessé au bras !
-qstr_Bléssures:_Vous_etes|Bléssures: Vous etes blessé a la jambe !
-qstr_Bléssures:_Vous_etes_|Bléssures: Vous etes griévement blessé a la tête !
-qstr_Bléures:_Vous_vous_|Bléures: Vous vous en sortez indèmne !
-qstr_Votre_Bléssure_au_b|Votre Bléssure au bras es guérie !
-qstr_Votre_Bléssure_a_la|Votre Bléssure a la jambe guérie !
-qstr_Votre_Bléssure_a_la_|Votre Bléssure a la tête es guérie !
-qstr_J_ai_lu_dans_le_livr|J'ai lu dans le livre de l'Initiation au savoir franc maconique comment ouvrire le passage secret de Carmel de Micy a Orléans qui me ménera a la carte des temples secret abritant le vieux trésort des templiers.
-qstr_J_ai_lu_dans_le_livre|J'ai lu dans le livre des loges franc maconiques secretes qu'il y as une loge importante dont l'entrée est dans le vieux cimetière de la ville de Rouen, j'approche peut etre du but, et du trésort !
-qstr_ranks|ranks
-qstr_shield_wall|shield wall
-qstr_wedge|wedge
-qstr_square|square
-qstr_up|up
-qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forming {s1}.
-qstr_Not_enough_troops_in|Not enough troops in division {reg1} {s2} to form {s1}.
-qstr_Division_{reg1}_{s2}_i|Division {reg1} {s2} is an {s3} division and cannot form {s1}.
-qstr_{s1}:_infantry_forma|{s1}: infantry formation disassembled.
-qstr_{s1}:_archer_formati|{s1}: archer formation disassembled.
-qstr_{s1}:_skirmisher_for|{s1}: skirmisher formation disassembled.
-qstr_{s1}:_cavalry_format|{s1}: cavalry formation disassembled.
-qstr_{s1}:_formation_disa|{s1}: formation disassembled.
-qstr_Cavalry_formation_di|Cavalry formation disassembled.
-qstr_The_placement_of_{s1|The placement of {s1} division {reg0} memorized.
-qstr_The_placement_of_{s1}|The placement of {s1} division {reg0} set to default.
-qstr_Your_party_s_tactica|Your party's tactical skill limits how far away you can deploy your troops!
-qstr_...and_attack_enemy_|...and attack enemy {s1} division!
-qstr_{s2}:_returning_afte|{s2}: returning after destroying enemy {s1} division.
-qstr_infantry|infantry
-qstr_archer|archer
-qstr_cavalry|cavalry
-qstr_polearm|polearm
-qstr_skirmisher|skirmisher
-qstr_mounted_archer|mounted archer
-qstr_support|support
-qstr_bodyguard|bodyguard
-qstr_undetermined_type_of|undetermined type of
-qstr_Lame|Lame
-qstr_Swaybacked|Swaybacked
-qstr_Timid|Timid
-qstr_Meek|Meek
-qstr_Stubborn|Stubborn
-qstr_Heavy|Heavy
-qstr_Spirited|Spirited
-qstr_Champion|Champion
-qstr_Cracked|Cracked
-qstr_Battered|Battered
-qstr_Thick|Thick
-qstr_Reinforced|Reinforced
-qstr_Rusty|Rusty
-qstr_Tattered|Tattered
-qstr_Ragged|Ragged
-qstr_Crude|Crude
-qstr_Sturdy|Sturdy
-qstr_Hardened|Hardened
-qstr_Lordly|Lordly
-qstr_Broken|Broken
-qstr_Bent|Bent
-qstr_Chipped|Chipped
-qstr_Strong|Strong
-qstr_Balanced|Balanced
-qstr_Tempered|Tempered
-qstr_Masterwork|Masterwork
-qstr_Large_Bag_of|Large Bag of
-qstr_You_have_been_enlist|You have been enlisted!
-qstr_Current_rank:_{s5}|Current rank: {s5}
-qstr_You_have_left_your_c|You have left your commander!
-qstr_You_have_been_grante|You have been granted leave!
-qstr_You_have_rejoined_yo|You have rejoined your commander!
-qstr_{s3}_{s2}|{s3}, {s2}
-qstr_The_equipment_of_a_{|The equipment of a {s1}: {s2}is assigned to you.
-qstr_The_equipment_of_a_{s|The equipment of a {s1}: {s2}is taken from you.
-qstr_The_released_prisone|The released prisoners were not be trusted and they are preparing to attack you!
-qstr_Warning!|Warning!
-qstr_The_released_prisoner|The released prisoners scattered as soon as the battle finished. You will not be seeing them again.
-qstr_Notice!|Notice!
-qstr_The_released_prisoners|The released prisoners have remained loyal and will join your party
-qstr_You_have_{reg0}_days_|You have {reg0} days left till you are declared as a deserter!
-qstr_You_have_now_been_de|You have now been declared as a deserter!
-qstr_You_have_{reg0}_days_l|You have {reg0} days left on your vacation.
-qstr_Speed:_{reg22}|Speed: {reg22}
-qstr_You_are_now_enlisted|You are now enlisted! You will be following the lord/lady you chose and will be joining in battles they get into. You can also get promoted as you gain experience. ^Lastly, you can increase the map speed while enlisted by pressing the '=' key (next to the backspace key).
-qstr_Next_Page|Next Page
-qstr_Game_Rules:^|Règles du jeu :^
-qstr_0|0
-qstr_Show_game_rules|Afficher les règles du jeu
-qstr_Continue...|Continuer.
-qstr_Candidate_#1:_{s1}|Candidat #1 : {s1}
-qstr_Candidate_#2:_{s1}|Candidat #2 : {s1}
-qstr_{s3}_of_{s4}_wishes_|{s3} du {s4} souhaite choisir un nouveau maréchal et prend conseil auprès de ses vassaux. {s1} et {s2} sont les candidats.
-qstr_Who_do_you_wish_to_s|Qui voulez-vous soutenir ?
-qstr_{s1}_gives_his_suppo|{s1} vote pour {s2}.
-qstr_Number_of_Supporters|Nombre de partisans : {reg0}
-qstr_{s2}_has_heard_his_v|{s2} a écouté le conseil de ses vassaux. Il nomme {s1} maréchal du {s3}.
-qstr_Number_of_men_knocke|Nombre d'hommes blessés : {reg1}
-qstr_Number_of_men_left:_|Nombre d'hommes perdus : {reg1}
-qstr_Opponents_Beaten:_{r|Ennemis vaincus : {reg1}
-qstr_Opponents_Remaining:|Ennemis restants : {reg1}
-qstr_Remain_in_retirement|Rester en retrait.
-qstr_Go_back_to_the_adven|Retourner à l'aventure.
-qstr_You_have_retired_at_|Vous avez pris votre retraite au niveau {reg4} après {reg5} jours d'aventure.
-qstr_Effect_on_Score|Effet sur le score
-qstr_Settlements_owned_by|Domaines en votre possession : {reg0}
-qstr_Friendly_Settlements|Villages amis : {reg0}
-qstr_Hostile_Settlements:|Villages hostiles : {reg0}
-qstr_Friendly_Lords:_{reg|Seigneurs amis : {reg0}
-qstr_Enemy_Lords:_{reg0}|Seigneurs ennemis : {reg0}
-qstr_Victories:_{reg0}|Victoires : {reg0}
-qstr_Defeats:_{reg0}|Défaites : {reg0}
-qstr_Quests_Completed:_{r|Quêtes accomplies : {reg0}
-qstr_Companions_Found:_{r|Compagnons trouvés : {reg0}
-qstr_Companions_Lost/Depa|Compagnons perdus/partis : {reg0}
-qstr_Wealth:_{reg0}_denar|Fortune : {reg0} écus
-qstr_Inventory:_{reg0}_de|Inventaire : {reg0} écus
-qstr_Renown:_{reg0}|Renommée : {reg0}
-qstr_Experience:_{reg0}|Expérience : {reg0}
-qstr_Days_Passed:_{reg0}|Jours écoulés : {reg0}
-qstr_Difficulty:_{reg0}%|Difficulté : {reg0}%
-qstr_TOTAL_SCORE:_{reg0}|SCORE TOTAL : {reg0}
-qstr_F4___Complex_formati|F4 - Complex formations
-qstr_F7___Memorize_div._p|F7 - Memorize div. placement
-qstr_F8___Default_divisio|F8 - Default division placement
-qstr_F4___Ranks|F4 - Ranks
-qstr_F5___Shield_Wall|F5 - Shield Wall
-qstr_F6___Wedge|F6 - Wedge
-qstr_F7___Square|F7 - Square
-qstr_F8___No_Formation|F8 - No Formation
-qstr_1429_Hundred_Years_W|1429 Hundred Years War Mod Options
-qstr_Disable_mod_formatio|Disable mod formations: 
-qstr_Put_player_in_divisi|Put player in division: 
-qstr_{s1}|{s1}
-qstr_Army_rotates_to_face|Army rotates to face enemy center: 
-qstr_Prevent_AI_from_taki|Prevent AI from taking defensive: 
-qstr_Freelancer:_Prevent_|Freelancer: Prevent Desertion During Vacation:
-qstr_Orders|Orders
-qstr_Attack_Order|Attack Order
-qstr_Retreat|Retreat
-qstr_Stand_Ground|Restez là
-qstr_Charge|À l'assaut
-qstr_Follow_Me|Suivez moi
-qstr_Hold_This_Position|Tenez la position
-qstr_Spread_Out|Dispersez les rangs
-qstr_Stand_Closer|Resserrez les rangs
-qstr_Fall_Back|Reculez
-qstr_Advance|Avancez
-qstr_Fire_At_Will|Feu à volonté
-qstr_Hold_Your_Fire|Cessez le feu
-qstr_Use_Blunt_Weapons|Utilisez des armes contondantes
-qstr_Use_Any_Weapon|Utilisez tous les types d'armes
-qstr_Ready|Prêts
-qstr_Wounded|Avec blessures
-qstr_Dead|Décés
-qstr_CURRENT_COMMANDER_S_|CURRENT COMMANDER'S REPORT!
-qstr_Your_Commander:_{s19|Your Commander: {s19}
-qstr_Commander_Relation:_|Commander Relation: {reg0}
-qstr_Enlisted_Faction:_{s|Enlisted Faction: {s20}
-qstr_Current_Rank:_{s21}|Current Rank: {s21}
-qstr_Experience_to_next_p|Experience to next promotion: {s1}
-qstr_Days_in_service:_{re|Days in service: {reg20}
-qstr_Current_Wage:_{reg23|Current Wage: {reg23} denars.
-qstr_Next_Pay/Promotion_d|Next Pay/Promotion day: {s25}
-qstr_Army_size:_{reg26}|Army size: {reg26}
-qstr_Commander_s_Army|Commander's Army
-qstr_Done|Done
+qstr_You_got_keys_of_dung|Vous obtenez les clés du donjon.
+qstr_Vous_etes_hors_de_co|Vous êtes hors de combat, regardez vos hommes se battre sans vous, ou pressez TAB pour ordonner la retraite.
+qstr_Pour_regarder_le_com|Pour regarder le combat et bouger, pressez W, A, S, D, numpad +/numpad -, pour utiliser la camera pressez Numpad 1,2,3,4,6,8.
+qstr_You_have_been_knocke|Vous êtes hors de combat. Regardez vos hommes continuer la bataille sans vous ou pressez Tab pour battre en retraite.
+qstr_To_watch_the_fight_y|Pour regarder le combat et bouger, vous pouvez utiliser les touches Z, Q, S, D, numpad +/numpad -, pour utiliser la camera pressez Numpad 1,2,3,4,6,8.
+qstr_You_must_stay_behind|Vous devez rester derrière la ligne, le point ne compte pas.
+qstr_Tutorial|Tutoriel
+qstr_Vous_etes_hors_de_com|Vous êtes hors de combat, regardez vos hommes se battre sans vous, ou pressez TAB pour ordonner la retraite.
+qstr_Pour_regarder_le_comb|Pour regarder le combat, pressez 'W, A, S, D, numpad +/numpad -' pour avancer, et 'numpad 1,2,3,4,6,8' pour orienter la camera.
 qstr_You_came_into_the_wo|Vous êtes {reg3?la fille:le fils} d'une famille noble sur le déclin, ne possédant plus que la maison dans laquelle ils vécurent. Cependant, malgré les épreuves, vous avez toujours reçu une bonne éducation et votre famille vous a {reg3?préparée:préparé} depuis votre enfance aux rigueurs de l'aristocratie et de la vie à la cour.
 qstr_You_were_born_the_{r|Vous êtes {reg3?la fille:le fils} de marchands itinérants, parcourant le monde à la recherche du moindre profit. Bien que vos parents étaient plutôt aisés et vous éduquèrent de leur mieux, les opportunités de vous faire des {reg3?amies:amis} furent rares. Vous passiez le plus clair de votre temps à chercher à vendre n'importe quoi à n'importe qui.
-qstr_As_a_child_your_fam|As a child, your family scrabbled out a meagre living from your father's wages as a guardsman to the local lord. It was not an easy existence, and you were too poor to get much of an education. You learned mainly how to defend yourself on the streets, with or without a weapon in hand.
+qstr_As_a_child_your_fami|Quand vous étiez enfant, votre famille survivait grâce à la maigre solde que touchait votre père comme garde d'un seigneur local. Ce n'était pas une existence facile et vous étiez trop pauvre pour recevoir une instruction décente. Vous avez principalement appris à vous défendre vous-même dans les rues, avec ou sans arme.
 qstr_{reg3?daughter:son}|{reg3?fille:fils}
 qstr_You_were_the_{reg3?d|Vous étiez {reg3?la fille:le fils} d'une famille vivant dans les bois, faisant ce qu'il fallait pour joindre les deux bouts : chasser, couper le bois, fabriquer des arcs et même un peu de braconnage quand les temps devenaient durs. L'hiver n'était pas la meilleure période pour votre famille, le froid faisait mourir aussi bien les animaux que les gens. Mais vous avez survécu, tandis que vos frères et soeurs n'ont pas tous eu votre chance.
 qstr_You_were_a_child_of_|Vous êtes enfant des steppes, {reg3?née:né} dans une tribu de nomades habitant d'immenses campements dans les plaines arides, au gré de leurs errances. Comme les autres membres de la tribu, votre famille attachait une importance capitale aux chevaux et vous avez appris à les monter avant de savoir marcher.
@@ -589,21 +257,6 @@ qstr_Hateful|Haineuses
 qstr_Revengeful|Exécrables
 qstr_Vengeful|Atroces
 qstr_Your_relation_with_t|Vos relations avec les factions sont :^{s2}
-qstr_Vous_etes_affamé_et|Vous etes affamé et vous vous sentez faible ! malus for -2/ ag -1
-qstr_Rapport_de_santé:^{|Rapport de santé:^{s3}
-qstr_intacts|intacts
-qstr_Vous_etes_blessé_a_|Vous etes blessé a la jambe ! malus for -1/ ag -1
-qstr_Jambes:_{s9}|Jambes: {s9}
-qstr_Vous_etes_blessé_au|Vous etes blessé au bras ! malus for -3/ ag -4
-qstr_Bras:_{s7}|Bras: {s7}
-qstr_intacte|intacte
-qstr_Vous_etes_griévemen|Vous etes griévement blessé a la tête ! malus for -1/ int -4/ cha -5/ equit/ -1
-qstr_Tête:_{s5}|Tête: {s5}
-qstr_Initiation_au_savoir|Initiation au savoir franc maconique par Maistre Roncelinus
-qstr_Une_page_attire_votr|Une page attire votre attention...
-qstr_...Bien_sur_il_est_|...Bien sur, il est des plus aisé pour le novice d'ouvrire la loge secrete de Carmel de Micy a Orléans tandis que cela est purement inaccessible au non initié, c'est bien la que nostre savoire prend toute son empleur.^Poser simplement la main gauche sur la genouillère, et la main droite sur le lion armé, et la loge vous ouvrirez...
-qstr_Les_loges_secrettes_|Les loges secrettes par Maistre Roncelinus
-qstr_...La_loge_de_loing_|...La loge de loing la plus importante est celle de Rouen et nous savons pourquois elle est si bien gardée, son entrée est dissimulée dans le vieux cimetière, bien sur nous avons pris les plus grandes précautions, ce lieux ne sera jamais détruis ou meme transformé...
 qstr_Player_renown_is_inc|La renommée du joueur est augmentée de 100. 
 qstr_Player_honor_is_incr|L'honneur du joueur a augmenté de 1 point et est maintenant de {reg7}.
 qstr_{reg1}_{s1}_{reg2?ac|{reg1} {s1} {reg2?acceptent:accepte} votre offre.
@@ -629,6 +282,7 @@ qstr_Retirement_is_starti|La retraite semble s'imposer.
 qstr_No_matter!_I_will_pe|Peu importe, je persévère !
 qstr_What_did_I_do_to_des|Qu'ai-je fait pour mériter cela ?
 qstr_I_suppose_it_ll_make|Je suppose que ça fera au moins une bonne histoire à raconter.
+qstr_{s9}_wants_you_to_fo|{s9} souhaite que vous suiviez son armée jusqu'à nouvel ordre.
 qstr_{s8}_of_{s9}|{s8} du {s9}
 qstr__Your_own_banner_fli|Votre bannière flotte au-dessus de la porte du château.
 qstr__You_see_the_banner_|Vous reconnaissez la bannière de {s7} au-dessus de la porte du château.
@@ -645,10 +299,10 @@ qstr_You_ve_been_driven_a|Les murs sont aux mains de l'ennemi et les assaillants
 qstr_You_ve_breached_the_|Vous vous êtes emparé des murs mais les défenseurs continuent à résister dans les rues. Vous devez vous en occuper avant de pouvoir vous attaquer au château, au centre de la ville.
 qstr_The_town_centre_is_y|La ville est à vous mais les défenseurs restants ont battu en retraite dans le château. Il faut vous en emparer afin de compléter votre victoire.
 qstr_The_remaining_defend|Les défenseurs restants se sont retranchés dans le château dans un ultime effort. Vous devez lancer l'assaut et les éliminer.
-qstr_However_since_you_a|However, since you are not a sworn {man/follower} of {s9}, there is no chance he would recognize you as the {lord/lady} of this {reg8?town:castle}.
+qstr_However_since_you_ar|Cependant, puisque que vous n'avez pas prêté allégeance à {s9}, il n'y a aucune chance qu'il vous attribue {reg8?cette ville:ce château}.
 qstr_The_enemy_has_been_f|Les ennemis ont été contraints de battre en retraite. L'assaut est terminé mais le siège continue.
-qstr_As_you_approach_you|As you approach, you are spotted by the castle guards, who welcome you and open the gates for their {king/queen}.
 qstr_As_you_approach_you_|Les gardes du château vous voient arriver, ils souhaitent la bienvenue à leur Duc et vous ouvrent les portes.
+qstr_As_you_approach_you_a|Les gardes du château vous voient arriver, ils souhaitent la bienvenue à leur seigneur et vous ouvrent les portes.
 qstr__This_village_and_th|Ce village et ses alentours vous appartiennent.
 qstr__You_remember_that_t|{s7} possède ce village et ses alentours.
 qstr__These_lands_belong_|Ces terres n'appartiennent à personne.
@@ -658,7 +312,9 @@ qstr__The_village_is_bein|Le village est en train d'être pillé !
 qstr_No_one_here_seems_to|Personne ici ne veut rejoindre votre groupe.
 qstr_One_{s3}_volunteers_|{s3} est l'unique volontaire à vouloir rejoindre votre groupe.
 qstr_{reg5}_{s3}_voluntee|{reg5} {s3} souhaitent vous suivre.
-qstr_Try_as_you_might_yo|Try as you might, you could not defeat the bandits. Infuriated, they raze the village to the ground to punish the peasants, and then leave the burning wasteland behind to find greener pastures to plunder.
+qstr_Try_as_you_might_you|Malgré vos efforts, vous n'avez pu venir à bout des bandits. Furieux, ils rasent le village jusqu'à la dernière pierre afin de punir les paysans, laissant derrière eux ruines et désolation, puis ils partent à la recherche d'autres terres à piller.
+qstr_village|le village
+qstr_town|la ville
 qstr_castle|le château
 qstr_The_{s17}_has_no_imp|Actuellement, {s17} n'a aucun aménagement.
 qstr_The_{s17}_has_the_fo|Actuellement, {s17} possède des aménagements : {s18}.
@@ -674,33 +330,14 @@ qstr__This_town_has_no_ga| La garnison de la ville n'a pas de régisseur.
 qstr__You_have_successful| Vous avez réussi à vous infiltrer.
 qstr_{s13}_A_tournament_w|{s13} Un tournoi est sur le point de débuter.
 qstr___{reg1}_denars_per_|(Écus par nuit : {reg1})
-qstr_Mais_vous_etes_invit|Mais vous etes invité au banquet qui si déroule au chateau
-qstr_Vous_etes_aussi_invi|Vous etes aussi invité au banquet qui si déroule au chateau
-qstr_Moreover_you_earn_{|Moreover, you earn {reg8} denars from the clever bets you placed on yourself...
-qstr_Les_frais_de_l_inscr|Les frais de l'inscription au tournoi et de location de l'équipement s'élèvent a {reg5} écus. Le prix au vainqueur est de {reg6} écus ainsi qu'un objet de valeur.
+qstr_Moreover_you_earn_{r|Vous recevez en plus {reg8} écus, résultat de vos paris judicieux.
 qstr_Victory_is_yours!_Yo|La victoire est vôtre ! Vous avez remporté ce combat. Préparez-vous maintenant pour le tour suivant. 
 qstr_You_have_been_bested|Vous n'avez pas été le meilleur dans cette lutte mais le maître de cérémonie vous permet, pour votre bravoure et de votre adresse au combat, de prendre part au tour suivant. 
-qstr_Vous_êtes_au_tour_1|Vous êtes au tour 1 du tournoi dans le groupe A. Il reste 16 participants encore en lice.^Prochain combat:^Groupe A: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_2|Vous êtes au tour 2 du tournoi et vous restez invaincu dans le groupe A. Il reste 14 participants encore en lice.^Prochain combat:^Groupe A: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_3|Vous êtes au tour 3 du tournoi et vous restez invaincu dans le groupe A. Il reste 12 participants encore en lice.^Prochain combat:^Groupe A: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_4|Vous êtes au tour 4 du tournoi et vous restez invaincu dans le groupe A. Il reste 10 participants encore en lice.^Prochain combat:^Groupe A: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_5|Vous êtes au tour 5 du tournoi et vous restez invaincu dans le groupe A. Il reste 8 participants encore en lice.^Prochain combat:^Groupe A: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_6|Vous êtes au tour 6 du tournoi et vous restez invaincu dans le groupe A. Il reste 6 participants encore en lice.^Prochain combat:^Groupe A: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_7|Vous êtes au tour 7 du tournoi et vous restez invaincu dans le groupe A. Il reste 4 participants encore en lice.^Prochain combat:^Groupe A: {s30} contre {s31}.
-qstr_Vous_êtes_en_finale|Vous êtes en finale du tournoi et vous restez invaincu dans le groupe A. Il ne reste que 2 participants encore en lice.^Prochain combat:^Groupe A: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_1_|Vous êtes au tour 1 du tournoi dans le groupe B. Il reste 16 participants encore en lice.^Prochain combat:^Groupe B: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_2_|Vous êtes au tour 2 du tournoi et vous restez invaincu dans le groupe B. Il reste 14 participants encore en lice.^Prochain combat:^Groupe B: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_3_|Vous êtes au tour 3 du tournoi et vous restez invaincu dans le groupe B. Il reste 12 participants encore en lice.^Prochain combat:^Groupe B: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_4_|Vous êtes au tour 4 du tournoi et vous restez invaincu dans le groupe B. Il reste 10 participants encore en lice.^Prochain combat:^Groupe B: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_5_|Vous êtes au tour 5 du tournoi et vous restez invaincu dans le groupe B. Il reste 8 participants encore en lice.^Prochain combat:^Groupe B: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_6_|Vous êtes au tour 6 du tournoi et vous restez invaincu dans le groupe B. Il reste 6 participants encore en lice.^Prochain combat:^Groupe B: {s30} contre {s31}.
-qstr_Vous_êtes_au_tour_7_|Vous êtes au tour 7 du tournoi et vous restez invaincu dans le groupe B. Il reste 4 participants encore en lice.^Prochain combat:^Groupe B: {s30} contre {s31}.
-qstr_Vous_êtes_en_finale_|Vous êtes en finale du tournoi et vous restez invaincu dans le groupe B. Il ne reste que 2 participants encore en lice.^Prochain combat:^Groupe B: {s30} contre {s31}.
 qstr_You_were_beaten._The|Vous avez été vaincu. Les paysans ont été encouragés par leur succès mais les leçons que vous leur avez données n'ont pas été bien suivies.
 qstr_After_beating_your_l|La démonstration est terminée, vous expliquez aux volontaires comment mieux se défendre face à de telles attaques. Cette expérience leur sera sans doute profitable pour la prochaine fois.
 qstr_The_bandits_are_brok|La vie vaut ce qu'elle nous a coûté d'efforts, la racaille est à terre. Les quelques survivants s'enfuient sans se retourner, terrifiés par l'ardeur des paysans et de leur nouveau champion.
 qstr_{s1}_s_Ship|Le vaisseau de {s1}
-qstr_However_{reg3?You_a|However, {reg3?You are:{s1} is} unable to find any trade goods that would bring a profit.
+qstr_However_{reg3?You_ar|Cependant, {reg3?vous êtes:{s1} est} incapable de trouver comment tirer profit de ce qui est vendu ici.
 qstr_^Buying_{s4}_here_an|^Acheter {s4} ici et le revendre à {s5} devrait permettre de faire un bénéfice de {reg6} écus pour chaque pièce.{s3}
 qstr_{reg3?You_find:{s1}_|{reg3?Votre groupe:{s1}} découvre ceci :^{s3}
 qstr_{s2}^{reg1}_{s1}_ear|{s2}^{reg1} {s1} ont gagné {reg0} points d'expérience.
@@ -713,200 +350,124 @@ qstr_The_training_went_ve|L'entraînement s'est très bien passé.
 qstr_The_training_went_pe|L'entraînement s'est déroulé à la perfection.
 qstr_{s13}_asked_you_to_r|{s13} vous a demandé de vous présenter devant lui avec au moins {reg13} soldats.
 qstr_{s13}_ordered_you_to|{s13} vous a ordonné de vous joindre au prochain assaut contre {s14}.
+qstr_Find_and_speak_with_|Trouvez {s3} du {s4} pour lui prêter serment d'allégeance.
 qstr_There_has_been_an_al|Il y a eu un incident frontalier : {s9}
 qstr_^^Note_that_so_long_|^^Note que, tant que vous restez maréchal, les seigneurs du royaume attendent que vous les enmeniez guerroyer. Donc, si vous êtes a l'affut d'une fête, ou prepariez un mariage ou etes occupé à d'autres taches, vous devriez demissioner de votre siege de maréchal.
-qstr_Le_camp_Rebelle_a_é|Le camp Rebelle a été demantelé, et le chemin de la Citerne es scellé.
-qstr_Personne_ici_ne_veut|Personne ici ne veut rejoindre votre groupe.
-qstr_{s3}_est_l_unique_vo|{s3} est l'unique volontaire ?vouloir rejoindre votre groupe.
-qstr_{reg5}_{s3}_souhaite|{reg5} {s3} souhaitent vous suivre.
-qstr___{reg1}_écus_par_n| ({reg1} écus par nuitée.)
-qstr_You_have_deserted_a|You have deserted, and are now wanted!
-qstr_You_defeated_{reg5}_|You defeated {reg5} enemies.
-qstr_You_failed_to_defeat|You failed to defeat any enemy.
-qstr_you_and_some_men_fro|you and some men from your division
-qstr_You_and_your_men|You and your men
-qstr_You|You
-qstr_You_defeated_the_ene|You defeated the enemies.
-qstr_You_failed_to_defeat_|You failed to defeat the enemy.
-qstr_Freelancer_Rank___{r|Freelancer Rank - {reg3}
-qstr_Enlisted_Lord_Set_to|Enlisted Lord Set to Jeanne
-qstr_You_defeated_{reg5}_e|You defeated {reg5} enemies and have impressed your commander.
-qstr_You_will_be_followin|You will be following the Lord/Lady you chose and will be joining in battles they get into.^ You can also get promoted as you gain experience. ^^Lastly, you can increase the map speed while enlisted by pressing the '=' key (next to the backspace key).
-qstr_You_are_now_enlisted!|You are now enlisted!
-qstr_{s0}|{s0}
-qstr_Inventory|Inventory
-qstr_Show_stats|Show stats
-qstr_Show_item_details__|Show item details  
-qstr_Troop_detail|Troop detail
-qstr_{s1}^|{s1}^
-qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
-qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
-qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
-qstr_{s2}^{reg1}^|{s2}^{reg1}^
-qstr_{s1}___Agility:|{s1}   Agility:
-qstr_{s2}{reg1}|{s2}{reg1}
-qstr_{s1}Main_skills:_^|{s1}Main skills: ^
-qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
-qstr_{s2}{reg1}^|{s2}{reg1}^
-qstr_{s1}___Athletics:^|{s1}   Athletics:^
-qstr_{s1}___Riding:^|{s1}   Riding:^
-qstr_{s2}_^|{s2}-^
-qstr_{s1}___Power_Throw:^|{s1}   Power Throw:^
-qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
-qstr_{s2}{reg1}^^|{s2}{reg1}^^
-qstr_{s2}_^^|{s2}-^^
-qstr_{s1}Weapons:^|{s1}Weapons:^
-qstr_{s1}___One_Handed:^|{s1}   One Handed:^
-qstr_{s1}___Two_Handed:^|{s1}   Two Handed:^
-qstr_{s1}___Polearms:^|{s1}   Polearms:^
-qstr_{s1}___Archery:^|{s1}   Archery:^
-qstr_{s1}___Crossbow:^|{s1}   Crossbow:^
-qstr_{s1}___Throwing:^|{s1}   Throwing:^
-qstr_{s1}___Slings:|{s1}   Slings:
-qstr_{s2}_|{s2}-
-qstr__Click_on_the_troop_|(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.
-qstr_Troop_Tree|Troop Tree
-qstr_From_Troop:_|From Troop: 
-qstr_{s1}_or_{s2}|{s1} or {s2}
-qstr__Click_on_a_unit_for|(Click on a unit for details)
-qstr_{reg1}_{reg2}|{reg1}, {reg2}
-qstr_French_Noble_Line|French Noble Line
-qstr_English_Noble_Line|English Noble Line
-qstr_Burgandy_Noble_Line|Burgandy Noble Line
-qstr_Breton_Noble_Line|Breton Noble Line
-qstr_{s1}_of_the_{s3}_was|{s1} of the {s3} was defeated in battle but managed to escape.
-qstr_Quest_Imposed!|Quest Imposed!
-qstr_Impose_Quest_Cleared|Impose Quest Cleared!
-qstr_You_set_forth_on_you|You set forth on your mission.
-qstr_You_have_{reg0}_days_le|You have {reg0} days left on your mission.
-qstr_{s5}|{s5}
-qstr_Days_until_next_payd|Days until next payday: {reg21}
-qstr_Level_{reg2}___Requi|Level {reg2} - Required {reg3}
-qstr_Cur_Level___{reg4}|Cur Level - {reg4}
-qstr_Upgrade_Troop_Level_|Upgrade Troop Level - {reg5}
-qstr_Level_Boundary_of_{r|Level Boundary of {reg4} - {reg6}
-qstr_Level_Boundary_of_{re|Level Boundary of {reg5} - {reg7}
-qstr_Cur_Level_minus_1___|Cur Level minus 1 - {reg4}
-qstr_Cur_XP_{reg2}___Requ|Cur XP {reg2} - Required {reg3}
-qstr_Upgrade_Troop_Level_m|Upgrade Troop Level minus  4 - {reg5}
-qstr_Freelancer:_Promotio|Freelancer: Promotion / Levelling Type: 
-qstr_Simple|Simple
-qstr_Advanced|Advanced
-qstr_Simple__Easy_|Simple (Easy)
-qstr_Advanced__Hard_|Advanced (Hard)
-qstr_Infantry_Division_Se|Infantry Division Sergeant
-qstr_Current_rank:_Infant|Current rank: Infantry Division Sergeant for {s5}
-qstr_Ranged_Division_Serg|Ranged Division Sergeant
-qstr_Current_rank:_Ranged|Current rank: Ranged Division Sergeant for {s5}
-qstr_Infantry_Division_Ca|Infantry Division Captain
-qstr_Current_rank:_Infantr|Current rank: Infantry Division Captain for {s5}
-qstr_Ranged_Division_Capt|Ranged Division Captain
-qstr_Current_rank:_Ranged_|Current rank: Ranged Division Captain for {s5}
-qstr_Enlisted_Lord_Set_to_|Enlisted Lord Set to Jeanne - Now a Sarge
-qstr_Current_Service_XP_=|Current Service XP = {reg10}
-qstr_Can_upgrade|Can upgrade
-qstr_Cant_Upgrade|Cant Upgrade
-qstr_Division_Sergeant|Division Sergeant
-qstr_Division_Captain|Division Captain
-qstr_{reg1}_Path_1_troop|{reg1} Path 1 troop
-qstr_{reg1}_Path_1_troop_|{reg1} Path 1 troop -- {reg2} Path2 Troop
-qstr_{reg0}_Troops_added|{reg0} Troops added
-qstr_Ranged_Division_Serge|Ranged Division Sergeants
-qstr_A_modified_shield_o|A modified shield, or an improved crossbow
-qstr_Infantry_Division_Ser|Infantry Division Sergeants
-qstr_A_modified_shield_or|A modified shield, or an improved bastard sword
-qstr_Attempting_to_Trigge|Attempting to Trigger {s1}. Failed
-qstr_Enlisted_Lord_Set_to_J|Enlisted Lord Set to Jeanne, Player now French Sergeant
-qstr_You_are_given_new_tr|You are given new troops under your command
-qstr_a_coat_of_plates_fit|a coat of plates fit for a Lord, or an {s7}
-qstr_a_coat_of_plates_fit_|a coat of plates fit for a Lord, or a {s7}
-qstr_You_have_{reg0}_days_lef|You have {reg0} days left on your leave.
-qstr__I_ve_heard_that_you| I've heard that you were already an officer under {s4}. However, you will have to earn my trust. So for now, 
-qstr__| 
-qstr__I_ve_heard_that_you_| I've heard that you were already an officer under {s4}. However, you will have to earn my trust and that of my men. So for now, 
-qstr_Allow_Player_Permane|Allow Player Permanent DEATH: 
-qstr_Allow_Player_Injurie|Allow Player Injuries: 
-qstr_Simply_pass_near_{s1|Simply pass near {s13}
-qstr_Simply_pass_near_{s13|Simply pass near {s13} and {s14}
-qstr_Simply_pass_near_{s13}|Simply pass near {s13}, {s14}, and {s15}
-qstr_{s13}|{s13}
-qstr_{s13}_and_{s14|{s13} and {s14
-qstr_{s13}_{s14}_and_{s1|{s13}, {s14} and {s15}
-qstr_{s9}_asked_you_to_sco|{s9} asked you to scout {s5}, then report back.
-qstr_{s9}_asked_you_to_scou|{s9} asked you to scout {s7}, then report back.
-qstr_{s13}_and_{s14}|{s13} and {s14}
-qstr_{reg6}_Freelancer_Ra|{reg6} Freelancer Rank
-qstr_{s13}_TRIGGERED|{s13} TRIGGERED
-qstr_{s13}_and_{s14}_TRIG|{s13} and {s14} TRIGGERED
-qstr_{s13}_{s14}_and_{s15|{s13}, {s14} and {s15} TRIGGERED
+qstr_Breaking_camp...|Le groupe lève le camp.
+qstr_Your_party_is_spotte|Votre groupe est visible de {s1}.
+qstr_Party_has_nothing_to|Vous n'avez n'a rien à manger !
+qstr_{reg1}_{s1}_{reg2?ha|{reg1} {s1} {reg2?ont:a} profité de la nuit pour s'enfuir.
+qstr_{s1}_of_{s3}_has_bee|{s1} du {s3} a été relâché.
+qstr_Building_of_{s0}_in_|La construction de {s0} à {s4} est terminée.
+qstr_{s1}_has_won_the_tou|{s1} a remporté le tournoi à {s2}.
+qstr_{s1}_is_no_longer_in|{s1} n'a plus rien à craindre des bandits.
+qstr_You_pay_for_accommod|Paiement des frais d'hébergement.
+qstr_Betrothal_to_{s5}_ex|Les fiançailles {s5} ont expiré.
+qstr__Your_tactics_skill_| Votre compétence Tactique augmente de 1.
+qstr__Your_persuasion_ski| Votre compétence Persuasion augmente de 1.
+qstr__Your_leadership_ski| Votre compétence Commandement augmente de 1.
+qstr__Your_intelligence_h| Votre Intelligence augmente de 1.
+qstr__Your_trade_skill_ha| Votre compétence Marchandage augmente de 1.
+qstr__Your_weapon_master_| Votre compétence Maître d'armes augmente de 1.
+qstr__Your_engineer_skill| Votre compétence Ingénierie augmente de 1.
+qstr_You_have_finished_re|Vous avez terminé {s1}. {s2}
+qstr_Book_Read|Livre terminé.
+qstr_{s1}_is_scouted.|Vous avez exploré {s1}.
+qstr_{s1}_has_switched_fr|{s1} est passé du {s2} au {s3}.
+qstr_{reg65?my_Lady:my_Lo|{reg65?ma noble dame:monseigneur}
+qstr_{reg65?My_Lady:My_Lo|{reg65?Ma noble dame:Monseigneur}
+qstr_{reg65?madame:sir}|{reg65?madame:Messire}
+qstr_{reg65?Madame:Sir}|{reg65?Madame:Messire}
+qstr__no_fiefs_|(pas de fief)
+qstr__fiefs:_{s0}_|(fiefs: {s0})
+qstr_It_s_your_money_or_y|La bourse ou la vie, {mon gars/fillette}, et pas de gestes brusques ou on vous rentre dans le lard.
+qstr_Lucky_for_you_you_ca|Vous avez de la chance, je suis de bonne humeur. Donnez-moi vos écus et peut-être vous laisserai-je la vie sauve. Une bourse vide vaut mieux que l'ennui de perdre la vie pour la conserver pleine.
+qstr_This_a_robbery_eh?_I|On appelle cela du vol, je crois. Je vous laisse une chance de me donner tout ce que vous avez ou mes compagnons et moi nous vous tuerons. C'est compris ?
+qstr_we_have_made_very_li|nous n'avons fait que peu de progrès jusqu'à présent.
+qstr_we_have_suceeded_in_|nous avons réussi à obtenir quelques terres mais nous avons encore un long chemin à parcourir.
+qstr_we_have_become_a_sig|nous avons acquis une certaine puissance et je pense que nous avons nos chances.
+qstr_we_are_winning_the_w|nous sommes en passe de gagner, mais nos ennemis n'ont toujours pas lâché prise.
+qstr_we_are_on_the_verge_|nous sommes sur le point de l'emporter. Les quelques ennemis qui restent ne sont plus une menace, mais nous devons continuer à les pourchasser.
+qstr_Ecu|Écu
+qstr_Lys|Lys
+qstr_Presser_TAB_pour_con|Presser TAB pour continuer après le dialogue.
 qstr_{playername}_when_we|{playername}, lorsque nous avons entamé notre quête, peu de personnes ont eu le courage de me soutenir. Et encore moins souhaitaient risquer leur vie pour ma cause. Mais vous n'avez pas hésité un seul instant à vous attaquer à nos ennemis. Nous avons eu des moments difficiles ensemble et plus d'une fois j'ai failli perdre espoir. Mais, grâce aux cieux, nous avons gagné. Il est temps pour moi maintenant de vous laisser et de prendre ce qui me revient de droit. A partir de maintenant il m'incombe l'immense responsabilité de diriger {s3}. Bien des épreuves nous attendent encore et je compte sur votre aide pour les surmonter. Et, bien entendu, vous resterez toujours mon premier et plus loyal vassal.
-qstr_You_are_challenging_m|You are challenging me to a duel? How droll!        As you wish, {playername}, it will be good sport to bash your head in.
-qstr_What_do_you_say_to_en|What do you say to entering the service of {s9} as a mercenary captain?        I have no doubt that you would be up to the task.
-qstr_{s11}_gave_you_a_fake|{s11} gave you a fake letter to fool {s13} into banishing his vassal {s16}.        You are to go near {s14}, give the letter to one of your {s15} and send him into the town as a messenger,      believing his orders to be genuine.
+qstr__We_will_of_course_n|Nous attendrons bien entendu que la campagne ait pris fin.
+qstr_I_am_{s4}_the_ruler_|Je suis {s4}, souverain du {s6}
+qstr_I_am_{s4}_a_vassal_o|Je suis {s4} vassal du {s6}
+qstr_{s9}{reg5?_and_the_l|{s9}{reg5? et seigneur de {s8}.:.
+qstr_{s13}_asked_you_to_g|{s13} vous demande de rassembler {reg3} têtes de bétail et de les lui livrer.
+qstr_{s9}_asked_you_to_sc|{s9} vous demande d'explorer {s13}, {s14} et {s15}, puis de lui rapporter ce que vous y avez vu.
+qstr_you|Vous
+qstr_You_are_challenging_|Vous me provoquez en duel ? Comme c'est amusant, c'est comme vous voudrez, {playername}. Vous défoncer le crâne sera pour moi un bon exercice.
+qstr_{s16}_and_{s17}|{s16} et {s17}
+qstr_Very_well_I_will_acc|Très bien, je vous accepte à nouveau dans nos rangs, si vous me donnez votre parole d'honneur que vous nous serez fidèle cette fois.
+qstr_A_pardon_will_only_b|Vous serez peut-être pardonné si vous consentez à me livrer {s17}. Acceptez-vous ces conditions ?
+qstr_No._There_is_no_chan|Non, cela ne m'intéresse pas, je ne vois pas pourquoi je vous accorderais cette grâce.
+qstr_Our_marshal_{s1}|Notre maréchal, {s1}
+qstr_{s11}_and_{s12}|{s11} et {s12}
+qstr_We_are_not_at_war_wi|Nous vivons enfin des heures de paix.
+qstr_We_are_at_war_with_{|Nous sommes en guerre avec le {s12}.
+qstr_go_on_the_offensive_|Attaquez maintenant.
+qstr_act_to_defend_our_la|Défendez nos terres.
+qstr_take_more_time_to_ga|Prenez un peu plus de temps pour recruter plus d'hommes.
+qstr_You_promised_to_help|Vous avez promis d'aider {s13} à récupérer le trône de {s14}.
+qstr_What_do_you_say_to_e|Que diriez-vous d'entrer au service de {s9} en tant que capitaine mercenaires ? Il ne fait pour moi aucun doute que vous serez à la hauteur de cette tâche.
+qstr_{s9}_asked_you_to_ta|{s9} vous a demandé de porter un message à {s13}. {s13} se trouvait à {s4} au moment où cette quête vous a été confiée.
+qstr_{s9}_asked_you_to_tak|{s9} vous a demandé de transmettre une lettre à {s13} du {s15}. {s13} se trouvait à {s4} au moment où cette quête vous a été confiée.
+qstr_{s11}_asked_you_to_e|{s11} vous a demandé d'escorter sa {s17} {s13} à {s14}.
+qstr_{s13}_asked_you_to_d|{s13} vous a demandé de vous occuper des bandits qui terrorisent les habitants de {s15} et de lui faire ensuite votre rapport.
+qstr_{s9}_asked_you_to_ra|{s9} vous a demandé d'entraîner {reg1} {s14} et de les lui amener.
+qstr_{s9}_asked_you_to_co|Le {s9} vous a demandé de collecter les taxes de {s3}. Il vous accordera un cinquième du montant récolté.
+qstr_{s9}_asked_you_to_hu|{s9} vous a demandé de traquer un fugitif du nom de {s4}. On raconte qu'il se cache à {s3}.
+qstr_{s9}_asked_you_to_as|{s9} vous a demandé d'assassiner un marchand de {s3}.
+qstr_{s9}_has_asked_you_t|{s9} vous a demandé de rencontrer un espion à {s13}.
+qstr_{s11}_asked_you_to_f|{s11} vous a demandé de suivre l'espion qui quittera bientôt {s12}. Vous devez veiller à rester hors de sa vue car il pourrait se douter de quelque chose et faire demi-tour. Une fois que l'espion rencontrera son complice, vous devrez les capturer tous les deux et les amener à {s11}.
+qstr_{s11}_asked_you_to_c|{s11} vous a demandé de capturer un seigneur du {s13}, n'importe lequel, et de le lui amener.
+qstr_{s9}_asked_you_to_le|{s9} vous a demandé de lui prêter {s3} pour la semaine.
+qstr_{s9}_asked_you_to_col|{s9} vous a demandé de récupérer une dette s'élevant à {reg4} écus auprès de {s3}. {s3} était à {s4} lorsque la quête vous a été confiée.
+qstr_{s11}_gave_you_a_fak|{s11} vous a donné une fausse lettre afin que {s13} se débarrasse de son fidèle vassal, {s16}. Vous devez vous rendre près de {s14}, donner la lettre à l'un de vos {s15} et l'envoyer en ville en tant que messager. Il est important qu'il n'ait pas conscience de vos motivations réelles.
+qstr_{s9}_has_requested_y|{s9} vous a demandé de capturer {reg1} {s3}.
+qstr_Lend_your_experience|Prêtez votre chirurgien, {s3}, au {s1}.
 qstr_Then_take_it_with_my|Tenez, avec ma gratitude éternelle. J'admire votre noblesse de coeur, je n'oublierai jamais ce que vous avez fait pour moi.
 qstr_Forgive_me_{playerna|Pardonnez-moi {playername}, mais j'insiste pour que vous acceptiez. Cet argent ne représente pas grand chose pour moi et je vous dois tant, prenez-le et n'en parlons plus.
 qstr_{playername}_what_a_|{playername}, de quelle noblesse vous faites preuve ! Mais je ne vous autorise pas à refuser. Vous avez fait bien plus pour moi que vous ne le pensez et je suis sûr que vous ferez un meilleur usage que moi de cet argent.
-qstr_Guildmaster_of_{s4}_g|Guildmaster of {s4} gave you {reg12} denars to pay the ransom of a girl kidnapped by bandits.        You are to meet the bandits near {s3} and pay them the ransom fee.      After that you are to bring the girl back to {s4}.
-qstr_Guildmaster_of_{s4}_pr|Guildmaster of {s4} promised you {reg12} denars if you can make sure that        {s12} and {s13} no longer pose a threat to a peace settlement between {s15} and {s14}.      In order to do that, you must either convince them or make sure they fall captive and remain so until a peace agreement is made.
-qstr_{reg20?We_mostly_prod|{reg20?We mostly produce {s5} here:We don't produce much here these days}.      If you would like to learn more, you can speak with our {reg4?guildmaster:village elder}. He is nearby, right over there.
-qstr_You_came_into_the_wor|You came into the world a {reg3?daughter:son} of declining nobility,            owning only the house in which they lived. However, despite your family's hardships,          they afforded you a good education and trained you from childhood for the rigors of aristocracy and life at court.
-qstr_You_were_born_the_{re|You were born the {reg3?daughter:son} of travelling merchants,            always moving from place to place in search of a profit. Although your parents were wealthier than most            and educated you as well as they could, you found little opportunity to make friends on the road,          living mostly for the moments when you could sell something to somebody.
-qstr_As_a_child_your_fami|Quand vous étiez enfant, votre famille survivait grâce à la maigre solde que touchait votre père comme garde d'un seigneur local. Ce n'était pas une existence facile et vous étiez trop pauvre pour recevoir une instruction décente. Vous avez principalement appris à vous défendre vous-même dans les rues, avec ou sans arme.
-qstr_You_were_the_{reg3?da|You were the {reg3?daughter:son} of a family who lived off the woods,            doing whatever they needed to make ends meet. Hunting, woodcutting, making arrows,            even a spot of poaching whenever things got tight. Winter was never a good time for your family            as the cold took animals and people alike, but you always lived to see another dawn,          though your brothers and sisters might not be so fortunate.
-qstr_You_were_a_child_of_t|You were a child of the steppe, born to a tribe of wandering nomads who lived            in great camps throughout the arid grasslands.            Like the other tribesmen, your family revered horses above almost everything else, and they taught you          how to ride almost before you learned how to walk. 
-qstr_As_the_{reg3?daughter|As the {reg3?daughter:son} of a thief, you had very little 'formal' education.            Instead you were out on the street, begging until you learned how to cut purses, cutting purses            until you learned how to pick locks, all the way through your childhood.          Still, these long years made you streetwise and sharp to the secrets of cities and shadowy backways.
-qstr_As_a_{reg3?girl:boy}_grow|As a {reg3?girl:boy} growing out of childhood,            you were sent to live in the court of one of the nobles of the land.            There, your first lessons were in humility, as you waited upon the lords and ladies of the household.            But from their chess games, their gossip, even the poetry of great deeds and courtly love, you quickly began to learn about the adult world of conflict          and competition. You also learned from the rough games of the other children, who battered at each other with sticks in imitation of their elders' swords.
-qstr_As_a_{reg3?girl:boy}_growi|As a {reg3?girl:boy} growing out of childhood,            you apprenticed with a local craftsman to learn a trade. After years of hard work and study under your            new master, he promoted you to journeyman and employed you as a fully paid craftsman for as long as          you wished to stay.
-qstr_As_a_{reg3?girl:boy}_growin|As a {reg3?girl:boy} growing out of childhood,            you apprenticed to a wealthy merchant, picking up the trade over years of working shops and driving caravans.            You soon became adept at the art of buying low, selling high, and leaving the customer thinking they'd          got the better deal.
-qstr_As_a_{reg3?girl:boy}_growing|As a {reg3?girl:boy} growing out of childhood,            you took to the streets, doing whatever you must to survive.            Begging, thieving and working for gangs to earn your bread, you lived from day to day in this violent world,          always one step ahead of the law and those who wished you ill.
-qstr_As_a_{reg3?girl:boy}_growing_|As a {reg3?girl:boy} growing out of childhood,            you rode the great steppes on a horse of your own, learning the ways of the grass and the desert.            Although you sometimes went hungry, you became a skillful hunter and pathfinder in this trackless country.          Your body too started to harden with muscle as you grew into the life of a nomad {reg3?woman:man}.
-qstr_Though_the_distinction_felt|Though the distinction felt sudden to you,            somewhere along the way you had become a {reg3?woman:man}, and the whole world seemed to change around you.            When you were named squire to a noble at court, you practiced long hours with weapons,            learning how to deal out hard knocks and how to take them, too.            You were instructed in your obligations to your lord, and of your duties to those who might one day be your vassals.            But in addition to learning the chivalric ideal, you also learned about the less uplifting side            -- old warriors' stories of ruthless power politics, of betrayals and usurpations,          of men who used guile as well as valor to achieve their aims.
-qstr_Though_the_distinction_felt_|Though the distinction felt sudden to you,            somewhere along the way you had become a {s13}, and the whole world seemed to change around you.            You joined the tightly-knit circle of women at court, ladies who all did proper ladylike things,            the wives and mistresses of noble men as well as maidens who had yet to find a husband.            However, even here you found politics at work as the ladies schemed for prominence and fought each other            bitterly to catch the eye of whatever unmarried man was in fashion at court.            You soon learned ways of turning these situations and goings-on to your advantage. With it came the            realisation that you yourself could wield great influence in the world, if only you applied yourself          with a little bit of subtlety.
-qstr_Though_the_distinction_felt_s|Though the distinction felt sudden to you,            somewhere along the way you had become a {s13}, and the whole world seemed to change around you.            You set out on your own with nothing except the instrument slung over your back and your own voice.            It was a poor existence, with many a hungry night when people failed to appreciate your play,            but you managed to survive on your music alone. As the years went by you became adept at playing the          drunken crowds in your taverns, and even better at talking anyone out of anything you wanted.
-qstr_Though_the_distinction_felt_su|Though the distinction felt sudden to you,            somewhere along the way you had become a {reg3?woman:man}, and the whole world seemed to change around you.            You found yourself as a student in the university of one of the great cities,            where you studied theology, philosophy, and medicine.            But not all your lessons were learned in the lecture halls.            You may or may not have joined in with your fellows as they roamed the alleys in search of wine, women, and a good fight.            However, you certainly were able to observe how a broken jaw is set,          or how an angry townsman can be persuaded to set down his club and accept cash compensation for the destruction of his shop.
-qstr_Though_the_distinction_felt_sud|Though the distinction felt sudden to you,            somewhere along the way you had become a {s13}, and the whole world seemed to change around you.            Heeding the call of the open road, you travelled from village to village buying and selling what you could.            It was not a rich existence, but you became a master at haggling even the most miserly elders into          giving you a good price. Soon, you knew, you would be well-placed to start your own trading empire...
-qstr_Though_the_distinction_felt_sudd|Though the distinction felt sudden to you,            somewhere along the way you had become a {s13}, and the whole world seemed to change around you.            You pursued a career as a smith, crafting items of function and beauty out of simple metal.            As time wore on you became a master of your trade, and fine work started to fetch fine prices.          With food in your belly and logs on your fire, you could take pride in your work and your growing reputation.
-qstr_Though_the_distinction_felt_sudde|Though the distinction felt sudden to you,            somewhere along the way you had become a {s13}, and the whole world seemed to change around you.            Dissatisfied with common men's desperate scrabble for coin, you took to your local lord's own forests            and decided to help yourself to its bounty, laws be damned. You hunted stags, boars and geese and sold            the precious meat under the table. You cut down trees right under the watchmen's noses and turned them into          firewood that warmed many freezing homes during winter. All for a few silvers, of course.
-qstr_Only_you_know_exactly_wha|Only you know exactly what caused you to give up your old life and become an adventurer.            Still, it was not a difficult choice to leave, with the rage burning brightly in your heart.            You want vengeance. You want justice. What was done to you cannot be undone,          and these debts can only be paid in blood...
-qstr_Only_you_know_exactly_what|Only you know exactly what caused you to give up your old life and become an adventurer.            All you can say is that you couldn't bear to stay, not with the memories of those you loved so close and so            painful. Perhaps your new life will let you forget,          or honour the name that you can no longer bear to speak...
-qstr_Only_you_know_exactly_what_|Only you know exactly what caused you to give up your old life and become an adventurer.            You're not even sure when your home became a prison, when the familiar became mundane, but your dreams of            wandering have taken over your life. Whether you yearn for some faraway place or merely for the open road and the          freedom to travel, you could no longer bear to stay in the same place. You simply went and never looked back...
-qstr_Only_you_know_exactly_what_c|Only you know exactly what caused you to give up your old life and become an adventurer.            However, you know you cannot go back. There's nothing to go back to. Whatever home you may have had is gone          now, and you must face the fact that you're out in the wide wide world. Alone to sink or swim...
-qstr_Only_you_know_exactly_what_ca|Only you know exactly what caused you to give up your old life and become an adventurer.            To everyone else, it's clear that you're now motivated solely by personal gain.            You want to be rich, powerful, respected, feared.            You want to be the one whom others hurry to obey.            You want people to know your name, and tremble whenever it is spoken.          You want everything, and you won't let anyone stop you from having it...
-qstr_You_start_reading_{s2|You start reading {s2}. After a few pages,        you feel you could learn a lot from this book. You decide to keep it close by and read whenever you have the time.
-qstr_You_flip_through_the_|You flip through the pages of {s2}, but you find the text confusing and difficult to follow.        Try as you might, it soon gives you a headache, and you're forced to give up the attempt.
-qstr_As_a_last_defensive_e|As a last defensive effort, you retreat to the main hall of the keep.      You and your remaining soldiers will put up a desperate fight here. If you are defeated, there's no other place to fall back to.
-qstr_You_ve_been_driven_aw|You've been driven away from the walls.      Now the attackers are pouring into the streets. IF you can defeat them, you can perhaps turn the tide and save the day.
-qstr_You_ve_breached_the_t|You've breached the town walls,            but the stubborn defenders continue to resist you in the streets!          You'll have to deal with them before you can attack the keep at the heart of the town.
-qstr_The_town_centre_is_yo|The town centre is yours,            but the remaining defenders have retreated to the castle.          It must fall before you can complete your victory.
-qstr_Try_as_you_might_you|Malgré vos efforts, vous n'avez pu venir à bout des bandits. Furieux, ils rasent le village jusqu'à la dernière pierre afin de punir les paysans, laissant derrière eux ruines et désolation, puis ils partent à la recherche d'autres terres à piller.
-qstr_You_have_fallen._The_|You have fallen. The bandits quickly search your body for every coin they can find,      then vanish into the night. They have left you alive, if only barely.
-qstr_The_bandits_are_broke|The bandits are broken!          Those few who remain alive and conscious run off with their tails between their legs,        terrified of the peasants and their new champion.
-qstr_{s9}_wants_you_to_hu|{s9} wants you to hunt down deserters and end them.
-qstr_{s6}_faction_with_{s|{s6} faction with {s5} culture
-qstr_Item_ID:_{reg1}|Item ID: {reg1}
-qstr_Freelancer_Missions:|Freelancer Missions: 
-qstr_{s9}_wants_you_to_pa|{s9} wants you to pacify his unhappy troops.
-qstr_Oh_Hello_Captain_s|Oh, Hello Captain, sorry, didn't see you there. I hope all is well...
-qstr_Hey_Sarge_I_bet_you|Hey Sarge, I bet you know all about blood and guts, eh?
-qstr_Oi_{playername}__d|Oi, {playername},  don't be sneaking about. What do you want?
-qstr_At_ease_soldier._I_|At ease, soldier. I've been hearing that there is some discord among the men. What can you tell me about it?
-qstr_I_do_yes._But_I_bet|I do, yes. But I bet you know more about shit, eh? So what is it that I am hearing, that there are rumblings about the men, eh?
-qstr_I_just_want_to_know_|I just want to know why the men have been disquiet these days. I know I don't feel any better myself, but wanted to hear how it is with the other men.
-qstr_Well_{sir/ma_am}._T|Well, {sir/ma'am}. The men are not happy, that is true. There is just too much walking, too much fighting, but not enough feasting, not enough drinks, not enough fun! We are paid well, yes, but maybe we deserve a bit more. Respectfully, {sir/ma'am}.
-qstr_Sarge_you_know_that|Sarge, you know that we don't complain unless things are bad, right? Well, things do feel bad. Too much walking, and fighting, but there is not enough fun to be had! When we do stop by town, we don't have enough to enjoy ourselves.
-qstr_You_are_in_the_front|You are in the frontlines with us, don't you feel a bit down with all this walking and fighting? But not enough drinking, feasting, and fun? When you go to town, what do you do? I bet you don't do shit, cause you ain't got enough to do shit! Like all of us...
-qstr_Well_{sir/ma_am}._Y|Well, {sir/ma'am}. You have a very good point, {sir/ma'm}. We shouldn't be complaining at all... Thank you for setting us straight.
-qstr_Sarge_you_really_do|Sarge, you really do know us better than we know ourselves. You are going to make the men cry! I'll make sure to tell the men what you said, and we'll straighten up, you'll see.
-qstr_You_have_a_good_poin|You have a good point, {playername}. I don't know why you aren't being promoted yet. Anyways, I'll tell the men what you told me. Tell the commander that we'll march on.
-qstr_Captain_with_all_du|Captain, with all due respect, we do not agree with you. If anything, your attempt just made it worse.
-qstr_What_is_this_Sarge?_|What is this Sarge? I thought you knew us better! The men will start to think you are full of shit. This is pointless, just leave us be.
-qstr_What_are_you_babblin|What are you babbling on about? You know nothing about what we are going through, go away and leave us be.
-qstr_The_men_are_hearthen|The men are hearthened by your speech. (Morale Improved)
-qstr_The_men_are_disheart|The men are dishearthened by your failed attempt. (Morale Worsened)
-qstr_The_men_respects_you|The men respects you more now, and was also entertained. (Morale Improved)
-qstr_The_men_thinks_you_a|The men thinks you are weak, but are happy to see you pay. (Morale Slightly Improved)
-qstr_You_paid_{reg1}_gold|You paid {reg1} gold to the men.
-qstr_The_men_thinks_you_ar|The men thinks you are weak, and disappointed that you cannot pay the full sum. (Morale Slightly Improved)
-qstr_Cannot_leave_now.|Cannot leave now.
-qstr_You_distribute_the_a|You distribute the alcohol to the men and join the festivities. (Morale Greatly Improved)
-qstr_You_give_the_men_{re|You give the men {reg6} crowns and leave them to their festivities. (Morale Improved)
+qstr_{s11}_asked_you_to_r|{s11} vous a demandé de sauver son {s17}, {s13}, retenu à {s14}, en échangeant vos vêtements afin que vous puissiez prendre sa place en prison.
+qstr_{s11}_asked_you_to_re|{s11} vous a demandé de sauver sa {s17}, {s13}, retenue à {s14}.
+qstr_{s11}_asked_you_to_d|{s11} vous a demandé de transmettre un message à {s13}, qui est emprisonné à {s14}.
+qstr_You_agreed_to_challe|Vous avez accepté de défier {s13} pour défendre l'honneur de {s11}.
+qstr_{s5}__Persuasion_str|{s5} (Facteur de persuasion : {reg5})
+qstr_Persuasion_Attempt|Tentative de Persuasion
+qstr_A_villager_from_{s7}|Un villageois de {s7} vous a supplié de sauver son village des bandits qui s'y sont installés.
+qstr_You_chose_well_{sir/|Vous avez fait le bon choix {Messire/madame}, mes gars ont toujours su mériter leur paie.
+qstr_Well_done_{sir/madam|Bien {Messire/madame}, donnez-nous du vin et des écus et vous n'aurez nul rival dans toute la France.
+qstr_We_are_at_your_servi|Nous sommes à votre service, {Messire/madame}. Montrez-nous ceux qui ont besoin d'une leçon et nous nous occupons du reste.
+qstr_The_Guildmaster_of_{|Le maître de Guilde de {s13} vous a demandé de vous occuper des pilleurs qui rôdent autour de la ville.
+qstr_{s9}_of_{s3}_asked_y|{s9} de {s3} vous a demandé de livrer {reg5} {s6} à la taverne de {s4} dans les 7 jours.
+qstr_Escort_the_merchant_|Escortez la caravane marchande jusqu'à {s8}.
+qstr_Merchant_{s9}_of_{s4|Les marchands {s9} de {s4} vous ont demandé de débarrasser {s4} des bandits particulièrement virulents qui sévissent aux alentours de la ville.
+qstr_Guildmaster_of_{s4}_|Le maître de Guilde de {s4} vous a donné {reg12} écus pour payer la rançon d'une jeune fille enlevée par des bandits. Vous devez trouver ces bandits qui se trouvent près de {s3} et payer la rançon. Ensuite, vous devrez raccompagner la jeune fille à {s4}.
+qstr_Guildmaster_of_{s4}_p|Le maître de Guilde de {s4} vous a promis {reg12} écus si vous vous assurez que {s12} et {s13} cessent de s'opposer à une trêve entre {s15} et {s14}. Pour cela, vous devez les convaincre ou les faire prisonniers jusqu'à ce que la paix soit effective.
+qstr_The_Guildmaster_of_{s|Le maître de Guilde de {s14} vous a demandé de vous occuper des bandits qui terrorisent {s14}. Ils n'attaquent que de nuit et seulement ceux qui se promènent seuls.
+qstr_Guildmaster_of_{s10}|Le maître de la guilde de {s10} vous a demandé de mener un troupeau de vaches jusqu'à {s13}. Vous gagnerez {reg8} écus en récompense.
+qstr_He_is_not_commanding|Il n'a aucun homme sous ses ordres pour le moment.
+qstr_He_currently_command|Il commande en ce moment {reg0} hommes{reg1?, dont {reg1} avec des blessures:}.
+qstr_The_elder_of_the_vil|L'Ancien du village de {s3} vous a demandé de lui apporter {reg5} sacs de grain.
+qstr_The_elder_of_the_vill|L'Ancien du village de {s13} vous a demandé d'entraîner {reg5} fermiers afin d'organiser la défense contre les bandits. 
+qstr_The_elder_of_the_villa|L'Ancien du village de {s3} vous a demandé de lui apporter {reg5} têtes de bétail.
+qstr_{s16}_and_{s15}|{s16} et {s15}
+qstr_I_can_smell_a_fat_pu|Je n'irai pas par quatre chemins, l'odeur de votre bourse attise ma convoitise, puis-je convenablement l'alléger ?
+qstr_Why_it_be_another_tr|Comme les voyageurs sont fréquents en ce moment sur ces chemins, je dois vous avertir que cela augmente d'autant les dangers pour {un brave homme/une brave dame} comme vous. En échange d'une modeste rétribution, on peut garantir votre sécurité. Qu'en dites-vous ?
+qstr_Well_well_look_at_th|Il y a des circonstances où il faut savoir délier sa bourse, {mon ami/mon amie}, ou nous pourrions nous montrer désobligeants.
+qstr_There_s_a_toll_for_p|Il faut acquitter un droit de passage pour pouvoir continuer sa route en toute quiétude. Donc si cela ne vous fait rien, on va se servir nous-mêmes dans votre bourse.
+qstr_Another_fool_come_to|Il ne faut pas contrarier les imbéciles qui veulent s'empaler sur ma lame, qu'on leur donne ce plaisir !
+qstr_We_re_not_afraid_of_|Point de peur à vous rencontrer, la mort vous guette et nous vous délesterons de tout l'or qui embarrasse vos poches !
+qstr_That_was_a_mistake._|J'admire votre erreur, il est maintenant temps de la payer, une mort lente et douloureuse vous attend.
+qstr_Brave_words._Let_s_s|Les belles paroles ne sont qu'illusions, les actes feront la différence, les miens seront destructeurs et se solderont par votre mort.
+qstr_A_{s5}?_Well..._Yes_|Un {s5} ? Eh bien je suppose que oui. Quelle drôle de question !
+qstr_Eh?_No_it_most_certa|Pardon ? Non, ce n'est pas du tout un {s5}, à votre place je me poserais des questions sur ma vue.
+qstr_This_is_the_{reg4?to|C'est {reg4?la ville:le village} qui a pour nom {s5}, {Messire/madame}.
+qstr_{s6}_Our_{reg4?town:|{s6} Notre {reg4?ville:village} et ses environs vous appartiennent.
+qstr_{s6}_Our_{reg4?town:v|{s6} Notre {reg4?ville:village} et ses environs appartiennent à l'honorable {s7} du {s8}.
+qstr_{s3}_and_{s5}|{s3} et {s5}
+qstr_{reg20?We_mostly_pro|{reg20? Ici nous produisons surtout: {s5}:Nous ne produisons pas grand-chose ces temps-ci}. Si vous voulez en apprendre davantage, vous devriez vous adresser {reg4?au maître de Guilde:à l'ancien du village}. Il est sans doute dans le coin.

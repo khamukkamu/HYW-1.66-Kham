@@ -435,7 +435,7 @@ ui_start_a_new_game|Nouvelle partie
 ui_restore_a_saved_game|Charger une partie
 ui_exit_to_windows|Quitter
 ui_credits|Générique
-ui_version_value|v%s
+ui_version_value|LR v 0.1
 ui_active_quests|Quête en cours
 ui_finished_quests|Quêtes terminées
 ui_given_on_date|Reçue le : %s

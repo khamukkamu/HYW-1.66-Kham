@@ -1,5 +1,4 @@
-p_zendar|Zendar
-p_town_1|Paris
+﻿p_town_1|Paris
 p_town_2|Reims
 p_town_3|Nantes
 p_town_4|Bourges
@@ -174,58 +173,10 @@ p_training_ground_2|Terrain d'entraînement
 p_training_ground_3|Terrain d'entraînement
 p_training_ground_4|Terrain d'entraînement
 p_training_ground_5|Terrain d'entraînement
-p_Bridge_1|1
-p_Bridge_2|2
-p_Bridge_3|3
-p_Bridge_4|4
-p_Bridge_5|5
-p_Bridge_6|6
-p_Bridge_7|7
-p_Bridge_8|8
-p_Bridge_9|9
-p_Bridge_10|10
-p_Bridge_11|11
-p_Bridge_12|12
-p_Bridge_13|13
-p_Bridge_14|14
-p_Bridge_15|15
-p_camp_anglais|Camp Anglois
-p_toul_village|Village de Toul
-p_camp_ofrebels|Camp des Rebels
-p_place_forte_b|Place forte Bourgignone
-p_tour_despins|Tour des pins
-p_fermemat|Ferme de Mathieu
-p_chasse_camp|Camp de chasse
-p_fierbois|Sainte Catherine de Fierbois
-p_rouen_foret|Foret de Rouen
-p_quest_forest1|Foret de Levet
-p_quest_forest2|Foret d'Aurillac
-p_quest_forest3|Foret de Narbonne
-p_quest_forest4|Foret de Rodez
-p_quest_forest5|Foret de Arles
-p_quest_forest6|Foret du Puy
-p_quest_forest7|Foret de Vierzon
-p_quest_forest8|Foret de Beaune
-p_quest_forest9|Foret de Montargis
-p_quest_forest10|Foret d'Evreux
-p_quest_forest11|Foret de Guines
-p_quest_forest12|Foret de Bayeux
-p_auberge_1|Auberge
-p_auberge_2|Auberge
-p_auberge_3|Auberge
-p_auberge_4|Auberge
-p_prairie_bourges|Prairies de Bourges
-p_foret_lorges|Foret de Lorges
-p_camp_crane_fer|Camp de la Compagnie des Cranes de Fer
-p_quintin|Citadelle de Quintin
-p_looter_spawn_point|looter sp
 p_steppe_bandit_spawn_point|vallées
 p_taiga_bandit_spawn_point|toundra
 p_forest_bandit_spawn_point|forêts
 p_mountain_bandit_spawn_point|hautes-plaines
 p_sea_raider_spawn_point_1|côte
 p_sea_raider_spawn_point_2|côte
-p_black_khergit_spawn_point_1|black khergit sp
-p_black_khergit_spawn_point_2|black khergit sp2
-p_sang_lys_spawn_point_1|sang lys spawn point 1
-p_cranede_fer_spawn_point_1|cranede fer spawn point 1
+p_desert_bandit_spawn_point|déserts

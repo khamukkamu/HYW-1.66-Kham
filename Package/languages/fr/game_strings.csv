@@ -1,4 +1,4 @@
-str_no_string|NO STRING!
+﻿str_no_string|AUCUNE CHAÎNE!
 str_empty_string| 
 str_yes|Oui.
 str_no|Non.
@@ -714,6 +714,7 @@ str_npc10_personalitymatch_speech|Capitaine, {s11} se défend bien, je l'ai vu f
 str_npc11_personalitymatch_speech|Capitaine, une bataille de cette intensité peut pérturber les hommes et les rendre perplexe. Enfin, je parle des survivants, mais on les a battu, pas vrai ?  
 str_npc12_personalitymatch_speech|Joli massacre Messire, joli massacre, forcément nécessaire. Je pense que {s11} partage ma perplexité sur ces perpétuels affrontements.
 str_npc13_personalitymatch_speech|{playername}, on peut reprocher maintes choses a {s11} mais je pense que je le comprend, et il est loing d'estre fou, il as juste soufert et il s'est simplement crée un monde a lui.
+str_npc14_personalitymatch_speech|Compagnon, c'est un plaisir de combattre avec des braves comme {s11}.
 str_npc15_personalitymatch_speech|Capitaine, j'ai échangé quelques mots avec {s11} après notre dernière bataille, et je peux vous dire que c'est un bel atout de l'avoir avec nous.
 str_npc16_personalitymatch_speech|Hé capitaine, j'ai bavardé avec {s11} durant la fouille des cadavres laissés lors de notre dernière bataille.
 str_npc1_personalitymatch_speech_b|Sa vaillance et sa chevalerie sont remarquables, et lorsque il me sera possible de monter ma compagnie de mercenaires, j'aimerais le convaincre de m'accompagner.
@@ -724,11 +725,8 @@ str_npc5_personalitymatch_speech_b|Notre comparse mérite sa place dans notre co
 str_npc6_personalitymatch_speech_b|Je dois vous avouer que {s11} est pour moi une source de réconfort, et sa sagesse un bien-être. C'est l'unique membre qui me comprends et qui accepte de trinquer avec moi, rien que pour cela je suis heureux de sa présence dans notre compagnie.
 str_npc7_personalitymatch_speech_b|Quand vous n'aurez plus besoin de nos services, elle m'a promis qu'on continuerait à se voir. Je pense qu'on a encore beaucoup de choses à se dire et à partager.
 str_npc8_personalitymatch_speech_b|Ca m'as mis en selle dés le départ et cela a trés bien fini, trés belle bataille.
-str_npc9_personalitymatch_speech_b|Imagine the outrage! A noble-born knight of French stock serving a Scottish bastard of supposedly uncertain parentage. I must admit, though, that he sometimes pretends to be a noble too much. Doesn't he feel embarassed by the fact that he is pretending to be something he's not?
-str_npc10_personalitymatch_speech_b|Heh. It just goes to show that youth ain't everything, that experience also wins battles. I reckon she and I could teach the young puppies of the world a thing or two, couldn't we?
-str_npc11_personalitymatch_speech_b|Old {s11} in particular showed them a thing or two, I thought. Not bad for the pair of us, I thought, given that between us we've probably seen close to a hundred winters.
-str_npc12_personalitymatch_speech_b|Though his faith, great as it is, falters and he sometimes feels his lust for vengeance is sated, I quickly bring him back on the right path. A good Christian must never rest when it comes to saving his fellow man. In that, we two, you and I, are blessed. May God bless you, captain.
 str_npc13_personalitymatch_speech_b|Même si je préfère bien souvent les gens réservés aux extravertis, je n'ai pu m'empêcher de remarquer son effort à dissimuler son caractère derrière son attitude guerrière.
+str_npc14_personalitymatch_speech_b|Remarquable, je l'ai vu en bataille percer l'ennemi de part en part, tellement que la poincte de l'espée venoit à sortir au chinon du col.
 str_npc15_personalitymatch_speech_b|La guerre, comme toute autre entreprise, nécessite une préparation minutieuse. Je peux vous le garantir, tous apprendront à lui dire merci.
 str_npc16_personalitymatch_speech_b|C'est quelqu'un de bien, si il se retire tout seul dans la foret par moments, c'est par ce qu'il fuit la violance et la folie  des hommes, et qu'il as plus d'affinité avec la nature sauvage, je trouve cela trés touchant.
 str_npc1_retirement_speech|Je n'ai pas fait le bon choix en vous accompagnant, j'ai décidé de vous quitter.
@@ -1143,6 +1141,8 @@ str_comment_you_helped_my_ally_unfriendly_spiteful|J'ai entendu dire que vous av
 str_comment_you_helped_my_ally_spiteful|J'ai entendu dire que vous avez évité une bonne raclée à {s54}. M'est avis que vous auriez dû lui laisser apprendre la leçon.
 str_comment_you_helped_my_ally_chivalrous|J'ai entendu dire que vous avez sorti {s54} du pétrin. C'est un acte noble.
 str_comment_you_helped_my_ally_default|J'ai entendu dire que vous avez sorti {s54} du pétrin. Beau travail !
+str_comment_you_were_defeated_allied_unfriendly|J'ai entendu dire que {s54} vous avait vaincu. Faites en sorte de ne pas sacrifier trop de nos hommes, d'accord ?
+str_comment_you_were_defeated_allied|J'ai entendu dire que {s54} vous avait vaincu. Mais ne perdez pas courage ! Les rôles seront bientôt inversés !
 str_comment_you_abandoned_us_unfriendly_spiteful|Sale vermine ! Vous nous avez laissé affronter {s54} seuls, je me trompe ? Je vous crache au visage.
 str_comment_you_abandoned_us_unfriendly_pitiless|Ahem... Vous m'avez abandonné en plein milieu d'une bataille avec {s54}, vous vous souvenez ? Je m'assurerai que votre tombe côtoie celles des traîtres.
 str_comment_you_abandoned_us_spiteful|Vous avez disparu en plein milieu de cette bataille contre {s54}... J'espère que vous avez une bonne excuse. Alors, vos tripes vous ont abandonné ? Est-ce que vous trembliez trop pour pouvoir tenir votre arme ?
@@ -1430,6 +1430,11 @@ str_rebellion_agree_goodnatured|Je suis désolé mais je ne pense pas qu'il soit
 str_rebellion_agree_upstanding|Je suis désolé mais les revendications de {s45} sont trop discutables pour que je me permette d'accabler les pauvres bougres de ce pays par l'infamie que représente le désordre civil. Je continuerai donc à soutenir {s46}. Puissent les cieux me pardonner si j'ai fait le mauvais choix.
 str_rebellion_refuse_martial|Je suis désolé. {s45} est un bon prétendant au trône, mais cela ne constitue pas une raison suffisante pour que je tourne le dos à {s46}. Je resterai loyal envers mon suzerain.
 str_rebellion_refuse_quarrelsome|Non. {s45}, cette petite frappe, n'a pas ce qu'il faut pour régner sur ce royaume. Je reste fidèle à {s46}.
+str_rebellion_agree_pitiless|Non. Je ne participerai pas à votre rébellion. Je la perçois comme un caprice d'enfant à qui on aurait retiré son jouet. Je resterai fidèle à {s46}, dont la capacité à régner a été prouvée maintes fois.
+str_rebellion_agree_cunning|Je suis navré mais vous ne me garantissez en rien que ce sera une victoire. Beaucoup mourront et je ne souhaite pas me retrouver parmi eux. Je continuerai donc à soutenir {s46}.
+str_rebellion_agree_sadistic|Non, je ne jouerai pas à votre petit jeu. Vous essayez de vous emparer de la couronne mais je pense que tout ce que vous y gagnerez, c'est un aller simple à l'échafaud, et je serai aux côtés de {s46} pour regarder votre tête tomber sous la hâche du bourreau.
+str_rebellion_agree_goodnatured|Je suis désolé mais je ne pense pas qu'il soit juste de tourner le dos à {s46}. Cependant, je ne ne vous témoignerai aucune rancoeur lorsque nous nous rencontrons sur le champ de bataille.
+str_rebellion_agree_upstanding|Je suis désolé mais les revendications de {s45} sont trop discutables pour que je me permette d'accabler les pauvres bougres de ce pays par l'infamie que représente le désordre civil. Je continuerai donc à soutenir {s46}. Puissent les cieux me pardonner si j'ai fait le mauvais choix.
 str_talk_later_martial|Ce n'est pas le moment de parler politique ! Aujourd'hui je suis entouré de seigneurs, armés pour le combat. Vous feriez mieux de vous y préparer aussi.
 str_talk_later_quarrelsome|Est-ce que vous espérez que je trahisse mon suzerain pour vous, alors que nous sommes encerclés par son armée ? Mais pour qui me prenez-vous au juste, un crétin fini ?
 str_talk_later_pitiless|Tenez votre langue ! Quel que soit mon avis à ce sujet, je préfère taire mes mots... Nous sommes quand même au beau milieu d'une armée !
@@ -1485,6 +1490,7 @@ str_rhodok_rebellion_monarch_response_1|Le seigneur Kastor vous a sans doute rac
 str_sarranid_rebellion_monarch_response_1|Nos érudits s'accordent depuis longtemps sur un principe de base de la politique. Les hommes doivent accepter l'autorité de leur chef, car la tyrannie vaut mieux que la guerre civile. C'est la raison pour laquelle j'ai accepté l'autorité de Baybak et d'Arwa, devant lesquels j'ai prêté serment.
 str_swadian_rebellion_monarch_response_2|Peu importe les personnalités qui ont pu être des fils ou des cousins de rois, il est clair que le sang royal continue actuellement et légitimement à couler dans les veines du royaume de France. Même s'il est vrai que mon ancêtre n'était que le propre frère d'un roi, vous devez vous souvenir qu'à une époque la France a été en danger et on ne pouvait pas laisser la couronne de France au roi d'Angleterre et à sa traîtresse de mère. jean sans peur devrait avoir l'intelligence de reconnaître qu'il semerait le chaos dans un pays déjà ensanglanté, il ferait mieux de renoncer à son ambition illégitime.
 str_vaegir_rebellion_monarch_response_2|À dire vrai, les Gallois n'ont pas eu de véritable chef de file depuis Llywelyn le Grand. Sa horde d'héritiers bâtards ont déchiré le royaume de leur père, tous avides de pouvoir. Owain la Main Rouge est juste le descendant d'un de ces héritiers de bâtards. Il ne désire qu'une chose, la puissance. Et je plains l'homme qui essayera de l'aider à atteindre ses objectifs, il sera un ennemi de l'Angleterre et de ses habitants.
+str_khergit_rebellion_monarch_response_2|Ce delanoy semble sortir de nulle part n'est ce pas vrais ? osez revendiquer des terres et des titres sans aucunes preuves reviens la a accuser le pape d'etre un hérétique.
 str_khergit_rebellion_monarch_response_2|Dustum serait un vrai expert dans la répartition des troupeaux ou encore un bon juge pour régler les conflits liés à la propriété. Mais voyez-vous en lui un khan ? Nous nous ferions expulsés de nos propres terres par nos voisins en un rien de temps et nous reviendrions à cette époque reculée où nous mourrions de faim et de froid dans les campagnes.
 str_nord_rebellion_monarch_response_2|Le Vieil Hakrim a sans doute une conception un peu particulière sur la manière de disposer de son royaume, mais le sang royal seul ne fait pas un roi des suisse. J'ai été proclamé roi par les barons car j'étais le plus puissant de tous. Cela compte plus que le sang, et malheur à celui qui viendra me dire qu'il en est autrement.
 str_rhodok_rebellion_monarch_response_2|La seule liberté qui les concerne est celle s'empiffrer. Pendant ce temps, mes hommes dorment dehors dans les campagnes, mangent du pain sec et du poisson salé. Ils scrutent l'horizon pour repérer les villages en flammes et versent leur sang pour protéger les routes marchandes. J'ai une idée... Si jamais je rencontre un marchand blessé qui boite à cause d'une flèche de Monghole ou d'un coup d'épée d'un francais, alors je me dirais : 'Voilà un homme dont les conseils sont bons à prendre'. 
@@ -1506,6 +1512,7 @@ str_feast_lengthy_description_3|La nourriture et les boissons que vous avez four
 str_feast_lengthy_description_4|Vous pouvez vous targuer d'avoir fourni un grand choix de nourriture et de boissons, et ce, en quantité suffisante. La nourriture, les boissons et les réjouissances ont délié les langues de vos invités, leur permettant de converser librement sur les affaires du royaume tout en vous accordant une plus grande confiance.
 str_feast_lengthy_description_5|Vous avez offert une table généreuse à vos nobles invités ainsi qu'à leurs suites. Des restes ont même pu être distribués aux pauvres. Vos convives se répandent en éloges sur votre générosité et votre maîtrise des obligations sociales de votre rang. La conversation, alimentée par la nourriture et les boissons, a été joyeuse, renforçant ainsi les liens entre les convives.
 str_feast_lengthy_description_6|Tout le royaume parlera de la générosité de votre table pendant des mois et vous serez un exemple à suivre lors des futurs banquets. Vous avez rempli les estomacs de vos nobles convives et de leurs suites, mais aussi des pauvres qui se pressaient à vos portes. 
+str_psf_adjective|Faction de Joueur
 str_kingdom_1_adjective|{Francais/Francaise}
 str_kingdom_2_adjective|Anglais
 str_kingdom_3_adjective|Khergit
@@ -1703,6 +1710,7 @@ str_choose_a_faction_for_team_reg0|Choisissez une faction pour l'équipe {reg0} 
 str_choose_number_of_bots_for_team_reg0|Choisissez le nombre de bots de l'équipe {reg0} :
 str_spectator|Spectateur
 str_spectators|Spectateurs
+str_score|Score
 str_command|Ordre :
 str_profile_banner_selection_text|Choisissez une bannière pour votre profil :
 str_use_default_banner|Utiliser la bannière de la faction
@@ -1776,6 +1784,7 @@ str_reg4_killed_reg5_wounded_reg6_routed|{reg4} tué(s), {reg5} blessé(s), {reg
 str_reg4_killed_reg5_routed|{reg4} tué(s), {reg5} en déroute
 str_reg4_killed_reg5_wounded|{reg4} tué(s), {reg5} blessé(s)
 str_reg4_wounded_reg5_routed|{reg4} blessé(s), {reg5} en déroute
+str_routed|en déroute
 str_s42|{s42}
 str_s4_awarded_to_s5|{s4} accordé à {s5}
 str_calculating_sortie_for_s4_strength_of_reg3_vs_reg4_enemies|Calcul d'une sortie pour {s4}, force de {reg3} contre {reg4} ennemis
@@ -1795,6 +1804,14 @@ str_s4_is_present_at_the_center_and_is_awaiting_the_player_in_private|{s4} est a
 str_s4_is_present_at_the_center_and_is_allowed_to_meet_the_player|{s4} est au centre et est {autorisé/autorisée} à rencontrer le joueur
 str_s4_is_present_at_the_center_and_is_not_allowed_to_meet_the_player|{s4} est au centre et n'est pas {autorisé/autorisée} à rencontrer le joueur
 str_no_relation|aucune relation
+str_wife|parente
+str_husband|mari
+str_father|parent
+str_mother|mère
+str_daughter|cousine
+str_son|cousin
+str_sister|soeur
+str_brother|frère
 str_niece|nièce
 str_nephew|neveu
 str_aunt|tante
@@ -1835,6 +1852,7 @@ str_trade_explanation_grapes|Je travaille dans les vignobles, sur les collines. 
 str_trade_explanation_dyes|Je travaille aux caravansérails où je décharge les teintures importées de lointaines contrées : le rouge est issu des cochenilles et des racines de garance, le bleu de l'indigotier et des feuilles de guède, le jaune de la gaude et du genêt. Les tisserands les utilisent pour teindre les soieries et les velours des grands seigneurs du royaume.
 str_trade_explanation_leatherwork|Je travaille dans les tanneries situées à l'extérieur des remparts. On y transforme les peaux salées importées de la campagne en beau cuir bien souple. Ce n'est pas un travail très propre. Lorsque je rentre chez moi, j'empeste l'urine, le fumier et la chaux... mais c'est ainsi que sont fabriquées vos bottes, vos selles et vos brides, {Messire/madame}.
 str_trade_explanation_flax|Je sème et récolte des graines de lin, et je laisse pourrir les tiges pour en extraire les fibres. C'est de là que viennent vos belles toiles de lin, {Messire/madame}... d'une tige que l'on laisse pourrir dans le sol.
+str_trade_explanation_dates|Je m'occupe d'une datteraie. Nous cultivons les dattiers en utilisant l'eau des puits et exportons les fruits vers de lointaines contrées car, correctement séchés, ils se conservent des mois. Aussi sucrées que du miel, les dattes procurent santé et énergie à ceux qui les consomment.
 str_trade_explanation_dates|Je m'occupe d'une datteraie. Nous cultivons les dattiers en utilisant l'eau des puits et exportons les fruits vers de lointaines contrées car, correctement séchés, ils se conservent des mois. Aussi sucrées que du miel, les dattes procurent santé et énergie à ceux qui les consomment.
 str_trade_explanation_olives|Je m'occupe d'une oliveraie. Les olives peuvent se consommer fraîches ou être saumurées pour les conserver, mais la plupart sont envoyées à la presse pour être transformées en huile.
 str_s14_i_hear_that_you_can_find_a_good_price_for_it_in_s15|{s14}. J'ai entendu dire qu'on pouvait en tirer un bon prix à {s15}.
@@ -2344,7 +2362,9 @@ str_that_s14_will_rule_this_land_justly|Que {s14} règnera équitablement sur ce
 str_that_s14_will_protect_our_rights_as_nobles|Que {s14} protégera les droits de la noblesse ?
 str_that_s14_will_unify_this_land_and_end_this_war|Que {s14} unifiera ce pays et mettra un terme à cette guerre ?
 str_that_s14_will_reward_me_with_a_fief|Que {s14} me récompensera en me confiant un fief ?
+str_he|il
 str_king|roi
+str_she|elle
 str_queen|reine
 str_khan|seigneur
 str_i|Je
@@ -2534,7 +2554,7 @@ str_production_setting_buy_from_inventory|Nous utilisons uniquement les matière
 str_production_setting_produce_to_inventory|Nous stockons notre production dans l'inventaire.
 str_production_setting_produce_to_market|Nous vendons notre production directement à l'inventaire.
 str_feast_quest_expired|Nous n'avons pas pu organiser le banquet prévu. Des campagnes ou autres événements importants ont dû se produire. Si vous voulez, vous pouvez tenter d'organiser un autre banquet.
-str_whereabouts_unknown|on ignore où
+str_whereabouts_unknown|Localisation inconnue.
 str_mulberry_groves|acres de mûriers
 str_olive_groves|acres d'oliveraies
 str_acres_flax|acres de champs de lin
@@ -2550,6 +2570,12 @@ str_we_shall_cut_a_fiery_trail_through_their_richest_lands_to_draw_them_out_to_b
 str_strategy_criticism_rash|Je pense que cette stratégie est imprudente et qu'elle met inutilement nos forces en danger.
 str_strategy_criticism_cautious|Je pense que cette stratégie est trop prudente et que, à force d'ennui, notre armée se sera dispersée avant que nous ayons eu l'occasion de remporter la moindre victoire.
 str_tavernkeeper_invalid_quest| avai(en)t des affaires en cours, mais j'ai du mal à me souvenir des détails.
+str_faction_king_title_1|Roi {s0}
+str_faction_king_title_2|Roi {s0}
+str_faction_king_title_3|{s0}
+str_faction_king_title_4|Roi {s0}
+str_faction_king_title_5|Roi {s0}
+str_faction_king_title_6|seigneur {s0}
 str_faction_title_male_player|Seigneur {s0}
 str_faction_title_male_1|{s0}
 str_faction_title_male_2|seigneur {s0}
@@ -2636,6 +2662,7 @@ str_s21_the_s8_declared_war_to_curb_the_other_realms_power|{s21} {s8} a déclar�
 str_s21_the_s8_declared_war_to_regain_lost_territory|{s21} {s8} a déclaré la guerre pour récupérer ses territoires perdus.
 str__family_|^Famille :
 str_we_are_conducting_recce|Avant toute décision, nous allons partir en reconnaissance.
+str__family_|^Famille :
 str_s49_s12_s11_end|{s49} {s12} ({s11}).
 str_center_party_not_active|n'est pas notre cible, car aucun de nos commandants ne s'est emparé du terrain.
 str_center_is_friendly|n'est pas notre ennemi.
@@ -2770,6 +2797,8 @@ str_my_lady_not_sufficient_chemistry|Ma dame, il y a des autres jeunes filles qu
 str_my_lady_engaged_to_another|Ma dame, si je comprends bien, vous êtes engagé à l'autre.
 str_attempting_to_rejoin_party|Tenter de rejoindre partie
 str_separated_from_party|Séparé du parti
+str_whereabouts_unknown|on ignore où
+str_betrothed|{fiancé/fiancée}
 str_leading_party|la tête d'un parti
 str_court_disbanded|Comme vous n'avez plus de domaines à gouverner, votre cour a été dissoute
 str_i_am_not_accompanying_the_marshal_because_will_be_reappointment| Je ne suis pas d'accompagnement le maréchal, car je suppose que notre chef va bientôt nommer un autre à ce poste.
@@ -2824,7 +2853,285 @@ str_disallow_ranged_weapons|Interdire les armes à distance
 str_ranged_weapons_are_disallowed|Armes à distance ne sont pas autorisés.
 str_ranged_weapons_are_allowed|Armes à distance sont autorisés.
 str_duel_starts_in_reg0_seconds|Duel commence dans {reg0} secondes ...
-str_bomb_fire|Bouter le feu
-str_tactical_controls|Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. One may target an enemy division through this mechanism.^^Pressing the ENTER key often initiates an overhead Strategy Camera.^^Pressing the BACKSPACE key often initiates a Battle Command Display with 'radar.'
-str_division_placement|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward.
-str_formations|The Complex Formations on the Battle Menu are:^^- RANKS with best troops up front^- SHIELD WALL, ranks with shields in front and longer weapons in back^- WEDGE with best troops up front^- SQUARE in no particular order^- NO FORMATION^^Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times.
+str_none|Aucun
+str_item_pool_no_items|Il n'y a aucun élément dans l'ensemble d'items.
+str_item_pool_one_item|Il y a un point laissé dans l'ensemble d'items.
+str_item_pool_many_items|Il y a {reg20} objets laissés dans le pool.
+str_item_pool_abandon|Permettez-PNJ pour recueillir tous les points à gauche et continuer.
+str_item_pool_leave|Terminé.
+str_hero_not_upgrading_armor|ne pas améliorer mon armure
+str_hero_upgrading_armor|mettre à jour mon propre armure
+str_hero_not_upgrading_horse|ne pas améliorer mes chevaux
+str_hero_upgrading_horse|mise à jour mes propres chevaux
+str_hero_wpn_slot_none|Se tenir au courant({s10})
+str_hero_wpn_slot_horse|Cheval
+str_hero_wpn_slot_one_handed|Arme à 1 mains
+str_hero_wpn_slot_two_handed|Arme à 2 mains
+str_hero_wpn_slot_polearm_all|Armes d'hast
+str_hero_wpn_slot_arrows|Flèches
+str_hero_wpn_slot_bolts|Boulons
+str_hero_wpn_slot_shield|Bouclier
+str_hero_wpn_slot_bow|Arc
+str_hero_wpn_slot_crossbow|Arbalète
+str_hero_wpn_slot_throwing|Arme de jet
+str_hero_wpn_slot_goods|Marchandises
+str_hero_wpn_slot_head_armor|Casque
+str_hero_wpn_slot_body_armor|Armur du corps
+str_hero_wpn_slot_foot_armor|Armur du pied
+str_hero_wpn_slot_hand_armor|Armur des mains
+str_hero_wpn_slot_pistol|Pistolet
+str_hero_wpn_slot_musket|Mousquet
+str_hero_wpn_slot_bullets|Puces
+str_hero_wpn_slot_animal|Animal
+str_hero_wpn_slot_book|Livre
+str_one_handed_weapon|Arme à 1 mains
+str_two_handed_weapon|Arme à 2 mains
+str_polearm|Armes d'hast
+str_archery|tir à l'arc
+str_crossbow|Arbalète
+str_throwing|Arme de jet
+str_firearms|Armes à feu
+str_level_d|D
+str_level_c|C
+str_level_b|B
+str_level_a|A
+str_level_s|S
+str_imod_plain| 
+str_imod_cracked|Fissuré 
+str_imod_rusty|Rouillé 
+str_imod_bent|Courbé 
+str_imod_chipped|Ébréchée 
+str_imod_battered|Battu 
+str_imod_poor|Pauvre 
+str_imod_crude|Brut 
+str_imod_old|Vieux 
+str_imod_cheap|Pas cher 
+str_imod_fine|Beaux 
+str_imod_well_made|Bien fait 
+str_imod_sharp|Fort(e) 
+str_imod_balanced|Équilibré 
+str_imod_tempered|Trempé 
+str_imod_deadly|Mortelle 
+str_imod_exquisite|Exquis 
+str_imod_masterwork|Chef-d'oeuvre 
+str_imod_heavy|Lourd 
+str_imod_strong|Fort 
+str_imod_powerful|Puissant 
+str_imod_tattered|Déchiré 
+str_imod_ragged|Déguenillé 
+str_imod_rough|Rugueux 
+str_imod_sturdy|Solide 
+str_imod_thick|Épais(se) 
+str_imod_hardened|Trempé 
+str_imod_reinforced|Renforcé 
+str_imod_superb|Superbe 
+str_imod_lordly|Seigneurial 
+str_imod_lame|Boiteux 
+str_imod_swaybacked|Ensellé 
+str_imod_stubborn|Têtu 
+str_imod_timid|Timide 
+str_imod_meek|Doux 
+str_imod_spirited|Fougueux 
+str_imod_champion|Champion 
+str_imod_fresh|Frais 
+str_imod_day_old|Vieux jour 
+str_imod_two_day_old|Deux jours Vieux 
+str_imod_smelling|Odeur 
+str_imod_rotten|Pourri 
+str_imod_large_bag|Grand sac 
+str_key_0|0
+str_key_1|1
+str_key_2|2
+str_key_3|3
+str_key_4|4
+str_key_5|5
+str_key_6|6
+str_key_7|7
+str_key_8|8
+str_key_9|9
+str_key_a|A
+str_key_b|B
+str_key_c|C
+str_key_d|D
+str_key_e|E
+str_key_f|F
+str_key_g|G
+str_key_h|H
+str_key_i|I
+str_key_j|J
+str_key_k|K
+str_key_l|L
+str_key_m|M
+str_key_n|N
+str_key_o|O
+str_key_p|P
+str_key_q|Q
+str_key_r|R
+str_key_s|S
+str_key_t|T
+str_key_u|U
+str_key_v|V
+str_key_w|W
+str_key_x|X
+str_key_y|Y
+str_key_z|Z
+str_key_numpad_0|Numpad 0
+str_key_numpad_1|Numpad 1
+str_key_numpad_2|Numpad 2
+str_key_numpad_3|Numpad 3
+str_key_numpad_4|Numpad 4
+str_key_numpad_5|Numpad 5
+str_key_numpad_6|Numpad 6
+str_key_numpad_7|Numpad 7
+str_key_numpad_8|Numpad 8
+str_key_numpad_9|Numpad 9
+str_key_num_lock|Num lock
+str_key_numpad_slash|Numpad slash
+str_key_numpad_multiply|Numpad multiply
+str_key_numpad_minus|Numpad minus
+str_key_numpad_plus|Numpad plus
+str_key_numpad_enter|Numpad enter
+str_key_numpad_period|Numpad period
+str_key_insert|Insert
+str_key_delete|Delete
+str_key_home|Home
+str_key_end|End
+str_key_page_up|Page up
+str_key_page_down|Page down
+str_key_up|Up
+str_key_down|Down
+str_key_left|Left
+str_key_right|Right
+str_key_f1|F1
+str_key_f2|F2
+str_key_f3|F3
+str_key_f4|F4
+str_key_f5|F5
+str_key_f6|F6
+str_key_f7|F7
+str_key_f8|F8
+str_key_f9|F9
+str_key_f10|F10
+str_key_f11|F11
+str_key_f12|F12
+str_key_space|Space
+str_key_escape|Escape
+str_key_enter|Enter
+str_key_tab|Tab
+str_key_back_space|Back space
+str_key_open_braces|Open braces
+str_key_close_braces|Close braces
+str_key_comma|Comma
+str_key_period|Period
+str_key_slash|Slash
+str_key_back_slash|Back slash
+str_key_equals|Equals
+str_key_minus|Minus
+str_key_semicolon|Semicolon
+str_key_apostrophe|Apostrophe
+str_key_tilde|Tilde
+str_key_caps_lock|Caps lock
+str_key_left_shift|Left shift
+str_key_right_shift|Right shift
+str_key_left_control|Left control
+str_key_right_control|Right control
+str_key_left_alt|Left alt
+str_key_right_alt|Right alt
+str_faction_king_female_title_1|Reine {s0}
+str_faction_king_female_title_2|Reine {s0}
+str_faction_king_female_title_3|{s0} Khan
+str_faction_king_female_title_4|Reine {s0}
+str_faction_king_female_title_5|Reine {s0}
+str_faction_king_female_title_6|Sultan {s0}
+str_dplmc_gather_information|recueillir de l'information
+str_dplmc_conclude_non_agression|conclure un traité de non-agression
+str_dplmc_nearly_no|presque pas
+str_dplmc_less_than_one_hundred|moins de cent
+str_dplmc_more_than_one_hundred|plus de cent
+str_dplmc_more_than_two_hundred|plus de deux cents
+str_dplmc_more_than_five_hundred|plus de cinq cents
+str_dplmc_bring_gift|apporter le don
+str_dplmc_exchange_prisoner|à échanger {s10} contre {s11}
+str_dplmc_has_been_set_free|{s7} a été mis en liberté.
+str_dplmc_tax_very_low|très faible
+str_dplmc_tax_low|faible
+str_dplmc_tax_normal|normal
+str_dplmc_tax_high|haut
+str_dplmc_tax_very_high|très haut
+str_dplmc_place_is_occupied_by_insurgents|L'endroit est tenu par les insurgés.
+str_dplmc_relation_mnus_100_ns|Il semble être vindicatif envers {s59}.
+str_dplmc_relation_mnus_90_ns|Il semble être vindicatif envers {s59}.
+str_dplmc_relation_mnus_80_ns|Il semble être vindicatif envers {s59}.
+str_dplmc_relation_mnus_70_ns|Il semble y avoir de haine envers {s59}.
+str_dplmc_relation_mnus_60_ns|Il semble y avoir de haine envers {s59}.
+str_dplmc_relation_mnus_50_ns|Il semble être hostile à l'égard {s59}.
+str_dplmc_relation_mnus_40_ns|Il semble être colère envers {s59}.
+str_dplmc_relation_mnus_30_ns|Il semble avoir du ressentiment contre {s59}.
+str_dplmc_relation_mnus_20_ns|Il semble être pester contre {S59}.
+str_dplmc_relation_mnus_10_ns|Il semble être méfiant à l'égard {S59}.
+str_dplmc_relation_plus_0_ns|Il semble indifférent contre {S59}.
+str_dplmc_relation_plus_10_ns|Il semble y avoir de coopération vers {S59}.
+str_dplmc_relation_plus_20_ns|Il semble être accueillante envers {S59}.
+str_dplmc_relation_plus_30_ns|Il semble être favorable à {S59}.
+str_dplmc_relation_plus_40_ns|Il semble être favorable à {S59}.
+str_dplmc_relation_plus_50_ns|Il semble être favorable à {S59}.
+str_dplmc_relation_plus_60_ns|Il semble qu'il t'accorde sa grâce {S59}.
+str_dplmc_relation_plus_70_ns|Il semble avoir de l'affection de {S59}.
+str_dplmc_relation_plus_80_ns|Il semble d'être fidèle à {S59}.
+str_dplmc_relation_plus_90_ns|Il semble être consacrée à {S59}.
+str_dplmc_s39_rival| Il rivaux parfums dans {S39}
+str_dplmc_s41_s39_rival|{s41}, {s39}
+str_dplmc_s40_love_interest_s39|{s40}. Outre que son amour intérêt est {s39}.
+str_dplmc_s40_betrothed_s39|{s40}. Mis à part cela il est fiancé avec {S39}.
+str_dplmc_reputation_martial|On dit que {S46} est une personne martiaux.
+str_dplmc_reputation_debauched|On dit que {S46} est une personne débauchée.
+str_dplmc_reputation_pitiless|On dit que {S46} est une personne sans pitié.
+str_dplmc_reputation_calculating|On dit que {S46} est une personne calcul.
+str_dplmc_reputation_quarrelsome|On dit que {S46} est une personne querelleuse.
+str_dplmc_reputation_goodnatured|On dit que {S46} est une personne de bonne humeur.
+str_dplmc_reputation_upstanding|On dit que {S46} est une personne honnête.
+str_dplmc_reputation_conventional|On dit que {S46} est une personne classique.
+str_dplmc_reputation_adventurous|On dit que {S46} est une personne aventureuse.
+str_dplmc_reputation_romantic|On dit que {S46} est une personne romantique.
+str_dplmc_reputation_moralist|On dit que {s46} est un moraliste.
+str_dplmc_reputation_ambitious|On dit que {S46} est une personne ambitieuse.
+str_dplmc_reputation_unknown|C'est rien de connu sur les {s46}.
+str_dplmc_s21__the_s5_is_bound_by_alliance_not_to_attack_the_s14s18_it_will_expire_in_reg1_days|{s21}^* {s5} a formé une alliance avec {s14}.{s18} Il se dégrader en un pacte défensif dans {reg1} jours.
+str_dplmc_s21__the_s5_is_bound_by_defensive_not_to_attack_the_s14s18_it_will_expire_in_reg1_days|{s21}^* {s5} a convenu d'un pacte défensif avec {s14}. {s18} Il se dégrade dans un accord commercial dans {reg1} jours.
+str_dplmc_s21__the_s5_is_bound_by_trade_not_to_attack_the_s14s18_it_will_expire_in_reg1_days|{s21}^* {s5} a convenu d'un accord commercial avec {s14}.{s18} Il se dégrader en un pacte de non-agression dans {reg1} jours.
+str_dplmc_small|petit
+str_dplmc_medium|moyen
+str_dplmc_big|grand
+str_dplmc_elite|élite
+str_dplmc_very_decentralized|très décentralisée
+str_dplmc_quite_decentralized|très décentralisé
+str_dplmc_little_decentralized|une petite approche décentralisée
+str_dplmc_neither_centralize_nor_decentralized|ni trop centralisé, ni décentralisée
+str_dplmc_little_centralized|un système centralisé petit
+str_dplmc_quite_centralized|très centralisé
+str_dplmc_very_centralized|très centralisé
+str_dplmc_very_plutocratic|très ploutocratique
+str_dplmc_quite_plutocratic|tout à fait ploutocratique
+str_dplmc_little_plutocratic|une petit ploutocratique
+str_dplmc_neither_aristocratic_nor_plutocratic|ni trop aristocratique, ni ploutocratique
+str_dplmc_little_aristocratic|une petite aristocratie
+str_dplmc_quite_aristocratic|tout à fait aristocratique
+str_dplmc_very_aristocratic|très aristocratique
+str_dplmc_all_free|presque tout est gratuit
+str_dplmc_mostly_free|plupart gratuites
+str_dplmc_usually_free|généralement gratuit
+str_dplmc_mixture_serfs|un mélange de serfs et homme libre
+str_dplmc_usually_serfs|serfs en général
+str_dplmc_mostly_serfs|serfs principalement
+str_dplmc_all_serfs|presque tous les serfs
+str_dplmc_very_quantity|un grand nombre de soldats
+str_dplmc_great_quantity|de très nombreux soldats
+str_dplmc_good_quantity|beaucoup de soldats
+str_dplmc_mediocre_quality|une qualité médiocre
+str_dplmc_good_quality|une bonne qualité
+str_dplmc_great_quality|une grande qualité
+str_dplmc_very_quality|une très haute qualité
+str_dplmc_s21_the_s8_declared_war_to_fulfil_pact|{s21}. The {s8} a déclaré la guerre à remplir un pacte
+str_entrench| Votre armée est actuellement retranché.
+str_camp_overrun| CAMP OVERRUN!!! 
+str_camp_loss| Votre camp a été envahie par l'ennemi.^{s4} or a été pillé par les caisses de payer.^{s3}^{s5}^{s6}

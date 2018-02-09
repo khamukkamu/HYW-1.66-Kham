@@ -4398,7 +4398,7 @@ simple_triggers = [
         
     ]),
     
-    
+
     #trigger reserved for future save game compatibility
     #(999,[]),
     #trigger reserved for future save game compatibility

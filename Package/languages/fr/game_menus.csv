@@ -1,1799 +1,933 @@
-menu_start_game_0|Bienvenue dans Mount and Blade : 1429; La Guerre de Cent Ans!^Avant de commencer à jouer, il vous faut créer votre personnage. Rappelez-vous que dans une société médiévale traditionnelle comme celle de la France, la guerre et de la politique sont en général dominées par des hommes de la noblesse. Mais cela ne veut pas dire que vous ne pouvez pas choisir de jouer une femme ou un roturier. Un aristocrate débutera sa partie plus facilement, mais les autres peuvent atteindre les mêmes buts... et même se révéler plus intéressants à jouer si on aime les défis ! 
-mno_continue|Continuer
-mno_go_back|Retour 
-menu_start_phase_2|An de Grace 1429,la guerre entre la France et L'Angleterre alliée au Duc de Bourgogne fait rage depuis de nombreuses Années pour le controle de la France.La guerre,la famine et meme la grande peste sont en train de décimer le Royaume,cependant un éspoir semble etre né,la rumeur qu'une simple bergere ayant acomplie des miracles en affirmant etre l'envoyée de Dieu pour liberer la france prend de l'ampleur parmi le peuple,les troupes épuisées reprennent la route des champs de bataille,les paysans affamés et malades retrouvent l'espoir de jours meilleurs,jusqu'aux Nobles qui voient ainsi la possibilité de peut etre remporter la victoire...c'est dans ce Pays Déchiré que vous désirez accomplir votre déstinée,mais pour l'heure il vous faut subvenir a vos besoins...
-mno_town_1|Debuter l'Aventure... 
-mno_cheat_quick_start|Cheat Quick Start
-menu_start_game_3|Choisissez un scénario. 
-menu_tutorial|Vous approchez d'un terrain où des guerriers s'entraînent au combat. Vous pouvez vous exercer ici. 
-mno_go_back_dot|Retour 
+﻿menu_start_game_options|Bienvenue à "La Guerre de Cent Ans!. Avant de commencer le jeu, vous pouvez choisir les conditions météo que vous souhaitez assembler tous les compagnons PNJ dans la première auberge ou si vous les voulez être étalé.
+mno_choose_options|Continuer.
+mno_go_back|Retour.
+menu_start_phase_2|Vous entendez parler de la France, un pays divisé en plusieurs royaumes rivaux qui se disputent sa domination, un refuge pour les chevaliers et les mercenaires, les meurtriers et les aventuriers, tous prêts à risquer leur vie en quête de fortune, de pouvoir ou de gloire. Dans ce pays dangereux mais synonyme d'opportunités, vous espérez tirer un trait sur votre passé et entamer une nouvelle vie. Vous sentez que votre destin est enfin entre vos mains et que vous êtes libre de vos choix ; et quel que soit le parcours que vous emprunterez, de grandes aventures vous attendent. Grâce aux histoires que vous entendez sur la France et ses royaumes, vous...
+mno_town_1|rejoignez une caravane à destination de Dijon, dans le royaume de France.
+menu_start_game_3|Choisissez votre scénario :
+mno_go_back|Retour.
+menu_tutorial|Vous approchez d'un terrain dans lequel les autochtones s'entraînent avec des armes. Vous pouvez vous entraîner ici pour améliorer vos techniques de combat.
+mno_continue|Continuer...
+mno_go_back_dot|Retour.
 menu_reports|Renommée du personnage : {reg5}^Honneur: {reg6}^Moral du groupe : {reg8}^Limite de la taille du groupe : {reg7}^
-mno_cheat_faction_orders|Cheat: Set Debug messages to Political Only.
-mno_view_character_report|Statut du personnage 
-mno_view_party_size_report|Rapport sur la limite de soldats 
-mno_view_npc_mission_report|Rapport de mission des compagnons. 
-mno_view_weekly_budget_report|Rapport financier hebdomadaire. 
-mno_view_morale_report|Rapport sur le moral des troupes 
-mno_lord_relations|Voir la liste des seigneurs connus, triés par relation.
-mno_courtship_relations|Relations de séduction 
-mno_view_faction_relations_report|Relations avec les factions
-mno_view_hungry_report|Rapport de santé.
-mno_view_document|Lire des documents.
-mno_resume_travelling|Lever le camp
-menu_custom_battle_scene|(NO TRANS) 
-menu_custom_battle_end|La bataille est terminée. {reg5} ennemis ont été vaincus. Vos pertes s'élèvent à {reg6}. Vous avez personnellement vaincu {reg7} ennemis. 
-menu_start_game_1|Sélectionnez le sexe de votre personnage. 
-mno_start_male|Homme 
-mno_start_female|Femme 
-menu_start_choix_classes|Qui etes vous ?...
-mno_start_noble2|Un Noble Chevalier déchu.
-mno_start_merchant2|Un Mercenaire.
-mno_start_guard2|Un Marchand.
-mno_start_forester2|Un Chasseur.
-mno_start_nomad2|Un Rebelle Francais.
-mno_start_thief2|Un Bandit de grands chemins.
-mno_start_thief22|Un Soldat.
-mno_start_thief33|Un Médecin.
-menu_classe_chevalier|Vous etes le fils d'une noble famille de Chevaliers Francais dépossedée de ses terres et titres par la fourberie de nobles félons avides de vos terres et de votre pouvoir.c'est dans cette époque de déclin de l'esprit de Chevalerie que vous avez grandis,bien que vous ayez été élevé dans les régles et les coutumes de cette gloire passée,vous n'en etes pas moin rompu tant au maniement des armes qu'a la diplomacie,le sens de la stratégie et etes au fait des tactiques les plus fourbes pour mettre a genoux vos rivaux.sauriez vous dans un tel contexte redonner a vostre famille sa gloire passée ?
-mno_continu|Accepter.
-mno_retour|Reviser votre choix.
-menu_classe_mercenaire|Lorsque vous etiez enfant,vous voulliez suivre la carière de ce père mercenaire que vous n'aviez pas connu,lorsque vostre mère vous parlais de lui,elle le decrivais comme quelqu'un d'arogant,dépenssier et égoiste.vous subveniez tout deux grace a des petits travaux pénibles,puis en grandissant,vous vous rendiez compte qu'une vie de mercenaire pourais vous offrire beaucoup plus,malgrés la grosse part de risque qu'elle comporte.
-menu_classe_marchant|Vous etes un marchand depuis votre plus jeune age,quand vous etiez enfant,vous échangiez déja des fleches fabriquées par vos camarades contre un panier de pommes,vous revendiez ces pommes sur les marchés,et achetiez des marchandises d'encore plus grande valeur.vous etes ambitieu et décidé a vous enrichire.quand vous transportiez vos marchandises d'une ville a l'autre,vous etiez souvent dépouillé par les bandits de grand chemins,ce qui vous a poussé bien vite a aquérire des notions de combat.vous penssez que la guerre entre francais et anglo bourgignons,pourais etre un bon moyen de pouvoir enfin vous enrichire. 
-menu_classe_chasseur|Vous etes un mongtagnard et un chasseur,plus proche des loups et des ours que des habitants des grandes villes.vous etes un archer hors pair et vous gagnez souvent les concourts d'archerie dans les villages quand vous descendez revendre vos fourures.votre vie d'érmite faite de solitude commence a devenire insuportable,vous voullez voire autre chose,partir a l'aventure en proposant a qui en aura besoin vos compétances d'archer.
-menu_classe_rebel|Vous etiez un enfant calme,travaillant dans les champs avec vostre pere,quand l'alliance Anglo Bourgignone s'empara de vos terres les cadences de travail imposees devenirent rapidement impossibles a suivres,et la maigre part de recolte quand il en restait une etait loing de pouvoir subvenir a vos besoins.plus tard quand vostre pere fut condamne pour trahison envers la courone d'angleterre,qui n'etait en fait qu'une simple requete pour avoir une plus grosse part de la recolte aupres de vostre seigneur,vous avez decide de rejoindre les Rebelles qui selon les rumeurs des tavernes se cachent dans les forets pret des grandes villes.
-menu_classe_bandit|Vous etes un bandit de grand chemin au coeur noir,vous ne vous intéressez qu'au profit en penssant au bon temp que vous pourez passer en revensant les biens pris a autruis,un jour on vous areta en train d'essayer de dérober des coffres d'or aux soldats anglais qui escortais le convoie des recettes des impots,vous vous etes dit ce jour la qu'a l'avenir vous préparerez mieux vos plants,et depuis cette époque vous vous etes juré de faire payer aux anglais leurs mauvais traitements infligés pendant vostre détention. 
-menu_classe_anglais|Vous etes un soldat Francais,un patriote de premier rang,tres doué dans les arts de combat,ayant été formé aux armes de mélé et au bouclier vous etes un soldat complet et polivalent.vous avez entamé une carrière de guarde du corp perssonel auprés du Duc de Provence.mais vostre patrie en guerre a besoin de vous,avec l'accord de vostre seigneur,vous avez décidé de partir pour rejoindre une unité d'élite avec une lettre de recomandation signée par le Duc de provence en personne.
-menu_classe_bourgignon|Vous etes un médecin chirurgien,vous offrez vos services en parcourant les routes bes bourgs aux grandes villes,vostre gout pour l'aventure vous as amenné a de nombreuses situations délicates et variées,vous avez vue la grande peste,et soigné des bléssés de guerre,vous avez voué vostre vie a sauver les inocants et a combattre les injustices,en outre,vous etes assez habile au combat au baton et aux armes légères.vous décidez de rejoindre les champs de bataille au centre de la france pour proposer vos services.
-menu_start_character_1|Vous avez vu le jour en France il y a bien des années. Votre père était... 
-mno_start_noble|Un noble désargenté 
-mno_start_merchant|Un marchand itinérant 
-mno_start_guard|Un guerrier vétéran 
-mno_start_forester|Un chasseur 
-mno_start_nomad|Un Mongtagnard 
-mno_start_thief|Un voleur 
-menu_start_character_2|{s10}^^ Vous avez commencé à découvrir le Pays dès que vous avez su marcher et parler. Lors de vos premières années, vous étiez... 
-mno_page|Page à la cour d'un noble 
-mno_apprentice|Apprenti{reg3?e:} chez un artisan 
-mno_stockboy|Assistant{reg3?e:} chez un marchand 
-mno_urchin|Un{reg3?e:} gamin{reg3?e:} des rues 
-mno_nomad|Un{reg3?e:} enfant des vallées 
-menu_start_character_3|{s11}^^ Puis, encore jeune adulte, votre vie a pris un autre chemin, et vous êtes devenu... 
-mno_squire|Écuyer 
-mno_lady|Dame d'honneur 
-mno_troubadour|Troubadour 
-mno_student|Étudiant{reg3?e:} 
-mno_peddler|Colport{reg3?euse:eur} 
-mno_craftsman|Forgeron{reg3?ne:} 
-mno_poacher|Braconni{reg3?ère:er}
-menu_start_character_4|{s12}^^Mais vous avez décidé de partir à l'aventure. Ce qui vous a incité à prendre cette décision fut... 
-mno_revenge|Une vengeance à assouvir 
-mno_death|La perte d'une personne chère 
-mno_wanderlust|L'envie de voir le monde 
-mno_disown|Le fait qu'on vous chasse de chez vous 
-mno_greed|La soif d'argent et de pouvoir 
+mno_action_view_upgrade_trees|Voir mise à niveau des arbres.
+mno_action_view_all_items|Voir tous les articles.
+mno_view_character_report|Vérification du statut PNJ.
+mno_view_party_size_report|Afficher le rapport sur la taille du groupe.
+mno_view_npc_mission_report|Afficher le rapport de mission du compagnon.
+mno_view_weekly_budget_report|Afficher le rapport budgétaire hebdomadaire.
+mno_view_morale_report|Afficher le rapport sur le moral du groupe.
+mno_lord_relations|Visualiser la liste des seigneurs connus par la relation.
+mno_courtship_relations|Afficher les relations de séduction.
+mno_view_faction_relations_report|Afficher le rapport sur les relations de la faction.
+mno_resume_travelling|Reprendre le voyage.
+menu_custom_battle_scene|(sans gras trans)
+mno_go_back|Retour.
+menu_custom_battle_end|La bataille est finie. {s1} a tué {reg5} ennemi(s) à vos côtés et a perdu {reg6} troupe(s) au cours de la bataille. Vous avez personnellement mis à mort {reg7} homme(s) au cours du combat. 
+mno_continue|Continuer...
+menu_start_game_0|Bienvenue dans Mount and Blade: Warband, {aventurier/aventurière}. Avant de commencer le jeu, vous devez créer votre personnage. Souvenez-vous que dans la société médiévale traditionnelle décrite dans le jeu, la guerre et la politique sont généralement dominées par les hommes de la noblesse. Mais vous êtes libre de choisir d'incarner une femme ou un personnage qui n'est pas né noble. Les hommes de l'aristocratie bénéficient généralement d'un démarrage plus facile, mais les femmes et les roturiers peuvent atteindre les mêmes objectifs... et connaître un début de jeu beaucoup plus intéressant, voire passionnant.
+mno_continue|Continuer...
+mno_go_back|Retour.
+menu_start_game_1|Sélectionnez le sexe de votre personnage.
+mno_start_male|Homme
+mno_start_female|Femme
+mno_go_back|Retour.
+menu_start_character_1|Vous êtes né(e) il y a des années, dans un pays lointain. Votre père était...
+mno_start_noble|Un noble appauvri.
+mno_start_merchant|Un marchand itinérant.
+mno_start_guard|Un vieux soldat.
+mno_start_forester|Un chasseur.
+mno_start_nomad|Un nomade des campagnes.
+mno_start_thief|Un voleur.
+mno_go_back|Retour.
+menu_start_character_2|{s10}^^ Vous avez commencé à découvrir le monde peu après savoir marcher et parler.  Au début de votre vie vous étiez...
+mno_page|Un page à la cour d'un noble.
+mno_apprentice|{reg3?Apprentie:Apprenti} chez un artisan.
+mno_stockboy|L'assistant{reg3?(e):} d'un marchand.
+mno_urchin|{reg3?Une gamine:Un gamin} des rues.
+mno_nomad|Un enfant de la campagne.
+mno_go_back|Retour.
+menu_start_character_3|{s11}^^ Puis, jeune adulte, votre vie a suivi son cours habituel. Vous êtes devenu(e)...
+mno_squire|Un écuyer.
+mno_lady|Une dame d'honneur.
+mno_troubadour|{reg3?Une musicienne itinérante:Un troubadour}.
+mno_student|{reg3?Une étudiante:Un étudiant} à l'université.
+mno_peddler|{reg3?Une colporteuse:Un colporteur}.
+mno_craftsman|{reg3?Une forgeronne:Un forgeron}.
+mno_poacher|{reg3?Une braconnière:Un braconnier}.
+mno_go_back|Retour.
+menu_start_character_4|{s12}^^Mais rapidement tout a changé et vous avez décidé de tenter votre chance en tant qu'aventurier. Ce qui vous a incité à prendre cette décision fut...
+mno_revenge|Une revanche à assouvir.
+mno_death|La perte d'un être cher.
+mno_wanderlust|L'appel de l'aventure.
+mno_disown|Le fait d'être chasse{reg3?e:} de votre maison.
+mno_greed|La soif d'argent et de pouvoir.
+mno_go_back|Retour.
 menu_choose_skill|{s13}
-mno_begin_adventuring|À l'aventure, compagnon ! 
-menu_past_life_explanation|{s3} {s4} 
-mno_view_next|{s5} 
-menu_morale_report|{s1} 
-menu_courtship_relations|{s1} 
+mno_begin_adventuring|Devenez un aventurier et chevauchez vers votre destinée.
+mno_go_back_dot|Retour.
+menu_past_life_explanation|{s3}
+mno_view_next|{s5}
+mno_continue|Continuer...
+mno_go_back_dot|Retour.
+menu_morale_report|{s1}
+mno_continue|Continuer...
+menu_courtship_relations|{s1}
+mno_continue|Continuer...
 menu_lord_relations|{s1}
-menu_companion_report|{s7}{s1} 
-menu_character_report|{s9} 
-menu_party_size_report|{s1} 
-menu_faction_relations_report|{s1} 
-menu_hungry_report|{s1}^^^{s4}^^{s6}^^{s8}
-menu_docum_report|Quel document voullez vous examiner ?
-mno_camp_doc1|Initiation au savoir franc maconique.
-mno_camp_doc2|Les loges secrettes.
-menu_savoir_maconique|{s1}^^{s4}^{s6},
-menu_loges_s|{s1}^^{s4}^{s6},
-menu_camp|Vous avez établi un campement. Que souhaitez-vous faire ? 
-mno_camp_test_kham|Kham Test Menu
-mno_hyw_mod_option|1429: HYW Mod Options.
-mno_check_troop_tree|Consult Troop Tree.
-mno_camp_action|Prendre une décision 
-mno_camp_wait_here|Camper ici quelque temps. 
-mno_camp_action_walk|Aller au campement dans la neige.
-mno_craft_campement|Fabriquer une arme.
-mno_plancr_campement|Verifier vos plans de fabrication.
-mno_camp_cheat|MENU DE TRICHE ! 
-menu_camp_khamtest|Kham Test
-mno_choose_scene|** Scene Chooser **
-mno_test_low_morale_quest|Test Low Morale Freelancer Quest
-mno_test_freelancer_looters|Become High Level Freelancer Troop
-mno_set_freelancer_rank|Set Freelancer Rank
-mno_become_sarge|Become Sarge / Captain
-mno_set_freelancer_xp|Set Freelancer Start XP Slot
-mno_freelancer_level_test|Become Low Level Freelancer - Get Level
-mno_freelancer_commander_report|Commander's Report
-mno_freelance_upgrade_menu|Freelancer Cheat Upgrade
-mno_freelancer_script_add_sarge|Freelancer Promote To Sarge
-mno_add_freelancer_rank|Add Freelancer Rank
-mno_impose_messenger_quest|Impose Deliver Message
-mno_impose_none|Reset Impose Quest
-menu_camp_cheat|Choisir une triche : 
-mno_camp_cheat_find_item|Obtenir un objet. 
-mno_camp_cheat_find_item_2|Change weather..
+mno_continue|Continuer...
+menu_companion_report|{s7}{s1}
+mno_continue|Continuer...
+mno_go_back_dot|Retour.
+menu_character_report|{s9}
+mno_continue|Continuer...
+mno_continue|Continuer...
+mno_continue|Continuer...
+mno_continue|Continuer...
+mno_continue|Continuer...
+mno_continue|Continuer...
+menu_party_size_report|{s1}
+mno_continue|Continuer...
+menu_faction_relations_report|{s1}
+mno_continue|Continuer...
+menu_camp|Vous établissez un camp. Que voulez-vous faire ?
+mno_camp_mod_options|Options Mod.
+mno_camp_kingdom_management|Gérez votre Duché.
+mno_camp_recruit_prisoners|Recruter des soldats parmi vos prisonniers.
+mno_camp_manage_inventory|Gérer l'inventaire de votre parti.
+mno_camp_action|Faire une action.
+mno_camp_wait_here|Camper ici quelque temps.
+mno_camp_entrench|{s1}
+mno_camp_cheat|MENU DES TRICHES !
+mno_resume_travelling|Reprendre le voyage.
+menu_camp_cheat|Sélectionner une triche :
+mno_camp_cheat_find_item|Changer les conditions climatiques.
 mno_camp_cheat_2|Augmenter l'honneur joueur par 5.
+mno_camp_cheat_troops|Obtenez 10 paysans personnalisé.
 mno_camp_cheat_3|Mise à jour des notes politiques.
 mno_camp_cheat_4|Mise à jour des notes de troupes.
 mno_camp_cheat_5|Ménestrels Scramble.
 mno_camp_cheat_6|Camp Infinite
+mno_cheat_faction_orders|Cheat: Régler messages de débogage pour Econ uniquement.
+mno_cheat_faction_orders|Cheat: Set Debug messages to Political Only.
 mno_back_to_camp_menu|Retour au menu camp.
-mno_camp_action_4|Retourner au campement 
-menu_camp_action|Choisir une action : 
-mno_camp_recruit_prisoners|Recruter des soldats parmi vos prisonniers 
-mno_action_read_book|Choisir un livre à lire 
-mno_action_rename_kingdom|Renommer votre Duché. 
-mno_action_retire|Prendre sa retraite
-menu_camp_recruit_prisoners|Offrir aux prisonniers de vous rejoindre en tant que soldats. {s18} 
-mno_camp_recruit_prisoners_accept|Accepter 
-mno_camp_recruit_prisoners_reject|Refuser 
-menu_camp_no_prisoners|Vous n'avez pas de prisonnier. 
-menu_camp_action_read_book|Choisissez un livre à lire : 
-mno_action_read_book_1|{s1}. 
-mno_action_read_book_2|{s1}. 
-mno_action_read_book_3|{s1}. 
-mno_action_read_book_4|{s1}. 
-mno_action_read_book_5|{s1}. 
-mno_action_read_book_6|{s1}. 
-mno_action_read_book_7|{s1}. 
-menu_camp_action_read_book_start|{s1} 
-menu_retirement_verify|Cela fait {reg0} jours qu'a débuté votre aventure. Votre fortune en est actuellement à {reg1}. Êtes-vous certain de vouloir prendre votre retraite ? 
-mno_retire_yes|Oui 
-mno_retire_no|Non 
-menu_end_game|Vous avez pris votre décision et décidez de vous ranger de la vie d'aventurier. Vous vendez vos armes et votre armure, rassemblez vos économies et chevauchez tranquillement vers le soleil couchant... 
-mno_end_game_bye|Adieu 
-menu_cattle_herd|Vous croisez un troupeau de vaches. 
-mno_cattle_drive_away|Faire avancer le troupeau
-mno_cattle_stop|Arrêter le troupeau 
-mno_cattle_kill|Abattre des bêtes 
-mno_leave|Partir 
-menu_cattle_herd_kill|Combien de bêtes souhaitez-vous abattre ? 
-mno_cattle_kill_1|Une 
-mno_cattle_kill_2|Deux 
-mno_cattle_kill_3|Trois 
-mno_cattle_kill_4|Quatre 
-mno_cattle_kill_5|Cinq 
-menu_arena_duel_fight|Vous vous préparez tous deux à vous battre en duel. 
-menu_simple_encounter|{s2} Vous avez {reg10} hommes en état de se battre contre les {reg11} ennemis. 
-mno_encounter_attack|Attaquer l'ennemi 
-mno_encounter_hold|Start battle holding position.
-mno_encounter_order_attack|Ordonner à vos troupes d'engager le combat sans vous 
-mno_encounter_leave|Quitter 
-mno_encounter_retreat|Se retirer. Laisser des soldats pour couvrir la retraite 
-mno_encounter_surrender|Se rendre 
-menu_encounter_retreat_confirm|En tant que meilleur tacticien de votre troupe, ({reg2}), {reg3?vous établissez:{s3} établit} un plan qui devrait permettre de vous échapper, mais qui implique le sacrifice de {reg4} soldats. 
-mno_leave_behind|Partir, le sacrifice des ces soldats en sauvera d'autres 
-mno_dont_leave_behind|Non, nous ne laisserons personne derrière
-menu_encounter_retreat|Vous dites à {reg4} de vos soldats de couvrir votre retraite 
-menu_order_attack_begin|Vos troupes sont prêtes à lancer l'assaut. 
-mno_order_attack_begin|Sonner la charge 
-mno_call_back|Rappeler vos hommes 
-menu_order_attack_2|{s4}^^Vos pertes: {s8}^^Pertes ennemies: {s9} 
-mno_order_attack_continue|Ordonner à vos troupes de lancer un nouvel assaut 
-mno_order_retreat|Rappeler vos hommes 
-menu_battle_debrief|{s11}^^Vos pertes : {s8}{s10}^^Pertes ennemies : {s9} 
-menu_total_victory|Vous ne devriez pas lire cela... {s9} 
-menu_enemy_slipped_away|{s17} 
-menu_total_defeat|Vous ne devriez pas lire cela... 
-menu_permanent_damage|{s0} 
-mno_s0|{s0} 
-menu_pre_join|Vous surprenez un affrontement entre les {s2} et les {s1}. Vous décidez de... 
-mno_pre_join_help_attackers|Vous battre aux côtés des {s2} 
-mno_pre_join_help_defenders|Venir en aide aux {s1} 
-mno_pre_join_leave|Rester en dehors de ça 
-menu_join_battle|Vous aidez les {s2} à affronter les {s1}. Vous avez {reg10} hommes prêts à affronter les {reg11} ennemis. 
-mno_join_attack|Attaquer l'ennemi 
-mno_join_hold|Start battle holding position.
-mno_join_order_attack|Ordonner à vos troupes d'engager le combat sans vous 
-mno_join_wounded|You are too wounded to fight.
-mno_join_leave|Fuir le champ de bataille 
-menu_join_order_attack|{s4}^^Vos pertes: {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10} 
-menu_zendar|Vous entrez dans la ville de Zendar. 
-mno_zendar_enter|
-mno_zendar_enter_door|Vers le centre-ville 
-mno_zendar_tavern|
-mno_zendar_tavern_door|Vers la taverne 
-mno_zendar_merchant|
-mno_zendar_merchant_door|Vers la boutique 
-mno_zendar_arena|
-mno_zendar_arena_door|Vers l'arène 
-mno_town_1_leave|
-menu_salt_mine|Vous arrivez à la mine de sel 
-mno_enter|Entrer 
-menu_four_ways_inn|Vous arrivez à l'auberge de la Croisée. 
-menu_test_scene|Vous arrivez dans la scène de test. 
-menu_battlefields|Sélectionner un terrain... 
-mno_enter_f1|Terrain 1 
-mno_enter_f2|Terrain 2 
-mno_enter_f3|Terrain 3 
-mno_enter_f4|Terrain 4 
-mno_enter_f5|Terrain 5 
-menu_dhorak_keep|Vous arrivez au donjon de Dhorak. 
-menu_join_siege_outside|{s2} assiège {s1}. 
-mno_approach_besiegers|Approcher du camp des assiégeants 
-mno_pass_through_siege|Franchir les lignes du siège et entrer dans {s1}
-menu_cut_siege_without_fight|Les assaillants vous laissent approcher du château sans encombre. 
-menu_besiegers_camp_with_allies|{s1} est toujours en état de siège, les bannières du {s2} flottent au-dessus du camp des assiégeants, où vos hommes et vous êtes les bienvenus.
-mno_talk_to_siege_commander|Demander une audience avec le commandant
-mno_join_siege_with_allies|Rejoindre le prochain assaut
-mno_join_siege_stay_back|Ordonner à vos soldats de se joindre au prochain assaut sans vous 
-menu_castle_outside|Vous êtes à l'extérieur de {s2}.{s11} {s3} {s4} 
-mno_approach_gates|Approcher des portes et appeler les gardes 
-mno_town_sneak|Se déguiser pour essayer de franchir les portes
-mno_castle_start_siege|Assiéger {reg6?la ville:le château} 
-mno_castle_leave|Quitter 
-menu_castle_guard|Vous vous approchez des portes. Les hommes sur les remparts vous observent attentivement. 
-mno_request_shelter|Demander à entrer au château. 
-mno_request_meeting_commander|Solliciter une audience. 
-mno_guard_leave|Partir. 
-menu_castle_entry_granted|Après quelques instants, les gardes ouvrent les portes et vous permettent d'entrer. 
-menu_castle_entry_denied|L'entrée de ce château vous a été interdite par le seigneur des lieux, et le chef des gardes vous informe qu'il ordonnera à ses hommes de tirer si vous vous approchez davantage. 
-menu_castle_meeting|Qui souhaitez-vous rencontrer ? 
-mno_guard_meet_s5|{s5}. 
-mno_forget_it|Oubliez ça 
-menu_castle_meeting_selected|Votre requête est transmise et finalement le {s6} apparaît dans la cour afin de discuter avec vous. 
-menu_castle_besiege|Vous assiégez {s1}. {s2} {s3} 
-mno_siege_request_meeting|Demander une entrevue avec le chef des assiégés 
-mno_wait_24_hours|Attendre jusqu'à demain 
-mno_castle_lead_attack|Mener l'assaut contre les murailles 
-mno_attack_stay_back|Ordonner à vos troupes d'engager le combat sans vous 
-mno_build_ladders|Se préparer à assaillir les murs 
-mno_build_siege_tower|Construire une tour de siège 
-mno_lift_siege|Lever le siège 
-menu_siege_attack_meets_sally|Les défenseurs tentent une sortie afin de contrer votre assaut. 
-menu_castle_besiege_inner_battle|{s1} 
-menu_construct_ladders|{reg3?Selon vous:Selon {s3}}, construire des échelles prendra {reg4} heures. 
-mno_build_ladders_cont|Commencer 
-menu_construct_siege_tower|{reg3?Selon vous:Selon {s3}}, construire une tour de siège prendra {reg4} heures. 
-mno_build_siege_tower_cont|Commencer la construction 
-menu_castle_attack_walls_simulate|{s4}^^Vos pertes:{s8}^^Pertes ennemies: {s9} 
-menu_castle_attack_walls_with_allies_simulate|{s4}^^Vos pertes: {s8}^^Pertes alliées: {s9}^^Pertes ennemies: {s10} 
-menu_castle_taken_by_friends|Rien à voir ici. 
-menu_castle_taken|Grâce à votre victoire sur les défenseurs de {s3}, vous détenez désormais {reg2?la ville:le château}.{reg1? Vous pouvez mettre des troupes en garnison pour défendre ce fief. Vous devez aussi indiquer si vous souhaitez conserver {reg2?la ville:le château} pour vous-même ou le confier à un fidèle vassal...:}
-menu_castle_taken_2|Vous avez pris le contrôle de {s3}. Il est temps d'envoyer un message pour informer le {s9} de votre victoire. {s5} 
-mno_castle_taken_claim|Demander à ce qu'on vous attribue {s3}. 
-mno_castle_taken_claim_2|Demandez à ce que votre {épouse/époux} reçoive {s3}. 
-mno_castle_taken_no_claim|Ne rien demander. 
-menu_requested_castle_granted_to_player|Vous recevez un message de votre suzerain, {s3}.^^ Il a décidé de vous confier {s2}{reg3? ainsi que le proche village de {s4}:}, et tous les titres et revenus qui en découlent, aussi longtemps que vous lui resterez fidèle. 
-menu_requested_castle_granted_to_player_husband|Vous recevez un message de votre suzerain, {s3}.^^ {reg4?Elle:Il} a décidé d'accorder {s2}{reg3? et le village voisin de {s4}:} à votre mari, {s7}. 
-menu_requested_castle_granted_to_another|Vous recevez un message de votre roi, {s3}.^^ "J'ai eu vent de votre vaillance lors de la prise de {s2}. L'annonce de votre triomphe nous a emplis de joie. Vous m'avez demandé de vous en déléguer la responsabilité, mais c'est une faveur que je crains de ne pas pouvoir vous accorder car vous disposez déjà d'importantes propriétés dans mon royaume. En lieu et place, je vous fais présent de ces {reg6} écus pour financer les dépenses de votre campagne. Quant à {s2}, c'est le {s5} qui en aura la responsabilité." 
-mno_accept_decision|Accepter la décision de votre seigneur. 
-mno_leave_faction|C'est là une grave offense ! Rompre le serment d'allégeance. 
-menu_requested_castle_granted_to_another_female|Vous recevez un message de votre monarque, {s3}.^^ "J'ai eu vent de vos exploits au cours de la capture de {s2}. Votre victoire a mis nos cœurs en joie. Vous m'avez également demandé d'accorder le titre de propriété du château à votre mari, mais il s'agit là d'une faveur à laquelle je ne puis répondre favorablement, car votre époux détient déjà des propriétés dans mon royaume. Je vous ai envoyé {reg6} écus pour couvrir vos dépenses de campagne, et ai décidé de confier {s2} au {s5}". 
-menu_leave_faction|Rompre votre serment ne sera pas sans conséquence. Votre seigneur vous condamnera et confisquera probablement vos fiefs et vos terres. Cependant, si vous les lui cédez de bon gré, il vous déchargera de vos obligations sans vous causer d'ennui. 
-mno_leave_faction_give_back|Je renonce à mes terres et je romps mon serment d'allégeance. 
-mno_leave_faction_hold|Je renonce à mon serment d'allégeance mais je garde mes terres. 
-mno_leave_faction_cancel|J'ai changé d'avis, je vais continuer à le servir. 
-menu_give_center_to_player|{s1} veut vous confier un nouveau fief. Il vous propose de gouverner {s2}. Quelle est votre réponse ? 
-mno_give_center_to_player_accept|Accepter son offre. 
-mno_give_center_to_player_reject|Refuser de prendre en charge {s2}. 
-menu_give_center_to_player_2|Un nouveau fief vous a été accordé. Vous êtes à présent le seigneur de {s2}{reg3? et de {s4}:}. Vous pouvez à présent y percevoir rentes et revenus, recruter des troupes dans la populace et gérer les terres à votre convenance. Il vous revient également de défendre votre fief, et d'y faire régner l'ordre.
-menu_oath_fulfilled|Vous aviez pris l'engagement de servir {s1} pendant un certain temps, votre engagement touche à son terme. Qu'allez-vous faire ? 
-mno_renew_oath|Prolonger votre engagement auprès du {s1} d'un mois supplémentaire 
-mno_dont_renew_oath|Mettre fin à votre contrat.
-menu_siege_started_defender|{s1} lance un assaut contre {s2}. Vous disposez de {reg10} soldats face aux {reg11} soldats ennemis. Vous décidez de... 
-mno_siege_defender_join_battle|Rejoindre la bataille 
-mno_siege_defender_troops_join_battle|Donner l'ordre à vos troupes d'engager le combat sans vous 
-menu_siege_join_defense|{s4}^^Vos pertes: {s8}^^Pertes alliées: {s9}^^Pertes ennemies: {s10} 
-menu_enter_your_own_castle|Alors que vous vous approchez, les gardes du château aperçoivent leur {seigneur/dame}, vous souhaitent la bienvenue et abaissent le pont-levis. 
-menu_village|{s10}{s11}{s6}{s7} 
-mno_village_manage|Gérer ce village 
-mno_recruit_volunteers|Recruter des volontaires 
-mno_village_elder_talk|Parler a l'ancien du village.
-mno_village_elder_talk_door|Door to the village center.
-mno_village_center|Aller au village 
-mno_village_center_door|Vers le village 
-mno_village_buy_food|Commercer avec les villageois 
-mno_village_attack_bandits|Attaquer les bandits 
-mno_village_wait|Se reposer ici quelque temps 
-mno_collect_taxes_qst|{reg5?Continuer à collecter les taxes:Collectez les taxes} au nom du {s1} 
-mno_train_peasants_against_bandits_qst|Entraîner les paysans 
-mno_village_hostile_action|Faire une action hostile 
-mno_village_leave|Partir 
-menu_village_hostile_action|Quelle action avez-vous en tête ? 
-mno_village_take_food|Forcer les paysans à vous donner des vivres 
-mno_village_steal_cattle|Voler le bétail 
-mno_village_loot|Mettre le village à sac 
-menu_recruit_volunteers|{s18} 
-mno_continue_not_enough_gold|Je n'ai pas assez d'argent... 
-mno_recruit_them|Les recruter ({reg6} écus) 
-menu_village_hunt_down_fugitive_defeated|Soudain, tout devient noir, et vous vous écroulez. Quand vous ouvrez les yeux, vous réalisez que vous baignez dans votre propre sang mais, fort heureusement, qu'aucune de vos blessures n'est mortelle. 
-menu_village_infest_bandits_result|{s9} 
-menu_village_infestation_removed|Combattant avec ardeur, vous et vos hommes mettez les bandits en déroute. Le village est à nouveau sûr. Les villageois n'ont plus grand chose après ce qu'il s'est passé, mais ils vous offrent de bon cœur le peu qu'il leur reste. Vous décidez de...
-mno_village_bandits_defeated_accept|Prendre ce qui vous revient de droit
-mno_village_bandits_defeated_cont|Refuser, ils en ont davantage besoin que vous
-menu_center_manage|{s19}^{reg6?^^Vous construisez actuellement {s7}. La construction sera achevée dans {reg8} jour{reg9?s:}.:} 
-mno_center_build_manor|Construire un manoir 
-mno_center_build_fish_pond|Construire un moulin 
-mno_center_build_watch_tower|Construire une tour de guet 
-mno_center_build_school|Construire une école 
-mno_center_build_messenger_post|Construire un poste de messager 
-mno_center_build_prisoner_tower|Construire une tour de prison 
-menu_center_improve|{s19} En tant que meilleur ingénieur du groupe ({reg2}), {reg3?vous estimez:{s3} estime} que construire {s4} coûtera {reg5} écus et prendra {reg6} jours. 
-mno_improve_cont|Entamer la construction 
-mno_improve_not_enough_gold|Je n'ai pas assez d'argent pour ça. 
-menu_town_bandits_failed|{s4} {s5} 
-menu_town_bandits_succeeded|Les bandits tombent devant vous comme le blé sous une faux ! Vous vous retrouvez rapidement seul dans les rues tandis que la plupart de vos assaillants gisent inconscients, morts, ou agonisant. En fouillant les corps, vous trouvez une bourse qui doit avoir appartenu à l'une des précédentes victimes de ces brutes. À moins bien sûr qu'elle ne leur fût donnée par quelqu'un qui souhaitait votre mort.
-menu_village_steal_cattle_confirm|En tant que membre le plus roublard du groupe ({reg2} en pillage), {reg3?vous estimez:{s1} estime} que vous pouvez voler {reg4} têtes de bétail au village. 
-mno_village_steal_cattle_confirm|Parfait, allons-y ! 
-menu_village_steal_cattle|{s1} 
-menu_village_take_food_confirm|Il ne sera guère facile d'obliger les paysans à vous céder leurs provisions. Vous pensez que vous aurez besoin d'au moins une heure. 
-mno_village_take_food_confirm|Allons-y. 
-menu_village_take_food|Les villageois vous apportent, de mauvaise grâce, ce que vous leur avez demandé. 
-mno_take_supplies|Prendre les vivres 
-mno_let_them_keep_it|Qu'ils les gardent ! 
-menu_village_start_attack|Des villageois s'arment d'outils et s'apprêtent à vous résister ! 
-mno_village_raid_attack|Les attaquer 
-mno_village_raid_leave|Laisser le village en paix 
-menu_village_loot_no_resist|Les villageois se dispersent rapidement face à vos troupes. Le village est à votre merci. 
-menu_village_loot_complete|Vos hommes ont mis à sac le village sur votre ordre, pillant tout ce qu'ils pouvaient avant de mettre le feu aux bâtiments. Les écus et les objets de valeurs trouvés vous rapportent au total {reg1} écus
-menu_village_loot_defeat|Combattant avec courage et détermination, les villageois parviennent à vous repousser. 
-menu_village_loot_continue|Voulez-vous continuer à piller ce village ? 
-mno_disembark_yes|Oui
-mno_disembark_no|Non
-menu_close|Rien 
-menu_town|{s10} {s14}^{s11}{s12}{s13} 
-mno_castle_castle|Se rendre à la grande salle{s1}
-mno_castle_castle_door|Vers le château 
-mno_join_tournament|Rejoindre le tournoi 
-mno_town_castle|Se rendre au château 
-mno_town_castle_door|Vers le château 
-mno_town_center|[Quartier] Se balader sur la place principale. 
-mno_town_center_door|Vers le centre-ville 
-mno_town_tavern|Aller à la taverne 
-mno_town_tavern_door|Vers la taverne 
-mno_town_merchant|Parler avec le marchand 
-mno_town_merchant_door|Vers le magasin 
-mno_town_arena|Entrer dans le terrain de joute 
-mno_town_arena_door|Vers le terrain de joute 
-mno_town_dungeon|TRICHER: entrer dans le donjon 
-mno_town_dungeon_door|Vers le donjon 
-mno_castle_inspect|Visiter les lieux 
-mno_castle_inspect_door|Vers le château 
-mno_town_enterprise|Se rendre dans votre {s3}
-mno_town_enterprise_door|Vers votre {s3}
-mno_visit_lady|Tenter de rendre visite à une dame 
-mno_visit_lady_door|Vers le jardin 
-mno_trade_with_merchants|Aller sur la place du marché 
-mno_walled_center_manage|Gérer {reg0?cette ville:ce château} 
-mno_walled_center_move_court|Déplacer votre cour ici
-mno_castle_station_troops|Gérer la garnison 
-mno_castle_wait|Se reposer ici quelque temps {s1}. 
-mno_town_alley|aller dans le couloir.
-mno_town_paris_low_districts|[Quartier] Se rendre dans les quartiers pauvres St.Julien.
-mno_town_paris_2_low_districts|[Quartier] Visiter la Grande Ecurie.
-mno_town_paris_3_low_districts|[Quartier] Aller a l'entrée des Catacombes.
-mno_town_paris_cath_districts|[Quartier] Visiter la Cathèdrale Notre Dame.
-mno_town_bourg_banq|[Banque] Aller a la banque de Paris.
-mno_town_reims_districts_scene|[Lieux] Aller au Manoire.
-mno_town_Angers_districts_scene|[Quartier] Aller dans le vieux quartier.
-mno_town_Bourges_bat_entrepot|[Quartier] Rejoindre la bataille des entrepots.
-mno_town_Bourges_districts_tavern|[Quartier] Allez a la taverne des Trois Lys.
-mno_town_Bourges_districts_scene3|[Quartier] Patrouiller aux entrepots.
-mno_town_Bourges_districts_scene2|[Quartier] Finire le test de recrutement sur la place Gordaine.
-mno_town_Bourges_districts_scene|[Quartier] Se ballader sur la place Gordaine.
-mno_town_Bourges_districts2_scene|[Quartier] Aller a la guilde des Messagers.
-mno_town_bourges_cath_districts|[Quartier] Visiter la Cathèdrale Saint Etienne.
-mno_town_Metz_districts_scene|[Quartier] Passer par la rivière pour rejoindre la porte des allemands.
-mno_town_Dijon_districts_scene|[Quartier] Visiter les hospices.
-mno_town_Montpellier_districts_scene|[lieux] Visiter les jardins
-mno_town_Grenoble_districts2_scene|[Quartier] Aller a la Guilde des Messagers.
-mno_town_Grenoble_districts_scene|[Lieux] Visiter l'abbaye aux dames.
-mno_town_mars_banq|[Banque] Aller a la banque de Marseille.
-mno_town_Caen_districts_scene|[Quartier] Aller au chateau Ducale.
-mno_town_Limoges_districts_scene|[Quartier] Aller a l'atelier de siege..
-mno_town_Caen_districts2_scene|[Quartier] Aller a la Guilde des Messagers.
-mno_town_Calais_districts_scene|[Lieux] Se rendre au cimetière.
-mno_town_Rouen_districts_sceness|[Quartier] Aller au vieux cimetière de Rouen.
-mno_town_Rouen_districts_scene|[Quartier] Aller sur la place de l'eglise saint Maclou.
-mno_town_Toulouse_districts_scene|[Lieux] Visiter le cloitre des Jacobins.
-mno_town_Bordeaux_districts_scene|[Quartier] Se promener dans la rue Comercante Sainte Catherine.
-mno_town_Bordport_districts_scene|[Quartier] Se rendre au Port fluviale.
-mno_town_Orleans_districts_scene|[Quartier] Aller a la grande Forge
-mno_town_Tours_districts_scene|[Quartier] Aller au Quartier de la Caserne.
-mno_town_Tours_vieuxchateau|[Quartier] Aller au vieux Chateau.
-mno_town_Tours_troissirenes|[Quartier] Aller a la maison des trois sirènes.
-mno_town_Poitiers_districts_scene|[Lieux] Allez a la rencontre de Licorne dans les jardins.
-mno_town_Avignon_districts_scene|[Lieux] Aller sur le pont Saint Benezet.
-mno_town_lyon_districts_scene|[Quartier] Aller a la Caserne de Lyon.
-mno_town_rennes_low_districts|[Quartier] Aller a la rue des Dames pour protéger le Comte de Rennes.
-mno_dplmc_guild_master_meeting|Parler au Maistre de guilde.
-mno_dplmc_guild_master_meeting_denied|Vous ne conaissez pas encore le Maistre de Guilde.
-mno_town_recruit_volunteers|Recruter des miliciens.
-mno_castle_recruit|Recruter des ecuyers.
-mno_town_leave|Partir 
-mno_town_leave_door|Quitter les lieux 
-menu_cannot_enter_court|On donne actuellement un banquet dans la grande salle, mais votre statut ne vous permet pas d'y assister. Pour vous faire admettre, vous devez acquérir une certaine renommée... ou tenter de vous faire remarquer lors d'un tournoi. 
-menu_lady_visit|À qui voulez-vous rendre visite ? 
-mno_visit_lady_1|Rendre visite à {s12} 
-mno_visit_lady_2|Rendre visite à {s12} 
-mno_visit_lady_3|Rendre visite à {s12} 
-mno_visit_lady_3_door|Vers le jardin. 
-mno_visit_lady_4|Rendre visite à {s12} 
-mno_visit_lady_5|Rendre visite à {s12} 
-mno_visit_lady_6|Rendre visite à {s12} 
+mno_camp_action_4|Revenir au menu Camp.
+menu_camp_action|Choisir une action :
+mno_action_read_book|Sélectionner un livre à lire.
+mno_action_export_import|Exportation / importation PNJ.
+mno_action_retire|Prendre sa retraite d'aventurier.
+mno_camp_action_4|Revenir au menu Camp.
+menu_export_import_npcs|S'il vous plaît choisir un PNJ, puis appuyez sur la touche C pour afficher et d'exporter / importer ce personnage. ^ ^ Vous choisissez {reg0?{s0}:none}.
+mno_export_import_back|Retour.
+mno_export_import_npc1|{s0}
+mno_export_import_npc2|{s0}
+mno_export_import_npc3|{s0}
+mno_export_import_npc4|{s0}
+mno_export_import_npc5|{s0}
+mno_export_import_npc6|{s0}
+mno_export_import_npc7|{s0}
+mno_export_import_npc8|{s0}
+mno_export_import_next|Page suivante
+menu_export_import_npcs_2|S'il vous plaît choisir un PNJ, puis appuyez sur la touche C pour afficher et d'exporter / importer ce personnage. ^ ^ Vous choisissez {reg0?{s0}:none}.
+mno_export_import_prev|Page précédente
+mno_export_import_npc9|{s0}
+mno_export_import_npc10|{s0}
+mno_export_import_npc11|{s0}
+mno_export_import_npc12|{s0}
+mno_export_import_npc13|{s0}
+mno_export_import_npc14|{s0}
+mno_export_import_npc15|{s0}
+mno_export_import_npc16|{s0}
+menu_camp_recruit_prisoners|Vous rendez la liberté à vos prisonniers s'ils acceptent à vous rejoindre en tant que soldats. {s18}
+mno_camp_recruit_prisoners_accept|Les accepter.
+mno_camp_recruit_prisoners_reject|Les rejeter.
+mno_continue|Continuer...
+menu_camp_no_prisoners|Vous n'avez aucun prisonnier à recruter.
+mno_continue|Continuer...
+menu_camp_action_read_book|Choisir un livre à lire :
+mno_action_read_book_1|{s1}.
+mno_action_read_book_2|{s1}.
+mno_action_read_book_3|{s1}.
+mno_action_read_book_4|{s1}.
+mno_action_read_book_5|{s1}.
+mno_action_read_book_6|{s1}.
+mno_action_read_book_7|{s1}.
+mno_action_read_book_8|{s1}.
+mno_camp_action_4|Revenir au menu Camp.
+menu_camp_action_read_book_start|{s1}
+mno_continue|Continuer...
+menu_camp_mod_preferences|Comportement mod Alter en fonction de vos préférences personnelles.
+mno_cc_options|CustomCustom options commandant.
+mno_action_prebattle_mod_preferences|Préférences Mod PBOD.
+mno_entrench_camp_preferences|Options retranchement.
+mno_go_back|Retour.
+menu_camp_manage_kingdom|Descider de questions concernant votre propre Duché:
+mno_action_rename_kingdom|Renommez votre Duché.
+mno_action_change_vassal_title|Changer le titre de vos vassaux.
+mno_action_change_party_name|Changer le nom de votre parti.
+mno_action_modify_factions_color|Changez les couleurs de faction.
+mno_action_modify_banner|Modifier votre bannière.
+mno_go_back|Retour.
+menu_retirement_verify|Vous en êtes à votre {reg0} jour(s). Votre chance est actuellement de {reg1}. Êtes-vous sûr(e) de vouloir prendre votre retraite ?
+mno_retire_yes|Oui.
+mno_retire_no|Non.
+menu_end_game|Votre décision est prise et vous vous êtes résolu(e) à abandonner votre vie d'aventurier et à vous ranger. Vous vendez vos armes et votre armure, vous rassemblez tout l'argent et chevauchez dans le soleil couchant... 
+mno_end_game_bye|Adieu.
+menu_cattle_herd|Vous croisez le chemin d'un troupeau de bétails.
+mno_cattle_drive_away|Mener le bétail à destination.
+mno_cattle_stop|Arrêter le troupeau.
+mno_cattle_kill|Abattre certains des animaux.
+mno_leave|Sortir
+menu_cattle_herd_kill|Combien d'animaux voulez-vous abattre?
+mno_cattle_kill_1|Un.
+mno_cattle_kill_2|Deux.
+mno_cattle_kill_3|Trois.
+mno_cattle_kill_4|Quatre.
+mno_cattle_kill_5|Cinq.
+mno_go_back_dot|Retour.
+menu_arena_duel_fight|Votre adversaire et vous vous apprêtez à vous battre en duel.
+mno_continue|Continuer...
+mno_continue|Continuer...
+menu_duel_menu|{s1}{s2}
+mno_start_fight|Démarrez le duel.
+mno_duel_again|Duel à nouveau.
+mno_leave|Sortir
+menu_simple_encounter|{s2} Vous avez {reg10} soldat(s) aptes à combattre les {reg11} soldat(s) ennemies.
+mno_change_commander_simple_encounter|Changement de commandant.(Current commander: {s7})
+mno_encounter_attack_deployment|Choisissez qui allez vous rejoindre dans la bataille.
+mno_encounter_attack_plan|Planifiez votre bataille contre l'ennemi.
+mno_encounter_attack_do_plan|assez de planification.a la bataille!
+mno_encounter_attack_clear_plan|Re-évaluer la situation.
+mno_encounter_attack_hold|Prendre le fief .
+mno_encounter_attack_follow|Mener vos troupes.
+mno_encounter_attack|Charger l'ennemi.
+mno_encounter_order_attack|Donner l'ordre à vos soldats d'attaquer sans vous.
+mno_encounter_leave|Quitter.
+mno_encounter_retreat|Se retirer. Laisser certains soldats pour couvrir votre retraite.
+mno_encounter_surrender|Se rendre.
+menu_encounter_retreat_confirm|En tant que membre du groupe détenant le niveau le plus élevé de la compétence Tactiques, ({reg2}), {reg3?vous concevez :{s3} conçoit} un plan qui vous permettra, à vous et à vos hommes, de vous enfuir sains et saufs, mais vous devrez abandonner {reg4} soldats pour empêcher l'ennemi de vous pourchasser. 
+mno_leave_behind|Continuer. Le sacrifice de ces hommes sauvera les autres.
+mno_dont_leave_behind|Non. Nous n'abandonnerons personne.
+menu_encounter_retreat|Vous demandez à {reg4} de vos hommes de résister à l'ennemi pendant que vous battez en retraite avec le reste du groupe.
+mno_continue|Continuer...
+menu_order_attack_begin|Vos soldats se préparent à attaquer l'ennemi.
+mno_order_attack_begin|Donner l'ordre de lancer l'attaque.
+mno_call_back|Rappeler vos hommes.
+menu_order_attack_2|{s4}^^Vos pertes : {s8}^^Pertes ennemies: {s9}
+mno_order_attack_continue|Donner l'ordre à vos soldats de continuer l'attaque.
+mno_order_retreat|Rappeler vos soldats.
+mno_continue|Continuer...
+menu_battle_debrief|{s11}^^Vos pertes :{s8}{s10}^^Pertes ennemies :{s9}
+mno_continue|Continuer...
+menu_total_victory|Vous ne devriez pas lire ceci... {s9}
+mno_continue|Continuer...
+menu_enemy_slipped_away|{s17}
+mno_continue|Continuer...
+menu_total_defeat|Vous ne devriez pas lire ceci...
+menu_permanent_damage|{s0}
+mno_s0|{s0}
+menu_pre_join|Vous vous retrouvez au milieu d'une bataille entre les {s2} et les {s1}.Vous décidez de...
+mno_pre_join_help_attackers|Vous mobiliser pour aider les {s2}.
+mno_pre_join_help_defenders|venir en aide aux {s1}.
+mno_pre_join_leave|Ne pas vous impliquer.
+menu_join_battle|Vous aidez les {s2} à affronter les {s1}. Vous avez {reg10} soldat(s) aptes à combattre les {reg11} soldat(s) ennemies. 
+mno_change_commander_join_battle|Changement de commandant.(Current commander: {s7})
+mno_join_attack_deployment|Choisissez qui vous allez rejoindre dans la bataille.
+mno_join_attack_plan|Planifiez vos attaques contre l'ennemi.
+mno_join_attack_do_plan|assez de planification. a la bataille!
+mno_join_attack_clear_plan|Re-évaluer la situation.
+mno_join_attack_hold|Prenez le domaine.
+mno_join_attack_follow|Menez vos troupes.
+mno_join_attack|Charger l'ennemi.
+mno_join_order_attack|Donner l'ordre à vos soldats d'attaquer avec vos alliés tandis que vous restez en retrait.
+mno_join_leave|Quitter les lieux.
+menu_join_order_attack|{s4}^^Vos pertes : {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10}
+mno_continue|Continuer...
+menu_zendar|Vous entrez le bourg de Zendar.
+mno_zendar_enter| 
+mno_zendar_enter_door|Vers le centre-ville du bourg.
+mno_zendar_tavern| 
+mno_zendar_tavern_door|Vers la taverne.
+mno_zendar_merchant| 
+mno_zendar_merchant_door|Vers le marchand.
+mno_zendar_arena| 
+mno_zendar_arena_door|Vers l'arène.
+mno_town_1_leave| 
+menu_salt_mine|Vous entrez dans une mine de sel.
+mno_enter|Entrer
+mno_leave|Sortir
+menu_four_ways_inn|Vous arrivez à l'auberge de la Croisée.
+mno_enter|Entrer
+mno_leave|Sortir
+menu_test_scene|Vous entrez dans la scène de test.
+mno_enter|Entrer
+mno_enter|Entrer
+mno_enter|Entrer
+mno_enter|Entrer
+mno_enter|Entrer
+mno_enter|Entrer
+mno_enter|Entrer
+mno_enter|Entrer
+mno_enter|Entrer
+mno_leave|Sortir
+menu_battlefields|Sélectionner un terrain...
+mno_enter_f1|Terrain 1
+mno_enter_f2|Terrain 2
+mno_enter_f3|Terrain 3
+mno_enter_f4|Terrain 4
+mno_enter_f5|Terrain 5
+mno_leave|Sortir
+menu_dhorak_keep|Vous entrez dans le donjon de Dhorak.
+mno_enter|Entrer
+mno_leave|Sortir
+menu_join_siege_outside|{s1} a été assiégé par {s2}.
+mno_approach_besiegers|Approcher du camp des assiégeants.
+mno_pass_through_siege|Franchir les lignes de siège et entrer dans {s1}.
+mno_leave|Sortir
+menu_cut_siege_without_fight|Les assaillants vous laissent approcher les portes sans encombre.
+mno_continue|Continuer...
+menu_besiegers_camp_with_allies|{s1} est toujours assiégée, les bannières de {s2} flottent au-dessus du camp des assaillants, où vos hommes et vous êtes les bienvenus.
+mno_change_commander_besiegers_camp_with_allies|Commandant de changement(Current commander: {s7}).
+mno_siege_attack_plan|Planifiez votre assaut.
+mno_talk_to_siege_commander| Demander une entrevue avec le commandant.
+mno_join_siege_with_allies|Rejoindre le prochain assaut.
+mno_join_siege_stay_back|Donner l'ordre à vos soldats de se joindre au prochain assaut sans vous.
+mno_leave|Sortir
+menu_castle_outside|Vous êtes à l'extérieur de {s2}.{s11} {s3} {s4}
+mno_approach_gates|Approcher des portes du château et héler le garde.
+mno_town_sneak|se Déguiser-vous et essayer de passer inaperçu dans la ville..
+mno_dplmc_riot_start_siege|Assiéger la {reg6?town:castle} pour contrer l'insurrection.
+mno_dplmc_riot_negotiate|Entamer les négociations.
+mno_castle_start_siege|Assiéger le {reg6?bourg : château}
+mno_castle_leave|Quitter.
+menu_castle_guard|Vous approchez la porte. Les hommes sur les remparts vous observent attentivement.
+mno_request_shelter|Demander à entrer dans le château.
+mno_request_meeting_commander|Demander une entrevue avec le comandant.
+mno_guard_leave|Quitter.
+menu_castle_entry_granted|Après un court instant, les gardes vous ouvrent les portes et autorisent votre groupe à entrer.
+mno_continue|Continuer...
+menu_castle_entry_denied|Le seigneur de ce château vous a interdit de pénétrer dans l'enceinte de ses murs et le sergent des gardes vous informe que ses hommes feront feu si vous approchez davantage.
+mno_continue|Continuer...
+menu_castle_meeting|Avec qui souhaitez-vous vous entretenir ?
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_guard_meet_s5|{s5}.
+mno_forget_it|Oublier ceci.
+menu_castle_meeting_selected|Votre demande d'entrevue est transmise, et finalement {s6} apparaît dans la cour pour parler avec vous.
+mno_continue|Continuer...
+menu_castle_besiege|Vous assiégez {s1}. {s2} {s3}
+mno_change_commander_castle_besiege|Changement de commandant.(Current commander: {s7})
+mno_siege_attack_plan|Planifiez votre assaut.
+mno_siege_request_meeting|Demander une entrevue avec le commandant du château.
+mno_wait_24_hours|Attendre jusqu'à demain.
+mno_castle_lead_attack|Menez vos soldats à l'attaque.
+mno_attack_stay_back|Donnez l'ordre à vos soldats d'attaquer tandis que vous restez en retrait...
+mno_build_ladders|Préparer les échelles pour attaquer les remparts.
+mno_build_siege_tower|Construire une tour de siège.
+mno_lift_siege|Abandonner le siège.
+menu_siege_attack_meets_sally|Les défenseurs bondissent de nul part pour contrer votre assaut. 
+mno_continue|Continuer...
+menu_castle_besiege_inner_battle|{s1}
+mno_continue|Continuer...
+menu_construct_ladders|En tant que membre du groupe détenant le niveau le plus élevé de la compétence Ingénierie ({reg2}), {reg3?vous estimez :{s3} estime} que cela prendra {reg4} heures pour construire assez d'échelles pour l'assaut. 
+mno_build_ladders_cont|Commencer.
+mno_go_back|Retour.
+menu_construct_siege_tower|En tant que membre du groupe détenant le niveau le plus élevé de la compétence Ingénierie ({reg2}), {reg3?vous estimez :{s3} estime} que la construction d'une tour de siège prendra {reg4} heures.
+mno_build_siege_tower_cont|Commencer la construction.
+mno_go_back|Retour.
+menu_castle_attack_walls_simulate|{s4}^^Vos pertes :{s8}^^Les pertes ennemies sont de : {s9}
+mno_continue|Continuer...
+menu_castle_attack_walls_with_allies_simulate|{s4}^^Vos pertes : {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10}
+mno_continue|Continuer...
+menu_castle_taken_by_friends|Rien à voir ici.
+menu_castle_taken|Grâce à la victoire de vos troupes sur {s3}, vous avez désormais la mainmise sur le {reg2?bourg:château}.{reg1? Vous pouvez y poster des troupes pour le défendre des ennemis qui risquent de tenter de le recapturer. Vous devez aussi indiquer si vous souhaitez conserver {reg2?le bourg:le château} pour vous-même ou le confier à un fidèle vassal… :}
+mno_dplmc_spoils_yourself|Piller et garder tout le butin pour vous-même.
+mno_dplmc_spoils_accompanying_vassals|Piller et partager le butin entre les vassaux qui vous accompagnent et vous-même.
+mno_dplmc_spoils_all_vassals|Piller et partager équitablement le butin entre tous les vassaux et vous-même.
+mno_continue|Continuer...
+menu_castle_taken_2|{s3} est tombé sous l'attaque de vos hommes et vous avez à présent le contrôle total du château. Il est temps d'envoyer un message à {s9} pour l'informer de votre victoire. {s5}
+mno_castle_taken_claim|Demander {s3} comme récompense.
+mno_castle_taken_claim_2|Demandez à ce que votre {épouse/époux} reçoive {s3} en guise de récompense.
+mno_castle_taken_no_claim|Ne demander aucune récompense.
+menu_requested_castle_granted_to_player|Vous recevez un message de votre roi, {s3}.^^ {reg4?Elle:Il} a décidé de vous accorder {s2}{reg3? et le village voisin de {s4}:}, ainsi que tous les titres et revenus qui en découlent, aussi longtemps que tiendra votre serment d'allégeance envers {reg4?elle:lui}.
+mno_continue|Continuer...
+menu_requested_castle_granted_to_player_husband|Vous recevez un message de votre suzerain, {s3}.^^ {reg4?Elle:Il} a décidé d'accorder {s2}{reg3? et le village voisin de {s4}:} à votre mari, {s7}.
+mno_continue|Continuer...
+menu_requested_castle_granted_to_another|Vous recevez un message de la part de votre monarque, {s3}. ^^ Je fus ravi d'entendre parler de vos valeureux efforts concernant la capture de {s2}.Votre victoire a rempli nos coeurs de joie. Vous m'avez également demandé de vous donner le contrôle du château, mais c'est une faveur à laquelle je ne peux répondre favorablement, puisque vous détenez déjà des propriétés dans mon royaume. À la place, je vous ai envoyé {reg6} écus pour couvrir les dépenses de votre campagne, mais {s2} reviendra a {s5}. 
+mno_accept_decision|Accepter la décision.
+mno_leave_faction|Vous avez été trompé! Renoncez à votre serment et à votre allégeance!
+menu_requested_castle_granted_to_another_female|Vous recevez un message de votre monarque, {s3}.^^ ""J'ai eu vent des exploits que vous avez accomplis lors de la capture de {s2}. Votre victoire a mis nos coeurs en joie. Vous m'avez également demandé d'accorder le titre de propriété du château à votre mari, mais il s'agit-là d'une faveur à laquelle je ne puis répondre favorablement, car votre époux possède déjà des propriétés dans mon royaume. Je vous ai envoyé {reg6} écus pour couvrir vos dépenses de campagne et je vais confier {s2} à {s5}"". 
+mno_accept_decision|Accepter la décision.
+menu_leave_faction|Rompre votre serment constitue un acte grave. Votre seigneur peut vous condamner et vous confisquer vos terres ainsi que vos possessions. Cependant, si vous les rendez de votre plein gré, il se peut qu'il ne tienne pas compte de votre trahison et que vous ne subissiez pas de représailles.
+mno_leave_faction_give_back|Renoncez au serment que vous avez prêté et abandonnez vos possessions.
+mno_leave_faction_hold|Renoncez au serment que vous avez prêté pour régner sur vos propres terres, y compris {s2}.
+mno_leave_faction_cancel|Rester loyal et accepter la décision.
+menu_give_center_to_player|Votre seigneur vous propose d'agrandir vos fiefs ! {s1} vous fait savoir qu'il est disposé à vous céder {s2} en guise de paiement pour vos loyaux services, en plus de vos propres possessions. Quelle est votre réponse ? 
+mno_give_center_to_player_accept|Accepter l'offre.
+mno_give_center_to_player_reject|Rejeter l'offre. Vous n'avez aucun intérêt à détenir {s2}.
+menu_give_center_to_player_2|Lors d'une brève cérémonie, vous avez été officiellement déclaré nouveau seigneur de {s2}{reg3? et du village {s4}qui lui est rattaché:}. {reg3?Ils constitueront:Il constituera} une bonne partie de l'ensemble de vos fiefs. Vous pouvez à présent réclamer vos rentes et revenus provenant de vos propriétés personnelles, détacher des soldats de la populace et gérer les terres à votre convenance. Cependant, il vous appartient également de défendre votre fief et ses habitants des attaques ainsi que de faire respecter les règles de lois et d'ordre.
+mno_continue|Continuer...
+menu_oath_fulfilled|Vous êtes sous contrat avec {s1} en tant que mercenaire,et vous devez le servir pendant une certaine période. Votre contrat est à présent arrivé à terme. Que désirez-vous faire ?
+mno_renew_oath|Renouveler votre contrat avec {s1} pour un autre mois.
+mno_dont_renew_oath|Libérez-vous de vos obligations.
+menu_siege_started_defender|{s1} lance un assaut contre les remparts de {s2}. Vous avez {reg10} soldat(s) aptes à combattre les {reg11} soldat(s) ennemies. Vous décidez de...
+mno_change_commander_siege_defender|Changement de commandant.(Current commander: {s7})
+mno_dplmc_negotiate_with_besieger|Négocier avec l'assiégeant.
+mno_siege_defender_join_battle|Rejoindre la bataille.
+mno_siege_defender_troops_join_battle|Donner l'ordre à vos soldats de se joindre à la bataille sans vous.
+menu_siege_join_defense|{s4}^^Vos pertes : {s8}^^Pertes alliées : {s9}^^Pertes ennemies : {s10}
+mno_continue|Continuer...
+menu_enter_your_own_castle|Alors que vous vous approchez, vous êtes repéré par les gardes du château, qui vous souhaitent la bienvenue et ouvrent les portes pour leur {seigneur/dame}.  
+mno_continue|Continuer...
+menu_village|{s10}{s11}{s6}{s7}
+mno_auto_sell|Automatiquement vendre des objets.
+mno_auto_buy_food|Automatiquement acheter de la nourriture.
+mno_Meet_with_village_elder|Rencontrer l'ancien du village.
+mno_village_manage|Gérer ce village.
+mno_recruit_volunteers|Recruter des volontaires.
+mno_village_center|Se rendre dans le centre du village.
+mno_village_center_door|Vers le centre du village.
+mno_village_buy_food|Acheter des provisions auprès des paysans.
+mno_village_attack_bandits|Attaquer les bandits.
+mno_village_wait|Se reposer ici quelque temps.
+mno_dplmc_village_counter_insurgency|Contrer l'insurrection.
+mno_dplmc_village_negotiate|Entamer les négociations.
+mno_collect_taxes_qst|{reg5?Continuer de collecter les impôts:Collecter les impôts} dûs à {s1}.
+mno_train_peasants_against_bandits_qst|Entraîner les paysans.
+mno_village_hostile_action|Entreprendre une action hostile.
+mno_village_leave|Quitter...
+menu_village_hostile_action|Quelle action souhaitez-vous entreprendre ?
+mno_village_take_food|Forcer les paysans à vous donner des provisions.
+mno_village_steal_cattle|Voler le bétail.
+mno_village_loot|Pillez le village et rasez-le.
+mno_forget_it|Oublier ceci.
+menu_recruit_volunteers|{s18}
+mno_continue_not_enough_gold|Je n'ai pas assez d'argent...
+mno_continue|Continuer...
+mno_recruit_them|Les recruter pour ({reg6} écus).
+mno_recruit_them_patrol|Recruter ({reg6} écus).
+mno_forget_it|Oublier ceci.
+menu_village_hunt_down_fugitive_defeated|Un coup violent assené par un prisonnier vous envoie au sol, votre vision se trouble et s'assombrit. Le temps s'écoule. Lorsque vous ouvrez à nouveau les yeux, vous réalisez que vous avez été battu et couvert de sang, mais vous ne mourrez heureusement pas de vos blessures.
+mno_continue|Continuer...
+menu_village_infest_bandits_result|{s9}
+mno_continue|Continuer...
+menu_village_infestation_removed|Dans une bataille digne d'une chanson, vous et vos hommes chassez les bandits du village, le mettant à l'abri du danger une fois de plus. Les villageois n'ont plus beaucoup à offrir en terme de richesse après leur calvaire, toutefois ils vous offrent tout ce qu'ils peuvent trouver.  
+mno_village_bandits_defeated_accept|Prendre ce qui vous revient de droit.
+mno_village_bandits_defeated_cont|Refuser, déclarant qu'ils ont davantage besoin de ces objets que vous.
+menu_center_manage|{s19}^{reg6?^^Vous construisez actuellement {s7}. La construction sera achevée dans {reg8} jour(s) {reg9?s:}.:}
+mno_castle_recruit_troops|Recruter des troupes.
+mno_castle_sort_troops|Trier les défenseurs.
+mno_center_build_manor|Construire un domaine.
+mno_center_build_fish_pond|Construire un moulin.
+mno_center_build_watch_tower|Construire une tour de guet.
+mno_center_build_school|Construire une école.
+mno_center_build_messenger_post|Construire un poste de messager.
+mno_center_build_prisoner_tower|Construire une tour de prisonnier.
+mno_go_back_dot|Retour.
+menu_center_improve|{s19} En tant que membre du groupe détenant le niveau le plus élevé de la compétence Ingénierie ({reg2}), {reg3?vous estimez :{s3} estime} que la construction de {s4} vous coûtera {reg5} écus et prendra {reg6} jour(s).
+mno_dplmc_improve_cont|Allez-y. (Pay de la trésorerie)
+mno_improve_cont|Continuer.
+mno_forget_it|Oublier ceci.
+mno_improve_not_enough_gold|Je n'ai pas assez d'argent pour cela.
+menu_town_bandits_failed|{s4} {s5}
+mno_continue|Continuer...
+menu_town_bandits_succeeded|Les bandits tombent devant vous comme le blé sous une faux ! Vous vous retrouvez rapidement seul dans les rues tandis que la plupart de vos assaillants gisent par terre inconscients, morts ou mourants. En fouillant les corps, vous trouvez une bourse qui doit avoir appartenu à l'une des précédentes victimes de ces brutes. Ou peut-être, elle fut donnée par quelqu'un qui voulait s'assurer que vous passiez de vie à trépas.   
+mno_continue|Continuer...
+menu_village_steal_cattle_confirm|En tant que membre du groupe détenant le niveau le plus élevé de la compétence Pillage ({reg2}), {reg3?vous estimez :{s1} estime} que vous pouvez voler pas moins de {reg4} têtes du troupeau de ce village.
+mno_village_steal_cattle_confirm|Continuer.
+mno_forget_it|Oublier ceci.
+menu_village_steal_cattle|{s1}
+mno_continue|Continuer...
+menu_village_take_food_confirm|Il sera difficile de forcer les paysans à vous donnez leurs précieuses provisions en les menaçant. Vous pensez qu'il vous faudra au moins une heure.
+mno_village_take_food_confirm|Continuer.
+mno_forget_it|Oublier ceci.
+menu_village_take_food|Les villageois vous ont remis à contre-coeur ce qu'ils possédaient.
+mno_take_supplies|Prendre les provisions.
+mno_let_them_keep_it|Qu'ils les gardent !.
+menu_village_start_attack|Certains des villageois en colère saisissent leurs outils et se préparent à la résistance. On dirait que vous allez avoir une bataille sur les bras si vous continuez.
+mno_village_raid_attack|Les charger.
+mno_village_raid_leave|Laisser ce village en paix.
+menu_village_loot_no_resist|Les villageois terrifiés se dispersent rapidement à la seule vue de vos troupes. ^Le village est à votre merci.
+mno_village_loot|Pillez le village et rasez-le.
+mno_village_raid_leave|Laisser ce village en paix.
+menu_village_loot_complete|Vos hommes ont mis à sac le village sur vos ordres, pillant tout ce qu'ils trouvent avant de mettre le feu aux bâtiments avec leur torche. Les pièces et les objets de valeurs qui sont trouvés vous rapportent {reg1} écus. 
+mno_continue|Continuer...
+menu_village_loot_defeat|Combattant avec courage et détermination, les villageois parviennent à s'unir et à expulser vos forces.
+mno_continue|Continuer...
+menu_village_loot_continue|Voulez-vous continuer à piller ce village ?
+mno_disembark_yes|Oui.
+mno_disembark_no|Non.
+menu_close|Rien.
+menu_town|{s10}{s11}{s12}{s13}
+mno_castle_castle|Se rendre à la grande salle {s1}.
+mno_castle_castle_door|Vers le château.
+mno_join_tournament|Rejoindre le tournoi.
+mno_town_castle|Se rendre au château {s1}.
+mno_town_castle_door|Vers le château.
+mno_town_center|[Quartier] Se balader sur la place principale.
+mno_town_center_door|Vers le centre du bourg.
+mno_town_tavern|Visiter la taverne.
+mno_town_tavern_door|Vers la taverne.
+mno_town_merchant|Parler avec le marchand.
+mno_town_merchant_door|Vers la boutique.
+mno_town_arena|Entrer dans l'arène.
+mno_town_arena_door|Vers l'arène.
+mno_town_dungeon|entrer dans les geôles
+mno_town_dungeon_door|Vers le donjon.
+mno_castle_inspect|Se promener dans la cour.
+mno_castle_inspect_door|Vers la cour du château.
+mno_town_enterprise|Visitez votre {s3}.
+mno_town_enterprise_door|Votre {s3}
+mno_visit_lady|Tenter de rendre visite à une dame
+mno_visit_lady_door|Vers le jardin.
+mno_meet_with_guild_master|Rencontre avec le maître de guilde.
+mno_trade_with_merchants|Se rendre à la place du marché.
+mno_walled_center_manage|Gérer ce {reg0?bourg:château}.
+mno_walled_center_move_court|Déplacez votre cour ici.
+mno_castle_station_troops|Poster une garnison ici...
+mno_castle_wait|Se reposer ici quelque temps{s1}.
+mno_collect_taxes_qst|{reg5?Continuer de collecter les impôts:Collecter les impôts} dûs à {s1}.
+mno_town_leave|Quitter...
+mno_town_leave_door|Quitter la zone.
+mno_town_cheats_new|Cheat menu.
+menu_cannot_enter_court|On donne actuellement un banquet dans la grande salle, mais votre statut ne vous permet pas d'y assister. Pour vous faire admettre, vous devez acquérir une certaine renommée... ou tenter de vous faire remarquer lors d'un tournoi.
+mno_continue|Continuer...
+menu_lady_visit|À qui voulez-vous rendre visite ?
+mno_visit_lady_1|Rendre visite à {s12}
+mno_visit_lady_2|Rendre visite à {s12}
+mno_visit_lady_3|Rendre visite à {s12}
+mno_visit_lady_3_door|Vers le jardin.
+mno_visit_lady_4|Rendre visite à {s12}
+mno_visit_lady_5|Rendre visite à {s12}
+mno_visit_lady_6|Rendre visite à {s12}
 mno_visit_lady_7|Visitez {s12}
 mno_visit_lady_8|Visitez {s12}
+mno_leave|Sortir
 menu_town_tournament_lost|Vous avez été {éliminé/éliminée} du tournoi.{s8}
-menu_tournois_lost|Vous etes éliminé du tournoi.{s53}
-menu_town_tournament_victoire|Vous avez remporté le tournoi ! sans compter la gloire que cela vous procure, vous gagnez la somme du grand prix qui s'éleve a {reg15} écus, et un objet de valeur vous est offert par le seigneur organisateur. {s58}
-mno_continue_t|Continuer.
-menu_town_tournament_won|Vous avez gagné le tournoi de {s3} ! Vous êtes le champion ! Une certaine fierté monte en vous lorsque la foule scande votre nom. En plus de l'honneur, de la célébrité et de la gloire, vous recevez un prix de {reg9} écus. {s8} 
-menu_town_tournament_won_by_another|Étant {reg3?la seule femme invaincue:le seul homme invaincu} en ce jour, {s1} remporte le tournoi, et la gloire qui l'accompagne. 
-menu_town_tournament_autre_vainqueur|Le vainqueur du tournoi est : {s54}.
-menu_town_tournament_pay|{s28}
-mno_tournament_pay1|Payer la somme.
-mno_tournament_pay2|Quitter le Tournoi.
-menu_town_tournament_choice|Choisissez une catégorie
-mno_tournament_reglement1|Lire le réglement des Joutes.
-mno_cat1|Groupe A : Joute a la lance et a cheval.
-mno_cat2|Groupe B :Joute a pied et a l'épée.
-mno_continue4|Se retirer du Tournoi.
-menu_town_tournament|{s1}Vous êtes au tour {reg0} du tournoi. Il reste {reg1} participants encore en lice.
-mno_tournament_reglement|Lire le réglement des Joutes.
-mno_tournament_view_participants|Voir les participants 
-mno_tournament_join_next_fight|Combattre 
-mno_leave_tournament|Se retirer du tournoi 
-menu_town_tournament_joutes|{s29}
-mno_tournament_join_next_fight_cheval|Rejoindre la piste.
-menu_town_tournament_joutes_a_pieds|{s29}
-mno_tournament_join_next_fight_a_pied|Rejoindre la piste.
-menu_tournament_participants_a_pied|Liste des jouteurs encore en lice:^{s32}
-mno_go_back_dot_apied|Revenir au tournoi.
-menu_tournament_withdraw_verify|Êtes-vous certain de vouloir vous retirer du tournoi ? 
-mno_tournament_withdraw_yes|Oui, il n'est plus possible de remporter ce tournoi ! 
-mno_tournament_withdraw_no|Non, pas tant qu'il reste une chance de victoire ! 
-menu_tournament_withdraw_verify_a_cheval_a_pied|Etes vous sur de vouloir quitter le Tournoi ?
-menu_tournament_withdraw_verify_a_cheval|Etes vous sur de vouloir quitter le Tournoi ?
-menu_tournament_withdraw_verify_a_cheval_joute|Etes vous sur de vouloir quitter le Tournoi ?
-menu_reglement_joutes_entree|Réglement des joutes.^^Le Jouteur devra commencer par choisir une catégorie: joutes a la lance et a cheval ou joute a pied et a l'épée.^^    Réglement des joutes a cheval.^     Les deux jouteurs se faisant face dans leur couloir devrons renverser leur adversaire en le frappant de sa lance.^     Les jouteurs ne devrons point blésser le cheval du concurrent sous peine d'estre disqualifié.^     Si personne ne chute, la joute sera déclarée nule.^     Le Jouteur est contraint de s'en tenire aux régles courtoises de la Chevalerie et de la noble Jouste.^^La somme en écus du grand prix revenant au vainqueur est défini par le Seigneur organisateur, il lui sera aussi remis un trophé de valeur.
-menu_reglement_joutes|Réglement des joutes.^^Le Jouteur devra commencer par choisir une catégorie: joutes a la lance et a cheval ou joute a pied et a l'épée.^^    Réglement des joutes a cheval.^     Les deux jouteurs se faisant face dans leur couloir devrons renverser leur adversaire en le frappant de sa lance.^     Les jouteurs ne devrons point blésser le cheval du concurrent sous peine d'estre disqualifié.^     Si personne ne chute, la joute sera déclarée nule.^     Le Jouteur est contraint de s'en tenire aux régles courtoises de la Chevalerie et de la noble Jouste.^^La somme en écus du grand prix revenant au vainqueur est défini par le Seigneur organisateur, il lui sera aussi remis un trophé de valeur.
-menu_reglement_joutes_cheval|Réglement des joutes.^^Le Jouteur devra commencer par choisir une catégorie: joutes a la lance et a cheval ou joute a pied et a l'épée.^^    Réglement des joutes a cheval.^     Les deux jouteurs se faisant face dans leur couloir devrons renverser leur adversaire en le frappant de sa lance.^     Les jouteurs ne devrons point blésser le cheval du concurrent sous peine d'estre disqualifié.^     Si personne ne chute, la joute sera déclarée nule.^     Le Jouteur est contraint de s'en tenire aux régles courtoises de la Chevalerie et de la noble Jouste.^^La somme en écus du grand prix revenant au vainqueur est défini par le Seigneur organisateur, il lui sera aussi remis un trophé de valeur.
-menu_tournament_participants|Vous demandez à l'un des annonceurs les noms des participants du tournoi. Il y a : ^{s11} 
-menu_tournament_participants_cheval|Liste des jouteurs encore en lice:^{s32}
-menu_collect_taxes|{reg3?Selon vous:Selon {s1}}, collecter les impôts ici prendra {reg4} jours. 
-mno_start_collecting|Commencer la collecte 
-mno_collect_later|La remettre à plus tard 
-menu_collect_taxes_complete|Les impôts que vous avez perçus à {s3} s'élèvent à {reg3} écus. {s19} s'attend certainement à ce que vous les lui ameniez dès que possible. 
-menu_collect_taxes_rebels_killed|La rapidité de votre action et votre puissance de frappe mettent un terme à la révolte. Quiconque ayant à l'esprit de se rebeller contre vous y repensera certainement à deux fois.
-menu_collect_taxes_failed|Vous n'aviez collecté que {reg3} écus d'impôts à {s3} avant que la révolte n'éclate. {s1} n'appréciera pas du tout, mais quelques pièces l'apaiseront davantage que rien du tout.
-menu_collect_taxes_revolt_warning|La population de {s3} est révoltée par vos demandes et les qualifie d'extorsion, ni plus ni moins. Ils sont très agités et ils pourraient mal réagir si vous continuez à les oppresser.
-mno_continue_collecting_taxes|Payer l'impôt est un devoir ! Poursuivons cette collecte normalement. 
-mno_halve_taxes|Vox populi, vox dei. Réduire de moitié l'impôt ({s1} sera peut-être mécontent) 
-menu_collect_taxes_revolt|Alors que vous collectez les impôts de {s3}, vous êtes interrompu par de nombreux {reg9?paysans:citadins} en colère qui s'approchent de vous, ils protestent contre le montant exorbitant des taxes en brandissant torches et armes. Il semble qu'ils veulent en découdre avec vous ! 
-menu_train_peasants_against_bandits|Selon {reg3?vous:{s1}} ({reg2} en Mentor), il faudra à ces paysans au moins {reg4} heures d'entraînement. 
-mno_make_preparation|Les entraîner
-mno_train_later|Remettre cela à plus tard 
-menu_train_peasants_against_bandits_ready|Vous enseignez aux paysans les bases du combat, de la discipline et de l'obéissance propres à tout soldat. Vous pensez que {reg0} d'entre-eux {reg1?est prêt:sont prêts} à passer à la pratique.
-mno_peasant_start_practice|Entamer les exercices de combat 
-menu_train_peasants_against_bandits_training_result|{s0} 
-menu_train_peasants_against_bandits_attack|Alors que vous vous apprêtiez à poursuivre l'entraînement, une sentinelle du village court vers vous en criant. Des bandits ont été aperçus se dirigeant droit sur {s3}. L'ancien du village vous demande d'organiser la défense à l'aide de la milice nouvellement formée. 
-mno_peasants_against_bandits_attack_resist|Se préparer au combat ! 
-menu_train_peasants_against_bandits_attack_result|{s9} 
-menu_train_peasants_against_bandits_success|Les bandits sont vaincus ! Les quelques survivants s'enfuient la queue entre les jambes, terrifiés par les paysans et leur nouveau champion. Les villageois n'ont plus beaucoup à vous offrir après leur long calvaire, mais ils vous donnent tout ce qu'ils trouvent pour vous montrer leur gratitude !
-menu_disembark|Souhaitez-vous débarquer ?
-menu_ship_reembark|Souhaitez-vous embarquer ?
-mno_reembark_yes|Oui
-mno_reembark_no|Non
-menu_center_reports|{s1}^Revenus : {reg1} écus^Rentrée des taxes : {reg2} écus^Réserves de nourriture suffisantes pour {reg3} jours.
-mno_to_price_and_productions|Afficher les prix et les productions
-menu_price_and_production|Biens produits :^{s1}^^Facteurs de prix :^{s2} 
-menu_town_trade|Se diriger vers la place du marché 
-mno_assess_prices|Évaluer les opportunités commerciales 
-mno_trade_with_arms_merchant|Commercer avec le forgeron 
-mno_trade_with_armor_merchant|Traiter avec l'armurier 
-mno_trade_with_horse_merchant|Marchander avec le marchand de chevaux 
-mno_trade_with_goods_merchant|Faire affaire avec le grossiste 
-mno_back_to_town_menu|Faire demi-tour 
-menu_town_trade_assessment_begin|Vous surprenez plusieurs discussions au sujet du prix des marchandises dans la région. Vous écoutez attentivement afin de pouvoir réaliser les meilleures affaires. 
-menu_town_trade_assessment|Étant le membre du groupe le plus habitué aux subtilités du commerce ({reg2} en Marchandage), {reg3?vous essayez d'estimer:{s1} essaie d'estimer} les biens les plus rentables. {s2} 
-menu_sneak_into_town_suceeded|Déguisé en pèlerin, vous parvenez à tromper les gardes et à passer les portes. 
-menu_sneak_into_town_caught|Tandis que vous essayez de passer le poste de garde, un des gardes vous reconnaît et vous interpelle ! Vous devez les semer avant que toute la garnison ne s'en mêle. 
-mno_sneak_caught_fight|Essayer de fuir 
-mno_sneak_caught_surrender|Se rendre 
-menu_sneak_into_town_caught_dispersed_guards|Vous semez les gardes et masquez vos traces avant de vous enfuir, égarant habilement vos poursuivants. 
-menu_sneak_into_town_caught_ran_away|Vous réussissez à quitter les lieux. Nul ne semble vous poursuivre. 
-menu_enemy_offer_ransom_for_prisoner|Le {s2} vous offre la somme de {reg12} écus en échange du {s1}. 
-mno_ransom_accept|Accepter l'offre 
-mno_ransom_reject|Refuser l'offre 
-menu_training_ground|Vous approchez un terrain où les gens du coin s'entraînent aux armes. Vous pouvez vous y exercer si vous le souhaitez. 
-mno_camp_trainer|Parler avec le maître d'arme 
-mno_camp_train_melee|Entraînement au corps à corps 
-mno_camp_train_archery|Entraînement aux armes à distance 
-mno_camp_train_mounted|Entraînement à l'équitation 
-mno_train_troops|Demander au Maîstre d'armes d'entrainer vos soldats.
-menu_training_ground_selection_details_melee_1|Combien d'adversaires désirez-vous affronter ? 
-mno_camp_train_melee_num_men_1|Un 
-mno_camp_train_melee_num_men_2|Deux 
-mno_camp_train_melee_num_men_3|Trois 
-mno_camp_train_melee_num_men_4|Quatre 
-menu_training_ground_selection_details_melee_2|Choisissez votre adversaire #{reg1} : 
-mno_training_ground_selection_details_melee_random|Aléatoire 
-menu_training_ground_selection_details_mounted|Avec quel type d'arme souhaitez-vous vous entraîner ? 
-mno_camp_train_mounted_details_1|Arme à une main 
-mno_camp_train_mounted_details_2|Arme d'hast 
-mno_camp_train_mounted_details_3|Arc 
-mno_camp_train_mounted_details_4|Arme de jet 
-menu_training_ground_selection_details_ranged_1|Avec quel type d'arme à distance souhaitez-vous vous entraîner ? 
-mno_camp_train_ranged_weapon_bow|Arc 
-mno_camp_train_ranged_weapon_crossbow|Arbalète 
-mno_camp_train_ranged_weapon_thrown|Couteaux de lancer 
-menu_training_ground_selection_details_ranged_2|A quelle distance voulez-vous vous entraîner ? 
-mno_camp_train_ranged_details_1|10 mètres 
-mno_camp_train_ranged_details_2|20 mètres 
-mno_camp_train_ranged_details_3|30 mètres 
-mno_camp_train_ranged_details_4|40 mètres 
-mno_camp_train_ranged_details_5|50 mètres 
-mno_camp_train_ranged_details_6|60 mètres 
-mno_camp_train_ranged_details_7|70 mètres 
-menu_training_ground_description|{s0} 
-menu_training_ground_training_result|{s7}{s2} 
-menu_marshall_selection_candidate_ask|{s15} désignera bientôt un maréchal pour le {s23}. Certains des seigneurs ont évoqué votre nom comme candidat potentiel. 
-mno_marshall_candidate_accept|Faire savoir au {s15} que vous acceptez la charge de maréchal 
-mno_marshall_candidate_reject|Refuser cette responsabilité
-menu_captivity_avoid_wilderness|Subitement le monde s'assombrit autour de vous. Après plusieurs heures, vous reprenez vos esprits à l'endroit même où vous aviez perdu connaissance. Vos ennemis vous ont sûrement laissé pour mort. Cependant, aucune de vos blessures ne semble grave, et malgré votre état précaire, vous pouvez encore marcher. Vous vous relevez et cherchez autour de vous d'autres survivants. 
-menu_captivity_start_wilderness|stub 
-menu_captivity_start_wilderness_surrender|stub 
-menu_captivity_start_wilderness_defeat|Vous êtes fait prisonnier par l'ennemi. 
-menu_captivity_start_castle_surrender|stub 
-menu_captivity_start_castle_defeat|stub 
-menu_captivity_start_under_siege_defeat|Vous êtes fait prisonnier par l'ennemi. 
-menu_captivity_wilderness_taken_prisoner|Vous êtes fait prisonnier par l'ennemi. 
-menu_captivity_wilderness_check|stub 
-menu_captivity_end_wilderness_escape|Après plusieurs jours de captivité, vous parvenez à tromper la vigilance de vos ennemis et à prendre la fuite ! 
-menu_captivity_castle_taken_prisoner|Les gardes vous encerclent rapidement et ils vous font rendre les armes. Sous les quolibets et les insultes, vous vous retrouvez prisonnier dans les geôles du donjon. 
-menu_captivity_rescue_lord_taken_prisoner|Vous gardez votre déguisement aussi longtemps que possible avant de vous révéler. Les gardes sont furieux et vous rossent violemment avant de vous jeter dans une sombre et froide cellule.
-menu_captivity_castle_check|stub 
-menu_captivity_end_exchanged_with_prisoner|Après des jours d'emprisonnement, l'on vous libère lors d'un échange de prisonniers. 
-menu_captivity_end_propose_ransom|Au bout d'un certain temps, vos geôliers vous font une offre, ils proposent de vous libérer contre une rançon de {reg5} écus. Vous décidez... 
-mno_captivity_end_ransom_accept|D'accepter l'offre 
-mno_captivity_end_ransom_deny|D'attendre une meilleure opportunité 
-menu_captivity_castle_remain|Les jours passent dans la noirceur de votre cellule où vous endurez les tourments de la captivité et le mépris des gardes. 
-menu_kingdom_army_quest_report_to_army|Le seigneur {s8} souhaite que vous rejoignez son ost. Vous devez avoir avec vous au moins {reg13} soldats, ou bien en recruter rapidement si vous n'en avez pas assez. 
-menu_kingdom_army_quest_messenger|Le {s8} souhaite vous confier une mission. Vous devez le rejoindre le plus rapidement possible. 
-menu_kingdom_army_quest_join_siege_order|Le {s8} vous fait savoir que vous devez rejoindre le siège de {s9} afin de préparer l'assaut final. Vos hommes doivent prendre {s9} à n'importe quel prix. 
-menu_kingdom_army_follow_failed|Vous avez désobéi, vous n'avez pas suivi le {s8}. Furieux, il vous fait savoir que votre présence n'est plus souhaitée, et qu'il n'oubliera pas votre attitude de sitôt. 
-menu_invite_player_to_faction_without_center|Vous recevez une offre de vassalité !^^ Le {s8}, {s9}, a dépêché un messager royal pour vous transmettre une invitation signée de sa propre main. Vous aurez l'honneur de devenir son vassal, en retour {s8} vous demande de lui prêter serment d'allégeance et de combattre lors de ses campagnes militaires. Il ne précise pas s'il vous offrira un fief. Un refus risque d'être fort mal pris...
-mno_faction_accept|Accepter ! 
-mno_faction_reject|Décliner l'invitation
-menu_invite_player_to_faction|Vous recevez une offre de vassalité !^^ Le {s8} du {s9} a dépêché un messager royal pour vous transmettre une invitation signée de sa main. Il semblerait qu'il vous fasse l'honneur de devenir son vassal en tant que {seigneur/dame} du {s9} et en retour, le {s8} vous demande de lui prêter serment d'allégeance, et de vous battre à ses côtés lorsque ce sera nécessaire. En outre, il vous accordera le fief de {s2} pour vos loyaux services. Un refus de votre part risque de passer pour une offense...
-menu_invite_player_to_faction_accepted|Le {s3} attend que vous veniez lui prêter serment d'allégeance. Il faut le trouver et jurer de servir sa cause afin de devenir son vassal. {s5}. 
-menu_question_peace_offer|Vous recevez une offre de paix^^{s1} vous offre de faire la paix. Quelle est votre réponse ? 
-mno_peace_offer_accept|Accepter 
-mno_peace_offer_reject|Refuser l'invitation 
-menu_notification_truce_expired|La trêve est caduque^^La trêve entre le {s1} et le {s2} a expiré. 
-menu_notification_feast_quest_expired|{s10} 
-menu_notification_sortie_possible|Ennemis repérés : des ennemis ont été repérés à l'extérieur des remparts de {s4}. Le {s5} et d'autres préparent une sortie à laquelle vous pouvez vous joindre si le cœur vous en dit. 
-menu_notification_casus_belli_expired|Le royaume ne répond pas^^Le {s1} n'a pas répondu aux provocations du {s2}, et les sujets les plus belliqueux du {s3} lui font subir une véritable humiliation...^ 
-menu_notification_lord_defects|Défection : le {s4} a abandonné le {s5} et rejoint le {s7} en emportant ses fiefs. 
-menu_notification_treason_indictment|Inculpation pour trahison^^{s9} 
-menu_notification_border_incident|Incident frontalier^^Vous apprenez que {s9}. Vous ignorez si ces rumeurs sont fondées, mais vous savez que cet incident à priori insignifiant a éveillé les passions au sein du {s4} qui risque d'en profiter pour déclarer la guerre au {s3}...^  
-menu_notification_player_faction_active|Vous possédez à présent vos propres terres, sans dépendre d'aucun royaume. Cela fait de vous un monarque de plein droit dont la cour se trouve provisoirement à {s12}. Mais les autres rois de France ne vont pas tarder à vous considérer comme une menace car, à leurs yeux, un seigneur de la guerre qui parvient à s'emparer d'un trône peut également remettre en question leur propre légitimité.^^À ce stade, vous préférerez peut-être vous engager envers un royaume existant. Si vous choisissez de poursuivre votre voie en tant que monarque souverain, votre priorité doit être d'établir un droit indépendant à régner. Pour ce faire, plusieurs moyens s'offrent à vous : faire un mariage dans une famille de haut rang, recruter de nouveaux seigneurs, diriger vos terres, traiter avec d'autres rois ou envoyer vos compagnons en missions.^^Quel que soit votre choix, la première étape consiste à nommer un premier ministre parmi vos compagnons afin de gérer les affaires d'état. Les compagnons n'ont pas tous les mêmes capacités.^Vous pouvez nommer de nouveaux ministres de temps en temps. Vous pouvez également ordonner le déménagement de votre cour en vous adressant au ministre. 
-mno_appoint_spouse|Nommer votre épouse, {s10}... 
-mno_appoint_npc1|Nommer {s10} 
-mno_appoint_npc2|Nommer {s10} 
-mno_appoint_npc3|Nommer {s10} 
-mno_appoint_npc4|Nommer {s10} 
-mno_appoint_npc5|Nommer {s10} 
-mno_appoint_npc6|Nommer {s10} 
-mno_appoint_npc7|Nommer {s10} 
-mno_appoint_npc8|Nommer {s10} 
-mno_appoint_npc9|Nommer {s10} 
+mno_continue|Continuer...
+menu_town_tournament_won|Vous avez gagné le tournoi de {s3} ! La fierté vous submerge en entendant la foule scander votre nom. En plus de l'honneur, de la notoriété et de la gloire, vous gagnez un prix de {reg9} écus. {s8}
+mno_continue|Continuer...
+menu_town_tournament_won_by_another|Étant le seul {reg3?combattant:homme} à rester toujours invaincu, {s1} gagne les prix et la gloire de ce tournoi.
+mno_continue|Continuer...
+menu_town_tournament|{s1}Vous êtes au pallier {reg0} du tournoi, avec {reg1} participants restants. Dans le prochain tour, il y aura {reg2} équipes, chacune avec {reg3} {reg4?combattants:combattant}.
+mno_tournament_view_participants|Afficher les participants.
+mno_tournament_bet|Pariez sur vous-même.
+mno_tournament_join_next_fight|Se battre au tour suivant.
+mno_leave_tournament|Abandonner le tournoi.
+menu_tournament_withdraw_verify|Êtes-vous sûr de vouloir abandonner le tournoi ?
+mno_tournament_withdraw_yes|Oui. c'est une épreuve qui n'en vaut pas la chandelle.
+mno_tournament_withdraw_no|Non, pas tant qu'il reste une chance de gagner !
+menu_tournament_bet|Votre cote est de {reg5} contre {reg6}. {reg1?Vous avez déjà parié {reg1} écus sur vous-même et si vous gagnez, vous remporterez {reg2} écus.:} ^Combien souhaitez-vous miser ?
+mno_bet_100_denars|120 écus.
+mno_bet_50_denars|60 écus.
+mno_bet_20_denars|30 écus.
+mno_bet_10_denars|20 écus.
+mno_bet_5_denars|10 écus.
+mno_go_back_dot|Retour.
+menu_tournament_bet_confirm|Si vous pariez  {reg1} écus, vous gagnerez {reg2} écus si vous gagner le tournoi. Cela vous convient-il ? 
+mno_tournament_bet_accept|Continuer.
+mno_tournament_bet_cancel|Oublier ceci.
+menu_tournament_participants|Vous demander à l'un des crieurs les noms des participants du tournoi. Ils sont : ^{s11}. 
+mno_go_back_dot|Retour.
+menu_collect_taxes|En tant que membre du groupe détenant le niveau le plus élevé de la compétence Marchandage ({reg2}), {reg3?vous estimez:{s1} estime} que collecter les impôts prendra ici {reg4} jour(s)...
+mno_start_collecting|Commencer la collecte.
+mno_collect_later|La remettre à plus tard.
+menu_collect_taxes_complete|Les impôts que vous avez perçus à {s3} s'élèvent à {reg3} écus. {s19} attendra de vous que vous lui rameniez l'argent.
+mno_continue|Continuer...
+menu_collect_taxes_rebels_killed|La rapidité de votre action et votre puissance de frappe ont réussi à mettre un terme à la révolte. Quiconque ayant à l'esprit de se rebeller contre vous y repensera certainement à deux fois après ceci.
+mno_continue|Continuer...
+menu_collect_taxes_failed|Vous ne pourrez uniquement collecter {reg3} écus concernant les impôts de {s3} avant que la révolte n'éclate. {s1} n'appréciera pas du tout, mais quelques pièces l'apaiseront davantage que rien du tout.
+mno_continue|Continuer...
+menu_collect_taxes_revolt_warning|Le peuple de {s3} est révolté par vos demandes et les qualifie d'extorsion, ni plus ni moins. Ils sont très agités et ils pourraient mal réagir si vous continuez à les oppresser.
+mno_continue_collecting_taxes|Les ignorer et continuer.
+mno_halve_taxes|Accepter de diminuer votre collecte de moitié. ({s1} peut être mécontent)
+menu_collect_taxes_revolt|On vous interrompt lors de la collecte des impôts à {s3}. Un grand groupe {reg9?de paysans:d'habitants} furieux s'avance en criant leur mécontentement au sujet des impôts exorbitants et en agitant des torches et des armes. On dirait qu'ils ont l'intention de vous attaquer !
+mno_continue|Continuer...
+menu_train_peasants_against_bandits|En tant que membre du groupe détenant le niveau le plus élevé de la compétence Mentor ({reg2}), {reg3?vous estimez:{s1} estime} que préparer quelques paysans à l'entraînement prendra {reg4} heure(s). 
+mno_make_preparation|Les entraîner.
+mno_train_later|Le remettre à plus tard.
+menu_train_peasants_against_bandits_ready|Vous faites un cours aux paysans sur les rudiments de la vie d'un soldat, la discipline et l'obéissance. Vous pensez que {reg0} d'entre eux {reg1?ont:a} parfaitement saisi l'entraînement et {reg1?sont:est} prêt(s) pour quelques exercices. 
+mno_peasant_start_practice|Commencer les exercices de combat.
+menu_train_peasants_against_bandits_training_result|{s0}
+mno_continue|Continuer...
+menu_train_peasants_against_bandits_attack|Au moment où vous vous apprêtez à continuer l'entraînement, une sentinelle du village se rue sur vous en criant le signal d'alarme. Les bandits ont été repérés à l'horizon, chevauchant avec détermination vers {s3}. L'ancien vous prie d'organiser votre milice récemment entraînée et de les affronter. 
+mno_peasants_against_bandits_attack_resist|Se préparer à combattre !
+menu_train_peasants_against_bandits_attack_result|{s9}
+mno_continue|Continuer...
+menu_train_peasants_against_bandits_success|Les bandits sont vaincus ! Les quelques survivants s'enfuient la queue entre les jambes, terrifiés par les paysans et leur nouveau champion. Les villageois n'ont plus beaucoup de richesses à vous offrir après leur calvaire, mais ils vous donnent tout ce qu'ils trouvent pour vous montrer leur gratitude.! 
+mno_village_bandits_defeated_accept|Prendre ce qui vous revient de droit.
+mno_village_bandits_defeated_cont|Refuser, déclarant qu'ils ont davantage besoin de ces objets que vous.
+menu_disembark|Souhaitez-vous embarquer ?
+mno_disembark_yes|Oui.
+mno_disembark_no|Non.
+menu_ship_reembark|Souhaitez-vous débarquer ?
+mno_reembark_yes|Oui.
+mno_reembark_no|Non.
+menu_center_reports|Nom du bourg : {s1}^Revenus des rentes : {reg1} écus^Revenus des taxes : {reg2} écus^Réserve de nourriture : pour {reg3} jour(s).
+mno_to_price_and_productions|Afficher les prix et les productions.
+mno_go_back_dot|Retour.
+menu_price_and_production|Les productions sont :^(Remarque : base/modification par matières premières/modification par matériaux plus prospérité)^{s1}^^Les facteurs de prix sont :^{s2}
+mno_go_back_dot|Retour.
+menu_town_trade|Se diriger vers la place du marché.
+mno_assess_prices|Évaluer les prix de la région.
+mno_town_bank|Visite de la banque.
+mno_trade_with_arms_merchant|Faire affaire avec le marchand d'armes.
+mno_trade_with_armor_merchant|Faire affaire avec le marchand d'armures.
+mno_trade_with_horse_merchant|Faire affaire avec le marchand de chevaux.
+mno_trade_with_goods_merchant|Faire affaire avec le marchand de biens.
+mno_auto_buy_food|acheter automatiquement de la nourriture.
+mno_auto_sell|vendre automatiquement des objets.
+mno_back_to_town_menu|Faire demi-tour
+menu_trade_auto_sell_begin|Articles dans l'inventaire des compagnons qui a choisi comme type de vente et leurs prix ci-dessous {reg1} écus sera vendu à {reg2?all merchants:the elder} in current {reg2?town:village} automatiquement. Plus précisément aliments, des biens commerciaux et les livres ne seront jamais vendus. ^ ^ Vous pouvez modifier certains paramètres ici librement.
+mno_continue|Continuer...
+mno_change_settings|Modifier les paramètres.
+mno_go_back|Retour.
+menu_trade_auto_buy_food_begin|Vous povez acheter de la nourriture en fonction de la liste d'achats d'aliments automatiquement. Voulez-vous continuer? ^ ^ Vous pouvez afficher et configurer la liste des courses ici.
+mno_continue|Continuer...
+mno_change_shopping_list_of_food|Configurer la liste des achats d'aliments.
+mno_go_back|Retour.
+menu_town_trade_assessment_begin|Vous surprenez plusieurs conversations au sujet du prix des articles vendus dans la région.^Vous écoutez attentivement pour tenter de négocier les meilleures affaires.
+mno_continue|Continuer...
+mno_go_back|Retour.
+menu_town_trade_assessment|En tant que membre du groupe détenant le niveau le plus élevé de la compétence Marchandage ({reg2}), {reg3?vous tentez de découvrir:{s1} tente de découvrir} les meilleurs produits à marchander. {s2} 
+mno_continue|Continuer...
+menu_sneak_into_town_suceeded|Avec les vêtements d'un pauvre pèlerin sur le dos, vous dupez les gardes et vous dirigez vers le bourg.
+mno_continue|Continuer...
+menu_sneak_into_town_caught|Au moment où vous tentez de passer furtivement, un des gardes vous reconnaît et sonne l'alarme ! Vous devez vous enfuir et passer les portes avant que tous les gardes du bourg ne vous tombent dessus !
+mno_sneak_caught_fight|Essayez de forcer le passage !
+mno_sneak_caught_surrender|Abandonner.
+menu_sneak_into_town_caught_dispersed_guards|Vous expulsez les gardes et ne laissez aucune trace de votre passage avant de vous enfuir, semant aisément vos poursuivants dans le dédale des rues. 
+mno_continue|Continuer...
+menu_sneak_into_town_caught_ran_away|Vous rebroussez chemin et franchissez les portes pour retrouver bientôt la tranquillité de la campagne.{s11}
+mno_continue|Continuer...
+menu_enemy_offer_ransom_for_prisoner|{s2} vous propose une somme de {reg12} écus en argent si vous êtes disposé(e) à lui vendre {s1}.
+mno_ransom_accept|Accepter l'offre.
+mno_ransom_reject|Rejeter l'offre.
+menu_training_ground|Vous approchez un terrain d'entraînement dans lequel vous pouvez vous entraîner aux techniques de combat, quel type d'entraînement voulez-vous faire ? 
+mno_camp_trainer|Parler avec le mentor.
+mno_camp_train_melee|Entraînement au corps à corps.
+mno_camp_train_archery|Entraînement avec des armes à distance.
+mno_camp_train_mounted|Entraînement à cheval.
+mno_leave|Sortir
+menu_training_ground_selection_details_melee_1|Combien d'adversaire(s) désirez-vous affronter ?
+mno_camp_train_melee_num_men_1|Un.
+mno_camp_train_melee_num_men_2|Deux.
+mno_camp_train_melee_num_men_3|Trois.
+mno_camp_train_melee_num_men_4|Quatre.
+mno_go_back_dot|Retour.
+menu_training_ground_selection_details_melee_2|Choisissez votre adversaire #{reg1} :
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_s0|{s0}
+mno_training_ground_selection_details_melee_random|Choisir aléatoirement.
+mno_go_back_dot|Retour.
+menu_training_ground_selection_details_mounted|Avec quelle arme voulez-vous vous entraîner ?
+mno_camp_train_mounted_details_1|Arme à une main.
+mno_camp_train_mounted_details_2|Arme d'hast.
+mno_camp_train_mounted_details_3|Arc.
+mno_camp_train_mounted_details_4|Arme de jet.
+mno_go_back_dot|Retour.
+menu_training_ground_selection_details_ranged_1|Avec quel type d'arme à distance voulez-vous vous entraîner ?
+mno_camp_train_ranged_weapon_bow|Arc et flèches.
+mno_camp_train_ranged_weapon_crossbow|Arbalète.
+mno_camp_train_ranged_weapon_thrown|Couteaux de jet.
+mno_go_back_dot|Retour.
+menu_training_ground_selection_details_ranged_2|À quelle distance voulez-vous vous entraîner ?
+mno_camp_train_ranged_details_1|10 mètres.
+mno_camp_train_ranged_details_2|20 mètres.
+mno_camp_train_ranged_details_3|30 mètres.
+mno_camp_train_ranged_details_4|40 mètres.
+mno_camp_train_ranged_details_5|50 mètres.
+mno_camp_train_ranged_details_6|60 mètres.
+mno_camp_train_ranged_details_7|70 mètres.
+mno_go_back_dot|Retour.
+menu_training_ground_description|{s0}
+mno_continue|Continuer...
+menu_training_ground_training_result|{s7}{s2}
+mno_continue|Continuer...
+menu_marshall_selection_candidate_ask|{s15} choisira bientôt un nouveau maréchal pour {s23}. Certains des seigneurs ont évoqué votre nom comme candidat potentiel. 
+mno_marshall_candidate_accept|Faites savoir à {s15} que vous acceptez de le servir en tant que maréchal.
+mno_marshall_candidate_reject|Dire à tout le monde que vous avez trop de préocupations ces jours-ci.
+menu_captivity_avoid_wilderness|Subitement le monde s'assombrit autour de vous. Après plusieurs heures, vous reprenez vos esprits à l'endroit même où vous étiez. Pour vos ennemis, votre mort était inévitable et ils sont partis en vous abandonnant. Il semble qu'aucune de vos blessures ne soient mortelles et malgré votre état fébrile vous vous apercevez que vous pouvez encore marcher. Vous vous relevez et tentez de rechercher les autres survivants de votre groupe.
+menu_captivity_start_wilderness|combattre
+menu_captivity_start_wilderness_surrender|combattre
+menu_captivity_start_wilderness_defeat|Vous êtes fait prisonnier par l'ennemi.
+menu_captivity_start_castle_surrender|combattre
+menu_captivity_start_castle_defeat|combattre
+menu_captivity_start_under_siege_defeat|Vous êtes fait prisonnier par l'ennemi.
+menu_captivity_wilderness_taken_prisoner|Vous êtes fait prisonnier par l'ennemi.
+mno_continue|Continuer...
+menu_captivity_wilderness_check|combattre
+menu_captivity_end_wilderness_escape|Après des jours difficiles passés en captivité, une occasion se présente à vous et vous vous échappez !
+mno_continue|Continuer...
+menu_captivity_castle_taken_prisoner|Les gardes vous encerclent rapidement et s'emparent de vos armes. C'est avec des jurons et des insultes, qu'ils vous jettent dans le donjon, endroit dans lequel vous passerez votre captivité. 
+mno_continue|Continuer...
+menu_captivity_rescue_lord_taken_prisoner|Vous gardez votre déguisement aussi longtemps que vous possible avant de révéler votre identité. Les gardes sont révoltés et vous battent violemment avant de vous jeter de nouveau dans la geôle pour Dieu seul sait combien de temps.... 
+mno_continue|Continuer...
+menu_captivity_castle_check|combattre
+menu_captivity_end_exchanged_with_prisoner|Après des jours d'emprisonnement, vos geôliers vous libère en échange d'un autre prisonnier.
+mno_continue|Continuer...
+menu_captivity_end_propose_ransom|Vous passez de longues heures dans l'humidité et l'obscurité du donjon, plus que ce que vous ne l'auriez imaginé. Subitement, un des geôliers entre dans votre cellule et vous fait une offre ; il propose de vous libérer en contre partie d'une somme de {reg5} écus provenant de votre fortune secrète. Vous décidez...
+mno_captivity_end_ransom_accept|D'accepter l'offre.
+mno_captivity_end_ransom_deny|De refuser son offre et en attendre une meilleure. 
+menu_captivity_castle_remain|Les jours se suivent dans l'obscurité de votre geôle. Vous les passez du mieux que vous le pouvez, endurant les coups et les jurons des gardes, observant votre corps sous-alimenté et torturé dépérir de plus en plus...  
+mno_continue|Continuer...
+menu_kingdom_army_quest_report_to_army|{s8} vous fait savoir qu'il veut que vous rejoignez sa nouvelle campagne militaire. Vous devez emmener au minimum {reg13} soldats dans l'armée et vous recevez l'ordre d'entraîner plus d'hommes en temps et en heure si vous n'en avez pas suffisamment.
+mno_continue|Continuer...
+menu_kingdom_army_quest_messenger|{s8} vous fait savoir qu'il souhaite parler avec vous au sujet d'une tâche qu'il va vous confier. Il vous demande de venir le voir dès que possible. 
+mno_continue|Continuer...
+menu_kingdom_army_quest_join_siege_order|{s8} vous fait savoir que vous devez rejoindre le siège de {s9} pour préparer un assaut général. Vos hommes doivent prendre {s9} à n'importe quel prix.
+mno_continue|Continuer...
+menu_kingdom_army_follow_failed|Vous n'avez pas suivit {s8}. Le maréchal suppose que vous avez été engagé ailleurs, mais il aurait apprécié votre soutien.
+mno_continue|Continuer...
+menu_invite_player_to_faction_without_center|Vous recevez une offre de vassalité ! ^^ {s8} de {s9} a envoyé un héraut royal vous remettre en main propre une invitation. Il semblerait qu'il vous fasse l'honneur de devenir son vassal en tant que {seigneur/dame} de {s9} et en retour {s8} vous demande de lui prêter serment d'hommage et de vous battre dans ses campagnes militaires, bien qu'il ne vous offre aucune terre ou ni titre. Il sera certainement offensé si vous n'acceptez pas l'offre... 
+mno_faction_accept|Accepter !
+mno_faction_reject|Décliner l'invitation.
+menu_invite_player_to_faction|Vous recevez une offre de vassalité ! ^^ {s8} de {s9} a envoyé un héraut royal pour vous remettre en main propre une invitation. Il semblerait qu'il vous fasse l'honneur de devenir son vassal en tant que {seigneur/dame} de {s9} et en retour {s8} vous demande de lui prêter serment d'hommage, de vous battre dans ses campagnes militaires et vous offre le fief de {s2} pour vos loyaux services. Il sera certainement offensé si vous n'acceptez pas l'offre...
+mno_faction_accept|Accepter !
+mno_faction_reject|Décliner l'invitation.
+menu_invite_player_to_faction_accepted|Pour devenir un vassal, vous devez prêter un serment d'honneur à {s3}. Vous devez le rencontrer en personne et lui prêter serment d'hommage. {s5}
+mno_continue|Continuer...
+menu_question_peace_offer|Vous recevez une proposition de paix ^^{s1} vous propose un accord de paix. Quelle est votre réponse ?
+mno_peace_offer_accept|Accepter.
+mno_dplmc_peace_offer_terms|Dicter les conditions de la paix
+mno_peace_offer_reject|Rejeter.
+menu_notification_truce_expired|La trêve est caduque !^^La trêve entre le {s1} et le {s2} a expiré.
+mno_continue|Continuer...
+menu_notification_feast_quest_expired|{s10}
+mno_continue|Continuer...
+menu_notification_sortie_possible|Ennemis repérés : des ennemis ont été repérés à l'extérieur des remparts de {s4}. {s5} et d'autres préparent une sortie à laquelle vous pouvez vous joindre si le coeur vous en dit.
+mno_continue|Continuer...
+menu_notification_casus_belli_expired|Le royaume ne cède pas !^^{s1} n'a pas riposté aux provocations du {s2}, et les sujets les plus belliqueux du {s3} lui font subir une véritable humiliation.^
+mno_continue|Continuer...
+menu_notification_lord_defects|Défection : {s4} a abandonné {s5} et rejoint {s7} en emportant ses fiefs.
+mno_continue|Continuer...
+menu_notification_treason_indictment|Inculpation pour trahison^^{s9}
+mno_continue|Continuer...
+menu_notification_border_incident|Incident frontalier !^^Vous apprenez que {s9}. Vous ignorez si ces rumeurs sont fondées, mais vous savez que cet incident à priori insignifiant a attisé les anciennes rancœurs au sein du {s4} qui risque d'en profiter pour déclarer la guerre au {s3}, s'il le désire...
+mno_continue|Continuer...
+menu_notification_player_faction_active|Vous possédez à présent vos propres terres, sans dépendre d'aucun royaume. Cela fait de vous un monarque de plein droit dont la cour se trouve provisoirement à {s12}. Mais les autres rois et ducs de la France ne vont pas tarder à vous considérer comme une menace car, à leurs yeux, un seigneur de la guerre qui parvient à s'emparer d'un duché peut également remettre en question leur propre légitimité.^^À ce stade, vous préférerez peut-être vous engager envers un royaume existant. Si vous choisissez de poursuivre votre voie en tant que Duc souverain, votre priorité doit être d'établir un droit indépendant à régner. Pour ce faire, plusieurs moyens s'offrent à vous : faire un mariage dans une famille de haut rang, recruter de nouveaux seigneurs, diriger vos terres, traiter avec d'autres rois ou envoyer vos compagnons en missions.^^Quel que soit votre choix, la première étape consiste à nommer un premier ministre parmi vos compagnons afin de gérer les affaires d'état. Les compagnons n'ont pas tous les mêmes capacités.^Vous pouvez nommer de nouveaux ministres de temps en temps. Vous pouvez également ordonner le déménagement de votre cour en vous adressant au ministre.
+mno_appoint_spouse|Nommer votre épouse, {s10}...
+mno_appoint_npc1|Nommer {s10}
+mno_appoint_npc2|Nommer {s10}
+mno_appoint_npc3|Nommer {s10}
+mno_appoint_npc4|Nommer {s10}
+mno_appoint_npc5|Nommer {s10}
+mno_appoint_npc6|Nommer {s10}
+mno_appoint_npc7|Nommer {s10}
+mno_appoint_npc8|Nommer {s10}
+mno_appoint_npc9|Nommer {s10}
 mno_appoint_npc10|Nommer {s10}
-mno_appoint_npc11|Nommer {s10} 
-mno_appoint_npc12|Nommer {s10} 
-mno_appoint_npc13|Nommer {s10} 
-mno_appoint_npc14|Nommer {s10} 
-mno_appoint_npc15|Nommer {s10} 
-mno_appoint_npc16|Nommer {s10} 
-mno_appoint_default|Nommer un éminent citoyen de la région... 
-menu_minister_confirm|Vous trouverez {s9} à la cour de {s12}. Une consultation régulière évitera l'accumulation des problèmes en suspens qui, à terme, risqueraient de saper votre autorité... 
-menu_notification_court_lost|{s12} 
-menu_notification_player_faction_deactive|Vous ne possédez désormais plus aucune terre. 
-menu_notification_player_wedding_day|{s8} vous informe que les préparatifs de votre mariage à {s10} sont terminés et que votre présence y est expressément attendue. 
-menu_notification_player_kingdom_holds_feast|Le {s8} vous informe que les seigneurs du {s9} se réuniront pour un banquet dans la grande salle de {s10} et que votre présence est vivement souhaitée au sein de cette auguste assemblée. 
-menu_notification_center_under_siege|Le {s3} du {s2} assiège {s1} ! 
-menu_notification_village_raided|Les ennemis ravagent un fief^^{s1} a été pillé par le {s2} du {s3} ! 
-menu_notification_village_raid_started|Votre village est attaqué !^^Le {s2} du {s3} pille {s1}. 
-menu_notification_one_faction_left|France a été conquise par un seul royaume^^Le {s1} est venu à bout de tous ses rivaux et s'est assuré l'hégémonie sur tout le pays. 
-menu_notification_oath_renounced_faction_defeated|Votre ancienne faction a été battue^^Vous avez gagné la bataille contre le {s1} ! Cela met un terme à votre lutte contre eux, elle avait débuté après que vous ayez rompu votre serment d'allégeance. 
-menu_notification_center_lost|Un fief est perdu^^Vous perdez {s1}, c'est maintenant le {s2} qui le possède. 
-menu_notification_troop_left_players_faction|Trahison !^^Le {s1} a quitté le {s2} et rejoint le {s3}. 
-menu_notification_troop_joined_players_faction|Bonne Nouvelle !^^ Le {s1} a quitté le {s2} et rejoint le {s3}. 
-menu_notification_war_declared|Déclaration de guerre^^Le {s1} a déclaré la guerre contre {s2} ! 
-menu_notification_peace_declared|Accord de paix^^Le {s1} et le {s2} ont signé un accord de paix ! 
-menu_notification_faction_defeated|Faction éliminée^^Le {s1} n'est plus ! 
-menu_notification_rebels_switched_to_faction|Succès des rebelles !^^ Vos partisans sont victorieux ! Votre faction a vaincu ses opposants, le {s11} a maintenant {s12} comme souverain. 
-menu_notification_player_should_consult|Votre ministre vous fait savoir que des problèmes couvent dans votre Duché ; à défaut d'être résolus, ceux-ci risquent de saper votre autorité. Vous devriez le consulter au plus vite. 
-menu_notification_player_feast_in_progress|Banquet en préparation^^Votre épouse a entamé les préparatifs d'un banquet dans la grande salle de {s11}. 
-menu_notification_lady_requests_visit|Une vieille femme s'approche de votre groupe et remet à l'un de vos hommes une lettre cachetée à la cire. Elle vous est adressée. Lorsque vous rompez le sceau, vous constatez qu'elle vient de {s15}. Vous lisez : ""Votre dernière visite m'a fait très plaisir. {s14}. Je suis actuellement à {s10}.{s12} 
-mno_continue_2|Tell the woman to inform her mistress that you will come shortly
-mno_continue_3|Tell the woman to inform her mistress that you are indisposed
+mno_appoint_npc11|Nommer {s10}
+mno_appoint_npc12|Nommer {s10}
+mno_appoint_npc13|Nommer {s10}
+mno_appoint_npc14|Nommer {s10}
+mno_appoint_npc15|Nommer {s10}
+mno_appoint_npc16|Nommer {s10}
+mno_appoint_default|Nommer un éminent citoyen de la région...
+menu_minister_confirm|Vous trouverez {s9} à la cour de {s12}. Une consultation régulière évitera l'accumulation des problèmes en suspens qui, à terme, risqueraient de saper votre autorité...
+mno_continue|Continuer...
+menu_notification_court_lost|{s12}
+mno_continue|Continuer...
+menu_notification_player_faction_deactive|Vous ne possédez désormais plus aucune terre.
+mno_continue|Continuer...
+menu_notification_player_wedding_day|{s8} vous informe que les préparatifs de votre mariage à {s10} sont terminés et que votre présence y est expressément attendue.
+mno_continue|Continuer...
+menu_notification_player_kingdom_holds_feast|{s8} vous informe que les seigneurs de {s9} se réuniront pour un banquet dans la grande salle de {s10} et que votre présence est vivement souhaitée au sein de cette auguste assemblée.
+mno_continue|Continuer...
+menu_notification_center_under_siege|{s1} a été assiégé par {s2} de {s3} !
+mno_continue|Continuer...
+menu_notification_village_raided|Les ennemis ont dévasté un fief ^^{s1} a été pillé par {s2} de {s3} !
+mno_continue|Continuer...
+menu_notification_village_raid_started|Votre village est attaqué ! ^^{s2} de {s3} est en train de dévaster {s1}.
+mno_continue|Continuer...
+menu_notification_one_faction_left|La France conquise par un seul royaume^^{s1} a vaincu tous les rivaux et demeure l'unique royaume. 
+mno_continue|Continuer...
+menu_notification_oath_renounced_faction_defeated|Votre ancienne faction a été vaincue^^Vous gagnez la bataille contre {s1} ! Ceci met un terme à votre lutte qui a commencée après avoir renoncé à leur prêter serment. 
+mno_continue|Continuer...
+menu_notification_center_lost|Un domaine a été perdu^^Vous avez perdu {s1} à {s2}.
+mno_continue|Continuer...
+menu_notification_troop_left_players_faction|Trahison !^^{s1} a quitté {s2} et rejoint {s3}.
+mno_continue|Continuer...
+menu_notification_troop_joined_players_faction|Bonne nouvelle^^ {s1} a quitté {s2} et rejoint {s3}.
+mno_continue|Continuer...
+menu_notification_war_declared|Déclaration de guerre !^^{s1} a déclaré la guerre contre le {s2} !
+mno_continue|Continuer...
+menu_notification_peace_declared|Accord de paix^^{s1} et {s2} ont fait la paix !^{s57}
+mno_continue|Continuer...
+menu_notification_faction_defeated|Faction éliminée^^{s1} n'est plus !
+mno_continue|Continuer...
+menu_notification_kingdom_restoration|Restoration^^{s10} have renounced their allegiance to the {s12} and restorated their home kingdom: {s11}.
+mno_continue|Continuer...
+menu_notification_rebels_switched_to_faction|Succès de la rébellion^^ Votre rébellion est victorieuse! Votre faction est à présent la seule à revendiquer le titre de {s11}, avec {s12} comme unique régent.
+mno_continue|Continuer...
+menu_notification_player_should_consult|Votre ministre vous fait savoir que des problèmes couvent dans le royaume ; à défaut d'être résolus, ceux-ci risquent de saper votre autorité. Vous devriez le consulter au plus vite.
+mno_continue|Continuer...
+menu_notification_player_feast_in_progress|Banquet en préparation^^Votre épouse a entamé les préparatifs d'un banquet dans la grande salle de {s11}.
+mno_continue|Continuer...
+menu_notification_lady_requests_visit|Une vieille femme s'approche de votre groupe et remet à l'un de vos hommes une lettre cachetée à la cire. Elle vous est adressée. Lorsque vous rompez le sceau, vous constatez qu'elle vient de {s15}. Vous lisez : ""Votre dernière visite m'a fait très plaisir. {s14}. Je suis actuellement à {s10}.{s12}
+mno_continue_visit_yes|Dire à la femme d'informer sa maîtresse que vous viendrez peu de temps.
+mno_continue_visit_no|Dire à la femme d'informer sa maîtresse que vous êtes malade
 menu_garden|{s12}
-mno_nurse|Aller avec la dame de compagnie / Attendre
+mno_enter|Entrer
 mno_nurse_1|Suivre la dame de compagnie
-menu_kill_local_merchant_begin|Vous apercevez votre cible et la suivez, jusqu'à ce qu'elle s'engage dans une ruelle sombre. C'est le moment ou jamais. 
-menu_debug_alert_from_s65|ALERTE DE DEBUG : {s65} 
-menu_auto_return_to_map|stub 
-menu_bandit_lair|{s3} 
-mno_continue_1|Attaquer le camp... 
-mno_leave_no_attack|Partir... 
-mno_leave_victory|Continuer... 
-mno_leave_defeat|Continuer... 
-menu_notification_player_faction_political_issue_resolved|Après avoir consulté les autres seigneurs du royaume, le {s10} à décidé de donner {s11} au {s12}. 
-menu_notification_player_faction_political_issue_resolved_for_player|Après avoir consulté les autres seigneurs du royaume le {s10} a décidé de vous donner {s11} . Vous pouvez refuser, mais cela voudra probablement dire que vous ne recevrez pas d'autre récompense avant un moment... 
-mno_accept|Accepter cet honneur. 
-mno_decline|Refuser cet honneur. 
-menu_start_phase_3|{s16}^^Vous êtes épuisé, vous trouvez une auberge à {s1}, et vous vous endormez rapidement. Vous vous levez avant l'aube et désireux d'explorer les alentours, vous vous aventurez dans les rues, qui sont encore désertes. Soudain, vous entendez un sinistre bruit. Le bruit d'une épée qu'on sort de son fourreau... 
-menu_start_phase_4|{s11} 
+mno_nurse_2|Attendre près de la source
+mno_leave|Sortir
+menu_kill_local_merchant_begin|Vous apercevez votre victime et la suivez, l'observant au moment où elle tourne dans une allée sombre. C'est peut-être le moment où jamais de l'attaquer. 
+mno_continue|Continuer...
+menu_debug_alert_from_s65|DEBUG ALERT: {s65}
+mno_continue|Continuer...
+menu_auto_return_to_map|combattre
+menu_bandit_lair|{s3}
+mno_continue_1|Attaquer la cachette...
+mno_leave_no_attack|Partir...
+mno_leave_victory|Continuer...
+mno_leave_defeat|Continuer...
+menu_notification_player_faction_political_issue_resolved|Après consultation des paires du royaume, {s10} a décidé de remettre {s11} à {s12}.
+mno_continue|Continuer...
+menu_notification_player_faction_political_issue_resolved_for_player|Après avoir consulté les autres seigneurs du royaume, {s10} a décidé de vous donner {s11}. ^Vous pouvez refuser, mais cela voudra probablement dire que vous ne recevrez pas un autre fief avant un moment.{s12}
+mno_accept|Accepter cet honneur
+mno_decline|Refuser cet honneur
+mno_continue|Continuer...
+menu_start_phase_3|{s16}^^Vous dormez debout lorsque vous entrez dans l'auberge de {s1}. Vous sombrez rapidement dans le sommeil, mais vous vous réveillez avant l'aube, {impatient/impatiente} d'explorer les environs. Vous vous aventurez dans les rues encore désertes. Soudain, vous entendez un bruit qui vous donne froid dans le dos : le crissement d'une lame que l'on retire de son fourreau...
+mno_continue|Continuer...
+menu_start_phase_4|{s11}
+mno_continue|Continuer...
+mno_continue|Continuer...
 menu_lost_tavern_duel|{s11}
-menu_establish_court|Pour établir votre cour à {s4}, une petite rénovation est nécessaire. Vous avez besoin d'outils et de velours. Cela peut prendre du temps pour certains de vos partisans à se reloger ici. On y va ?
+mno_continue|Continuer...
+menu_establish_court|Pour établir votre cour à {s4}, une petite rénovation est nécessaire. Vous avez besoin d'outils et de velours. ^Cela peut prendre du temps pour certains de vos partisans à se reloger ici. ^Êtes-vous prêt ?
 mno_establish|Établir votre cour à {s4}
-menu_notification_relieved_as_marshal|Le {s4} désire vous informer que votre service en tant que maréchal touche à sa fin. En l'honneur de vos vaillants efforts pour le royaume au cours des {reg4} derniers jours, une récompense de {reg5} écus vous est offerte.
-menu_town_recruit_volunteers_2|{s18}
-menu_courtesan_accept|Vous suivez la jeune femme jusqu'a l'auberge. une fois dans la chambre elle se deshabille et vous fait passer du bon temps,vous vous sentez en pleine forme quand c'est fini.
-menu_courtesan_accept_2|Vous suivez la fille jusqu'a un recoin sombre,elle laisse tomber sa robe a ses pieds,et vous passez un bon moment,vous vous sentez en pleine forme quand c'est fini.
-menu_courtesan_accept_3|Vous accompagnez la jeune femme jusqu'a l'ecurie. une fois a l'interieure elle retire ses vetements,vous restez tous les deux un bon moment,vous sentez en pleine forme quand c'est fini.
-menu_courtesan_accept5|Vous suivez la jeune fille jusqu'a la chambre de la taverne. elle semble effectivement douée pour detendre certains de vos muscles, vous vous sentez en pleine forme quand c'est fini.
-menu_pugilat|Vous vous appretez a descendre dans les caves de la taverne, qu'allez vous faire ?
-mno_entrer.|avancer.
-mno_leavx|partir.
-menu_training_horseparis|vous passez un long moment a essayer de comprendre l'art de l'equitation de combat,vous decouvrez des astuces que vous ne soupssoniez pas auparavent,vous repartez avec un douleure aigue au bas du dos, mais plus habile avec les montures plus exigeantes.
-menu_generic_soins|Vous vous allongez et essayez de vous detendre pendant que le pretre soigne vos bléssures,vous finissez par vous endormir dans le calme de l'abbaye,vous vous reveillez peut de temp apres disponible et en pleine forme.
-menu_generic_soins_low|Vous vous maintenez fermement a la table d'operation,pendant que le moine vous recous,heureusement il ne met pas longtemp avant de s'apercevoir qu'il recousais une vielle cicatrice,vous repartez avec la desagreable senssation d'aller encore plus mal qu'avant.
-menu_generic_benire|Vous rassemblez vos hommes et les faites se mettre en rang,tandis que le pretre passe devans chacun d'eux en recitant ses prieres vous sentez la ferveur monter en eux,la fureur se lis dans leurs yeux et ils sont plus determines que jamais a livrer bataille...
-menu_generic_benire_high|Vous rassemblez vos hommes et les faites se mettre en rang,tandis que le pretre passe devans chacun d'eux en recitant ses prieres vous sentez la ferveur monter en eux,la fureur se lis dans leurs yeux et ils sont plus determines que jamais a livrer bataille...
-menu_training_ingenieur|Vous ecoutez attentivement les ensseignements du maitre ingenieur,il vous explique qu'il faut entre autre prendre en compte l'humidite ambiante avant de se servire d'arme a ressort a cordes.
-menu_training_arme_deux_mains|Le maitre d'arme vous aprend toutes les astuces et ruses qu'il conais,vous aprenez a vous servire du poid de l'arme d'une autre facon,afin d'avoir toujours l'avantage sur le champ de bataille.
-menu_training_arme_une_mains|Le maitre d'arme vous aprend toutes les astuces et ruses qu'il conais,vous aprenez a coordonner vos deux bras de facon a toujours avoir l'avantage sur le champ de bataille.
-menu_banner_choix_generique|Que voullez vous faire ?:
-mno_banner_choix_1|Choisir une nouvelle banniere.
-mno_banner_choix_2|Partir.
-menu_start_phase_finale|{s16}^^Vous vous reveillez tres tot dans votre campement l'activité sur le port a proximité vous a tiré de votre someil,vous comptez dans vostre boursse les quelques réserves d'argent que vous avez put dissimuller aux bandits et vous n'avez pratiquement plus de vivres,vous devez a present les gerer au mieux afin de vous equiper et payer une place sur le navire pour achever vostre voyage...
-menu_start_phase_pirates|{s16}^^Vous êtes partis pour une longue expedition sur le fleuve,vous vous apprêtez a vous endormire sur le pont du bateau,quand une fléche en flames viens se ficher sur le mat principale.les pirates du fleuve vous attaquent! defendez vous pour sauver vostre vie!
-menu_start_pirates_victoire|{s16}^^Vous êtes venu a bout des pirates du fleuve,vous jettez les cadavres par dessus bord et reprenez le voyage apres avoir eteint les flames.
-menu_start_pirates_defaite|{s16}^^Les pirates vous on vainus! ils on pris certains de vos objets perssonels et se sont emparés de vostre boursse,vous pouvez vous estimer heureux qu'ils vous es laissé la vie sauve!
-menu_town_Caen_castle_scene|Vous entrez pour rejoindre le banquet,vous vous mellez a la reception et aux invités en scrutant rapidement le moindre recoin a la recherche d'un plan d'action.
-mno_caen_choix_1|Entrer.
-mno_caen_choix_2|Partir.
-menu_choose_armes_caen|Quel type d'arme allez vous choisir ?.
-mno_caens_choix_1|Une arbaléte,je préfére tuer le comte a distance!.
-mno_caens_choix_2|Une épée,pour etre sur que je ne manquerais pas ma cible!
-menu_gordaine_test_failed|Vous avez échoué! retentez votre chance plus tard,apres un entrainement intessif...
-menu_gordaine_test_win|Vous avez passé l'epreuve avec succes! retournez voire l'instructeur.
-menu_tourbatl_loose|Vous etes battu!.
-menu_tourbatl_win|Vous avez vaincu l'instructeur! certains voudrons certainement vous offrire une chope a la taverne du coin!
-menu_lyonbatl_loose|Vous etes battu!.
-menu_lyonbatl_win|Vous avez vaincu l'instructeur! certains voudrons certainement vous offrire une chope a la taverne du coin!
-menu_repaire_vilandr|Le guide déverouille la lourde porte pour vous laisser entrer dans le repaire de Villandrandro.qu'allez vous faire?
-mno_catac_choix_1|Aller au repert des brigands.
-mno_catac_choix_2|Aller a l'entrée.
-mno_catac_choix_3|Quitter les catacombes.
-menu_cata_suiteparis|Vous etes dans les Catacombes de Paris.Vous ne pourez pas en sortire sans trouver un chemin en passant par les portes... vers ou allez vous vous diriger ?
-mno_catac_choix_2a|Aller a la citerne.
-mno_catac_choix_4|Se rendre a la crypte des Ducs.
-mno_catac_choix_5|Attaquer le poste de patrouilles sous terrain Anglois.
-mno_catac_choix_8|Quitter les catacombes.
-menu_camp_craft_type|Que voullez vous fabriquer? (si vous en possédez lez ressources et l'agilité requise)
-mno_camp_craftchoix_a1|Une épée.
-mno_camp_craftchoix_a2|Des carreaux ou des flèches.
-mno_camp_craftchoix_a3|Un bouclier.
-mno_camp_craftchoix_a5|Une arme a distance.
-mno_camp_craftchoix_a6|Une lance.
-mno_camp_craftchoix_a6g|Une armure de plates simple.
-mno_camp_craftchoix_a7|Une objet special.
-mno_camp_craftchoix_a7b|cuisiner pour la troupe.
-mno_camp_craftc_return|retour...
-menu_craft_epee_type|Quelle épée allez vous forger ?
-mno_camp_craftchoix_1|Une épée de Templier.
-mno_camp_craftchoix_2|Une épée Bayeux.
-mno_camp_craftchoix_3|Une épée de chevalier hospitaller.
-mno_camp_craftchoix_4|Une épée de chevalier.
-mno_camp_craftchoix_5|Une épée normande.
-mno_camp_craftchoix_6|Une épée simple.
-mno_camp_craftchoix_7|Une Dague.
-mno_camp_craftchoix_8|Une épée batarde.
-mno_camp_craftchoix_8g|Une épée batarde de guerre.
-mno_camp_craftchoix_9|Une épée a deux mains de Mercenaire.
-mno_camp_craftchoix_10|Une épée a deux mains de Baron.
-mno_camp_craftchoix_12|Une épée a deux mains de Comte.
-menu_craft_fleches_type|Quelle type de flèches allez vous fabriquer ?
-mno_camp_craftchoix_13|Des flèches simples.
-mno_camp_craftchoix_14|Des flèches barbelées.
-mno_camp_craftchoix_15|Des flèches Anglaises.
-mno_camp_craftchoix_16|Des flèches percantes.
-mno_camp_craftchoix_17|Des carreaux d'arbalete simples.
-mno_camp_craftchoix_18|Des carreaux d'arbalete en fer.
-menu_craft_bouclier_type|Voullez vous fabriquer un bouclier en bois ?
-mno_camp_craftchoix_19|Fabriquer.
-menu_craft_arc_type|Quel type d'arme a distance voullez vous confectioner ?
-mno_camp_craftchoix_20|Un Arc court.
-mno_camp_craftchoix_21|Un Arc de chasse.
-mno_camp_craftchoix_22|Un Arc de guerre.
-mno_camp_craftchoix_23|Un Arc long Anglais.
-mno_camp_craftchoix_24|Une arbalète légère.
-mno_camp_craftchoix_25|Une arbalète.
-mno_camp_craftchoix_26|Une arbalète lourde.
-menu_craft_lance_type|Quelle type de lance allez vous fabriquer ?
-mno_camp_craftchoix_27|Une Guisarme.
-mno_camp_craftchoix_28|Une simple baton de bois.
-menu_craft_armor_type|Voullez vous fabriquer une armure de plates ?
-menu_craft_special_type|Quel objet voullez vouz creer?
-mno_camp_craftchoix_z1|Fabriquer du poison!
-mno_camp_craftchoix_z2|Fabriquer une flèche empoisonée.
-mno_camp_craftchoix_z3|Fabriquer un carreau empoisoné.
-mno_camp_craftchoix_z4|Fabriquer une dague empoisonée.
-mno_camp_craftchoix_z33|Fabriquer une une torche
-menu_craft_food_type|Quel repas voullez vous cuisiner ?
-menu_plan_craf|Vous possédez les plans de fabrication suivants:
-mno_plancrt_choix_1|Plan de fabrication d'épées.
-mno_plancrt_choix_2|Plan de fabrication de flèches.
-mno_plancrt_choix_3|Plan de fabrication de carreaux.
-mno_plancrt_choix_4|Plan de fabrication d'un bouclier.
-mno_plancrt_choix_5|Plan de fabrication d'arcs.
-mno_plancrt_choix_6|Plan de fabrication d'arbalètes.
-mno_plancrt_choix_7|Plan de fabrication de lances.
-mno_plancrt_choix_8|Plan de fabrication d'une armure de plates simple.
-mno_plancrt_choix_9|Recette d'une soupe de légumes.
-mno_plancrt_choix_10|Recette de la potée de choux.
-mno_plancrt_choix_11|Recette d'une soupe de poissons.
-mno_plancrt_choix_12|Plan de fabrication de torches.
-mno_camp_craftchoix_return|retour...
-menu_plan_epees|Pour forger une bonne épée,il faut d'abord une enclume et des outils,puis: un lingot de fer pour faire le pomeau,la garde et bien sur la lame,puis du bois et du cuir pour fabriquer la fusée,et pour finire une bonne pierre a aiguiser pour rendre le fil tranchant,selon le niveau d'agilité du forgeron,on peut avec les memes materiaux forger de bien meilleures pieces et les revendre plus cheres,une agilité d'au moin 10 es requise pour pouvoire devenire forgeron.
-mno_camp_craf_return|retour...
-menu_plan_fleches|Pour fabriquer une flèche digne de ce nom,il faut d'abord des outils et une enclume,puis: un lingot de fer,du bois,une plume pour faire l'empennage,et une pierre a aiguiser,plus le fabricant aura d'agilité et plus les flèches et carreaux qu'il fabriquera seront èlabrès,une agilitè d'au moin 6 es requise pour fabriquer des flèches.
-mno_camp_craft2_return|retour...
-menu_plan_careaux|Pour fabriquer un carreau d'arbalète,il faut d'abord des outils et une enclume,puis: un lingot de fer,du bois,une plume pour faire l'empennage,et une pierre a aiguiserplus le fabricant aura d'agilité et plus les flèches et carreaux qu'il fabriquera seront èlabrès,une agilitè d'au moin 8 es requise pour fabriquer des carreaux.
-mno_camp_craft3_return|retour...
-menu_plan_bouclier|Pour faire un solide bouclier en bois,il faut des outils,puis: du bois et du cuir,une agilité de 8 es requise pour fabriquer un bouclier.
-mno_camp_craft4_return|retour...
-menu_plan_arc|Pour fabriquer un bon arc,il faut des outils,puis: du bois,une corde,et du cuir pour la poignée,plus le fabriquant a d'agilité et plus ses arcs seront élaborés,il faut au moin une agilité de 6 pour pouvoire fabriquer un arc.
-mno_camp_craft5_return|retour...
-menu_plan_arbalete|Fabriquer une arbalète n'es point chose aisée,il faut une enclume,des outils,puis: du bois pour fabriquer le corp,un lingot de fer pour faconer le levier de declanchement du tir,l'arc,le mecanisme et bien sur de la corde,plus le fabriquant aura d'agilité et plus les arbaletes qu'ils fabriquera seront élaborées,une agilité d'au moin 8 es requise pour confectioner une arbalete.
-mno_camp_craft6_return|retour...
-menu_plan_lances|Pour fabriquer une lance,il faut une enclume des outils,puis: un lingot de fer pour forger la pointe et du bois,bien sur on peut se passer de fer et d'une enclume pour tailler un simple baton,il faut une agilité de 10 pour pouvoir fabriquer une guisarme,et seulement 6 pour tailler un baton de bois.
-mno_camp_craft7_return|retour...
-menu_plan_armure|En temps normale, seul un maistre forgeron serais capable de faconer une armure de plates compléte de bonne qualité, mais avec beaucoup d'habileté n'importe qui peut avec de la patience et le materiel nescéssaire tenter de fabriquer une bonne armure a condition d'avoire une enclume, des outils , du cuir pour les lanières et du Tissu de laine pour ne pas a avoir a porter le metal a meme la peau.
-menu_plan_soupe|Préparer une soupe de légumes es on ne peut plus simple, il faut un vieux chaudron, des ustenssils de cuisinier, des légumes frais, allumer un feu et laisser mijoter les légumes sans oublier de les éplucher au préalable.
-menu_plan_potee|Pour réussire une potée de choux, il faut d'abord bien choisire son chaudron, bien sur des ustenssils de cuisine, il faudra en suite du choux et des saussices bien juteuses.
-menu_plan_poisson_soup|Une soupe de poisson es assez simple a préparer, il faudra un chaudron, des ustenssils de cuisine, des légumes et bien entendue du poisson.
-menu_plan_torch|Rien n'est plus simple que de confectionner une torche, du bois et du cuir enroul?trempé dans un peut d'huile ferons parfaitement l'affaire.
-menu_camp_brit|Vous etes au camp Anglais decrit par les Rebelles,qu'allez vous faire ?
-mno_camp_atack|Attaquer le camp.
-menu_toul_v|Vous etes au village de Toul,le drapeau noir annoncant la peste flotte encore au dessus des maisons abandonnées,qu'allez vous faire ?
-menu_rebel_verzy|Vous avez découvert le camp Rebelle de la foret de Verzy,qu'allez vous faire ?
-menu_placeforte|Vous approchez de la place forte Bourgignone,qu'allez vous faire ?
-mno_entrer_neutral.|Aller a la place forte.
-menu_tourpins|Vous approchez du repaire des Rebelles dans les ruines de la tour des pins,qu'allez vous faire ?
-menu_catacomb_arived|Aprés une courte marche sans rien y voire vous vous aretez,le brigand enlève le sac sur votre tête et vous dit d'utiliser votre torche,qu'allez vous faire?
-mno_catacomb_choix_1|Rester dans les catacombes.
-mno_catacomb_choix_2|remonter dans les rues.
-menu_fermem|Vous approchez de la ferme du traitre décrite par Villandrandro,qu'allez vous faire ?
-mno_approch.|approcher.
-menu_campchasss|Vous approchez du camp de chasse ou es installé le gouverneur a abattre,qu'allez vous faire ?
-mno_approch_camp.|approcher.
-mno_leav_camp|repartir.
-menu_conffes|Vous vous conffessez...
-menu_chap_fierbois|Vous approchez de la chapelle de sainte Catherine de Fierbois,qu'allez vous faire ?
-menu_chap_fierboientry|Vous entrez dans la chapelle pour vous mettre a la recherche de l'épée, qu'allez vous faire ?
-menu_foret_de_rouen|Vous penetrez dans la foret de Rouen,qu'allez vous faire ?
-menu_camp_cranede_fer|Vous approchez du camp de la compagnie des mercenaires des Cranes de Fer, qu'allez vous faire ?
-mno_approch_camps.|Entrer dans le camp.
-mno_captain_cdf|Parler au Capitaine de la compagnie.
-mno_leav_camps|repartir.
-menu_death_game_over|La Guerre viens de faire une nouvele victime...Vous etes MORT ! !
-mno_end|Terminer...
-menu_castle_recruit_volunteers|{s18}
-menu_fo_braconnier1|Vous approchez de la foret de Levet,qu'allez vous faire ?
-menu_fo_braconnier2|Vous approchez de la foret d'Aurillac,qu'allez vous faire ?
-menu_fo_braconnier3|Vous approchez de la foret de Narbone,qu'allez vous faire ?
-menu_fo_braconnier4|Vous approchez de la foret de Rodez, qu'allez vous faire ?
-menu_fo_braconnier5|Vous approchez de la foret de Arles,qu'allez vous faire ?
-menu_fo_braconnier6|Vous approchez de la foret du Puy,qu'allez vous faire ?
-menu_fo_braconnier7|Vous approchez de la foret de Vierzon,qu'allez vous faire ?
-menu_fo_braconnier8|Vous approchez de la foret de Beaune,qu'allez vous faire ?
-menu_fo_braconnier9|Vous approchez de la foret de Montargis,qu'allez vous faire ?
-menu_fo_braconnier10|Vous approchez de la foret d'Evreux,qu'allez vous faire ?
-menu_fo_braconnier11|Vous approchez de la foret de Guines,qu'allez vous faire ?
-menu_fo_braconnier12|Vous approchez de la foret de Bayeux,qu'allez vous faire ?
-menu_tournois_training|Vous etes sur le terrain d'entrainement aux joutes, qu'allez vous faire ?
-mno_s'entrainer.|s'entrainer.
-menu_auberge1|Vous approchez de l'Auberge, une agréable odeur de gibier roti se dégage de la cheminée, l'endroit semble paisible et reposant, qu'allez vous faire ?
-mno_interrieur|Entrer dans l'Auberge.
-mno_auberge_wait|Dormir a l'Auberge, {s1}.
-mno_vendeur_cheuv1|Parler au vendeur de chevaux.
-mno_vendeur_ca1|Parler au Camelot.
-menu_auberge2|Vous approchez de l'Auberge, une agréable odeur de gibier roti se dégage de la cheminée, l'endroit semble paisible et reposant, qu'allez vous faire ?
-mno_vendeur_cheuv2|Parler au vendeur de chevaux.
-mno_vendeur_ca2|Parler au Camelot.
-menu_auberge3|Vous approchez de l'Auberge, une agréable odeur de gibier roti se dégage de la cheminée, l'endroit semble paisible et reposant, qu'allez vous faire ?
-mno_client_perd|Rechercher le client perdu dans la foret.
-mno_vendeur_cheuv3|Parler au vendeur de chevaux.
-mno_vendeur_ca3|Parler au Camelot.
-menu_auberge4|Vous approchez de l'Auberge, une agréable odeur de gibier roti se dégage de la cheminée, l'endroit semble paisible et reposant, qu'allez vous faire ?
-mno_vendeur_cheuv4|Parler au vendeur de chevaux.
-mno_vendeur_ca4|Parler au Camelot.
-menu_prairie_bourges|Vous approchez des prairies de Bourges a la recherche du cheval, qu'allez vous faire ?
-menu_foret_lorges|Vous approchez de l'entre de la foret de Lorges, qu'allez vous faire ?
-mno_entrer2.|Aller a la croisée.
-mno_entrer3.|Aller au village de la mine.
-mno_entrer4.|Se rendre a la porte du lac.
-mno_entrer5.|Aller au cimetiere.
-menu_abandon_post|Allez vous abandonner votre poste ? la mission sera un échec.
-mno_poste|Retourner a mon poste.
-mno_abandon|Abandonner.
-menu_quintin_siege|Vous approchez du chateau de Quintin assiègé par la compagnie des Cranes de Fer, qu'allez vous faire ?
-mno_attendre|Attendre les armées du Duc qui doivent nous remplacer, [términer la mission et ne plus revenir].
-mno_Approcher|Approcher.
-menu_world_map_soldier|What do you need to do soldier?
-mno_join_commander_battle|Follow the commander into battle.
-mno_enter_town|Enter stationed town.
-mno_commander|Request audience with your commander.
-mno_revolt|Revolt against the commander!
-mno_desert|Desert the army.(keep equipment but lose relations)
-mno_report|Commander's Report
-mno_return_to_duty|Return to duty.
-menu_commander_aud|Your request for a meeting is relayed to your commander's camp, and finally {s6} appears from his tent to speak with you.
-mno_reject_talk_lord|No, nevermind.
-menu_ask_revolt|Are you sure you want to revolt?
-mno_confirm_revolt|Yes, {s6} will be the death of us all, it is time to act!
-mno_reject_revolt|No, I am loyal to {s6}.
-menu_revolt|Do you want to release the prisoners to help your men?
-mno_revolt_prisoners|Yes, I will take the risk for a greater advantage.
-mno_revolt_no_prisoners|No, I don't trust prisoners.
-menu_ask_desert|Do you want to desert?
-mno_confirm_desert|Yes, this is pointless.
-mno_reject_desert|No, I am loyal to my commander.
-menu_desert|While in the army you've made some good friends. Some could possibly follow you.
-mno_desert_party|Try to convince them to follow you.
-mno_desert_alone|No, I have a better chance alone.
-menu_upgrade_path|In recognition of your excellent service, you have been promoted.
-mno_upgrade_path_1|{s66}
-mno_upgrade_path_2|{s67}
-mno_upgrade_path_1_sarge|{s67}
-mno_upgrade_path_2_sarge|{s67}
-mno_upgrade_path_1_captain|{s67}
-mno_upgrade_path_2_captain|{s67}
-menu_freelancer_training_choose|Your Commander has asked you to train. Choose the number of opponents you'd like to face.
-mno_opponent_one|One
-mno_opponent_two|Two
-mno_opponent_three|Three
-mno_opponent_four|Four
-mno_opponent_five|Five
-mno_opponent_six|Six
-mno_opponent_seven|Seven
-mno_opponent_eight|Eight
-mno_reject_training|Reject today's training
-mno_training_wounded|You are too wounded to train.
-menu_freelancer_training_fight|You will be facing {reg5} opponents. Are you ready?
-mno_training_continue|Begin training...
-mno_training_go_back|Choose number of opponents again...
-menu_freelancer_training_conclusion|{s5}
-mno_freelancer_training_finish|Go back to your post...
-menu_freelancer_looters|Your commander has asked {s5} to hunt down looters near the camp.
-mno_looter_accept|Accept this mission
-mno_looter_reject|Reject today's mission.
-mno_looter_wounded|You are too wounded for this mission.
-menu_freelancer_looter_accept|{s5} found the looters nearby. You get ready to attack them.
-mno_looter_attack|Attack them
-mno_looter_attack_with_troops|You and your men attack them.
-menu_freelancer_looter_conclusion|{s5}
-menu_freelancer_bandits|Your commander has asked {s5} to hunt down bandits near the camp.
-mno_bandit_accept|Accept this mission
-mno_bandit_reject|Reject today's mission.
-mno_bandit_wounded|You are too wounded for this mission.
-menu_freelancer_bandit_accept|{s5} found the bandits nearby. You get ready to attack them.
-mno_bandit_attack|Attack them
-mno_bandit_attack_with_troops|You and your men attack them.
-menu_freelancer_bandit_conclusion|{s5}
-mno_freelancer_bandit_finish|Go back to your post...
-menu_freelancer_pacify_troops|You approach your fellow troops...
-mno_pacify_talk|Talk to them...
-menu_freelancer_pacify_duel|You begin your duel with the soldier. Some of the men have gathered to watch...
-mno_pacify_duel_weapons|You pick up a training weapon...
-mno_pacify_duel_fists|You ready your fists...
-menu_choose_scenes_0|Choose a scene: (Page 1 of 65)
-mno_back|Go back.
-mno_next|Next...
-mno_choose_scene_0|assa manoire: indoors
-mno_choose_scene_1|auberge ext 1: generate
-mno_choose_scene_2|auberge ext 2: generate
-mno_choose_scene_3|auberge ext 3: generate
-mno_choose_scene_4|auberge ext 4: generate
-mno_choose_scene_5|auberge inter 1: indoors
-mno_choose_scene_6|auberge inter 2: indoors
-mno_choose_scene_7|auberge inter 3: indoors
-mno_choose_scene_8|auberge inter 4: indoors
-mno_choose_scene_9|bois descerfs: generate|auto entry points
-mno_choose_scene_10|bracon forest1: generate
-mno_choose_scene_11|bracon forest10: generate
-mno_choose_scene_12|bracon forest11: generate
-menu_choose_scenes_13|Choose a scene: (Page 2 of 65)
-mno_previous|Previous...
-mno_choose_scene_13|bracon forest12: generate
-mno_choose_scene_14|bracon forest2: generate
-mno_choose_scene_15|bracon forest3: generate
-mno_choose_scene_16|bracon forest4: generate
-mno_choose_scene_17|bracon forest5: generate
-mno_choose_scene_18|bracon forest6: generate
-mno_choose_scene_19|bracon forest7: generate
-mno_choose_scene_20|bracon forest8: generate
-mno_choose_scene_21|bracon forest9: generate
-mno_choose_scene_22|broceliand auberge inter: indoors
-mno_choose_scene_23|cabane broceliand 1: indoors
-mno_choose_scene_24|camp 19 alley: generate
-mno_choose_scene_25|camp 20 alley: generate
-menu_choose_scenes_26|Choose a scene: (Page 3 of 65)
-mno_choose_scene_26|camp 21 alley: generate
-mno_choose_scene_27|camp 22 alley: generate
-mno_choose_scene_28|camp brit alley: generate
-mno_choose_scene_29|camp chasseur: generate
-mno_choose_scene_30|camp crane defer: generate|auto entry points
-mno_choose_scene_31|camp scene: generate|auto entry points
-mno_choose_scene_32|camp scene horse track: generate|auto entry points
-mno_choose_scene_33|castle 10 exterior: generate
-mno_choose_scene_34|castle 10 interior: indoors
-mno_choose_scene_35|castle 10 prison: indoors
-mno_choose_scene_36|castle 11 exterior: generate
-mno_choose_scene_37|castle 11 interior: indoors
-mno_choose_scene_38|castle 11 prison: indoors
-menu_choose_scenes_39|Choose a scene: (Page 4 of 65)
-mno_choose_scene_39|castle 12 exterior: generate
-mno_choose_scene_40|castle 12 interior: indoors
-mno_choose_scene_41|castle 12 prison: indoors
-mno_choose_scene_42|castle 13 exterior: generate
-mno_choose_scene_43|castle 13 interior: indoors
-mno_choose_scene_44|castle 13 prison: indoors
-mno_choose_scene_45|castle 14 exterior: generate
-mno_choose_scene_46|castle 14 interior: indoors
-mno_choose_scene_47|castle 14 prison: indoors
-mno_choose_scene_48|castle 15 exterior: generate
-mno_choose_scene_49|castle 15 interior: indoors
-mno_choose_scene_50|castle 15 prison: indoors
-mno_choose_scene_51|castle 16 exterior: generate
-menu_choose_scenes_52|Choose a scene: (Page 5 of 65)
-mno_choose_scene_52|castle 16 interior: indoors
-mno_choose_scene_53|castle 16 prison: indoors
-mno_choose_scene_54|castle 17 exterior: generate
-mno_choose_scene_55|castle 17 interior: indoors
-mno_choose_scene_56|castle 17 prison: indoors
-mno_choose_scene_57|castle 18 exterior: generate
-mno_choose_scene_58|castle 18 interior: indoors
-mno_choose_scene_59|castle 18 prison: indoors
-mno_choose_scene_60|castle 19 exterior: generate
-mno_choose_scene_61|castle 19 interior: indoors
-mno_choose_scene_62|castle 19 prison: indoors
-mno_choose_scene_63|castle 1 exterior: generate
-mno_choose_scene_64|castle 1 interior: indoors
-menu_choose_scenes_65|Choose a scene: (Page 6 of 65)
-mno_choose_scene_65|castle 1 prison: indoors
-mno_choose_scene_66|castle 20 exterior: generate
-mno_choose_scene_67|castle 20 interior: indoors
-mno_choose_scene_68|castle 20 prison: indoors
-mno_choose_scene_69|castle 21 exterior: generate
-mno_choose_scene_70|castle 21 interior: indoors
-mno_choose_scene_71|castle 21 prison: indoors
-mno_choose_scene_72|castle 22 exterior: generate
-mno_choose_scene_73|castle 22 interior: indoors
-mno_choose_scene_74|castle 22 prison: indoors
-mno_choose_scene_75|castle 23 exterior: generate
-mno_choose_scene_76|castle 23 interior: indoors
-mno_choose_scene_77|castle 23 prison: indoors
-menu_choose_scenes_78|Choose a scene: (Page 7 of 65)
-mno_choose_scene_78|castle 24 exterior: generate
-mno_choose_scene_79|castle 24 interior: indoors
-mno_choose_scene_80|castle 24 prison: indoors
-mno_choose_scene_81|castle 25 exterior: generate
-mno_choose_scene_82|castle 25 interior: indoors
-mno_choose_scene_83|castle 25 prison: indoors
-mno_choose_scene_84|castle 26 exterior: generate
-mno_choose_scene_85|castle 26 interior: indoors
-mno_choose_scene_86|castle 26 prison: indoors
-mno_choose_scene_87|castle 27 exterior: generate
-mno_choose_scene_88|castle 27 interior: indoors
-mno_choose_scene_89|castle 27 prison: indoors
-mno_choose_scene_90|castle 28 exterior: generate|auto entry points
-menu_choose_scenes_91|Choose a scene: (Page 8 of 65)
-mno_choose_scene_91|castle 28 interior: indoors
-mno_choose_scene_92|castle 28 prison: indoors
-mno_choose_scene_93|castle 29 exterior: generate
-mno_choose_scene_94|castle 29 interior: indoors
-mno_choose_scene_95|castle 29 prison: indoors
-mno_choose_scene_96|castle 2 exterior: generate
-mno_choose_scene_97|castle 2 interior: indoors
-mno_choose_scene_98|castle 2 prison: indoors
-mno_choose_scene_99|castle 30 exterior: generate
-mno_choose_scene_100|castle 30 interior: indoors
-mno_choose_scene_101|castle 30 prison: indoors
-mno_choose_scene_102|castle 31 exterior: generate
-mno_choose_scene_103|castle 31 interior: indoors
-menu_choose_scenes_104|Choose a scene: (Page 9 of 65)
-mno_choose_scene_104|castle 31 prison: indoors
-mno_choose_scene_105|castle 32 exterior: generate
-mno_choose_scene_106|castle 32 interior: indoors
-mno_choose_scene_107|castle 32 prison: indoors
-mno_choose_scene_108|castle 33 exterior: generate
-mno_choose_scene_109|castle 33 interior: indoors
-mno_choose_scene_110|castle 33 prison: indoors
-mno_choose_scene_111|castle 34 exterior: generate
-mno_choose_scene_112|castle 34 interior: indoors
-mno_choose_scene_113|castle 34 prison: indoors
-mno_choose_scene_114|castle 35 exterior: generate
-mno_choose_scene_115|castle 35 interior: indoors
-mno_choose_scene_116|castle 35 prison: indoors
-menu_choose_scenes_117|Choose a scene: (Page 10 of 65)
-mno_choose_scene_117|castle 36 exterior: generate
-mno_choose_scene_118|castle 36 interior: indoors
-mno_choose_scene_119|castle 36 prison: indoors
-mno_choose_scene_120|castle 37 exterior: generate
-mno_choose_scene_121|castle 37 interior: indoors
-mno_choose_scene_122|castle 37 prison: indoors
-mno_choose_scene_123|castle 38 exterior: generate
-mno_choose_scene_124|castle 38 interior: indoors
-mno_choose_scene_125|castle 38 prison: indoors
-mno_choose_scene_126|castle 39 exterior: generate
-mno_choose_scene_127|castle 39 interior: indoors
-mno_choose_scene_128|castle 39 prison: indoors
-mno_choose_scene_129|castle 3 exterior: generate
-menu_choose_scenes_130|Choose a scene: (Page 11 of 65)
-mno_choose_scene_130|castle 3 interior: indoors
-mno_choose_scene_131|castle 3 prison: indoors
-mno_choose_scene_132|castle 40 exterior: generate
-mno_choose_scene_133|castle 40 interior: indoors
-mno_choose_scene_134|castle 40 prison: indoors
-mno_choose_scene_135|castle 41 exterior: generate
-mno_choose_scene_136|castle 41 interior: indoors
-mno_choose_scene_137|castle 41 prison: indoors
-mno_choose_scene_138|castle 42 exterior: generate
-mno_choose_scene_139|castle 42 interior: indoors
-mno_choose_scene_140|castle 42 prison: indoors
-mno_choose_scene_141|castle 43 exterior: generate
-mno_choose_scene_142|castle 43 interior: indoors
-menu_choose_scenes_143|Choose a scene: (Page 12 of 65)
-mno_choose_scene_143|castle 43 prison: indoors
-mno_choose_scene_144|castle 44 exterior: generate
-mno_choose_scene_145|castle 44 interior: indoors
-mno_choose_scene_146|castle 44 prison: indoors
-mno_choose_scene_147|castle 45 exterior: generate
-mno_choose_scene_148|castle 45 interior: indoors
-mno_choose_scene_149|castle 45 prison: indoors
-mno_choose_scene_150|castle 46 exterior: generate
-mno_choose_scene_151|castle 46 interior: indoors
-mno_choose_scene_152|castle 46 prison: indoors
-mno_choose_scene_153|castle 47 exterior: generate
-mno_choose_scene_154|castle 47 interior: indoors
-mno_choose_scene_155|castle 47 prison: indoors
-menu_choose_scenes_156|Choose a scene: (Page 13 of 65)
-mno_choose_scene_156|castle 48 exterior: generate
-mno_choose_scene_157|castle 48 interior: indoors
-mno_choose_scene_158|castle 48 prison: indoors
-mno_choose_scene_159|castle 4 exterior: generate
-mno_choose_scene_160|castle 4 interior: indoors
-mno_choose_scene_161|castle 4 prison: indoors
-mno_choose_scene_162|castle 5 exterior: generate
-mno_choose_scene_163|castle 5 interior: indoors
-mno_choose_scene_164|castle 5 prison: indoors
-mno_choose_scene_165|castle 6 exterior: generate
-mno_choose_scene_166|castle 6 interior: indoors
-mno_choose_scene_167|castle 6 prison: indoors
-mno_choose_scene_168|castle 7 exterior: generate
-menu_choose_scenes_169|Choose a scene: (Page 14 of 65)
-mno_choose_scene_169|castle 7 interior: indoors
-mno_choose_scene_170|castle 7 prison: indoors
-mno_choose_scene_171|castle 8 exterior: generate
-mno_choose_scene_172|castle 8 interior: indoors
-mno_choose_scene_173|castle 8 prison: indoors
-mno_choose_scene_174|castle 9 exterior: generate
-mno_choose_scene_175|castle 9 interior: indoors
-mno_choose_scene_176|castle 9 prison: indoors
-mno_choose_scene_177|castle rennes chat interior: indoors
-mno_choose_scene_178|catacomb crypte: indoors
-mno_choose_scene_179|catacomb entry: indoors
-mno_choose_scene_180|catacomb entville: indoors
-mno_choose_scene_181|catacomb itemcrypt: indoors
-menu_choose_scenes_182|Choose a scene: (Page 15 of 65)
-mno_choose_scene_182|catacomb reperteng: indoors
-mno_choose_scene_183|catacomb reservoir: indoors
-mno_choose_scene_184|catacomb roundcrypt: indoors
-mno_choose_scene_185|chapelle indoor: indoors
-mno_choose_scene_186|chateau panthievre: generate|auto entry points
-mno_choose_scene_187|chateau panthievre cour: generate|auto entry points
-mno_choose_scene_188|conversation scene
-mno_choose_scene_189|dhorak keep: generate
-mno_choose_scene_190|duel scene: generate
-mno_choose_scene_191|enterprise brewery: indoors
-mno_choose_scene_192|enterprise dyeworks: indoors
-mno_choose_scene_193|enterprise linen weavery: indoors
-mno_choose_scene_194|enterprise mill: indoors
-menu_choose_scenes_195|Choose a scene: (Page 16 of 65)
-mno_choose_scene_195|enterprise oil press: indoors
-mno_choose_scene_196|enterprise smithy: indoors
-mno_choose_scene_197|enterprise tannery: generate
-mno_choose_scene_198|enterprise winery: indoors
-mno_choose_scene_199|enterprise wool weavery: indoors
-mno_choose_scene_200|ferm mat: generate
-mno_choose_scene_201|field 1: generate
-mno_choose_scene_202|field 2: generate
-mno_choose_scene_203|field 3: generate
-mno_choose_scene_204|field 4: generate
-mno_choose_scene_205|field 5: generate
-mno_choose_scene_206|fierbois cha: generate
-mno_choose_scene_207|foret neige auberge: generate|auto entry points
-menu_choose_scenes_208|Choose a scene: (Page 17 of 65)
-mno_choose_scene_208|four ways inn: generate
-mno_choose_scene_209|grotte 1: indoors
-mno_choose_scene_210|grotte bandits broceliand lvl 1: indoors
-mno_choose_scene_211|grotte bandits broceliand lvl 2: indoors
-mno_choose_scene_212|grotte bandits sortie: generate|auto entry points
-mno_choose_scene_213|lair desert bandits: generate
-mno_choose_scene_214|lair forest bandits: generate
-mno_choose_scene_215|lair mountain bandits: generate
-mno_choose_scene_216|lair sea raiders: generate
-mno_choose_scene_217|lair steppe bandits: generate
-mno_choose_scene_218|lair taiga bandits: generate
-mno_choose_scene_219|loge de rouen: indoors
-mno_choose_scene_220|maison auberge quete1: indoors
-menu_choose_scenes_221|Choose a scene: (Page 18 of 65)
-mno_choose_scene_221|maison pilotis: generate
-mno_choose_scene_222|maison pilotis2: generate|auto entry points
-mno_choose_scene_223|meeting scene desert
-mno_choose_scene_224|meeting scene desert forest
-mno_choose_scene_225|meeting scene plain
-mno_choose_scene_226|meeting scene plain forest
-mno_choose_scene_227|meeting scene snow
-mno_choose_scene_228|meeting scene snow forest
-mno_choose_scene_229|meeting scene steppe
-mno_choose_scene_230|meeting scene steppe forest
-mno_choose_scene_231|mine fer broceliand lvl 1: indoors
-mno_choose_scene_232|mine fer broceliand lvl 2: indoors
-mno_choose_scene_233|mine fer broceliand lvl 3: indoors
-menu_choose_scenes_234|Choose a scene: (Page 19 of 65)
-mno_choose_scene_234|monastere orl int2: indoors
-mno_choose_scene_235|monastere orl intloge secry: indoors
-mno_choose_scene_236|monastere orleans: generate
-mno_choose_scene_237|monastere orleans int: indoors
-mno_choose_scene_238|multi scene 1: generate
-mno_choose_scene_239|multi scene 10: generate
-mno_choose_scene_240|multi scene 11: generate
-mno_choose_scene_241|multi scene 12: generate
-mno_choose_scene_242|multi scene 13: generate
-mno_choose_scene_243|multi scene 14: generate
-mno_choose_scene_244|multi scene 15: generate
-mno_choose_scene_245|multi scene 16: generate
-mno_choose_scene_246|multi scene 17: generate
-menu_choose_scenes_247|Choose a scene: (Page 20 of 65)
-mno_choose_scene_247|multi scene 18: generate|muddy water
-mno_choose_scene_248|multi scene 2: generate
-mno_choose_scene_249|multi scene 3: generate
-mno_choose_scene_250|multi scene 4: generate
-mno_choose_scene_251|multi scene 5: generate
-mno_choose_scene_252|multi scene 6: generate
-mno_choose_scene_253|multi scene 7: generate
-mno_choose_scene_254|multi scene 8: generate
-mno_choose_scene_255|multi scene 9: generate
-mno_choose_scene_256|multiplayer maps end: generate
-mno_choose_scene_257|novice ground: indoors
-mno_choose_scene_258|p fneutral: generate
-mno_choose_scene_259|p forte: generate
-menu_choose_scenes_260|Choose a scene: (Page 21 of 65)
-mno_choose_scene_260|passage chat panthievre: indoors
-mno_choose_scene_261|pilotis int lac broceliand: indoors
-mno_choose_scene_262|pilotis int rainbow: indoors
-mno_choose_scene_263|prairie bourges: generate|auto entry points
-mno_choose_scene_264|pugilat 1: indoors
-mno_choose_scene_265|pugilat 2: indoors
-mno_choose_scene_266|pugilat 3: indoors
-mno_choose_scene_267|pugilat 4: indoors
-mno_choose_scene_268|quick battle 1: generate
-mno_choose_scene_269|quick battle 2: generate
-mno_choose_scene_270|quick battle 3: generate
-mno_choose_scene_271|quick battle 4: generate
-mno_choose_scene_272|quick battle 5: generate
-menu_choose_scenes_273|Choose a scene: (Page 22 of 65)
-mno_choose_scene_273|quick battle 6: generate
-mno_choose_scene_274|quick battle 7: generate
-mno_choose_scene_275|quick battle maps end: generate
-mno_choose_scene_276|quick battle scene 1: generate
-mno_choose_scene_277|quick battle scene 2: generate
-mno_choose_scene_278|quick battle scene 3: generate
-mno_choose_scene_279|quick battle scene 4: generate
-mno_choose_scene_280|quick battle scene 5: generate
-mno_choose_scene_281|random multi plain large: generate|auto entry points|randomize
-mno_choose_scene_282|random multi plain medium: generate|auto entry points|randomize
-mno_choose_scene_283|random multi steppe large: generate|auto entry points|randomize
-mno_choose_scene_284|random multi steppe medium: generate|auto entry points|randomize
-mno_choose_scene_285|random scene: generate|auto entry points
-menu_choose_scenes_286|Choose a scene: (Page 23 of 65)
-mno_choose_scene_286|random scene desert: generate|auto entry points
-mno_choose_scene_287|random scene desert: generate|auto entry points|randomize
-mno_choose_scene_288|random scene desert custom 1: generate|auto entry points
-mno_choose_scene_289|random scene desert custom 10: generate|auto entry points
-mno_choose_scene_290|random scene desert custom 2: generate|auto entry points
-mno_choose_scene_291|random scene desert custom 3: generate|auto entry points
-mno_choose_scene_292|random scene desert custom 4: generate|auto entry points
-mno_choose_scene_293|random scene desert custom 5: generate|auto entry points
-mno_choose_scene_294|random scene desert custom 6: generate|auto entry points
-mno_choose_scene_295|random scene desert custom 7: generate|auto entry points
-mno_choose_scene_296|random scene desert custom 8: generate|auto entry points
-mno_choose_scene_297|random scene desert custom 9: generate|auto entry points
-mno_choose_scene_298|random scene desert forest: generate|auto entry points
-menu_choose_scenes_299|Choose a scene: (Page 24 of 65)
-mno_choose_scene_299|random scene desert forest: generate|auto entry points|randomize
-mno_choose_scene_300|random scene desert forest custom 1: generate|auto entry points
-mno_choose_scene_301|random scene desert forest custom 2: generate|auto entry points
-mno_choose_scene_302|random scene desert forest custom 3: generate|auto entry points
-mno_choose_scene_303|random scene desert forest custom 4: generate|auto entry points
-mno_choose_scene_304|random scene desert forest custom 5: generate|auto entry points
-mno_choose_scene_305|random scene plain: generate|auto entry points|randomize
-mno_choose_scene_306|random scene plain1: generate|auto entry points
-mno_choose_scene_307|random scene plain10: generate|auto entry points
-mno_choose_scene_308|random scene plain11: generate|auto entry points
-mno_choose_scene_309|random scene plain12: generate|auto entry points
-mno_choose_scene_310|random scene plain13: generate|auto entry points
-mno_choose_scene_311|random scene plain16: generate|auto entry points
-menu_choose_scenes_312|Choose a scene: (Page 25 of 65)
-mno_choose_scene_312|random scene plain17: generate|auto entry points
-mno_choose_scene_313|random scene plain18: generate|auto entry points
-mno_choose_scene_314|random scene plain19: generate|auto entry points
-mno_choose_scene_315|random scene plain2: generate|auto entry points
-mno_choose_scene_316|random scene plain20: generate|auto entry points
-mno_choose_scene_317|random scene plain21: generate|auto entry points
-mno_choose_scene_318|random scene plain22: generate|auto entry points
-mno_choose_scene_319|random scene plain23: generate|auto entry points
-mno_choose_scene_320|random scene plain24: generate|auto entry points
-mno_choose_scene_321|random scene plain3: generate|auto entry points
-mno_choose_scene_322|random scene plain4: generate|auto entry points
-mno_choose_scene_323|random scene plain5: generate|auto entry points
-mno_choose_scene_324|random scene plain6: generate|auto entry points
-menu_choose_scenes_325|Choose a scene: (Page 26 of 65)
-mno_choose_scene_325|random scene plain7: generate|auto entry points
-mno_choose_scene_326|random scene plain8: generate|auto entry points
-mno_choose_scene_327|random scene plain9: generate|auto entry points
-mno_choose_scene_328|random scene plain custom 1: generate|auto entry points
-mno_choose_scene_329|random scene plain custom 10: generate|auto entry points
-mno_choose_scene_330|random scene plain custom 11: generate|auto entry points
-mno_choose_scene_331|random scene plain custom 12: generate|auto entry points
-mno_choose_scene_332|random scene plain custom 13: generate|auto entry points
-mno_choose_scene_333|random scene plain custom 14: generate|auto entry points
-mno_choose_scene_334|random scene plain custom 15: generate|auto entry points
-mno_choose_scene_335|random scene plain custom 16: generate|auto entry points
-mno_choose_scene_336|random scene plain custom 17: generate|auto entry points
-mno_choose_scene_337|random scene plain custom 18: generate|auto entry points
-menu_choose_scenes_338|Choose a scene: (Page 27 of 65)
-mno_choose_scene_338|random scene plain custom 19: generate|auto entry points
-mno_choose_scene_339|random scene plain custom 2: generate|auto entry points
-mno_choose_scene_340|random scene plain custom 20: generate|auto entry points
-mno_choose_scene_341|random scene plain custom 3: generate|auto entry points
-mno_choose_scene_342|random scene plain custom 4: generate|auto entry points
-mno_choose_scene_343|random scene plain custom 5: generate|auto entry points
-mno_choose_scene_344|random scene plain custom 6: generate|auto entry points
-mno_choose_scene_345|random scene plain custom 7: generate|auto entry points
-mno_choose_scene_346|random scene plain custom 8: generate|auto entry points
-mno_choose_scene_347|random scene plain custom 9: generate|auto entry points
-mno_choose_scene_348|random scene plain forest: generate|auto entry points|randomize
-mno_choose_scene_349|random scene plain forest1: generate|auto entry points
-mno_choose_scene_350|random scene plain forest10: generate|auto entry points
-menu_choose_scenes_351|Choose a scene: (Page 28 of 65)
-mno_choose_scene_351|random scene plain forest2: generate|auto entry points
-mno_choose_scene_352|random scene plain forest3: generate|auto entry points
-mno_choose_scene_353|random scene plain forest4: generate|auto entry points
-mno_choose_scene_354|random scene plain forest5: generate|auto entry points
-mno_choose_scene_355|random scene plain forest6: generate|auto entry points
-mno_choose_scene_356|random scene plain forest7: generate|auto entry points
-mno_choose_scene_357|random scene plain forest8: generate|auto entry points
-mno_choose_scene_358|random scene plain forest9: generate|auto entry points
-mno_choose_scene_359|random scene plain forest custom 1: generate|auto entry points
-mno_choose_scene_360|random scene plain forest custom 10: generate|auto entry points
-mno_choose_scene_361|random scene plain forest custom 11: generate|auto entry points
-mno_choose_scene_362|random scene plain forest custom 2: generate|auto entry points
-mno_choose_scene_363|random scene plain forest custom 3: generate|auto entry points
-menu_choose_scenes_364|Choose a scene: (Page 29 of 65)
-mno_choose_scene_364|random scene plain forest custom 4: generate|auto entry points
-mno_choose_scene_365|random scene plain forest custom 5: generate|auto entry points
-mno_choose_scene_366|random scene plain forest custom 6: generate|auto entry points
-mno_choose_scene_367|random scene plain forest custom 7: generate|auto entry points
-mno_choose_scene_368|random scene plain forest custom 8: generate|auto entry points
-mno_choose_scene_369|random scene plain forest custom 9: generate|auto entry points
-mno_choose_scene_370|random scene plain mountain custom 1: generate|auto entry points
-mno_choose_scene_371|random scene plain mountain custom 10: generate|auto entry points
-mno_choose_scene_372|random scene plain mountain custom 2: generate|auto entry points
-mno_choose_scene_373|random scene plain mountain custom 3: generate|auto entry points
-mno_choose_scene_374|random scene plain mountain custom 4: generate|auto entry points
-mno_choose_scene_375|random scene plain mountain custom 5: generate|auto entry points
-mno_choose_scene_376|random scene plain mountain custom 6: generate|auto entry points
-menu_choose_scenes_377|Choose a scene: (Page 30 of 65)
-mno_choose_scene_377|random scene plain mountain custom 7: generate|auto entry points
-mno_choose_scene_378|random scene plain mountain custom 8: generate|auto entry points
-mno_choose_scene_379|random scene plain mountain custom 9: generate|auto entry points
-mno_choose_scene_380|random scene plain river custom 1: generate|auto entry points|muddy water
-mno_choose_scene_381|random scene plain river custom 2: generate|auto entry points|muddy water
-mno_choose_scene_382|random scene plain river custom 3: generate|auto entry points|muddy water
-mno_choose_scene_383|random scene plain river custom 4: generate|auto entry points|muddy water
-mno_choose_scene_384|random scene plain river custom 5: generate|auto entry points|muddy water
-mno_choose_scene_385|random scene snow: generate|auto entry points|randomize
-mno_choose_scene_386|random scene snow1: generate|auto entry points
-mno_choose_scene_387|random scene snow2: generate|auto entry points
-mno_choose_scene_388|random scene snow3: generate|auto entry points
-mno_choose_scene_389|random scene snow4: generate|auto entry points
-menu_choose_scenes_390|Choose a scene: (Page 31 of 65)
-mno_choose_scene_390|random scene snow5: generate|auto entry points
-mno_choose_scene_391|random scene snow6: generate|auto entry points
-mno_choose_scene_392|random scene snow7: generate|auto entry points
-mno_choose_scene_393|random scene snow custom 1: generate|auto entry points
-mno_choose_scene_394|random scene snow custom 10: generate|auto entry points
-mno_choose_scene_395|random scene snow custom 11: generate|auto entry points
-mno_choose_scene_396|random scene snow custom 2: generate|auto entry points
-mno_choose_scene_397|random scene snow custom 3: generate|auto entry points
-mno_choose_scene_398|random scene snow custom 4: generate|auto entry points
-mno_choose_scene_399|random scene snow custom 5: generate|auto entry points
-mno_choose_scene_400|random scene snow custom 6: generate|auto entry points
-mno_choose_scene_401|random scene snow custom 7: generate|auto entry points
-mno_choose_scene_402|random scene snow custom 8: generate|auto entry points
-menu_choose_scenes_403|Choose a scene: (Page 32 of 65)
-mno_choose_scene_403|random scene snow custom 9: generate|auto entry points
-mno_choose_scene_404|random scene snow forest: generate|auto entry points
-mno_choose_scene_405|random scene snow forest1: generate|auto entry points
-mno_choose_scene_406|random scene snow forest2: generate|auto entry points
-mno_choose_scene_407|random scene snow forest3: generate|auto entry points
-mno_choose_scene_408|random scene snow forest4: generate|auto entry points
-mno_choose_scene_409|random scene snow forest5: generate|auto entry points
-mno_choose_scene_410|random scene snow forest6: generate|auto entry points
-mno_choose_scene_411|random scene snow forest custom 1: generate|auto entry points
-mno_choose_scene_412|random scene snow forest custom 2: generate|auto entry points
-mno_choose_scene_413|random scene snow forest custom 3: generate|auto entry points
-mno_choose_scene_414|random scene snow forest custom 4: generate|auto entry points
-mno_choose_scene_415|random scene snow forest custom 5: generate|auto entry points
-menu_choose_scenes_416|Choose a scene: (Page 33 of 65)
-mno_choose_scene_416|random scene steppe: generate|auto entry points|randomize
-mno_choose_scene_417|random scene steppe1: generate|auto entry points
-mno_choose_scene_418|random scene steppe2: generate|auto entry points
-mno_choose_scene_419|random scene steppe3: generate|auto entry points
-mno_choose_scene_420|random scene steppe4: generate|auto entry points
-mno_choose_scene_421|random scene steppe5: generate|auto entry points
-mno_choose_scene_422|random scene steppe6: generate|auto entry points
-mno_choose_scene_423|random scene steppe7: generate|auto entry points
-mno_choose_scene_424|random scene steppe8: generate|auto entry points
-mno_choose_scene_425|random scene steppe custom 1: generate|auto entry points
-mno_choose_scene_426|random scene steppe custom 10: generate|auto entry points
-mno_choose_scene_427|random scene steppe custom 11: generate|auto entry points
-mno_choose_scene_428|random scene steppe custom 2: generate|auto entry points
-menu_choose_scenes_429|Choose a scene: (Page 34 of 65)
-mno_choose_scene_429|random scene steppe custom 3: generate|auto entry points
-mno_choose_scene_430|random scene steppe custom 4: generate|auto entry points
-mno_choose_scene_431|random scene steppe custom 5: generate|auto entry points
-mno_choose_scene_432|random scene steppe custom 6: generate|auto entry points
-mno_choose_scene_433|random scene steppe custom 7: generate|auto entry points
-mno_choose_scene_434|random scene steppe custom 8: generate|auto entry points
-mno_choose_scene_435|random scene steppe custom 9: generate|auto entry points
-mno_choose_scene_436|random scene steppe forest: generate|auto entry points|randomize
-mno_choose_scene_437|random scene steppe forest1: generate|auto entry points
-mno_choose_scene_438|random scene steppe forest2: generate|auto entry points
-mno_choose_scene_439|random scene steppe forest3: generate|auto entry points
-mno_choose_scene_440|random scene steppe forest4: generate|auto entry points
-mno_choose_scene_441|random scene steppe forest5: generate|auto entry points
-menu_choose_scenes_442|Choose a scene: (Page 35 of 65)
-mno_choose_scene_442|random scene steppe forest6: generate|auto entry points
-mno_choose_scene_443|random scene steppe forest7: generate|auto entry points
-mno_choose_scene_444|random scene steppe forest custom 1: generate|auto entry points
-mno_choose_scene_445|random scene steppe forest custom 2: generate|auto entry points
-mno_choose_scene_446|random scene steppe forest custom 3: generate|auto entry points
-mno_choose_scene_447|random scene steppe forest custom 4: generate|auto entry points
-mno_choose_scene_448|random scene steppe forest custom 5: generate|auto entry points
-mno_choose_scene_449|rennes le chateau: generate
-mno_choose_scene_450|reserved10
-mno_choose_scene_451|reserved11
-mno_choose_scene_452|reserved12: indoors
-mno_choose_scene_453|reserved4: generate
-mno_choose_scene_454|reserved5: generate
-menu_choose_scenes_455|Choose a scene: (Page 36 of 65)
-mno_choose_scene_455|reserved6: generate
-mno_choose_scene_456|reserved7: generate
-mno_choose_scene_457|reserved8: generate
-mno_choose_scene_458|reserved9: indoors
-mno_choose_scene_459|rouen forest: generate
-mno_choose_scene_460|rpg foret1: generate|auto entry points
-mno_choose_scene_461|rpg foret10: generate|auto entry points
-mno_choose_scene_462|rpg foret11: generate|auto entry points
-mno_choose_scene_463|rpg foret2: generate
-mno_choose_scene_464|rpg foret3: generate
-mno_choose_scene_465|rpg foret4: generate
-mno_choose_scene_466|rpg foret5: generate|auto entry points
-mno_choose_scene_467|rpg foret6: generate|auto entry points
-menu_choose_scenes_468|Choose a scene: (Page 37 of 65)
-mno_choose_scene_468|rpg foret7: generate|auto entry points
-mno_choose_scene_469|rpg foret8: generate|auto entry points
-mno_choose_scene_470|rpg foret9: generate|auto entry points
-mno_choose_scene_471|rpg taille 1: generate
-mno_choose_scene_472|rpg taille 1 foret: generate|auto entry points
-mno_choose_scene_473|rpg taille 2: generate|auto entry points
-mno_choose_scene_474|rpg taille 3: generate|auto entry points
-mno_choose_scene_475|rue des dames rennes: generate|auto entry points
-mno_choose_scene_476|salt mine: generate
-mno_choose_scene_477|t sirenes: indoors
-mno_choose_scene_478|tavern 3lys: indoors
-mno_choose_scene_479|test2: generate
-mno_choose_scene_480|test3: generate
-menu_choose_scenes_481|Choose a scene: (Page 38 of 65)
-mno_choose_scene_481|test foret: generate
-mno_choose_scene_482|test scene: generate
-mno_choose_scene_483|the happy boar: indoors
-mno_choose_scene_484|tour pins: generate
-mno_choose_scene_485|town 10 alley: generate
-mno_choose_scene_486|town 10 arena: generate
-mno_choose_scene_487|town 10 castle: generate
-mno_choose_scene_488|town 10 center: generate
-mno_choose_scene_489|town 10 prison: indoors
-mno_choose_scene_490|town 10 room: indoors
-mno_choose_scene_491|town 10 store: indoors
-mno_choose_scene_492|town 10 tavern: indoors
-mno_choose_scene_493|town 10 walls: generate
-menu_choose_scenes_494|Choose a scene: (Page 39 of 65)
-mno_choose_scene_494|town 11 alley: generate
-mno_choose_scene_495|town 11 arena: generate
-mno_choose_scene_496|town 11 castle: indoors
-mno_choose_scene_497|town 11 center: generate
-mno_choose_scene_498|town 11 prison: indoors
-mno_choose_scene_499|town 11 store: indoors
-mno_choose_scene_500|town 11 tavern: indoors
-mno_choose_scene_501|town 11 walls: generate
-mno_choose_scene_502|town 12 alley: generate
-mno_choose_scene_503|town 12 arena: generate
-mno_choose_scene_504|town 12 castle: indoors
-mno_choose_scene_505|town 12 center: generate
-mno_choose_scene_506|town 12 prison: indoors
-menu_choose_scenes_507|Choose a scene: (Page 40 of 65)
-mno_choose_scene_507|town 12 store: indoors
-mno_choose_scene_508|town 12 tavern: indoors
-mno_choose_scene_509|town 12 walls: generate
-mno_choose_scene_510|town 13 alley: generate
-mno_choose_scene_511|town 13 arena: generate
-mno_choose_scene_512|town 13 castle: indoors
-mno_choose_scene_513|town 13 center: generate
-mno_choose_scene_514|town 13 prison: indoors
-mno_choose_scene_515|town 13 store: indoors
-mno_choose_scene_516|town 13 tavern: indoors
-mno_choose_scene_517|town 13 walls: generate
-mno_choose_scene_518|town 14 alley: generate
-mno_choose_scene_519|town 14 arena: generate
-menu_choose_scenes_520|Choose a scene: (Page 41 of 65)
-mno_choose_scene_520|town 14 castle: indoors
-mno_choose_scene_521|town 14 center: generate
-mno_choose_scene_522|town 14 port: generate
-mno_choose_scene_523|town 14 prison: indoors
-mno_choose_scene_524|town 14 store: indoors
-mno_choose_scene_525|town 14 tavern: indoors
-mno_choose_scene_526|town 14 walls: generate
-mno_choose_scene_527|town 15 alley: generate
-mno_choose_scene_528|town 15 arena: generate
-mno_choose_scene_529|town 15 castle: indoors
-mno_choose_scene_530|town 15 center: generate
-mno_choose_scene_531|town 15 prison: indoors
-mno_choose_scene_532|town 15 store: indoors
-menu_choose_scenes_533|Choose a scene: (Page 42 of 65)
-mno_choose_scene_533|town 15 tavern: indoors
-mno_choose_scene_534|town 15 walls: generate
-mno_choose_scene_535|town 16 alley: generate
-mno_choose_scene_536|town 16 arena: generate
-mno_choose_scene_537|town 16 castle: indoors
-mno_choose_scene_538|town 16 center: generate
-mno_choose_scene_539|town 16 prison: indoors
-mno_choose_scene_540|town 16 store: indoors
-mno_choose_scene_541|town 16 tavern: indoors
-mno_choose_scene_542|town 16 vchateau: generate
-mno_choose_scene_543|town 16 walls: generate
-mno_choose_scene_544|town 17 alley: generate
-mno_choose_scene_545|town 17 arena: generate
-menu_choose_scenes_546|Choose a scene: (Page 43 of 65)
-mno_choose_scene_546|town 17 castle: indoors
-mno_choose_scene_547|town 17 center: generate
-mno_choose_scene_548|town 17 prison: indoors
-mno_choose_scene_549|town 17 store: indoors
-mno_choose_scene_550|town 17 tavern: indoors
-mno_choose_scene_551|town 17 vide alley: generate
-mno_choose_scene_552|town 17 walls: generate
-mno_choose_scene_553|town 18 alley: generate
-mno_choose_scene_554|town 18 arena: generate
-mno_choose_scene_555|town 18 benezet end: generate
-mno_choose_scene_556|town 18 castle: generate
-mno_choose_scene_557|town 18 center: generate
-mno_choose_scene_558|town 18 prison: indoors
-menu_choose_scenes_559|Choose a scene: (Page 44 of 65)
-mno_choose_scene_559|town 18 store: indoors
-mno_choose_scene_560|town 18 tavern: indoors
-mno_choose_scene_561|town 18 walls: generate
-mno_choose_scene_562|town 19 alley: generate
-mno_choose_scene_563|town 19 arena: generate
-mno_choose_scene_564|town 19 castle: indoors
-mno_choose_scene_565|town 19 center: generate
-mno_choose_scene_566|town 19 prison: indoors
-mno_choose_scene_567|town 19 room: indoors
-mno_choose_scene_568|town 19 store: indoors
-mno_choose_scene_569|town 19 tavern: indoors
-mno_choose_scene_570|town 19 walls: generate
-mno_choose_scene_571|town 19x alley: generate
-menu_choose_scenes_572|Choose a scene: (Page 45 of 65)
-mno_choose_scene_572|town 1 alley: generate
-mno_choose_scene_573|town 1 arena: generate
-mno_choose_scene_574|town 1 castle: indoors
-mno_choose_scene_575|town 1 center: generate
-mno_choose_scene_576|town 1 prison: indoors
-mno_choose_scene_577|town 1 room: indoors
-mno_choose_scene_578|town 1 store: indoors
-mno_choose_scene_579|town 1 tavern: indoors
-mno_choose_scene_580|town 1 walls: generate
-mno_choose_scene_581|town 1cat alley: generate
-mno_choose_scene_582|town 20 alley: generate
-mno_choose_scene_583|town 20 arena: generate
-mno_choose_scene_584|town 20 castle: indoors
-menu_choose_scenes_585|Choose a scene: (Page 46 of 65)
-mno_choose_scene_585|town 20 center: generate
-mno_choose_scene_586|town 20 prison: indoors
-mno_choose_scene_587|town 20 store: indoors
-mno_choose_scene_588|town 20 tavern: indoors
-mno_choose_scene_589|town 20 walls: generate
-mno_choose_scene_590|town 20x alley: generate
-mno_choose_scene_591|town 21 alley: generate
-mno_choose_scene_592|town 21 arena: generate
-mno_choose_scene_593|town 21 castle: indoors
-mno_choose_scene_594|town 21 center: generate
-mno_choose_scene_595|town 21 prison: indoors
-mno_choose_scene_596|town 21 store: indoors
-mno_choose_scene_597|town 21 tavern: indoors
-menu_choose_scenes_598|Choose a scene: (Page 47 of 65)
-mno_choose_scene_598|town 21 walls: generate
-mno_choose_scene_599|town 21x alley: generate
-mno_choose_scene_600|town 22 alley: generate
-mno_choose_scene_601|town 22 arena: generate
-mno_choose_scene_602|town 22 castle: indoors
-mno_choose_scene_603|town 22 center: generate
-mno_choose_scene_604|town 22 prison: indoors
-mno_choose_scene_605|town 22 store: indoors
-mno_choose_scene_606|town 22 tavern: indoors
-mno_choose_scene_607|town 22 walls: generate
-mno_choose_scene_608|town 22x alley: generate
-mno_choose_scene_609|town 2 alley: generate
-mno_choose_scene_610|town 2 arena: generate
-menu_choose_scenes_611|Choose a scene: (Page 48 of 65)
-mno_choose_scene_611|town 2 castle: indoors
-mno_choose_scene_612|town 2 center: generate
-mno_choose_scene_613|town 2 prison: indoors
-mno_choose_scene_614|town 2 store: indoors
-mno_choose_scene_615|town 2 tavern: indoors
-mno_choose_scene_616|town 2 walls: generate
-mno_choose_scene_617|town 3 alley: generate
-mno_choose_scene_618|town 3 arena: generate
-mno_choose_scene_619|town 3 castle: indoors
-mno_choose_scene_620|town 3 center: generate
-mno_choose_scene_621|town 3 prison: indoors
-mno_choose_scene_622|town 3 store: indoors
-mno_choose_scene_623|town 3 tavern: indoors
-menu_choose_scenes_624|Choose a scene: (Page 49 of 65)
-mno_choose_scene_624|town 3 walls: generate
-mno_choose_scene_625|town 4 alley: generate
-mno_choose_scene_626|town 4 arena: generate
-mno_choose_scene_627|town 4 battle v: generate
-mno_choose_scene_628|town 4 castle: indoors
-mno_choose_scene_629|town 4 center: generate
-mno_choose_scene_630|town 4 etpalley: generate
-mno_choose_scene_631|town 4 prison: indoors
-mno_choose_scene_632|town 4 store: indoors
-mno_choose_scene_633|town 4 tavern: indoors
-mno_choose_scene_634|town 4 walls: generate
-mno_choose_scene_635|town 5 alley: generate
-mno_choose_scene_636|town 5 arena: generate
-menu_choose_scenes_637|Choose a scene: (Page 50 of 65)
-mno_choose_scene_637|town 5 batetp: generate
-mno_choose_scene_638|town 5 castle: indoors
-mno_choose_scene_639|town 5 center: generate
-mno_choose_scene_640|town 5 prison: indoors
-mno_choose_scene_641|town 5 room: indoors
-mno_choose_scene_642|town 5 store: indoors
-mno_choose_scene_643|town 5 tavern: indoors
-mno_choose_scene_644|town 5 walls: generate
-mno_choose_scene_645|town 6 alley: generate
-mno_choose_scene_646|town 6 arena: generate
-mno_choose_scene_647|town 6 castle: indoors
-mno_choose_scene_648|town 6 center: generate
-mno_choose_scene_649|town 6 fleuve: generate
-menu_choose_scenes_650|Choose a scene: (Page 51 of 65)
-mno_choose_scene_650|town 6 pirates: generate
-mno_choose_scene_651|town 6 prison: indoors
-mno_choose_scene_652|town 6 room: indoors
-mno_choose_scene_653|town 6 store: indoors
-mno_choose_scene_654|town 6 tavern: indoors
-mno_choose_scene_655|town 6 walls: generate
-mno_choose_scene_656|town 7 alley: generate
-mno_choose_scene_657|town 7 arena: generate
-mno_choose_scene_658|town 7 castle: indoors
-mno_choose_scene_659|town 7 center: generate
-mno_choose_scene_660|town 7 prison: indoors
-mno_choose_scene_661|town 7 store: indoors
-mno_choose_scene_662|town 7 tavern: indoors
-menu_choose_scenes_663|Choose a scene: (Page 52 of 65)
-mno_choose_scene_663|town 7 walls: generate
-mno_choose_scene_664|town 8 alley: generate
-mno_choose_scene_665|town 8 arena: generate
-mno_choose_scene_666|town 8 castle: indoors
-mno_choose_scene_667|town 8 center: generate
-mno_choose_scene_668|town 8 prison: indoors
-mno_choose_scene_669|town 8 room: indoors
-mno_choose_scene_670|town 8 store: indoors
-mno_choose_scene_671|town 8 tavern: indoors
-mno_choose_scene_672|town 8 walls: generate
-mno_choose_scene_673|town 9 alley: generate
-mno_choose_scene_674|town 9 arena: generate
-mno_choose_scene_675|town 9 castle: indoors
-menu_choose_scenes_676|Choose a scene: (Page 53 of 65)
-mno_choose_scene_676|town 9 center: generate
-mno_choose_scene_677|town 9 messagers: generate
-mno_choose_scene_678|town 9 prison: indoors
-mno_choose_scene_679|town 9 store: indoors
-mno_choose_scene_680|town 9 tavern: indoors
-mno_choose_scene_681|town 9 walls: generate
-mno_choose_scene_682|town 9bis alley: generate
-mno_choose_scene_683|town bourgcat alley: generate
-mno_choose_scene_684|town bourges messagers: generate
-mno_choose_scene_685|town bourgesbanque: indoors
-mno_choose_scene_686|town casern lyon: generate
-mno_choose_scene_687|town marseillebanque: indoors
-mno_choose_scene_688|town marss messagers: generate
-menu_choose_scenes_689|Choose a scene: (Page 54 of 65)
-mno_choose_scene_689|town paris6 alley: generate
-mno_choose_scene_690|town paris cataentry: generate
-mno_choose_scene_691|town parisbanque: indoors
-mno_choose_scene_692|training ground: generate
-mno_choose_scene_693|training ground horse track 1: generate
-mno_choose_scene_694|training ground horse track 2: generate
-mno_choose_scene_695|training ground horse track 3: generate
-mno_choose_scene_696|training ground horse track 4: generate
-mno_choose_scene_697|training ground horse track 5: generate
-mno_choose_scene_698|training ground ranged melee 1: generate
-mno_choose_scene_699|training ground ranged melee 2: generate
-mno_choose_scene_700|training ground ranged melee 3: generate
-mno_choose_scene_701|training ground ranged melee 4: generate
-menu_choose_scenes_702|Choose a scene: (Page 55 of 65)
-mno_choose_scene_702|training ground ranged melee 5: generate
-mno_choose_scene_703|tutorial 1: indoors
-mno_choose_scene_704|tutorial 2: indoors
-mno_choose_scene_705|tutorial 3: indoors
-mno_choose_scene_706|tutorial 4: generate
-mno_choose_scene_707|tutorial 5: generate
-mno_choose_scene_708|tutorial training ground: generate
-mno_choose_scene_709|verzy camp: generate
-mno_choose_scene_710|vieux cimetier rouen: generate
-mno_choose_scene_711|villag toul: generate
-mno_choose_scene_712|village 1: generate
-mno_choose_scene_713|village 10: generate
-mno_choose_scene_714|village 100: generate
-menu_choose_scenes_715|Choose a scene: (Page 56 of 65)
-mno_choose_scene_715|village 101: generate
-mno_choose_scene_716|village 102: generate
-mno_choose_scene_717|village 103: generate
-mno_choose_scene_718|village 104: generate
-mno_choose_scene_719|village 105: generate
-mno_choose_scene_720|village 106: generate
-mno_choose_scene_721|village 107: generate
-mno_choose_scene_722|village 108: generate
-mno_choose_scene_723|village 109: generate
-mno_choose_scene_724|village 11: generate
-mno_choose_scene_725|village 110: generate
-mno_choose_scene_726|village 12: generate
-mno_choose_scene_727|village 13: generate
-menu_choose_scenes_728|Choose a scene: (Page 57 of 65)
-mno_choose_scene_728|village 14: generate
-mno_choose_scene_729|village 15: generate
-mno_choose_scene_730|village 16: generate
-mno_choose_scene_731|village 17: generate
-mno_choose_scene_732|village 18: generate
-mno_choose_scene_733|village 19: generate
-mno_choose_scene_734|village 2: generate
-mno_choose_scene_735|village 20: generate
-mno_choose_scene_736|village 21: generate
-mno_choose_scene_737|village 22: generate
-mno_choose_scene_738|village 23: generate
-mno_choose_scene_739|village 24: generate
-mno_choose_scene_740|village 25: generate
-menu_choose_scenes_741|Choose a scene: (Page 58 of 65)
-mno_choose_scene_741|village 26: generate
-mno_choose_scene_742|village 27: generate
-mno_choose_scene_743|village 28: generate
-mno_choose_scene_744|village 29: generate
-mno_choose_scene_745|village 3: generate
-mno_choose_scene_746|village 30: generate
-mno_choose_scene_747|village 31: generate
-mno_choose_scene_748|village 32: generate
-mno_choose_scene_749|village 33: generate
-mno_choose_scene_750|village 34: generate
-mno_choose_scene_751|village 35: generate
-mno_choose_scene_752|village 36: generate
-mno_choose_scene_753|village 37: generate
-menu_choose_scenes_754|Choose a scene: (Page 59 of 65)
-mno_choose_scene_754|village 38: generate
-mno_choose_scene_755|village 39: generate
-mno_choose_scene_756|village 4: generate
-mno_choose_scene_757|village 40: generate
-mno_choose_scene_758|village 41: generate
-mno_choose_scene_759|village 41b: generate
-mno_choose_scene_760|village 42: generate
-mno_choose_scene_761|village 43: generate
-mno_choose_scene_762|village 44: generate
-mno_choose_scene_763|village 45: generate
-mno_choose_scene_764|village 46: generate
-mno_choose_scene_765|village 47: generate
-mno_choose_scene_766|village 48: generate
-menu_choose_scenes_767|Choose a scene: (Page 60 of 65)
-mno_choose_scene_767|village 49: generate
-mno_choose_scene_768|village 5: generate
-mno_choose_scene_769|village 50: generate
-mno_choose_scene_770|village 51: generate
-mno_choose_scene_771|village 52: generate
-mno_choose_scene_772|village 53: generate
-mno_choose_scene_773|village 54: generate
-mno_choose_scene_774|village 55: generate
-mno_choose_scene_775|village 56: generate
-mno_choose_scene_776|village 57: generate
-mno_choose_scene_777|village 59: generate
-mno_choose_scene_778|village 6: generate
-mno_choose_scene_779|village 60: generate
-menu_choose_scenes_780|Choose a scene: (Page 61 of 65)
-mno_choose_scene_780|village 61: generate
-mno_choose_scene_781|village 62: generate
-mno_choose_scene_782|village 63: generate
-mno_choose_scene_783|village 64: generate
-mno_choose_scene_784|village 65: generate
-mno_choose_scene_785|village 66: generate
-mno_choose_scene_786|village 67: generate
-mno_choose_scene_787|village 68: generate
-mno_choose_scene_788|village 69: generate
-mno_choose_scene_789|village 7: generate
-mno_choose_scene_790|village 70: generate
-mno_choose_scene_791|village 71: generate
-mno_choose_scene_792|village 72: generate
-menu_choose_scenes_793|Choose a scene: (Page 62 of 65)
-mno_choose_scene_793|village 73: generate
-mno_choose_scene_794|village 74: generate
-mno_choose_scene_795|village 75: generate
-mno_choose_scene_796|village 76: generate
-mno_choose_scene_797|village 77: generate
-mno_choose_scene_798|village 78: generate
-mno_choose_scene_799|village 79: generate
-mno_choose_scene_800|village 8: generate
-mno_choose_scene_801|village 80: generate
-mno_choose_scene_802|village 81: generate
-mno_choose_scene_803|village 82: generate
-mno_choose_scene_804|village 83: generate
-mno_choose_scene_805|village 84: generate
-menu_choose_scenes_806|Choose a scene: (Page 63 of 65)
-mno_choose_scene_806|village 85: generate
-mno_choose_scene_807|village 86b: generate
-mno_choose_scene_808|village 87: generate
-mno_choose_scene_809|village 88: generate
-mno_choose_scene_810|village 89: generate
-mno_choose_scene_811|village 9: generate
-mno_choose_scene_812|village 90: generate
-mno_choose_scene_813|village 91: generate
-mno_choose_scene_814|village 92: generate
-mno_choose_scene_815|village 93: generate
-mno_choose_scene_816|village 94: generate
-mno_choose_scene_817|village 95: generate
-mno_choose_scene_818|village 96: generate
-menu_choose_scenes_819|Choose a scene: (Page 64 of 65)
-mno_choose_scene_819|village 97: generate
-mno_choose_scene_820|village 98: generate
-mno_choose_scene_821|village 99: generate
-mno_choose_scene_822|village brulle: generate|auto entry points
-mno_choose_scene_823|water
-mno_choose_scene_824|water1: generate|auto entry points
-mno_choose_scene_825|water2: generate|auto entry points
-mno_choose_scene_826|water3: generate|auto entry points
-mno_choose_scene_827|water4: generate|auto entry points
-mno_choose_scene_828|water5: generate|auto entry points
-mno_choose_scene_829|water6: generate|auto entry points
-mno_choose_scene_830|wedding: indoors
-mno_choose_scene_831|zendar arena: generate
-menu_choose_scenes_832|Choose a scene: (Page 65 of 65)
-mno_choose_scene_832|zendar center: generate
-mno_choose_scene_833|zendar merchant: indoors
+mno_continue|Continuer...
+menu_notification_relieved_as_marshal|{s4} désire vous informer que votre service en tant que maréchal touche à sa fin. ^En l'honneur de votre loyal dévouement envers le royaume au cours des {reg4} derniers jours, une récompense de {reg5} deniers vous est offerte.
+mno_continue|Continuer...
+menu_manage_loot_pool|{s10}
+mno_auto_loot|...
+mno_auto_loot_no|Espace insuffisant.
+mno_loot|...
+mno_auto_loot_upgrade_management|Mise à niveau des équipements de gestion du PNJ.
+mno_auto_loot_leave_with_nothing|Choisissez les articles dont le prix plus élevé que {reg1} écus et continuer.
+mno_auto_loot_leave|{s20}
+menu_auto_loot|Votre héros récupère automatiquement les articles de l'ensemble d'items en fonction de leurs pré-sélectionnés options de mise à niveau. Heroes répertorié en premier dans l'ordre parti aura le premier choix. Tout matériel ne sont plus nécessaires seront replacés dans l'ensemble d'items. Êtes-vous sûr de vouloir faire cela?
+mno_No|Non, j'ai changé d'avis.
+mno_Yes|Oui, effectuer la mise à niveau.
+menu_choose_options_1|Assemblez les 16 PNJ à la taverne de la ville d'abord rencontré?
+mno_yes_npcs|Oui
+mno_no_npcs|Non
+mno_go_back|Retour.
+menu_choose_options_end|Game options selection complete.
+mno_continue|Continuer...
+mno_go_back|Retour.
+menu_town_menu_cheats|CHEATS.
+mno_back_to_town_menu|faire demi tour.
+menu_dplmc_notification_alliance_declared|Accord d'alliance !^^{s1} et {s2} ont conclu une alliance.^{s57}
+mno_dplmc_continue|Continuer
+menu_dplmc_notification_defensive_declared|Pacte défensif^^{s1} et {s2} ont convenu d'un pacte défensif!^{s57}
+mno_dplmc_continue|Continuer...
+menu_dplmc_notification_trade_declared|Accord comerciale^^{s1} et {s2} ont signé un accord commercial!^{s57}
+mno_dplmc_continue|Continuer...
+menu_dplmc_notification_nonaggression_declared|Traité de non-agression !^^{s1} et {s2} ont conclu un traité de non-agression.^{s57}
+mno_dplmc_continue|Continuer...
+menu_dplmc_question_alliance_offer|Vous recevez une offre d'alliance !^^{s1} veut conclure une alliance avec vous. Quelle est votre réponse ?
+mno_dplmc_alliance_offer_accept|Accepter
+mno_dplmc_alliance_offer_reject|Rejeter
+menu_dplmc_question_defensive_offer|Vous recevez une offre de pacte !^^{s1} vous propose un pacte de défence. Quelle est votre réponse ?
+mno_dplmc_defensive_offer_accept|Accepter
+mno_dplmc_defensive_offer_reject|Rejeter
+menu_dplmc_question_trade_offer|Vous recevez une offre de pacte !^^{s1} vous propose un pacte commercial. Quelle est votre réponse ?
+mno_dplmc_trade_offer_accept|Accepter
+mno_dplmc_trade_offer_reject|Rejeter
+menu_dplmc_question_nonaggression_offer|Vous recevez une offre de pacte !^^{s1} vous propose un traité de non-agression. Quelle est votre réponse ?
+mno_dplmc_nonaggression_offer_accept|Accepter
+mno_dplmc_nonaggression_offer_reject|Rejeter
+menu_dplmc_notification_alliance_expired|Alliance expirée !^^L'alliance entre {s1} et {s2} est terminée et s'est transformée en un pacte défensif.
+mno_dplmc_continue|Continuer
+menu_dplmc_notification_defensive_expired|Pacte défensif expiré !^^Le pacte défensif entre {s1} et {s2} est terminé et s'est transformé en un accord commercial.
+mno_dplmc_continue|Continuer
+menu_dplmc_notification_trade_expired|Accord commercial expiré !^^L'accord commercial entre {s1} et {s2} est terminé et s'est transformé en un traité de non-agression.
+mno_dplmc_continue|Continuer
+menu_dplmc_dictate_terms|Dicter vos conditions de paix.
+mno_dplmc_demand_4000|Demaner 4000 écus
+mno_dplmc_demand_8000|Demaner 8000 écus
+mno_dplmc_demand_castle|Demander {s2}
+mno_dplmc_go_back|Retour
+menu_dplmc_deny_terms|menu_dplmc_deny_terms|{s1} refuse vos conditions et met fin aux négociations.
+mno_dplmc_continue|Continuer
+menu_dplmc_village_riot_result|{s9}
+mno_dplmc_continue|Continuer...
+menu_dplmc_village_riot_removed|Dans une bataille sanglante, vos hommes et vous égorgez les rebelles et reprenez le contrôle du village. Mais il n'y a plus grand-chose à contrôler.
+mno_dplmc_continue|Continuer...
+menu_dplmc_town_riot_removed|Dans une bataille sanglante, vos hommes et vous abattez les rebelles et reprenez le contrôle de la ville.
+mno_dplmc_continue|Continuer...
+menu_dplmc_riot_negotiate|Vous vous approchez de la foule en colère et entamez des négociations. Le chef des émeutiers demande {reg0} écus. Il accepte de déposer les armes si vous acceptez de payer.
+mno_dplmc_pay_riot_treasury|Demander au chambellan de verser l'argent provenant de la trésorerie.
+mno_dplmc_pay_riot_cash|Payer immédiatement.
+mno_dplmc_back|Retour ...
+menu_dplmc_notification_riot|Les paysans de {s1} ont provoqué une émeute contre vous ! Dans une attaque surprise vos fidèles ont été tués. Les autres ont rejoint la foule en colère.
+mno_dplmc_continue|Continuer...
+menu_dplmc_notification_appoint_chamberlain|En tant que seigneur d'un fief, vous pouvez maintenant nommer un chambellan qui résidera à votre cour pour un salaire hebdomadaire de 15 écus. Il se chargera de toutes les questions financières et fixera les taxes, s'occupera des salaires et de la gestion de vos biens. En outre, il supervisera les transferts d'argent entre royaumes ce qui vous donnera plus d'options diplomatiques.
+mno_dplmc_appoint_default|Nommer un éminent noble local.
+mno_dplmc_continue|Continuer
+menu_dplmc_chamberlain_confirm|Votre chambellan se trouve à votre cour. Vous devrez le consulter si vous voulez lui parler des questions financières ou si vous avez besoin de plus d'argent. Vous devriez toujours vous assurer qu'il y a assez d'argent dans la trésorerie pour les affaires politiques.
+mno_dplmc_continue|Continuer...
+menu_dplmc_notification_appoint_constable|En tant que seigneur d'un fief, vous pouvez maintenant nommer un connétable, responsable militaire qui résidera à votre cour pour un salaire hebdomadaire de 15 écus. Il recrutera de nouvelles troupes et fournira des informations sur votre armée.
+mno_dplmc_appoint_default|Nommer un éminent noble local.
+mno_dplmc_continue|Continuer
+menu_dplmc_constable_confirm|Votre connétable se trouve à votre cour. Vous devrez le consulter si vous voulez recruter de nouvelles troupes ou avoir des informations détaillées sur votre armée.
+mno_dplmc_continue|Continuer...
+menu_dplmc_notification_appoint_chancellor|En tant que seigneur d'un fief, vous pouvez maintenant nommer un chancelier qui résidera à votre cour pour un salaire hebdomadaire de 20 écus. Il sera le garant de votre cachet, et sera responsable de la correspondance entre vous et les personnages importants.
+mno_dplmc_appoint_default|Nommer un éminent noble local.
+mno_dplmc_continue|Procéder sans chancelier.
+menu_dplmc_chancellor_confirm|Votre chancelier se trouve dans votre cour. Vous devez consulter si vous voulez envoyer des messages ou des cadeaux.
+mno_dplmc_continue|Continuer...
+menu_dplmc_deserters|Certains de vos hommes désertent parce qu'ils croient que vous n'allez pas payer leurs soldes. Vous en perdez {s11}.
+mno_dplmc_continue|Continuer...
+menu_dplmc_negotiate_besieger|Vous agitez un drapeau blanc au sommet des murs. Après un moment, un négociateur envoyé par {s11} s'approche de vous. Il demande {s6} et tous les villages associés ainsi que {reg0} écus pour une escorte de sécurité.
+mno_dplmc_comply_treasury|Accepter et demander à votre chambellan de verser l'argent provenant de la trésorerie.
+mno_dplmc_comply|Accepter et payer immédiatement.
+mno_dplmc_break_off|Mettre fin aux negociations.
+menu_dplmc_messenger|Sire, J'ai trouvé {s10} et livré votre message. Sa réponse a été {s11}.
+mno_dplmc_continue|Continue...
+menu_dplmc_scout|Votre espion revient de {s10}^^{s11}{s12}
+mno_dplmc_continue|Continue...
+menu_dplmc_domestic_policy|Vous pouvez maintenant décider de la politique intérieure de votre Duché. Voulez-vous changer de politique maintenant ?
+mno_dplmc_yes|Oui, je veux changer la politique intérieure.
+mno_dplmc_no|Non, je ne veux pas changer la politique intérieure.
+mno_dplmc_continue|Continue...
+menu_debt_interest|{s2}
+mno_continue|Continuer.
+menu_bank|Vous rendre à la banque. Ici, vous pouvez déposer de l'argent et gagner des intérêts au fil du temps, ou prendre un prêt. Vous avez actuellement {reg6} écus déposé ici. Vous avez actuellement {reg7} écus emprunté à la banque.
+mno_take_loan|Prendre un prêt de 1000 écus.
+mno_give_loan|Rembourser 1000 écus de votre dette.
+mno_give_loan_all|Rembourser la totalité de votre dette.
+mno_give_deposit|Caution 1000 écus à la banque.
+mno_take_deposit|Retirer 1000 écus de votre dépôt.
+mno_take_deposit_all|Retirer totalité de votre dépôt.
+mno_back_to_town_menu|faire demi tour.
+menu_entrench_options|...
+mno_action_no_drowning| ...
+mno_action_drowning| ...
+mno_go_back|Retour.

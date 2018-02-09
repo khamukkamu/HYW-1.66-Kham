@@ -4677,7 +4677,7 @@ dlga_lord_start:lord_deliver_cattle_to_army_thank|Ah, {playername}. My quarterma
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk|Not a problem, {s65}.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk.1|Glad to be of service.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk.2|Mere child's play.
-dlga_lord_start:lord_scout_waypoints_thank|You make a good scout, {playername}. My runner just brought me your reports of the mission to {s13}, {s14} and {s15}. Well done.
+dlga_lord_start:lord_scout_waypoints_thank|You make a good scout, {playername}. My runner just brought me your reports of your scouting mission. Well done.
 dlga_lord_scout_waypoints_thank:lord_pretalk|A simple task, {s65}.
 dlga_lord_scout_waypoints_thank:lord_pretalk.1|Nothing I couldn't handle.
 dlga_lord_scout_waypoints_thank:lord_pretalk.2|My pleasure, {s65}.

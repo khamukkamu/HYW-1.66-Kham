@@ -1,4 +1,4 @@
-itm_no_item|INVALID ITEM
+﻿itm_no_item|OBJET INVALIDE
 itm_no_item_pl|OBJETS INVALIDES
 itm_tutorial_spear|Épieu
 itm_tutorial_spear_pl|Épieux
@@ -46,7 +46,6 @@ itm_arena_sword|Épée
 itm_arena_sword_pl|Épées
 itm_arena_sword_two_handed|Épée à deux mains
 itm_arena_sword_two_handed_pl|Épées à deux mains
-itm_arena_lance|Lance
 itm_arena_lance_pl|Lances
 itm_practice_staff|Bâton d'entraînement
 itm_practice_staff_pl|Bâtons d'entraînement
@@ -90,8 +89,14 @@ itm_gold_tourney_armor|Armure de tournoi
 itm_gold_tourney_armor_pl|Armures de tournoi
 itm_red_tourney_helmet|Heaume de tournoi des corbeaux
 itm_red_tourney_helmet_pl|Heaumes de tournoi des corbeaux
+itm_blue_tourney_helmet|Heaume de tournoi des licornes
+itm_blue_tourney_helmet_pl|Heaumes de tournoi des licornes
+itm_green_tourney_helmet|Heaume de tournoi ces cygnes
+itm_green_tourney_helmet_pl|Heaumes de tournoi ces cygnes
 itm_gold_tourney_helmet|Heaume de tournoi
 itm_gold_tourney_helmet_pl|Heaumes de tournoi
+itm_arena_shield_red|Bouclier
+itm_arena_shield_red_pl|Boucliers
 itm_arena_shield_blue|Bouclier
 itm_arena_shield_blue_pl|Boucliers
 itm_arena_shield_green|Bouclier
@@ -224,72 +229,60 @@ itm_cabbages|Chou
 itm_cabbages_pl|Choux
 itm_dried_meat|Jambon
 itm_dried_meat_pl|Jambons
-itm_apples|Fruit
 itm_apples_pl|Fruits
 itm_raw_grapes|Raisin
 itm_raw_grapes_pl|Raisin
 itm_raw_olives|Olive
-itm_raw_olives_pl|Olives
 itm_grain|Céréale
 itm_grain_pl|Céréales
 itm_cattle_meat|Boeuf
 itm_cattle_meat_pl|Boeufs
 itm_bread|Pain
 itm_bread_pl|Pains
-itm_bier|Cervoise
-itm_bier_pl|Cervoise
-itm_vinn|Vin
-itm_vinn_pl|Vin
-itm_rhumm|Hydromel
-itm_rhumm_pl|Hydromel
 itm_chicken|Poulet 
 itm_chicken_pl|Poulets
 itm_pork|Porc
 itm_pork_pl|Porcs
 itm_butter|lait de vache
 itm_butter_pl|laits de vache
-itm_oeufss|Oeufs
-itm_oeufss_pl|Oeufs
-itm_soup|Soupe
-itm_soup_pl|Soupe
-itm_pate1|terrine de lapin
-itm_pate1_pl|terrine de lapin
-itm_pate2|paté de chevreuil
-itm_pate2_pl|paté de chevreuil
-itm_pate3|paté de sanglier
-itm_pate3_pl|paté de sanglier
-itm_sausc|sauscissons
-itm_sausc_pl|sauscissons
-itm_pasteques|Pasteque
-itm_pasteques_pl|Pasteque
-itm_melons|Melon
-itm_melons_pl|Melon
-itm_champi|Champignons
-itm_champi_pl|Champignons
-itm_fesan|Faisans
-itm_fesan_pl|Faisans
-itm_legum|Panier de légumes
-itm_legum_pl|Panier de légumes
-itm_potee|Potée de choux
-itm_potee_pl|Potée de choux
-itm_poiss_soup|Soupe de poissons
-itm_poiss_soup_pl|Soupe de poissons
 itm_siege_supply|Provisions
 itm_siege_supply_pl|Provisions
 itm_quest_wine|Cargaison de Vin
 itm_quest_wine_pl|Cargaisons de Vin
 itm_quest_ale|Cargaison de Cervoise 
 itm_quest_ale_pl|Cargaisons de Cervoise
+itm_tutorial_sword|Épée
+itm_tutorial_sword_pl|Épées
+itm_tutorial_axe|Hache 
+itm_tutorial_axe_pl|Haches
+itm_tutorial_spear|Épieu
+itm_tutorial_spear_pl|Épieux
+itm_tutorial_club|Gourdin
+itm_tutorial_club_pl|Gourdins
+itm_tutorial_battle_axe|Hache de combat
+itm_tutorial_battle_axe_pl|Haches de combat
+itm_tutorial_arrows|Flèches 
+itm_tutorial_arrows_pl|Flèches 
+itm_tutorial_bolts|Carreaux 
+itm_tutorial_bolts_pl|Carreaux 
+itm_tutorial_short_bow|Arc court 
+itm_tutorial_short_bow_pl|Arcs courts
+itm_tutorial_crossbow|Arbalète 
+itm_tutorial_crossbow_pl|Arbalètes
+itm_tutorial_throwing_daggers|Dagues de jet 
+itm_tutorial_throwing_daggers_pl|Dagues de jet 
+itm_tutorial_saddle_horse|Cheval de selle
+itm_tutorial_saddle_horse_pl|Chevaux de selle
+itm_tutorial_shield|Grand écu
+itm_tutorial_shield_pl|Grands écus
+itm_tutorial_staff_no_attack|Bâton
+itm_tutorial_staff_no_attack_pl|Bâtons
+itm_tutorial_staff|Bâton
+itm_tutorial_staff_pl|Bâtons
 itm_sumpter_horse|Cheval de somme
 itm_sumpter_horse_pl|Chevaux de somme
-itm_sumpter_horse_paris|Cheval malade
-itm_sumpter_horse_paris_pl|Cheval malade
 itm_saddle_horse|Cheval de selle
 itm_saddle_horse_pl|Chevaux de selle
-itm_saddle_horseparis|Cheval faible
-itm_saddle_horseparis_pl|Cheval faible
-itm_saddle_horseparis2|Cheval faible
-itm_saddle_horseparis2_pl|Cheval faible
 itm_steppe_horse|Cheval des steppes
 itm_steppe_horse_pl|Chevaux des steppes
 itm_arabian_horse_a|Cheval du désert
@@ -322,8 +315,6 @@ itm_warhorse_f3|Cheval de guerre français
 itm_warhorse_f3_pl|Chevax de guerre français
 itm_war_horse_teu|Cheval de guerre teutoniques
 itm_war_horse_teu_pl|Chevax de guerre teutoniques
-itm_breton_war_horse|Cheval de guerre Breton
-itm_breton_war_horse_pl|Cheval de guerre Breton
 itm_horse1|Cheval de chasse 
 itm_horse1_pl|Chevax de chasse 
 itm_horse6|Cheval de chasse 
@@ -390,8 +381,18 @@ itm_warhorseblackprince|Cheval de guerre Anglais
 itm_warhorseblackprince_pl|Chevaux de guerre Anglais
 itm_warhorsechandos|Cheval de guerre français
 itm_warhorsechandos_pl|Chevaux de guerre français
-itm_breton_warhorse_2|Cheval de Batailles Breton
-itm_breton_warhorse_2_pl|Cheval de Batailles Breton
+itm_warhorsedeer|Cheval de guerre Cerf 
+itm_warhorsedeer_pl|Chevaux de guerre Cerf 
+itm_warhorsegreen|Cheval de guerre vert
+itm_warhorsegreen_pl|Green Chevaux de guerre vert
+itm_warhorseredcross|Cheval de guerre Anglais
+itm_warhorseredcross_pl|Chevaux de guerre Anglais
+itm_warhorseeagle|Cheval de guerre français
+itm_warhorseeagle_pl|Chevaux de guerre français
+itm_warhorsefish|Cheval de guerre français
+itm_warhorsefish_pl|Chevaux de guerre français
+itm_warhorsedablade|Cheval de guerre
+itm_warhorsedablade_pl|Chevaux de guerre
 itm_chargerplainblue|Cheval de bataille plaqué français
 itm_chargerplainblue_pl|Chevaux de bataille plaqués français
 itm_chargershinyblue|cheval de bataille plaqué français
@@ -400,6 +401,8 @@ itm_chargerred|Cheval de bataille plaqué français
 itm_chargerred_pl|Chevaux de bataille plaqués français
 itm_chargerplainred|Cheval de bataille plaqué Anglais
 itm_chargerplainred_pl|Chevaux de bataille plaqués Anglais
+itm_chargershinyred|Cheval de bataille plaqué Anglais
+itm_chargershinyred_pl|Chevaux de bataille plaqués Anglais
 itm_arrows|Flèches 
 itm_arrows_pl|Flèches 
 itm_khergit_arrows|Flèches anglaises
@@ -464,8 +467,26 @@ itm_mail_boots|Bottes de mailles
 itm_mail_boots_pl|Bottes de mailles 
 itm_iron_greaves|Grèves en fer 
 itm_iron_greaves_pl|Grèves en fer 
+itm_black_greaves|Grèves noires
+itm_black_greaves_pl|Grèves noires
 itm_khergit_leather_boots|Bottes de cuir Waless
 itm_khergit_leather_boots_pl|Bottes de cuir Waless
+itm_sarranid_boots_a|Chaussures Arabes
+itm_sarranid_boots_a_pl|Chaussures Arabes
+itm_sarranid_boots_b|Bottes de cuir Arabes
+itm_sarranid_boots_b_pl|Bottes de cuir Arabes
+itm_sarranid_boots_c|Bottes en plaques
+itm_sarranid_boots_c_pl|Bottes en plaques
+itm_sarranid_boots_d|Bottes de mailles Arabes
+itm_sarranid_boots_d_pl|Bottes de mailles Arabes
+itm_sarranid_head_cloth|Turban de femme
+itm_sarranid_head_cloth_pl|Turbans de femmes
+itm_sarranid_head_cloth_b|Turban de femme
+itm_sarranid_head_cloth_b_pl|Turbans de femmes
+itm_sarranid_felt_head_cloth|Turban
+itm_sarranid_felt_head_cloth_pl|Turbans
+itm_sarranid_felt_head_cloth_b|Turban
+itm_sarranid_felt_head_cloth_b_pl|Turbans
 itm_splinted_greaves_e1|Grèves en cuir Anglaises entrecoupées 
 itm_splinted_greaves_e1_pl|Grèves en cuir Anglaises entrecoupées 
 itm_splinted_greaves_f1|Grèves en cuir Francaises entrecoupées 
@@ -479,7 +500,6 @@ itm_splinted_greaves_nospurs_pl|Grèves entrecoupées
 itm_splinted_greaves_spurs|Grèves entrecoupées avec Eperons
 itm_splinted_greaves_spurs_pl|Grèves entrecoupées avec Eperons
 itm_shynbaulds|Schynbaulds
-itm_shynbaulds_pl|Shynbaulds
 itm_steel_greaves|Grèves tubées
 itm_steel_greaves_pl|Grèves tubées
 itm_lady_dress_ruby|Robe de dame
@@ -498,18 +518,18 @@ itm_khergit_lady_dress|Robe de femme Wales
 itm_khergit_lady_dress_pl|Robes de femme Wales
 itm_khergit_lady_dress_b|Robe de femme Wales en cuir
 itm_khergit_lady_dress_b_pl|Robes de femmes Wales en cuir
+itm_sarranid_lady_dress|Robe de femme Arabe
+itm_sarranid_lady_dress_pl|Robes de femmes Arabes
+itm_sarranid_lady_dress_b|Robe de femme Arabe
+itm_sarranid_lady_dress_b_pl|Robes de femmes Arabes
+itm_sarranid_common_dress|Robe Arabe
+itm_sarranid_common_dress_pl|Robes Arabes
+itm_sarranid_common_dress_b|Robe Arabe
+itm_sarranid_common_dress_b_pl|Robes Arabes
 itm_courtly_outfit|Tenue élégante
 itm_courtly_outfit_pl|Tenues élégantes
 itm_nobleman_outfit|Tenue de noble
 itm_nobleman_outfit_pl|Tenues de noble
-itm_nobleman_outfit_charles|Tenue de Noble
-itm_nobleman_outfit_charles_pl|Tenue de Noble
-itm_nobleman_outfit_anglais|Tenue de Noble
-itm_nobleman_outfit_anglais_pl|Tenue de Noble
-itm_nobleman_out|Tenue de Noble
-itm_nobleman_out_pl|Tenue de Noble
-itm_nobleman_out_fr|Tenue de Noble
-itm_nobleman_out_fr_pl|Tenue de Noble
 itm_nomad_armor|Armure de nomade
 itm_nomad_armor_pl|Armures de nomade
 itm_khergit_armor|Armure Wales
@@ -522,14 +542,12 @@ itm_leather_armor|Armure en cuir
 itm_leather_armor_pl|Armures en cuir 
 itm_fur_coat|Manteau de fourrure 
 itm_fur_coat_pl|Manteaux de fourrure 
-itm_ribaude_dresss|Robe de fille de joie
-itm_ribaude_dresss_pl|Robe de fille de joie
-itm_ribaude_dress6bluues|Robe de fille de joie bleue
-itm_ribaude_dress6bluues_pl|Robe de fille de joie bleue
 itm_coat|Manteau
 itm_coat_pl|Manteaux
 itm_leather_coat|Manteau de cuir 
 itm_leather_coat_pl|Manteaux de cuir
+itm_mail_coat|Cotte de mailles
+itm_mail_coat_pl|Cottes de mailles
 itm_long_mail_coat|Longue cotte de mailles
 itm_long_mail_coat_pl|Longues cottes de mailles
 itm_sleeveless_mail_coat|Cotte de mailles sans manches 
@@ -568,10 +586,6 @@ itm_dress|Robe
 itm_dress_pl|Robes
 itm_blue_dress|Robe de paysane
 itm_blue_dress_pl|Robes de paysane
-itm_blue_dress_tw|Robe bleue
-itm_blue_dress_tw_pl|Robe bleue
-itm_blue_dress_tw2|Robe de paysane
-itm_blue_dress_tw2_pl|Robe de paysane
 itm_peasant_dress|Robe de paysanne
 itm_peasant_dress_pl|Robes de paysanne
 itm_woolen_dress|Robe en laine 
@@ -586,16 +600,20 @@ itm_red_shirt|Chemise rouge
 itm_red_shirt_pl|Chemises rouges
 itm_red_tunic|Tunique rouge
 itm_red_tunic_pl|Tuniques rouges
-itm_robe|Robe
+itm_green_tunic|Tunique verte
+itm_green_tunic_pl|Tuniques vertes
+itm_blue_tunic|Tunique bleue
+itm_blue_tunic_pl|Tuniques bleues
 itm_robe_pl|Robes
 itm_coarse_tunic|Tunique avec gilet
 itm_coarse_tunic_pl|Tuniques avec gilet
 itm_leather_apron|Tablier de cuir
 itm_leather_apron_pl|Tabliers de cuir
-itm_tabard|Tabard
 itm_tabard_pl|Tabards
 itm_leather_vest|Gilet en cuir 
 itm_leather_vest_pl|Gilets en cuir 
+itm_steppe_armor|Armure de barbare
+itm_steppe_armor_pl|Armures de barbares
 itm_gambeson|Gambison
 itm_gambeson_pl|Gambisons
 itm_blue_gambeson|Gambison bleu
@@ -616,10 +634,17 @@ itm_padded_leather|Cuir matelassé
 itm_padded_leather_pl|Cuirs matelassés
 itm_tribal_warrior_outfit|Manteau de cuir lourd
 itm_tribal_warrior_outfit_pl|Manteaux de cuir lourds
+itm_nomad_robe|Robe de nomade
+itm_nomad_robe_pl|Robes de nomade
 itm_studded_leather_coat|Manteau en cuir clouté 
 itm_studded_leather_coat_pl|Manteaux en cuir clouté 
-itm_haubergeon|Haubergeon
+itm_byrnie|Haubert
+itm_byrnie_pl|Hauberts
 itm_haubergeon_pl|Haubergeons
+itm_lamellar_vest|Gilet lamellaire 
+itm_lamellar_vest_pl|Gilets lamellaires
+itm_lamellar_vest_khergit|Gilet lamellaire Wales
+itm_lamellar_vest_khergit_pl|Gilets lamellaires Wales
 itm_mail_shirt|Chemise de mailles 
 itm_mail_shirt_pl|Chemises de mailles 
 itm_mail_hauberk|Haubert de mailles 
@@ -628,8 +653,11 @@ itm_mail_with_surcoat|Cotte de mailles avec surcot
 itm_mail_with_surcoat_pl|Cottes de mailles avec surcot 
 itm_surcoat_over_mail|Surcot sur cotte de mailles 
 itm_surcoat_over_mail_pl|Surcots sur cotte de mailles 
-itm_brigandine_red|Brigandine
 itm_brigandine_red_pl|Brigandines
+itm_lamellar_armor|Armure lamellaire 
+itm_lamellar_armor_pl|Armures lamellaires
+itm_scale_armor|Armure d'écailles
+itm_scale_armor_pl|Armures d'écailles
 itm_banded_armor|Armure cerclée
 itm_banded_armor_pl|Armures cerclées
 itm_cuir_bouilli|Cuir bouilli
@@ -640,16 +668,40 @@ itm_coat_of_plates_red|Cotte de plates
 itm_coat_of_plates_red_pl|Cottes de plates
 itm_plate_armor|Armure de plate
 itm_plate_armor_pl|Armures de plate
-itm_tavern_shirt|Tunique d'artisant
-itm_tavern_shirt_pl|Tunique d'artisant
-itm_g_tw_shirt|Tunique
-itm_g_tw_shirt_pl|Tunique
+itm_black_armor|Amure noire
+itm_black_armor_pl|Amures noires
 itm_pelt_coat|Manteau de fourrure
 itm_pelt_coat_pl|Manteaux de fourrure
+itm_khergit_elite_armor|Armure d'élite Wales
+itm_khergit_elite_armor_pl|Armures d'élite Wales
+itm_vaegir_elite_armor|Armure d'élite
+itm_vaegir_elite_armor_pl|Armures d'élite Anglaise
 itm_sarranid_elite_armor|Armure d'élite Arabe
 itm_sarranid_elite_armor_pl|Armures d'élite Arabes
+itm_sarranid_dress_a|Robe
+itm_sarranid_dress_a_pl|Robes
+itm_sarranid_dress_b|Robe
+itm_sarranid_dress_b_pl|Robes
+itm_sarranid_cloth_robe|Robe usée
+itm_sarranid_cloth_robe_pl|Robes usées
+itm_sarranid_cloth_robe_b|Robe usée
+itm_sarranid_cloth_robe_b_pl|Robes usées
+itm_skirmisher_armor|Armure de tirailleur
+itm_skirmisher_armor_pl|Armures de tirailleurs
 itm_archers_vest|Gilet matelassé d'archer
 itm_archers_vest_pl|Gilets matelassés d'archers
+itm_sarranid_leather_armor|Armure en cuir Arabe
+itm_sarranid_leather_armor_pl|Armures en cuir Arabes
+itm_sarranid_cavalry_robe|Robe de cavalier
+itm_sarranid_cavalry_robe_pl|Robes de cavaliers
+itm_arabian_armor_b|Armure de garde Arabe
+itm_arabian_armor_b_pl|Armures de gardes Arabes
+itm_sarranid_mail_shirt|Chemise de mailles Arabe
+itm_sarranid_mail_shirt_pl|Chemises de mailles Arabes
+itm_mamluke_mail|Cotte de mailles de Mamelouk
+itm_mamluke_mail_pl|Cottes de mailles de Mamelouk
+itm_burlap_tunic|Tunique en toile de jute
+itm_burlap_tunic_pl|Tuniques en toile de jute
 itm_heraldic_mail_with_surcoat|Cotte de mailles aux armoiries avec surcot 
 itm_heraldic_mail_with_surcoat_pl|Cottes de mailles aux armoiries avec surcot 
 itm_heraldic_mail_with_tunic|Cotte de mailles avec armoiries
@@ -660,6 +712,8 @@ itm_heraldic_mail_with_tabard|Cotte de mailles aux armoiries avec tabard
 itm_heraldic_mail_with_tabard_pl|Cottes de mailles aux armoiries avec tabard
 itm_swiss_armor|Armure suisse
 itm_swiss_armor_pl|Armure suisse
+itm_brigand_armor|Armure de Brigand 
+itm_brigand_armor_pl|Armure de Brigand
 itm_rawhide_coatwhite|Manteau de fourrure blanc
 itm_rawhide_coatwhite_pl|Manteaux de fourrure blanc
 itm_robeblack|Robe-Noire
@@ -704,6 +758,8 @@ itm_black_cuir_bouilli|Cuir Bouilli noir
 itm_black_cuir_bouilli_pl|Cuirs Bouillis noirs
 itm_byrnie_swiss1|Byrnie Suisse
 itm_byrnie_swiss1_pl|Byrnies Suisses
+itm_heraldric_armorlys|Armure héraldique Française
+itm_heraldric_armorlys_pl|Armures héraldiques Françaises
 itm_heraldric_armor3lys|Armure héraldique Française
 itm_heraldric_armor3lys_pl|Armures héraldiques Françaises
 itm_heraldric_armorbluewhite|Armure héraldique Française
@@ -726,14 +782,14 @@ itm_klepp_helmet|Bascinet a visière
 itm_klepp_helmet_pl|Bascinets a visière
 itm_pigface|Bascinet
 itm_pigface_pl|Bascinet
-itm_flemish_armet|Armet
-itm_flemish_armet_pl|Armet
 itm_greatbascinet1|Grand Bascinet
 itm_greatbascinet1_pl|Grand Bascinet
-itm_greathelm1_orig|Great Helm
-itm_greathelm1_orig_pl|Great Helm
-itm_greathelmwhat_orig|Great Helm
-itm_greathelmwhat_orig_pl|Great Helm
+itm_greathelm1|Grande Casque
+itm_greathelm1_pl|Grande Casque
+itm_greathelmwhat|Grande Casque
+itm_greathelmwhat_pl|Grand Casque
+itm_klappvisier|casque a visière
+itm_klappvisier_pl|casques a visières
 itm_peasant_man_e1|Tunique du Yeoman anglaise
 itm_peasant_man_e1_pl|Tunique du Yeoman anglaise
 itm_peasant_man_e2|Tunique du Yeoman anglaise
@@ -742,14 +798,16 @@ itm_peasant_man_f2|Tunique du Yeoman Française
 itm_peasant_man_f2_pl|Tunique du Yeoman Française
 itm_peasant_man_f1|Tunique du Yeoman Française
 itm_peasant_man_f1_pl|Tunique du Yeoman Française
-itm_breton_peasant_man|Tenue de paysan Breton
-itm_breton_peasant_man_pl|Tenue de paysan Breton
+itm_tattered_leather_armor_e1|Armure en cuir anglaise
+itm_tattered_leather_armor_e1_pl|Armure en cuir anglaise
 itm_tattered_leather_armor_e2|Armure en cuir anglaise
 itm_tattered_leather_armor_e2_pl|Armure en cuir anglaise
 itm_tattered_leather_armor_f1|Armure en cuir Française
 itm_tattered_leather_armor_f1_pl|Armure en cuir Française
 itm_tattered_leather_armor_f2|Armure en cuir Française
 itm_tattered_leather_armor_f2_pl|Armure en cuir Française
+itm_leather_vest_e1|Veste en cuir anglaise
+itm_leather_vest_e1_pl|Veste en cuir anglaise
 itm_leather_vest_e2|Veste en cuir anglaise
 itm_leather_vest_e2_pl|Veste en cuir anglaise
 itm_leather_vest_f1|Veste en cuir Française
@@ -766,10 +824,12 @@ itm_padded_cloth_f1|Aketon Français
 itm_padded_cloth_f1_pl|Aketon Français
 itm_padded_cloth_b_e1|Gambison rembourré anglais
 itm_padded_cloth_b_e1_pl|Gambisons rembourrés anglais
-itm_padded_cloth_b_e2|Gambison anglais
-itm_padded_cloth_b_e2_pl|Gambison anglais
 itm_padded_cloth_b_f1|Gambison rembourré Français
 itm_padded_cloth_b_f1_pl|Gambisons rembourrés Français
+itm_ragged_leather_jerkin_e1|Blouse de cuir anglais
+itm_ragged_leather_jerkin_e1_pl|Blouse de cuir anglais
+itm_ragged_leather_jerkin_f1|Blouse de cuir Français
+itm_ragged_leather_jerkin_f1_pl|Blouse de cuir Français
 itm_padded_jack|Jack rembourré
 itm_padded_jack_pl|Jack rembourré
 itm_padded_jack_e|Jack rembourré anglais
@@ -782,6 +842,14 @@ itm_leather_armor_f1|Jack rembourré Français
 itm_leather_armor_f1_pl|Jack rembourré Français
 itm_leather_armor_f2|Jack rembourré Français
 itm_leather_armor_f2_pl|Jack rembourré Français
+itm_leather_armor_e4|manteau de cuir clouté Anglais 
+itm_leather_armor_e4_pl|manteau de cuir clouté Anglais
+itm_leather_armor_e3|manteau de cuir clouté Anglais
+itm_leather_armor_e3_pl|manteau de cuir clouté Anglais
+itm_leather_armor_f3|manteau de cuir Français Anglais
+itm_leather_armor_f3_pl|manteau de cuir Français Anglais
+itm_leather_armor_f4|manteau de cuir Français Anglais
+itm_leather_armor_f4_pl|manteau de cuir Français Anglais
 itm_haubergeon_e1|Haubergeon Anglais
 itm_haubergeon_e1_pl|Haubergeon Anglais
 itm_haubergeon_e2|Haubergeon Anglais
@@ -790,6 +858,14 @@ itm_haubergeon_f1|Haubergeon Français
 itm_haubergeon_f1_pl|Haubergeon Français
 itm_haubergeon_f2|Haubergeon Français
 itm_haubergeon_f2_pl|Haubergeon Français
+itm_mail_shirt_e1|Chemise maillée Anglaise
+itm_mail_shirt_e1_pl|Chemise maillée Anglaise
+itm_mail_shirt_e2|Chemise maillée Anglaise
+itm_mail_shirt_e2_pl|Chemise maillée Anglaise
+itm_mail_shirt_f1|Chemise maillée Française
+itm_mail_shirt_f1_pl|Chemise maillée Française
+itm_mail_shirt_f2|Chemise maillée Française
+itm_mail_shirt_f2_pl|Chemise maillée Française
 itm_mail_shirtdeer|Chemise maillée
 itm_mail_shirtdeer_pl|Chemise maillée
 itm_mail_shirtgreen|Chemise maillée
@@ -804,8 +880,6 @@ itm_surcoat_over_mail_f3|Surcot et cotte de mailles Français
 itm_surcoat_over_mail_f3_pl|Surcot et cotte de mailles Français
 itm_surcoat_over_mail_f4|Surcot et cotte de mailles Français
 itm_surcoat_over_mail_f4_pl|Surcot et cotte de mailles Français
-itm_surcoat_over_mail_brg1|Armure de mailles et plates Bourguignonne
-itm_surcoat_over_mail_brg1_pl|Armure de mailles et plates Bourguignonne
 itm_surcoat_over_mail_e1|Surcot et cotte de mailles Anglais
 itm_surcoat_over_mail_e1_pl|Surcot et cotte de mailles Anglais
 itm_surcoat_over_mail_e2|Surcot et cotte de mailles Anglais
@@ -814,12 +888,8 @@ itm_surcoat_over_mail_e3|Surcot et cotte de mailles Anglais
 itm_surcoat_over_mail_e3_pl|Surcot et cotte de mailles Anglais
 itm_surcoat_over_mail_e4|Surcot et cotte de mailles Anglais
 itm_surcoat_over_mail_e4_pl|Surcot et cotte de mailles Anglais
-itm_breton_surcoat_over_mail|Cotte de mailles Bretonne
-itm_breton_surcoat_over_mail_pl|Cotte de mailles Bretonne
 itm_brigandine_e1|Brigandine Anglaise
 itm_brigandine_e1_pl|Brigandine Anglaise
-itm_brigandine_e1_c|Brigandine Anglaise
-itm_brigandine_e1_c_pl|Brigandine Anglaise
 itm_brigandine_e2|Brigandine Anglaise
 itm_brigandine_e2_pl|Brigandine Anglaise
 itm_brigandine_f1|Brigandine Française
@@ -828,8 +898,6 @@ itm_brigandine_f2|Brigandine Française
 itm_brigandine_f2_pl|Brigandine Française
 itm_brigandine_g|Brigandine Génoise
 itm_brigandine_g_pl|Brigandine Génoise
-itm_brigandine_sl|Armure des SansLys
-itm_brigandine_sl_pl|Armure des SansLys
 itm_coat_of_plates_e1|Manteau de plaques Anglais
 itm_coat_of_plates_e1_pl|Manteau de plaques Anglais
 itm_coat_of_plates_e2|Manteau de plaques Anglais
@@ -878,12 +946,6 @@ itm_early_transitional_e6|cotte de maille lourde et Plates Anglaise
 itm_early_transitional_e6_pl|cotte de maille lourde et Plates Anglaise
 itm_early_transitional_e7|cotte de maille lourde et Plates Anglaise
 itm_early_transitional_e7_pl|cotte de maille lourde et Plates Anglaise
-itm_corrazina_red|Corrazina
-itm_corrazina_red_pl|Corrazina
-itm_corrazina_green|Corrazina
-itm_corrazina_green_pl|Corrazina
-itm_corrazina_grey|Corrazina
-itm_corrazina_grey_pl|Corrazina
 itm_churburg_13_e|Plaque intégrale
 itm_churburg_13_e_pl|Plaque intégrale
 itm_churburg_13_brass_f|Armures de Plaques intégrales
@@ -922,6 +984,12 @@ itm_straw_hat|Chapeau de paille
 itm_straw_hat_pl|Chapeaux de paille 
 itm_common_hood|Capuchon
 itm_common_hood_pl|Capuchons
+itm_hood_b|Capuchon
+itm_hood_b_pl|Capuchons
+itm_hood_c|Capuchon
+itm_hood_c_pl|Capuchons
+itm_hood_d|Capuchon
+itm_hood_d_pl|Capuchons
 itm_headcloth|Chaperon façonné
 itm_headcloth_pl|Chaperons façonnés
 itm_woolen_hood|Capuchon de laine 
@@ -930,6 +998,12 @@ itm_arming_cap|Capuchon matelassé
 itm_arming_cap_pl|Capuchons matelassés
 itm_fur_hat|Chapeau de fourrure 
 itm_fur_hat_pl|Chapeaux de fourrure 
+itm_nomad_cap|Bonnet de nomade 
+itm_nomad_cap_pl|Bonnets de nomade 
+itm_nomad_cap_b|Bonnet de nomade 
+itm_nomad_cap_b_pl|Bonnets de nomades
+itm_steppe_cap|Bonnet de barbare
+itm_steppe_cap_pl|Bonnets de barbare
 itm_padded_coif|Coiffe renforçée 
 itm_padded_coif_pl|Coiffes renforçées
 itm_woolen_cap|Bonnet de laine 
@@ -942,10 +1016,14 @@ itm_leather_cap|Capuchon en cuir
 itm_leather_cap_pl|Capuchons en cuir 
 itm_female_hood|Capuchon de dame 
 itm_female_hood_pl|Capuchons de dame 
+itm_leather_steppe_cap_a|Bonnet de barbare
+itm_leather_steppe_cap_a_pl|Bonnets de barbare 
 itm_leather_steppe_cap_b|Bonnet de barbare  
 itm_leather_steppe_cap_b_pl|Bonnets de barbare  
 itm_leather_steppe_cap_c|Bonnet de barbare
 itm_leather_steppe_cap_c_pl|Bonnets de barbare 
+itm_leather_warrior_cap|Capuchon de guerrier en cuir 
+itm_leather_warrior_cap_pl|Capuchons de guerrier en cuir 
 itm_skullcap|Calotte
 itm_skullcap_pl|Calottes
 itm_mail_coif|Camail
@@ -958,24 +1036,87 @@ itm_norman_helmet|Heaume avec capuchon
 itm_norman_helmet_pl|Heaumes avec capuchon
 itm_segmented_helmet|Spangelhelm
 itm_segmented_helmet_pl|Spangelhelms
-itm_kettle_hat_orig|Kettle Hat
-itm_kettle_hat_orig_pl|Kettle Hat
+itm_helmet_with_neckguard|Heaume avec gorgerin
+itm_helmet_with_neckguard_pl|Heaumes avec gorgerin
+itm_flat_topped_helmet|Heaume cylindrique à dessus plat 
+itm_flat_topped_helmet_pl|Heaumes cylindriques à dessus plat 
+itm_kettle_hat|Chapel de fer 
+itm_kettle_hat_pl|Chapels de fer 
+itm_spiked_helmet|Heaume à pointe
+itm_spiked_helmet_pl|Heaumes à pointe
+itm_nordic_helmet|Casque nordique 
+itm_nordic_helmet_pl|Casques nordiques
 itm_khergit_lady_hat|Chapeau pour femme Wales
 itm_khergit_lady_hat_pl|Chapeaux pour femme Wales
 itm_khergit_lady_hat_b|Chapeau de femme Wales en cuir
 itm_khergit_lady_hat_b_pl|Chapeaux de femmes Waless en cuir
+itm_sarranid_felt_hat|Chapeau de feutre Arabe
+itm_sarranid_felt_hat_pl|Chapeaux de feutre Arabes
+itm_turban_pl|Turbans
+itm_desert_turban|Turban du désert
+itm_desert_turban_pl|Turbans du désert
+itm_sarranid_warrior_cap|Capuchon de guerrier Arabe
+itm_sarranid_warrior_cap_pl|Capuchons de guerriers Arabes
+itm_sarranid_horseman_helmet|Casque de cavalier
+itm_sarranid_horseman_helmet_pl|Casques de cavaliers
+itm_sarranid_helmet1|Casque keffieh Arabe
+itm_sarranid_helmet1_pl|Casques keffiehs Arabes
+itm_sarranid_mail_coif|Camail Arabe
+itm_sarranid_mail_coif_pl|Camails Arabes
+itm_sarranid_veiled_helmet|Casque avec voile Arabe
+itm_sarranid_veiled_helmet_pl|Casques avec voile Arabes
+itm_nordic_archer_helmet|Casque en cuir nordique
+itm_nordic_archer_helmet_pl|Casques en cuir nordiques
+itm_nordic_veteran_archer_helmet|Casque en cuir nordique
+itm_nordic_veteran_archer_helmet_pl|Casques en cuir nordiques
+itm_nordic_footman_helmet|Casque de troupier nordique
+itm_nordic_footman_helmet_pl|Casques de troupiers nordiques
+itm_nordic_fighter_helmet|Casque de combattant nordique
+itm_nordic_fighter_helmet_pl|Casques de combattants nordiques
+itm_nordic_huscarl_helmet|Casque de huscarl nordique
+itm_nordic_huscarl_helmet_pl|Casques de huscarls nordiques
+itm_nordic_warlord_helmet|Casque de seigneur de la guerre nordique
+itm_nordic_warlord_helmet_pl|Casques de seigneurs de la guerre nordiques
+itm_vaegir_fur_cap|Chapeau fourré
+itm_vaegir_fur_cap_pl|Chapeaux fourrés
+itm_vaegir_fur_helmet|Casque barbare
+itm_vaegir_fur_helmet_pl|Casques barbare
+itm_vaegir_spiked_helmet|Coiffe à pointe
+itm_vaegir_spiked_helmet_pl|Coiffes à pointe
+itm_vaegir_lamellar_helmet|Casque avec visière lamellaire
+itm_vaegir_lamellar_helmet_pl|Casques avec visière lamellaire
+itm_vaegir_noble_helmet|Casque de barbare
+itm_vaegir_noble_helmet_pl|Casques de barbare
+itm_vaegir_war_helmet|Casque de guerre barbare
+itm_vaegir_war_helmet_pl|Casques de guerre barbare
+itm_vaegir_mask|Masque de guerre barbare
+itm_vaegir_mask_pl|Masques de guerre barbare
+itm_bascinet|Bassinet 
+itm_bascinet_pl|Bassinets
 itm_bascinet_2|Bassinet avec camail d'armure
 itm_bascinet_2_pl|Bassinets avec camail d'armure
 itm_bascinet_3|Bassinet avec protège-nez
 itm_bascinet_3_pl|Bassinets avec protège-nez
 itm_guard_helmet|Casque de garde 
 itm_guard_helmet_pl|Casques de garde 
+itm_black_helmet|Heaume noir
+itm_black_helmet_pl|Heaumes noirs
 itm_full_helm|Casque fermé
 itm_full_helm_pl|Casques fermés
 itm_great_helmet|Grand heaume
 itm_great_helmet_pl|Grands heaumes
+itm_winged_great_helmet|Grand heaume ailé
+itm_winged_great_helmet_pl|Grands heaumes ailés
 itm_common_hoodblack|capot
 itm_common_hoodblack_pl|capot
+itm_leather_capred|Casquette de Prêtre
+itm_leather_capred_pl|Casquette de Prêtre
+itm_leather_cappurple|Casquette d'Évêque
+itm_leather_cappurple_pl|Casquette d'Évêque
+itm_common_helm|Bouilloire angulaire
+itm_common_helm_pl|Bouilloire angulaire
+itm_war_helm|Casque avec Aventail
+itm_war_helm_pl|Casque avec Aventail
 itm_french_joustinghelmblackhorns|Casque de joutes cornée Français
 itm_french_joustinghelmblackhorns_pl|Casque de joutes cornée Français
 itm_french_joustinghelmcrow|Casque de joutes des corbeaux
@@ -990,10 +1131,8 @@ itm_english_joustinghelmcrow|Casque de joutes des cygnes
 itm_english_joustinghelmcrow_pl|Casques de joutes des cygnes
 itm_english_joustinghelmcrowwithwings|Casque de joutes des cygnes
 itm_english_joustinghelmcrowwithwings_pl|Casques de joutes des cygnes
-itm_black_helmetgrey|Barbute
-itm_black_helmetgrey_pl|Barbute
-itm_black_helmetgolden|Barbute
-itm_black_helmetgolden_pl|Barbute
+itm_crusader_helmet|Grand Casque
+itm_crusader_helmet_pl|Grand Casque
 itm_hood_f1|Capot
 itm_hood_f1_pl|Capot
 itm_woolen_cap_f1|Casquette de Laine
@@ -1012,8 +1151,6 @@ itm_felt_hat_e1|Chapeau
 itm_felt_hat_e1_pl|Chapeau
 itm_mail_coif_full|Coiffe Cotte de maille Intégrale
 itm_mail_coif_full_pl|Coiffe Cotte de maille Intégrale
-itm_chapel_de_fer|Chapelle de Fer
-itm_chapel_de_fer_pl|Chapelle de Fer
 itm_kettle_hat|Chapel de fer 
 itm_kettle_hat_pl|Chapels de fer 
 itm_kettlehat1|Bouilloire
@@ -1046,6 +1183,8 @@ itm_tilting_helm_swan|Casque Incliné
 itm_tilting_helm_swan_pl|Casque Incliné
 itm_great_helm_wings_teut|Grande Casque Ailé
 itm_great_helm_wings_teut_pl|Grande Casque Ailé
+itm_great_helm_knobs|Grande Casque
+itm_great_helm_knobs_pl|Grande Casque
 itm_tilting_helm_horns_f|Casque Incliné
 itm_tilting_helm_horns_f_pl|Casque Incliné
 itm_great_helm_joust_f|Grande Casque
@@ -1066,8 +1205,6 @@ itm_greathelmwhat|Grande Casque
 itm_greathelmwhat_pl|Grande Casque
 itm_sugarloaf|heaume
 itm_sugarloaf_pl|heaume
-itm_klappvisier|casque a visière
-itm_klappvisier_pl|casques a visières
 itm_pigface_klappvisor|Bascinet
 itm_pigface_klappvisor_pl|Bascinet
 itm_hounskull|Bascinet
@@ -1108,15 +1245,10 @@ itm_2polehammer|Marteau de guerre en fer
 itm_2polehammer_pl|Marteaux de guerre en fer
 itm_3mace|Masse d'armes à pointes
 itm_3mace_pl|Masses d'armes à pointes
-itm_hersir|Hersir
 itm_hersir_pl|Hersirs
-itm_huskarl|Huskarl
 itm_huskarl_pl|Huskarls
-itm_clontarf|Clontarf
 itm_clontarf_pl|Clontarfs
-itm_jarl|Jarl
 itm_jarl_pl|Jarls
-itm_gotland|Gotland
 itm_gotland_pl|Gotlands
 itm_berserkr|Berserker
 itm_berserkr_pl|Berserkers
@@ -1126,58 +1258,38 @@ itm_mercenary|Mercenaire
 itm_mercenary_pl|Mercenaires
 itm_castellan|Châtelain
 itm_castellan_pl|Châtelain
-itm_sempach|Sempach
 itm_sempach_pl|Sempachs
-itm_talhoffer|Talhoffer
 itm_talhoffer_pl|Talhoffers
-itm_agincourt|Agincourt
-itm_agincourt_pl|Agincourt
 itm_constable|Gendarme
 itm_constable_pl|Gendarmes
 itm_steward|Intendant
 itm_steward_pl|Intendants
-itm_baron|Baron
 itm_baron_pl|Barons
-itm_crecy|Crecy
-itm_crecy_pl|Crecy
-itm_landgraf|Landgraf
-itm_landgraf_pl|Landgraf
 itm_duke|Duc
 itm_duke_pl|Duc
 itm_count|Comte
 itm_count_pl|Comtes
-itm_gaddhjalt|Gaddhjalt
 itm_gaddhjalt_pl|Gaddhjalts
-itm_ritter|Ritter
 itm_ritter_pl|Ritters
-itm_reeve|Reeve
 itm_reeve_pl|Reeves
 itm_squire|Écuyer
 itm_squire_pl|Écuyers
 itm_laird|châtelain
 itm_laird_pl|châtelains
-itm_caithness|Caithness
-itm_caithness_pl|Caithness
 itm_templar|Templier
 itm_templar_pl|Templiers
-itm_bayeux|Bayeux
-itm_bayeux_pl|Bayeux
 itm_hospitaller|Chevalier Hôspitalier
 itm_hospitaller_pl|Chevaliers Hôspitaliers
-itm_senlac|Senlac
 itm_senlac_pl|Senlacs
 itm_knight|Cavalier
 itm_knight_pl|Cavaliers
 itm_norman|Normand
 itm_norman_pl|Normands
-itm_poitiers|Poitiers
-itm_poitiers_pl|Poitiers
-itm_prince|Prince
 itm_prince_pl|Princes
 itm_sovereign|Souverain
 itm_sovereign_pl|Souverains
-itm_great_lance_2|Grande lance
-itm_great_lance_2_pl|Grande lance
+itm_great_lance|Grande lance
+itm_great_lance_pl|Grandes lances
 itm_jousting_lanceblueyellow|Lance de joutes Française
 itm_jousting_lanceblueyellow_pl|Lance de joutes Française
 itm_jousting_lancebluewhite|Lance de joutes Française
@@ -1186,8 +1298,8 @@ itm_jousting_lanceredyellow|Lance de joutes Anglaise
 itm_jousting_lanceredyellow_pl|Lance de joutes Anglaise
 itm_jousting_lanceredwhite|Lance de joutes Anglaise
 itm_jousting_lanceredwhite_pl|Lance de joutes Anglaise
-itm_jousting_lance_orig|Jousting Lance
-itm_jousting_lance_orig_pl|Jousting Lance
+itm_jousting_lance|Lance de joute 
+itm_jousting_lance_pl|Lances de joute 
 itm_great_lanceblueyellow|Grande Lance Française
 itm_great_lanceblueyellow_pl|Grande Lance Française
 itm_great_lancebluewhite|Grande Lance Française
@@ -1232,22 +1344,17 @@ itm_banner_heraldric_lions|Bannière Anglaise
 itm_banner_heraldric_lions_pl|Bannière Anglaise
 itm_banner_heraldric_stripes|Bannière Anglaise
 itm_banner_heraldric_stripes_pl|Bannière Anglaise
-itm_breton_lance|Lance de Chevalier
-itm_breton_lance_pl|Lance de Chevalier
-itm_glaive_dupe_a|Glaive
-itm_glaive_dupe_a_pl|Glaive
-itm_glaive_dupe_b|Glaive
-itm_glaive_dupe_b_pl|Glaive
-itm_1glaive|Glaive
+itm_glaive|Glaive 
+itm_glaive_pl|Glaives
+itm_glaive|Glaive 
+itm_glaive_pl|Glaives
 itm_1glaive_pl|Glaives
-itm_2glaive|Glaive
 itm_2glaive_pl|Glaives
-itm_3glaive|Glaive
 itm_3glaive_pl|Glaives
 itm_polearm|Guisarme
 itm_polearm_pl|Guisarmes
-itm_poleaxe_orig|Poleaxe
-itm_poleaxe_orig_pl|Poleaxe
+itm_poleaxe|Hache d'armes
+itm_poleaxe_pl|Haches d'armes
 itm_1halberd|Hallebarde
 itm_1halberd_pl|Hallebardes
 itm_2halberd|Hallebarde
@@ -1262,17 +1369,13 @@ itm_6halberd|Hallebarde
 itm_6halberd_pl|Hallebardes
 itm_5halberd|Hallebarde
 itm_5halberd_pl|Hallebardes
-itm_bill|Guisarme
 itm_bill_pl|Guisarmes
-itm_polehammer_orig|Polehammer
-itm_polehammer_orig_pl|Polehammer
-itm_1polehammer|Polehammer
+itm_polehammer|Marteau d'armes
+itm_polehammer_pl|Marteaux d'armes
 itm_1polehammer_pl|Polehammers
-itm_3polehammer|Polehammer
 itm_3polehammer_pl|Polehammers
 itm_mallet|Maillet
 itm_mallet_pl|Maillets
-itm_pop_bill|Guisarme
 itm_pop_bill_pl|Guisarmes
 itm_pop_halberd|Hallebarde
 itm_pop_halberd_pl|Hallebardes
@@ -1280,8 +1383,6 @@ itm_lui_vaegirhallberd|Hallebarde
 itm_lui_vaegirhallberd_pl|Hallebardes
 itm_jam_poleaxe|Merlin
 itm_jam_poleaxe_pl|Merlins
-itm_banner_jhoan|Banniere de Jeanne d'arc
-itm_banner_jhoan_pl|Banniere de Jeanne d'arc
 itm_knighthammerbastard|Marteau de guerre
 itm_knighthammerbastard_pl|Marteaux de guerre
 itm_manhuntermaul|Marteau de guerre
@@ -1294,8 +1395,6 @@ itm_inquisitionhammer|Long Marteau de guerre
 itm_inquisitionhammer_pl|Longs Marteaux de guerre
 itm_knighthammer|Marteau de guerre
 itm_knighthammer_pl|Marteaux de guerre
-itm_knighthammerempire|Polehammer
-itm_knighthammerempire_pl|Polehammer
 itm_manhuntermace|Marteau de guerre
 itm_manhuntermace_pl|Marteaux de guerre
 itm_lui_battleaxetwoh|Hache de combat
@@ -1320,8 +1419,8 @@ itm_lui_knightaxeonehd|Hache de combat de Chevalier
 itm_lui_knightaxeonehd_pl|Haches de combat de Chevalier
 itm_lui_knightaxeonehe|Hache de combat de Chevalier
 itm_lui_knightaxeonehe_pl|Haches de combat de Chevalier
-itm_lui_knightaxetwoha_a|Knight's Battle Axe
-itm_lui_knightaxetwoha_a_pl|Knight's Battle Axe
+itm_lui_knightaxetwoha|Hache de combat
+itm_lui_knightaxetwoha_pl|Haches de combat
 itm_lui_knightaxetwoha|Hache de combat
 itm_lui_knightaxetwoha_pl|Haches de combat
 itm_lui_knightaxetwohb|Hache de combat
@@ -1332,6 +1431,12 @@ itm_lui_smallhallberda|Hallebarde courte
 itm_lui_smallhallberda_pl|Hallebarde courte
 itm_jam_scorpion|Hallebarde courte
 itm_jam_scorpion_pl|Hallebarde courte
+itm_falchion01|Cimeterre
+itm_falchion01_pl|Cimeterres
+itm_bastard_falchion|Cimeterre
+itm_bastard_falchion_pl|Cimeterres
+itm_square_falchion|Cimeterre
+itm_square_falchion_pl|Cimeterres
 itm_wooden_stick|Bâton en bois 
 itm_wooden_stick_pl|Bâtons en bois 
 itm_cudgel|Massue 
@@ -1342,10 +1447,10 @@ itm_club|Gourdin
 itm_club_pl|Gourdins
 itm_winged_mace|Masse d'armes à ailettes 
 itm_winged_mace_pl|Masses d'armes à ailettes 
-itm_spiked_mace_new|Spiked Mace
-itm_spiked_mace_new_pl|Spiked Mace
-itm_military_hammer_orig|Military Hammer
-itm_military_hammer_orig_pl|Military Hammer
+itm_spiked_mace|Masse d'armes à pointes 
+itm_spiked_mace_pl|Masses d'armes à pointes 
+itm_military_hammer|Marteau de bataille  
+itm_military_hammer_pl|Marteaux de bataille  
 itm_maul|Maillet
 itm_maul_pl|Maillets
 itm_sledgehammer|Masse
@@ -1398,8 +1503,8 @@ itm_fighting_axe|Hache de combat
 itm_fighting_axe_pl|Haches de combat 
 itm_axe|Hache
 itm_axe_pl|Haches
-itm_voulge_0|Voulge
-itm_voulge_0_pl|Voulge
+itm_voulge|Fauchard
+itm_voulge_pl|Fauchards
 itm_battle_axe|Hache de bataille
 itm_battle_axe_pl|Haches de bataille
 itm_war_axe|Hache de guerre 
@@ -1408,18 +1513,6 @@ itm_sword_two_handed_b|Épée à deux mains
 itm_sword_two_handed_b_pl|Épées à deux mains
 itm_sword_two_handed_a|Estramaçon
 itm_sword_two_handed_a_pl|Estramaçons
-itm_darkknightsword|Flamberge a pointes
-itm_darkknightsword_pl|Flamberge a pointes
-itm_estoc|Claymore de Chevalier
-itm_estoc_pl|Claymore de Chevalier
-itm_realclaymore|Claymore lourde
-itm_realclaymore_pl|Claymore lourde
-itm_realespadon|Espadon lourd
-itm_realespadon_pl|Espadon lourd
-itm_realespadona|Espadon de Chevalier
-itm_realespadona_pl|Espadon de Chevalier
-itm_realflambergeb|Flamberge lourde
-itm_realflambergeb_pl|Flamberge lourde
 itm_khergit_sword_two_handed_a|Sabre à deux mains
 itm_khergit_sword_two_handed_a_pl|Sabres à deux mains
 itm_khergit_sword_two_handed_b|Sabre à deux mains
@@ -1436,8 +1529,6 @@ itm_bastard_sword_a|Épée bâtarde
 itm_bastard_sword_a_pl|Épées bâtardes
 itm_bastard_sword_b|Lourde épée bâtarde 
 itm_bastard_sword_b_pl|Lourdes épées bâtardes
-itm_bastard_sword_c|épée batarde de guerre
-itm_bastard_sword_c_pl|épée batarde de guerre
 itm_one_handed_war_axe_a|Hache à une main
 itm_one_handed_war_axe_a_pl|Haches à une main
 itm_one_handed_battle_axe_a|Hache de bataille à une main
@@ -1468,7 +1559,6 @@ itm_long_axe_c|Grande hache longue
 itm_long_axe_c_pl|Grandes haches longues
 itm_long_axe_c_alt|Grande hache longue
 itm_long_axe_c_alt_pl|Grandes haches longues
-itm_bardiche|Bardiche
 itm_bardiche_pl|Bardiches
 itm_great_bardiche|Grande bardiche
 itm_great_bardiche_pl|Grandes bardiches
@@ -1510,9 +1600,7 @@ itm_sword_viking_3_small|Courte épée de guerre nordique
 itm_sword_viking_3_small_pl|Courtes épées de guerre nordiques
 itm_sword_khergit_1|Sabre de barbare
 itm_sword_khergit_1_pl|Sabres de barbare
-itm_sword_khergit_2|Sabre
 itm_sword_khergit_2_pl|Sabres
-itm_sword_khergit_3|Sabre
 itm_sword_khergit_3_pl|Sabres
 itm_sword_khergit_4|Sabre lourd
 itm_sword_khergit_4_pl|Sabres lourds
@@ -1598,15 +1686,10 @@ itm_awlpike_long|Ahlspiess long
 itm_awlpike_long_pl|Ahlspiess longs
 itm_bec_de_corbin_a|Marteau de guerre
 itm_bec_de_corbin_a_pl|Marteaux de guerre
-itm_bardiche_1|Bardiche
 itm_bardiche_1_pl|Bardiches
-itm_bardiche_2|Bardiche
 itm_bardiche_2_pl|Bardiches
-itm_bardiche_3|Bardiche
 itm_bardiche_3_pl|Bardiches
-itm_bardiche_4|Bardiche
 itm_bardiche_4_pl|Bardiches
-itm_bardiche_5|Bardiche
 itm_bardiche_5_pl|Bardiches
 itm_halberd_1|Hallebarde
 itm_halberd_1_pl|Hallebardes
@@ -1640,29 +1723,19 @@ itm_awlpike_5|Poinçon brochet
 itm_awlpike_5_pl|Poinçons brochet
 itm_awlpike_6|Poinçon brochet
 itm_awlpike_6_pl|Poinçons brochet
-itm_partisan_1|Partisan
 itm_partisan_1_pl|Partisans
 itm_partisan_2|Partisan 
 itm_partisan_2_pl|Partisans
 itm_partisan_3|Partisan 
 itm_partisan_3_pl|Partisans
-itm_partisan_4|Partisan
-itm_partisan_4_pl|Partisan
-itm_ranseur_1|Ranseur
+itm_partisan_1_pl|Partisans
 itm_ranseur_1_pl|Ranseurs
-itm_ranseur_2|Ranseur
 itm_ranseur_2_pl|Ranseurs
-itm_spetum_1|Spetum
 itm_spetum_1_pl|Spetums
-itm_spetum_2|Spetum
 itm_spetum_2_pl|Spetums
-itm_spetum_3|Spetum
 itm_spetum_3_pl|Spetums
-itm_spetum_4|Spetum
 itm_spetum_4_pl|Spetums
-itm_fauchard_1|Fauchard
 itm_fauchard_1_pl|Fauchards
-itm_fauchard_2|Fauchard
 itm_fauchard_2_pl|Fauchards
 itm_lochaber_axe_1|Hache de Lochaber
 itm_lochaber_axe_1_pl|Haches de Lochaber
@@ -1674,53 +1747,32 @@ itm_lochaber_axe_4|Hache de Lochaber
 itm_lochaber_axe_4_pl|Haches de Lochaber
 itm_shortened_lochaber_axe|Hache écourtée de Lochaber
 itm_shortened_lochaber_axe_pl|Haches écourtées de Lochaber
-itm_voulge_1|Voulge
 itm_voulge_1_pl|Voulges
-itm_voulge_2|Voulge
 itm_voulge_2_pl|Voulges
-itm_voulge_3|Voulge
 itm_voulge_3_pl|Voulges
-itm_voulge_4|Voulge
 itm_voulge_4_pl|Voulges
-itm_voulge_5|Voulge
 itm_voulge_5_pl|Voulges
-itm_voulge_6|Voulge
-itm_voulge_6_pl|Voulge
-itm_voulge_long|Longue Voulge
-itm_voulge_long_pl|Longue Voulge
-itm_voulge_long_blunt|Longue Voulge de Hobelar
-itm_voulge_long_blunt_pl|Longue Voulge de Hobelar
+itm_voulge_2_pl|Voulges
 itm_bec_de_corbin|Bec de Corbin
 itm_bec_de_corbin_pl|Bec de Corbin
-itm_fauchard_3|Fauchard
-itm_fauchard_3_pl|Fauchard
-itm_fauchard_4|Fauchard
-itm_fauchard_4_pl|Fauchard
+itm_fauchard_2_pl|Fauchards
+itm_fauchard_1_pl|Fauchards
 itm_glaive_fork|Glaive-Fourche
 itm_glaive_fork_pl|Glaive-Fourches
-itm_glaive_guisarme_1|Glaive-Guisarme
 itm_glaive_guisarme_1_pl|Glaive-Guisarmes
-itm_glaive_guisarme_2|Glaive-Guisarme
 itm_glaive_guisarme_2_pl|Glaive-Guisarmes
-itm_fauchard_fork_1|Glaive-Guisarme
 itm_fauchard_fork_1_pl|Glaive-Guisarmes
-itm_fauchard_fork_2|Glaive-Guisarme
 itm_fauchard_fork_2_pl|Glaive-Guisarmes
 itm_lucern_hammer|Lucerne Marteau
 itm_lucern_hammer_pl|Lucerne Marteaus
-itm_bill_1|Guisarme
 itm_bill_1_pl|Guisarmes
-itm_bill_2|Guisarme
 itm_bill_2_pl|Guisarmes
 itm_fork_1|Fourche
 itm_fork_1_pl|Fourches
 itm_fork_2|Fourche
 itm_fork_2_pl|Fourches
-itm_glaive_1|Glaive
 itm_glaive_1_pl|Glaives
-itm_glaive_2|Glaive
 itm_glaive_2_pl|Glaives
-itm_guisarme|Guisarme
 itm_guisarme_pl|Guisarmes
 itm_lance_1|Grande Lance en bois
 itm_lance_1_pl|Grandes Lances en bois
@@ -1766,40 +1818,100 @@ itm_lance_banner_tut|Grande Lance en bois
 itm_lance_banner_tut_pl|Grandes Lances en bois
 itm_lance_white|Grande Lance en bois
 itm_lance_white_pl|Grande Lance en bois
-itm_lance_banner_jeanne|Baniere de jeanne d'arc
-itm_lance_banner_jeanne_pl|Baniere de jeanne d'arc
-itm_dagger_medievale|Dague
-itm_dagger_medievale_pl|Dague
+itm_heater_shieldduguesclin|Écu de Guesclin
+itm_heater_shieldduguesclin_pl|Écu de Guesclin
+itm_heater_shield_chandos|Écu de John Chandos
+itm_heater_shield_chandos_pl|Écu de John Chandos
 itm_battle_shieldedwardiii|Bouclier combat d'Henri V
 itm_battle_shieldedwardiii_pl|Bouclier combat d'Henri V
+itm_battle_shieldblackprince|Bouclier de combat
+itm_battle_shieldblackprince_pl|Bouclier de combat
 itm_battle_shieldcharlesv|Bouclier de combat de Charles VI
 itm_battle_shieldcharlesv_pl|Bouclier de combat de Charles VI
+itm_jousting_shield_e1|Bouclier de joutes Anglais
+itm_jousting_shield_e1_pl|Bouclier de joutes Anglais
+itm_jousting_shield_e2|Bouclier de joutes Anglais
+itm_jousting_shield_e2_pl|Bouclier de joutes Anglais
 itm_woodenbuckler|Rondache d'archer en bois
 itm_woodenbuckler_pl|Rondaches d'archer en bois
 itm_wooden_buckler1|Rondache d'archer en bois
 itm_wooden_buckler1_pl|Rondaches d'archer en bois
 itm_metal_buckler|Rondache d'archer en metal
 itm_metal_buckler_pl|Rondaches d'archer en metal
+itm_wooden_shieldblue|bouclier en bois Français
+itm_wooden_shieldblue_pl|bouclier en bois Français
+itm_wooden_shieldred|bouclier en bois Anglais
+itm_wooden_shieldred_pl|bouclier en bois Anglais
+itm_wooden_shieldbrown|bouclier en bois
+itm_wooden_shieldbrown_pl|boucliers en bois
+itm_large_shieldblueyellow|large bouclier Français
+itm_large_shieldblueyellow_pl|large bouclier Français
+itm_large_shieldbluewhite|large bouclier Français
+itm_large_shieldbluewhite_pl|large bouclier Français
+itm_large_shieldredyellow|large bouclier Anglais
+itm_large_shieldredyellow_pl|large bouclier Anglais
+itm_large_shieldredwhite|large bouclier Anglais
+itm_large_shieldredwhite_pl|large bouclier Anglais
+itm_large_shieldbrown|large bouclier Anglais
+itm_large_shieldbrown_pl|larges boucliers Anglais
+itm_kite_shieldlys|Bouclier Cerf français
+itm_kite_shieldlys_pl|Boucliers Cerf français
 itm_kite_shielddiamonds|Bouclier Cerf français
 itm_kite_shielddiamonds_pl|Boucliers Cerf français
+itm_kite_shieldcrosses|Bouclier Cerf français
+itm_kite_shieldcrosses_pl|Boucliers Cerf français
 itm_kite_shieldreddragon|Bouclier Cerf anglais
 itm_kite_shieldreddragon_pl|Boucliers Cerf anglais
+itm_kite_shield_diagonals|Bouclier Cerf français
+itm_kite_shield_diagonals_pl|Boucliers Cerf français
+itm_kite_shield_fishes|Bouclier Cerf français
+itm_kite_shield_fishes_pl|Boucliers Cerf français
+itm_kite_shield_rose|Bouclier Cerf anglais
+itm_kite_shield_rose_pl|Boucliers Cerf anglais
+itm_kite_shield_spiral|Bouclier Cerf anglais
+itm_kite_shield_spiral_pl|Boucliers Cerf anglais
+itm_kite_shield_squares|Bouclier Cerf anglais
+itm_kite_shield_squares_pl|Boucliers Cerf anglais
 itm_war_shield3lys|Bouclier de guerre français
 itm_war_shield3lys_pl|Boucliers de guerre français
+itm_war_shieldhorses|Bouclier de guerre français
+itm_war_shieldhorses_pl|Boucliers de guerre français
+itm_war_shieldcross|Bouclier de guerre français
+itm_war_shieldcross_pl|Boucliers de guerre français
 itm_war_shieldeagle|Bouclier de guerre français
 itm_war_shieldeagle_pl|Boucliers de guerre français
+itm_war_shield3lions|Boucliers de guerre anglais
+itm_war_shield3lions_pl|Boucliers de guerre anglais
 itm_war_shieldtrees|Bouclier de guerre anglais
 itm_war_shieldtrees_pl|Boucliers de guerre anglais
+itm_war_shieldflowers|Bouclier de guerre anglais
+itm_war_shieldflowers_pl|Boucliers de guerre anglais
 itm_war_shieldwales|Bouclier de guerre Gallois
 itm_war_shieldwales_pl|Boucliers de guerre Gallois
 itm_battle_shieldbluecross|Bouclier de combat français
 itm_battle_shieldbluecross_pl|Boucliers de combats français
+itm_battle_shieldbluecrosses|Bouclier de combat français
+itm_battle_shieldbluecrosses_pl|Boucliers de combats français
+itm_battle_shieldbluefishes|Bouclier de combat français
+itm_battle_shieldbluefishes_pl|Boucliers de combats français
 itm_battle_shieldbluelysstripes|Bouclier de combat français
 itm_battle_shieldbluelysstripes_pl|Boucliers de combats français
+itm_battle_shieldredcross|Bouclier de combat anglais
+itm_battle_shieldredcross_pl|Boucliers de combat anglais
+itm_battle_shieldredcrosses|Bouclier de combat anglais
+itm_battle_shieldredcrosses_pl|Boucliers de combat anglais
+itm_battle_shieldreddiamonds|Bouclier de combat anglais
+itm_battle_shieldreddiamonds_pl|Boucliers de combat anglais
+itm_battle_shieldredlions|Bouclier de combat anglais
+itm_battle_shieldredlions_pl|Boucliers de combats anglais
 itm_heraldric_shieldblue3lys|Bouclier Heraldrique
 itm_heraldric_shieldblue3lys_pl|Bouclier Heraldrique
 itm_heraldric_shieldblueerminestripes|Bouclier Heraldrique français
 itm_heraldric_shieldblueerminestripes_pl|Bouclier Heraldrique français
+itm_heraldric_shieldbluelys|Bouclier Heraldrique français
+itm_heraldric_shieldbluelys_pl|Bouclier Heraldrique français
+itm_heraldric_shieldblueermine|Bouclier Heraldrique français
+itm_heraldric_shieldblueermine_pl|Bouclier Heraldrique français
 itm_heraldric_shieldred3lions|Bouclier Heraldrique anglais
 itm_heraldric_shieldred3lions_pl|Bouclier Heraldrique anglais
 itm_heraldric_shieldredstripes|Bouclier Heraldrique anglais
@@ -1812,6 +1924,20 @@ itm_heater_shieldblue|Écu français
 itm_heater_shieldblue_pl|Écus français
 itm_heater_shieldred|Écu anglais
 itm_heater_shieldred_pl|Écus anglais
+itm_heater_shieldnoble|Écu
+itm_heater_shieldnoble_pl|Écus
+itm_heater_shieldboar|Écu Sanglier
+itm_heater_shieldboar_pl|Écus Sangliers
+itm_heater_shieldblack|Écu Noir
+itm_heater_shieldblack_pl|Écus Noirs
+itm_heater_shieldgreen|Écu vert
+itm_heater_shieldgreen_pl|Écus verts
+itm_heater_shieldhorse|Écu à cheval
+itm_heater_shieldhorse_pl|Écus à cheval
+itm_heater_shieldhre|Écu
+itm_heater_shieldhre_pl|ÉcuS
+itm_shield_heater_c|Écu
+itm_shield_heater_c_pl|Écus
 itm_steel_buckler1|Acier Rondache
 itm_steel_buckler1_pl|Acier Rondaches
 itm_steel_buckler2|Acier Rondache
@@ -1820,10 +1946,18 @@ itm_wooden_shield|Bouclier en bois
 itm_wooden_shield_pl|Boucliers en bois 
 itm_nordic_shield|Bouclier nordique 
 itm_nordic_shield_pl|Boucliers nordiques
+itm_fur_covered_shield|Bouclier couvert de fourrure 
+itm_fur_covered_shield_pl|Boucliers couverts de fourrure 
 itm_steel_shield|Bouclier en acier
 itm_steel_shield_pl|Boucliers en acier
+itm_plate_covered_round_shield|Bouclier rond couvert de plates 
+itm_plate_covered_round_shield_pl|Boucliers ronds couverts de plates 
 itm_leather_covered_round_shield|Bouclier rond couvert de cuir 
 itm_leather_covered_round_shield_pl|Boucliers ronds couverts de cuir 
+itm_hide_covered_round_shield|Bouclier rond couvert de peau
+itm_hide_covered_round_shield_pl|Boucliers ronds couverts de peau
+itm_shield_heater_c|Écu
+itm_shield_heater_c_pl|Écus
 itm_norman_shield_1|Grand écu
 itm_norman_shield_1_pl|Grands écus
 itm_norman_shield_2|Grand écu
@@ -1892,6 +2026,8 @@ itm_darts|Flèche
 itm_darts_pl|Flèches
 itm_war_darts|Flèche de guerre
 itm_war_darts_pl|Flèches de guerre
+itm_javelin|Javelot
+itm_javelin_pl|Javelots
 itm_javelin_melee|Javelot
 itm_javelin_melee_pl|Javelots
 itm_throwing_spears|Lance de jet
@@ -1944,32 +2080,65 @@ itm_heavy_crossbow|Arbalète lourde
 itm_heavy_crossbow_pl|Arbalètes lourdes
 itm_sniper_crossbow|Arbalète de siège 
 itm_sniper_crossbow_pl|Arbalètes de siège 
-itm_matchlock_2|Arquebuse
-itm_matchlock_2_pl|Arquebuse
-itm_matchlock_1|Couleuvrine a main
-itm_matchlock_1_pl|Couleuvrine a main
+itm_flintlock_pistol|Fusil à silex 
+itm_flintlock_pistol_pl|Fusils à silex 
 itm_torch|Torche
 itm_torch_pl|Torches
-itm_lyre|Lyre
 itm_lyre_pl|Lyres
 itm_lute|Luth
 itm_lute_pl|Luths
+itm_strange_armor|Armure étrange 
+itm_strange_armor_pl|Armures étranges
+itm_strange_boots|Bottes étranges 
+itm_strange_boots_pl|Bottes étranges 
+itm_strange_helmet|Casque étrange 
+itm_strange_helmet_pl|Casques étranges
+itm_strange_sword|Épée étrange 
+itm_strange_sword_pl|Épées étranges
+itm_strange_great_sword|Estramaçon étrange 
+itm_strange_great_sword_pl|Estramaçons étranges
+itm_strange_short_sword|Estramaçon étrange 
+itm_strange_short_sword_pl|Estramaçons étranges
 itm_court_dress|Robe courte 
 itm_court_dress_pl|Robes courtes
 itm_rich_outfit|Tenue de riche 
 itm_rich_outfit_pl|Tenues de riche 
+itm_khergit_guard_armor|Armure de garde Wales 
+itm_khergit_guard_armor_pl|Armures de garde Wales 
+itm_felt_steppe_cap|Bonnet de feutre des steppes 
+itm_felt_steppe_cap_pl|Bonnets de feutre des steppes 
 itm_khergit_war_helmet|Casque de guerre Wales 
 itm_khergit_war_helmet_pl|Casques de guerre Wales 
+itm_khergit_helmet|Casque Wales
+itm_khergit_helmet_pl|Casques Wales
+itm_khergit_guard_boots|Bottes de garde Wales 
+itm_khergit_guard_boots_pl|Bottes de garde Wales 
+itm_khergit_guard_helmet|Casque de garde Wales
+itm_khergit_guard_helmet_pl|Casques de garde Wales
+itm_khergit_cavalry_helmet|Casque de cavalerie Wales
+itm_khergit_cavalry_helmet_pl|Casques de cavalerie Wales
 itm_black_hood|Capuchon noir 
 itm_black_hood_pl|Capuchons noirs
+itm_light_leather|Cuir léger 
+itm_light_leather_pl|Cuirs légers
 itm_light_leather_boots|Bottes en cuir léger 
 itm_light_leather_boots_pl|Bottes en cuir léger 
 itm_mail_and_plate|Mailles et plates 
 itm_mail_and_plate_pl|Mailles et plates 
 itm_light_mail_and_plate|Mailles légères et plates 
 itm_light_mail_and_plate_pl|Mailles légères et plates 
-itm_breton_mail_and_plate|cotte de mailles Bretonne
-itm_breton_mail_and_plate_pl|cotte de mailles Bretonne
+itm_byzantion_helmet_a|Casque byzantin 
+itm_byzantion_helmet_a_pl|Casques byzantins
+itm_magyar_helmet_a|Casque magyar
+itm_magyar_helmet_a_pl|Casques magyars
+itm_rus_helmet_a|Casque varègue 
+itm_rus_helmet_a_pl|Casques varègues
+itm_sipahi_helmet_a|Casque de sipahi 
+itm_sipahi_helmet_a_pl|Casques de sipahi
+itm_shahi|Shahi 
+itm_shahi_pl|Shahis
+itm_rabati|Rabati 
+itm_rabati_pl|Rabatis
 itm_tunic_with_green_cape|Tunique avec cape verte
 itm_tunic_with_green_cape_pl|Tuniques avec cape verte
 itm_keys|Trousseau de clés
@@ -1994,291 +2163,21 @@ itm_warhorse_steppe|Cheval de batailles
 itm_warhorse_steppe_pl|Chevax de batailles
 itm_flamberge|Flamberge Zweihander
 itm_flamberge_pl|Flamberge Zweihander
-itm_chapel_de_fer2|chapel de fer
-itm_chapel_de_fer2_pl|chapel de fer
+itm_chapel_de_fer|Chapelle de Fer
+itm_chapel_de_fer_pl|Chapelle de Fer
 itm_plate_mittens|moufles de Plates
 itm_plate_mittens_pl|moufles de Plates
-itm_plan_1|Plan de fabrication d'epees
-itm_plan_1_pl|Plan de fabrication d'epees
-itm_plan_2|Plan de fabrication de fleches
-itm_plan_2_pl|Plan de fabrication de fleches
-itm_plan_3|Plan de fabrication de careaux
-itm_plan_3_pl|Plan de fabrication de careaux
-itm_plan_4|Plan de fabrication d'un bouclier
-itm_plan_4_pl|Plan de fabrication d'un bouclier
-itm_plan_5|Plan de fabrication d'arcs
-itm_plan_5_pl|Plan de fabrication d'arcs
-itm_plan_6|Plan de fabrication d'arbaletes
-itm_plan_6_pl|Plan de fabrication d'arbaletes
-itm_plan_7|Plan de fabrication de lances
-itm_plan_7_pl|Plan de fabrication de lances
-itm_plan_8|Plan de fabrication d'une armure de plates simple
-itm_plan_8_pl|Plan de fabrication d'une armure de plates simple
-itm_plan_9|Recette d'une soupe de légumes
-itm_plan_9_pl|Recette d'une soupe de légumes
-itm_plan_10|Recette de la potée de choux
-itm_plan_10_pl|Recette de la potée de choux
-itm_plan_11|Recette d'une soupe de poissons
-itm_plan_11_pl|Recette d'une soupe de poissons
-itm_plan_12|Plan de fabrication de torches
-itm_plan_12_pl|Plan de fabrication de torches
-itm_plis|Lettre
-itm_plis_pl|Lettre
-itm_plis_caen|Fausse invitation au banquet de Caen.
-itm_plis_caen_pl|Fausse invitation au banquet de Caen.
-itm_plis_toul|Note des rebels,cela ressemble a un code.
-itm_plis_toul_pl|Note des rebels,cela ressemble a un code.
-itm_plis_recomandation|Lettre de recomandation pour me proposer a devenire vassal.
-itm_plis_recomandation_pl|Lettre de recomandation pour me proposer a devenire vassal.
-itm_chevaliere|Chevaliere
-itm_chevaliere_pl|Chevaliere
-itm_medaille|Medaille de Mathieu
-itm_medaille_pl|Medaille de Mathieu
-itm_plume|Plumes
-itm_plume_pl|Plumes
-itm_poison|Poison
-itm_poison_pl|Poison
-itm_pier|Pierre a aiguiser
-itm_pier_pl|Pierre a aiguiser
-itm_bois|Bois
-itm_bois_pl|Bois
-itm_alchimi|Alcool d'Alchimiste
-itm_alchimi_pl|Alcool d'Alchimiste
-itm_corde|Corde
-itm_corde_pl|Corde
-itm_cuir|Cuir
-itm_cuir_pl|Cuir
-itm_champiv|Champignons veneneux
-itm_champiv_pl|Champignons veneneux
-itm_enclume|Enclume
-itm_enclume_pl|Enclume
-itm_cle_1|clé
-itm_cle_1_pl|clé
-itm_cle_2|clé du coffre du Chambellan
-itm_cle_2_pl|clé du coffre du Chambellan
-itm_epee_jeanne_charles|épée mysterieuse
-itm_epee_jeanne_charles_pl|épée mysterieuse
-itm_daggerspecial_medievale|Dague empoisonée
-itm_daggerspecial_medievale_pl|Dague empoisonée
-itm_bolts5|Carreaux
-itm_bolts5_pl|Carreaux
-itm_throwing_daggers_poison|Dagues empoisonées
-itm_throwing_daggers_poison_pl|Dagues empoisonées
-itm_boltsspecial|Carreaux  empoisonés
-itm_boltsspecial_pl|Carreaux  empoisonés
-itm_arrows_speciale|fl?hes empoison?s
-itm_arrows_speciale_pl|fl?hes empoison?s
-itm_espee_ecuyer|épée rouillée avec des Armoiries
-itm_espee_ecuyer_pl|épée rouillée avec des Armoiries
-itm_heraldic_churburg_13_tabard|Armure de plates Heraldic
-itm_heraldic_churburg_13_tabard_pl|Armure de plates Heraldic
-itm_heraldic_churburg_13_brass_tabard|Armure de plates Heraldic ornementée
-itm_heraldic_churburg_13_brass_tabard_pl|Armure de plates Heraldic ornementée
-itm_lettre0|Lettre pour le maitre de guilde des marchands de Montpelier
-itm_lettre0_pl|Lettre pour le maitre de guilde des marchands de Montpelier
-itm_lettre1|Lettre pour le maitre de guilde des marchands de Marseille
-itm_lettre1_pl|Lettre pour le maitre de guilde des marchands de Marseille
-itm_lettre2|Lettre pour le maitre de guilde des marchands de Paris
-itm_lettre2_pl|Lettre pour le maitre de guilde des marchands de Paris
-itm_lettre3|Lettre pour le maitre de guilde des marchands de Dijon
-itm_lettre3_pl|Lettre pour le maitre de guilde des marchands de Dijon
-itm_lettre4|Lettre pour le maitre de guilde des marchands de Caen
-itm_lettre4_pl|Lettre pour le maitre de guilde des marchands de Caen
-itm_lettre5|Cargaison du vendeur de livres de Bordeau
-itm_lettre5_pl|Cargaison du vendeur de livres de Bordeau
-itm_lettre6|Cargaison de l'armurier de Paris
-itm_lettre6_pl|Cargaison de l'armurier de Paris
-itm_lettre7|Cargaison de l'armurier d'Avignon
-itm_lettre7_pl|Cargaison de l'armurier d'Avignon
-itm_lettre9|Cargaison du forgeron de Reims
-itm_lettre9_pl|Cargaison du forgeron de Reims
-itm_orl_leather_apron|Tablier de maitre forgeron
-itm_orl_leather_apron_pl|Tablier de maitre forgeron
-itm_bb_armet|Armet
-itm_bb_armet_pl|Armet
-itm_bb_armet2|Armet
-itm_bb_armet2_pl|Armet
-itm_bb_hounskull_bp|Bascinet a plumes noires
-itm_bb_hounskull_bp_pl|Bascinet a plumes noires
-itm_bb_greathelm_bp|Heaume lourd a plumes noires
-itm_bb_greathelm_bp_pl|Heaume lourd a plumes noires
-itm_bb_massivehelm_bp|Armet a plumes bleus
-itm_bb_massivehelm_bp_pl|Armet a plumes bleus
-itm_bb_chivalhelm_vp|Heaume a cloche a plumes rouges
-itm_bb_chivalhelm_vp_pl|Heaume a cloche a plumes rouges
-itm_bb_greathelm_rp|Heaume lourd a plumes rouges
-itm_bb_greathelm_rp_pl|Heaume lourd a plumes rouges
-itm_bb_hounskull_yp|Bascinet a plumes jaunes
-itm_bb_hounskull_yp_pl|Bascinet a plumes jaunes
-itm_bb_complet_plates_b|Armure de plates completes Francaise
-itm_bb_complet_plates_b_pl|Armure de plates completes Francaise
-itm_bb_complet_plates_bourg|Armure de plates completes Bourgignone
-itm_bb_complet_plates_bourg_pl|Armure de plates completes Bourgignone
-itm_bb_complet_plates_charles|Armure de plates completes Francaise
-itm_bb_complet_plates_charles_pl|Armure de plates completes Francaise
-itm_bb_complet_plates_r|Armure de plates completes Anglaise
-itm_bb_complet_plates_r_pl|Armure de plates completes Anglaise
-itm_bb_complet_plates_rlyon|Armure de plates completes Anglaise
-itm_bb_complet_plates_rlyon_pl|Armure de plates completes Anglaise
-itm_breton_complet_plates|Armure de plates completes Bretonne
-itm_breton_complet_plates_pl|Armure de plates completes Bretonne
-itm_charger_blue_lanciers|Cheval de guerre en plates completes
-itm_charger_blue_lanciers_pl|Cheval de guerre en plates completes
-itm_weapon_lanceier_f1|Grande Lance de Noble chevalier
-itm_weapon_lanceier_f1_pl|Grande Lance de Noble chevalier
-itm_weapon_lanceier_f2|Grande Lance de Noble chevalier
-itm_weapon_lanceier_f2_pl|Grande Lance de Noble chevalier
-itm_bb_noble_hat|Coiffe de noble a plumes
-itm_bb_noble_hat_pl|Coiffe de noble a plumes
-itm_bb_noble_hat_simple|Coiffe de noble
-itm_bb_noble_hat_simple_pl|Coiffe de noble
-itm_chaudron|Chaudron
-itm_chaudron_pl|Chaudron
-itm_ustensil|Ustensiles de cuisine
-itm_ustensil_pl|Ustensiles de cuisine
-itm_joust_warhorse_f1|Cheval de joutes
-itm_joust_warhorse_f1_pl|Cheval de joutes
-itm_joust_warhorse_en1|Cheval de joutes
-itm_joust_warhorse_en1_pl|Cheval de joutes
-itm_bastard_sword_my_sword|épée batarde de guerre
-itm_bastard_sword_my_sword_pl|épée batarde de guerre
-itm_regent2|épée de famille
-itm_regent2_pl|épée de famille
-itm_tab_shield_renfor|Bouclier aux armoiries renforcé
-itm_tab_shield_renfor_pl|Bouclier aux armoiries renforcé
-itm_war_shield3lys_renfor|Bouclier Francais renforcé
-itm_war_shield3lys_renfor_pl|Bouclier Francais renforcé
-itm_court_hat_two|Coiffe de noble
-itm_court_hat_two_pl|Coiffe de noble
-itm_coiffe_soeur|Coiffe
-itm_coiffe_soeur_pl|Coiffe
-itm_coiffe_mere|Coiffe
-itm_coiffe_mere_pl|Coiffe
-itm_rpg_anterroche_armor|Cotte de mailles aux armoiries Anterroche
-itm_rpg_anterroche_armor_pl|Cotte de mailles aux armoiries Anterroche
-itm_rpg_armor_arloing|Cotte de mailles aux Arloing
-itm_rpg_armor_arloing_pl|Cotte de mailles aux Arloing
-itm_templar_q_sword|épée Maconique
-itm_templar_q_sword_pl|épée Maconique
-itm_maconique_armor|Cotte de mailles Maconique
-itm_maconique_armor_pl|Cotte de mailles Maconique
-itm_grimoire_rennes_chat|Initiation au savoir franc maconique (a lire au menu documents).
-itm_grimoire_rennes_chat_pl|Initiation au savoir franc maconique (a lire au menu documents).
-itm_grimoire_orleans|Les loges secrettes (a lire au menu documents).
-itm_grimoire_orleans_pl|Les loges secrettes (a lire au menu documents).
-itm_tresort_1|Rubis
-itm_tresort_1_pl|Rubis
-itm_tresort_2|améthyste
-itm_tresort_2_pl|améthyste
-itm_tresort_3|améthyste
-itm_tresort_3_pl|améthyste
-itm_tresort_4|Emeraude
-itm_tresort_4_pl|Emeraude
-itm_tresort_5|Anneau d'or
-itm_tresort_5_pl|Anneau d'or
-itm_tresort_6|Anneau d'or et améthyste
-itm_tresort_6_pl|Anneau d'or et améthyste
-itm_newlance_joutes_training_enemi|Lance de Joute
-itm_newlance_joutes_training_enemi_pl|Lance de Joute
-itm_newlance_joutes_training_joueur|Lance de Joute
-itm_newlance_joutes_training_joueur_pl|Lance de Joute
-itm_newlance_joutes_enemi|Lance de Joute
-itm_newlance_joutes_enemi_pl|Lance de Joute
-itm_newlance_joutes_joueur|Lance de Joute
-itm_newlance_joutes_joueur_pl|Lance de Joute
-itm_new_shynbaulds|Shynbaulds
-itm_new_shynbaulds_pl|Shynbaulds
-itm_new_steel_greaves|Greaves
-itm_new_steel_greaves_pl|Greaves
-itm_training_joute_saddle_horse|Cheval de Joute
-itm_training_joute_saddle_horse_pl|Cheval de Joute
-itm_training_joute_saddle_horse_enemi|Cheval de Joute
-itm_training_joute_saddle_horse_enemi_pl|Cheval de Joute
-itm_new_tilting_helmet|Casque a tete de crapeau
-itm_new_tilting_helmet_pl|Casque a tete de crapeau
-itm_new_hourglass_gauntlets|Gantellets
-itm_new_hourglass_gauntlets_pl|Gantellets
-itm_new_wisby_gauntlets_red|Gantellets
-itm_new_wisby_gauntlets_red_pl|Gantellets
-itm_new_helmet_tournament_blue_1|Armet a plumes bleus
-itm_new_helmet_tournament_blue_1_pl|Armet a plumes bleus
-itm_new_helmet_tournament_blue_2|Bascinet a plumes bleus
-itm_new_helmet_tournament_blue_2_pl|Bascinet a plumes bleus
-itm_new_helmet_tournament_red_1|Heaume lourd
-itm_new_helmet_tournament_red_1_pl|Heaume lourd
-itm_new_helmet_tournament_red_2|Heaume lourd a plumes rouges
-itm_new_helmet_tournament_red_2_pl|Heaume lourd a plumes rouges
-itm_new_churburg_13_brass_red|Armure de joute
-itm_new_churburg_13_brass_red_pl|Armure de joute
-itm_new_churburg_13_brass_blue|Armure de joute
-itm_new_churburg_13_brass_blue_pl|Armure de joute
-itm_new_joutes_horse_blue|Cheval de Joute
-itm_new_joutes_horse_blue_pl|Cheval de Joute
-itm_new_joutes_horse_fr|Cheval de Joute
-itm_new_joutes_horse_fr_pl|Cheval de Joute
-itm_new_joutes_horse_red|Cheval de Joute
-itm_new_joutes_horse_red_pl|Cheval de Joute
-itm_new_breton_warhorse_2|Cheval de Joute
-itm_new_breton_warhorse_2_pl|Cheval de Joute
-itm_new_bourgogne_warhorse|Cheval de Joute
-itm_new_bourgogne_warhorse_pl|Cheval de Joute
-itm_new_bb_complet_plates_charles|Armure de plates completes Francaise
-itm_new_bb_complet_plates_charles_pl|Armure de plates completes Francaise
-itm_new_bb_complet_plates_r|Armure de plates completes Anglaise
-itm_new_bb_complet_plates_r_pl|Armure de plates completes Anglaise
-itm_new_bb_complet_plates_bourg|Armure de plates completes Bourgignone
-itm_new_bb_complet_plates_bourg_pl|Armure de plates completes Bourgignone
-itm_new_breton_complet_plates|Armure de plates completes Bretonne
-itm_new_breton_complet_plates_pl|Armure de plates completes Bretonne
-itm_new_bb_hounskull_yp|Bascinet a plumes jaunes
-itm_new_bb_hounskull_yp_pl|Bascinet a plumes jaunes
-itm_new_bb_greathelm_bp|Heaume lourd a plumes noires
-itm_new_bb_greathelm_bp_pl|Heaume lourd a plumes noires
-itm_cidre|Cidre
-itm_cidre_pl|Cidre
-itm_practice_sword_figurants|Practice Sword
-itm_practice_sword_figurants_pl|Practice Sword
-itm_cle_auberge_maison|clé de la maison abandonnée
-itm_cle_auberge_maison_pl|clé de la maison abandonnée
-itm_dedal_kufel|Kufel
-itm_dedal_kufel_pl|Kufel
-itm_dedal_lutnia|Lutnia
-itm_dedal_lutnia_pl|Lutnia
-itm_dedal_lira|Lira
-itm_dedal_lira_pl|Lira
-itm_cavalier_invisible_casque|Armet
-itm_cavalier_invisible_casque_pl|Armet
-itm_cavalier_invisible_armor|Light Mail and Plate
-itm_cavalier_invisible_armor_pl|Light Mail and Plate
-itm_cavalier_invisible_bottes|English Mail Chausses
-itm_cavalier_invisible_bottes_pl|English Mail Chausses
-itm_cavalier_invisible_gants|Plate Mittens
-itm_cavalier_invisible_gants_pl|Plate Mittens
-itm_cheval_praire|Cheval exceptionnel
-itm_cheval_praire_pl|Cheval exceptionnel
-itm_cheval_praire_barder|Cheval exceptionnel bardé
-itm_cheval_praire_barder_pl|Cheval exceptionnel bardé
-itm_duke_joutes|Duc
-itm_duke_joutes_pl|Duc
-itm_laisse_passer_lorges|Laissé passé du Duc de Bretagne pour la foret de Lorges
-itm_laisse_passer_lorges_pl|Laissé passé du Duc de Bretagne pour la foret de Lorges
-itm_cle_mine|clé de la mine de la foret de Lorges
-itm_cle_mine_pl|clé de la mine de la foret de Lorges
-itm_choppe_bier|Chope de bierre
-itm_choppe_bier_pl|Chope de bierre
-itm_cle_de_grotte|clé de l'ancienne mine de la foret de Lorges
-itm_cle_de_grotte_pl|clé de l'ancienne mine de la foret de Lorges
-itm_quest_sniper_crossbow|Arbalète du chasseur
-itm_quest_sniper_crossbow_pl|Arbalète du chasseur
-itm_fr_hourglass_gauntlets|Hourglass Gauntlets
-itm_fr_hourglass_gauntlets_pl|Hourglass Gauntlets
-itm_eng_hourglass_gauntlets|Hourglass Gauntlets
-itm_eng_hourglass_gauntlets_pl|Hourglass Gauntlets
-itm_bret_hourglass_gauntlets|Hourglass Gauntlets
-itm_bret_hourglass_gauntlets_pl|Hourglass Gauntlets
-itm_corrazina_breton|Corrazina Bretone
-itm_corrazina_breton_pl|Corrazina Bretone
-itm_preuve_mort_pantievre|Chevaliere de Pantièvre [preuve de sa mort]
-itm_preuve_mort_pantievre_pl|Chevaliere de Pantièvre [preuve de sa mort]
+itm_bnw_gauntlets|Gantelets Noirs et blancs
+itm_bnw_gauntlets_pl|Gantelets Noirs et blancs
+itm_bear_paw_shoes|Patte d'ours
+itm_bear_paw_shoes_pl|Patte d'ours
+itm_combed_morion|Morion Peigné
+itm_combed_morion_pl|Morions Peignés
+itm_combed_morion_blued|Morion Peigné Bleu
+itm_combed_morion_blued_pl|Morions Peignés Bleu 
+itm_bnw_armour|Armure Noire et blanche 
+itm_bnw_armour_pl|Armure Noire et blanche 
+itm_bnw_armour|Armure Noire et blanche 
+itm_bnw_armour_pl|Armure Noire et blanche 
 itm_items_end|Fin des objets
 itm_items_end_pl|Fin des objets

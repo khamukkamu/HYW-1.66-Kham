@@ -150,6 +150,13 @@ dialogs = [
       
       (troop_get_type, reg65, "$g_talk_troop"),
       (try_begin),
+        (eq, reg65, 2),
+        (assign, reg65, 1), #Kham - Jeanne is female
+      (else_try),
+        (gt, reg65, 2), #Kham: other skins are male
+        (assign, reg65, 0),
+      (try_end),
+      (try_begin),
         (faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader,"$g_talk_troop"),
         (str_store_string,s64,"@{reg65?my Lady:my Lord}"), #bug fix
         (str_store_string,s65,"@{reg65?my Lady:my Lord}"),
@@ -203,8 +210,13 @@ dialogs = [
       (try_end),
       
       (troop_get_type, reg65, "$g_talk_troop"),
-      
-      (troop_get_type, reg65, "$g_talk_troop"),
+      (try_begin),
+        (eq, reg65, 2),
+        (assign, reg65, 1), #Kham - Jeanne is female
+      (else_try),
+        (gt, reg65, 2), #Kham: other skins are male
+        (assign, reg65, 0),
+      (try_end),
       (try_begin),
         (faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader,"$g_talk_troop"),
         (str_store_string,s64,"@{reg65?my Lady:my Lord}"), #bug fix
@@ -374,6 +386,17 @@ dialogs = [
       (assign, "$talk_context", 0)],
   ],
   
+
+  #Dialogue Auto-Return from Mission (Kham)
+  
+  [anyone,"event_triggered",
+    [
+      (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
+      (eq, "$talk_context", tc_vacation_over),
+    ],
+    "You are back, {playername}.", "lord_start",[(assign, "$talk_context", -1),],
+  ],
+
   #Dialogue Auto-Return from Vacation (Kham)
   
   [anyone,"event_triggered",
@@ -384,9 +407,11 @@ dialogs = [
       (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
       (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
       (call_script, "script_event_player_returns_vacation"),
+      (assign, "$talk_context", -1),
       (change_screen_map),
     ],
   ],
+
 
 # Event Triggers for Pacify Unhappy Troops
   [anyone,"event_triggered", [(check_quest_active, "qst_freelancer_mission_2"), (quest_slot_eq, "qst_freelancer_mission_2", slot_quest_current_state, 1),], 
@@ -552,7 +577,6 @@ dialogs = [
   [anyone|plyr, "freelancer_pacify_persuade_fail", [], 
     "I am sorry that I cannot convince you. I'll let the commander know.", "close_window", 
     [(call_script, "script_fail_quest", "qst_freelancer_mission_2"),
-     (party_get_morale, ":cur_morale", "$enlisted_party"),
      (call_script, "script_change_party_morale", "$enlisted_party", -10), #Failure leads to reduction of morale 
      (display_message, "@The men are dishearthened by your failed attempt. (Morale Worsened)", color_bad_news)]],
 
@@ -982,6 +1006,13 @@ dialogs = [
       
       (troop_get_type, reg65, "$g_talk_troop"),
       (try_begin),
+        (eq, reg65, 2),
+        (assign, reg65, 1), #Kham - Jeanne is female
+      (else_try),
+        (gt, reg65, 2), #Kham: other skins are male
+        (assign, reg65, 0),
+      (try_end),
+      (try_begin),
         (faction_slot_eq,"$g_talk_troop_faction",slot_faction_leader,"$g_talk_troop"),
         (str_store_string,s64,"@{reg65?my Lady:my Lord}"), #bug fix
         (str_store_string,s65,"@{reg65?my Lady:my Lord}"),
@@ -1148,6 +1179,13 @@ dialogs = [
       (try_end),
       (str_store_party_name, s1, "$g_center_taken_by_player_faction"),
       (troop_get_type, reg3, ":new_owner"),
+      (try_begin),
+        (eq, reg3, 2),
+        (assign, reg65, 1), #Kham - Jeanne is female
+      (else_try),
+        (gt, reg3, 2), #Kham: other skins are male
+        (assign, reg3, 0),
+      (try_end),
       
       (assign, "$g_center_taken_by_player_faction", -1),
       
@@ -1272,6 +1310,13 @@ dialogs = [
       (try_end),
       (str_store_party_name, s1, "$g_center_taken_by_player_faction"),
       (troop_get_type, reg3, ":new_owner"),
+      (try_begin),
+        (eq, reg3, 2),
+        (assign, reg65, 1), #Kham - Jeanne is female
+      (else_try),
+        (gt, reg3, 2), #Kham: other skins are male
+        (assign, reg3, 0),
+      (try_end),
       
       (assign, "$g_center_taken_by_player_faction", -1),
       
@@ -16418,6 +16463,13 @@ dialogs = [
       (str_store_troop_name_plural, s12, "$g_talk_troop"),
       (troop_get_type, ":is_female", "$g_talk_troop"),
       (try_begin),
+        (eq, ":is_female", 2),
+        (assign, ":is_female", 1), #Kham - Jeanne is female
+      (else_try),
+        (gt, ":is_female", 2), #Kham: other skins are male
+        (assign, ":is_female", 0),
+      (try_end),
+      (try_begin),
         (eq, "$g_talk_troop", "trp_npc10"),
         (str_store_string, s14, "str_tribune_s12"),
       (else_try),
@@ -23287,7 +23339,7 @@ dialogs = [
       (str_store_party_name, s14, "$qst_scout_waypoints_wp_2"),
       (str_store_party_name, s15, "$qst_scout_waypoints_wp_3"),
     ],
-    "You make a good scout, {playername}. My runner just brought me your reports of the mission to {s13}, {s14} and {s15}. Well done.", "lord_scout_waypoints_thank",
+    "You make a good scout, {playername}. My runner just brought me your reports of the mission to the assigned areas. Well done.", "lord_scout_waypoints_thank",
     [
       #TODO: Change reward
       (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
@@ -26657,6 +26709,11 @@ dialogs = [
       (str_store_troop_name,s9,":quest_giver"),
       (call_script, "script_change_player_relation_with_troop", ":quest_giver", 1),
       (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),
+      (try_begin),
+        (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
+        (jump_to_menu, "mnu_freelancer_autojoin_lord"),
+        (change_screen_return),
+      (try_end),
   ]],
   
   [anyone|plyr,"lord_talk",[(check_quest_active,"qst_deliver_message_to_enemy_lord"),

@@ -61360,6 +61360,12 @@ scripts = [
         (call_script, "script_set_player_relation_with_faction", ":cur_faction", 0),
       (try_end),
       
+      # Try to catch unwanted swings in plaver v commander faction relation
+
+      (set_show_messages, 0),
+      (call_script, "script_set_player_relation_with_faction", ":commander_faction", 4),
+      (set_show_messages, 1),
+
       (assign, "$freelancer_state", 2),
       (call_script, "script_freelancer_detach_party"),
       (rest_for_hours, 0,0,0),
@@ -61438,6 +61444,11 @@ scripts = [
         (call_script, "script_set_player_relation_with_faction", ":cur_faction", 0),
       (try_end),
       
+      # Try to catch unwanted swings in plaver v commander faction relation
+      (set_show_messages, 0),
+      (call_script, "script_set_player_relation_with_faction", ":commander_faction", 4),
+      (set_show_messages, 1),
+
       (assign, "$freelancer_state", 2),
       (troop_set_slot, "trp_player", slot_freelancer_mission, 1),
       (call_script, "script_freelancer_detach_party"),
@@ -62152,13 +62163,13 @@ scripts = [
       (spawn_around_party, "$enlisted_party", "pt_deserters"),
       (assign, ":deserter_party", reg0),
       
-      #Get Commande Faction then add troops based on player level.
+      #Get Commander Faction then add troops based on player level.
       (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
       (faction_get_slot, ":culture", ":commander_faction", slot_faction_culture),
       (faction_get_slot, ":tier_1_troop", ":culture", slot_faction_tier_1_troop),
       (store_character_level, ":level", "trp_player"),
       (store_mul, ":max_number_to_add", ":level", 2),
-      (val_add, ":max_number_to_add", 8),
+      (val_add, ":max_number_to_add", 10),
       (store_random_in_range, ":number_to_add", 10, ":max_number_to_add"),
       (party_clear, ":deserter_party"),
       (party_add_members, ":deserter_party", ":tier_1_troop", ":number_to_add"),

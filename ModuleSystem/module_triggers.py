@@ -1728,7 +1728,12 @@ triggers = [
         (else_try),
           (assign, ":troop", "trp_breton_messenger"),
         (try_end),
-        (start_map_conversation, ":troop"),
+        (try_begin),
+          (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
+          (start_map_conversation, "$enlisted_lord"),
+        (else_try),
+          (start_map_conversation, ":troop"),
+        (try_end),
       (try_end),
   ]),
   
@@ -1769,7 +1774,53 @@ triggers = [
       (try_end),
   ]),
   
-  #Save Compat Trigger
+  #Freelancer Join Tut Message
   (0.1, 0, ti_once, [(eq, "$freelancer_state", 1)], [(dialog_box,"@You will be following the Lord/Lady you chose and will be joining in battles they get into.^ You can also get promoted as you gain experience. ^^Lastly, you can increase the map speed while enlisted by pressing the '=' key (next to the backspace key).", "@You are now enlisted!")]),
   
+  #Autojoin Lord Trigger
+  (2, 0, 0, 
+    [
+     (eq, "$freelancer_missions", 1),
+     (eq, "$freelancer_state", 2),
+     (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
+    ],
+    [
+
+    (assign, ":continue", 0), 
+    
+    (try_begin),
+      (check_quest_active, "qst_freelancer_mission_1"), #Deserters
+      (check_quest_succeeded, "qst_freelancer_mission_1"),
+      (assign, ":continue", 1), 
+    (else_try),
+      (check_quest_active, "qst_scout_waypoints"),
+      (check_quest_succeeded, "qst_scout_waypoints"),
+      (assign, ":continue", 1), 
+    (else_try),
+      (check_quest_active, "qst_deliver_message"),
+      (check_quest_succeeded, "qst_deliver_message"),
+      (assign, ":continue", 1), 
+    (try_end),
+
+    (eq, ":continue", 1),
+    (jump_to_menu, "mnu_freelancer_autojoin_lord"),
+
+    ]),
+
+#Save Compat triggers
+
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),  
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+   (999, 0, ti_once, [],[]),
+
 ]

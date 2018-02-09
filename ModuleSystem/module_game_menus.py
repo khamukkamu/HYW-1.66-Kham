@@ -25218,6 +25218,25 @@ game_menus = [
   #+freelancer end
   
   #Kham Freelancer Improvements Start
+
+  #Kham Freelancer - Autojoin Lord START
+
+  ("freelancer_autojoin_lord", 0,
+    "Would you like to rejoin your commander now or keep exploring?",
+    "none",[],
+    [
+      ("autojoin_lord", [], "Rejoin Commander",
+        [(assign, "$talk_context", tc_vacation_over),
+         (start_map_conversation, "$enlisted_lord"),
+         (party_relocate_near_party, "p_main_party", "$enlisted_party", 2),
+         (change_screen_return),]
+      ),
+
+      ("continue_exploring", [], "Continue Exploring", 
+        [(change_screen_return)]),
+    ],
+  ),
+
   
   #Kham Freelancer - Training START
   ("freelancer_training_choose", 0,
@@ -25398,7 +25417,7 @@ game_menus = [
           (modify_visitors_at_site, "$scene_to_use"),
           (reset_visitors),
           (set_visitor, 0, "trp_player"),
-          (set_visitors, 3, "trp_looter", ":num_looters"),
+          (set_visitors, 2, "trp_looter", ":num_looters"),
           (set_jump_mission,"mt_freelancer_charge"),
           (jump_to_scene, "$scene_to_use"),
           (assign, "$g_next_menu", "mnu_freelancer_looter_conclusion"),
@@ -25432,7 +25451,7 @@ game_menus = [
           (reset_visitors),
           (set_visitor, 0, "trp_player"),
           (set_visitors, 0, "$player_cur_troop", ":num_friends"),
-          (set_visitors, 3, "trp_looter", ":num_looters"),
+          (set_visitors, 2, "trp_looter", ":num_looters"),
           (set_jump_mission,"mt_freelancer_charge"),
           (jump_to_scene, "$scene_to_use"),
           (assign, "$g_next_menu", "mnu_freelancer_looter_conclusion"),
@@ -25529,7 +25548,7 @@ game_menus = [
           (modify_visitors_at_site, "$scene_to_use"),
           (reset_visitors),
           (set_visitor, 0, "trp_player"),
-          (set_visitors, 3, ":enemy_troop", ":num_looters"),
+          (set_visitors, 2, ":enemy_troop", ":num_looters"),
           (set_jump_mission,"mt_freelancer_charge"),
           (jump_to_scene, "$scene_to_use"),
           (assign, "$g_next_menu", "mnu_freelancer_bandit_conclusion"),
@@ -25571,7 +25590,7 @@ game_menus = [
           (reset_visitors),
           (set_visitor, 0, "trp_player"),
           (set_visitors, 0, "$player_cur_troop", ":num_friends"),
-          (set_visitors, 3, ":enemy_troop", ":num_looters"),
+          (set_visitors, 2, ":enemy_troop", ":num_looters"),
           (set_jump_mission,"mt_freelancer_charge"),
           (jump_to_scene, "$scene_to_use"),
           (assign, "$g_next_menu", "mnu_freelancer_bandit_conclusion"),

@@ -1,4 +1,4 @@
-pt_none|none
+﻿pt_none|Aucun
 pt_rescued_prisoners|Prisoniers secourus 
 pt_enemy|Ennemi
 pt_hero_party|Groupe du héros 
@@ -6,7 +6,6 @@ pt_village_defenders|Défenseurs du village
 pt_cattle_herd|Troupeau de bétails 
 pt_looters|bandits de grand chemin
 pt_manhunters|Chasseurs de primes
-pt_black_khergit|Rebelles
 pt_steppe_bandits|maraudeurs basques
 pt_taiga_bandits|Compagnie des Tard Venus
 pt_desert_bandits|Bandits maures
@@ -38,19 +37,9 @@ pt_kingdom_hero_party|Groupe de guerre
 pt_kingdom_1_reinforcements_a|L'armée française
 pt_kingdom_1_reinforcements_b|L'armée française
 pt_kingdom_1_reinforcements_c|L'armée française
-pt_kingdom_1_reinforcements_d|kingdom 1 reinforcements d
 pt_kingdom_2_reinforcements_a|L'armée anglais
 pt_kingdom_2_reinforcements_b|L'armée anglais
 pt_kingdom_2_reinforcements_c|L'armée anglais
-pt_kingdom_2_reinforcements_d|kingdom 2 reinforcements d
-pt_kingdom_3_reinforcements_a|kingdom 3 reinforcements a
-pt_kingdom_3_reinforcements_b|kingdom 3 reinforcements b
-pt_kingdom_3_reinforcements_c|kingdom 3 reinforcements c
-pt_kingdom_3_reinforcements_d|kingdom 3 reinforcements d
-pt_kingdom_4_reinforcements_a|kingdom 4 reinforcements a
-pt_kingdom_4_reinforcements_b|kingdom 4 reinforcements b
-pt_kingdom_4_reinforcements_c|kingdom 4 reinforcements c
-pt_kingdom_4_reinforcements_d|kingdom 4 reinforcements d
 pt_steppe_bandit_lair|Camp des maraudeurs basques
 pt_taiga_bandit_lair|Camp des tard venus
 pt_desert_bandit_lair|Repaire de maures
@@ -59,9 +48,3 @@ pt_mountain_bandit_lair|camp des écorcheurs
 pt_sea_raider_lair|Camp des retondeurs
 pt_looter_lair|Camp des ravisseurs
 pt_leaded_looters|Bande de voleurs
-pt_english_con|Convoi d'armes Anglais
-pt_sang_lys|Compagnie du SansLys
-pt_quest_viland_bourges|La grande Compagnie de Vilandrandro
-pt_catareb|Rebelles de Paris
-pt_cranede_fer|Compagnie des Cranes de Fer
-pt_bandits_rennes|Tueurs de caravaniers
