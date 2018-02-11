@@ -33,6 +33,22 @@ from compiler import *
 #
 ####################################################################################################################
 
+## Brighter Nights
+
+bright_nights=  (ti_before_mission_start, 0, 2,
+                  [
+                    (is_currently_night)],[
+                    (set_startup_ambient_light,15,24,37), #27,46,67 
+                    #(display_message, "@Bright Nights active")
+                  ])
+  
+
+## Fade to Black
+mission_fade_in =  (ti_after_mission_start, 0, 0, [],
+                     [(mission_cam_set_screen_color,        0xFF000000), 
+                      (mission_cam_animate_to_screen_color, 0x00000000, 2500)])
+
+
 # Formations AI v5 by Motomataru
 # rel. 02/14/2016
 
@@ -1414,7 +1430,9 @@ dplmc_battle_mode_triggers = [
 
 hyw_common_battle_scripts = [
   tld_cheer_on_space_when_battle_over_press,
-tld_cheer_on_space_when_battle_over_release] + dplmc_battle_mode_triggers + utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers + AI_triggers + battle_panel_triggers
+  tld_cheer_on_space_when_battle_over_release,
+  mission_fade_in,
+  bright_nights] + dplmc_battle_mode_triggers + utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers + AI_triggers + battle_panel_triggers
 
 
 pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
@@ -3175,7 +3193,7 @@ mission_templates = [
       (46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
       (47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
     ],
-    [show_hide_helmet_view,
+    [show_hide_helmet_view, mission_fade_in,
       
       (ti_on_agent_spawn, 0, 0, [],
         [
@@ -3540,7 +3558,7 @@ mission_templates = [
       (32,mtef_visitor_source,af_override_horse,0,1,[]),(33,mtef_visitor_source,af_override_horse,0,1,[]),(34,mtef_visitor_source,af_override_horse,0,1,[]),(35,mtef_visitor_source,af_override_horse,0,1,[]),(36,mtef_visitor_source,af_override_horse,0,1,[]),(37,mtef_visitor_source,af_override_horse,0,1,[]),(38,mtef_visitor_source,af_override_horse,0,1,[]),(39,mtef_visitor_source,af_override_horse,0,1,[]),
       (40,mtef_visitor_source,af_override_horse,0,1,[]),(41,mtef_visitor_source,af_override_horse,0,1,[]),(42,mtef_visitor_source,af_override_horse,0,1,[]),(43,mtef_visitor_source,af_override_horse,0,1,[]),(44,mtef_visitor_source,af_override_horse,0,1,[]),(45,mtef_visitor_source,af_override_horse,0,1,[]),(46,mtef_visitor_source,af_override_horse,0,1,[]),(47,mtef_visitor_source,af_override_horse,0,1,[]),
     ],
-    [show_hide_helmet_view,
+    [show_hide_helmet_view, mission_fade_in,
       (1, 0, ti_once, [], [
           (store_current_scene, ":cur_scene"),
           (scene_set_slot, ":cur_scene", slot_scene_visited, 1),
@@ -3787,7 +3805,7 @@ mission_templates = [
       (30,mtef_visitor_source,af_castle_lord,0,1,[]),
       (31,mtef_visitor_source,af_castle_lord,0,1,[])
     ],
-    [show_hide_helmet_view,
+    [show_hide_helmet_view, mission_fade_in,
       (ti_on_agent_spawn, 0, 0, [],
         [
           (store_trigger_param_1, ":agent_no"),
@@ -5040,7 +5058,7 @@ mission_templates = [
       (19, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
       (20, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
     ],
-    [show_hide_helmet_view,
+    [show_hide_helmet_view, mission_fade_in,
       (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
       
       common_battle_tab_press,
@@ -5154,7 +5172,7 @@ mission_templates = [
       (27, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
       (28, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
     ],
-    [show_hide_helmet_view,
+    [show_hide_helmet_view, mission_fade_in,
       (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
       
       common_battle_tab_press,
@@ -5266,7 +5284,7 @@ mission_templates = [
       (3,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,12,[]),
       (3,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]),
     ],
-    [show_hide_helmet_view,
+    [show_hide_helmet_view, mission_fade_in,
       (ti_on_agent_spawn, 0, 0, [],
         [
           (store_trigger_param_1, ":agent_no"),
@@ -5513,6 +5531,7 @@ mission_templates = [
       (46,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
     ],
     [show_hide_helmet_view,
+      mission_fade_in,
       common_battle_mission_start,
       common_battle_tab_press,
       common_battle_init_banner,
@@ -5658,7 +5677,7 @@ mission_templates = [
       (45,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
       (46,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
     ],
-    [    show_hide_helmet_view,
+    [    show_hide_helmet_view, mission_fade_in,
       (ti_on_agent_spawn, 0, 0, [],
         [
           (store_trigger_param_1, ":agent_no"),
@@ -24829,6 +24848,7 @@ mission_templates = [
     
     [
       #show_hide_helmet_view,
+      mission_fade_in,
       (ti_before_mission_start, 0, 0, [],
         [
           (call_script, "script_change_banners_and_chest"),
@@ -25321,6 +25341,7 @@ mission_templates = [
     
     [
       #show_hide_helmet_view,
+      mission_fade_in,
       (ti_before_mission_start, 0, 0, [],
         [
           (call_script, "script_change_banners_and_chest"),
@@ -25816,6 +25837,7 @@ mission_templates = [
     
     [
       #show_hide_helmet_view,
+      mission_fade_in,
       (ti_before_mission_start, 0, 0, [],
         [
           (call_script, "script_change_banners_and_chest"),
@@ -26315,6 +26337,7 @@ mission_templates = [
     
     [
       #show_hide_helmet_view,
+      mission_fade_in,
       (ti_before_mission_start, 0, 0, [],
         [
           (call_script, "script_change_banners_and_chest"),
@@ -26546,6 +26569,7 @@ mission_templates = [
     
     [
       #show_hide_helmet_view,
+      mission_fade_in,
       (ti_before_mission_start, 0, 0, [],
         [
           (call_script, "script_change_banners_and_chest"),
@@ -26778,6 +26802,7 @@ mission_templates = [
     
     [
       #show_hide_helmet_view,
+
       (ti_before_mission_start, 0, 0, [],
         [
           (call_script, "script_change_banners_and_chest"),
@@ -27009,6 +27034,7 @@ mission_templates = [
     
     [
       #show_hide_helmet_view,
+      mission_fade_in,
       (ti_before_mission_start, 0, 0, [],
         [
           (call_script, "script_change_banners_and_chest"),

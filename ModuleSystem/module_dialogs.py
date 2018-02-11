@@ -810,12 +810,7 @@ dialogs = [
         (party_remove_members, "p_main_party", ":cur_troops", ":cur_size"),
       (try_end),]],
   
-  [anyone|plyr, "lord_freelancer_deserters_thank", [],
-    "Cowardice is never an excuse for treason.", "lord_pretalk",[]],
-  [anyone|plyr, "lord_freelancer_deserters_thank", [],
-    "It was a difficult task, but it had to be done.", "lord_pretalk",[]],
-  [anyone|plyr, "lord_freelancer_deserters_fail", [],
-    "I will do better next time.", "lord_pretalk",[]],
+
   
   #Dialogue for Scout Waypoints
   
@@ -23380,8 +23375,15 @@ dialogs = [
   [anyone|plyr, "lord_scout_waypoints_thank", [],
     "My pleasure, {s65}.", "lord_pretalk",[]],
   
-  
-  
+#Freelancer Mission Deserters Finish - Had to put it here cause pretalk should be higher.
+
+  [anyone|plyr, "lord_freelancer_deserters_thank", [],
+    "Cowardice is never an excuse for treason.", "lord_pretalk",[]],
+  [anyone|plyr, "lord_freelancer_deserters_thank", [],
+    "It was a difficult task, but it had to be done.", "lord_pretalk",[]],
+  [anyone|plyr, "lord_freelancer_deserters_fail", [],
+    "I will do better next time.", "lord_pretalk",[]],
+
   [anyone, "lord_start",
     [
       (check_quest_active, "qst_follow_army"),
@@ -32549,7 +32551,7 @@ dialogs = [
         (assign, reg3, 0),
       (try_end),
     ],
-    "My {reg3?Lady:Lord}, I would like to like to enlist in your army.", "lord_request_enlistment",[]],
+    "My {reg3?Lady:Lord}, I would like to enlist in your army.", "lord_request_enlistment",[]],
   
   # dialog_advise_retirement
   
@@ -32568,7 +32570,7 @@ dialogs = [
         (assign, reg3, 0),
       (try_end),
     ],
-    "My {reg3?Lady:Lord}, I would like to like to retire from service.", "lord_request_retire",[]],
+    "My {reg3?Lady:Lord}, I would like to retire from service.", "lord_request_retire",[]],
   
   #dialog_ask_leave
   [anyone|plyr,"lord_talk",[

@@ -50,7 +50,6 @@ freelancer_lord_mission_deserters_accepted
 freelancer_lord_mission_deserters_declined
 lord_freelancer_deserters_thank
 lord_freelancer_deserters_fail
-lord_pretalk
 freelancer_lord_mission_told_scout_waypoints
 freelancer_lord_mission_told_scout_waypoints_accepted
 freelancer_lord_mission_told_scout_waypoints_rejected
@@ -2303,6 +2302,7 @@ looter_leader_1
 looter_leader_2
 looter_leader_3
 rescue_prisoner_succeed_2
+lord_pretalk
 start_up_quest_1_next
 start_up_quest_2_next
 merchant_quest_2a
