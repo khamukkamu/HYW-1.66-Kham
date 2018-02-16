@@ -12687,7 +12687,7 @@ game_menus = [
       ]),
       
       ##town_paris banque
-      ("town_bourg_banq",
+      ("town_bourg_banq_paris",
         [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq, "$current_town", "p_town_1"),
@@ -13002,7 +13002,7 @@ game_menus = [
       ]),
       
       ##town_bourges banque
-      ("town_bourg_banq",
+      ("town_bourg_banq_bourges",
         [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq, "$current_town", "p_town_4"),
@@ -13024,7 +13024,7 @@ game_menus = [
       
       ##town_5|Metz attaque entrepot
       
-      ("town_Metz_districts_scene",
+      ("town_Metz_districts_scene_qst_rebel",
         [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq, "$current_town", "p_town_5"),
@@ -13516,7 +13516,7 @@ game_menus = [
       
       ##town_15|Orleans monastere de Carmel de Micy
       
-      ("town_Orleans_districts_scene",
+      ("town_Orleans_districts_scene_qst_tresort",
         [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq, "$current_town", "p_town_15"),
@@ -13678,7 +13678,7 @@ game_menus = [
       
       ##town_17|Poitiers
       
-      ("town_Poitiers_districts_scene",
+      ("town_Poitiers_districts_scene_promener",
         [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq, "$current_town", "p_town_17"),
@@ -13702,7 +13702,7 @@ game_menus = [
       
       ##town_18|Avignon apres quetes avec milliciens
       
-      ("town_Avignon_districts_scene",
+      ("town_Avignon_districts_scene_qst_sl_deffensse_suc_fail",
         [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq, "$current_town", "p_town_18"),
@@ -24923,7 +24923,7 @@ game_menus = [
     "none",
     [(set_background_mesh, "mesh_pic_soldier_world_map"),(str_store_troop_name, s6, "$enlisted_lord")],
     [
-      ("continue",[],
+      ("continue_audience",[],
         "Continue...",
         [
           (try_begin),
@@ -25320,7 +25320,9 @@ game_menus = [
           (else_try),
             (assign, ":duel_scene", "scn_training_ground_ranged_melee_1"),
           (try_end),
-          
+
+          (assign, "$g_encountered_party", "$enlisted_party"),
+
           (modify_visitors_at_site, ":duel_scene"),
           (reset_visitors),
           (set_visitor, 0, "trp_player"),
@@ -25396,7 +25398,11 @@ game_menus = [
         (str_store_string, s5, "@You and your men"),
       (else_try),
         (str_store_string, s5, "@You"),
-      (try_end)],
+      (try_end),
+      (set_spawn_radius, 1),
+      (spawn_around_party, "p_main_party", "pt_looters"),
+      (assign, "$g_encountered_party", reg0),
+      (remove_party, reg0),],
     [
       ("looter_attack", [
           (store_troop_faction, ":commander_faction", "$enlisted_lord"),
@@ -25500,7 +25506,7 @@ game_menus = [
       (try_end)],
     [
       ("bandit_accept", [(neg|troop_is_wounded, "trp_player")], "Accept this mission",
-        [(jump_to_menu, "mnu_freelancer_looter_accept")]),
+        [(jump_to_menu, "mnu_freelancer_bandit_accept")]),
       
       ("bandit_reject", [(neg|troop_is_wounded, "trp_player")], "Reject today's mission.",
         [(change_screen_map)]),
@@ -25520,7 +25526,11 @@ game_menus = [
         (str_store_string, s5, "@You and your men"),
       (else_try),
         (str_store_string, s5, "@You"),
-      (try_end)],
+      (try_end),
+      (set_spawn_radius, 1),
+      (spawn_around_party, "p_main_party", "pt_steppe_bandits"),
+      (assign, "$g_encountered_party", reg0),
+      (remove_party, reg0),],
     [
       ("bandit_attack", [
           (store_troop_faction, ":commander_faction", "$enlisted_lord"),

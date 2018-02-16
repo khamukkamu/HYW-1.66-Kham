@@ -1,0 +1,231 @@
+p_zendar|Zendar
+p_town_1|Paris
+p_town_2|Reims
+p_town_3|Nantes
+p_town_4|Bourges
+p_town_5|Metz
+p_town_6|Dijon
+p_town_7|Montpellier
+p_town_8|Marseille
+p_town_9|Caen
+p_town_10|Limoges
+p_town_11|Calais
+p_town_12|Rouen
+p_town_13|Toulouse
+p_town_14|Bordeaux
+p_town_15|Orleans
+p_town_16|Tours
+p_town_17|Poitiers
+p_town_18|Avignon
+p_town_19|Cherbourg
+p_town_20|Lyon
+p_town_21|Auxerre
+p_town_22|Rennes
+p_castle_1|Cherbourg
+p_castle_2|Amiens
+p_castle_3|Chartres
+p_castle_4|Brest
+p_castle_5|Troyes
+p_castle_6|La Rochelle
+p_castle_7|Angouleme
+p_castle_8|Moulins
+p_castle_9|Clermont
+p_castle_10|Lyon
+p_castle_11|Le Mans
+p_castle_12|Bayonne
+p_castle_13|Auch
+p_castle_14|Tarbes
+p_castle_15|Albe
+p_castle_16|Carcassonne
+p_castle_17|Grenoble Keep
+p_castle_18|Saint-Malo
+p_castle_19|Antwerp
+p_castle_20|Peronne
+p_castle_21|Verneuilo
+p_castle_22|Chateauroux
+p_castle_23|Laval
+p_castle_24|Senlis
+p_castle_25|Turenne
+p_castle_26|Aurillac
+p_castle_27|Nevers
+p_castle_28|Monterean
+p_castle_29|Dieppe
+p_castle_30|Rodez
+p_castle_31|Le Puy
+p_castle_32|Cahors
+p_castle_33|Nantes
+p_castle_34|Neufchateau
+p_castle_35|Chalons
+p_castle_36|Albret
+p_castle_37|Montargis
+p_castle_38|Bruges
+p_castle_39|Thouars
+p_castle_40|Castle Agincourt
+p_castle_41|Mont Saint-Michel
+p_castle_42|Poitiers Bridge
+p_castle_43|Tours Bridge
+p_castle_44|Bordeaux Bridge
+p_castle_45|Fortified Bridge
+p_castle_46|Bourges Bridge
+p_castle_47|Tourelles Bridge
+p_castle_48|Chinon
+p_village_1|Bruges Village
+p_village_2|Boulogne
+p_village_3|Lille
+p_village_4|Abbeville
+p_village_5|Nemours
+p_village_6|Mayenne
+p_village_7|Laon
+p_village_8|Soissons
+p_village_9|Senlis Village
+p_village_10|Beaumont
+p_village_11|Chalons Village
+p_village_12|Bar
+p_village_13|Joinville
+p_village_14|Melun
+p_village_15|Sens
+p_village_16|Dieppe Village
+p_village_17|Harcourt
+p_village_18|Bayeux
+p_village_19|Lisieux
+p_village_20|Harfleur
+p_village_21|Honflew
+p_village_22|Quimper
+p_village_23|Laval Village
+p_village_24|Graon
+p_village_25|Blois
+p_village_26|Levet
+p_village_27|Vierzon
+p_village_28|Chateauroux
+p_village_29|Nevers Village
+p_village_30|Fontenay
+p_village_31|Niort
+p_village_32|La Tremouille
+p_village_33|Gueret
+p_village_34|Rochefort
+p_village_35|Saintes
+p_village_36|Soyaux
+p_village_37|Turenne Village
+p_village_38|Perigueux
+p_village_39|Aurillac Village
+p_village_40|Moulins Village
+p_village_41|Langres
+p_village_42|Beaune
+p_village_43|Chalon
+p_village_44|Macon
+p_village_45|Vienne
+p_village_46|Clermont Village
+p_village_47|Valence
+p_village_48|Briancon
+p_village_49|Fecamp
+p_village_50|Verneuilo Village
+p_village_51|Castillon
+p_village_52|Cahors Village
+p_village_53|Agen
+p_village_54|Montauban
+p_village_55|Foix
+p_village_56|Narbonne
+p_village_57|Sete
+p_village_58|Nimes
+p_village_59|Arles
+p_village_60|Toulon
+p_village_61|Dax
+p_village_62|Alencon
+p_village_63|Albret Village
+p_village_64|Bretigny
+p_village_65|Thouars Village
+p_village_66|Peronne Village
+p_village_67|Agincourt
+p_village_68|Ghent
+p_village_69|Vannes
+p_village_70|Guines
+p_village_71|Lunoges
+p_village_72|Elaye
+p_village_73|Maupertuis
+p_village_74|Hesdin
+p_village_75|Autun
+p_village_76|Arras
+p_village_77|Monterean Village
+p_village_78|Montargis Village
+p_village_79|Evreux
+p_village_80|Albi
+p_village_81|La Teste de Buch
+p_village_82|Beauvoir
+p_village_83|Le Puy Village
+p_village_84|Rodez Village
+p_village_85|Boves
+p_village_86|Gien
+p_village_87|Formigny
+p_village_88|Neufchateau Village
+p_village_89|Cosne
+p_village_90|Vaucouleurs
+p_village_91|Brest
+p_village_92|Saint-Brieuc
+p_village_93|Troyes
+p_village_94|Lunery
+p_salt_mine|Salt Mine
+p_four_ways_inn|Four Ways Inn
+p_test_scene|test scene
+p_battlefields|battlefields
+p_dhorak_keep|Dhorak Keep
+p_training_ground|Training Ground
+p_training_ground_1|Training Field
+p_training_ground_2|Training Field
+p_training_ground_3|Training Field
+p_training_ground_4|Training Field
+p_training_ground_5|Training Field
+p_Bridge_1|1
+p_Bridge_2|2
+p_Bridge_3|3
+p_Bridge_4|4
+p_Bridge_5|5
+p_Bridge_6|6
+p_Bridge_7|7
+p_Bridge_8|8
+p_Bridge_9|9
+p_Bridge_10|10
+p_Bridge_11|11
+p_Bridge_12|12
+p_Bridge_13|13
+p_Bridge_14|14
+p_Bridge_15|15
+p_camp_anglais|English Camp
+p_toul_village|Toul Village
+p_camp_ofrebels|Rebel Camp
+p_place_forte_b|Burgundian Strongpoint
+p_tour_despins|Tower of the Pines
+p_fermemat|Mathieu's Farm
+p_chasse_camp|Hunting Camp
+p_fierbois|Sainte Catherine de Fierbois
+p_rouen_foret|Rouen Forest
+p_quest_forest1|Levet Forest
+p_quest_forest2|Aurillac Forest
+p_quest_forest3|Narbonne Forest
+p_quest_forest4|Rodez Forest
+p_quest_forest5|Arles Forest
+p_quest_forest6|Puy Forest
+p_quest_forest7|Vierzon Forest
+p_quest_forest8|Beaune Forest
+p_quest_forest9|Montargis Forest
+p_quest_forest10|Evreux Forest
+p_quest_forest11|Guines Forest
+p_quest_forest12|Bayeux Forest
+p_auberge_1|Inn
+p_auberge_2|Inn
+p_auberge_3|Inn
+p_auberge_4|Inn
+p_prairie_bourges|Bourges Meadow
+p_foret_lorges|Lorges Forest
+p_camp_crane_fer|Camp of the Iron Skulls
+p_quintin|Quintin Citadel
+p_looter_spawn_point|looter sp
+p_steppe_bandit_spawn_point|the steppes
+p_taiga_bandit_spawn_point|the tundra
+p_forest_bandit_spawn_point|the forests
+p_mountain_bandit_spawn_point|the highlands
+p_sea_raider_spawn_point_1|the coast
+p_sea_raider_spawn_point_2|the coast
+p_black_khergit_spawn_point_1|black khergit sp
+p_black_khergit_spawn_point_2|black khergit sp2
+p_sang_lys_spawn_point_1|freelancer spawn point 1
+p_cranede_fer_spawn_point_1|iron skull spawn point 1

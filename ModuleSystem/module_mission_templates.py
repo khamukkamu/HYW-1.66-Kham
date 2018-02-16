@@ -35830,22 +35830,6 @@ mission_templates = [
       ]),
       
       common_battle_inventory,
-      
-      
-      (3, 0, 0, [
-          (call_script, "script_apply_effect_of_other_people_on_courage_scores"),
-          ], []), #calculating and applying effect of people on others courage scores
-      
-      (3, 0, 0, [
-          (try_for_agents, ":agent_no"),
-            (agent_is_human, ":agent_no"),
-            (agent_is_alive, ":agent_no"),
-            (store_mission_timer_a,":mission_time"),
-            (ge,":mission_time",3),
-            (call_script, "script_decide_run_away_or_not", ":agent_no", ":mission_time"),
-          (try_end),
-          ], []), #controlling courage score and if needed deciding to run away for each agent
-      
       common_battle_order_panel,
       common_battle_order_panel_tick,
       
