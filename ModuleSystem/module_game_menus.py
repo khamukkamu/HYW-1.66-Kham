@@ -5436,7 +5436,8 @@ game_menus = [
   #Kham Test Menu
   ( "camp_khamtest",0,
     "Kham Test","none",[],
-    [
+    [ 
+      ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
       ("choose_scene",[],"** Scene Chooser **", [(jump_to_menu, "mnu_choose_scenes_0"),]),
        ("test_low_morale_quest",[],"Test Low Morale Freelancer Quest", [(assign, "$player_cur_troop", "trp_swadian_sergent"),
           (assign, "$enlisted_lord", "trp_knight_1_5"),

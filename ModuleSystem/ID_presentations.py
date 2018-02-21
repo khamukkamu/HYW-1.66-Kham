@@ -49,3 +49,4 @@ prsnt_taragoth_lords_report = 47
 prsnt_game_troop_tree = 48
 prsnt_troop_tree = 49
 prsnt_troop_detail = 50
+prsnt_all_items = 51

@@ -32768,11 +32768,11 @@ dialogs = [
     [
       (ge, "$g_talk_troop_relation", 0),
       (store_troop_faction, ":commander_faction", "$enlisted_lord"),
-      (faction_get_slot, reg3, ":commander_faction", slot_freelancer_rank),
-      (val_add, reg3, 2), #add 2 days per rank for vacation. So a rank 1 only gets 3 days, rank 2, gets 4, etc...
+      (faction_get_slot, reg6, ":commander_faction", slot_freelancer_rank),
+      (val_add, reg6, 2), #add 2 days per rank for vacation. So a rank 1 only gets 3 days, rank 2, gets 4, etc...
       
     ],
-    "Very well {playername}. You shall take some time off from military duty. Return in {reg3} days.", "lord_pretalk",[
+    "Very well {playername}. You shall take some time off from military duty. Return in {reg6} days.", "lord_pretalk",[
       (call_script, "script_event_player_vacation"),
       #If player is a sarge or captain, remove his party - Kham
       (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
