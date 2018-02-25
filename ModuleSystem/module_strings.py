@@ -4110,14 +4110,24 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 # Kham - Armor Customization Strings
 
-# Padded Cloth Begin
-("pc_be1", "padded_cloth_b_e1"),
-("pc_be2", "padded_cloth_b_e2"),
-("pc_bf1", "padded_cloth_b_f1"),  
-("pc_end", "padded_cloth_end"),
+# Padded Cloth 
+("a_padded_cloth_black", "a_padded_cloth_black"),
+("a_padded_cloth_blue", "a_padded_cloth_blue"),
+("a_padded_cloth_brown", "a_padded_cloth_brown"),
+("a_padded_cloth_green", "a_padded_cloth_green"),
+("a_padded_cloth_half_black", "a_padded_cloth_half_black"),
+("a_padded_cloth_half_blue", "a_padded_cloth_half_blue"),
+("a_padded_cloth_half_brown", "a_padded_cloth_half_brown"),
+("a_padded_cloth_half_green", "a_padded_cloth_half_green"),
+("a_padded_cloth_half_red", "a_padded_cloth_half_red"),
+("a_padded_cloth_red", "a_padded_cloth_red"),
+("a_padded_cloth_white", "a_padded_cloth_white"),
+("padded_cloth_b_e1", "padded_cloth_b_e1"),
+("padded_cloth_b_e2", "padded_cloth_b_e2"),
+("padded_cloth_b_f1", "padded_cloth_b_f1"),
+("a_padded_cloth_end", "a_padded_cloth_end"),
 
 # Peasant Clothes
-
 ("a_peasant_man_black", "a_peasant_man_black"),  
 ("a_peasant_man_black_2", "a_peasant_man_black_2"),  
 ("a_peasant_man_black_3", "a_peasant_man_black_3"),  
@@ -4131,5 +4141,28 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_peasant_man_white", "a_peasant_man_white"),  
 ("a_peasant_man_yellow", "a_peasant_man_yellow"),  
 ("a_peasant_man_yellow_2", "a_peasant_man_yellow_2"),  
-("a_peasant_man_end", "padded_cloth_end"),
+("a_peasant_man_end", "a_peasant_man_end"),
+
+# Gambeson
+("a_gambeson_black", "a_gambeson_black"),  
+("a_gambeson_blue", "a_gambeson_blue"),  
+("a_gambeson_brown", "a_gambeson_brown"),  
+("a_gambeson_green", "a_gambeson_green"),  
+("a_gambeson_red", "a_gambeson_red"),  
+("a_gambeson_white", "a_gambeson_white"),  
+("a_gambeson_end", "a_gambeson_end"),
+
+# Narf Gambeson
+("a_narf_gambeson_black", "a_narf_gambeson_black"),  
+("a_narf_gambeson_blue", "a_narf_gambeson_blue"),  
+("a_narf_gambeson_brown", "a_narf_gambeson_brown"),  
+("a_narf_gambeson_green", "a_narf_gambeson_green"),  
+("a_narf_gambeson_red", "a_narf_gambeson_red"),  
+("gambeson", "gambeson"),  
+("gambeson_e", "gambeson_e"),  
+("a_narf_gambeson_half_black", "a_narf_gambeson_half_black"),  
+("a_narf_gambeson_half_blue", "a_narf_gambeson_half_blue"),  
+("a_narf_gambeson_half_brown", "a_narf_gambeson_half_yellow"),  
+("a_narf_gambeson_half_green", "a_narf_gambeson_half_green"),  
+("a_narf_gambeson_end", "a_narf_gambeson_end"),
 ]

@@ -929,20 +929,30 @@ scripts = [
       (assign, "$freelancer_missions", 1), #Allow Freelancer Missions
 
       #Init Custom Armors
-      (try_for_range, ":item_no", "itm_padded_cloth_custom", "itm_padded_jack"),
-          (item_set_slot, ":item_no", slot_item_player_color, -1),
+      (try_for_range, ":item_no", "itm_a_peasant_man_custom", "itm_items_end"), # Seek: Changed the range
+          (item_set_slot, ":item_no", slot_item_player_color, 0), # Seek: Changed to 0 as suggested by Kham
           (item_set_slot, ":item_no", slot_item_num_components, 1), #allows it to be customized
       (try_end),
 
 # Padded Cloth Test
-      (item_set_slot, "itm_padded_cloth_custom", slot_item_materials_begin, "str_pc_be1"),
-      (item_set_slot, "itm_padded_cloth_custom", slot_item_materials_end, "str_pc_end"),
-      (item_set_slot, "itm_padded_cloth_custom", slot_item_num_components, 1),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_materials_begin, "str_a_padded_cloth_black"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_materials_end, "str_a_padded_cloth_end"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_num_components, 1),
       
 # Peasant Clothes
        (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_begin, "str_a_peasant_man_black"),
       (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_end, "str_a_peasant_man_end"),
       (item_set_slot, "itm_a_peasant_man_custom", slot_item_num_components, 1),    
+		
+# Gambeson
+       (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_begin, "str_a_gambeson_black"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_end, "str_a_gambeson_end"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_num_components, 1),    		
+		
+# Narf Gambeson 
+       (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_materials_begin, "str_a_narf_gambeson_black"),
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_materials_end, "str_a_narf_gambeson_end"),
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_num_components, 1),    		
   ]),
   
   #script_game_get_use_string
