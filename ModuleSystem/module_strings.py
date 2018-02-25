@@ -4116,4 +4116,20 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("pc_bf1", "padded_cloth_b_f1"),  
 ("pc_end", "padded_cloth_end"),
 
+# Peasant Clothes
+
+("a_peasant_man_black", "a_peasant_man_black"),  
+("a_peasant_man_black_2", "a_peasant_man_black_2"),  
+("a_peasant_man_black_3", "a_peasant_man_black_3"),  
+("a_peasant_man_blue", "a_peasant_man_blue"),  
+("a_peasant_man_blue_2", "a_peasant_man_blue_2"),  
+("a_peasant_man_brown", "a_peasant_man_brown"),  
+("a_peasant_man_brown_2", "a_peasant_man_brown_2"),  
+("a_peasant_man_brown_3", "a_peasant_man_brown_3"),  
+("a_peasant_man_green", "a_peasant_man_green"),  
+("a_peasant_man_green_2", "a_peasant_man_green_2"),  
+("a_peasant_man_white", "a_peasant_man_white"),  
+("a_peasant_man_yellow", "a_peasant_man_yellow"),  
+("a_peasant_man_yellow_2", "a_peasant_man_yellow_2"),  
+("a_peasant_man_end", "padded_cloth_end"),
 ]

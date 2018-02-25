@@ -934,11 +934,15 @@ scripts = [
           (item_set_slot, ":item_no", slot_item_num_components, 1), #allows it to be customized
       (try_end),
 
+# Padded Cloth Test
       (item_set_slot, "itm_padded_cloth_custom", slot_item_materials_begin, "str_pc_be1"),
       (item_set_slot, "itm_padded_cloth_custom", slot_item_materials_end, "str_pc_end"),
       (item_set_slot, "itm_padded_cloth_custom", slot_item_num_components, 1),
       
-      
+# Peasant Clothes
+       (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_begin, "str_a_peasant_man_black"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_end, "str_a_peasant_man_end"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_num_components, 1),    
   ]),
   
   #script_game_get_use_string

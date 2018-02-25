@@ -1962,6 +1962,13 @@ items = [
 ["corrazina_breton", "Corrazina Bretone", [("corrazina_breton",0)], itp_type_body_armor  |itp_covers_legs ,0, 4228 , weight(23)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(18)|difficulty(6) ,imodbits_armor ],
 ["preuve_mort_pantievre", "Chevaliere de Pantièvre [preuve de sa mort]", [("item_from_quest_2",0)], itp_type_goods, 0, 2000, weight(2)|abundance(0), imodbits_none ],
 
+# Seek & Destroy Item variants with Kham's Armor customization
+["a_peasant_man_custom", "Peasant Tunic", [("a_peasant_man_white",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 6 , weight(1)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(2)|difficulty(0) ,imodbits_cloth , [custom_reskin("itm_a_peasant_man_custom")]], 
+
+# ["padded_cloth_custom", "Padded Cloth", [("padded_cloth_b_e1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, 
+ # [custom_reskin("itm_padded_cloth_custom")]], 
+
+
 
 ["items_end", "Items End", [("small_shield",0)], 0, 0, 1, 0, 0],
 ]
