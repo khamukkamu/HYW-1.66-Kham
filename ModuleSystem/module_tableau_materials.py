@@ -1063,4 +1063,39 @@ tableaus = [
     (cur_tableau_set_ambient_light, 10,11,15),
     (call_script, "script_add_troop_to_cur_tableau_for_troop_detail_dummy", ":troop_no"),
   ]),
+
+  ("custom_armor_window", 0, "tableau_with_transparency", 1024, 1024, 0, 0, 240, 400,
+   [
+       (store_script_param, ":troop_no", 1),
+       (cur_tableau_set_background_color,0xFF888888),
+       (cur_tableau_set_ambient_light, 15,14,13),
+       (set_fixed_point_multiplier, 100),
+       (cur_tableau_set_camera_parameters, 0, 40, 40, 0, 100000),
+
+       (init_position, pos1),
+       (position_set_z, pos1, 100),
+       (position_set_x, pos1, -20),
+       (position_set_y, pos1, -20),
+       (cur_tableau_add_tableau_mesh, "tableau_custom_armor_color", ":troop_no", pos1, 0, 0),
+       (position_set_z, pos1, 200),
+       (cur_tableau_add_tableau_mesh, "tableau_custom_armor_alpha_mask", ":troop_no", pos1, 0, 0),
+       (position_set_z, pos1, 300),
+       ]),
+  ("custom_armor_alpha_mask", 0, "mat_troop_portrait_mask", 1024, 1024, 0, 0, 400, 400,
+   [
+       (store_script_param, ":troop_no", 1),
+       (cur_tableau_set_background_color, 0x00888888),
+       (cur_tableau_set_ambient_light,15,14,13),
+       (cur_tableau_render_as_alpha_mask),
+       (call_script, "script_add_troop_to_custom_armor_tableau", ":troop_no"),
+       ]),
+
+  ("custom_armor_color", 0, "mat_troop_portrait_color", 1024, 1024, 0, 0, 400, 400,
+   [
+       (store_script_param, ":troop_no", 1),
+       (cur_tableau_set_background_color, 0xFF888888), #random colour
+       (cur_tableau_set_ambient_light,15,14,13),
+       (call_script, "script_add_troop_to_custom_armor_tableau", ":troop_no"),
+       ]),
+  
 ]

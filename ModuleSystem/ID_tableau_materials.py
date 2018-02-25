@@ -55,3 +55,6 @@ tableau_retired_troop_color = 53
 tableau_retirement_troop = 54
 tableau_troop_tree_pic = 55
 tableau_troop_detail_dummy_pic = 56
+tableau_custom_armor_window = 57
+tableau_custom_armor_alpha_mask = 58
+tableau_custom_armor_color = 59

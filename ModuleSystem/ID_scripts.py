@@ -812,3 +812,4 @@ script_store_item_price = 810
 script_list_random = 811
 script_list_add = 812
 script_list_clear = 813
+script_add_troop_to_custom_armor_tableau = 814

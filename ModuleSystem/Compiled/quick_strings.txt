@@ -1,4 +1,4 @@
-1134
+1135
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1133,3 +1133,4 @@ qstr_You_give_the_men_{re You_give_the_men_{reg6}_crowns_and_leave_them_to_their
 qstr_Weapons Weapons
 qstr_Armors Armors
 qstr_Others Others
+qstr_{s1}_has_{reg1}_comp {s1}_has_{reg1}_component_meshes

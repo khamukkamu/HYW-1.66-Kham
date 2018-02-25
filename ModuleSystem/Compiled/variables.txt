@@ -1483,3 +1483,6 @@ freelancer_missions
 form_options_overlay_9
 g_presentation_obj_5
 g_presentation_obj_6
+g_custom_armor_angle
+g_custom_armor_param_count
+g_custom_armor_mandatory

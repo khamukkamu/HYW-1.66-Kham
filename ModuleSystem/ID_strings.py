@@ -3173,3 +3173,7 @@ str_bomb_fire = 3201
 str_tactical_controls = 3202
 str_division_placement = 3203
 str_formations = 3204
+str_pc_be1 = 3205
+str_pc_be2 = 3206
+str_pc_bf1 = 3207
+str_pc_end = 3208

@@ -48,6 +48,27 @@ mission_fade_in =  (ti_after_mission_start, 0, 0, [],
                      [(mission_cam_set_screen_color,        0xFF000000), 
                       (mission_cam_animate_to_screen_color, 0x00000000, 2500)])
 
+customize_armor = (ti_inventory_key_pressed, 0, 0,
+      [
+        (game_key_is_down, gk_view_char),
+        # (set_trigger_result,1),
+      ], [
+        (get_player_agent_no, ":player_agent"),
+        (assign, ":end", ek_foot), #should add a global as iterator
+        (try_for_range, ":item_slot", ek_item_0, ":end"),
+          (agent_get_item_slot, ":item_no", ":player_agent", ":item_slot"),
+          (gt, ":item_no", -1),
+          (item_slot_ge, ":item_no", slot_item_num_components, 1),
+          (assign, "$g_current_opened_item_details", ":item_no"),
+          (assign, ":end", -1),
+          (start_presentation, "prsnt_customize_armor"),
+        (try_end),
+        (try_begin), #none found
+          (eq, ":end", ek_foot),
+          (display_message, "str_cant_use_inventory_tutorial"),
+          (assign, "$g_current_opened_item_details", -1),
+        (try_end),
+      ])
 
 # Formations AI v5 by Motomataru
 # rel. 02/14/2016
@@ -1428,10 +1449,13 @@ dplmc_battle_mode_triggers = [
 ]
 ##diplomacy end
 
+
+
 hyw_common_battle_scripts = [
   tld_cheer_on_space_when_battle_over_press,
   tld_cheer_on_space_when_battle_over_release,
   mission_fade_in,
+  customize_armor,
   bright_nights] + dplmc_battle_mode_triggers + utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers + AI_triggers + battle_panel_triggers
 
 
@@ -2884,7 +2908,7 @@ mission_templates = [
       (8,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#39
       (10,mtef_visitor_source,af_override_horse|af_override_gloves,0,1,[]),#40
       ],[
-      dedal_tavern_animations,
+      dedal_tavern_animations, customize_armor,
       #dedal end
       
       
@@ -3193,7 +3217,7 @@ mission_templates = [
       (46,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
       (47,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
     ],
-    [show_hide_helmet_view, mission_fade_in,
+    [show_hide_helmet_view, mission_fade_in, customize_armor,
       
       (ti_on_agent_spawn, 0, 0, [],
         [
@@ -3558,7 +3582,7 @@ mission_templates = [
       (32,mtef_visitor_source,af_override_horse,0,1,[]),(33,mtef_visitor_source,af_override_horse,0,1,[]),(34,mtef_visitor_source,af_override_horse,0,1,[]),(35,mtef_visitor_source,af_override_horse,0,1,[]),(36,mtef_visitor_source,af_override_horse,0,1,[]),(37,mtef_visitor_source,af_override_horse,0,1,[]),(38,mtef_visitor_source,af_override_horse,0,1,[]),(39,mtef_visitor_source,af_override_horse,0,1,[]),
       (40,mtef_visitor_source,af_override_horse,0,1,[]),(41,mtef_visitor_source,af_override_horse,0,1,[]),(42,mtef_visitor_source,af_override_horse,0,1,[]),(43,mtef_visitor_source,af_override_horse,0,1,[]),(44,mtef_visitor_source,af_override_horse,0,1,[]),(45,mtef_visitor_source,af_override_horse,0,1,[]),(46,mtef_visitor_source,af_override_horse,0,1,[]),(47,mtef_visitor_source,af_override_horse,0,1,[]),
     ],
-    [show_hide_helmet_view, mission_fade_in,
+    [show_hide_helmet_view, mission_fade_in, customize_armor,
       (1, 0, ti_once, [], [
           (store_current_scene, ":cur_scene"),
           (scene_set_slot, ":cur_scene", slot_scene_visited, 1),
@@ -3805,7 +3829,7 @@ mission_templates = [
       (30,mtef_visitor_source,af_castle_lord,0,1,[]),
       (31,mtef_visitor_source,af_castle_lord,0,1,[])
     ],
-    [show_hide_helmet_view, mission_fade_in,
+    [show_hide_helmet_view, mission_fade_in, customize_armor,
       (ti_on_agent_spawn, 0, 0, [],
         [
           (store_trigger_param_1, ":agent_no"),

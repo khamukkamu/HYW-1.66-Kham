@@ -4106,5 +4106,14 @@ One may memorize the placement of selected divisions relative to the player by p
 - SQUARE in no particular order^\
 - NO FORMATION^^\
 Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times."),
-  
+
+
+# Kham - Armor Customization Strings
+
+# Padded Cloth Begin
+("pc_be1", "padded_cloth_b_e1"),
+("pc_be2", "padded_cloth_b_e2"),
+("pc_bf1", "padded_cloth_b_f1"),  
+("pc_end", "padded_cloth_end"),
+
 ]

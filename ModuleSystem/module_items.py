@@ -23,6 +23,32 @@ from compiler import *
 #  10) [Optional] Factions: List of factions that item can be found as merchandise.
 ####################################################################################################################
 
+def custom_reskin(item):
+  return (ti_on_init_item, [
+    # (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
+    (store_trigger_param_2, ":troop_no"),
+    (str_clear, s1),
+    (item_get_slot, ":start", item, slot_item_materials_begin),
+    (item_get_slot, ":end", item, slot_item_materials_end),
+    (store_sub, ":total", ":end", ":start"),
+    (gt, ":total", 0),
+    (try_begin),
+      (gt, ":troop_no", -1),
+      (troop_is_hero, ":troop_no"),
+      (item_get_slot, ":value", item, slot_item_player_color),
+      (neq, ":value", -1),
+      (val_mod, ":value", ":total"),
+      (val_add, ":value", ":start"),
+    (else_try),
+      (store_random_in_range, ":value", ":start", ":end"),
+    (try_end),
+    (try_begin),
+      (str_store_string, s1, ":value"),
+      (cur_item_set_material, s1, 0),
+    (try_end),
+    ])
+
+
 # Some constants for ease of use.
 imodbits_none = 0
 imodbits_horse_basic = imodbit_swaybacked|imodbit_lame|imodbit_spirited|imodbit_heavy|imodbit_stubborn
@@ -749,6 +775,9 @@ items = [
 ["padded_cloth_b_e2", "Gambison anglais", [("padded_cloth_b_e2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 ["padded_cloth_b_f1", "French Padded Cloth", [("padded_cloth_b_f1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 
+#Padded Cloth Custom
+["padded_cloth_custom", "Padded Cloth", [("padded_cloth_b_e1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, 
+ [custom_reskin("itm_padded_cloth_custom")]], 
 
 
 ["padded_jack", "Padded Jack", [("gambeson",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0, 415 , weight(6)|abundance(100)|head_armor(0)|body_armor(28)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],

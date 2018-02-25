@@ -2145,3 +2145,24 @@ Troop_Tree_Tableau_Width = Troop_Tree_Tableau_Height*Screen_Undistort_Width_Num/
 
 #Debug mode - Turn off before deploying to production
 debug_mode = 1
+
+armor_cloth                   = 0
+armor_armor                   = 1
+armor_plate                   = 2
+
+custom_armor_maximum_submaterial = 7 #armor_plate + 4, thanks platemail
+slot_item_materials_begin = 81
+slot_item_materials_end = 82
+slot_item_num_components = 83
+slot_item_init_script = 84
+#mandatory + optional | color
+slot_item_player_slots_begin = 85
+slot_item_player_slots_end = slot_item_player_slots_begin + custom_armor_maximum_submaterial
+slot_item_player_color = slot_item_player_slots_end
+
+custom_item_color_mask = 0xf
+custom_item_color_bits = 4
+
+message_positive = 0x33FF33
+message_negative = 0xFF3333
+message_neutral = 0xFFFF33

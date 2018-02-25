@@ -250,9 +250,9 @@
  walk_forward_crouch 256 0  1
   1.700000 low_walk 0 48 536870912 58726 0.0 0.0 0.0 0.0 
  stand_to_crouch 256 0  1
-  1.000000 crouch_down 0 81 2 0 0.000000 0.000000 0.000000  0.0 
+  1.300000 crouch_down 0 50 2 0 0.000000 0.000000 0.000000 0.000000 
  crouch_to_stand 256 0  1
-  1.000000 crouch_down 154 185 2 0 0.000000 0.000000 0.000000  0.0 
+  1.000000 crouch_down 56 91 2 0 0.000000 0.000000 0.000000 0.000000 
  ride_0 256 16777216  1
   15.000000 stand_onhorse 0 456 268435456 0 0.0 0.0 0.0 0.0 
  ride_1 257 16777216  1
@@ -496,7 +496,7 @@
  ready_thrust_onehanded_horseback 1679884800 1679843338  1
   0.350000 attacks_thrust_onehanded 5 13 7 0 0.0 0.0 0.0 0.0 
  release_thrust_onehanded_horseback 1679884800 2183159818  1
-  0.620000 attacks_thrust_onehanded 12 32 6 0 0.0 0.0 0.0 0.0 
+  0.470000 attacks_thrust_onehanded 12 32 6 0 0.000000 0.000000 0.000000 0.000000 
  release_thrust_onehanded_horseback_continue 0 572547073  1
   0.300000 attacks_thrust_onehanded 32 54 2 0 0.0 0.0 0.0 0.0 
  blocked_thrust_onehanded_horseback 512 35676175  1
@@ -506,7 +506,7 @@
  ready_thrust_onehanded_lance 1679884800 1679843338  1
   0.350000 1h_low_thrust_30.9.10 0 5 7 0 0.0 0.0 0.0 0.0 
  release_thrust_onehanded_lance 1679884800 2183159818  1
-  0.620000 1h_low_thrust_30.9.10 5 34 6 0 0.0 0.0 0.0 0.0 
+  0.470000 1h_low_thrust_30.9.10 5 34 6 0 0.0 0.0 0.0 0.0 
  release_thrust_onehanded_lance_continue 0 572547073  1
   0.300000 1h_low_thrust_30.9.10 34 39 2 0 0.0 0.0 0.0 0.0 
  blocked_thrust_onehanded_lance 512 35676175  1
@@ -933,79 +933,83 @@
  wedding_dad_last 0 100728927  1
   10.000000 wedding_dad_last 0 300 1 0 0.0 0.0 0.0 0.0 
  wedding_bride_last 0 100728927  1
-  10.000000 wedding_bride_last 0 300 1 0 0.0 0.0 0.0 0.0 
- unused_human_anim_12 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_13 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_14 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_15 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_16 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_17 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_18 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_19 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_20 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_21 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_22 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_23 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_24 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_25 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_26 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_27 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_28 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_29 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_30 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_31 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_32 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_33 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_34 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_35 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_36 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_37 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_38 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_39 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_40 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_41 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_42 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_43 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_44 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_45 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_46 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
- unused_human_anim_47 0 0  1
-  1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
+  10.000000 wedding_bride_last 0 300 1 0 0.000000 0.000000 0.000000 0.000000 
+ equip_bayonet 0 184549446  1
+  0.300000 equip_musket 5 13 1 0 0.000000 0.000000 0.000000 0.000000 
+ unequip_bayonet 0 184549446  1
+  0.300000 equip_musket 5 13 1 0 0.000000 0.000000 0.000000 0.000000 
+ crouch_unarmed 0 16777216  1
+  11.000000 crouch_stand_man 0 315 1342177280 0 0.000000 0.000000 0.000000 0.250000 
+ crouch_single 0 16777216  1
+  11.000000 crouch_stand_man 0 315 1342177280 0 0.000000 0.000000 0.000000 0.250000 
+ crouch_greatsword 0 16777216  1
+  6.000000 crouch_greatsword_cstance 0 170 1342177280 0 0.000000 0.000000 0.000000 0.250000 
+ crouch_staff 0 16777216  1
+  5.000000 crouch_staff_cstance 0 120 1342177280 0 0.000000 0.000000 0.000000 0.000000 
+ crouch_crossbow 0 16777216  1
+  2.000000 staff_cstance 0 60 1342177280 0 0.000000 0.000000 0.000000 0.000000 
+ crouch_ready_pistol 1679818752 606093322  1
+  0.300000 crouch_fire_pistol 1 12 7 0 0.000000 0.000000 0.000000 0.000000 
+ crouch_release_pistol 1679818752 572538890  1
+  0.300000 crouch_fire_pistol 12 21 2 0 0.000000 0.000000 0.000000 0.000000 
+ reload_musket_full 0 35651644  1
+  2.500000 anim_human 0 340 67108868 0 0.000000 0.000000 0.000000 0.000000 
+ reload_musket_two_third 0 35651644  1
+  1.700000 anim_human 110 340 67108868 0 0.000000 0.000000 0.000000 0.000000 
+ reload_musket_one_third 0 35651644  1
+  0.600000 anim_human 270 340 67108868 0 0.000000 0.000000 0.000000 0.000000 
+ crouch_pike 0 16777216  1
+  3.300000 crouch_staff_cstance_attack 0 100 1342177280 0 0.000000 0.000000 0.000000 0.000000 
+ crouch_pike_recover 0 35651599  1
+  1.200000 crouch_staff_cstance_attack 105 137 4 0 0.000000 0.000000 0.000000 0.000000 
+ ready_overswing_spear 1679294464 1679818762  1
+  0.350000 attacks_staff_thrust_overhead 6 21 7 0 0.000000 0.000000 0.000000 0.000000 
+ release_overswing_spear 1679294464 2183135242  1
+  0.450000 attacks_staff_thrust_overhead 21 43 6 0 0.000000 0.000000 0.000000 0.000000 
+ release_overswing_spear_continue 0 572522497  1
+  0.300000 attacks_staff_thrust_overhead 43 50 3 0 0.000000 0.000000 0.000000 0.000000 
+ parried_overswing_spear 0 35651599  1
+  0.300000 attacks_staff_thrust_overhead 50 43 3 0 0.000000 0.000000 0.000000 0.000000 
+ blocked_overswing_spear 0 35651599  1
+  0.300000 attacks_staff_thrust_overhead 50 43 3 0 0.000000 0.000000 0.000000 0.000000 
+ reload_pistol_half 0 35651644  1
+  1.200000 anim_human 125 250 4 0 0.000000 0.000000 0.000000 0.000000 
+ ready_overswing_musket 2621440 1679843338  1
+  0.350000 1h_spear_thrust_overhead 0 20 7 0 0.000000 0.000000 0.000000 0.000000 
+ release_overswing_musket 2621440 2183159818  1
+  0.450000 1h_spear_thrust_overhead 20 41 6 0 0.000000 0.000000 0.000000 0.000000 
+ release_overswing_musket_continue 0 572547073  1
+  0.300000 1h_spear_thrust_overhead 41 52 3 0 0.000000 0.000000 0.000000 0.000000 
+ parried_overswing_musket 0 35651599  1
+  0.300000 1h_spear_thrust_overhead 26 22 6 0 0.000000 0.000000 0.000000 0.000000 
+ blocked_overswing_musket 0 35651599  1
+  0.300000 1h_spear_thrust_overhead 26 22 6 0 0.000000 0.000000 0.000000 0.000000 
+ ready_thrust_musket 524288 1679818762  1
+  0.350000 anim_human 1 19 7 0 0.000000 0.000000 0.000000 0.000000 
+ release_thrust_musket 524288 2183135242  1
+  0.900000 anim_human 19 50 6 0 0.000000 0.000000 0.000000 0.000000 
+ release_thrust_musket_continue 0 572522497  1
+  0.200000 anim_human 50 54 3 0 0.000000 0.000000 0.000000 0.000000 
+ parried_thrust_musket 0 35651599  1
+  0.600000 anim_human 1 9 3 0 0.000000 0.000000 0.000000 0.000000 
+ blocked_thrust_musket 0 35651599  1
+  0.300000 anim_human 1 9 3 0 0.000000 0.000000 0.000000 0.000000 
+ equip_pistol_melee 0 184549446  1
+  0.300000 equip_pistol 0 10 1 0 0.000000 0.000000 0.000000 0.000000 
+ unequip_pistol_melee 0 184549446  1
+  0.300000 equip_pistol 0 10 1 0 0.000000 0.000000 0.000000 0.000000 
+ cheer_player 4608 50331681  3
+  6.000000 man_cheer 12 185 6 0 0.000000 0.000000 0.000000 0.000000 
+  6.000000 man_cheer 217 397 6 0 0.000000 0.000000 0.000000 0.000000 
+  6.000000 man_cheer 338 518 6 0 0.000000 0.000000 0.000000 0.000000 
+ cheer_player_ride 4608 50331743  3
+  6.000000 ani_cheer_ride 12 185 6 0 0.000000 0.000000 0.000000 0.000000 
+  6.000000 ani_cheer_ride 217 397 6 0 0.000000 0.000000 0.000000 0.000000 
+  6.000000 ani_cheer_ride 338 518 6 0 0.000000 0.000000 0.000000 0.000000 
+ cancel_ani_stand 0 50331743  1
+  0.250000 anim_human 50 50 16 0 0.000000 0.000000 0.000000 0.000000 
+ cancel_ani_ride 0 50331743  1
+  0.250000 stand_onhorse 0 0 16 0 0.000000 0.000000 0.000000 0.000000 
  unused_human_anim_48 0 0  1
   1.000000 anim_human 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_human_anim_49 0 0  1
@@ -1169,9 +1173,9 @@ sitting_drinking_low 1024 33554527  1
  lyre_sitting 1024 33554527  1
   2.050000 dedal_lyre_sitting 3 7 1342177280 0 0.000000 0.000000 0.000000  0.250000 
  lyre_standing 1024 33554527  1
-  2.050000 dedal_lyre_standing 3 7 1342177280 0 0.000000 0.000000 0.000000  0.250000
- unused_horse_anim_1 0 0  1
-  1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
+  2.050000 dedal_lyre_standing 3 7 1342177280 0 0.000000 0.000000 0.000000 0.250000 
+ horse_cancel_ani 0 50331743  1
+  0.250000 anim_horse 600 601 1073741830 0 0.000000 0.000000 0.000000 0.000000 
  unused_horse_anim_2 0 0  1
   1.000000 anim_horse 0 1 0 0 0.0 0.0 0.0 0.0 
  unused_horse_anim_3 0 0  1

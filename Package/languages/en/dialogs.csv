@@ -367,7 +367,7 @@ dlga_dijon_cher:dijon_insultepere|It is far too expensive for a single prayer. Y
 dlga_dijon_benirokok:close_window|Very well, in that case bring me to them...
 dlga_dijon_benirno:predial_dijonpere|In this case, I would be more useful treating my patients. I'm confused, but I have to go to where I am most useful.
 dlga_dijon_insultepere:close_window|Watch your words my son, everyone suffers in all camps. For my part I can not help everyone, I got this idea for a long time.
-dlga_start:dijon_freree|Inter oves locum præsta. Et ab hædis me sequestra, Statuens in parte dextra.
+dlga_start:dijon_freree|Inter oves locum præsta. Et ab hædis me sequestra, Statuens in parte dextra. (Grant me a place among the sheep, and take me out from among the goats, setting me on the right side).
 dlga_dijon_freree:dijon_frerepere|Amen. Excuse me, what can you tell me about father Jacob?
 dlga_dijon_freree:close_window|Nothing, I must go.
 dlga_dijon_frerepere:dial_dijon_frerefin|Father Jacob has suffered lately. He's seen patients die, one after another. Most were so mutilated that they couldn't do anything for them, but still he wanted to be able to save them...
@@ -3806,134 +3806,134 @@ dlga_companion_recruit_backstory_delayed:companion_recruit_backstory_delayed_res
 dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|I might be able to use you in my company.
 dlga_companion_recruit_backstory_delayed_response:close_window|I'll let you know if I hear of anything.
 dlga_companion_recruit_signup_confirm:close_window|Good! Give me a few moments to prepare and I'll be ready to move.
-dlga_start:dial_camp_npc1|J'espére ne pas moisir ici pendant des journées entières, sur ce comment allez-vous capitaine ?
-dlga_dial_camp_npc1:dial_camp_npc1_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc1:dial_camp_npc1_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc1:dial_camp_npc1_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc1:close_window|Ça sera tout, a plus tard.
-dlga_dial_camp_npc1_skill:dial_camp_npc1_retour|Cela dépend, j'ai des préférences, mais vous plairont t'elles.
-dlga_dial_camp_npc1_story:dial_camp_npc1_retour|Bien que je sois noble ou de petite noblesse, j'ai grandi dans l'exploitation agricole de mes parents ? Blois, mais très tôt j'ai préféré l'épée ? la fourche.
-dlga_dial_camp_npc1_retour:dial_camp_npc1|Autre chose ?
-dlga_start:dial_camp_npc2|C'est un endroit calme ici, cela ferait du bien de retirer un peu ces armures qui empestent la rouille.
-dlga_dial_camp_npc2:dial_camp_npc2_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc2:dial_camp_npc2_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc2:dial_camp_npc2_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc2:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc2_skill:dial_camp_npc2_retour|Mais certainement, voyons cela.
-dlga_dial_camp_npc2_story:dial_camp_npc2_retour|Je suis né ? Paris, où j'y ai passé le plus clair de ma vie, c'est l?-bas dans les casernes où j'ai appris le métier des armes. Tout petit j'amenais de la cervoise aux soldats en échange de quoi, ils me montraient quelques passes ? l'épée.
-dlga_dial_camp_npc2_retour:dial_camp_npc2|Avez-vous autre chose ? me dire?
-dlga_start:dial_camp_npc3|N'ayez craintes capitaine, je veille sur vous, si un homme s'approchait discretement je le verrai ? temps.
-dlga_dial_camp_npc3:dial_camp_npc3_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc3:dial_camp_npc3_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc3:dial_camp_npc3_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc3:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc3_skill:dial_camp_npc3_retour|Et bien ? vous de me dire ce que vous attendez de moi.
-dlga_dial_camp_npc3_story:dial_camp_npc3_retour|La Bretagne est ma terre de naissance, j'y ai grandi tel un chêneê, je suis de naissance noble, de par mes deux parents.
-dlga_dial_camp_npc3_retour:dial_camp_npc3|Ça sera tout ?
-dlga_start:dial_camp_npc4|Capitaine ?
-dlga_dial_camp_npc4:dial_camp_npc4_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc4:dial_camp_npc4_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc4:dial_camp_npc4_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc4:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc4_skill:dial_camp_npc4_retour|Je sais me battre, point d'inquiétudes capitaine.
-dlga_dial_camp_npc4_story:dial_camp_npc4_retour|Je suis Enguerrand, on avait une exploitation prospère, mais ma ferme a été brûlée et ma famille masacrée par des militaires. J'ai un grand désir de revanche que je dois assouvir.
-dlga_dial_camp_npc4_retour:dial_camp_npc4|Autre chose ?
-dlga_start:dial_camp_npc5|Nous devrions songer ? toutes les possibilités de nous faire un peu d'or Messire. Je ne voudrais point vous ennuyer pendant que vous vous reposez, mais songez ? toutes les affaires que nous pourrions faire si nous nous préparons ? l'avance. Marcher nous fait perdre du temps, de ce fait il est bon de regrouper plusieurs affaires sur une même route.
-dlga_dial_camp_npc5:dial_camp_npc5_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc5:dial_camp_npc5_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc5:dial_camp_npc5_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc5:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc5_skill:dial_camp_npc5_retour|À vrai dire je suis surtout marchand vous savez.
-dlga_dial_camp_npc5_story:dial_camp_npc5_retour|Je m'appelle Hermance, je viens de Bordeaux, et j'en suis parti animé par la haine de ceux qui m'ont dépossédés et aussi attiré par l'aventure.
-dlga_dial_camp_npc5_retour:dial_camp_npc5|Autre chose ?
-dlga_start:dial_camp_npc6|Rapide ? l'épée et rapide pour vider ma choppe, êtes vous venu admirer le travail capitaine ? Vous vous joignez ? moi ?
-dlga_dial_camp_npc6:dial_camp_npc6_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc6:dial_camp_npc6_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc6:dial_camp_npc6_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc6:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc6_skill:dial_camp_npc6_retour|Je suis mercenaire de métier capitaine, le combat sera toute ma vie jusqu'? ma mort.
-dlga_dial_camp_npc6_story:dial_camp_npc6_retour|Je suis Guillaume de Bourges, capitaine. Je m'en veux d'être le seul survivant du massacre de mon ancienne compagnie de mercenaires. Je suis une victime de cette stupide guerre il y a des moments où j'aurais préféré être tué au combat plutôt que d'être le seul survivant de la bataille qui a coutée la vie de mes camarades, mais parfois je pense que la vie est une belle chose.
-dlga_dial_camp_npc6_retour:dial_camp_npc6|Autre chose ? me dire capitaine ?
-dlga_start:dial_camp_npc7|Un peu de silence, enfin...seulement le bruit de la nature.
-dlga_dial_camp_npc7:dial_camp_npc7_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc7:dial_camp_npc7_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc7:dial_camp_npc7_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc7:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc7_skill:dial_camp_npc7_retour|Je suis chasseur et pisteur, ça peut vous être utile pour retrouver un groupe.
-dlga_dial_camp_npc7_story:dial_camp_npc7_retour|On m'appelle Pierrick, je viens de Nemours et je suis un chasseur, nomez les ennemis qui tentent de se cacher de vous et je retrouverai leurs traces pour vous.
-dlga_dial_camp_npc7_retour:dial_camp_npc7|Quoi d'autre ?
-dlga_start:dial_camp_npc8|Au revoir capitaine, comment ça va ?
-dlga_dial_camp_npc8:dial_camp_npc8_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc8:dial_camp_npc8_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc8:dial_camp_npc8_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc8:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc8_skill:dial_camp_npc8_retour|Je suis Renaud, Renaud est trés fort, Renaud c'est la mort comme dit le roi d'Angleterre, le tavernier de mon village aussi il pense comme moi.
-dlga_dial_camp_npc8_story:dial_camp_npc8_retour|Ma mère m'a donné la vie en écosse, et elle y est restée avec mon soi-disant père.
-dlga_dial_camp_npc8_retour:dial_camp_npc8|De quoi ?
-dlga_start:dial_camp_npc9|Ah messire! Comment faire pour ne pas perdre son temps d'après vous? Je veux dire comment ne pas rater sa vie ? Comment réussir chaque instant et comment vivre chaque secondes du mieux que l'on peut ? Je me pose tellement de questions, pas vous ?
-dlga_dial_camp_npc9:dial_camp_npc9_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc9:dial_camp_npc9_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc9:dial_camp_npc9_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc9:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc9_skill:dial_camp_npc9_retour|Je suis chevalier Capitaine, le l'oubliez point je vous prie, c'est ? cheval et avec la lance que le Chevalier se bat pour des causes.
-dlga_dial_camp_npc9_story:dial_camp_npc9_retour|Je suis Gael de Bourbon, noble de France, chevalier de Toulouse où je suis né, où j'ai grandi et fondé de faux éspoirs sur un monde corrompu, mais que joie et détermination sois miennes, je suis sur la vraie route de la chevalerie loing de toute corruption, je suis sur la voie de la rédemption.
-dlga_dial_camp_npc9_retour:dial_camp_npc9|Austre chose ?
-dlga_start:dial_camp_npc10|Le tranchant des lames laissent ? désirer le saviez-vous capitaine ? Il serait bon de mettre quelques unes de ces limages au travail d'affûtage.
-dlga_dial_camp_npc10:dial_camp_npc10_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc10:dial_camp_npc10_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc10:dial_camp_npc10_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc10:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc10_skill:dial_camp_npc10_retour|Ma fonction est maistre d'armes, je suis un guerrier avant tout, mais mon rôle est de transmettre mon savoir aux recrues.
-dlga_dial_camp_npc10_story:dial_camp_npc10_retour|Je suis né près de Monterean. J'ai été maistre d'armes pour de nombreux seigneurs et chevaliers au château  depuis l'âge de vingt ans.
-dlga_dial_camp_npc10_retour:dial_camp_npc10|Autre chose ?
-dlga_start:dial_camp_npc11|Non je ne dors pas debout Messire, est-ce cela que vous alliez me dire ? Je me repose un peu voil? tout.
-dlga_dial_camp_npc11:dial_camp_npc11_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc11:dial_camp_npc11_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc11:dial_camp_npc11_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc11:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc11_skill:dial_camp_npc11_retour|Un peu de marchandage de temps ? autre, je sais aussi me battre ne vous en faites pas.
-dlga_dial_camp_npc11_story:dial_camp_npc11_retour|Je suis forgeron, ou du moins je l'étais, ? présent je suis chasseur de prime, et ce sont les marauds de la pire éspèce que je frappe sur mon enclume.
-dlga_dial_camp_npc11_retour:dial_camp_npc11|Autre chose ?
-dlga_start:dial_camp_npc12|Messire, il y a quelques cas de blessures infectées mais nous allons régler cela n'ayez craintes.
-dlga_dial_camp_npc12:dial_camp_npc12_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc12:dial_camp_npc12_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc12:dial_camp_npc12_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc12:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc12_skill:dial_camp_npc12_retour|Je suis médecin Messire, je vous tirerais vous et vos hommes des griffes de la mort autant de fois que vous ne pourrais les compter, ? condition que je me tienne ? distance. Qui pourrait je sauver si je suis moi même inconscient.
-dlga_dial_camp_npc12_story:dial_camp_npc12_retour|Je suis Médecin, et ma mission est de sauver tous les patients quels qu'ils soient atteints de divers fléaux, aux prétres et ? Dieu de les juger par la suite.
-dlga_dial_camp_npc12_retour:dial_camp_npc12|De quoi voulez-vous me parler ?
-dlga_start:dial_camp_npc13|À la gloire! A...notre joli camp pour le moment Messire, buvez-vous quelque chose avec nous ?
-dlga_dial_camp_npc13:dial_camp_npc13_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc13:dial_camp_npc13_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc13:dial_camp_npc13_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc13:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc13_skill:dial_camp_npc13_retour|Si vous avez besoin d'un fantassin digne de ce nom, je suis vostre homme capitane.
-dlga_dial_camp_npc13_story:dial_camp_npc13_retour|Je suis Mathieu, tueur de sang froid, mercenaire et tant d'autres choses qui ne valent pas la peine d'être citées, et si nous nous contentions seulement de boire avant qu'une lame nous transperce le ventre.
-dlga_dial_camp_npc13_retour:dial_camp_npc13|Autre chose ?
-dlga_start:dial_camp_npc14|Capitaine, vous n'oubiez pas la cause de la résistance dans tout ceci n'est-ce pas ? Je vous rappelle juste que c'est pour soutenir la résistance de France que je vous ai rejoins.
-dlga_dial_camp_npc14:dial_camp_npc14_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc14:dial_camp_npc14_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc14:dial_camp_npc14_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc14:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc14_skill:dial_camp_npc14_retour|Je suis archer la plupart du temps, mais je compte sur vous pour m'apprendre les ficéles du métier de mercenaire.
-dlga_dial_camp_npc14_story:dial_camp_npc14_retour|Je suis Michel de Chartres fils de Simon le forgeron, je suis un rebelle, et je n'aurais de cesse de me battre tant que l'envahisseur ne sera pas jeté ? la mer.
-dlga_dial_camp_npc14_retour:dial_camp_npc14|Autre chose ?
-dlga_start:dial_camp_npc15|Capitaine! Nous allons enfin pouvoir avoir une conversation. Depuis ce matin on m'a parlé de poules et de leurs oeufs, de charpentes qui sont mordues par des insectes et d'un seau où le niveau de l'eau a été jugé ? un niveau insuffisant, allons-nous parler plus sérieusement de guerre sous cette tenture ?
-dlga_dial_camp_npc15:dial_camp_npc15_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc15:dial_camp_npc15_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc15:dial_camp_npc15_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc15:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc15_skill:dial_camp_npc15_retour|Je suis ingénieur en siège capitaine, aucun château ne me résiste, il y a toujours une faille dans les défenses voyez-vous, cela prend du temps mais on fini toujours par la trouver et par l'exploiter.
-dlga_dial_camp_npc15_story:dial_camp_npc15_retour|Je suis né ? Paris et j'ai étudié les engins de guerre modèrnes. J'ai aussi certaines compétences en litérature et en latin.
-dlga_dial_camp_npc15_retour:dial_camp_npc15|Autre chose ?
-dlga_start:dial_camp_npc16|Mon bon Messire ? Je ne me moque pas de vous, je suis juste d'humeur joyeuse, j'en profiterai si j'étais vous.
-dlga_dial_camp_npc16:dial_camp_npc16_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc16:dial_camp_npc16_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc16:dial_camp_npc16_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc16:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc16_skill:dial_camp_npc16_retour|Je sais manier le couteau et les petites lames aussi bien que ma langue et ce dans le sens propre comme au sens figuré ce qui pourrait vous être utile si vous avez des affaires de diplomatie. Je peux tuer un homme de sang froid juste après lui avoir dit que je lui offre mon âme. Mais de grâce capitaine évitez de m'envoyer ? la bataille contre une montagne de muscles, avez-vous regardé la forme réelle de mes muscles ?
-dlga_dial_camp_npc16_story:dial_camp_npc16_retour|Et bien capitaine, je m'appelle Blanche, juste Blanche. Je suis née dans un village près de Peronne, ma mère et mes soeurs étaient servantes dans le château d'un noble pervers, jusqu'? ce que je m'en empare ? moi toute seule par mes...charmes. Ainsi l? où une compagnie n'aurait pas pu prendre ce château j'y suis parvenue. On m'a donné beaucoup de surnoms, mais celui qui me va le mieux est la vipère blanche.
-dlga_dial_camp_npc16_retour:dial_camp_npc15|Autre chose ?
+dlga_start:dial_camp_npc1|I hope we don't have to rot here for days. How about you, captain?
+dlga_dial_camp_npc1:dial_camp_npc1_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc1:dial_camp_npc1_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc1:dial_camp_npc1_story|Tell me your story.
+dlga_dial_camp_npc1:close_window|That's about it, see you later.
+dlga_dial_camp_npc1_skill:dial_camp_npc1_retour|It depends. I have some, but you won't like them.
+dlga_dial_camp_npc1_story:dial_camp_npc1_retour|Although I'm noble or of noble nobility, I grew up on the farm of my parents in Blois. I preferred the sword instead of pitchfork.
+dlga_dial_camp_npc1_retour:dial_camp_npc1|Something else?
+dlga_start:dial_camp_npc2|It's a quiet place. It'd be nice to be able to remove the armor, which stinks of rust.
+dlga_dial_camp_npc2:dial_camp_npc2_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc2:dial_camp_npc2_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc2:dial_camp_npc2_story|Tell me your story.
+dlga_dial_camp_npc2:close_window|That's about it, see you later.
+dlga_dial_camp_npc2_skill:dial_camp_npc2_retour|Certainly, let's see.
+dlga_dial_camp_npc2_story:dial_camp_npc2_retour|I was born in Paris, where I have spent most of my life. I learned the trade of arms at the barracks. When I was little, I brought a sword to the soldiers and they showed me some moves with it.
+dlga_dial_camp_npc2_retour:dial_camp_npc2|Do you have anything else to say?
+dlga_start:dial_camp_npc3|Don't worry captain, I'll keep my eye on you. If a man approaches discreetly, I'll spot him early enough.
+dlga_dial_camp_npc3:dial_camp_npc3_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc3:dial_camp_npc3_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc3:dial_camp_npc3_story|Tell me your story.
+dlga_dial_camp_npc3:close_window|That'll be all, see you later.
+dlga_dial_camp_npc3_skill:dial_camp_npc3_retour|It's up to you to tell me what you expect from me.
+dlga_dial_camp_npc3_story:dial_camp_npc3_retour|I was born in Brittany, where I grew up strong as an oak. I am of noble birth, from the both sides of my parents.
+dlga_dial_camp_npc3_retour:dial_camp_npc3|That's all?
+dlga_start:dial_camp_npc4|Captain?
+dlga_dial_camp_npc4:dial_camp_npc4_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc4:dial_camp_npc4_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc4:dial_camp_npc4_story|Tell me your story.
+dlga_dial_camp_npc4:close_window|That's about it, see you later.
+dlga_dial_camp_npc4_skill:dial_camp_npc4_retour|No worries captain, I know how to fight.
+dlga_dial_camp_npc4_story:dial_camp_npc4_retour|I'm Enguerrand. We had a prosperous farm, but soldiers burned it down and massacred the rest of my family. I have a great desire for revenge that I must satiate.
+dlga_dial_camp_npc4_retour:dial_camp_npc4|Anything else?
+dlga_start:dial_camp_npc5|My friends, we should think of all the possibilities to make some money. I don't want to bore you while you are resting, but think of all the things we could do if we just prepare in advance. Marching is mostly a waste of time, so it might be a good idea to group up for some businesses opportunities while on the road.
+dlga_dial_camp_npc5:dial_camp_npc5_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc5:dial_camp_npc5_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc5:dial_camp_npc5_story|Tell me your story.
+dlga_dial_camp_npc5:close_window|That's about it, see you later.
+dlga_dial_camp_npc5_skill:dial_camp_npc5_retour|Actually, I'm just a merchant.
+dlga_dial_camp_npc5_story:dial_camp_npc5_retour|My name is Hermance, I come from Bordeaux. I left it animated by the hatred of those who dispossessed me. I was also also attracted by the adventure.
+dlga_dial_camp_npc5_retour:dial_camp_npc5|Anything else?
+dlga_start:dial_camp_npc6|Fast sword and fast to empty my mug. Have you come to admire the work, captain? Will you join me?
+dlga_dial_camp_npc6:dial_camp_npc6_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc6:dial_camp_npc6_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc6:dial_camp_npc6_story|Tell me your story.
+dlga_dial_camp_npc6:close_window|That's about it, see you later.
+dlga_dial_camp_npc6_skill:dial_camp_npc6_retour|I am a mercenary captain. Fighting until I die.
+dlga_dial_camp_npc6_story:dial_camp_npc6_retour|I'm Guillaume de Bourges, captain. I blame myself for being the sole survivor of the massacre of my old mercenary company. I'm a victim of this stupid war. There are times when I'd prefer to be killed in combat, rather than being the sole survivor of the battle that cost the lives of my comrades. Sometimes I think that life can still be a beautiful thing.
+dlga_dial_camp_npc6_retour:dial_camp_npc6|Anything else to tell me, captain?
+dlga_start:dial_camp_npc7|A little silence, finally... only the sound of nature.
+dlga_dial_camp_npc7:dial_camp_npc7_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc7:dial_camp_npc7_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc7:dial_camp_npc7_story|Tell me your story.
+dlga_dial_camp_npc7:close_window|That's about it, see you later.
+dlga_dial_camp_npc7_skill:dial_camp_npc7_retour|I'm a hunter and tracker, it can be useful for finding a group.
+dlga_dial_camp_npc7_story:dial_camp_npc7_retour|My name is Pierrick, I come from Nemours and I am a hunter. Name the enemies who try to hide from you and I'll find their tracks for you.
+dlga_dial_camp_npc7_retour:dial_camp_npc7|What else?
+dlga_start:dial_camp_npc8|Goodbye captain, how are you?
+dlga_dial_camp_npc8:dial_camp_npc8_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc8:dial_camp_npc8_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc8:dial_camp_npc8_story|Tell me your story.
+dlga_dial_camp_npc8:close_window|That's about it, see you later.
+dlga_dial_camp_npc8_skill:dial_camp_npc8_retour|I'm John. John is very strong, John is death, like the King of England says. The innkeeper of my village also agrees.
+dlga_dial_camp_npc8_story:dial_camp_npc8_retour|My mother gave me life in Scotland. She stayed there with my so-called father.
+dlga_dial_camp_npc8_retour:dial_camp_npc8|What?
+dlga_start:dial_camp_npc9|Oh, sir! How not to waste time? I mean how not to waste life? How to succeed and how to live every second the best we can? I ask myself so many questions, don't you?
+dlga_dial_camp_npc9:dial_camp_npc9_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc9:dial_camp_npc9_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc9:dial_camp_npc9_story|Tell me your story.
+dlga_dial_camp_npc9:close_window|That's about it, see you later.
+dlga_dial_camp_npc9_skill:dial_camp_npc9_retour|I'm a knight, Captain. Just forget the past, I beg you. It's on horseback and with a spear how the knight fights for causes.
+dlga_dial_camp_npc9_story:dial_camp_npc9_retour|I'm Gael de Bourbon, French noble and knight. I was born in Toulouse, where I also grew up and developed false hopes. The joy and determination are mine. I'm on the true road of chivalry in a corrupted world. I'm on the path to redemption.
+dlga_dial_camp_npc9_retour:dial_camp_npc9|Anything else?
+dlga_start:dial_camp_npc10|The sharpness of the blades is unsatisfactory. Did you know that, Captain? It would be good to put some of these limestones to work.
+dlga_dial_camp_npc10:dial_camp_npc10_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc10:dial_camp_npc10_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc10:dial_camp_npc10_story|Tell me your story.
+dlga_dial_camp_npc10:close_window|That's about it, see you later.
+dlga_dial_camp_npc10_skill:dial_camp_npc10_retour|My job is a master of weapons. I'm a warrior first and foremost, but my role is to pass on my knowledge to recruits.
+dlga_dial_camp_npc10_story:dial_camp_npc10_retour|I was born near Monterean. I've been a master of arms for many lords and knights at the castle since the age of twenty.
+dlga_dial_camp_npc10_retour:dial_camp_npc10|Anything else?
+dlga_start:dial_camp_npc11|No, I'm not sleeping. Sir, is that what you're telling me? I'm just resting a little bit, that's all.
+dlga_dial_camp_npc11:dial_camp_npc11_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc11:dial_camp_npc11_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc11:dial_camp_npc11_story|Tell me your story.
+dlga_dial_camp_npc11:close_window|That's about it, see you later.
+dlga_dial_camp_npc11_skill:dial_camp_npc11_retour|A little haggling from time to time. I also know how to fight, do not worry.
+dlga_dial_camp_npc11_story:dial_camp_npc11_retour|I'm a blacksmith, or at least I was. Now I'm a bounty hunter, and I hit on my anvil only the worst of the worst.
+dlga_dial_camp_npc11_retour:dial_camp_npc11|Anything else?
+dlga_start:dial_camp_npc12|There are some cases of infected wounds, but rest assured we will handle them.
+dlga_dial_camp_npc12:dial_camp_npc12_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc12:dial_camp_npc12_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc12:dial_camp_npc12_story|Tell me your story.
+dlga_dial_camp_npc12:close_window|That's about it, see you later.
+dlga_dial_camp_npc12_skill:dial_camp_npc12_retour|I'm a doctor. I'd pull you and your men out of the clutches of death as many times as you could count. Provided I keep myself at bay. Who can I save if I'm unconscious?
+dlga_dial_camp_npc12_story:dial_camp_npc12_retour|I'm a doctor. My mission is to save all the patients who are afflicted with various plagues. For the priests and the God to judge them afterwards.
+dlga_dial_camp_npc12_retour:dial_camp_npc12|What do you want to talk to me about?
+dlga_start:dial_camp_npc13|To the glory! To... our pretty camp for the moment. Will you drink something with us?
+dlga_dial_camp_npc13:dial_camp_npc13_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc13:dial_camp_npc13_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc13:dial_camp_npc13_story|Tell me your story.
+dlga_dial_camp_npc13:close_window|That's about it, see you later.
+dlga_dial_camp_npc13_skill:dial_camp_npc13_retour|If you need a good foot soldier. I'm yours, captain.
+dlga_dial_camp_npc13_story:dial_camp_npc13_retour|I'm Mathieu, a cold-blooded mercenary killer, and so many other things that are not worth mentioning. How about we just drink before a blade pierces our bellies?
+dlga_dial_camp_npc13_retour:dial_camp_npc13|Anything else?
+dlga_start:dial_camp_npc14|Captain, I hope you aren't forgetting the cause of resistance in the middle of all this? Just a reminder, I joined you to support the French resistance.
+dlga_dial_camp_npc14:dial_camp_npc14_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc14:dial_camp_npc14_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc14:dial_camp_npc14_story|Tell me your story.
+dlga_dial_camp_npc14:close_window|That's about it, see you later.
+dlga_dial_camp_npc14_skill:dial_camp_npc14_retour|I'm archer most of the time, but I'm counting on you to teach me the tricks of the mercenary profession.
+dlga_dial_camp_npc14_story:dial_camp_npc14_retour|I'm Michel de Chartres, son of Simon the Blacksmith. I am a rebel, and I'll never stop fighting until the invader is thrown to the sea.
+dlga_dial_camp_npc14_retour:dial_camp_npc14|Anything else?
+dlga_start:dial_camp_npc15|Captain! We'll finally be able to have a conversation. Since this morning I've been told about chickens and their eggs, carpenters bitten by insects and a bucket where the water level was judged to be insufficient. Are we finally going to talk more seriously about the war?
+dlga_dial_camp_npc15:dial_camp_npc15_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc15:dial_camp_npc15_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc15:dial_camp_npc15_story|Tell me your story.
+dlga_dial_camp_npc15:close_window|That's about it, see you later.
+dlga_dial_camp_npc15_skill:dial_camp_npc15_retour|I'm a siege engineer, no castle can resist me. There's always a flaw in the defenses, you see. It takes time, but we always end up finding a flaw and exploiting it.
+dlga_dial_camp_npc15_story:dial_camp_npc15_retour|I was born in Paris and studied modern war machines. I also have some skills in literature and Latin.
+dlga_dial_camp_npc15_retour:dial_camp_npc15|Anything else?
+dlga_start:dial_camp_npc16|My good sir? I don't make fun of you, I'm just in a happy mood, I'd take advantage of it if I were you.
+dlga_dial_camp_npc16:dial_camp_npc16_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc16:dial_camp_npc16_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc16:dial_camp_npc16_story|Tell me your story.
+dlga_dial_camp_npc16:close_window|That's about it, see you later.
+dlga_dial_camp_npc16_skill:dial_camp_npc16_retour|I know how to handle knife and small blades, as well as my tongue, in both the literal and the figurative sense, which could be useful if you need diplomacy. I can kill a man in cold-blood, right after telling him that I offer him my soul. But please, captain, avoid sending me to battle against a mountain of muscle since mine pale in comparison.
+dlga_dial_camp_npc16_story:dial_camp_npc16_retour|Well captain, my name is Blanche, just Blanche. I was born in a village near Peronne. My mother and my sisters were servants in the castle of a perverse nobleman, until I seized it all to myself by my... charms. So where a company couldn't have taken this castle I managed it. I have been given many nicknames, but the one that suits me best is the white viper. 
+dlga_dial_camp_npc16_retour:dial_camp_npc15|Anything else?
 dlga_start:companion_rehire|My offer to rejoin you still stands, if you'll have me.
 dlga_start:companion_rehire.1|It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been roaming around since then, looking for you. Shall I get my gear together and rejoin your company?
 dlga_start:companion_prison_break_chains|I've come to break you out of here.
@@ -4294,10 +4294,10 @@ dlga_eppe_dejeanne_where2:eppe_dejeanne_whereyes|Well... I don't know. Improvise
 dlga_eppe_dejeanne_whereyes:eppe_dejeanne_whereyes22|Well, if it's possible, I'll return with it, Joan.
 dlga_eppe_dejeanne_whereyes22:lord_pretalk|Thank you, I knew I could count on you.
 dlga_eppe_dejeanne_whereyes:lord_pretalk|Not enough time, I'm sorry, but I can't take part.
-dlga_lord_start:quest_Jranneattendrorrff|La France a besoin d'hardis hommes de guerre telle que vostre personne, entendez la voix des cieux et rejoignez cette banière,enssembles nous libererons ce pays et tous ces gens qui souffres.
-dlga_quest_Jranneattendrorrff:lord_introjj2questgg2|Je suis avec vous Madame, ce serais un honneur de combattre a vos cotés.
+dlga_lord_start:quest_jranneattendrorrff|France needs brave warriors such as you. Hear the voice of heaven and join under this banner, together we will free this country and all the people who suffer.
+dlga_quest_jranneattendrorrff:lord_introjj2questgg2|I'm with you, madam. It would be an honor to fight at your side.
 dlga_lord_introjj2questgg2:close_window|Thank God. Be ready, I'll summon for you when it's time, and one last thing... just call me Joan.
-dlga_quest_Jranneattendrorrff:lord_pretalk|C'est une idée fixe, vous feriez mieux de retourner a vos taches ménagères et de laisser les champs de batailles aux hommes.
+dlga_quest_jranneattendrorrff:lord_pretalk|It's an obsession, you'd better go back to your chores and leave the battlefields for men.
 dlga_lord_start:deu_chance_queteduc_bret|Well mercenary, have you thought about my proposal?
 dlga_deu_chance_queteduc_bret:deu_chance_queteduc_bretok|I am with you, noble Duke.
 dlga_deu_chance_queteduc_bret:lord_pretalk|I'm sorry, your excellency, but I don't think I am ready.
@@ -6202,22 +6202,22 @@ dlga_start_ribaude_tavernok3:start_ribaude_tavernok4|Master, I am your faithful 
 dlga_start_ribaude_tavernok4:start_ribaude_tavernok4go|Okay, if you speak no more.
 dlga_start_ribaude_tavernok4:close_window|Not this time.
 dlga_start_ribaude_tavernok4go:close_window|Okay, please follow me.
-dlga_start:maconique_loge_s|Halte! Où crois-tu aller mécreant ?
-dlga_maconique_loge_s:maconique_loge_s2|Nous pouvons peut-être trouver un arrangement...
-dlga_maconique_loge_s2:close_window|Nous éssayerons d'en trouver un aprés ta mort.
-dlga_start:maconique_p_capitale|J'accuse ! Tenter de dérober les biens de la franc-maçonnerie est passible de la peine capitale.
-dlga_maconique_p_capitale:maconique_p_capitale3|Et si vous m'expliquier ce qu'il se passe...
-dlga_maconique_p_capitale3:close_window|Assez parlé, place aux actes.
-dlga_start:fin_quete_temp|Vous le le regretterez pas Messire, soyez en assuré, je vous ai dit tout ce que je savais.
-dlga_fin_quete_temp:close_window|Dans ce cas en route, adieu.
-dlga_start:maconique_deux_chanceviela|Vous revoil?, estes-vous interessé par ma précieuse information finalement ?
-dlga_maconique_deux_chanceviela:maconique_deux_chanceviela2|Rappelez-moi votre histoire.
-dlga_maconique_deux_chanceviela:close_window|Pas pour le moment, nous verrons plus tard.
-dlga_maconique_deux_chanceviela2:maconique_deux_chanceviela3|Étiez-vous donc saoul quand je vous en ai parlé ? Les indices, l'ordre du temple, l'organisation maçonique, et surtout le trésor ! Je vous rappelle que je vend l'information qui vous mettrait sur la piste du butin des templiers, c'est toujours 3000 piéces.
-dlga_maconique_deux_chanceviela3:maconique_deux_chancevielaok|C'est d'accord, je vais tenter ma chance.
-dlga_maconique_deux_chanceviela3:maconique_deux_chanceviela2no|Pas pour le moment, Je dois y réfléchir.
-dlga_maconique_deux_chanceviela2no:close_window|Et bien je vais continuer ? voyager tant que personne ne m'aura liberé de ce fichu trésor, je ne pense qu'? ça.
-dlga_maconique_deux_chancevielaok:close_window|Vous faites une bonne affaire croyez-moi, bien... vous devrez rechercher la carte des temples secrets, c'est l? qu'ils entreposaient l'or des croisades et de leurs nombreux revenus. Pour l'heure l'indice vous enménera ? la bibliothèque du monastère de Carmel de Micy d'Orléans, bonne chance pour la suite.
+dlga_start:maconique_loge_s|Stop! Where do you think you're going, miscreant?
+dlga_maconique_loge_s:maconique_loge_s2|We may be able to come to an arrangement...
+dlga_maconique_loge_s2:close_window|We'll try to find one after your death.
+dlga_start:maconique_p_capitale|I'm accusing! Attempting to steal the goods from Freemasons is punishable by Death.
+dlga_maconique_p_capitale:maconique_p_capitale3|And if you explain to me what's going on...
+dlga_maconique_p_capitale3:close_window|Enough talking, time to act.
+dlga_start:fin_quete_temp|You will not regret it. Be assured, I told you everything I know.
+dlga_fin_quete_temp:close_window|In that case, goodbye.
+dlga_start:maconique_deux_chanceviela|You're back, are you finally interested in my precious information?
+dlga_maconique_deux_chanceviela:maconique_deux_chanceviela2|Remind me of your story.
+dlga_maconique_deux_chanceviela:close_window|Not at the moment, we'll see later.
+dlga_maconique_deux_chanceviela2:maconique_deux_chanceviela3|Were you drunk when I told you about it? The clues, the templar order, the masonic organization and especially the treasure! The information, which will put you on the trail of the treasure of the Templars, yours only for 3000 crowns.
+dlga_maconique_deux_chanceviela3:maconique_deux_chancevielaok|That's okay, I'll try my luck.
+dlga_maconique_deux_chanceviela3:maconique_deux_chanceviela2no|Not at the moment, I have to think about it.
+dlga_maconique_deux_chanceviela2no:close_window|Well, I'll continue traveling as long as no one has freed me from this cursed treasure, it's the only thing on my mind.
+dlga_maconique_deux_chancevielaok:close_window|You are making a good deal, trust me. Well... you'll have to look for the Map of the Secret Temples, that's where they stored the gold of the crusades and their many incomes. For the time being the clue will take you to the library of the Benedictine abbey of Micy in Orléans, good luck.
 dlga_start:dia_temp_startt|You have before you an exhausted man, but also a man who has the best deal to offer that you've ever heard. What do you say to that?
 dlga_dia_temp_startt:dia_temp_startt_interet|It doesn't hurt to listen, what is it?
 dlga_dia_temp_startt:close_window|I say no. Sorry, have had a good night. Farewell.
