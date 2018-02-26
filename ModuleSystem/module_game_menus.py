@@ -5439,7 +5439,7 @@ game_menus = [
     [ 
       ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
       ("choose_scene",[],"** Scene Chooser **", [(jump_to_menu, "mnu_choose_scenes_0"),]),
-      ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_a_padded_cloth_custom"),(troop_add_item, "trp_player", "itm_a_peasant_man_custom"),(troop_add_item, "trp_player", "itm_a_gambeson_custom"),(troop_add_item, "trp_player", "itm_a_narf_gambeson_custom"),]),
+      ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_leather_vest_custom"),(troop_add_item, "trp_player", "itm_a_peasant_man_custom"),(troop_add_item, "trp_player", "itm_a_gambeson_custom"),(troop_add_item, "trp_player", "itm_a_narf_gambeson_custom"),]),
       ("test_low_morale_quest",[],"Test Low Morale Freelancer Quest", [(assign, "$player_cur_troop", "trp_swadian_sergent"),
           (assign, "$enlisted_lord", "trp_knight_1_5"),
           (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),

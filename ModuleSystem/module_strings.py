@@ -4165,4 +4165,15 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_narf_gambeson_half_brown", "a_narf_gambeson_half_yellow"),  
 ("a_narf_gambeson_half_green", "a_narf_gambeson_half_green"),  
 ("a_narf_gambeson_end", "a_narf_gambeson_end"),
+
+#Vertex Coloured Leather Vest
+
+("a_leather_vest_arms_black", "a_leather_vest_arms_black"),  
+("a_leather_vest_arms_blue", "a_leather_vest_arms_blue"),
+("a_leather_vest_arms_brown", "a_leather_vest_arms_brown"),
+("a_leather_vest_arms_green", "a_leather_vest_arms_green"),
+("a_leather_vest_arms_red", "a_leather_vest_arms_red"),
+("a_leather_vest_arms_white", "a_leather_vest_arms_white"),
+("a_leather_vest_arms_end", "a_leather_vest_arms_end"),
+
 ]

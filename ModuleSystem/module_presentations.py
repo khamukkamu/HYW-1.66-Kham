@@ -13274,7 +13274,7 @@ presentations = [
       (assign, "$g_presentation_obj_item_select_3", -1),
 
       (try_begin),
-        (create_mesh_overlay, reg0, "mesh_cb_ui_main"),
+        (create_mesh_overlay, reg0, "mesh_pic_troop_trees"),
         (position_set_x, pos1, 0),
         (position_set_y, pos1, 0),
         (overlay_set_position, reg0, pos1),

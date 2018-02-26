@@ -945,14 +945,19 @@ scripts = [
       (item_set_slot, "itm_a_peasant_man_custom", slot_item_num_components, 1),    
 		
 # Gambeson
-       (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_begin, "str_a_gambeson_black"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_begin, "str_a_gambeson_black"),
       (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_end, "str_a_gambeson_end"),
       (item_set_slot, "itm_a_gambeson_custom", slot_item_num_components, 1),    		
 		
 # Narf Gambeson 
-       (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_materials_begin, "str_a_narf_gambeson_black"),
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_materials_begin, "str_a_narf_gambeson_black"),
       (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_materials_end, "str_a_narf_gambeson_end"),
-      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_num_components, 1),    		
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_num_components, 1),   
+
+# Vertex Coloured Leather Vest
+      (item_set_slot, "itm_leather_vest_custom", slot_item_materials_begin, "str_a_leather_vest_arms_black"),
+      (item_set_slot, "itm_leather_vest_custom", slot_item_materials_end, "str_a_leather_vest_arms_end"),
+      (item_set_slot, "itm_leather_vest_custom", slot_item_num_components, 1),      		
   ]),
   
   #script_game_get_use_string
