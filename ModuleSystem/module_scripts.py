@@ -955,9 +955,19 @@ scripts = [
       (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_num_components, 1),   
 
 # Vertex Coloured Leather Vest
-      (item_set_slot, "itm_leather_vest_custom", slot_item_materials_begin, "str_a_leather_vest_arms_black"),
-      (item_set_slot, "itm_leather_vest_custom", slot_item_materials_end, "str_a_leather_vest_arms_end"),
-      (item_set_slot, "itm_leather_vest_custom", slot_item_num_components, 1),      		
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_materials_begin, "str_a_leather_vest_arms_black"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_materials_end, "str_a_leather_vest_arms_end"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_num_components, 1),      
+
+# Vertex Coloured Leather Armor
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_materials_begin, "str_a_leather_armor_arms_black"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_materials_end, "str_a_leather_armor_arms_end"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_num_components, 1),     
+
+# Vertex Coloured Mail shirt
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_materials_begin, "str_a_mail_shirt_arms_black"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_materials_end, "str_a_mail_shirt_arms_end"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_num_components, 1),     		
   ]),
   
   #script_game_get_use_string

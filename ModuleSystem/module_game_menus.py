@@ -5439,7 +5439,7 @@ game_menus = [
     [ 
       ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
       ("choose_scene",[],"** Scene Chooser **", [(jump_to_menu, "mnu_choose_scenes_0"),]),
-      ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_leather_vest_custom"),(troop_add_item, "trp_player", "itm_a_peasant_man_custom"),(troop_add_item, "trp_player", "itm_a_gambeson_custom"),(troop_add_item, "trp_player", "itm_a_narf_gambeson_custom"),]),
+      ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_a_leather_vest_custom"),(troop_add_item, "trp_player", "itm_a_leather_armor_custom"),(troop_add_item, "trp_player", "itm_a_peasant_man_custom"),(troop_add_item, "trp_player", "itm_a_gambeson_custom"),(troop_add_item, "trp_player", "itm_a_narf_gambeson_custom"),]),
       ("test_low_morale_quest",[],"Test Low Morale Freelancer Quest", [(assign, "$player_cur_troop", "trp_swadian_sergent"),
           (assign, "$enlisted_lord", "trp_knight_1_5"),
           (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
@@ -17133,6 +17133,28 @@ game_menus = [
         [
           (jump_to_menu,"mnu_town_trade_assessment_begin"),
       ]),
+		
+# Seek & Destroy: Added the Tailor		
+      # ("dye_clothes",
+        # [
+          # (store_faction_of_party, ":current_town_faction", "$current_town"),
+          # (store_relation, ":reln", ":current_town_faction", "fac_player_supporters_faction"),
+          # (ge, ":reln", 0),		  
+        # ],
+        # "Dye your clothes at the Tailor.",
+        # [
+      # (try_for_range, ":item_no", "itm_a_peasant_man_custom", "itm_items_end"), 	
+	# (troop_has_item_equipped,"trp_player",":item_no"),
+          # (item_slot_ge, ":item_no", slot_item_num_components, 1),
+          # (assign, "$g_current_opened_item_details", ":item_no"),
+          # (start_presentation, "prsnt_customize_armor"),
+       # (else_try),
+	# (display_message, "@Your current clothes can't be dyed"),
+          # (assign, "$g_current_opened_item_details", -1),
+      # (try_end),
+      # ]),		
+# Seek & Destroy end			
+
       ("trade_with_arms_merchant",[(party_slot_ge, "$current_town", slot_town_weaponsmith, 1)],
         "Trade with the arms merchant.",
         [

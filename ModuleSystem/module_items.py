@@ -47,7 +47,31 @@ def custom_reskin(item):
       (cur_item_set_material, s1, 0),
     (try_end),
     ])
-
+	 
+def custom_remodel(item):
+  return (ti_on_init_item, [
+    # (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
+    (store_trigger_param_2, ":troop_no"),
+    (str_clear, s1),
+    (item_get_slot, ":start", item, slot_item_materials_begin),
+    (item_get_slot, ":end", item, slot_item_materials_end),
+    (store_sub, ":total", ":end", ":start"),
+    (gt, ":total", 0),
+    (try_begin),
+      (gt, ":troop_no", -1),
+      (troop_is_hero, ":troop_no"),
+      (item_get_slot, ":value", item, slot_item_player_color),
+      (neq, ":value", -1),
+      (val_mod, ":value", ":total"),
+      (val_add, ":value", ":start"),
+    (else_try),
+      (store_random_in_range, ":value", ":start", ":end"),
+    (try_end),
+    (try_begin),
+      (str_store_string, s1, ":value"),
+      (cur_item_add_mesh, s1, 0),
+    (try_end),
+    ])	  
 
 # Some constants for ease of use.
 imodbits_none = 0
@@ -1963,31 +1987,10 @@ items = [
 ["a_narf_gambeson_custom", "Padded Jack", [("a_narf_gambeson_white",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0, 415 , weight(6)|abundance(100)|head_armor(0)|body_armor(28)|leg_armor(6)|difficulty(0) ,imodbits_cloth , [custom_reskin("itm_a_narf_gambeson_custom")]], 
 ["a_padded_cloth_custom", "Padded Cloth", [("a_padded_cloth_white",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [custom_reskin("itm_a_padded_cloth_custom")]], 
 
-["leather_vest_custom", "Leather Vest", [("a_leather_vest_base",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
- 325 , weight(3)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth,
-  [(ti_on_init_item, [
-    # (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
-    (store_trigger_param_2, ":troop_no"),
-    (str_clear, s1),
-    (item_get_slot, ":start", "itm_leather_vest_custom", slot_item_materials_begin),
-    (item_get_slot, ":end", "itm_leather_vest_custom", slot_item_materials_end),
-    (store_sub, ":total", ":end", ":start"),
-    (gt, ":total", 0),
-    (try_begin),
-      (gt, ":troop_no", -1),
-      (troop_is_hero, ":troop_no"),
-      (item_get_slot, ":value", "itm_leather_vest_custom", slot_item_player_color),
-      (neq, ":value", -1),
-      (val_mod, ":value", ":total"),
-      (val_add, ":value", ":start"),
-    (else_try),
-      (store_random_in_range, ":value", ":start", ":end"),
-    (try_end),
-    (try_begin),
-      (str_store_string, s1, ":value"),
-      (cur_item_add_mesh, s1, 0),
-    (try_end),
-    ])]],
+["a_leather_vest_custom", "Leather Vest", [("a_leather_vest_base",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0, 325 , weight(3)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth,[custom_remodel("itm_a_leather_vest_custom")]], 
+["a_leather_armor_custom", "Padded Leather", [("a_leather_armor_base",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ,[custom_remodel("itm_a_leather_armor_custom")]], 
+["a_mail_shirt_custom", "Mail Shirt", [("a_mail_shirt_base",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1040 , weight(19)|abundance(100)|head_armor(0)|body_armor(37)|leg_armor(12)|difficulty(7) ,imodbits_armor ,[custom_remodel("itm_a_mail_shirt_custom")]], 
+
 
 ["items_end", "Items End", [("small_shield",0)], 0, 0, 1, 0, 0],
 ]
