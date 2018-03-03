@@ -1,4 +1,4 @@
-1070
+1071
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1069,3 +1069,4 @@ qstr_You_and_your_men You_and_your_men
 qstr_You You
 qstr_You_defeated_the_ene You_defeated_the_enemies.
 qstr_You_failed_to_defeat_ You_failed_to_defeat_the_enemy.
+qstr_Customizable Customizable

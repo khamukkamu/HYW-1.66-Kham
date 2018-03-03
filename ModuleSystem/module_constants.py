@@ -2161,14 +2161,14 @@ slot_item_player_slots_end = slot_item_player_slots_begin + custom_armor_maximum
 slot_item_player_color = slot_item_player_slots_end
 
 # Seek: Added slots for faction specific colors
-slot_item_france_materials_begin=86
-slot_item_france_materials_end=87
-slot_item_english_materials_begin=88
-slot_item_english_materials_end=89
-slot_item_burgundy_materials_begin=90
-slot_item_burgundy_materials_end=91
-slot_item_breton_materials_begin=92
-slot_item_breton_materials_end=93
+slot_item_france_materials_begin	=	93
+slot_item_france_materials_end		=	94
+slot_item_english_materials_begin	=	95
+slot_item_english_materials_end		=	96
+slot_item_burgundy_materials_begin	=	97
+slot_item_burgundy_materials_end	=	98
+slot_item_breton_materials_begin	=	99
+slot_item_breton_materials_end		=	100
 # Seek end
 
 custom_item_color_mask = 0xf
