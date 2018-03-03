@@ -2160,6 +2160,17 @@ slot_item_player_slots_begin = 85
 slot_item_player_slots_end = slot_item_player_slots_begin + custom_armor_maximum_submaterial
 slot_item_player_color = slot_item_player_slots_end
 
+# Seek: Added slots for faction specific colors
+slot_item_france_materials_begin=86
+slot_item_france_materials_end=87
+slot_item_english_materials_begin=88
+slot_item_english_materials_end=89
+slot_item_burgundy_materials_begin=90
+slot_item_burgundy_materials_end=91
+slot_item_breton_materials_begin=92
+slot_item_breton_materials_end=93
+# Seek end
+
 custom_item_color_mask = 0xf
 custom_item_color_bits = 4
 

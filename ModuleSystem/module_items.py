@@ -23,6 +23,56 @@ from compiler import *
 #  10) [Optional] Factions: List of factions that item can be found as merchandise.
 ####################################################################################################################
 
+# def custom_reskin(item):
+  # return (ti_on_init_item, [
+   ## (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
+    # (store_trigger_param_2, ":troop_no"),
+    # (str_clear, s1),
+    # (item_get_slot, ":start", item, slot_item_materials_begin),
+    # (item_get_slot, ":end", item, slot_item_materials_end),
+    # (store_sub, ":total", ":end", ":start"),
+    # (gt, ":total", 0),
+    # (try_begin),
+      # (gt, ":troop_no", -1),
+      # (troop_is_hero, ":troop_no"),
+      # (item_get_slot, ":value", item, slot_item_player_color),
+      # (neq, ":value", -1),
+      # (val_mod, ":value", ":total"),
+      # (val_add, ":value", ":start"),
+    # (else_try),
+      # (store_random_in_range, ":value", ":start", ":end"),
+    # (try_end),
+    # (try_begin),
+      # (str_store_string, s1, ":value"),
+      # (cur_item_set_material, s1, 0),
+    # (try_end),
+    # ])
+	 
+# def custom_remodel(item):
+  # return (ti_on_init_item, [
+    ## (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
+    # (store_trigger_param_2, ":troop_no"),
+    # (str_clear, s1),
+    # (item_get_slot, ":start", item, slot_item_materials_begin),
+    # (item_get_slot, ":end", item, slot_item_materials_end),
+    # (store_sub, ":total", ":end", ":start"),
+    # (gt, ":total", 0),
+    # (try_begin),
+      # (gt, ":troop_no", -1),
+      # (troop_is_hero, ":troop_no"),
+      # (item_get_slot, ":value", item, slot_item_player_color),
+      # (neq, ":value", -1),
+      # (val_mod, ":value", ":total"),
+      # (val_add, ":value", ":start"),
+    # (else_try),
+      # (store_random_in_range, ":value", ":start", ":end"),
+    # (try_end),
+    # (try_begin),
+      # (str_store_string, s1, ":value"),
+      # (cur_item_add_mesh, s1, 0),
+    # (try_end),
+    # ])	  	 
+	 
 def custom_reskin(item):
   return (ti_on_init_item, [
     # (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
@@ -30,8 +80,24 @@ def custom_reskin(item):
     (str_clear, s1),
     (item_get_slot, ":start", item, slot_item_materials_begin),
     (item_get_slot, ":end", item, slot_item_materials_end),
+    
+    (item_get_slot, ":france_start", item, slot_item_france_materials_begin),
+    (item_get_slot, ":france_end", item, slot_item_france_materials_end),
+    
+    (item_get_slot, ":english_start", item, slot_item_english_materials_begin),
+    (item_get_slot, ":english_end", item, slot_item_english_materials_end),
+    
+    (item_get_slot, ":burgundy_start", item, slot_item_burgundy_materials_begin),
+    (item_get_slot, ":burgundy_end", item, slot_item_burgundy_materials_end),
+    
+    (item_get_slot, ":breton_start", item, slot_item_breton_materials_begin),
+    (item_get_slot, ":breton_end", item, slot_item_breton_materials_end),
+
+    (store_troop_faction, ":faction", ":troop_no"),
+	 
     (store_sub, ":total", ":end", ":start"),
     (gt, ":total", 0),
+	 
     (try_begin),
       (gt, ":troop_no", -1),
       (troop_is_hero, ":troop_no"),
@@ -40,13 +106,25 @@ def custom_reskin(item):
       (val_mod, ":value", ":total"),
       (val_add, ":value", ":start"),
     (else_try),
-      (store_random_in_range, ":value", ":start", ":end"),
+    	(eq, ":faction", "fac_kingdom_1"),
+    	(store_random_in_range, ":value", ":france_start", ":france_end"),
+    (else_try),
+    	(eq, ":faction", "fac_kingdom_2"),
+    	(store_random_in_range, ":value", ":english_start", ":english_end"),
+    (else_try),
+    	(eq, ":faction", "fac_kingdom_3"),
+    	(store_random_in_range, ":value", ":burgundy_start", ":burgundy_end"),
+    (else_try),
+    	(eq, ":faction", "fac_kingdom_4"),
+    	(store_random_in_range, ":value", ":breton_start", ":breton_end"),
+    (else_try),
+      (store_random_in_range, ":value", ":start", ":end"), #Anyone else gets a random mix of everything
     (try_end),
     (try_begin),
       (str_store_string, s1, ":value"),
       (cur_item_set_material, s1, 0),
     (try_end),
-    ])
+    ])	 
 	 
 def custom_remodel(item):
   return (ti_on_init_item, [
@@ -55,8 +133,24 @@ def custom_remodel(item):
     (str_clear, s1),
     (item_get_slot, ":start", item, slot_item_materials_begin),
     (item_get_slot, ":end", item, slot_item_materials_end),
+    
+    (item_get_slot, ":france_start", item, slot_item_france_materials_begin),
+    (item_get_slot, ":france_end", item, slot_item_france_materials_end),
+    
+    (item_get_slot, ":english_start", item, slot_item_english_materials_begin),
+    (item_get_slot, ":english_end", item, slot_item_english_materials_end),
+    
+    (item_get_slot, ":burgundy_start", item, slot_item_burgundy_materials_begin),
+    (item_get_slot, ":burgundy_end", item, slot_item_burgundy_materials_end),
+    
+    (item_get_slot, ":breton_start", item, slot_item_breton_materials_begin),
+    (item_get_slot, ":breton_end", item, slot_item_breton_materials_end),
+
+    (store_troop_faction, ":faction", ":troop_no"),
+	 
     (store_sub, ":total", ":end", ":start"),
     (gt, ":total", 0),
+	 
     (try_begin),
       (gt, ":troop_no", -1),
       (troop_is_hero, ":troop_no"),
@@ -65,13 +159,25 @@ def custom_remodel(item):
       (val_mod, ":value", ":total"),
       (val_add, ":value", ":start"),
     (else_try),
-      (store_random_in_range, ":value", ":start", ":end"),
+    	(eq, ":faction", "fac_kingdom_1"),
+    	(store_random_in_range, ":value", ":france_start", ":france_end"),
+    (else_try),
+    	(eq, ":faction", "fac_kingdom_2"),
+    	(store_random_in_range, ":value", ":english_start", ":english_end"),
+    (else_try),
+    	(eq, ":faction", "fac_kingdom_3"),
+    	(store_random_in_range, ":value", ":burgundy_start", ":burgundy_end"),
+    (else_try),
+    	(eq, ":faction", "fac_kingdom_4"),
+    	(store_random_in_range, ":value", ":breton_start", ":breton_end"),
+    (else_try),
+      (store_random_in_range, ":value", ":start", ":end"), #Anyone else gets a random mix of everything
     (try_end),
     (try_begin),
       (str_store_string, s1, ":value"),
       (cur_item_add_mesh, s1, 0),
     (try_end),
-    ])	  
+    ])	
 
 # Some constants for ease of use.
 imodbits_none = 0

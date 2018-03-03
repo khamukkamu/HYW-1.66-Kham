@@ -934,39 +934,123 @@ scripts = [
           (item_set_slot, ":item_no", slot_item_num_components, 1), #allows it to be customized
       (try_end),
 
-# Padded Cloth Test
-      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_materials_begin, "str_a_padded_cloth_black"),
+## Padded Cloth
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_materials_begin, "str_a_padded_cloth_blue"),
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_materials_end, "str_a_padded_cloth_end"),
+# France
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_france_materials_begin, "str_a_padded_cloth_blue"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_france_materials_end, "str_padded_cloth_b_e1"),
+# England
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_english_materials_begin, "str_a_padded_cloth_white"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_english_materials_end, "str_a_padded_cloth_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_begin, "str_a_padded_cloth_red"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_end, "str_a_padded_cloth_black"),
+# Brittany		
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_begin, "str_a_padded_cloth_black"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_end, "str_a_padded_cloth_end"),
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_num_components, 1),
       
-# Peasant Clothes
-       (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_begin, "str_a_peasant_man_black"),
+## Peasant Clothes
+       (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_begin, "str_a_peasant_man_blue"),
       (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_end, "str_a_peasant_man_end"),
+# France
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_france_materials_begin, "str_a_peasant_man_blue"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_france_materials_end, "str_a_peasant_man_green_2"),
+# England
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_english_materials_begin, "str_a_peasant_man_green"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_english_materials_end, "str_a_peasant_man_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_burgundy_materials_begin, "str_a_peasant_man_brown"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_burgundy_materials_end, "str_a_peasant_man_black"),
+# Brittany		
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_breton_materials_begin, "str_a_peasant_man_black"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_breton_materials_end, "str_a_peasant_man_end"),		
       (item_set_slot, "itm_a_peasant_man_custom", slot_item_num_components, 1),    
-		
-# Gambeson
-      (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_begin, "str_a_gambeson_black"),
+				
+## Gambeson
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_begin, "str_a_gambeson_blue"),
       (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_end, "str_a_gambeson_end"),
+# France
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_france_materials_begin, "str_a_gambeson_blue"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_france_materials_end, "str_a_gambeson_red"),
+# England
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_english_materials_begin, "str_a_gambeson_white"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_english_materials_end, "str_a_gambeson_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_burgundy_materials_begin, "str_a_gambeson_red"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_burgundy_materials_end, "str_a_gambeson_brown"),
+# Brittany		
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_breton_materials_begin, "str_a_gambeson_brown"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_breton_materials_end, "str_a_gambeson_end"),			
       (item_set_slot, "itm_a_gambeson_custom", slot_item_num_components, 1),    		
 		
-# Narf Gambeson 
-      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_materials_begin, "str_a_narf_gambeson_black"),
+## Narf Gambeson 
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_materials_begin, "str_a_narf_gambeson_blue"),
       (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_materials_end, "str_a_narf_gambeson_end"),
+# France
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_france_materials_begin, "str_a_narf_gambeson_blue"),
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_france_materials_end, "str_gambeson_e"),
+# England
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_english_materials_begin, "str_gambeson"),
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_english_materials_end, "str_a_narf_gambeson_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_burgundy_materials_begin, "str_a_narf_gambeson_red"),
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_burgundy_materials_end, "str_a_narf_gambeson_black"),
+# Brittany		
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_breton_materials_begin, "str_a_narf_gambeson_black"),
+      (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_breton_materials_end, "str_a_narf_gambeson_end"),			
       (item_set_slot, "itm_a_narf_gambeson_custom", slot_item_num_components, 1),   
 
-# Vertex Coloured Leather Vest
-      (item_set_slot, "itm_a_leather_vest_custom", slot_item_materials_begin, "str_a_leather_vest_arms_black"),
+## Vertex Coloured Leather Vest
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_materials_begin, "str_a_leather_vest_arms_blue"),
       (item_set_slot, "itm_a_leather_vest_custom", slot_item_materials_end, "str_a_leather_vest_arms_end"),
+# France
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_france_materials_begin, "str_a_leather_vest_arms_blue"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_france_materials_end, "str_a_leather_vest_arms_red"),
+# England
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_english_materials_begin, "str_a_leather_vest_arms_white"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_english_materials_end, "str_a_leather_vest_arms_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_burgundy_materials_begin, "str_a_leather_vest_arms_red"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_burgundy_materials_end, "str_a_leather_vest_arms_black"),
+# Brittany		
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_breton_materials_begin, "str_a_leather_vest_arms_black"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_breton_materials_end, "str_a_leather_vest_arms_end"),				
       (item_set_slot, "itm_a_leather_vest_custom", slot_item_num_components, 1),      
 
-# Vertex Coloured Leather Armor
-      (item_set_slot, "itm_a_leather_armor_custom", slot_item_materials_begin, "str_a_leather_armor_arms_black"),
+## Vertex Coloured Leather Armor
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_materials_begin, "str_a_leather_armor_arms_blue"),
       (item_set_slot, "itm_a_leather_armor_custom", slot_item_materials_end, "str_a_leather_armor_arms_end"),
+# France
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_france_materials_begin, "str_a_leather_armor_arms_blue"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_france_materials_end, "str_a_leather_armor_arms_red"),
+# England
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_english_materials_begin, "str_a_leather_armor_arms_white"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_english_materials_end, "str_a_leather_armor_arms_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_burgundy_materials_begin, "str_a_leather_armor_arms_red"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_burgundy_materials_end, "str_a_leather_armor_arms_black"),
+# Brittany		
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_breton_materials_begin, "str_a_leather_armor_arms_black"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_breton_materials_end, "str_a_leather_armor_arms_end"),				
       (item_set_slot, "itm_a_leather_armor_custom", slot_item_num_components, 1),     
 
-# Vertex Coloured Mail shirt
-      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_materials_begin, "str_a_mail_shirt_arms_black"),
+## Vertex Coloured Mail shirt
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_materials_begin, "str_a_mail_shirt_arms_blue"),
       (item_set_slot, "itm_a_mail_shirt_custom", slot_item_materials_end, "str_a_mail_shirt_arms_end"),
+# France
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_france_materials_begin, "str_a_mail_shirt_arms_blue"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_france_materials_end, "str_a_mail_shirt_arms_red"),
+# England
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_english_materials_begin, "str_a_mail_shirt_arms_white"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_english_materials_end, "str_a_mail_shirt_arms_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_burgundy_materials_begin, "str_a_mail_shirt_arms_red"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_burgundy_materials_end, "str_a_mail_shirt_arms_black"),
+# Brittany		
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_begin, "str_a_mail_shirt_arms_black"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_end, "str_a_mail_shirt_arms_end"),			
       (item_set_slot, "itm_a_mail_shirt_custom", slot_item_num_components, 1),     		
   ]),
   
