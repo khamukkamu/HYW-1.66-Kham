@@ -3545,7 +3545,7 @@ scene_props = [
   ("plantr_8_buissvertsec" ,0,"bushes_r_4" ,"0", []),
   ("plantr_9_planteseche" ,0,"bushes_r_3" ,"0", []),
   ("plantr_10_epines" ,0,"bushes_r_2" ,"0", []),
-  ("plantr_11_vert" ,0,"bushes_r" ,"0", []),
+  # ("plantr_11_vert" ,0,"bushes_r" ,"0", []),
   ("plantr_12_herbeseche" ,0,"plant_r_forest" ,"0", []),
   ("plantr_13_tronc" ,0,"pine_r_dead" ,"bo_pine_r_dead", []),
   ("plantr_14_pin" ,0,"pine_r" ,"bo_pine_r", []),
@@ -3820,7 +3820,7 @@ scene_props = [
   ("fake_tree2",0,"fake_tree2","0", []),  
   ("fake_tree3",0,"fake_tree3","0", []),  
   ("foret_buissons1",0,"foret_plante","0", []),
-  ("foret_buissons1",0,"foret_plant2","0", []),  
+  # ("foret_buissons1",0,"foret_plant2","0", []),  
   ("111111aa_arbre_plaine_parfait",0,"tree_18_b","bo_tree_18_b", []),
   ("11111111aa_snow_p2",0,"snoplant2","bo_snoplant2", []),  
 

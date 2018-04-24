@@ -128,6 +128,7 @@ slot_faction_tier_4_troop         = 44
 slot_faction_tier_5_troop         = 45
 slot_faction_tier_6_troop         = 46
 
+
 slot_faction_deserter_troop       = 48
 slot_faction_guard_troop          = 49
 slot_faction_messenger_troop      = 50
@@ -383,6 +384,8 @@ slot_center_mercenary_troop_type  = 90
 slot_center_mercenary_troop_amount= 91
 slot_center_volunteer_troop_type  = 92
 slot_center_volunteer_troop_amount= 93
+
+slot_center_volunteer_troop_type_ranged  = 94
 
 #slot_center_companion_candidate   = 94
 slot_center_ransom_broker         = 95
@@ -1619,15 +1622,15 @@ readable_books_end   = reference_books_begin
 books_begin = readable_books_begin
 books_end = reference_books_end
 horses_begin = "itm_sumpter_horse"
-horses_end = "itm_arrows"
-weapons_begin = "itm_wooden_stick"
-weapons_end = "itm_wooden_shield"
-ranged_weapons_begin = "itm_darts"
-ranged_weapons_end = "itm_torch"
-armors_begin = "itm_leather_gloves"
-armors_end = "itm_wooden_stick"
-shields_begin = "itm_wooden_shield"
-shields_end = "itm_jarid"
+horses_end = "itm_h_bascinet_great"
+weapons_begin = "itm_w_bastard_sword_a"
+weapons_end = "itm_tab_shield_round_a"
+ranged_weapons_begin = "itm_w_hunting_bow_ash"
+ranged_weapons_end = "itm_tab_shield_round_a"
+armors_begin = "itm_h_bascinet_great"
+armors_end = "itm_w_bastard_sword_a"
+shields_begin = "itm_tab_shield_round_a"
+shields_end = "itm_torch"
 
 # Banner constants
 

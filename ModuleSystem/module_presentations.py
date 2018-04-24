@@ -454,10 +454,10 @@ presentations = [
           
           (try_begin),
             (eq, "$g_quick_battle_team_2_faction", "fac_kingdom_1"),
-            (assign, ":cur_troop", "trp_swadian_knight"),
+            (assign, ":cur_troop", "trp_french_knight_bachelier"),
           (else_try),
             (eq, "$g_quick_battle_team_2_faction", "fac_kingdom_2"),
-            (assign, ":cur_troop", "trp_vaegir_knight"),
+            (assign, ":cur_troop", "trp_english_knight"),
             #HYW
             #	  (else_try),
             #        (eq, "$g_quick_battle_team_2_faction", "fac_kingdom_3"),
@@ -10227,18 +10227,18 @@ presentations = [
   #
   (try_begin),
     
-    (this_or_next|troop_has_item_equipped, "trp_player", "itm_hounskull"), #
-    (this_or_next|troop_has_item_equipped, "trp_player", "itm_bb_hounskull_bp"), #
-    (troop_has_item_equipped, "trp_player", "itm_pigface_klappvisor"), #
+    (this_or_next|troop_has_item_equipped, "trp_player", "itm_h_zitta_bascinet"), #
+    (this_or_next|troop_has_item_equipped, "trp_player", "itm_h_hounskull_narf"), #
+    (troop_has_item_equipped, "trp_player", "itm_h_houndskull_thick"), #
     (create_mesh_overlay, reg0, "mesh_helmet_inside"),
     (play_sound, "snd_helm_down"),#
-  (else_try),
-    (this_or_next|troop_has_item_equipped, "trp_player", "itm_bb_armet"), #
-    (this_or_next|troop_has_item_equipped, "trp_player", "itm_bb_armet2"), #
-    (this_or_next|troop_has_item_equipped, "trp_player", "itm_bb_massivehelm_bp"), #
-    (troop_has_item_equipped, "trp_player", "itm_new_helmet_tournament_blue_1"), #
-    (create_mesh_overlay, reg0, "mesh_helmet_T_inside"),
-    (play_sound, "snd_helm_down"),
+  # (else_try),
+    # (this_or_next|troop_has_item_equipped, "trp_player", "itm_bb_armet"), #
+    # (this_or_next|troop_has_item_equipped, "trp_player", "itm_bb_armet2"), #
+    # (this_or_next|troop_has_item_equipped, "trp_player", "itm_bb_massivehelm_bp"), #
+    # (troop_has_item_equipped, "trp_player", "itm_new_helmet_tournament_blue_1"), #
+    # (create_mesh_overlay, reg0, "mesh_helmet_T_inside"),
+    # (play_sound, "snd_helm_down"),
   (else_try),#
     (create_mesh_overlay, reg0, "mesh_helmet_invisible"),
   (try_end),
@@ -12829,22 +12829,22 @@ presentations = [
   
   #Noble Lines
   #French
-  (str_store_troop_name, s1, "trp_swadian_man_at_arms"),
+  (str_store_troop_name, s1, "trp_french_squire"),
   (str_store_string, s1, "@French Noble Line"),
   (overlay_add_item, "$g_presentation_obj_sliders_1", s1),
   
   #English
-  (str_store_troop_name, s1, "trp_vaegir_horseman"),
+  (str_store_troop_name, s1, "trp_english_squire"),
   (str_store_string, s1, "@English Noble Line"),
   (overlay_add_item, "$g_presentation_obj_sliders_1", s1),
   
   #Burgandy
-  (str_store_troop_name, s1, "trp_bourg_horseman"),
+  (str_store_troop_name, s1, "trp_burgundian_squire"),
   (str_store_string, s1, "@Burgandy Noble Line"),
   (overlay_add_item, "$g_presentation_obj_sliders_1", s1),
   
   #Bretton
-  (str_store_troop_name, s1, "trp_breton_horseman"),
+  (str_store_troop_name, s1, "trp_breton_squire"),
   (str_store_string, s1, "@Breton Noble Line"),
   (overlay_add_item, "$g_presentation_obj_sliders_1", s1),
   
@@ -12882,28 +12882,28 @@ presentations = [
     (store_sub, ":extra", ":culture", ":last_culture"),
     
     (eq, ":extra", 0),
-    (assign, ":troop", "trp_swadian_man_at_arms"),
+    (assign, ":troop", "trp_french_squire"),
     (call_script, "script_troop_tree_precurse", ":troop", 1, 1),
     (store_div, "$troop_tree_pic_width", Troop_Tree_Area_Width, reg0),
     (store_div, "$troop_tree_pic_height", Troop_Tree_Area_Height, reg1),
     
   (else_try),
     (eq, ":extra", 1),
-    (assign, ":troop", "trp_vaegir_horseman"),
+    (assign, ":troop", "trp_english_squire"),
     (call_script, "script_troop_tree_precurse", ":troop", 1, 1),
     (store_div, "$troop_tree_pic_width", Troop_Tree_Area_Width, reg0),
     (store_div, "$troop_tree_pic_height", Troop_Tree_Area_Height, reg1),
     
   (else_try),
     (eq, ":extra", 2),
-    (assign, ":troop", "trp_bourg_horseman"),
+    (assign, ":troop", "trp_burgundian_squire"),
     (call_script, "script_troop_tree_precurse", ":troop", 1, 1),
     (store_div, "$troop_tree_pic_width", Troop_Tree_Area_Width, reg0),
     (store_div, "$troop_tree_pic_height", Troop_Tree_Area_Height, reg1),
     
   (else_try),
     (eq, ":extra", 3),
-    (assign, ":troop", "trp_breton_horseman"),
+    (assign, ":troop", "trp_breton_squire"),
     (call_script, "script_troop_tree_precurse", ":troop", 1, 1),
     (store_div, "$troop_tree_pic_width", Troop_Tree_Area_Width, reg0),
     (store_div, "$troop_tree_pic_height", Troop_Tree_Area_Height, reg1),

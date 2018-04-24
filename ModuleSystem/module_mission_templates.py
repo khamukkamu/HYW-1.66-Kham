@@ -1459,7 +1459,7 @@ hyw_common_battle_scripts = [
   bright_nights] + dplmc_battle_mode_triggers + utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers + AI_triggers + battle_panel_triggers
 
 
-pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
+pilgrim_disguise = [itm_h_hood_black,itm_a_peasant_man_custom,itm_b_hosen_poulaines_custom,itm_practice_staff, itm_throwing_daggers]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 
 multiplayer_server_check_belfry_movement = (
@@ -3128,13 +3128,13 @@ mission_templates = [
           (agent_is_alive, ":player_agent"),
           
           (agent_get_wielded_item, ":wielded_item", ":player_agent", 0),
-          (is_between, ":wielded_item", "itm_darts", "itm_torch"),
-          (neq, ":wielded_item", "itm_javelin_melee"),
-          (neq, ":wielded_item", "itm_throwing_spear_melee"),
-          (neq, ":wielded_item", "itm_jarid_melee"),
-          (neq, ":wielded_item", "itm_light_throwing_axes_melee"),
-          (neq, ":wielded_item", "itm_throwing_axes_melee"),
-          (neq, ":wielded_item", "itm_heavy_throwing_axes_melee"),
+	(is_between, ":wielded_item", "itm_w_hunting_bow_ash", "itm_tab_shield_round_a"),
+          # (neq, ":wielded_item", "itm_javelin_melee"),
+          # (neq, ":wielded_item", "itm_throwing_spear_melee"),
+          # (neq, ":wielded_item", "itm_jarid_melee"),
+          # (neq, ":wielded_item", "itm_light_throwing_axes_melee"),
+          # (neq, ":wielded_item", "itm_throwing_axes_melee"),
+          # (neq, ":wielded_item", "itm_heavy_throwing_axes_melee"),
         ],
         [
           (party_get_slot, ":tavernkeeper", "$g_encountered_party", slot_town_tavernkeeper),
@@ -3951,7 +3951,7 @@ mission_templates = [
   (
     "back_alley_revolt",mtf_battle_mode,charge,
     "You lead your men to battle.",
-    [(0,mtef_team_0|mtef_use_exact_number,af_override_horse|af_override_weapons|af_override_head,aif_start_alarmed,4,[itm_quarter_staff]),
+    [(0,mtef_team_0|mtef_use_exact_number,af_override_horse|af_override_weapons|af_override_head,aif_start_alarmed,4,[itm_practice_staff]),
       (3,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
     ],
     [
@@ -6608,8 +6608,8 @@ mission_templates = [
     "duel_with_lord",mtf_arena_fight|mtf_commit_casualties,-1,
     "You enter a melee fight in the arena.",
     [
-      (0, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_sword_medieval_a,itm_arena_tunic_blue]),
-      (16, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_sword_medieval_a,itm_arena_tunic_blue]),
+      (0, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_w_bastard_sword_a,itm_arena_tunic_blue]),
+      (16, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_w_bastard_sword_a,itm_arena_tunic_blue]),
     ],
     [
       common_inventory_not_available,
@@ -6931,10 +6931,10 @@ mission_templates = [
     "wedding",0,-1,
     "Wedding",
     [
-      (0,mtef_visitor_source,af_override_everything,0,1,[itm_tabard, itm_ankle_boots]),
+      (0,mtef_visitor_source,af_override_everything,0,1,[itm_a_tabard, itm_b_ankle_boots]),
       (1,mtef_visitor_source,af_override_everything,0,1,[itm_bride_dress, itm_bride_crown, itm_bride_shoes]),
       (2,mtef_visitor_source,af_castle_lord,0,1,[]),
-      (3,mtef_visitor_source,af_override_everything,0,1,[itm_courtly_outfit, itm_blue_hose]),
+      (3,mtef_visitor_source,af_override_everything,0,1,[itm_a_nobleman_court_outfit_1, itm_b_hosen_poulaines_custom]),
       (4,mtef_visitor_source,af_castle_lord,0,1,[]),
       (5,mtef_visitor_source,af_castle_lord,0,1,[]),
       (6,mtef_visitor_source,af_castle_lord,0,1,[]),
@@ -7569,7 +7569,7 @@ mission_templates = [
           (prop_instance_get_position, pos0, ":item_instance"),
           (position_move_z, pos0, -1000, 1),
           (prop_instance_set_position, ":item_instance", pos0),
-          (scene_spawned_item_get_instance, ":item_instance", "itm_practice_bow_2", 0),
+          (scene_spawned_item_get_instance, ":item_instance", "itm_practice_bow", 0),
           (prop_instance_get_position, pos0, ":item_instance"),
           (position_move_z, pos0, -1000, 1),
           (prop_instance_set_position, ":item_instance", pos0),
@@ -7577,7 +7577,7 @@ mission_templates = [
           (prop_instance_get_position, pos0, ":item_instance"),
           (position_move_z, pos0, -1000, 1),
           (prop_instance_set_position, ":item_instance", pos0),
-          (scene_spawned_item_get_instance, ":item_instance", "itm_practice_arrows_2", 0),
+          (scene_spawned_item_get_instance, ":item_instance", "itm_practice_arrows", 0),
           (prop_instance_get_position, pos0, ":item_instance"),
           (position_move_z, pos0, -1000, 1),
           (prop_instance_set_position, ":item_instance", pos0),
@@ -7835,8 +7835,8 @@ mission_templates = [
             (eq, ":cur_ammo", 0),
             (assign, ":refill", 1),
           (else_try),
-            (eq, ":wielded_weapon", "itm_practice_bow_2"),
-            (agent_has_item_equipped, ":player_agent", "itm_practice_arrows_2"),
+            (eq, ":wielded_weapon", "itm_practice_bow"),
+            (agent_has_item_equipped, ":player_agent", "itm_practice_arrows"),
             (agent_get_ammo, ":cur_ammo", ":player_agent", 1),
             (eq, ":cur_ammo", 0),
             (assign, ":refill", 1),
@@ -8833,7 +8833,7 @@ mission_templates = [
     "tutorial_1",0,-1,
     "You enter the training ground.",
     [
-      (0,mtef_leader_only,af_override_everything,0,1,[itm_tutorial_shield,itm_tutorial_sword,itm_tutorial_short_bow,itm_tutorial_arrows,itm_leather_jerkin,itm_leather_boots]), #af_override_weapons
+      (0,mtef_leader_only,af_override_everything,0,1,[itm_tutorial_shield,itm_tutorial_sword,itm_tutorial_short_bow,itm_tutorial_arrows,itm_a_leather_jerkin,itm_b_leather_boots]), #af_override_weapons
     ],
     [
       (ti_tab_pressed, 0, 0, [],
@@ -9041,7 +9041,7 @@ mission_templates = [
     "tutorial_2",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-      (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_shield,itm_leather_jerkin,itm_leather_boots]),
+      (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_shield,itm_a_leather_jerkin,itm_b_leather_boots]),
       (2,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (4,mtef_visitor_source|mtef_team_1,0,0,1,[]),
     ],
@@ -9326,7 +9326,7 @@ mission_templates = [
     "tutorial_3",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-      (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_leather_jerkin,itm_leather_boots]),
+      (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_a_leather_jerkin,itm_b_leather_boots]),
       (3,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
     ],
@@ -9583,7 +9583,7 @@ mission_templates = [
     "tutorial_3_2",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-      (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_staff,itm_leather_jerkin,itm_leather_boots]),
+      (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_staff,itm_a_leather_jerkin,itm_b_leather_boots]),
       (4,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
     ],
@@ -9737,7 +9737,7 @@ mission_templates = [
     "tutorial_4",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-      (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_sword,itm_tutorial_short_bow,itm_tutorial_arrows,itm_leather_jerkin,itm_leather_boots]), #af_override_weapons
+      (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_sword,itm_tutorial_short_bow,itm_tutorial_arrows,itm_a_leather_jerkin,itm_b_leather_boots]), #af_override_weapons
     ],
     [
       (ti_tab_pressed, 0, 0, [],
@@ -9952,7 +9952,7 @@ mission_templates = [
     "tutorial_5",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-      (0,mtef_visitor_source|mtef_team_0,af_override_everything,0,1,[itm_tutorial_sword,itm_tutorial_shield,itm_tutorial_short_bow,itm_tutorial_arrows,itm_tutorial_saddle_horse,itm_leather_jerkin,itm_leather_boots]),
+      (0,mtef_visitor_source|mtef_team_0,af_override_everything,0,1,[itm_tutorial_sword,itm_tutorial_shield,itm_tutorial_short_bow,itm_tutorial_arrows,itm_tutorial_saddle_horse,itm_a_leather_jerkin,itm_b_leather_boots]),
       (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
@@ -10072,9 +10072,9 @@ mission_templates = [
             (val_add, "$tutorial_5_state", 1),
             (modify_visitors_at_site,"scn_tutorial_5"),
             (reset_visitors),
-            (set_visitor,5,"trp_vaegir_archer"),
-            (set_visitor,6,"trp_vaegir_archer"),
-            (set_visitor,7,"trp_vaegir_archer"),
+            (set_visitor,5,"trp_english_longbowman"),
+            (set_visitor,6,"trp_english_longbowman"),
+            (set_visitor,7,"trp_english_longbowman"),
             (entry_point_get_position, pos1, 11),
             (scene_prop_get_instance, ":flag_object", "spr_tutorial_flag_yellow", 0),
             (prop_instance_animate_to_position, ":flag_object", pos1, 1),
@@ -13603,9 +13603,10 @@ mission_templates = [
             (assign, ":player_is_horseman", 0),
             (player_get_item_id, ":item_id", ":player_no", ek_horse),
             (try_begin),
-              (this_or_next|is_between, ":item_id", horses_begin, horses_end),
-              (this_or_next|eq, ":item_id", "itm_warhorse_sarranid"),
-              (eq, ":item_id", "itm_warhorse_steppe"),
+              (is_between, ":item_id", horses_begin, horses_end),				
+              # (this_or_next|is_between, ":item_id", horses_begin, horses_end),
+              # (this_or_next|eq, ":item_id", "itm_warhorse_sarranid"),
+              # (eq, ":item_id", "itm_warhorse_steppe"),
               (assign, ":player_is_horseman", 1),
             (try_end),
             
@@ -23042,8 +23043,8 @@ mission_templates = [
       (5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
       (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
       (7,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
-      (8,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[itm_templar_q_sword,itm_maconique_armor,itm_mail_mittens,itm_mail_chausses,itm_mail_coif]),
-      (9,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[itm_templar_q_sword,itm_great_bardiche,itm_maconique_armor,itm_mail_mittens,itm_mail_chausses,itm_mail_coif]),
+      (8,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[itm_w_onehanded_sword_templar,itm_maconique_armor,itm_g_mail_gauntlets,itm_b_mail_chausses,itm_h_mail_coif]),
+      (9,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[itm_w_onehanded_sword_templar,itm_w_bardiche_7,itm_maconique_armor,itm_g_mail_gauntlets,itm_b_mail_chausses,itm_h_mail_coif]),
       
       (10,mtef_visitor_source,af_override_horse,0,1,[]),(11,mtef_visitor_source,af_override_horse,0,1,[]),(12,mtef_visitor_source,af_override_horse,0,1,[]),(13,mtef_visitor_source,0,0,1,[]),(14,mtef_scene_source,0,0,1,[]),(15,mtef_scene_source,0,0,1,[]),
       (16,mtef_visitor_source,af_override_horse,0,1,[]),(17,mtef_visitor_source,af_override_horse,0,1,[]),(18,mtef_visitor_source,af_override_horse,0,1,[]),(19,mtef_visitor_source,af_override_horse,0,1,[]),(20,mtef_visitor_source,af_override_horse,0,1,[]),(21,mtef_visitor_source,af_override_horse,0,1,[]),(22,mtef_visitor_source,af_override_horse,0,1,[]),
@@ -23502,7 +23503,7 @@ mission_templates = [
       (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
       (7,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
       (8,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[]),
-      (9,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[itm_templar_q_sword,itm_maconique_armor,itm_mail_mittens,itm_mail_chausses,itm_mail_coif]),
+      (9,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[itm_w_onehanded_sword_templar,itm_maconique_armor,itm_g_mail_gauntlets,itm_b_mail_chausses,itm_h_mail_coif]),
       (10,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[]),
       (11,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[]),
       (12,mtef_visitor_source,af_override_horse,0,1,[]),
@@ -24360,8 +24361,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur]),
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_joutes_horse_fr, itm_fr_hourglass_gauntlets,itm_new_bb_complet_plates_charles, itm_new_helmet_tournament_blue_1]),#
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_joutes_horse_fr, itm_fr_hourglass_gauntlets,itm_new_bb_complet_plates_charles, itm_new_helmet_tournament_blue_1
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -24412,7 +24413,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_newlance_joutes_joueur"),
+              (assign, ":cur_wielded_item", "itm_w_lance_6"), # newlance_joutes_joueur
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
             (try_end),
           (try_end),
@@ -24656,7 +24657,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_new_joutes_horse_fr"),###<<<<<<<<<<
+            (eq, ":horse_item_id", "itm_warhorse_f1"),###<<<<<<<<<< Seek: itm_new_joutes_horse_fr
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -24862,8 +24863,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur]),
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_joutes_horse_red, itm_eng_hourglass_gauntlets, itm_new_helmet_tournament_red_1, itm_new_bb_complet_plates_r, itm_new_helmet_tournament_red_1]),#
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_joutes_horse_red, itm_eng_hourglass_gauntlets, itm_new_helmet_tournament_red_1, itm_new_bb_complet_plates_r, itm_new_helmet_tournament_red_1
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -24917,7 +24918,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_newlance_joutes_joueur"),
+              (assign, ":cur_wielded_item", "itm_w_lance_6"), # newlance_joutes_joueur
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
             (try_end),
           (try_end),
@@ -25148,7 +25149,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<<
+            (eq, ":horse_item_id", "itm_warhorse_en1"),###<<<<<<<<<< Seek: new_joutes_horse_red
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -25355,8 +25356,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur]),
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_bourgogne_warhorse, itm_bret_hourglass_gauntlets, itm_new_bb_complet_plates_bourg, itm_new_bb_hounskull_yp]),#
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_bourgogne_warhorse, itm_bret_hourglass_gauntlets, itm_new_bb_complet_plates_bourg, itm_new_bb_hounskull_yp
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -25411,7 +25412,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_newlance_joutes_joueur"),
+              (assign, ":cur_wielded_item", "itm_w_lance_6"), # newlance_joutes_joueur
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
             (try_end),
           (try_end),
@@ -25641,7 +25642,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_new_bourgogne_warhorse"),###<<<<<<<<<<
+            (eq, ":horse_item_id", "itm_warhorse_en2"),###<<<<<<<<<< Seek: new_bourgogne_warhorse
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -25851,8 +25852,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur]),
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_breton_warhorse_2, itm_bret_hourglass_gauntlets, itm_new_breton_complet_plates, itm_new_bb_greathelm_bp]),#
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_breton_warhorse_2, itm_bret_hourglass_gauntlets, itm_new_breton_complet_plates, itm_new_bb_greathelm_bp
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -25907,7 +25908,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_newlance_joutes_joueur"),
+              (assign, ":cur_wielded_item", "itm_w_lance_6"), # newlance_joutes_joueur
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
             (try_end),
           (try_end),
@@ -26140,7 +26141,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_new_breton_warhorse_2"),###<<<<<<<<<<
+            (eq, ":horse_item_id", "itm_breton_war_horse"),###<<<<<<<<<< Seek: new_breton_warhorse_2
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -26353,8 +26354,8 @@ mission_templates = [
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (64, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1]),#joueur
-      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_duke_joutes, itm_new_steel_greaves, itm_plate_mittens,itm_new_bb_complet_plates_charles, itm_bb_hounskull_bp]),#ennemi
+      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
+      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_plate_mittens,itm_new_bb_complet_plates_charles, itm_bb_hounskull_bp
       
       
     ],
@@ -26409,7 +26410,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_duke"),
+              (assign, ":cur_wielded_item", "itm_w_onehanded_sword_knight"),
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
             (try_end),
           (try_end),
@@ -26585,8 +26586,8 @@ mission_templates = [
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (64, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1]),#joueur
-      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_duke_joutes, itm_new_steel_greaves, itm_new_wisby_gauntlets_red, itm_new_helmet_tournament_red_1, itm_new_bb_complet_plates_r, itm_great_helm_joust]),#ennemi
+      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
+      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_new_wisby_gauntlets_red, itm_new_helmet_tournament_red_1, itm_new_bb_complet_plates_r, itm_great_helm_joust
       
       
     ],
@@ -26641,7 +26642,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_duke"),
+              (assign, ":cur_wielded_item", "itm_w_onehanded_sword_knight"),
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
             (try_end),
           (try_end),
@@ -26818,8 +26819,8 @@ mission_templates = [
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (64, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1]),#joueur
-      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_duke_joutes, itm_new_steel_greaves, itm_plate_mittens, itm_new_bb_complet_plates_bourg, itm_new_bb_hounskull_yp]),#ennemi
+      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
+      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_plate_mittens, itm_new_bb_complet_plates_bourg, itm_new_bb_hounskull_yp
       
       
     ],
@@ -26874,7 +26875,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_duke"),
+              (assign, ":cur_wielded_item", "itm_w_onehanded_sword_knight"),
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
             (try_end),
           (try_end),
@@ -27050,8 +27051,8 @@ mission_templates = [
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (64, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1]),#joueur
-      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_duke_joutes, itm_new_steel_greaves, itm_hourglass_gauntlets, itm_new_breton_complet_plates, itm_bb_greathelm_bp]),#ennemi
+      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
+      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_hourglass_gauntlets, itm_new_breton_complet_plates, itm_bb_greathelm_bp
       
       
     ],
@@ -27106,7 +27107,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_duke"),
+              (assign, ":cur_wielded_item", "itm_w_onehanded_sword_knight"),
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
             (try_end),
           (try_end),
@@ -27276,8 +27277,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_training_joute_saddle_horse, itm_mail_mittens, itm_mail_boots, itm_mail_hauberk,itm_new_tilting_helmet, itm_newlance_joutes_training_joueur]),
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_training_joute_saddle_horse_enemi, itm_mail_mittens, itm_mail_boots, itm_mail_hauberk,itm_new_tilting_helmet, itm_newlance_joutes_training_enemi]),
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_training_joute_saddle_horse, itm_g_mail_gauntlets, itm_mail_boots, itm_mail_hauberk,itm_new_tilting_helmet, itm_newlance_joutes_training_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []), # itm_training_joute_saddle_horse_enemi, itm_g_mail_gauntlets, itm_mail_boots, itm_mail_hauberk,itm_new_tilting_helmet, itm_newlance_joutes_training_enemi
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -27336,7 +27337,7 @@ mission_templates = [
             (eq, ":cur_agent_troop", "trp_player"),
             (try_begin),
               (agent_get_wielded_item, ":cur_wielded_item", ":cur_agent", 0),
-              (assign, ":cur_wielded_item", "itm_newlance_joutes_training_joueur"),
+              (assign, ":cur_wielded_item", "itm_w_lance_6"), # newlance_joutes_training_joueur
               (agent_set_wielded_item, ":cur_agent", ":cur_wielded_item"),
               
               #  (else_try),
@@ -27539,7 +27540,7 @@ mission_templates = [
             (neg|agent_is_human, ":dead_agent_no"),#if it is not human => it is horse
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
-            (eq, ":horse_item_id", "itm_training_joute_saddle_horse_enemi"),
+            (eq, ":horse_item_id", "itm_practice_horse"), # Seek: training_joute_saddle_horse_enemi
             
             
             ###########

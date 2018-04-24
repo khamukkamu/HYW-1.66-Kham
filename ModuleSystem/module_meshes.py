@@ -261,18 +261,25 @@ meshes = [
   ("tableau_mesh_heraldic_armor_b", 0, "tableau_mesh_heraldic_armor_b",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_c", 0, "tableau_mesh_heraldic_armor_c",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_d", 0, "tableau_mesh_heraldic_armor_d",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-#
+
+ ### HYW Heraldic Armors Begin
   ("tableau_mesh_heraldic_churburg_13_tabard_banner", 0, "tableau_mesh_heraldic_churburg_13_tabard_banner",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_churburg_13_tabard", 0, "tableau_mesh_heraldic_churburg_13_tabard",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_churburg_13_brass_tabard_banner", 0, "tableau_mesh_heraldic_churburg_13_brass_tabard_banner",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_churburg_13_brass_tabard", 0, "tableau_mesh_heraldic_churburg_13_brass_tabard",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-
-#
   
   ("tableau_mesh_early_transitional_heraldic_banner", 0, "tableau_mesh_early_transitional_heraldic_banner",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_early_transitional_heraldic", 0, "tableau_mesh_early_transitional_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
 
-  ("outer_terrain_plain_1", 0, "ter_border_a", -90, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_mail_long_surcoat_new_heraldic", 0, "tableau_mesh_mail_long_surcoat_new_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_brigandine_b_heraldic", 0, "tableau_mesh_brigandine_b_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_heraldic_tunic_new", 0, "tableau_mesh_heraldic_tunic_new",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_tabard_b_heraldic", 0, "tableau_mesh_tabard_b_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_heraldic_plate", 0, "tableau_mesh_heraldic_plate",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+ ### HYW Heraldic Armors End
+  
+
+  # ("outer_terrain_plain_1", 0, "ter_border_a", -90, 0, 0, 0, 0, 0, 1, 1, 1),
   ("banner_a01", 0, "banner_a01", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_a02", 0, "banner_a02", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_a03", 0, "banner_a03", 0, 0, 0, -90, 0, 0, 1, 1, 1),

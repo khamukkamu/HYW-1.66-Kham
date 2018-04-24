@@ -294,7 +294,7 @@ dialogs = [
     [
       (try_begin),
         (eq, "$talk_context", tc_freelancer_infantry_captain),
-        (troop_add_item, "trp_player", "itm_bastard_sword_b", imod_tempered),
+        (troop_add_item, "trp_player", "itm_w_bastard_sword_b", imod_tempered),
       (else_try),
         (troop_add_item, "trp_player", "itm_sniper_crossbow", imod_balanced),
       (try_end)],
@@ -344,12 +344,12 @@ dialogs = [
     [(try_begin),
         (eq, "$talk_context", tc_freelancer_ranged_captain),
         (str_store_string, s5, "@Ranged Division Captain"),
-        (str_store_item_name, s7, "itm_matchlock_2"),
+        (str_store_item_name, s7, "itm_w_handgonne_2"),
         (str_store_string, s6, "@a coat of plates fit for a Lord, or an {s7}"),
       (else_try),
         (eq, "$talk_context", tc_freelancer_infantry_captain),
         (str_store_string, s5, "@Infantry Division Captain"),
-        (str_store_item_name, s7, "itm_realflambergeb"),
+        (str_store_item_name, s7, "itm_w_bastard_sword_agincourt"),
         (str_store_string, s6, "@a coat of plates fit for a Lord, or a {s7}"),
       (try_end),],
     "From now on, you will be my {s5}, commanding a group of 15 men. You will also be given a considerable wage increase, as befit your station.^ I have also something to give you, choose between {s6}, straight from our family's treasures...^", "freelancer_cap_3",
@@ -359,7 +359,7 @@ dialogs = [
   [anyone|plyr, "freelancer_cap_3",
     [],
     "The armour will help me defend you from your enemies. I will continue bringing honour to your house.", "freelancer_cap_finish",
-    [ (troop_add_item, "trp_player", "itm_early_transitional_heraldic", imod_reinforced)],
+    [ (troop_add_item, "trp_player", "itm_heraldic_early_transitional", imod_reinforced)],
   ],
   
   [anyone|plyr, "freelancer_cap_3",
@@ -368,9 +368,9 @@ dialogs = [
     [
       (try_begin),
         (eq, "$talk_context", tc_freelancer_infantry_captain),
-        (troop_add_item, "trp_player", "itm_realflambergeb", imod_balanced),
+        (troop_add_item, "trp_player", "itm_w_bastard_sword_crecy", imod_balanced),
       (else_try),
-        (troop_add_item, "trp_player", "itm_matchlock_2", imod_balanced),
+        (troop_add_item, "trp_player", "itm_w_handgonne_2", imod_balanced),
       (try_end)],
   ],
   
@@ -1808,8 +1808,8 @@ dialogs = [
         (assign, "$g_tutorial_training_ground_horseman_trainer_item_1", "itm_arena_lance"),
         (assign, "$g_tutorial_training_ground_horseman_trainer_item_2", -1),
       (else_try),
-        (assign, "$g_tutorial_training_ground_horseman_trainer_item_1", "itm_practice_bow_2"),
-        (assign, "$g_tutorial_training_ground_horseman_trainer_item_2", "itm_practice_arrows_2"),
+        (assign, "$g_tutorial_training_ground_horseman_trainer_item_1", "itm_practice_bow"),
+        (assign, "$g_tutorial_training_ground_horseman_trainer_item_2", "itm_practice_arrows"),
       (try_end),
   ]],
   
@@ -1912,7 +1912,7 @@ dialogs = [
         
         (assign, "$g_main_attacker_agent", 0),
         (troop_add_gold, "trp_player", 50),
-        (troop_add_item, "trp_player", "itm_sword_viking_1", 0),
+        (troop_add_item, "trp_player", "itm_w_onehanded_sword_a", 0),
         
       (else_try),
         #(display_message, "str_wielded_item_reg3"),
@@ -1922,14 +1922,14 @@ dialogs = [
         
         (assign, "$g_main_attacker_agent", 0),
         (troop_add_gold, "trp_player", 50),
-        (troop_add_item, "trp_player", "itm_sword_viking_1", 0),
+        (troop_add_item, "trp_player", "itm_w_onehanded_sword_a", 0),
         (call_script, "script_troop_change_relation_with_troop", "trp_player", "$g_talk_troop", -1),
       (else_try),
         (neg|agent_is_alive, "$g_main_attacker_agent"),
         (str_store_string, s9, "str_well_id_say_that_he_started_it_that_entitles_you_to_his_sword_and_purse_i_suppose_have_a_drink_on_the_house_as_i_daresay_youve_saved_a_patron_or_two_a_broken_skull_still_i_hope_he_still_has_a_pulse_its_not_good_for_an_establishment_to_get_a_name_as_a_place_where_men_are_killed"),
         (assign, "$g_main_attacker_agent", 0),
         (troop_add_gold, "trp_player", 50),
-        (troop_add_item, "trp_player", "itm_sword_viking_1", 0),
+        (troop_add_item, "trp_player", "itm_w_onehanded_sword_a", 0),
         (call_script, "script_troop_change_relation_with_troop", "trp_player", "$g_talk_troop", 1),
       (try_end),
       (troop_set_slot, "trp_hired_assassin", slot_troop_cur_center, -1),
@@ -1944,13 +1944,13 @@ dialogs = [
       (try_begin),
         (get_player_agent_no, ":player_agent"),
         (agent_get_wielded_item, ":wielded_item", ":player_agent", 0),
-        (is_between, ":wielded_item", "itm_darts", "itm_torch"),
-        (neq, ":wielded_item", "itm_javelin_melee"),
-        (neq, ":wielded_item", "itm_throwing_spear_melee"),
-        (neq, ":wielded_item", "itm_jarid_melee"),
-        (neq, ":wielded_item", "itm_light_throwing_axes_melee"),
-        (neq, ":wielded_item", "itm_throwing_axes_melee"),
-        (neq, ":wielded_item", "itm_heavy_throwing_axes_melee"),
+        (is_between, ":wielded_item", "itm_w_hunting_bow_ash", "itm_tab_shield_round_a"),
+        # (neq, ":wielded_item", "itm_javelin_melee"),
+        # (neq, ":wielded_item", "itm_throwing_spear_melee"),
+        # (neq, ":wielded_item", "itm_jarid_melee"),
+        # (neq, ":wielded_item", "itm_light_throwing_axes_melee"),
+        # (neq, ":wielded_item", "itm_throwing_axes_melee"),
+        # (neq, ":wielded_item", "itm_heavy_throwing_axes_melee"),
         (str_store_string, s9, "str_stop_no_shooting_no_shooting"),
         
         (assign, ":default_item", -1),
@@ -2159,7 +2159,7 @@ dialogs = [
   [trp_ramun_the_slave_trader,"ramun_have_blunt_weapon_no", [],
     "No? Heh, well, this must be your lucky day. I've got an old club lying around that I was going to throw away. " +
     "It a bit battered, but still good enough bash someone until he stops moving. " +
-    "Here, have it.","ramun_have_blunt_weapon_no_2",[(troop_add_item, "trp_player","itm_club",imod_cracked)]],
+    "Here, have it.","ramun_have_blunt_weapon_no_2",[(troop_add_item, "trp_player","itm_w_mace_knobbed",imod_cracked)]],
   [trp_ramun_the_slave_trader|plyr,"ramun_have_blunt_weapon_no_2", [],
     "Thanks, Ramun. Perhaps I may try my hand at it.", "ramun_have_blunt_weapon_yes",[]],
   [trp_ramun_the_slave_trader,"ramun_ask_about_capturing", [],
@@ -2390,9 +2390,9 @@ dialogs = [
       (assign, "$gamble_last_time", ":cur_hours"),]],
   [party_tpl|pt_black_khergit,"rebel_done_bolts", [], "J'éspére que tes dérniers careaux sont réstés sur le cadavre d'un bourgignon et qu'ils ne sont pas tombés dans un ravin,en voila un carquois plein.", "rreebel_preetalkk",[(troop_add_item, "trp_player", "itm_bolts", 0),(store_current_hours,":cur_hours"),
       (assign, "$gamble_last_time", ":cur_hours"),]],
-  [party_tpl|pt_black_khergit,"renel_done_shieldnsword", [], "Tu as de la chance,le convoie etait chargé d'armes magnifiques,voila ce que tu demande.", "rreebel_preetalkk",[(troop_add_item, "trp_player", "itm_heraldric_shieldred3lions", 0),(troop_add_item, "trp_player", "itm_templar", 0),(store_current_hours,":cur_hours"),
+  [party_tpl|pt_black_khergit,"renel_done_shieldnsword", [], "Tu as de la chance,le convoie etait chargé d'armes magnifiques,voila ce que tu demande.", "rreebel_preetalkk",[(troop_add_item, "trp_player", "itm_tab_shield_heater_c", 0),(troop_add_item, "trp_player", "itm_w_onehanded_sword_knight", 0),(store_current_hours,":cur_hours"),
       (assign, "$gamble_last_time", ":cur_hours"),]],
-  [party_tpl|pt_black_khergit,"renel_done_dnsword", [], "Une arme simple mais efficace,c'est tout ce qu'on a put récuperer", "rreebel_preetalkk",[(troop_add_item, "trp_player", "itm_sword_two_handed_a", 0),(store_current_hours,":cur_hours"),
+  [party_tpl|pt_black_khergit,"renel_done_dnsword", [], "Une arme simple mais efficace,c'est tout ce qu'on a put récuperer", "rreebel_preetalkk",[(troop_add_item, "trp_player", "itm_w_twohanded_talhoffer", 0),(store_current_hours,":cur_hours"),
       (assign, "$gamble_last_time", ":cur_hours"),]],
   
   
@@ -6652,7 +6652,7 @@ dialogs = [
   [anyone|plyr ,"slslslnotjoba41suit3", [], "Je refuse d'abatre un de nos hommes,adieu.", "close_window",
     [
       ############################ FAILED
-      (troop_remove_item, "trp_player", "itm_brigandine_sl"),
+      (troop_remove_item, "trp_player", "itm_a_brigandine_sl"),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-2),
       (assign, "$toujoursnouvelquestsls", 1),
       (store_current_hours,":cur_hours"),
@@ -6741,7 +6741,7 @@ dialogs = [
   [anyone ,"ptrolsslstop22", [], "Comment? vous refusez une mission? Hors de ma vue! je me pose des questions sur l'éfficacité de nos tests.", "close_window",
     [
       #######quete failled /variable comme accomplie donn?/relation-- /brigandine enlevee/et time reg...#222
-      (troop_remove_item, "trp_player", "itm_brigandine_sl"),
+      (troop_remove_item, "trp_player", "itm_a_brigandine_sl"),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-4),
       (assign, "$nojobtimeatteteslys", 1),
       (store_current_hours,":cur_hours"),
@@ -6758,7 +6758,7 @@ dialogs = [
   [anyone|plyr ,"gordnoentrygord", [], "J'ai passé vos tests avec succés,allez vous me donner du travail ?", "gordnopremiertf",[]],
   [anyone|plyr ,"gordnoentrygord", [], "Je reviendrais,je voullais juste vous presenter mes respects.", "close_window",[]],
   
-  [anyone ,"gordnopremiertf", [], "J'ai vu cela,ce n'est pas trop mal je suppose,quois qu'il en soit plus nous avons de mercenaires et plus les contrats rapporterons,tennez voici la brigandine du SansLys avec nos armoiries,prennez en grand soin car un soldat n'en recoit qu'une de toute sa vie.portez la fierement et déffendez nos couleures contre nos ennemis quels qu'il soient,maintenant votre patrie es le SansLys!", "gordnopatries",[(troop_add_item, "trp_player", "itm_brigandine_sl", 0),]],
+  [anyone ,"gordnopremiertf", [], "J'ai vu cela,ce n'est pas trop mal je suppose,quois qu'il en soit plus nous avons de mercenaires et plus les contrats rapporterons,tennez voici la brigandine du SansLys avec nos armoiries,prennez en grand soin car un soldat n'en recoit qu'une de toute sa vie.portez la fierement et déffendez nos couleures contre nos ennemis quels qu'il soient,maintenant votre patrie es le SansLys!", "gordnopatries",[(troop_add_item, "trp_player", "itm_a_brigandine_sl", 0),]],
   [anyone|plyr ,"gordnopatries", [], "Je devrais me battre contre n'importe qui?.", "gordnopatrienoata",[]],
   [anyone ,"gordnopatrienoata", [], "Rassurez vous,nous sommes les alliés du Dauphin de France Charles VII,tant qu'il nous paye,et cela risque de durer,mais quand nous devrons changer de camp ou remplire un contrat délicat vous devrez le faire sans etats d'ame,la devise de la compagnie es nous remplirons le contrat meme si cela nous enmène en enfer,etes vous pret a aller jusque la? bien sur en contrepartie vous serez tres bien payé,mais cela dépend de la nature du contrat naturellement,qu'en dite vous?", "gordnopatrirefle",[]],
   
@@ -6766,7 +6766,7 @@ dialogs = [
   [anyone|plyr ,"gordnopatrirefle", [], "Je crain de ne pas avoir le choix,j'ai besoin d'argent.", "gordnopatenfinsl",[]],
   [anyone|plyr ,"gordnopatrirefle", [], "Je doit éfléchire,je reviendrais.", "close_window",
     [
-      (troop_remove_item, "trp_player", "itm_brigandine_sl"),
+      (troop_remove_item, "trp_player", "itm_a_brigandine_sl"),
       (call_script, "script_change_player_relation_with_faction_ex", "$g_talk_troop_faction", -2),
       (call_script, "script_troop_change_relation_with_troop", "trp_player", "$g_talk_troop", -5),
   ]],
@@ -6778,7 +6778,7 @@ dialogs = [
   [anyone|plyr ,"gordnopatenfinslstar3", [], "Oui Messire,ne craigniez rien,je vais m'armer lourdement et je serais sur mes gardes.", "gordnopatenfinslstar4",[]],
   [anyone|plyr ,"gordnopatenfinslstar3", [], "Je regrette,mais je ne puit faire ce travail pour le moment.", "close_window",
     [
-      (troop_remove_item, "trp_player", "itm_brigandine_sl"),
+      (troop_remove_item, "trp_player", "itm_a_brigandine_sl"),
       (call_script, "script_change_player_relation_with_faction_ex", "$g_talk_troop_faction", -2),
       (call_script, "script_troop_change_relation_with_troop", "trp_player", "$g_talk_troop", -5),
   ]],
@@ -16481,12 +16481,12 @@ dialogs = [
       (try_begin),
         (troop_add_item, "$g_talk_troop", "itm_saddle_horse", 0),
         (troop_add_item, "$g_talk_troop", "itm_courser", 0),
-        (troop_add_item, "$g_talk_troop", "itm_courtly_outfit",0),
-        (troop_add_item, "$g_talk_troop", "itm_heraldic_mail_with_tabard",0),
-        (troop_add_item, "$g_talk_troop", "itm_red_gambeson",0),
-        (troop_add_item, "$g_talk_troop", "itm_sword_medieval_c",0),
+        (troop_add_item, "$g_talk_troop", "itm_a_nobleman_court_outfit_2",0),
+        (troop_add_item, "$g_talk_troop", "itm_mail_long_surcoat_new_heraldic",0),
+        (troop_add_item, "$g_talk_troop", "itm_a_gambeson_white",0),
+        (troop_add_item, "$g_talk_troop", "itm_w_onehanded_sword_d",0),
         (troop_add_item, "$g_talk_troop", "itm_tab_shield_kite_cav_b",0),
-        (troop_add_item, "$g_talk_troop", "itm_light_lance",0),
+        (troop_add_item, "$g_talk_troop", "itm_w_light_lance",0),
       (try_end),
       (troop_equip_items, "$g_talk_troop"),
       
@@ -22458,7 +22458,7 @@ dialogs = [
   [anyone|plyr,"capit_camp_cran_fer_emploie3", [], "Je regrette, j'ai des bléssures a soigner pour le moment.", "close_window",[(assign, "$ccdf_dial", 1),]],
   [anyone ,"capit_camp_cran_fer_emploie4", [],"Parfait, ces hommes vont se joindre a vous pour le raid, tuez les sans pitié jusqu'au dérnier, pas de survivants. Prennez cette armure aux couleures de la compagnie avant de partir, portez la fierement.", "close_window",
     [
-      (troop_add_item, "trp_player", "itm_corrazina_breton", 0),
+      (troop_add_item, "trp_player", "itm_a_corrazina_narf_custom", 0),
       (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
       (ge,":free_capacity",9),
       (party_add_members, "p_main_party", "trp_crane_de_fer_mercenaire", 5),
@@ -44509,8 +44509,8 @@ dialogs = [
   
   [anyone ,"ruedame_peuple_armecada", [],"Ca va, la voila, j'éspère que tu va te couper avec.", "close_window",
     [
-      (troop_remove_item, "trp_rue_dame_assassin1","itm_sword_medieval_a"),
-      (troop_add_item, "trp_player", "itm_sword_medieval_a", 0),
+      (troop_remove_item, "trp_rue_dame_assassin1","itm_w_onehanded_sword_a"),
+      (troop_add_item, "trp_player", "itm_w_onehanded_sword_a", 0),
       (assign, "$next_dialassassin_sans_epee", 1),
   ]],###
   

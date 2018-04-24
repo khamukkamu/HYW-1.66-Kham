@@ -1510,8 +1510,8 @@ triggers = [
           
           (ge, ":item_id", 0),
           
-          (this_or_next|eq, ":item_id", "itm_great_sword"),
-          (eq, ":item_id", "itm_sword_two_handed_a"),
+          (this_or_next|eq, ":item_id", "itm_w_twohanded_sword_steward"),
+          (eq, ":item_id", "itm_w_twohanded_talhoffer"),
           
           (unlock_achievement, ACHIEVEMENT_LADY_OF_THE_LAKE),
           (assign, ":inv_cap", 0),

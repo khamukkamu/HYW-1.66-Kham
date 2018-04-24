@@ -4120,11 +4120,9 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_padded_cloth_half_blue", "a_padded_cloth_half_blue"),
 ("a_padded_cloth_green", "a_padded_cloth_green"),
 ("a_padded_cloth_half_green", "a_padded_cloth_half_green"),
-("padded_cloth_b_f1", "padded_cloth_b_f1"),
 ("a_padded_cloth_white", "a_padded_cloth_white"),
 # English
-("padded_cloth_b_e1", "padded_cloth_b_e1"),
-("padded_cloth_b_e2", "padded_cloth_b_e2"),
+("a_padded_cloth_english", "a_padded_cloth_english"),
 ("a_padded_cloth_half_red", "a_padded_cloth_half_red"),
 ("a_padded_cloth_red", "a_padded_cloth_red"),
 # Burgundian
@@ -4170,21 +4168,35 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 ## Narf Gambeson
 # French 
-("a_narf_gambeson_blue", "a_narf_gambeson_blue"),  
-("a_narf_gambeson_half_blue", "a_narf_gambeson_half_blue"),  
-("a_narf_gambeson_green", "a_narf_gambeson_green"),  
-("a_narf_gambeson_half_green", "a_narf_gambeson_half_green"),  
-("gambeson", "gambeson"),  
+("a_gambeson_narf_blue", "a_gambeson_narf_blue"),  
+("a_gambeson_narf_half_blue", "a_gambeson_narf_half_blue"),  
+("a_gambeson_narf_green", "a_gambeson_narf_green"),  
+("a_gambeson_narf_half_green", "a_gambeson_narf_half_green"),  
+("a_gambeson_narf", "a_gambeson_narf"),  
 # English
-("gambeson_e", "gambeson_e"),  
-("a_narf_gambeson_red", "a_narf_gambeson_red"),  
+("a_gambeson_narf_english", "a_gambeson_narf_english"),  
+("a_gambeson_narf_red", "a_gambeson_narf_red"),  
 # Burgundian
-("a_narf_gambeson_brown", "a_narf_gambeson_brown"),  
-("a_narf_gambeson_half_brown", "a_narf_gambeson_half_yellow"),  
+("a_gambeson_narf_brown", "a_gambeson_narf_brown"),  
+("a_gambeson_narf_half_yellow", "a_gambeson_narf_half_yellow"),  
 # Breton
-("a_narf_gambeson_black", "a_narf_gambeson_black"),  
-("a_narf_gambeson_half_black", "a_narf_gambeson_half_black"),  
-("a_narf_gambeson_end", "a_narf_gambeson_end"),
+("a_gambeson_narf_black", "a_gambeson_narf_black"),  
+("a_gambeson_narf_half_black", "a_gambeson_narf_half_black"),  
+("a_gambeson_narf_end", "a_gambeson_narf_end"),
+
+## Native Brigandine
+# French 
+("a_brigandine_french", "a_brigandine_french"),  
+("a_brigandine_french_2", "a_brigandine_french_2"),  
+# English
+("a_brigandine_red", "a_brigandine_red"),  
+("a_brigandine_english", "a_brigandine_english"),  
+("a_brigandine_english_2", "a_brigandine_english_2"),  
+("a_brigandine_english_cross", "a_brigandine_english_cross"),  
+# Burgundian
+("a_brigandine_green", "a_brigandine_green"),  
+# Breton
+("a_brigandine_end", "a_brigandine_end"),
 
 ## Vertex Coloured Leather Vest
 # French 
