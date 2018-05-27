@@ -4109,7 +4109,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 
 # Kham - Armor Customization Strings
-# English colors: Red | 
+# English colors: Red | White
 # French colors: Blue | White
 # Burgundian colors: Red | Dark Blue | White
 # Breton colors: Black | White 
@@ -4118,8 +4118,6 @@ Even in the last case, the player can make formations up to four lines by orderi
 # French 
 ("a_padded_cloth_blue", "a_padded_cloth_blue"),
 ("a_padded_cloth_half_blue", "a_padded_cloth_half_blue"),
-("a_padded_cloth_green", "a_padded_cloth_green"),
-("a_padded_cloth_half_green", "a_padded_cloth_half_green"),
 ("a_padded_cloth_white", "a_padded_cloth_white"),
 # English
 ("a_padded_cloth_english", "a_padded_cloth_english"),
@@ -4136,8 +4134,8 @@ Even in the last case, the player can make formations up to four lines by orderi
 ## Peasant Clothes
 # French 
 ("a_peasant_man_blue", "a_peasant_man_blue"),  
-("a_peasant_man_blue_2", "a_peasant_man_blue_2"),  
-("a_peasant_man_green", "a_peasant_man_green"),  
+("a_peasant_man_blue_2", "a_peasant_man_blue_2"),   
+("a_peasant_man_green", "a_peasant_man_green"),   
 # English
 ("a_peasant_man_green_2", "a_peasant_man_green_2"),  
 ("a_peasant_man_yellow", "a_peasant_man_yellow"),  
@@ -4156,7 +4154,6 @@ Even in the last case, the player can make formations up to four lines by orderi
 ## Gambeson
 # French 
 ("a_gambeson_blue", "a_gambeson_blue"),  
-("a_gambeson_green", "a_gambeson_green"),  
 ("a_gambeson_white", "a_gambeson_white"),  
 # English
 ("a_gambeson_red", "a_gambeson_red"),  
@@ -4170,8 +4167,6 @@ Even in the last case, the player can make formations up to four lines by orderi
 # French 
 ("a_gambeson_narf_blue", "a_gambeson_narf_blue"),  
 ("a_gambeson_narf_half_blue", "a_gambeson_narf_half_blue"),  
-("a_gambeson_narf_green", "a_gambeson_narf_green"),  
-("a_gambeson_narf_half_green", "a_gambeson_narf_half_green"),  
 ("a_gambeson_narf", "a_gambeson_narf"),  
 # English
 ("a_gambeson_narf_english", "a_gambeson_narf_english"),  
@@ -4188,20 +4183,58 @@ Even in the last case, the player can make formations up to four lines by orderi
 # French 
 ("a_brigandine_french", "a_brigandine_french"),  
 ("a_brigandine_french_2", "a_brigandine_french_2"),  
+("a_brigandine_french_3", "a_brigandine_french_3"),  
+("a_brigandine_blue", "a_brigandine_blue"),  
+("a_brigandine_white", "a_brigandine_white"), 
 # English
-("a_brigandine_red", "a_brigandine_red"),  
 ("a_brigandine_english", "a_brigandine_english"),  
 ("a_brigandine_english_2", "a_brigandine_english_2"),  
-("a_brigandine_english_cross", "a_brigandine_english_cross"),  
+("a_brigandine_english_3", "a_brigandine_english_3"),  
+("a_brigandine_red", "a_brigandine_red"),  
 # Burgundian
-("a_brigandine_green", "a_brigandine_green"),  
+ ("a_brigandine_brown", "a_brigandine_brown"), 
 # Breton
+("a_brigandine_black", "a_brigandine_black"), 
+("a_brigandine_white_2", "a_brigandine_white"), 
 ("a_brigandine_end", "a_brigandine_end"),
+
+## Narf Brigandine
+# French 
+("a_brigandine_narf_blue", "a_brigandine_narf_blue"),   
+("a_brigandine_narf_white", "a_brigandine_narf_white"),  
+# English
+("a_brigandine_narf_red", "a_brigandine_narf_red"),  
+("a_brigandine_narf_white_red", "a_brigandine_narf_white_red"),  
+# Burgundian
+("a_brigandine_narf_brown", "a_brigandine_narf_brown"),  
+# Breton
+("a_brigandine_narf_black", "a_brigandine_narf_black"),  
+("a_brigandine_narf_white_2", "a_brigandine_narf_white"),  
+("a_brigandine_narf_end", "a_brigandine_narf_end"),
+
+## Narf Aketon
+# French 
+("a_aketon_narf_blue", "a_aketon_narf_blue"),  
+("a_aketon_narf_half_blue", "a_aketon_narf_half_blue"),  
+("a_aketon_narf", "a_aketon_narf"),  
+# English
+("a_aketon_narf_english", "a_aketon_narf_english"),  
+("a_aketon_narf_english_2", "a_aketon_narf_english_2"),  
+("a_aketon_narf_red", "a_aketon_narf_red"),  
+# Burgundian
+("a_aketon_narf_brown", "a_aketon_narf_brown"),  
+("a_aketon_narf_half_brown", "a_aketon_narf_half_brown"),  
+("a_aketon_narf_2", "a_aketon_narf"),  
+# Breton
+("a_aketon_narf_black", "a_aketon_narf_black"),  
+("a_aketon_narf_half_black", "a_aketon_narf_half_black"),  
+("a_aketon_narf_end", "a_aketon_narf_end"),
+
+###################################################################################################### HYW CUSTOM ARMORS VERTEX COLORED
 
 ## Vertex Coloured Leather Vest
 # French 
 ("a_leather_vest_arms_blue", "a_leather_vest_arms_blue"),
-("a_leather_vest_arms_green", "a_leather_vest_arms_green"),
 ("a_leather_vest_arms_white", "a_leather_vest_arms_white"),
 # English
 ("a_leather_vest_arms_red", "a_leather_vest_arms_red"),
@@ -4214,7 +4247,6 @@ Even in the last case, the player can make formations up to four lines by orderi
 ## Vertex Coloured Leather Armor
 # French 
 ("a_leather_armor_arms_blue", "a_leather_armor_arms_blue"),
-("a_leather_armor_arms_green", "a_leather_armor_arms_green"),
 ("a_leather_armor_arms_white", "a_leather_armor_arms_white"),
 # English
 ("a_leather_armor_arms_red", "a_leather_armor_arms_red"),
@@ -4227,7 +4259,6 @@ Even in the last case, the player can make formations up to four lines by orderi
 ## Vertex Coloured Mail Shirt
 # French 
 ("a_mail_shirt_arms_blue", "a_mail_shirt_arms_blue"),
-("a_mail_shirt_arms_green", "a_mail_shirt_arms_green"),
 ("a_mail_shirt_arms_white", "a_mail_shirt_arms_white"),
 # English
 ("a_mail_shirt_arms_red", "a_mail_shirt_arms_red"),

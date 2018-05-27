@@ -1005,22 +1005,60 @@ scripts = [
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_breton_materials_end, "str_a_gambeson_narf_end"),			
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_num_components, 1),   
 
-## Native Brigandine 
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_materials_begin, "str_a_brigandine_french"),
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_materials_end, "str_a_brigandine_end"),
+## Bogmir Brigandine 
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_materials_begin, "str_a_brigandine_french"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_materials_end, "str_a_brigandine_end"),
 # France
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_france_materials_begin, "str_a_brigandine_french"),
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_france_materials_end, "str_a_brigandine_red"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_france_materials_begin, "str_a_brigandine_french"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_france_materials_end, "str_a_brigandine_english"),
 # England
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_english_materials_begin, "str_a_brigandine_red"),
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_english_materials_end, "str_a_brigandine_green"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_english_materials_begin, "str_a_brigandine_english"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_english_materials_end, "str_a_brigandine_brown"),
 # Burgundy
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_burgundy_materials_begin, "str_a_brigandine_green"),
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_burgundy_materials_end, "str_a_brigandine_end"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_burgundy_materials_begin, "str_a_brigandine_red"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_burgundy_materials_end, "str_a_brigandine_black"),
 # Brittany		
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_breton_materials_begin, "str_a_brigandine_green"),
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_breton_materials_end, "str_a_brigandine_end"),			
-      (item_set_slot, "itm_a_brigandine_native_custom", slot_item_num_components, 1),   		
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_breton_materials_begin, "str_a_brigandine_brown"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_breton_materials_end, "str_a_brigandine_end"),			
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_num_components, 1),   	
+
+## Narf Brigandine 
+      (try_for_range, ":item_no", "itm_a_brigandine_narf_padded_custom", "itm_a_churburg_narf_custom"), # Seek: All the Brigandines share the same base
+			(item_set_slot, ":item_no", slot_item_materials_begin, "str_a_brigandine_narf_blue"),
+			(item_set_slot, ":item_no", slot_item_materials_end, "str_a_brigandine_narf_end"),
+	# France
+			(item_set_slot, ":item_no", slot_item_france_materials_begin, "str_a_brigandine_narf_blue"),
+			(item_set_slot, ":item_no", slot_item_france_materials_end, "str_a_brigandine_narf_red"),
+	# England
+			(item_set_slot, ":item_no", slot_item_english_materials_begin, "str_a_brigandine_narf_white"),
+			(item_set_slot, ":item_no", slot_item_english_materials_end, "str_a_brigandine_narf_brown"),
+	# Burgundy
+			(item_set_slot, ":item_no", slot_item_burgundy_materials_begin, "str_a_brigandine_narf_red"),
+			(item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_a_brigandine_narf_black"),
+	# Brittany		
+			(item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_a_brigandine_narf_brown"),
+			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_brigandine_narf_end"),			
+			(item_set_slot, ":item_no", slot_item_num_components, 1),   	
+      (try_end),
+		
+## Narf Aketon 
+      (try_for_range, ":item_no", "itm_a_aketon_narf_custom", "itm_a_brigandine_bogmir_custom"), # Seek: All the Aketons share the same base
+			(item_set_slot, ":item_no", slot_item_materials_begin, "str_a_aketon_narf_blue"),
+			(item_set_slot, ":item_no", slot_item_materials_end, "str_a_aketon_narf_end"),
+	# France
+			(item_set_slot, ":item_no", slot_item_france_materials_begin, "str_a_aketon_narf_blue"),
+			(item_set_slot, ":item_no", slot_item_france_materials_end, "str_a_aketon_narf_english"),
+	# England
+			(item_set_slot, ":item_no", slot_item_english_materials_begin, "str_a_aketon_narf"),
+			(item_set_slot, ":item_no", slot_item_english_materials_end, "str_a_aketon_narf_brown"),
+	# Burgundy
+			(item_set_slot, ":item_no", slot_item_burgundy_materials_begin, "str_a_aketon_narf_red"),
+			(item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_a_aketon_narf_black"),
+	# Brittany		
+			(item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_a_aketon_narf_brown"),
+			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_aketon_narf_end"),			
+			(item_set_slot, ":item_no", slot_item_num_components, 1),   	
+      (try_end),			
 		
 ###################################################################################################### HYW CUSTOM ARMORS VERTEX COLORED
 		
