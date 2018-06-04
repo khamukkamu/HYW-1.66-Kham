@@ -1028,7 +1028,7 @@ scripts = [
 			(item_set_slot, ":item_no", slot_item_materials_end, "str_a_brigandine_narf_end"),
 	# France
 			(item_set_slot, ":item_no", slot_item_france_materials_begin, "str_a_brigandine_narf_blue"),
-			(item_set_slot, ":item_no", slot_item_france_materials_end, "str_a_brigandine_narf_red"),
+			(item_set_slot, ":item_no", slot_item_france_materials_end, "str_a_brigandine_narf_english"),
 	# England
 			(item_set_slot, ":item_no", slot_item_english_materials_begin, "str_a_brigandine_narf_white"),
 			(item_set_slot, ":item_no", slot_item_english_materials_end, "str_a_brigandine_narf_brown"),

@@ -4201,14 +4201,20 @@ Even in the last case, the player can make formations up to four lines by orderi
 ## Narf Brigandine
 # French 
 ("a_brigandine_narf_blue", "a_brigandine_narf_blue"),   
+("a_brigandine_narf_blue_white", "a_brigandine_narf_blue_white"),   
+("a_brigandine_narf_blue_yellow", "a_brigandine_narf_blue_yellow"),   
+("a_brigandine_narf_french", "a_brigandine_narf_french"),   
 ("a_brigandine_narf_white", "a_brigandine_narf_white"),  
 # English
+("a_brigandine_narf_english", "a_brigandine_narf_english"),  
+("a_brigandine_narf_yellow_red", "a_brigandine_narf_yellow_red"),  
 ("a_brigandine_narf_red", "a_brigandine_narf_red"),  
 ("a_brigandine_narf_white_red", "a_brigandine_narf_white_red"),  
 # Burgundian
 ("a_brigandine_narf_brown", "a_brigandine_narf_brown"),  
 # Breton
 ("a_brigandine_narf_black", "a_brigandine_narf_black"),  
+("a_brigandine_narf_black_white", "a_brigandine_narf_black_white"),  
 ("a_brigandine_narf_white_2", "a_brigandine_narf_white"),  
 ("a_brigandine_narf_end", "a_brigandine_narf_end"),
 
