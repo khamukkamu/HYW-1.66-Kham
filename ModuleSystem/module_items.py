@@ -774,8 +774,6 @@ items = [
 ["a_gambeson_red", "Gambeson", [("a_gambeson_white",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0, 260 , weight(5)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(5)|difficulty(0) ,imodbits_cloth ,[(ti_on_init_item,[(cur_item_set_material, "@a_gambeson_red", 0, 0),])]],
 ["a_gambeson_white", "Gambeson", [("a_gambeson_white",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0, 260 , weight(5)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
 
-["a_padded_over_mail", "Mail Hauberk", [("a_padded_over_mail",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1320 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(12)|difficulty(7) ,imodbits_armor ],
-
 ["a_hauberk_narf", "Mail Hauberk", [("a_hauberk_narf_base",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1320 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(8)|difficulty(7) ,imodbits_armor ,[(ti_on_init_item,[(cur_item_add_mesh, "@a_hauberk_narf_aketon_base", 0, 0),(cur_item_add_mesh, "@a_hauberk_narf_arms_aketon", 0, 0),(cur_item_add_mesh, "@a_hauberk_narf_arms_aketon_mail", 0, 0),(cur_item_add_mesh, "@o_hosen_hauberk", 0, 0),])]],
 ["a_hauberk_narf_plate_hose", "Mail Hauberk", [("a_hauberk_narf_base",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1420 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(18)|difficulty(7) ,imodbits_armor ,[(ti_on_init_item,[(cur_item_add_mesh, "@a_hauberk_narf_aketon_base", 0, 0),(cur_item_add_mesh, "@a_hauberk_narf_arms_aketon", 0, 0),(cur_item_add_mesh, "@a_hauberk_narf_arms_aketon_mail", 0, 0),(cur_item_add_mesh, "@o_hosen_hauberk_plate", 0, 0),])]],
 ["a_hauberk_narf_full_plate_hose", "Mail Hauberk", [("a_hauberk_narf_base",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1480 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(24)|difficulty(7) ,imodbits_armor ,[(ti_on_init_item,[(cur_item_add_mesh, "@a_hauberk_narf_aketon_base", 0, 0),(cur_item_add_mesh, "@a_hauberk_narf_arms_aketon", 0, 0),(cur_item_add_mesh, "@a_hauberk_narf_arms_aketon_mail", 0, 0),(cur_item_add_mesh, "@o_hosen_hauberk_plate_full", 0, 0),])]],
@@ -925,6 +923,33 @@ items = [
 163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(97)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ],
 ["w_onehanded_sword_templar", "Templar Longsword", [("w_onehanded_sword_templar",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
 163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(102)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ],
+## Alternative texture versions
+["w_onehanded_sword_baron_2", "Baron Sword", [("w_onehanded_sword_baron",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(93)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_caithness_2", "Caithness Longsword", [("w_onehanded_sword_caithness",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(103)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_castellan_2", "Castelan Sword", [("w_onehanded_sword_castellan",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(97)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_constable_2", "Constable Sword", [("w_onehanded_sword_constable",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(99)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_hospitaller_2", "Hospitaller Sword", [("w_onehanded_sword_hospitaller",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(99)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_knight_2", "Knight Sword", [("w_onehanded_sword_knight",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(93)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_laird_2", "Laird Sword", [("w_onehanded_sword_laird",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(93)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_poitiers_2", "Poitiers Sword", [("w_onehanded_sword_poitiers",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(92)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_prince_2", "Prince Sword", [("w_onehanded_sword_prince",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(96)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_ritter_2", "Ritter Longsword", [("w_onehanded_sword_ritter",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(102)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_sovereign_2", "Sovereign Shortsword", [("w_onehanded_sword_sovereign",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(83)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_squire_2", "Squire Sword", [("w_onehanded_sword_squire",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(97)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_onehanded_sword_templar_2", "Templar Longsword", [("w_onehanded_sword_templar",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip, 
+163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(102)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
 
 # Bastard Swords with Scabbards
 ["w_bastard_sword_a", "Bastard Sword", [("w_bastard_sword_a",0),("w_bastard_sword_a_scabbard",ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 
@@ -961,6 +986,24 @@ items = [
 526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(109)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ],
 ["w_bastard_sword_sempach", "Sempach Bastard Sword", [("w_bastard_sword_sempach",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
 526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(109)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ],
+## Alternative texture versions
+["w_bastard_sword_baron_2", "Baron Bastard Sword", [("w_bastard_sword_baron",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
+526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(110)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_bastard_sword_count_2", "Count Bastard Sword", [("w_bastard_sword_count",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
+526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(100)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_bastard_sword_crecy_2", "Crecy Bastard Sword", [("w_bastard_sword_crecy",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
+526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(107)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_bastard_sword_duke_2", "Duke Bastard Sword", [("w_bastard_sword_duke",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
+526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(106)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_bastard_sword_landgraf_2", "Landgraf Bastard Sword", [("w_bastard_sword_landgraf",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
+526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(109)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_bastard_sword_mercenary_2", "Mercenary Bastard Sword", [("w_bastard_sword_mercenary",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
+526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(101)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_bastard_sword_regent_2", "Regent Bastard Sword", [("w_bastard_sword_regent",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
+526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(109)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_bastard_sword_sempach_2", "Sempach Bastard Sword", [("w_bastard_sword_sempach",0)], itp_type_two_handed_wpn|itp_merchandise|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip, 
+526, weight(2.25)|difficulty(9)|spd_rtng(97)|weapon_length(109)|swing_damage(37,cut)|thrust_damage(35,pierce), imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+
 
 # Twohanded Swords
 ["w_twohanded_messer", "Grosse Messer", [("w_twohanded_messer",0),("w_twohanded_messer_scabbard", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary, itc_greatsword|itcf_carry_sword_back|itcf_show_holster_when_drawn, 
@@ -973,7 +1016,11 @@ items = [
 524 , weight(3)|difficulty(11)|spd_rtng(94) | weapon_length(99)|swing_damage(40 , cut) | thrust_damage(31 ,  pierce),imodbits_sword_high ],
 ["w_twohanded_talhoffer", "Talhoffer Greatsword", [("w_twohanded_talhoffer",0)], itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary, itc_greatsword|itcf_carry_sword_back, 
 524 , weight(3)|difficulty(11)|spd_rtng(94) | weapon_length(115)|swing_damage(40 , cut) | thrust_damage(31 ,  pierce),imodbits_sword_high ],
-
+## Alternative texture versions
+["w_twohanded_sword_steward_2", "Steward Greatsword", [("w_twohanded_sword_steward",0)], itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary, itc_greatsword|itcf_carry_sword_back, 
+524 , weight(3)|difficulty(11)|spd_rtng(94) | weapon_length(99)|swing_damage(40 , cut) | thrust_damage(31 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
+["w_twohanded_talhoffer_2", "Talhoffer Greatsword", [("w_twohanded_talhoffer",0)], itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary, itc_greatsword|itcf_carry_sword_back, 
+524 , weight(3)|difficulty(11)|spd_rtng(94) | weapon_length(115)|swing_damage(40 , cut) | thrust_damage(31 ,  pierce),imodbits_sword_high ,[(ti_on_init_item,[(cur_item_set_material, "@w_swords_2", 0, 0),])]],
 
 ##################################################################################################################################################################################################################################################################################################################
 ###################################################################################################### HYW AXES | BARDICHES ######################################################################################################################################################################################
@@ -1531,6 +1578,7 @@ items = [
 ["a_gambeson_custom", "Gambeson", [("a_gambeson_white",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0, 275 , weight(5)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(5)|difficulty(0) ,imodbits_cloth , [custom_reskin("itm_a_gambeson_custom")]], 
 ["a_gambeson_narf_custom", "Padded Jack", [("a_gambeson_narf",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0, 415 , weight(6)|abundance(100)|head_armor(0)|body_armor(28)|leg_armor(6)|difficulty(0) ,imodbits_cloth , [custom_reskin("itm_a_gambeson_narf_custom")]], 
 ["a_padded_cloth_custom", "Padded Cloth", [("a_padded_cloth_white",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [custom_reskin("itm_a_padded_cloth_custom")]], 
+["a_padded_over_mail_custom", "Mail Hauberk", [("a_padded_over_mail",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1320 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(12)|difficulty(7) ,imodbits_armor , [custom_reskin("itm_a_padded_over_mail_custom")]], 
 
 # Seek: The custom Aketons are inside a loop for the color assignment, don't change their position without changing the loop boundaries																																																																								
 ["a_aketon_narf_custom", "Aketon", [("a_aketon_narf_base",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0, 455 , weight(7)|abundance(100)|head_armor(0)|body_armor(30)|leg_armor(8)|difficulty(0) ,imodbits_cloth , [custom_reskin("itm_a_aketon_narf_custom"),(ti_on_init_item,[(cur_item_add_mesh, "@o_hosen_aketon", 0, 0),(cur_item_add_mesh, "@a_aketon_narf_arms", 0, 0),])],],

@@ -4236,6 +4236,41 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_aketon_narf_half_black", "a_aketon_narf_half_black"),  
 ("a_aketon_narf_end", "a_aketon_narf_end"),
 
+## Padded Over Mail
+# French 
+("a_padded_over_mail_blue", "a_padded_over_mail_blue"),  
+("a_padded_over_mail", "a_padded_over_mail"),  
+# English
+("a_padded_over_mail_red", "a_padded_over_mail_red"),  
+# Burgundian
+("a_padded_over_mail_brown", "a_padded_over_mail_brown"),  
+("a_padded_over_mail_2", "a_padded_over_mail"),  
+# Breton
+("a_padded_over_mail_black", "a_padded_over_mail_black"),  
+("a_padded_over_mail_end", "a_padded_over_mail_end"),
+
+## Coat of Plates
+# French 
+("a_coat_of_plates_french_1", "a_coat_of_plates_french_1"),  
+("a_coat_of_plates_french_2", "a_coat_of_plates_french_2"),  
+("a_coat_of_plates_french_3", "a_coat_of_plates_french_3"),  
+# English
+("a_coat_of_plates_english_1", "a_coat_of_plates_english_1"),  
+("a_coat_of_plates_english_2", "a_coat_of_plates_english_2"),  
+("a_coat_of_plates_english_3", "a_coat_of_plates_english_3"),  
+("a_coat_of_plates_end", "a_coat_of_plates_end"),
+
+## Surcoat over Mail
+# French 
+("a_surcoat_over_mail_french_1", "a_surcoat_over_mail_french_1"),  
+("a_surcoat_over_mail_french_2", "a_surcoat_over_mail_french_2"),  
+# English
+("a_surcoat_over_mail_english_1", "a_surcoat_over_mail_english_1"),  
+("a_surcoat_over_mail_english_2", "a_surcoat_over_mail_english_2"),  
+# Breton
+("a_surcoat_over_mail_breton_1", "a_surcoat_over_mail_breton_1"),  
+("a_surcoat_over_mail_end", "a_surcoat_over_mail_end"),
+
 ###################################################################################################### HYW CUSTOM ARMORS VERTEX COLORED
 
 ## Vertex Coloured Leather Vest

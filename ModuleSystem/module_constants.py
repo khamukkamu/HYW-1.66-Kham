@@ -1703,6 +1703,7 @@ num_black_khergit_spawn_point_1 = 1
 num_black_khergit_spawn_point_2 = 1
 #num_black_khergit_spawn_point_3 = 1
 num_sang_lys_spawn_point_1 = 1
+num_iron_skulls_spawn_point_1 = 1
 
 peak_prisoner_trains = 4
 peak_kingdom_caravans = 12

@@ -1021,7 +1021,49 @@ scripts = [
       (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_breton_materials_begin, "str_a_brigandine_brown"),
       (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_breton_materials_end, "str_a_brigandine_end"),			
       (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_num_components, 1),   	
+		
+## Padded Over Mail (Mail Hauberk)
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_materials_begin, "str_a_padded_over_mail_blue"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_materials_end, "str_a_padded_over_mail_end"),
+# France
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_france_materials_begin, "str_a_padded_over_mail_blue"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_france_materials_end, "str_a_padded_over_mail_red"),
+# England
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_english_materials_begin, "str_a_padded_over_mail"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_english_materials_end, "str_a_padded_over_mail_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_burgundy_materials_begin, "str_a_padded_over_mail_red"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_burgundy_materials_end, "str_a_padded_over_mail_black"),
+# Brittany		
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_breton_materials_begin, "str_a_padded_over_mail_brown"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_breton_materials_end, "str_a_padded_over_mail_end"),			
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_num_components, 1),   		
+		
+## Coat of Plates
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_materials_begin, "str_a_coat_of_plates_french_1"),
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_materials_end, "str_a_coat_of_plates_end"),
+# France
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_france_materials_begin, "str_a_coat_of_plates_french_1"),
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_france_materials_end, "str_a_coat_of_plates_english_1"),
+# England
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_english_materials_begin, "str_a_coat_of_plates_english_1"),
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_english_materials_end, "str_a_coat_of_plates_end"),	
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_num_components, 1),   			
 
+## Surcoat Over Mail
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_materials_begin, "str_a_surcoat_over_mail_french_1"),
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_materials_end, "str_a_surcoat_over_mail_end"),
+# France
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_france_materials_begin, "str_a_surcoat_over_mail_french_1"),
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_france_materials_end, "str_a_surcoat_over_mail_english_1"),
+# England
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_english_materials_begin, "str_a_surcoat_over_mail_english_1"),
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_english_materials_end, "str_a_surcoat_over_mail_breton_1"),	
+# Brittany		
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_breton_materials_begin, "str_a_surcoat_over_mail_breton_1"),
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_breton_materials_end, "str_a_surcoat_over_mail_end"),			
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_num_components, 1),   	
+		
 ## Narf Brigandine 
       (try_for_range, ":item_no", "itm_a_brigandine_narf_padded_custom", "itm_a_churburg_narf_custom"), # Seek: All the Brigandines share the same base
 			(item_set_slot, ":item_no", slot_item_materials_begin, "str_a_brigandine_narf_blue"),
@@ -34141,8 +34183,8 @@ scripts = [
       #ceane de fer patrol
       (try_begin),
         (store_num_parties_of_template, ":num_parties", "pt_cranede_fer"),
-        (lt,":num_parties",16), #was 14 at mount&blade, 18 in warband, 16 last decision
-        (store_random,":spawn_point",num_sang_lys_spawn_point_1),
+        (lt,":num_parties",8), #was 14 at mount&blade, 18 in warband, 16 last decision
+        (store_random,":spawn_point",num_iron_skulls_spawn_point_1),
         (val_add,":spawn_point","p_cranede_fer_spawn_point_1"),
         (set_spawn_radius, 25),
         (spawn_around_party,":spawn_point","pt_cranede_fer"),

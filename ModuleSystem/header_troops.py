@@ -13,7 +13,8 @@ tf_jeanne         = 2
 tf_english        = 3
 tf_bourgignon     = 4
 tf_bandit         = 5
-tf_undead         = 6
+# tf_undead         = 6
+
 troop_type_mask   = 0x0000000f
 tf_hero              = 0x00000010
 tf_inactive          = 0x00000020
