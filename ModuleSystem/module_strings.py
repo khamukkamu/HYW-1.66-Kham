@@ -4271,6 +4271,60 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_surcoat_over_mail_breton_1", "a_surcoat_over_mail_breton_1"),  
 ("a_surcoat_over_mail_end", "a_surcoat_over_mail_end"),
 
+## Churburg
+# French 
+("a_churburg_blue", "a_churburg_blue"),  
+("a_churburg_white", "a_churburg_white"),  
+# English
+("a_churburg_red", "a_churburg_red"),  
+# Burgundian
+("a_churburg_brown", "a_churburg_brown"),  
+# Breton  
+("a_churburg_black", "a_churburg_black"),  
+("a_churburg_white_2", "a_churburg_white"),
+("a_churburg_end", "a_churburg_end"),
+
+## Churburg Brass
+# French 
+("a_churburg_brass_blue", "a_churburg_brass_blue"),  
+("a_churburg_brass_white", "a_churburg_brass_white"),  
+# English
+("a_churburg_brass_red", "a_churburg_brass_red"),  
+# Burgundian
+("a_churburg_brass_brown", "a_churburg_brass_brown"),  
+# Breton  
+("a_churburg_brass_black", "a_churburg_brass_black"),  
+("a_churburg_brass_white_2", "a_churburg_brass_white"),
+("a_churburg_brass_end", "a_churburg_brass_end"),
+
+## Corrazina
+# French 
+("a_corrazina_blue", "a_corrazina_blue"),  
+("a_corrazina_white", "a_corrazina_white"),  
+# English
+("a_corrazina_red", "a_corrazina_red"),  
+# Burgundian
+("a_corrazina_brown", "a_corrazina_brown"),  
+# Breton  
+("a_corrazina_black", "a_corrazina_black"),  
+("a_corrazina_white_2", "a_corrazina_white"),
+("a_corrazina_end", "a_corrazina_end"),
+
+## Early Transitional Plate
+# French 
+("a_early_transitional_french_1", "a_early_transitional_french_1"),  
+("a_early_transitional_french_2", "a_early_transitional_french_2"),  
+("a_early_transitional_white", "a_early_transitional_white"),  
+# English
+("a_early_transitional_english_1", "a_early_transitional_english_1"),  
+("a_early_transitional_english_2", "a_early_transitional_english_2"),  
+# Burgundian
+("a_early_transitional_burgundian", "a_early_transitional_burgundian"),  
+# Breton  
+("a_early_transitional_breton", "a_early_transitional_breton"),  
+("a_early_transitional_white_2", "a_early_transitional_white"),
+("a_early_transitional_end", "a_early_transitional_end"),
+
 ###################################################################################################### HYW CUSTOM ARMORS VERTEX COLORED
 
 ## Vertex Coloured Leather Vest

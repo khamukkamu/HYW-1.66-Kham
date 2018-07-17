@@ -443,6 +443,10 @@ scripts = [
           # end condition
           (store_troop_faction, ":kingdom_hero_faction", ":kingdom_hero"),
           (neg|faction_slot_eq, ":kingdom_hero_faction", slot_faction_leader, ":kingdom_hero"),
+			
+	### HYW BEGIN, Seek: Manual banner assignment for lords			
+	(troop_set_slot, "trp_knight_1_1", slot_troop_banner_scene_prop, "spr_banner_b"),			 
+	### HYW END			 
           
           (troop_set_slot, ":kingdom_hero", slot_troop_banner_scene_prop, ":banner_id"),
           (val_add, ":banner_id", 1),
@@ -1064,6 +1068,74 @@ scripts = [
       (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_breton_materials_end, "str_a_surcoat_over_mail_end"),			
       (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_num_components, 1),   	
 		
+## Churburg
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_materials_begin, "str_a_churburg_blue"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_materials_end, "str_a_churburg_end"),
+# France
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_france_materials_begin, "str_a_churburg_blue"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_france_materials_end, "str_a_churburg_red"),
+# England
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_english_materials_begin, "str_a_churburg_white"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_english_materials_end, "str_a_churburg_brown"),	
+# Burgundy
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_burgundy_materials_begin, "str_a_churburg_red"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_burgundy_materials_end, "str_a_churburg_black"),		
+# Brittany		
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_begin, "str_a_churburg_black"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_end, "str_a_churburg_end"),			
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_num_components, 1),   	
+		
+## Churburg Brass
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_materials_begin, "str_a_churburg_brass_blue"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_materials_end, "str_a_churburg_brass_end"),
+# France
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_france_materials_begin, "str_a_churburg_brass_blue"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_france_materials_end, "str_a_churburg_brass_red"),
+# England
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_english_materials_begin, "str_a_churburg_brass_white"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_english_materials_end, "str_a_churburg_brass_brown"),	
+# Burgundy
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_burgundy_materials_begin, "str_a_churburg_brass_red"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_burgundy_materials_end, "str_a_churburg_brass_black"),		
+# Brittany		
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_breton_materials_begin, "str_a_churburg_brass_black"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_breton_materials_end, "str_a_churburg_brass_end"),			
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_num_components, 1),   		
+				
+## Corrazina
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_materials_begin, "str_a_corrazina_blue"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_materials_end, "str_a_corrazina_end"),
+# France
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_france_materials_begin, "str_a_corrazina_blue"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_france_materials_end, "str_a_corrazina_red"),
+# England
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_english_materials_begin, "str_a_corrazina_white"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_english_materials_end, "str_a_corrazina_brown"),	
+# Burgundy
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_burgundy_materials_begin, "str_a_corrazina_red"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_burgundy_materials_end, "str_a_corrazina_black"),		
+# Brittany		
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_breton_materials_begin, "str_a_corrazina_black"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_breton_materials_end, "str_a_corrazina_end"),			
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_num_components, 1),   
+		
+## Early Transitional Plate
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_materials_begin, "str_a_early_transitional_french_1"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_materials_end, "str_a_early_transitional_end"),
+# France
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_france_materials_begin, "str_a_early_transitional_french_1"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_france_materials_end, "str_a_early_transitional_english_1"),
+# England
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_english_materials_begin, "str_a_early_transitional_white"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_english_materials_end, "str_a_early_transitional_english_2"),	
+# Burgundy
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_burgundy_materials_begin, "str_a_early_transitional_burgundian"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_burgundy_materials_end, "str_a_early_transitional_breton"),		
+# Brittany		
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_breton_materials_begin, "str_a_early_transitional_breton"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_breton_materials_end, "str_a_early_transitional_end"),			
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_num_components, 1),   		
+				
 ## Narf Brigandine 
       (try_for_range, ":item_no", "itm_a_brigandine_narf_padded_custom", "itm_a_churburg_narf_custom"), # Seek: All the Brigandines share the same base
 			(item_set_slot, ":item_no", slot_item_materials_begin, "str_a_brigandine_narf_blue"),
