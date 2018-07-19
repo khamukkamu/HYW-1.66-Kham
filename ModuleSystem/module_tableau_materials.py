@@ -1230,5 +1230,41 @@ tableaus = [
        (cur_tableau_set_ambient_light,15,14,13),
        (call_script, "script_add_troop_to_custom_armor_tableau", ":troop_no"),
        ]),
+		 
+    # CHIP&FISH BANNERS
+
+    ("heraldic_banner_01", 0, "missiles", 256, 256, 0, 0, 0, 0,
+        [
+            (store_script_param, ":banner_mesh", 1),
+            (set_fixed_point_multiplier, 100),
+            (init_position, pos1),(position_set_x, pos1, -19),(position_set_y, pos1, 91),(position_move_z, pos1, -20),
+            (cur_tableau_add_mesh, ":banner_mesh", pos1, 79, 0),
+            (init_position, pos1),(position_set_z, pos1, 10),
+            (cur_tableau_add_mesh, "mesh_tableau_mesh_heraldic_banner_01", pos1, 0, 0),
+            (cur_tableau_set_camera_parameters, 0, 100, 100, 0, 100000),
+        ]
+    ),
+    ("heraldic_banner_02", 0, "missiles", 128, 256, 0, 0, 0, 0,
+        [
+            (store_script_param, ":banner_mesh", 1),
+            (set_fixed_point_multiplier, 100),
+            (init_position, pos1),(position_set_x, pos1, -58),(position_set_y, pos1, -1),(position_move_z, pos1, -20),(position_rotate_z, pos1, 90),
+            (cur_tableau_add_mesh, ":banner_mesh", pos1, 45, 0),
+            (init_position, pos1),(position_set_z, pos1, 10),
+            (cur_tableau_add_mesh, "mesh_tableau_mesh_heraldic_banner_02", pos1, 0, 0),
+            (cur_tableau_set_camera_parameters, 0, 100, 50, 0, 100000),
+       ]
+    ),
+    ("heraldic_banner_03", 0, "missiles", 512, 256, 0, 0, 0, 0,
+        [
+            (store_script_param, ":banner_mesh", 1),
+            (set_fixed_point_multiplier, 100),
+            (init_position, pos1),(position_set_x, pos1, -16),(position_set_y, pos1, 100),(position_move_z, pos1, -20),
+            (cur_tableau_add_mesh, ":banner_mesh", pos1, 87, 0),
+            (init_position, pos1),(position_set_z, pos1, 10),
+            (cur_tableau_add_mesh, "mesh_tableau_mesh_heraldic_banner_03", pos1, 0, 0),
+            (cur_tableau_set_camera_parameters, 0, 100, 200, 0, 100000),
+        ]
+    ),		 
   
 ]

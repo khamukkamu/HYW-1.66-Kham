@@ -822,7 +822,7 @@ troops = [
 
 ["knight_2_12", "Richard of York", "Duke of York", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [], lord_attrib, wp(380), knows_lord_1, 0x00000006f404c00f255c91b4da2e36dc00000000001cd8a20000000000000000, 0x00000006f404c00f255c91b4da2e36dc00000000001cd8a20000000000000000 ],
 
-["knight_2_13", "John Mowbray ", "Duke of Norfolk ", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [], lord_attrib, wp(380), knows_lord_1, 0x00000009870c141455548d4a67b5b2e400000000001eca9a0000000000000000, 0x00000009870c141455548d4a67b5b2e400000000001eca9a0000000000000000 ],
+["knight_2_13", "John Mowbray", "Duke of Norfolk ", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [], lord_attrib, wp(380), knows_lord_1, 0x00000009870c141455548d4a67b5b2e400000000001eca9a0000000000000000, 0x00000009870c141455548d4a67b5b2e400000000001eca9a0000000000000000 ],
 
 ["knight_2_14", "Richard le Strange", "Baron Strange", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [], lord_attrib, wp(380), knows_lord_1, 0x0000000000084085299445d35c96b55400000000001dc4dd0000000000000000, 0x0000000000084085299445d35c96b55400000000001dc4dd0000000000000000 ],
 
@@ -908,7 +908,7 @@ troops = [
 
 ["knight_4_14", "John De Vere", "Earl of Oxford", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [], lord_attrib, wp(380), knows_lord_1, 0x000000002508e581271a74277432675e000000000019b2f60000000000000000, 0x000000002508e581271a74277432675e000000000019b2f60000000000000000 ],
 
-["knight_4_15", "John Radckliff", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [], lord_attrib, wp(380), knows_lord_1, 0x000000049408204b18c29526943aaca500000000001f34b40000000000000000, 0x000000049408204b18c29526943aaca500000000001f34b40000000000000000 ],
+["knight_4_15", "John Radcliff", "Sir", tf_hero|tf_english, no_scene, reserved, fac_kingdom_2, [], lord_attrib, wp(380), knows_lord_1, 0x000000049408204b18c29526943aaca500000000001f34b40000000000000000, 0x000000049408204b18c29526943aaca500000000001f34b40000000000000000 ],
 
 ["knight_4_16", "Pierre Ier de Luxembourg", "Comte de Brienne", tf_hero|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [], lord_attrib, wp(380), knows_lord_1, 0x000000001800e00436d415bcd6664b2600000000001e56cd0000000000000000, 0x000000001800e00436d415bcd6664b2600000000001e56cd0000000000000000 ],
 
@@ -943,7 +943,7 @@ troops = [
 #France
 ["knight_5_11", "Guy XIV de Montfort-Laval", "Baron de Laval", tf_hero, no_scene, reserved, fac_kingdom_1, [], lord_attrib, wp(380), knows_lord_1, 0x00000003ee10d5d40c9c71275529c89d00000000001e24610000000000000000, 0x00000003ee10d5d40c9c71275529c89d00000000001e24610000000000000000 ],
 
-["knight_5_12", " André de Lohéac", "Seigneur de Lohéac", tf_hero, no_scene, reserved, fac_kingdom_1, [], lord_attrib, wp(380), knows_lord_1, 0x000000002e10d0010c9c71275529c89d00000000001e24610000000000000000, 0x000000002e10d0010c9c71275529c89d00000000001e24610000000000000000 ],
+["knight_5_12", "André de Lohéac", "Seigneur de Lohéac", tf_hero, no_scene, reserved, fac_kingdom_1, [], lord_attrib, wp(380), knows_lord_1, 0x000000002e10d0010c9c71275529c89d00000000001e24610000000000000000, 0x000000002e10d0010c9c71275529c89d00000000001e24610000000000000000 ],
 
 ["knight_5_13", "Gilbert Motier de La Fayette", "Seigneur de La Fayette", tf_hero, no_scene, reserved, fac_kingdom_1, [], lord_attrib, wp(380), knows_lord_1, 0x000000073f0d1010331d85a5546d5b6500000000001e54cb0000000000000000, 0x000000073f0d1010331d85a5546d5b6500000000001e54cb0000000000000000 ],
 

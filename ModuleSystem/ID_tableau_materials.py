@@ -64,3 +64,6 @@ tableau_troop_detail_dummy_pic = 62
 tableau_custom_armor_window = 63
 tableau_custom_armor_alpha_mask = 64
 tableau_custom_armor_color = 65
+tableau_heraldic_banner_01 = 66
+tableau_heraldic_banner_02 = 67
+tableau_heraldic_banner_03 = 68

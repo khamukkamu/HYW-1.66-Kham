@@ -7540,8 +7540,11 @@ presentations = [
 (store_sub, ":selected_banner", ":object", "$g_presentation_banner_start"),
 (store_mul, ":page_adder", 16, "$g_presentation_page_no"),
 (val_add, ":selected_banner", ":page_adder"),
-(store_add, ":selected_banner_map_icon", ":selected_banner", banner_map_icons_begin),
-(party_set_banner_icon, "p_main_party", ":selected_banner_map_icon"),
+### HYW Begin
+# (store_add, ":selected_banner_map_icon", ":selected_banner", banner_map_icons_begin),
+# (party_set_banner_icon, "p_main_party", ":selected_banner_map_icon"),
+(party_set_banner_icon, "p_main_party", "icon_heraldic_banner_03"),
+### HYW End
 (store_add, ":selected_banner_spr", ":selected_banner", banner_scene_props_begin),
 (troop_set_slot, "trp_player", slot_troop_banner_scene_prop, ":selected_banner_spr"),
 
@@ -7565,15 +7568,24 @@ presentations = [
   (troop_set_slot, ":cur_troop", slot_troop_banner_scene_prop, banner_scene_props_end_minus_one),
   (troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
   (gt, ":cur_party", 0),
-  (party_set_banner_icon, ":cur_party", banner_map_icons_end_minus_one),
+### HYW  
+  # (party_set_banner_icon, ":cur_party", banner_map_icons_end_minus_one),
+  (party_set_banner_icon, ":cur_party", "icon_heraldic_banner_03"),
+  ### HYW  
 (try_end),
 (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
   (try_begin),
     (party_slot_eq, ":cur_center", slot_town_lord, "trp_player"),
-    (party_set_banner_icon, ":cur_center", ":selected_banner_map_icon"),
+### HYW  
+  # (party_set_banner_icon, ":cur_center", banner_map_icons_end_minus_one),
+  (party_set_banner_icon, ":cur_center", "icon_heraldic_banner_03"),
+  ### HYW 
   (else_try),
     (party_slot_eq, ":cur_center", slot_town_lord, ":troop_to_change"),
-    (party_set_banner_icon, ":cur_center", banner_map_icons_end_minus_one),
+### HYW  
+  # (party_set_banner_icon, ":cur_center", banner_map_icons_end_minus_one),
+  (party_set_banner_icon, ":cur_center", "icon_heraldic_banner_03"),
+  ### HYW  
   (try_end),
 (try_end),
 (try_end),
@@ -8116,7 +8128,10 @@ presentations = [
 (try_begin),
   (ge, ":flag_icon", 0),
   (val_add, ":flag_icon", custom_banner_map_icons_begin),
-  (party_set_banner_icon, "p_main_party", ":flag_icon"),
+### HYW  
+  # (party_set_banner_icon, "p_main_party", ":flag_icon"),
+  (party_set_banner_icon, "p_main_party", "icon_heraldic_banner_03"),
+### HYW  End  
 (try_end),
 (presentation_set_duration, 0),
 (try_end),

@@ -107,6 +107,43 @@ map_icons = [
         (try_end),
         ]),
      ]),
+	  
+    # Medium square flag
+    ("heraldic_banner_01",0,"heraldic_map_flag_01", banner_scale, 0,
+        [
+            (ti_on_init_map_icon,
+                [
+                	(store_trigger_param_1, ":party_id"),
+                    (call_script, "script_get_banner_mesh_for_party", ":party_id"),
+                    (cur_map_icon_set_tableau_material, "tableau_heraldic_banner_01", reg0),
+                ]
+            ),
+        ]
+    ),
+    # Small horizontal flag
+    ("heraldic_banner_02",0,"heraldic_map_flag_02", banner_scale, 0,
+        [
+            (ti_on_init_map_icon,
+                [
+                	(store_trigger_param_1, ":party_id"),
+                    (call_script, "script_get_banner_mesh_for_party", ":party_id"),
+                    (cur_map_icon_set_tableau_material, "tableau_heraldic_banner_02", reg0),
+                ]
+            ),
+        ]
+    ),
+    # Large tall flag
+    ("heraldic_banner_03",0,"heraldic_map_flag_03", banner_scale, 0,
+        [
+            (ti_on_init_map_icon,
+                [
+                	(store_trigger_param_1, ":party_id"),
+                    (call_script, "script_get_banner_mesh_for_party", ":party_id"),
+                    (cur_map_icon_set_tableau_material, "tableau_heraldic_banner_03", reg0),
+                ]
+            ),
+        ]
+    ),	  
 
   # Banners
   ("banner_01",0,"map_flag_01", banner_scale,0),

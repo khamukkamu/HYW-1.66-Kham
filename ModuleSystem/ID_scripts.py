@@ -814,3 +814,5 @@ script_list_random = 812
 script_list_add = 813
 script_list_clear = 814
 script_add_troop_to_custom_armor_tableau = 815
+script_setup_heraldry = 816
+script_get_banner_mesh_for_party = 817
