@@ -551,8 +551,8 @@ scripts = [
 	
 	(troop_set_slot, "trp_knight_6_10", slot_troop_banner_scene_prop, "spr_banner_fitzwalter"), # Walter Fitzwalter
 	(troop_set_slot, "trp_knight_6_11", slot_troop_banner_scene_prop, "spr_banner_tudor"), # Owen Tudor
-	(troop_set_slot, "trp_knight_6_13", slot_troop_banner_scene_prop, "spr_banner_courtenay"), # Matthew Gough
-	(troop_set_slot, "trp_knight_6_17", slot_troop_banner_scene_prop, "spr_banner_willoughby"), # Thomas de Courtenay
+	(troop_set_slot, "trp_knight_6_13", slot_troop_banner_scene_prop, "spr_banner_gough"), # Matthew Gough
+	(troop_set_slot, "trp_knight_6_17", slot_troop_banner_scene_prop, "spr_banner_courtenay"), # Thomas de Courtenay
 	(troop_set_slot, "trp_knight_6_18", slot_troop_banner_scene_prop, "spr_banner_willoughby"), # John Willoughby
 	(troop_set_slot, "trp_knight_6_19", slot_troop_banner_scene_prop, "spr_banner_oldhall"), # William Oldhall
 	(troop_set_slot, "trp_knight_6_20", slot_troop_banner_scene_prop, "spr_banner_blount"), # Thomas Blount
