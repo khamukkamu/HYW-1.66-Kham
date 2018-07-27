@@ -2546,11 +2546,13 @@ dedal_tavern_animations = (
         (agent_set_stand_animation, ":agent", "anim_lute_standing"),
         (agent_set_animation, ":agent", "anim_lute_standing"),
         (agent_play_sound,":agent","snd_dedal_tavern_lute"),
+        (agent_ai_set_interact_with_player, ":agent", 0), # HYW Seek: Stop agents from turning when the player steps nearby
       (else_try),
         (agent_has_item_equipped,":agent","itm_dedal_lira"),
         (agent_set_stand_animation, ":agent", "anim_lyre_standing"),
         (agent_set_animation, ":agent", "anim_lyre_standing"),
         (agent_play_sound,":agent","snd_dedal_tavern_lyre"),
+        (agent_ai_set_interact_with_player, ":agent", 0), # HYW Seek: Stop agents from turning when the player steps nearby
       (try_end),
       (store_random_in_range,":r",0,300),
       (agent_set_animation_progress,":agent",":r"),
@@ -2561,10 +2563,12 @@ dedal_tavern_animations = (
         (agent_set_stand_animation, ":agent", "anim_sitting_drinking_low"),
         (agent_set_animation, ":agent", "anim_sitting_drinking_low"),
         (store_random_in_range,":r",0,300),
+        (agent_ai_set_interact_with_player, ":agent", 0), # HYW Seek: Stop agents from turning when the player steps nearby		  
       (else_try),
         (agent_set_stand_animation, ":agent", "anim_sitting_low"),
         (agent_set_animation, ":agent", "anim_sitting_low"),
         (store_random_in_range,":r",0,300),
+        (agent_ai_set_interact_with_player, ":agent", 0), # HYW Seek: Stop agents from turning when the player steps nearby		  
       (try_end),
       (agent_set_animation_progress,":agent",":r"),
     (try_end),

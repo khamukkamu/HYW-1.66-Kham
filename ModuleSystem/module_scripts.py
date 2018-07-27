@@ -22483,21 +22483,43 @@ scripts = [
   # called from triggers every two hours
   ("process_village_raids",
     [
-      (try_for_range, ":village_no", villages_begin, villages_end),
-        (party_get_slot, ":village_raid_progress", ":village_no", slot_village_raid_progress),
+	 ### HYW Seek: Added Caba'Drin's fixes, added snowy villages
+       (try_for_range, ":village_no", villages_begin, villages_end),
+        ##CABA Fix
         (try_begin),
-          (party_slot_eq, ":village_no", slot_village_state, 0), #village is normal
-          (val_sub, ":village_raid_progress", 5),
-          (val_max, ":village_raid_progress", 0),
-          (party_set_slot, ":village_no", slot_village_raid_progress, ":village_raid_progress"),
-          (try_begin),
-            (lt, ":village_raid_progress", 50),
-            
-            (try_begin),
-              (party_get_icon, ":village_icon", ":village_no"),
-              (neq, ":village_icon", "icon_village_a"),
-              (party_set_icon, ":village_no", "icon_village_a"),
-            (try_end),
+	(this_or_next|is_between, ":village_no", "p_village_1", "p_village_5"),
+	(this_or_next|is_between, ":village_no", "p_village_16", "p_village_22"),
+	(this_or_next|is_between, ":village_no", "p_village_48", "p_village_51"),
+	(this_or_next|is_between, ":village_no", "p_village_66", "p_village_69"),
+	(this_or_next|eq, ":village_no", "p_village_70"),
+	(this_or_next|eq, ":village_no", "p_village_74"),
+ 	(this_or_next|eq, ":village_no", "p_village_76"),
+	(this_or_next|eq, ":village_no", "p_village_79"),
+	(this_or_next|eq, ":village_no", "p_village_85"),
+	(eq, ":village_no", "p_village_87"),
+	(assign, ":normal_village_icon", "icon_village_snow_a"),
+	(assign, ":burnt_village_icon", "icon_village_snow_burnt_a"),
+	(assign, ":deserted_village_icon", "icon_village_snow_deserted_a"),		  	  
+        (else_try),		  
+          (assign, ":normal_village_icon", "icon_village_a"),
+          (assign, ":burnt_village_icon", "icon_village_burnt_a"),
+          (assign, ":deserted_village_icon", "icon_village_deserted_a"),
+        (try_end),
+        ##CABA Fix
+         (party_get_slot, ":village_raid_progress", ":village_no", slot_village_raid_progress),
+         (try_begin),
+           (party_slot_eq, ":village_no", slot_village_state, 0), #village is normal
+           (val_sub, ":village_raid_progress", 5),
+           (val_max, ":village_raid_progress", 0),
+           (party_set_slot, ":village_no", slot_village_raid_progress, ":village_raid_progress"),
+           (try_begin),
+             (lt, ":village_raid_progress", 50),
+
+             (try_begin),
+               (party_get_icon, ":village_icon", ":village_no"),
+              (neq, ":village_icon", ":normal_village_icon"), ##CABA FIX
+              (party_set_icon, ":village_no", ":normal_village_icon"), ##CABA FIX
+             (try_end),
             
             (party_slot_ge, ":village_no", slot_village_smoke_added, 1),
             (party_set_slot, ":village_no", slot_village_smoke_added, 0),
@@ -22543,7 +22565,7 @@ scripts = [
               (party_slot_eq, ":village_no", slot_village_smoke_added, 0),
               (party_add_particle_system, ":village_no", "psys_map_village_fire"),
               (party_add_particle_system, ":village_no", "psys_map_village_fire_smoke"),
-              (party_set_icon, ":village_no", "icon_village_burnt_a"),
+              (party_set_icon, ":village_no", ":burnt_village_icon"), ##CABA FIX
               (party_set_slot, ":village_no", slot_village_smoke_added, 1),
             (try_end),
             (try_begin),
@@ -22611,7 +22633,7 @@ scripts = [
             (party_slot_eq, ":village_no", slot_village_smoke_added, 2),
             (party_clear_particle_systems, ":village_no"),
             (party_set_slot, ":village_no", slot_village_smoke_added, 3),
-            (party_set_icon, ":village_no", "icon_village_deserted_a"),
+            (party_set_icon, ":village_no", ":deserted_village_icon"), ##CABA FIX
           (try_end),
           (try_begin),
             (gt, ":recover_progress", 100),
@@ -22619,7 +22641,7 @@ scripts = [
             (party_set_slot, ":village_no", slot_village_recover_progress, 0),
             (party_clear_particle_systems, ":village_no"),
             (party_set_slot, ":village_no", slot_village_smoke_added, 0),
-            (party_set_icon, ":village_no", "icon_village_a"),
+            (party_set_icon, ":village_no",  ":normal_village_icon"), ##CABA FIX
           (try_end),
         (try_end),
       (try_end),

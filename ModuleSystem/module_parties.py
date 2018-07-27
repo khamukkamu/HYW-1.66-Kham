@@ -235,7 +235,7 @@ parties = [
   ("village_65","Thouars_Village",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-30.25,-2.14),[],100),
   ("village_66","Peronne_Village",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.36,77.18),[],100),
   ("village_67","Agincourt",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.21,78.15),[],100),
-  ("village_68","Ghent",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(40.77,87.69),[],100),
+  ("village_68","Ghent",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(40.77,87.69),[],100),
   ("village_69","Vannes",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-59.50,19.66),[],100),
   ("village_70","Guines",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.97,92.48),[],100),
 
@@ -254,7 +254,7 @@ parties = [
   ("village_82","Beauvoir",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.50,41.73),[],100),#swapped with 21
   ("village_83","Le_Puy_Village",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(32.82,-43.09),[],55),
   ("village_84","Rodez_Village",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(13.49,-71.67),[],15),
-  ("village_85","Boves",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(25.46,69.47),[],10),
+  ("village_85","Boves",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(25.46,69.47),[],10),
   ("village_86","Gien",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(31.89,11.55),[],35),
   ("village_87","Formigny",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-37.11,67.32),[],160),
   ("village_88","Neufchateau_Village",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(77.47,27.97),[],180),
