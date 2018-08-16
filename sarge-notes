@@ -1,0 +1,56 @@
+For the Sergeant / Captains:
+
+- Check if there is still an upgrade troop.
+- If there is no more, verify with a level check
+- Then assign either global var or slot to set that they are now a sergeant / captain
+- Then create a new part "p_freelancer_captain"
+- add player + troops (reinforcement template)
+- create a trigger checking when player gets reinforced again.
+
+
+
+create script that will give player the troops
+
+
+
+If captain / sergeant:
+
+- Trigger to check Upgrade Path
+-- Check slot if eq 1
+-- get current level
+-- get level + 5, get boundary
+-- set that as upgrade xp
+
+Presentation and Upgrade selection done for captains / sarge
+Now need to add the meat: Adding a party.
+
+
+(faction_get_slot, ":is_sarge", ":commander_faction", slot_faction_freelancer_captain), #is sarge / captain?
+      (try_begin), #Captain / Sarge Check
+        (gt, ":is_sarge", 0),
+
+Where to add this?
+- If player is sarge and go on vacation
+- go on mission
+- revolts
+- deserts
+- 
+Get num of companions
+
+8 - num of companions = add to party.
+
+
+party copy - p_main_party --> freelancer_player_party
+remove member from party - player --> freelancer_player_party
+
+    #removes troops from player party
+    (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+    (try_for_range_backwards, ":cur_stack", 1, ":num_stacks"), #lower bound is 1 to ignore player character
+      (party_stack_get_troop_id, ":cur_troops", "p_main_party", ":cur_stack"),
+      (party_stack_get_size, ":cur_size", "p_main_party", ":cur_stack"),
+      (party_remove_members, "p_main_party", ":cur_troops", ":cur_size"),
+    (try_end),
+
+
+ ## Wages + Food
+## Check when player leaves and rejoins. Need to prove themeselves again.
