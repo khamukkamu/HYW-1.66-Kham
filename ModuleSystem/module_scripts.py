@@ -3360,12 +3360,12 @@ scripts = [
         (else_try),
           (eq, "$g_encountered_party", "p_chasse_camp"),
           (jump_to_menu, "mnu_campchasss"),
-          #pont des tourelles scripté
+          #pont des tourelles script?
         (else_try),
           (eq, "$g_encountered_party", "p_fierbois"),
           (jump_to_menu, "mnu_chap_fierbois"),
           #
-          #pont des tourelles scripté
+          #pont des tourelles script?
         (else_try),
           (eq, "$g_encountered_party", "p_rouen_foret"),
           (jump_to_menu, "mnu_foret_de_rouen"),
@@ -15349,6 +15349,29 @@ scripts = [
         (val_div, ":loot_probability", 3),
       (try_end),
       (party_get_num_companion_stacks, ":num_stacks",":enemy_party"),
+      # Tingyun's kill-order loot dependency  BEGIN
+      (assign, ":last_stack", ":num_stacks"),
+      (try_for_range, ":unused", 0, ":num_stacks"),
+        (assign, ":best_stack", -1),
+        (assign, ":best_level", -1),
+        (try_for_range, ":cur_stack", 0, ":last_stack"),
+          (party_stack_get_troop_id, ":cur_troop", ":enemy_party", ":cur_stack"),
+          (neg|troop_is_hero, ":cur_troop"),
+          (store_character_level, ":troop_level", ":cur_troop"),
+          (gt, ":troop_level", ":best_level"),
+          (assign, ":best_level", ":troop_level"),
+          (assign, ":best_stack", ":cur_stack"),
+        (try_end),
+        (try_begin),
+          (gt, ":best_stack", -1),
+          (party_stack_get_troop_id, ":stack_troop", ":enemy_party", ":best_stack"),
+          (party_stack_get_size, ":stack_size", ":enemy_party", ":best_stack"),
+          (party_remove_members, ":enemy_party", ":stack_troop", ":stack_size"),
+          (party_add_members, ":enemy_party", ":stack_troop", ":stack_size"),
+          (val_sub, ":last_stack", 1),
+        (try_end),
+      (try_end),
+      # End Tingyun's Code
       (try_for_range, ":i_stack", 0, ":num_stacks"),
         (party_stack_get_troop_id, ":stack_troop",":enemy_party",":i_stack"),
         (neg|troop_is_hero, ":stack_troop"),
@@ -36230,7 +36253,7 @@ scripts = [
           (party_stack_get_troop_id, ":cur_troop", "p_main_party", ":stack_no"),
           (troop_is_hero, ":cur_troop"),
           (neq, ":cur_troop", "trp_kidnapped_girl"),
-          (neq, ":cur_troop", "trp_player"), #rajouté
+          (neq, ":cur_troop", "trp_player"), #rajout?
           (troop_set_slot, "trp_tournament_participants", ":cur_slot", ":cur_troop"),
           (val_add, ":cur_slot", 1),
         (try_end),
@@ -49769,7 +49792,7 @@ scripts = [
       (change_screen_mission),
   ]),
   
-  ## catacombes coté ville/rebels
+  ## catacombes cot?ville/rebels
   ("entre_de_catap",
     [
       (party_get_slot, "$current_town",slot_party_type, spt_town),
@@ -50006,7 +50029,7 @@ scripts = [
       (assign, "$malus_de_faim", 1),
   ]),
   
-  ########malus stats de faim enlevés!
+  ########malus stats de faim enlev?!
   
   ("hugry-restore_1429",
     [
@@ -55164,7 +55187,7 @@ scripts = [
   
   
   
-  ("rpg_auberge_mine_entre",# pas liberé : dials et bataille
+  ("rpg_auberge_mine_entre",# pas liber?: dials et bataille
     [
       
       (assign, "$dial_town_walker_foret", 0),
@@ -55193,7 +55216,7 @@ scripts = [
   
   
   
-  ("rpg_auberge_mine_entre_liberee",#  liberé : maire et populac + consos assis et barde
+  ("rpg_auberge_mine_entre_liberee",#  liber?: maire et populac + consos assis et barde
     [
       (assign, "$dial_town_walker_foret", 0),
       (assign, "$entre_auberg", 1),

@@ -18138,19 +18138,22 @@ game_menus = [
           (call_script, "script_stay_captive_for_hours", ":random_hours"),
           (assign,"$auto_menu","mnu_captivity_wilderness_check"),
           #Freelancer
-          (assign, "$freelancer_state", 2),
-          (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation), ###move to quests, not missions
-          (troop_set_slot, "trp_player", slot_troop_days_on_mission, 50),
-          (str_store_troop_name_link, s13, "$enlisted_lord"),
-          (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
-          (str_store_faction_name_link, s14, ":commander_faction"),
-          (quest_set_slot, "qst_freelancer_captured", slot_quest_target_party, "$enlisted_party"),
-          (quest_set_slot, "qst_freelancer_captured", slot_quest_importance, 0),
-          (quest_set_slot, "qst_freelancer_captured", slot_quest_xp_reward, 50),
-          (quest_set_slot, "qst_freelancer_captured", slot_quest_expiration_days, 50),
-          (setup_quest_text, "qst_freelancer_captured"),
-          (str_clear, s2), #description. necessary?
-          (call_script, "script_start_quest", "qst_freelancer_captured", "$enlisted_lord"),
+          (try_begin),
+            (eq, "$freelancer_state", 1),
+            (assign, "$freelancer_state", 2),
+            (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation), ###move to quests, not missions
+            (troop_set_slot, "trp_player", slot_troop_days_on_mission, 50),
+            (str_store_troop_name_link, s13, "$enlisted_lord"),
+            (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
+            (str_store_faction_name_link, s14, ":commander_faction"),
+            (quest_set_slot, "qst_freelancer_captured", slot_quest_target_party, "$enlisted_party"),
+            (quest_set_slot, "qst_freelancer_captured", slot_quest_importance, 0),
+            (quest_set_slot, "qst_freelancer_captured", slot_quest_xp_reward, 50),
+            (quest_set_slot, "qst_freelancer_captured", slot_quest_expiration_days, 50),
+            (setup_quest_text, "qst_freelancer_captured"),
+            (str_clear, s2), #description. necessary?
+            (call_script, "script_start_quest", "qst_freelancer_captured", "$enlisted_lord"),
+          (try_end),
           (change_screen_return),
       ]),
     ]
