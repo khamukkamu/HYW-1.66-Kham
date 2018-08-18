@@ -1665,12 +1665,12 @@ banner_scene_props_begin = "spr_banner_alencon"
 banner_scene_props_end_minus_one = "spr_banner_f21"
 
 khergit_banners_begin_offset = 1
-khergit_banners_end_offset = 135
+khergit_banners_end_offset = 119
 
 sarranid_banners_begin_offset = 1
-sarranid_banners_end_offset = 135
+sarranid_banners_end_offset = 119
 
-banners_end_offset = 136
+banners_end_offset = 120
 
 # Some constants for merchant invenotries
 merchant_inventory_space = 30

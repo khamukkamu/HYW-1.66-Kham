@@ -2545,7 +2545,7 @@ game_menus = [
             (troop_add_item, "trp_player","itm_a_padded_cloth_custom",0),
             (troop_add_item, "trp_player","itm_w_onehanded_sword_c",0),
             # (troop_add_item, "trp_player","itm_heraldric_shieldblueerminestripes",0),
-            (troop_add_item, "trp_player","itm_h_kettlehat_painted_hood_blue",0),
+            (troop_add_item, "trp_player","itm_h_kettlehat_painted_hood_custom",0),
             (troop_add_item, "trp_player","itm_plis_recomandation",0),
           (try_end),
           

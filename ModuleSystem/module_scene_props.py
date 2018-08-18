@@ -951,20 +951,54 @@ scene_props = [
 
   ("full_keep_b",sokf_type_ladder,"full_keep_b","bo_full_keep_b", []),
   ("full_chateau",0,"full_chateau","bo_full_keep_b", []),
+  ("full_chateau_a",0,"full_chateau_a","bo_full_keep_b", []),
 
 
   ("castle_f_keep_a",0,"castle_f_keep_a","bo_castle_f_keep_a", []),
+  ("castle_f_keep_b",0,"castle_f_keep_b","bo_castle_f_keep_a", []),
+  ("castle_f_keep_c",0,"castle_f_keep_c","bo_castle_f_keep_a", []),
+  ("castle_f_keep_d",0,"castle_f_keep_d","bo_castle_f_keep_a", []),
+  ("castle_f_keep_e",0,"castle_f_keep_e","bo_castle_f_keep_a", []),
+  ("castle_f_keep_f",0,"castle_f_keep_f","bo_castle_f_keep_a", []),
+  
   ("castle_f_battlement_a",0,"castle_f_battlement_a","bo_castle_f_battlement_a", []),
+  ("castle_f_battlement_f",0,"castle_f_battlement_f","bo_castle_f_battlement_a", []),
+  ("castle_f_battlement_j",0,"castle_f_battlement_j","bo_castle_f_battlement_a", []),
+  
   ("castle_f_battlement_a_destroyed",0,"castle_f_battlement_a_destroyed","bo_castle_f_battlement_a_destroyed", []),
+  ("castle_f_battlement_a_destroyed_a",0,"castle_f_battlement_a_destroyed_a","bo_castle_f_battlement_a_destroyed", []),
+  ("castle_f_battlement_a_destroyed_b",0,"castle_f_battlement_a_destroyed_b","bo_castle_f_battlement_a_destroyed", []),
+  
   ("castle_f_battlement_b",0,"castle_f_battlement_b","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_k",0,"castle_f_battlement_k","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_l",0,"castle_f_battlement_l","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_m",0,"castle_f_battlement_m","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_n",0,"castle_f_battlement_n","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_o",0,"castle_f_battlement_o","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_p",0,"castle_f_battlement_p","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_q",0,"castle_f_battlement_q","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_r",0,"castle_f_battlement_r","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_s",0,"castle_f_battlement_s","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_t",0,"castle_f_battlement_t","bo_castle_f_battlement_b", []),
+  ("castle_f_battlement_u",0,"castle_f_battlement_u","bo_castle_f_battlement_b", []),
+  
   ("castle_f_battlement_c",0,"castle_f_battlement_c","bo_castle_f_battlement_c", []),
+  ("castle_f_battlement_i",0,"castle_f_battlement_i","bo_castle_f_battlement_c", []),
+  ("castle_f_battlement_v",0,"castle_f_battlement_v","bo_castle_f_battlement_c", []),
+  
   ("castle_f_battlement_d",0,"castle_f_battlement_d","bo_castle_f_battlement_d", []),
+  ("castle_f_battlement_g",0,"castle_f_battlement_g","bo_castle_f_battlement_d", []),
+  ("castle_f_battlement_h",0,"castle_f_battlement_h","bo_castle_f_battlement_d", []),
   ("castle_f_battlement_e",0,"castle_f_battlement_e","bo_castle_f_battlement_e", []),
   ("castle_f_sally_port_elevation",0,"castle_f_sally_port_elevation","bo_castle_f_sally_port_elevation", []),
+  ("castle_f_sally_port_elevation_a",0,"castle_f_sally_port_elevation_a","bo_castle_f_sally_port_elevation", []),
+  ("castle_f_sally_port_elevation_b",0,"castle_f_sally_port_elevation_b","bo_castle_f_sally_port_elevation", []),
   ("castle_f_battlement_corner_a",0,"castle_f_battlement_corner_a","bo_castle_f_battlement_corner_a", []),
   ("castle_f_battlement_corner_b",0,"castle_f_battlement_corner_b","bo_castle_f_battlement_corner_b", []),
   ("castle_f_battlement_corner_c",0,"castle_f_battlement_corner_c","bo_castle_f_battlement_corner_c", []),
   ("castle_f_simple_a",0,"castle_f_simple_a","bo_castle_f_simple_a", []),
+  ("castle_f_simple_b",0,"castle_f_simple_b","bo_castle_f_simple_a", []),
+  ("castle_f_simple_c",0,"castle_f_simple_c","bo_castle_f_simple_a", []),
 
   
   ("castle_f_door_a",sokf_moveable|sokf_show_hit_point_bar|sokf_destructible|spr_use_time(0),"castle_f_door_a","bo_castle_f_door_a", [
@@ -1149,11 +1183,18 @@ scene_props = [
 
   ("castle_f_stairs_a",sokf_type_ladder,"castle_f_stairs_a","bo_castle_f_stairs_a", []),
   ("castle_f_tower_a",sokf_type_ladder,"castle_f_tower_a","bo_castle_f_tower_a", []),
+  ("castle_f_tower_b",sokf_type_ladder,"castle_f_tower_b","bo_castle_f_tower_a", []),
+  ("castle_f_tower_c",sokf_type_ladder,"castle_f_tower_c","bo_castle_f_tower_a", []),
+  ("castle_f_tower_d",sokf_type_ladder,"castle_f_tower_d","bo_castle_f_tower_a", []),
+  ("castle_f_tower_e",sokf_type_ladder,"castle_f_tower_e","bo_castle_f_tower_a", []),
+  ("castle_f_tower_f",sokf_type_ladder,"castle_f_tower_f","bo_castle_f_tower_a", []),
   ("castle_f_wall_stairs_a",sokf_type_ladder,"castle_f_wall_stairs_a","bo_castle_f_wall_stairs_a", []),
   ("castle_f_wall_stairs_b",sokf_type_ladder,"castle_f_wall_stairs_b","bo_castle_f_wall_stairs_b", []),
   ("castle_f_wall_way_a",0,"castle_f_wall_way_a","bo_castle_f_wall_way_a", []),
   ("castle_f_wall_way_b",0,"castle_f_wall_way_b","bo_castle_f_wall_way_b", []),
   ("castle_f_gatehouse_a",0,"castle_f_gatehouse_a","bo_castle_f_gatehouse_a", []),
+  ("castle_f_gatehouse_b",0,"castle_f_gatehouse_b","bo_castle_f_gatehouse_a", []),
+  ("castle_f_gatehouse_c",0,"castle_f_gatehouse_c","bo_castle_f_gatehouse_a", []),
 
   ("castle_g_battlement_a",0,"castle_g_battlement_a","bo_castle_g_battlement_a", []),
   ("castle_g_battlement_a1",0,"castle_g_battlement_a1","bo_castle_g_battlement_a1", []),
@@ -1429,20 +1470,43 @@ scene_props = [
   ("timber_frame_extension_b",0,"timber_frame_extension_b","bo_timber_frame_extension_b", []),
   ("stone_stairs_a",sokf_type_ladder,"stone_stairs_a","bo_stone_stairs_a", []),
   ("stone_stairs_b",sokf_type_ladder,"stone_stairs_b","bo_stone_stairs_b", []),
+  ("stone_stairs_c",sokf_type_ladder,"stone_stairs_c","bo_stone_stairs_b", []),
+  ("stone_stairs_d",sokf_type_ladder,"stone_stairs_d","bo_stone_stairs_b", []),
   ("railing_a",0,"railing_a","bo_railing_a", []),
   ("side_building_a",0,"side_building_a","bo_side_building_a", []),
+  
   ("battlement_a",0,"battlement_a","bo_battlement_a", []),
+  ("battlement_b",0,"battlement_b","bo_battlement_a", []),
+  ("battlement_c",0,"battlement_c","bo_battlement_a", []),
 
   ("battlement_a_destroyed",0,"battlement_a_destroyed","bo_battlement_a_destroyed", []),
+  ("battlement_a_destroyed_a",0,"battlement_a_destroyed_a","bo_battlement_a_destroyed", []),
+  ("battlement_a_destroyed_b",0,"battlement_a_destroyed_b","bo_battlement_a_destroyed", []),
 
 
   ("round_tower_a",0,"round_tower_a","bo_round_tower_a", []),
+  ("round_tower_b",0,"round_tower_b","bo_round_tower_a", []),
+  ("round_tower_c",0,"round_tower_c","bo_round_tower_a", []),
   ("small_round_tower_a",0,"small_round_tower_a","bo_small_round_tower_a", []),
+  ("small_round_tower_b",0,"small_round_tower_b","bo_small_round_tower_a", []),
+  ("small_round_tower_c",0,"small_round_tower_c","bo_small_round_tower_a", []),
   ("small_round_tower_roof_a",0,"small_round_tower_roof_a","bo_small_round_tower_roof_a", []),
+  ("small_round_tower_roof_b",0,"small_round_tower_roof_b","bo_small_round_tower_roof_a", []),
   ("square_keep_a",0,"square_keep_a","bo_square_keep_a", []),
+  ("square_keep_g",0,"square_keep_g","bo_square_keep_a", []),
+  ("square_keep_h",0,"square_keep_h","bo_square_keep_a", []),
   ("square_tower_roof_a",0,"square_tower_roof_a","0", []),
+  ("square_tower_roof_b",0,"square_tower_roof_b","0", []),
   ("gate_house_a",0,"gate_house_a","bo_gate_house_a", []),
   ("gate_house_b",0,"gate_house_b","bo_gate_house_b", []),
+  ("gate_house_c",0,"gate_house_c","bo_gate_house_b", []),
+  ("gate_house_d",0,"gate_house_d","bo_gate_house_b", []),
+  ("gate_house_e",0,"gate_house_e","bo_gate_house_b", []),
+  ("gate_house_f",0,"gate_house_f","bo_gate_house_b", []),
+  ("gate_house_g",0,"gate_house_g","bo_gate_house_b", []),
+  ("gate_house_h",0,"gate_house_h","bo_gate_house_a", []),
+  ("gate_house_i",0,"gate_house_i","bo_gate_house_a", []),
+  
   ("small_wall_a",0,"small_wall_a","bo_small_wall_a", []),
   ("small_wall_a-2",0,"small_wall_a-2","bo_small_wall_a", []),
   ("small_wall_a-3",0,"small_wall_a-3","bo_small_wall_a", []),
@@ -1668,10 +1732,42 @@ scene_props = [
   ("castle_courtyard_house_a",0,"castle_courtyard_house_a","bo_castle_courtyard_house_a", []),
   ("castle_courtyard_house_b",0,"castle_courtyard_house_b","bo_castle_courtyard_house_b", []),
   ("castle_courtyard_house_c",0,"castle_courtyard_house_c","bo_castle_courtyard_house_c", []),
+  ("castle_courtyard_house_d",0,"castle_courtyard_house_d","bo_castle_courtyard_house_a", []),
+  ("castle_courtyard_house_e",0,"castle_courtyard_house_e","bo_castle_courtyard_house_b", []),
+  ("castle_courtyard_house_f",0,"castle_courtyard_house_f","bo_castle_courtyard_house_c", []),  
+  
   ("castle_courtyard_a",0,"castle_courtyard_a","bo_castle_courtyard_a", []),
+  ("castle_courtyard_b",0,"castle_courtyard_b","bo_castle_courtyard_a", []),
+  
+  ("castle_courtyard_house_extension_a",0,"castle_courtyard_house_extension_a","bo_castle_courtyard_house_extension_a", []),
+  ("castle_courtyard_house_extension_b",0,"castle_courtyard_house_extension_b","bo_castle_courtyard_house_extension_b", []),
+  ("castle_courtyard_house_extension_c",0,"castle_courtyard_house_extension_c","bo_castle_courtyard_house_extension_b", []),
+  ("castle_courtyard_house_extension_d",0,"castle_courtyard_house_extension_d","bo_castle_courtyard_house_extension_b", []),
 
   ("gatehouse_b",0,"gatehouse_b","bo_gatehouse_b", []),
+  ("gatehouse_c",0,"gatehouse_c","bo_gatehouse_b", []),
+  ("gatehouse_d",0,"gatehouse_d","bo_gatehouse_b", []),
+  ("gatehouse_e",0,"gatehouse_e","bo_gatehouse_b", []),
+  ("gatehouse_f",0,"gatehouse_f","bo_gatehouse_b", []),
+  ("gatehouse_g",0,"gatehouse_g","bo_gatehouse_b", []),
+  ("gatehouse_h",0,"gatehouse_h","bo_gatehouse_b", []),
+  ("gatehouse_i",0,"gatehouse_i","bo_gatehouse_b", []),
+  ("gatehouse_j",0,"gatehouse_j","bo_gatehouse_b", []),
+  ("gatehouse_k",0,"gatehouse_k","bo_gatehouse_b", []),
+  ("gatehouse_l",0,"gatehouse_l","bo_gatehouse_b", []),
+  
   ("castle_gaillard",0,"castle_gaillard","bo_castle_gaillard", []),
+  ("castle_gaillard_a",0,"castle_gaillard_a","bo_castle_gaillard", []),
+  ("castle_gaillard_b",0,"castle_gaillard_b","bo_castle_gaillard", []),
+  ("castle_gaillard_c",0,"castle_gaillard_c","bo_castle_gaillard", []),
+  ("castle_gaillard_d",0,"castle_gaillard_d","bo_castle_gaillard", []),
+  ("castle_gaillard_e",0,"castle_gaillard_e","bo_castle_gaillard", []),
+  ("castle_gaillard_f",0,"castle_gaillard_f","bo_castle_gaillard", []),
+  ("castle_gaillard_g",0,"castle_gaillard_g","bo_castle_gaillard", []),
+  ("castle_gaillard_h",0,"castle_gaillard_h","bo_castle_gaillard", []),
+  ("castle_gaillard_i",0,"castle_gaillard_i","bo_castle_gaillard", []),
+  ("castle_gaillard_j",0,"castle_gaillard_j","bo_castle_gaillard", []),
+  ("castle_gaillard_k",0,"castle_gaillard_k","bo_castle_gaillard", []),
   
   ("castle_e_battlement_a",0,"castle_e_battlement_a","bo_castle_e_battlement_a", []),
   ("castle_e_battlement_c",0,"castle_e_battlement_c","bo_castle_e_battlement_c", []),
@@ -1844,25 +1940,76 @@ scene_props = [
   ("courtyard_gate_b_2",0,"courtyard_entry_b_2","bo_courtyard_entry_b", []),
   ("courtyard_gate_b_3",0,"courtyard_entry_b_3","bo_courtyard_entry_b", []),  
   ("courtyard_gate_c",0,"courtyard_entry_c","bo_courtyard_entry_c", []),
+  ("courtyard_gate_d",0,"courtyard_entry_d","bo_courtyard_entry_c", []),
   ("courtyard_gate_snowy",0,"courtyard_entry_snowy","bo_courtyard_entry_a", []),
 
   ("castle_tower_a",0,"castle_tower_a","bo_castle_tower_a", []),
+  ("castle_tower_b",0,"castle_tower_b","bo_castle_tower_a", []),
+  ("castle_tower_c",0,"castle_tower_c","bo_castle_tower_a", []),
   ("castle_battlement_a",0,"castle_battlement_a","bo_castle_battlement_a", []),
   ("castle_battlement_b",0,"castle_battlement_b","bo_castle_battlement_b", []),
   ("castle_battlement_c",0,"castle_battlement_c","bo_castle_battlement_c", []),
-
+  ("castle_battlement_d",0,"castle_battlement_d","bo_castle_battlement_c", []),
+  ("castle_battlement_e",0,"castle_battlement_e","bo_castle_battlement_c", []),
+  ("castle_battlement_f",0,"castle_battlement_f","bo_castle_battlement_b", []),
+  ("castle_battlement_g",0,"castle_battlement_g","bo_castle_battlement_b", []),
+  ("castle_battlement_h",0,"castle_battlement_h","bo_castle_battlement_b", []),
+  ("castle_battlement_i",0,"castle_battlement_i","bo_castle_battlement_b", []),
+  ("castle_battlement_j",0,"castle_battlement_j","bo_castle_battlement_b", []),
+  ("castle_battlement_k",0,"castle_battlement_k","bo_castle_battlement_b", []),
+  ("castle_battlement_l",0,"castle_battlement_l","bo_castle_battlement_b", []),
+  ("castle_battlement_m",0,"castle_battlement_m","bo_castle_battlement_b", []),
+  ("castle_battlement_n",0,"castle_battlement_n","bo_castle_battlement_a", []),
+  ("castle_battlement_o",0,"castle_battlement_o","bo_castle_battlement_a", []),
+  ("castle_battlement_p",0,"castle_battlement_p","bo_castle_battlement_b", []),
+  ("castle_battlement_q",0,"castle_battlement_q","bo_castle_battlement_b", []),
+  ("castle_battlement_r",0,"castle_battlement_r","bo_castle_battlement_b", []),  
+	 
   ("castle_battlement_a_destroyed",0,"castle_battlement_a_destroyed","bo_castle_battlement_a_destroyed", []),
   ("castle_battlement_b_destroyed",0,"castle_battlement_b_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_c_destroyed",0,"castle_battlement_c_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_d_destroyed",0,"castle_battlement_d_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_e_destroyed",0,"castle_battlement_e_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_f_destroyed",0,"castle_battlement_f_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_g_destroyed",0,"castle_battlement_g_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_h_destroyed",0,"castle_battlement_h_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_i_destroyed",0,"castle_battlement_i_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_j_destroyed",0,"castle_battlement_j_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_k_destroyed",0,"castle_battlement_k_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_l_destroyed",0,"castle_battlement_l_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_m_destroyed",0,"castle_battlement_m_destroyed","bo_castle_battlement_b_destroyed", []),
+  ("castle_battlement_n_destroyed",0,"castle_battlement_n_destroyed","bo_castle_battlement_a_destroyed", []),
+  ("castle_battlement_o_destroyed",0,"castle_battlement_o_destroyed","bo_castle_battlement_a_destroyed", []),
 
   ("castle_battlement_corner_a",0,"castle_battlement_corner_a","bo_castle_battlement_corner_a", []),
   ("castle_battlement_corner_b",0,"castle_battlement_corner_b","bo_castle_battlement_corner_b", []),
   ("castle_battlement_corner_c",0,"castle_battlement_corner_c","bo_castle_battlement_corner_c", []),
+  ("castle_battlement_corner_d",0,"castle_battlement_corner_d","bo_castle_battlement_corner_c", []),
+  ("castle_battlement_corner_e",0,"castle_battlement_corner_e","bo_castle_battlement_corner_c", []),
+  ("castle_battlement_corner_f",0,"castle_battlement_corner_f","bo_castle_battlement_corner_b", []),
+  ("castle_battlement_corner_g",0,"castle_battlement_corner_g","bo_castle_battlement_corner_b", []),
+  ("castle_battlement_corner_h",0,"castle_battlement_corner_h","bo_castle_battlement_corner_a", []),
+  ("castle_battlement_corner_i",0,"castle_battlement_corner_i","bo_castle_battlement_corner_a", []),
+  
   ("castle_battlement_stairs_a",0,"castle_battlement_stairs_a","bo_castle_battlement_stairs_a", []),
   ("castle_battlement_stairs_b",0,"castle_battlement_stairs_b","bo_castle_battlement_stairs_b", []),
+  ("castle_battlement_stairs_c",0,"castle_battlement_stairs_c","bo_castle_battlement_stairs_b", []),
+  ("castle_battlement_stairs_d",0,"castle_battlement_stairs_d","bo_castle_battlement_stairs_b", []),
+  ("castle_battlement_stairs_e",0,"castle_battlement_stairs_e","bo_castle_battlement_stairs_a", []),
+  ("castle_battlement_stairs_f",0,"castle_battlement_stairs_f","bo_castle_battlement_stairs_a", []),
+  
   ("castle_gate_house_a",0,"castle_gate_house_a","bo_castle_gate_house_a", []),
+  ("castle_gate_house_b",0,"castle_gate_house_b","bo_castle_gate_house_a", []),
+  ("castle_gate_house_c",0,"castle_gate_house_c","bo_castle_gate_house_a", []),
   ("castle_round_tower_a",0,"castle_round_tower_a","bo_castle_round_tower_a", []),
+  ("castle_round_tower_b",0,"castle_round_tower_b","bo_castle_round_tower_a", []),
+  ("castle_round_tower_c",0,"castle_round_tower_c","bo_castle_round_tower_a", []),
   ("castle_square_keep_a",0,"castle_square_keep_a","bo_castle_square_keep_a", []),
+  ("castle_square_keep_b",0,"castle_square_keep_b","bo_castle_square_keep_a", []),
+  ("castle_square_keep_c",0,"castle_square_keep_c","bo_castle_square_keep_a", []),
   ("castle_stairs_a",sokf_type_ladder,"castle_stairs_a","bo_castle_stairs_a", []),
+  ("castle_stairs_b",sokf_type_ladder,"castle_stairs_b","bo_castle_stairs_a", []),
+  ("castle_stairs_c",sokf_type_ladder,"castle_stairs_c","bo_castle_stairs_a", []),
 
   ("castle_drawbridge_open",0,"castle_drawbridges_open","bo_castle_drawbridges_open", []),
   ("castle_drawbridge_closed",0,"castle_drawbridges_closed","bo_castle_drawbridges_closed", []),
@@ -2140,8 +2287,19 @@ scene_props = [
   ("chain_10m",0,"chain_10m","0", []),
   ("bridge_modular_a",0,"bridge_modular_a","bo_bridge_modular_a", []),
   ("bridge_modular_b",0,"bridge_modular_b","bo_bridge_modular_b", []),
+  
   ("church_a",0,"church_a","bo_church_a", []),
+  ("church_b",0,"church_b","bo_church_a", []),
+  ("church_c",0,"church_c","bo_church_a", []),
+  ("church_d",0,"church_d","bo_church_a", []),
+  ("church_e",0,"church_e","bo_church_a", []),
+  
   ("church_tower_a",0,"church_tower_a","bo_church_tower_a", []),
+  ("church_tower_b",0,"church_tower_b","bo_church_tower_a", []),
+  ("church_tower_c",0,"church_tower_c","bo_church_tower_a", []),
+  ("church_tower_d",0,"church_tower_d","bo_church_tower_a", []),
+  ("church_tower_e",0,"church_tower_e","bo_church_tower_a", []),
+  
   ("stone_step_a",0,"floor_stone_a","bo_floor_stone_a", []),
   ("stone_step_b",0,"stone_step_b","0", []),
   ("stone_step_c",0,"stone_step_c","0", []),
@@ -2228,6 +2386,10 @@ scene_props = [
 
   ("gatehouse_new_a",sokf_type_ladder,"gatehouse_new_a","bo_gatehouse_new_a", []),
   ("gatehouse_new_b",sokf_type_ladder,"gatehouse_new_b","bo_gatehouse_new_b", []),
+  ("gatehouse_new_c",sokf_type_ladder,"gatehouse_new_c","bo_gatehouse_new_a", []),
+  ("gatehouse_new_d",sokf_type_ladder,"gatehouse_new_d","bo_gatehouse_new_a", []),
+  ("gatehouse_new_e",sokf_type_ladder,"gatehouse_new_e","bo_gatehouse_new_b", []),
+  ("gatehouse_new_f",sokf_type_ladder,"gatehouse_new_f","bo_gatehouse_new_b", []),
   ("gatehouse_new_snowy_a",0,"gatehouse_new_snowy_a","bo_gatehouse_new_b", []),
 
   ("winch",sokf_moveable,"winch","bo_winch", []),
@@ -3114,18 +3276,41 @@ scene_props = [
   ("arena_circle_a",0,"arena_circle_a","bo_arena_circle_a", []),
   ("12_french_tower" ,0,"12_french_tower" ,"bo_12_french_tower", []),
   ("12_french_tower_b" ,0,"12_french_tower_b" ,"bo_12_french_tower_b", []),
+  ("12_french_tower_c" ,0,"12_french_tower_c" ,"bo_12_french_tower", []),
+  
   ("french_corner" ,0,"french_corner" ,"bo_french_corner", []),
+  ("french_corner_a" ,0,"french_corner_a" ,"bo_french_corner", []),
   ("french_corner_b" ,0,"french_corner_b" ,"bo_french_corner_b", []),
+  ("french_corner_c" ,0,"french_corner_c" ,"bo_french_corner_b", []),
+  ("french_corner_d" ,0,"french_corner_d" ,"bo_french_corner_b", []),
+  ("french_corner_e" ,0,"french_corner_e" ,"bo_french_corner", []),
+  ("french_corner_f" ,0,"french_corner_f" ,"bo_french_corner", []),
+  ("french_corner_h" ,0,"french_corner_h" ,"bo_french_corner_b", []),
+  
   ("french_gatehouse" ,0,"french_gatehouse" ,"bo_french_gatehouse", []),
+  ("french_gatehouse_b" ,0,"french_gatehouse_b" ,"bo_french_gatehouse", []),
+  ("french_gatehouse_c" ,0,"french_gatehouse_c" ,"bo_french_gatehouse", []),
+  ("french_gatehouse_d" ,0,"french_gatehouse_d" ,"bo_french_gatehouse", []),
   ("french_keep" ,0,"french_keep" ,"bo_french_keep", []),
+  ("french_keep_a" ,0,"french_keep_a" ,"bo_french_keep", []),
+  ("french_keep_b" ,0,"french_keep_b" ,"bo_french_keep", []),
   ("french_round_tower" ,0,"french_round_tower" ,"bo_french_round_tower", []),
+  ("french_round_tower_a" ,0,"french_round_tower_a" ,"bo_french_round_tower", []),
+  ("french_round_tower_b" ,0,"french_round_tower_b" ,"bo_french_round_tower", []),
   ("french_tower" ,0,"french_tower" ,"bo_french_tower", []),
+  ("french_tower_a" ,0,"french_tower_a" ,"bo_french_tower", []),
+  ("french_tower_b" ,0,"french_tower_b" ,"bo_french_tower", []),
   ("french_tower_2" ,0,"french_tower_2" ,"bo_french_tower_2", []),
+  ("french_tower_2_a" ,0,"french_tower_2_a" ,"bo_french_tower_2", []),
+  ("french_tower_2_b" ,0,"french_tower_2_b" ,"bo_french_tower_2", []),
   ("german_gatehouse" ,0,"german_gatehouse" ,"bo_german_gatehouse", []),
+  ("german_gatehouse_a" ,0,"german_gatehouse_a" ,"bo_german_gatehouse", []),
+  ("german_gatehouse_b" ,0,"german_gatehouse_b" ,"bo_german_gatehouse", []),
 
   ("italy_church_a" ,0,"italy_church_a" ,"bo_italy_church_a", []),
   ("italy_church_b" ,0,"italy_church_b" ,"bo_italy_church_b", []),
   ("italy_church_b_2" ,0,"italy_church_b_2" ,"bo_italy_church_b", []),
+  ("italy_church_b_3" ,0,"italy_church_b_3" ,"bo_italy_church_b", []),
 
   ("castle_g_tower_fake" ,0,"castle_g_tower_fake" ,"bo_castle_g_tower_fake", []),
   ("church_a_snowny" ,0,"church_a_snowny" ,"bo_church_a", []),
@@ -3133,26 +3318,46 @@ scene_props = [
 
   ("french_late_keep" ,0,"french_late_keep" ,"bo_french_late_keep", []),
   ("french_late_keep_fake" ,0,"french_late_keep_fake" ,"bo_french_late_keep_fake", []),   
+   ("south_french_late_keep" ,0,"south_french_late_keep" ,"bo_french_late_keep", []),
+  ("south_french_late_keep_fake" ,0,"south_french_late_keep_fake" ,"bo_french_late_keep_fake", []),  
   ("whit_late_keep_fake" ,0,"whit_late_keep_fake" ,"0", []),   
   ("lyon_french_late_keep" ,0,"lyon_french_late_keep" ,"bo_french_late_keep", []),
   ("lyon_whit_late_keep_fake" ,0,"lyon_whit_late_keep_fake" ,"bo_french_late_keep_fake", []),
   ("copy_lyon_whit_late_keep_fake" ,0,"copy_lyon_whit_late_keep_fake" ,"0", []),
 
   ("al_man_bartizan" ,0,"bartizan" ,"bo_bartizan", []),
+  ("al_man_bartizan_a" ,0,"bartizan_a" ,"bo_bartizan", []),
+  ("al_man_bartizan_b" ,0,"bartizan_b" ,"bo_bartizan", []),
   ("al_man_french_gatehouse_a" ,0,"french_gatehouse_a" ,"bo_french_gatehouse_a", []),
+  ("al_man_french_gatehouse_e" ,0,"french_gatehouse_e" ,"bo_french_gatehouse_a", []),
+  ("al_man_french_gatehouse_f" ,0,"french_gatehouse_f" ,"bo_french_gatehouse_a", []),
   ("al_man_french_keep_rouen" ,0,"french_keep_rouen" ,"bo_french_keep_rouen", []),
+  ("al_man_french_keep_rouen_a" ,0,"french_keep_rouen_a" ,"bo_french_keep_rouen", []),
   ("al_man_french_late_curtain_wall_no_roof" ,0,"french_late_curtain_wall_no_roof" ,"bo_french_late_curtain_wall_no_roof", []),
+  ("al_man_french_late_curtain_wall_no_roof_a" ,0,"french_late_curtain_wall_no_roof_a" ,"bo_french_late_curtain_wall_no_roof", []),
+  ("al_man_french_late_curtain_wall_no_roof_b" ,0,"french_late_curtain_wall_no_roof_b" ,"bo_french_late_curtain_wall_no_roof", []),
   ("al_man_french_late_curtain_wall" ,0,"french_late_curtain_wall" ,"bo_french_late_curtain_wall", []),
+  ("al_man_french_late_curtain_wall_a" ,0,"french_late_curtain_wall_a" ,"bo_french_late_curtain_wall", []),
+  ("al_man_french_late_curtain_wall_b" ,0,"french_late_curtain_wall_b" ,"bo_french_late_curtain_wall", []),
   ("al_man_french_tower_d" ,0,"french_tower_d" ,"bo_french_tower_d", []),
   ("al_man_french_tower_f" ,0,"french_tower_f" ,"bo_french_tower_f", []),
   ("al_man_french_tower_h" ,0,"french_tower_h" ,"bo_french_tower_h", []),
   ("al_man_french_tower_i" ,0,"french_tower_i" ,"bo_french_tower_i", []),
+  ("al_man_french_tower_k" ,0,"french_tower_k" ,"bo_french_tower_f", []),
+  ("al_man_french_tower_l" ,0,"french_tower_l" ,"bo_french_tower_f", []),
+  ("al_man_french_tower_m" ,0,"french_tower_m" ,"bo_french_tower_h", []),
+  ("al_man_french_tower_n" ,0,"french_tower_n" ,"bo_french_tower_h", []),
+  ("al_man_french_tower_o" ,0,"french_tower_o" ,"bo_french_tower_i", []),
+  ("al_man_french_tower_p" ,0,"french_tower_p" ,"bo_french_tower_i", []),	
   
   ("poteau" ,0,"poteau" ,"bo_poteau", []),      
   ("door_dark" ,0,"door_dark" ,"bo_door_dark", []),
   ("monsmeg" ,0,"monsmeg" ,"bo_monsmeg", []),
 
   ("ewropa_gothic_cathedral" ,0,"ewropa_gothic_cathedral" ,"bo_ewropa_gothic_cathedral", []), 
+  ("ewropa_gothic_cathedral_a" ,0,"ewropa_gothic_cathedral_a" ,"bo_ewropa_gothic_cathedral", []), 
+  ("ewropa_gothic_cathedral_b" ,0,"ewropa_gothic_cathedral_b" ,"bo_ewropa_gothic_cathedral", []), 
+  ("ewropa_gothic_cathedral_c" ,0,"ewropa_gothic_cathedral_c" ,"bo_ewropa_gothic_cathedral", []), 
 
   ("monsmeg_fire",sokf_moveable|sokf_destructible|spr_use_time(2),"monsmeg","bo_monsmeg", [
     check_item_use_trigger,
@@ -3462,9 +3667,27 @@ scene_props = [
   
 
   ("pine_tower" ,0,"pine_tower" ,"bo_french_corner_b", []),
+  ("pine_tower_a" ,0,"pine_tower_a" ,"bo_french_corner_b", []),
+  ("pine_tower_b" ,0,"pine_tower_b" ,"bo_french_corner_b", []),
+  ("pine_tower_g" ,0,"pine_tower_g" ,"bo_french_corner_b", []),
   ("pine_wall_1" ,0,"pine_wall_1" ,"bo_castle_f_battlement_e", []),
+  ("pine_wall_a" ,0,"pine_wall_a" ,"bo_castle_f_battlement_e", []),
+  ("pine_wall_b" ,0,"pine_wall_b" ,"bo_castle_f_battlement_e", []),
+  
   ("pine_wall_2" ,0,"pine_wall_2" ,"bo_castle_f_battlement_d", []),
+  
   ("pine_wall_3" ,0,"pine_wall_3" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_4" ,0,"pine_wall_4" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_5" ,0,"pine_wall_5" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_6" ,0,"pine_wall_6" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_7" ,0,"pine_wall_7" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_8" ,0,"pine_wall_8" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_9" ,0,"pine_wall_9" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_10" ,0,"pine_wall_10" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_11" ,0,"pine_wall_11" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_12" ,0,"pine_wall_12" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_13" ,0,"pine_wall_13" ,"bo_castle_f_battlement_b", []),
+  ("pine_wall_14" ,0,"pine_wall_14" ,"bo_castle_f_battlement_b", []),
 
   ("romainoir_fourme" ,0,"fourme" ,"0", []), 
   ("romainoir_lapin" ,0,"lapin" ,"0", []), 
@@ -3582,6 +3805,8 @@ scene_props = [
 
   ("castle_h_stairs_2a",0,"castle_h_stairs_2a","bo_castle_h_stairs_b", []),
   ("castle_h_stairs_2b",0,"castle_h_stairs_2b","bo_castle_h_stairs_b", []),
+  ("castle_h_stairs_2c",0,"castle_h_stairs_2c","bo_castle_h_stairs_b", []),
+  ("castle_h_stairs_2d",0,"castle_h_stairs_2d","bo_castle_h_stairs_b", []),
 
 
   ("tunnel_curved",0,"tunnel_curved","bo_tunnel_curved", []),
@@ -3640,8 +3865,14 @@ scene_props = [
   ("roseau",0,"roseau","0", []),  
 
   ("chinon",0,"chinon","bo_chinon", []),
+  ("chinon_a",0,"chinon_a","bo_chinon", []),
+  ("chinon_b",0,"chinon_b","bo_chinon", []),
   ("chinon_step",0,"chinon_step","bo_chinon_step", []),
   ("chinon_step2",0,"chinon_step2","bo_chinon_step2", []),
+  ("chinon_step_a",0,"chinon_step_a","bo_chinon_step", []),
+  ("chinon_step2_a",0,"chinon_step2_a","bo_chinon_step2", []),
+  ("chinon_step_b",0,"chinon_step_b","bo_chinon_step", []),
+  ("chinon_step2_b",0,"chinon_step2_b","bo_chinon_step2", []),
 
   ("cerf",0,"cerf","0", []),
 
@@ -3727,7 +3958,7 @@ scene_props = [
     ]),
    ]),
 
-  ("feu_2",0,"0","0",
+  ("feu_3",0,"0","0",
    [
    (ti_on_scene_prop_init,    
     
@@ -3925,6 +4156,18 @@ scene_props = [
 
   ("Steel_edition_french_donjeon",0,"chateau_fw","bo_chateau_fw", []),  
 
+  ("chateau_fw_a",0,"chateau_fw_a","bo_chateau_fw", []),  
+   ("chateau_fw_b",0,"chateau_fw_b","bo_chateau_fw", []),  
+   ("chateau_fw_c",0,"chateau_fw_c","bo_chateau_fw", []),  
+   ("chateau_fw_d",0,"chateau_fw_d","bo_chateau_fw", []),  
+   ("chateau_fw_e",0,"chateau_fw_e","bo_chateau_fw", []),  
+   ("chateau_fw_f",0,"chateau_fw_f","bo_chateau_fw", []),  
+   ("chateau_fw_g",0,"chateau_fw_g","bo_chateau_fw", []),  
+   ("chateau_fw_h",0,"chateau_fw_h","bo_chateau_fw", []),  
+   ("chateau_fw_i",0,"chateau_fw_i","bo_chateau_fw", []),  
+  
+  
+  
   ("xxx_Statue_chevalier",0,"Statue_chevalier","bo_Statue_chevalier", []),
   ("xxx_Tombe_chevalier",0,"Tombe_chevalier","bo_Tombe_chevalier", []),
 
@@ -4033,11 +4276,12 @@ scene_props = [
   ]),
 
 
-  ("enseigne_auberge",0,"sign_auberge","0", []),#arabian_village
-  ("stand_maison",0,"stand_maison","bo_stand_maison", []),#arabian_village
-  ("stand_maison2",0,"stand_maison2","bo_stand_maison", []),#arabian_village
-  ("stand_maison3",0,"stand_maison3","bo_stand_maison", []),#arabian_village
-  ("stand_maison4",0,"stand_maison4","bo_stand_maison", []),#arabian_village
+  ("enseigne_auberge",0,"sign_auberge","0", []),
+  ("stand_maison",0,"stand_maison","bo_stand_maison", []),
+  ("stand_maison2",0,"stand_maison2","bo_stand_maison", []),
+  ("stand_maison3",0,"stand_maison3","bo_stand_maison", []),
+  ("stand_maison4",0,"stand_maison4","bo_stand_maison", []),
+   ("stand_maison5",0,"stand_maison5","bo_stand_maison", []),
   
 
   ("1111auberge_maison_quete_entree",sokf_invisible|sokf_destructible|spr_use_time(2),"barrier_8m","bo_barrier_8m",
@@ -4135,10 +4379,15 @@ scene_props = [
       ("111aa_attaque_a_vue_t4",0,"0","0", []),
 
     ("pont_panthievre",0,"pont_panthievre","bo_pont_panthievre", []),
-      ("battlement_a_pente",0,"battlement_a_pente","bo_battlement_a_pente", []),
+    
+	("battlement_a_pente",0,"battlement_a_pente","bo_battlement_a_pente", []),
+	("battlement_a_pente_a",0,"battlement_a_pente_a","bo_battlement_a_pente", []),
+	("battlement_a_pente_b",0,"battlement_a_pente_b","bo_battlement_a_pente", []),
 
+	("battlement_a_pente_destroy",0,"battlement_a_pente_destroy","bo_battlement_a_pente_destroy", []),
+	("battlement_a_pente_destroy_a",0,"battlement_a_pente_destroy_a","bo_battlement_a_pente_destroy", []),
+	("battlement_a_pente_destroy_b",0,"battlement_a_pente_destroy_b","bo_battlement_a_pente_destroy", []),
 
-    ("battlement_a_pente_destroy",0,"battlement_a_pente_destroy","bo_battlement_a_pente_destroy", []),
     ("battlement_a_pente_destroy_tas",0,"battlement_a_pente_destroy_tas","bo_battlement_a_pente_destroy_tas", []),
   
 ]

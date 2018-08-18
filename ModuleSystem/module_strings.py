@@ -4325,6 +4325,24 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_early_transitional_white_2", "a_early_transitional_white"),
 ("a_early_transitional_end", "a_early_transitional_end"),
 
+## Narf Hoods for the Helmets
+# French 
+("h_hood_narf_blue", "h_hood_narf_blue"),  
+("h_hood_narf_blue_white", "h_hood_narf_blue_white"),  
+("h_hood_narf_white", "h_hood_narf_white"),  
+("h_hood_narf_brown", "h_hood_narf_brown"),  
+# English
+("h_hood_narf_red", "h_hood_narf_red"),  
+("h_hood_narf_red_white", "h_hood_narf_red_white"),  
+# Burgundian
+("h_hood_narf_yellow_blue", "h_hood_narf_yellow_blue"),  
+# Breton  
+("h_hood_narf_white_2", "h_hood_narf_white"),  
+("h_hood_narf_brown_2", "h_hood_narf_brown"),
+("h_hood_narf_black", "h_hood_narf_black"),  
+("h_hood_narf_black_white", "h_hood_narf_black_white"),
+("h_hood_narf_end", "h_hood_narf_end"),
+
 ###################################################################################################### HYW CUSTOM ARMORS VERTEX COLORED
 
 ## Vertex Coloured Leather Vest
