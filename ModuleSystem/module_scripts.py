@@ -13949,14 +13949,16 @@ scripts = [
           (set_result_string, "@+1 to {s1} while in inventory"),
           (set_trigger_result, 0xFFEEDD),
         (try_end),
+### HYW KHAM: Customizable string for custom items		  
       (else_try),
-        (is_between, ":item_no", "itm_a_peasant_man_custom", "itm_items_end"),
+        (is_between, ":item_no", "itm_h_bascinet_fi_hood_custom", "itm_items_end"),
         (try_begin),
           (eq, ":extra_text_id", 0),
           (str_store_string, s1, "@Customizable"),
           (set_result_string, "@{s1}"),
           (set_trigger_result, color_good_news),
         (try_end),
+### HYW		  
       (else_try),
         (eq, debug_mode,1),
         (eq, "$cheat_mode", 1),
