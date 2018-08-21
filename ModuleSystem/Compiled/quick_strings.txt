@@ -1,4 +1,4 @@
-1130
+1141
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1129,3 +1129,14 @@ qstr_h_kettlehat_painted h_kettlehat_painted
 qstr_h_round_kettlehat h_round_kettlehat
 qstr_h_round_kettlehat_pa h_round_kettlehat_painted
 qstr_h_pot_helmet h_pot_helmet
+qstr_Kingdom:_ Kingdom:_
+qstr_Troop:_ Troop:_
+qstr_{reg65}___Slider_{r {reg65}_-_Slider,_{reg66}_-_Value
+qstr_French_Squire French_Squire
+qstr_French_Captain French_Captain
+qstr_English_Squire English_Squire
+qstr_English_Captain English_Captain
+qstr_Burgandy_Squire Burgandy_Squire
+qstr_Burgandy_Captain Burgandy_Captain
+qstr_Breton_Squire Breton_Squire
+qstr_Breton_Captain Breton_Captain
