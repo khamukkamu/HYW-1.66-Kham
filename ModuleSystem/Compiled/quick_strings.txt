@@ -1,4 +1,4 @@
-1110
+1130
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1109,3 +1109,23 @@ qstr_a_brigandine_narf_arms_ a_brigandine_narf_arms_plate_disc
 qstr_a_brigandine_narf_arms_m a_brigandine_narf_arms_mail
 qstr_a_brigandine_narf_sk a_brigandine_narf_skirt_mail
 qstr_a_brigandine_narf_arms_ma a_brigandine_narf_arms_mail_plate
+qstr_o_gorget o_gorget
+qstr_o_gorget_strap o_gorget_strap
+qstr_h_bascinet_fi h_bascinet_fi
+qstr_h_kettlehat_eyeslot h_kettlehat_eyeslot
+qstr_h_sallet h_sallet
+qstr_h_cerveliere h_cerveliere
+qstr_h_byzantion h_byzantion
+qstr_h_byzantion_painted h_byzantion_painted
+qstr_h_chapel_de_fer_1 h_chapel_de_fer_1
+qstr_h_chapel_de_fer_2 h_chapel_de_fer_2
+qstr_h_chapel_de_fer_3 h_chapel_de_fer_3
+qstr_h_chapel_de_fer_4 h_chapel_de_fer_4
+qstr_h_kettlehat h_kettlehat
+qstr_h_kettlehat_2 h_kettlehat_2
+qstr_h_kettlehat_3 h_kettlehat_3
+qstr_h_kettlehat_4 h_kettlehat_4
+qstr_h_kettlehat_painted h_kettlehat_painted
+qstr_h_round_kettlehat h_round_kettlehat
+qstr_h_round_kettlehat_pa h_round_kettlehat_painted
+qstr_h_pot_helmet h_pot_helmet

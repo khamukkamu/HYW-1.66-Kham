@@ -81,7 +81,7 @@ class Game_Menu_Template(object):
       
       optns.append(
         ("back",[],"Go back.",
-          [(change_screen_quit)]
+          [(jump_to_menu, "mnu_camp_khamtest")]
         )
       )  
       if next_page < len(input_list):
