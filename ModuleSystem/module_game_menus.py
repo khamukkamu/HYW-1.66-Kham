@@ -5440,6 +5440,16 @@ game_menus = [
       ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
       ("choose_scene",[],"** Scene Chooser **", [(jump_to_menu, "mnu_choose_scenes_0"),]),
       ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_a_leather_vest_custom"),(troop_add_item, "trp_player", "itm_a_leather_armor_custom"),(troop_add_item, "trp_player", "itm_a_peasant_man_custom"),(troop_add_item, "trp_player", "itm_a_gambeson_custom"),(troop_add_item, "trp_player", "itm_a_gambeson_narf_custom"),]),
+      ("customize_armour", [
+        (assign, ":end", ek_foot), #should add a global as iterator
+         (try_for_range, ":item_slot", ek_item_0, ":end"),
+           (troop_get_inventory_slot, ":item_no", "trp_player", ":item_slot"),
+           (gt, ":item_no", -1),
+           (item_slot_ge, ":item_no", slot_item_num_components, 1),
+           (assign, "$g_current_opened_item_details", ":item_no"),
+           (assign, ":end", -1),
+         (try_end),
+        ], "Customize Armour", [(start_presentation, "prsnt_customize_armor"),]),
       ("test_low_morale_quest",[],"Test Low Morale Freelancer Quest", [(assign, "$player_cur_troop", "trp_french_sergeant"),
           (assign, "$enlisted_lord", "trp_knight_1_5"),
           (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
@@ -5552,7 +5562,7 @@ game_menus = [
           (assign, reg3, ":freelancer_rank"),
           (display_message, "@Freelancer Rank - {reg3}"),
           (faction_set_slot, ":commander_faction", slot_freelancer_rank, ":freelancer_rank"),]),
-      ("impose_messenger_quest",[],"Impose Deliver Message", [(assign, "$cheat_imposed_quest", "qst_deliver_message"),(display_message, "@Quest Imposed!", color_good_news),]),
+      #("impose_messenger_quest",[],"Impose Deliver Message", [(assign, "$cheat_imposed_quest", "qst_deliver_message"),(display_message, "@Quest Imposed!", color_good_news),]),
       ("impose_none",[],"Reset Impose Quest", [(assign, "$cheat_imposed_quest", -1),(display_message, "@Impose Quest Cleared!", color_good_news),]),
       ("resume_travelling",[],"Resume travelling.",[(change_screen_return),]),
       

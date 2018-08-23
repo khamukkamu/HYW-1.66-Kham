@@ -3214,6 +3214,10 @@ lord_leave
 lord_leave_give_quest
 enemy_lord_tell_mission
 lord_request_enlistment_confirm
+mayor_talk
+tailor_custom_armor_start
+tailor_custom_armor_ask
+tailor_custom_armor_choose
 lady_journey_1
 spouse_cancel_political_quest
 spouse_cancel_political_quest_confirm
@@ -3751,7 +3755,6 @@ master_craftsman_auction_price
 master_craftsman_auction_decide
 master_craftsman_liquidation
 mayor_begin
-mayor_talk
 lord_persuade_lords_to_make_peace_completed
 lord_persuade_lords_to_make_peace_pay
 lord_persuade_lords_to_make_peace_no_pay

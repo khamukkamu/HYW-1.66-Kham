@@ -10677,6 +10677,22 @@ presentations = [
   (overlay_set_position, "$form_options_overlay_6", pos1),
   (overlay_set_val, "$form_options_overlay_6", "$freelancer_enhanced_upgrade"),
   (val_sub, ":y_pos", Screen_Text_Height),
+
+  #Companion Complaints
+  (create_text_overlay, reg1, "@Disable Companion Complaints:", tf_right_align),
+  (position_set_y, pos0, ":y_pos"),
+  (overlay_set_position, reg1, pos0),
+  
+  (create_check_box_overlay, "$g_presentation_obj_item_select_1", "mesh_checkbox_off", "mesh_checkbox_on"),
+  (copy_position, pos1, pos0),
+  (store_add, reg2, ":y_pos", Screen_Checkbox_Height_Adj),
+  (position_set_y, pos1, reg2),
+  (overlay_set_position, "$g_presentation_obj_item_select_1", pos1),
+  
+  (overlay_set_val, "$g_presentation_obj_item_select_1", "$disable_npc_complaints"),
+  
+  (val_sub, ":y_pos", Screen_Text_Height),
+  
   
   # This is for Done button
   (assign, "$form_options_overlay_exit", 0), # forced initialization
@@ -10726,6 +10742,9 @@ presentations = [
   (else_try),
     (eq, ":object", "$form_options_overlay_6"),
     (assign, "$freelancer_enhanced_upgrade", ":value"),
+  (else_try),
+    (eq, ":object", "$g_presentation_obj_item_select_1"),
+    (assign, "$disable_npc_complaints", ":value"),
   (else_try),
     (eq, ":object", "$form_options_overlay_exit"),
     (presentation_set_duration, 0),
@@ -13634,23 +13653,23 @@ presentations = [
         # (try_end),
       (try_end),
       
-      (position_set_y, pos1, 90),
-      (store_sub, ":item_no", "$g_current_opened_item_details", 1),
-      (try_begin),
-        (item_slot_ge, ":item_no", slot_item_num_components, 1),
-        (str_store_item_name, s0, ":item_no"),
-        (create_button_overlay, "$g_presentation_credits_obj_4", s0),
-        (position_set_x, pos1, 250),
-        (overlay_set_position, "$g_presentation_credits_obj_4", pos1),
-      (try_end),
-      (store_add, ":item_no", "$g_current_opened_item_details", 1),
-      (try_begin),
-        (item_slot_ge, ":item_no", slot_item_num_components, 1),
-        (str_store_item_name, s0, ":item_no"),
-        (create_button_overlay, "$g_presentation_credits_obj_5", s0),
-        (position_set_x, pos1, 575),
-        (overlay_set_position, "$g_presentation_credits_obj_5", pos1),
-      (try_end),
+      #(position_set_y, pos1, 90),
+      #(store_sub, ":item_no", "$g_current_opened_item_details", 1),
+      #(try_begin),
+      #  (item_slot_ge, ":item_no", slot_item_num_components, 1),
+      #  (str_store_item_name, s0, ":item_no"),
+      #  (create_button_overlay, "$g_presentation_credits_obj_4", s0),
+      #  (position_set_x, pos1, 250),
+      #  (overlay_set_position, "$g_presentation_credits_obj_4", pos1),
+      #(try_end),
+      #(store_add, ":item_no", "$g_current_opened_item_details", 1),
+      #(try_begin),
+      #  (item_slot_ge, ":item_no", slot_item_num_components, 1),
+      #  (str_store_item_name, s0, ":item_no"),
+      #  (create_button_overlay, "$g_presentation_credits_obj_5", s0),
+      #  (position_set_x, pos1, 575),
+      #  (overlay_set_position, "$g_presentation_credits_obj_5", pos1),
+      #(try_end),
       (create_game_button_overlay, "$g_presentation_obj_profile_banner_selection_1", "str_reset_to_default"),
       (create_game_button_overlay, "$g_presentation_obj_profile_banner_selection_2", "str_done"),
       (position_set_y, pos1, 50),
@@ -13725,16 +13744,21 @@ presentations = [
           (try_for_range, ":slot_no", slot_item_player_slots_begin, slot_item_player_slots_end + 1),
             (item_set_slot, "$g_current_opened_item_details", ":slot_no", -1),
           (try_end),
-        (else_try), #prev
-          (eq, ":object", "$g_presentation_credits_obj_4"),
-          (val_sub, "$g_current_opened_item_details", 1),
-        (else_try), #next
-          (eq, ":object", "$g_presentation_credits_obj_5"),
-          (val_add, "$g_current_opened_item_details", 1),
+        #(else_try), #prev
+        #  (eq, ":object", "$g_presentation_credits_obj_4"),
+        #  (val_sub, "$g_current_opened_item_details", 1),
+        #(else_try), #next
+        #  (eq, ":object", "$g_presentation_credits_obj_5"),
+        #  (val_add, "$g_current_opened_item_details", 1),
         (else_try), #close
           (eq, ":object", "$g_presentation_obj_profile_banner_selection_2"),
           (assign, ":continue", -1),
+          (try_begin),
+            (neg|item_slot_eq, "$g_current_opened_item_details", slot_item_player_color, "$custom_armour_current_colour"),
+            (troop_remove_gold, "trp_player", 150),
+          (try_end),
           (presentation_set_duration, 0),
+          (start_mission_conversation, "$g_talk_troop"),
         (else_try), #go after presentation object stored in arrays, left side combos
           (gt, "$g_presentation_obj_item_select_1", 0),
           (assign, ":cur_mesh_slot", slot_item_player_slots_begin - 1),

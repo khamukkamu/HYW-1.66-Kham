@@ -40921,7 +40921,7 @@ scripts = [
       
       (store_faction_of_party, ":winner_faction", ":winner_party"),
       (try_begin),
-        (eq, ":winner_party", "p_main_party"),
+        (eq, ":winner_faction", "fac_player_faction"),
         (assign, ":winner_faction", "$players_kingdom"),
       (try_end),
       
@@ -63818,7 +63818,19 @@ scripts = [
        (set_fixed_point_multiplier, 100),
 
        (cur_tableau_clear_override_items),
-       (cur_tableau_set_override_flags, af_override_weapons),
+       (item_get_type, ":type", "$g_current_opened_item_details"),
+
+       (try_begin),
+        (eq, ":type", itp_type_body_armor),
+        (cur_tableau_set_override_flags, af_override_weapons|af_override_body),
+       (else_try),
+        (eq, ":type", itp_type_head_armor),
+        (cur_tableau_set_override_flags, af_override_weapons|af_override_head),
+       (else_try),
+        (cur_tableau_set_override_flags, af_override_weapons),
+       (try_end),
+
+       (cur_tableau_add_override_item, "$g_current_opened_item_details"),
 
        (init_position, pos2),
        (position_rotate_z, pos2, ":side"),
@@ -63844,11 +63856,6 @@ scripts = [
        (position_rotate_x, pos5, ":camera_pitch"),
        (position_move_z, pos5, ":camera_distance", 0),
        (position_move_x, pos5, 5, 0),
-
-       (try_begin), #shouldn't be necessary, it's already on the troop (player character)
-         (gt, "$g_current_opened_item_details", -1),
-         (cur_tableau_add_override_item, "$g_current_opened_item_details"),
-       (try_end),
        
        (cur_tableau_add_troop, ":troop_no", pos2, ":animation", -1),
        (cur_tableau_set_camera_position, pos5),

@@ -1485,3 +1485,4 @@ g_presentation_obj_6
 g_custom_armor_param_count
 g_custom_armor_mandatory
 freelancer_training_opponents
+custom_armour_current_colour

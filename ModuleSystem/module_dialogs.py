@@ -234,6 +234,7 @@ dialogs = [
       (eq, 1, 0)],
     "{!}Warning: This line is never displayed. It is just for storing conversation variables.", "close_window", []],
   
+
   #Dialogue for Sarge / Captain Promotions
   
   #Sarge Dialogues START
@@ -32821,8 +32822,37 @@ dialogs = [
   #+freelancer end
   
   #### Freelancer - Kham Implementation END ####
+
+  #### Kham - Armour Customization Dialogues START #####
+
+  [anyone|plyr,"mayor_talk",[], "I'd like to Customize my Armour", "tailor_custom_armor_start",[]],
   
+  [anyone,"tailor_custom_armor_start",[], "What do you want to customize?", "tailor_custom_armor_ask",[]],
+
+  [anyone|plyr|repeat_for_100, "tailor_custom_armor_ask", 
+    [
+      (store_repeat_object, ":custom_armour"),
+      (troop_get_inventory_slot, ":item_id", "trp_player", ":custom_armour"),
+      (ge, ":item_id", 0),
+      (item_slot_ge, ":item_id", slot_item_num_components, 1),
+      (str_store_item_name, s1, ":item_id"),
+
+   ], "{s1}", "tailor_custom_armor_choose", [
+    (store_repeat_object, ":custom_armour"), 
+    (troop_get_inventory_slot, "$g_current_opened_item_details", "trp_player", ":custom_armour"), 
+   ],
+  ],
+
+  [anyone|plyr,"tailor_custom_armor_ask",[], "Nothing right now.", "mayor_talk",[(assign, "$g_current_opened_item_details", -1)]],
+
+  [anyone,"tailor_custom_armor_choose",[], "Ok, I'll start straight away.", "close_window",
+    [
+      (item_get_slot, "$custom_armour_current_colour", "$g_current_opened_item_details", slot_item_player_color), 
+      (start_presentation, "prsnt_customize_armor"),
+    ]
+  ],
   
+
   [anyone,"lord_leave_prison", [],
     "We'll meet again.", "close_window",[]],
   
@@ -42228,7 +42258,7 @@ dialogs = [
   #################### Random merchant quests end
   
   [anyone,"merchant_quest_requested", [], "I am afraid I can't offer you a job right now.", "mayor_pretalk",[]],
-  
+
   
   #Village elders
   
@@ -47559,6 +47589,18 @@ dialogs = [
   ]],
   
   
+  #[anyone,"start",[
+  #  (eq, "$talk_context", tc_merchants_house),
+  #  (is_between, "$g_talk_troop", mayors_begin, mayors_end),
+  #  (item_slot_eq, "$g_current_opened_item_details", slot_item_player_color, "$custom_armour_current_colour"),
+  #], "Changed your mind? I'll be here if you want something else customized.", "mayor_talk",[]],
+
+  #[anyone,"start",[
+  #  (eq, "$talk_context", tc_merchants_house),
+  #  (is_between, "$g_talk_troop", mayors_begin, mayors_end),
+  #  (neg|item_slot_eq, "$g_current_opened_item_details", slot_item_player_color, "$custom_armour_current_colour"),
+  #], "There you are. It will be 10 Crowns. Thank you.", "mayor_talk",[(troop_remove_gold, "trp_player", 10)]],
+
   
   [anyone|plyr,"free", [[in_meta_mission]], " Good-bye.", "close_window",[]],
   [anyone|plyr,"free", [[neg|in_meta_mission]], " [Leave]", "close_window",[]],
