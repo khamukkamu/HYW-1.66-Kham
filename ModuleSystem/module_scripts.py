@@ -1094,11 +1094,6 @@ scripts = [
 ##################################################################################################################################################################################################################################################################################################################
 		
 
-      #Init Custom Armors
-      (try_for_range, ":item_no", "itm_a_peasant_man_custom", "itm_items_end"), # Seek: Changed the range
-          (item_set_slot, ":item_no", slot_item_player_color, 0), # Seek: Changed to 0 as suggested by Kham
-          (item_set_slot, ":item_no", slot_item_num_components, 1), #allows it to be customized
-      (try_end),
 
 ## Padded Cloth
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_materials_begin, "str_a_padded_cloth_blue"),
@@ -1404,6 +1399,16 @@ scripts = [
       (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_begin, "str_a_mail_shirt_arms_black"),
       (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_end, "str_a_mail_shirt_arms_end"),			
       (item_set_slot, "itm_a_mail_shirt_custom", slot_item_num_components, 1),     		
+
+      #Init Custom Armors
+      (try_for_range, ":item_no", "itm_a_peasant_man_custom", "itm_items_end"), # Seek: Changed the range
+          (item_get_slot, ":materials_begin", ":item_no", slot_item_materials_begin),
+          (item_get_slot, ":materials_end", ":item_no", slot_item_materials_end),
+          (store_random_in_range, ":random_material", ":materials_begin", ":materials_end"),
+          (item_set_slot, ":item_no", slot_item_player_color, ":random_material"), # Kham: Set to a Random Colour.
+          (item_set_slot, ":item_no", slot_item_num_components, 1), #allows it to be customized
+      (try_end),
+
   ]),
   
   #script_game_get_use_string

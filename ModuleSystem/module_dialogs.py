@@ -13842,7 +13842,11 @@ dialogs = [
   [anyone|plyr ,"quel_place_chateautent", [],  "Forteresse de Chinon", "ren_ForteresseChinon", []],
   
   
-  [anyone ,"ren_Dieppe", [],"Les murs de Dieppe semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],  [anyone ,"ren_Nevers", [],"Les murs de Nevers semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],  [anyone ,"ren_Laval", [],"Les murs de Laval semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],  [anyone ,"ren_Peronne", [],"Les murs de Peronne semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],#
+  [anyone ,"ren_Dieppe", [],"Les murs de Dieppe semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],
+  [anyone ,"ren_Paris", [],"Les murs de Paris semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],  
+  [anyone ,"ren_Nevers", [],"Les murs de Nevers semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],  
+  [anyone ,"ren_Laval", [],"Les murs de Laval semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],  
+  [anyone ,"ren_Peronne", [],"Les murs de Peronne semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],#
   [anyone ,"ren_Reims", [],"Les murs de Reims semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],#
   [anyone ,"ren_Angers", [],"Les murs de Nantes semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],#
   [anyone ,"ren_Bourges", [],"Les murs de Bourges semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.", "generiquequelchateautent", []],#
@@ -32825,7 +32829,7 @@ dialogs = [
 
   #### Kham - Armour Customization Dialogues START #####
 
-  [anyone|plyr,"mayor_talk",[], "I'd like to Customize my Armour", "tailor_custom_armor_start",[]],
+  [anyone|plyr,"town_merchant_talk",[(is_between,"$g_talk_troop",armor_merchants_begin,armor_merchants_end)], "I'd like to Customize my Armour", "tailor_custom_armor_start",[]],
   
   [anyone,"tailor_custom_armor_start",[], "What do you want to customize?", "tailor_custom_armor_ask",[]],
 
@@ -32843,7 +32847,7 @@ dialogs = [
    ],
   ],
 
-  [anyone|plyr,"tailor_custom_armor_ask",[], "Nothing right now.", "mayor_talk",[(assign, "$g_current_opened_item_details", -1)]],
+  [anyone|plyr,"tailor_custom_armor_ask",[], "Nothing right now.", "town_merchant_talk",[(assign, "$g_current_opened_item_details", -1)]],
 
   [anyone,"tailor_custom_armor_choose",[], "Ok, I'll start straight away.", "close_window",
     [
@@ -32852,6 +32856,7 @@ dialogs = [
     ]
   ],
   
+  #### Kham - Armour Customization Dialogues END #####
 
   [anyone,"lord_leave_prison", [],
     "We'll meet again.", "close_window",[]],

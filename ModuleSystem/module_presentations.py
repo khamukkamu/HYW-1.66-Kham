@@ -13433,7 +13433,7 @@ presentations = [
       (assign, "$g_presentation_credits_obj_1", -1),
       (assign, "$g_presentation_credits_obj_2", -1),
       (assign, "$g_presentation_credits_obj_3", -1),
-      (assign, "$g_presentation_credits_obj_4", -1),
+      #(assign, "$g_presentation_credits_obj_4", -1),
       (assign, "$g_presentation_credits_obj_5", -1),
       (assign, "$g_presentation_obj_item_select_1", -1),
       (assign, "$g_presentation_obj_item_select_2", -1),
@@ -13634,13 +13634,14 @@ presentations = [
       # (overlay_set_size, "$g_presentation_credits_obj_1", pos1),
       (try_begin),
         (item_get_slot, ":colors_begin", "$g_current_opened_item_details", slot_item_materials_begin),
+        (assign, "$g_presentation_obj_item_select_4", ":colors_begin"),
         (gt, ":colors_begin", 0),
         (item_get_slot, ":colors_end", "$g_current_opened_item_details", slot_item_materials_end),
         (create_combo_label_overlay, "$g_presentation_credits_obj_3"),
         (position_set_x, pos1, 500),
         (position_set_y, pos1, 135),
         (overlay_set_position, "$g_presentation_credits_obj_3", pos1),
-        (overlay_add_item, "$g_presentation_credits_obj_3", "str_color"), #default label
+        (overlay_add_item, "$g_presentation_credits_obj_3", "@Change Color"), #default label
         (try_for_range, ":color", ":colors_begin", ":colors_end"),
           (overlay_add_item, "$g_presentation_credits_obj_3", ":color"),
         (try_end),
@@ -13670,7 +13671,7 @@ presentations = [
       #  (position_set_x, pos1, 575),
       #  (overlay_set_position, "$g_presentation_credits_obj_5", pos1),
       #(try_end),
-      (create_game_button_overlay, "$g_presentation_obj_profile_banner_selection_1", "str_reset_to_default"),
+      (create_game_button_overlay, "$g_presentation_obj_profile_banner_selection_1", "@Reset to Current"),
       (create_game_button_overlay, "$g_presentation_obj_profile_banner_selection_2", "str_done"),
       (position_set_y, pos1, 50),
       (position_set_x, pos1, 425),
@@ -13723,12 +13724,36 @@ presentations = [
         (store_trigger_param_2, ":value"),
         (assign, ":continue", 0),
 
+        (store_faction_of_party, ":tailor_faction", "$g_encountered_party"),
+
+        (try_begin),
+          (eq, ":tailor_faction", "fac_kingdom_1"), #France
+          (item_get_slot, ":colors_begin", "$g_current_opened_item_details", slot_item_france_materials_begin),
+          (item_get_slot, ":colors_end", "$g_current_opened_item_details", slot_item_france_materials_end),
+        (else_try),
+          (eq, ":tailor_faction", "fac_kingdom_2"), #England
+          (item_get_slot, ":colors_begin", "$g_current_opened_item_details", slot_item_english_materials_begin),
+          (item_get_slot, ":colors_end", "$g_current_opened_item_details", slot_item_english_materials_end),
+        (else_try),
+          (eq, ":tailor_faction", "fac_kingdom_3"), #Burgandy
+          (item_get_slot, ":colors_begin", "$g_current_opened_item_details", slot_item_burgundy_materials_begin),
+          (item_get_slot, ":colors_end", "$g_current_opened_item_details", slot_item_burgundy_materials_end),
+        (else_try),
+          (eq, ":tailor_faction", "fac_kingdom_4"), #Brittany
+          (item_get_slot, ":colors_begin", "$g_current_opened_item_details", slot_item_breton_materials_begin),
+          (item_get_slot, ":colors_end", "$g_current_opened_item_details", slot_item_breton_materials_end),
+        (try_end),
+
         (try_begin), #color toggler
           (gt, "$g_presentation_credits_obj_3", -1),
           (eq, ":object", "$g_presentation_credits_obj_3"), #combolabel, switch colours
           # (item_get_slot, ":cur_color", "$g_current_opened_item_details", slot_item_player_color),
           (store_sub, ":color", ":value", 1), #actual value, 0 is default
           (item_set_slot, "$g_current_opened_item_details", slot_item_player_color, ":color"),
+          (try_begin),
+            (neq, ":color", -1),
+            (store_add, "$g_presentation_credits_obj_4", "$g_presentation_obj_item_select_4", ":color"),
+          (try_end),
         (else_try), #actual item tableau
           (eq, ":object", "$g_presentation_credits_obj_1"), #tableau, switch view sides
           (val_add, "$g_custom_armor_angle", 1),
@@ -13742,7 +13767,7 @@ presentations = [
         (else_try), #reset to default, refresh
           (eq, ":object", "$g_presentation_obj_profile_banner_selection_1"),
           (try_for_range, ":slot_no", slot_item_player_slots_begin, slot_item_player_slots_end + 1),
-            (item_set_slot, "$g_current_opened_item_details", ":slot_no", -1),
+            (item_set_slot, "$g_current_opened_item_details", ":slot_no", "$custom_armour_current_colour"), #Reset to current colour
           (try_end),
         #(else_try), #prev
         #  (eq, ":object", "$g_presentation_credits_obj_4"),
@@ -13752,6 +13777,15 @@ presentations = [
         #  (val_add, "$g_current_opened_item_details", 1),
         (else_try), #close
           (eq, ":object", "$g_presentation_obj_profile_banner_selection_2"),
+          (assign, ":cont", 0),
+          (store_sub, ":color", ":value", 1), #actual value, 0 is default
+          (try_begin),
+            (is_between, "$g_talk_troop", armor_merchants_begin, armor_merchants_end),
+            (this_or_next|is_between, "$g_presentation_credits_obj_4", ":colors_begin", ":colors_end"),
+            (item_slot_eq, "$g_current_opened_item_details", slot_item_player_color, "$custom_armour_current_colour"),
+            (assign, ":cont", 1),
+          (try_end),
+          (eq, ":cont", 1),
           (assign, ":continue", -1),
           (try_begin),
             (neg|item_slot_eq, "$g_current_opened_item_details", slot_item_player_color, "$custom_armour_current_colour"),
@@ -13759,6 +13793,10 @@ presentations = [
           (try_end),
           (presentation_set_duration, 0),
           (start_mission_conversation, "$g_talk_troop"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_profile_banner_selection_2"),
+          (neg|is_between, "$g_presentation_credits_obj_4", ":colors_begin", ":colors_end"),
+          (display_message, "@Apologies, this is not one of our approved colours, therefore it will be treason to make. Please choose another"),
         (else_try), #go after presentation object stored in arrays, left side combos
           (gt, "$g_presentation_obj_item_select_1", 0),
           (assign, ":cur_mesh_slot", slot_item_player_slots_begin - 1),

@@ -1,4 +1,4 @@
-1144
+1165
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1143,3 +1143,24 @@ qstr_Breton_Captain Breton_Captain
 qstr_Disable_Companion_Co Disable_Companion_Complaints:
 qstr_{reg65}___selected_c {reg65}_-_selected_colour,_{reg66}_-_current_colour
 qstr_{reg65} {reg65}
+qstr_{reg65}___Color;_{re {reg65}_-_Color;_{reg66}_-_actual_value
+qstr_{reg66}___Value {reg66}_-_Value
+qstr_{reg65}___Color {reg65}_-_Color
+qstr_{reg65}___Color_Begi {reg65}_-_Color_Begin
+qstr_{reg66}___Choice {reg66}_-_Choice
+qstr_{reg66}___Choice;_{r {reg66}_-_Choice;_{reg67}_-_Value,_{reg68}_-_Colors_Begin
+qstr_{reg65}_String___{re {reg65}_String_-_{reg66}_Overlay_value
+qstr_CHANGE___{reg67}_Str CHANGE_-_{reg67}_String_-_{reg68}_-_Offset
+qstr_Default Default
+qstr_I_m_sorry_that_is_n I'm_sorry,_that_is_not_one_of_our_colours,_and_therefore,_it_is_treason_for_me_to_make_this.
+qstr_I_m_sorry_but_that_ I'm_sorry,_but_that_is_not_one_of_our_colors._Therefore,_making_them_for_you_will_be_considered_treason.^_Please_choose_another.
+qstr_I_m_sorry_but_that_i I'm_sorry,_but_that_is_not_one_of_our_colors._Therefore,_making_them_for_you_will_be_considered_treason._Please_choose_another.
+qstr_Colour_Set:_{reg65}_ Colour_Set:_{reg65}_-_Begin:_{reg66}_-_End:_{reg67}_-_Cur_Colour:_{reg68}
+qstr_Init_Colour:_{reg65} Init_Colour:_{reg65}
+qstr_Change_Colour:_{reg6 Change_Colour:_{reg66}
+qstr_Change_Colour:_{reg66 Change_Colour:_{reg66}_=_Offset:_{reg67}
+qstr_Current Current
+qstr_Reset_to_Current Reset_to_Current
+qstr_Apologies_this_is_n Apologies,_this_is_not_one_of_our_approved_colours,_therefore_it_will_be_treason_to_make._Please_choose_another
+qstr_Begin:_{reg68}_=_End Begin:_{reg68}_=_End:_{reg69}
+qstr_Change_Color Change_Color
