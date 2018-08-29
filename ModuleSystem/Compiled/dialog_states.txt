@@ -3214,7 +3214,7 @@ lord_leave
 lord_leave_give_quest
 enemy_lord_tell_mission
 lord_request_enlistment_confirm
-mayor_talk
+town_merchant_talk
 tailor_custom_armor_start
 tailor_custom_armor_ask
 tailor_custom_armor_choose
@@ -3755,6 +3755,7 @@ master_craftsman_auction_price
 master_craftsman_auction_decide
 master_craftsman_liquidation
 mayor_begin
+mayor_talk
 lord_persuade_lords_to_make_peace_completed
 lord_persuade_lords_to_make_peace_pay
 lord_persuade_lords_to_make_peace_no_pay
@@ -4202,7 +4203,6 @@ party_encounter_routed_agents_are_caught2
 sell_prisoner_outlaws
 sell_prisoner_outlaws_finished
 prisoner_chat_2
-town_merchant_talk
 trade_requested_weapons
 trade_requested_armor
 trade_requested_horse
