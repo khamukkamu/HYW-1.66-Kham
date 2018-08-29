@@ -102,12 +102,12 @@ party_templates = [
 ("kingdom_1_reinforcements_a", "kingdom_1_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_french_peasant,1,5),(trp_french_peasant_crossbowman,1,4),(trp_french_militia,1,4)]),
 ("kingdom_1_reinforcements_b", "kingdom_1_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_genoese_crossbowman,2,7),(trp_french_infantry,2,7),(trp_french_voulgier,1,2)] ),
 ("kingdom_1_reinforcements_c", "kingdom_1_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_french_chevalier_bachelier_a_pied,2,5),(trp_french_squire,2,5),(trp_french_chevalier_banneret,1,4)] ),
-("kingdom_1_reinforcements_d", "kingdom_1_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_coulveriners_f,2,20),(trp_french_pavisier,2,10),(trp_french_heavy_man_at_arms,1,5),(trp_french_chevalier_lancier,1,4),(trp_french_knight_bachelier,2,6)] ),
+("kingdom_1_reinforcements_d", "kingdom_1_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_french_pavisier,2,10),(trp_french_heavy_man_at_arms,1,5),(trp_french_chevalier_lancier,1,4),(trp_french_knight_bachelier,2,6)] ),
 
 ("kingdom_2_reinforcements_a", "kingdom_2_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_english_spearman,2,6),(trp_english_peasant,1,4),(trp_english_peasant_archer,1,8)] ),
 ("kingdom_2_reinforcements_b", "kingdom_2_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_english_longbowman,4,8),(trp_english_infantry,1,5),(trp_english_sergeant,1,2)] ),
 ("kingdom_2_reinforcements_c", "kingdom_2_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_english_squire,1,3),(trp_three_lions_guard,1,5),(trp_english_longbowman_captain, 1,3),(trp_english_billman,1,6),(trp_english_dismounted_knight,1,2)] ),
-("kingdom_2_reinforcements_d", "kingdom_2_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_coulveriners_anglais,5,20),(trp_english_captain,1,3),(trp_english_longbowman_captain, 1,3),(trp_three_lions_guard,1,5),(trp_english_billman,1,5),(trp_saint_georges_knight,1,2)] ),
+("kingdom_2_reinforcements_d", "kingdom_2_reinforcements_d", 0, 0, fac_commoners, 0, [(trp_english_captain,1,3),(trp_english_longbowman_captain, 1,3),(trp_three_lions_guard,1,5),(trp_english_billman,1,5),(trp_saint_georges_knight,1,2)] ),
 
 ("kingdom_3_reinforcements_a", "kingdom_3_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_burgundian_infantry,2,6),(trp_burgundian_peasant,1,6),(trp_burgundian_militia_archer,1,6)]),
 ("kingdom_3_reinforcements_b", "kingdom_3_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_burgundian_longbowman,2,7),(trp_burgundian_pikeman,2,6), (trp_burgundian_halberdier, 1,2), ] ),

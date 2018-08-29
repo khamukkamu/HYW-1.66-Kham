@@ -5197,7 +5197,7 @@ dialogs = [
   [anyone ,"reb_toulgook", [],"Parfais,bonne route Compagnon...Je ne sais quois t'offrir pour ton aide je ne posséde plus rien,mais je t'offre volontier mon cheval,c'est une tres bonne monture,va l'ami et que Dieu te protège.", "close_window",
     [
       #donner cheval /lancer quete/aparaitre ppartie village Toul
-      (troop_add_item, "trp_player", "itm_hunter_f", 0),
+      (troop_add_item, "trp_player", "itm_ho_hunting_horse_france", 0),
       (assign, "$sipastrouveplisi", 1),
       (party_set_flags, "p_toul_village", pf_disabled, 0),
       (party_set_flags, "p_toul_village", pf_always_visible, 1),
@@ -16481,7 +16481,7 @@ dialogs = [
       
       (try_begin),
         (troop_add_item, "$g_talk_troop", "itm_saddle_horse", 0),
-        (troop_add_item, "$g_talk_troop", "itm_courser", 0),
+        (troop_add_item, "$g_talk_troop", "itm_ho_courser_1", 0),
         (troop_add_item, "$g_talk_troop", "itm_a_nobleman_court_outfit_2",0),
         (troop_add_item, "$g_talk_troop", "itm_mail_long_surcoat_new_heraldic",0),
         (troop_add_item, "$g_talk_troop", "itm_a_gambeson_white",0),

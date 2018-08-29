@@ -2173,6 +2173,8 @@ slot_item_burgundy_materials_begin	=	97
 slot_item_burgundy_materials_end	=	98
 slot_item_breton_materials_begin	=	99
 slot_item_breton_materials_end		=	100
+slot_item_flemish_materials_begin	=	101
+slot_item_flemish_materials_end		=	102
 # Seek end
 
 custom_item_color_mask = 0xf

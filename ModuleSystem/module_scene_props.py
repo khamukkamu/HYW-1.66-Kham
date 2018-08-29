@@ -1367,7 +1367,7 @@ scene_props = [
   ("banner_kingdom_d", 0, "banner_kingdom_d", "0", []),
   ("banner_kingdom_e", 0, "banner_kingdom_e", "0", []),
   ("banner_kingdom_f", 0, "banner_kingdom_f", "0", []),
-  ("banner_f21", 0, "banner_a15", "0", []),
+  ("banner_f21", 0, "banner_bretagne", "0", []),
 
   ("tavern_chair_a",0,"tavern_chair_a","bo_tavern_chair_a", []),
   ("tavern_chair_b",0,"tavern_chair_b","bo_tavern_chair_b", []),

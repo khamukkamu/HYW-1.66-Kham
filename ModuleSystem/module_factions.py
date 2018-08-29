@@ -100,6 +100,8 @@ factions = [
 #mercenaires bretons
   ("cane_de_fer","Compagnie des Cranes de Fer", 0, 0.5,[("player_faction",0.00),("kingdom_1",0.00),("kingdom_2",0.00),("kingdom_3",0.00),("deserters", -0.00),("outlaws",-0.02),("black_khergits", 0.00),("kingdom_4",0.05),("sang_lys",0.00)], [], 0x999999),    
 
+  ### HYW Seek: Mercenary factions
+ ("flemish_mercenaries","Flemish Mercenary Company", 0, 0.5,[("player_faction",0.00),("kingdom_1",0.00),("kingdom_2",0.00),("kingdom_3",0.05),("deserters", -0.00),("outlaws",-0.02),("black_khergits", 0.00),("kingdom_4",0.00),("sang_lys",0.00)], [], 0x999999),    
 
   
 ]

@@ -336,20 +336,35 @@ troops = [
 #Mercenaries Begin
 ["watchman","Watchman","Watchmen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib_b,wp(85),knows_warrior_basic2,swadian_face_young_1,swadian_face_old_2],
 ["caravan_guard","Caravan_Guard","Caravan_Guards",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_commoners,[],def_attrib2,wp(95),knows_warrior_basic2,swadian_face_young_1,swadian_face_old_2],
-["mercenary_bowman","Mercenary bowman","Mercenary bowmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged,0,0,fac_commoners,[],def_attrib2_b,wp(90)|wp_crossbow(120),knows_warrior_normal,mercenary_face_1,mercenary_face_2],
-["mercenary_horseman","Mercenary Horseman","Mercenary Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_commoners,[],def_attrib2_b,wp(105),knows_warrior_normal,mercenary_face_1,mercenary_face_2],
-["mercenary_cavalry","Mercenary Cavalry","Mercenary Cavalry",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_commoners,[],def_attrib3,wp(125),knows_warrior_veteran,mercenary_face_1,mercenary_face_2],
+# ["mercenary_bowman","Mercenary bowman","Mercenary bowmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged,0,0,fac_commoners,[],def_attrib2_b,wp(90)|wp_crossbow(120),knows_warrior_normal,mercenary_face_1,mercenary_face_2],
+# ["mercenary_horseman","Mercenary Horseman","Mercenary Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_commoners,[],def_attrib2_b,wp(105),knows_warrior_normal,mercenary_face_1,mercenary_face_2],
+# ["mercenary_cavalry","Mercenary Cavalry","Mercenary Cavalry",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_commoners,[],def_attrib3,wp(125),knows_warrior_veteran,mercenary_face_1,mercenary_face_2],
 ["mercenary_swordsman","Mercenary Swordsman","Mercenary Swordsmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield,0,0,fac_commoners,[],def_attrib2_b,wp(105),knows_warrior_normal,0x000000000710701036d26cbb59a5e6db00000000001db6db0000000000000000,0x000000000710801236d26cbb59a5e6db00000000001db6db0000000000000000],
 ["genoese_crossbowman","Genoese Crossbowman","Genoese Crossbowmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged,0,0,fac_neutral,[],def_attrib3,wp(160),knows_warrior_elite,0x000000000710a05236d26cbb59a5e6db00000000001db6db0000000000000000,0x000000003e10b0d236d26cbb59a5e6db00000000001db6db0000000000000000],
-["german_knight","German Mercenary","German Mercenaries",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse,0,0,fac_commoners,[],def_attrib3,wp(140),knows_warrior_veteran,swadian_face_young_1,swadian_face_old_2],
+# ["german_knight","German Mercenary","German Mercenaries",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse,0,0,fac_commoners,[],def_attrib3,wp(140),knows_warrior_veteran,swadian_face_young_1,swadian_face_old_2],
 ["hired_blade","Hired Blade","Hired Blades",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_commoners,[],def_attrib3,wp(130),knows_warrior_veteran,mercenary_face_1,mercenary_face_2],
 
-["swiss_veteran_halberdier","Swiss Halberdier","Swiss Halberdiers",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_neutral,[],def_attrib3_b,wp_melee(220),knows_warrior_elite,swadian_face_young_1,man_face_young_2],
+# ["swiss_veteran_halberdier","Swiss Halberdier","Swiss Halberdiers",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_neutral,[],def_attrib3_b,wp_melee(220),knows_warrior_elite,swadian_face_young_1,man_face_young_2],
+############################################################################################################## HYW New mercenaries
+### Flemish
+["flemish_peasant_crossbowman", "Flemish Camp Guard", "Flemish Camp Guards", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged, no_scene, reserved, fac_flemish_mercenaries, [itm_h_hood_yellow,itm_h_hood_yellow_brown,itm_h_hood_black,itm_h_arming_cap,itm_h_simple_coif,itm_a_peasant_man_custom,itm_b_hosen_poulaines_custom,itm_hunting_crossbow,itm_bolts,itm_w_archer_hatchet,itm_w_archers_maul,itm_w_goedendag,itm_w_spiked_club,itm_w_mace_knobbed,itm_w_dagger_bollock,itm_w_dagger_pikeman,itm_tab_shield_pavise_a], level(12)|str_13|agi_12, wpex(100,80,80,80,140,80), knows_ironflesh_2|knows_power_strike_1|knows_shield_1|knows_athletics_3|knows_weapon_master_1, swadian_face_young_1, swadian_face_old_2 ],
+["flemish_militia_crossbowman", "Flemish Light Crossbowman", "Flemish Light Crossbowmen", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged, no_scene, reserved, fac_flemish_mercenaries, [itm_h_pot_helmet_hood_custom,itm_h_round_kettlehat_hood_custom,itm_h_kettlehat_hood_custom,itm_h_kettlehat_2_hood_custom,itm_h_kettlehat_3_hood_custom,itm_h_kettlehat_4_hood_custom,itm_a_padded_cloth_custom,itm_b_hosen_poulaines_custom,itm_b_wrapping_boots,itm_light_crossbow,itm_bolts,itm_w_onehanded_sword_a,itm_w_onehanded_sword_c,itm_w_onehanded_sword_c_small,itm_w_onehanded_sword_d,itm_w_onehanded_war_axe_2,itm_w_archer_hatchet,itm_w_archers_maul,itm_w_goedendag,itm_w_spiked_club,itm_w_mace_knobbed,itm_w_mace_spiked,itm_tab_shield_pavise_b], level(12)|str_13|agi_12, wpex(100,80,80,80,140,80), knows_ironflesh_2|knows_power_strike_1|knows_shield_1|knows_athletics_3|knows_weapon_master_1, swadian_face_young_1, swadian_face_old_2 ],
+["flemish_crossbowman", "Flemish_Crossbowman", "Flemish_Crossbowmen", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_ranged, no_scene, reserved, fac_flemish_mercenaries, [itm_h_round_kettlehat_padded,itm_h_kettlehat_2_padded,itm_h_kettlehat_padded,itm_h_kettlehat_3_padded,itm_h_kettlehat_4_padded,itm_a_aketon_narf_custom,itm_a_aketon_jackchain_narf_custom,itm_a_aketon_plate_hose_narf_custom,itm_a_aketon_jackchain_plate_hose_narf_custom,itm_b_leather_boots,itm_g_leather_gauntlet,itm_b_hosen_poulaines_custom,itm_b_hosen_shoes_custom,itm_crossbow,itm_bolts,itm_w_onehanded_sword_c_small,itm_w_onehanded_sword_d,itm_w_onehanded_sword_c,itm_w_onehanded_sword_a,itm_w_onehanded_messer,itm_w_onehanded_war_axe_2,itm_w_onehanded_war_axe_3,itm_w_onehanded_war_axe_4,itm_w_mace_winged,itm_w_warhammer_1,itm_w_warhammer_2,itm_w_goedendag,itm_tab_shield_pavise_c], level(16)|str_15|agi_13, wpex(120,80,80,80,160,80), knows_ironflesh_3|knows_power_strike_2|knows_shield_2|knows_weapon_master_2, swadian_face_young_1, swadian_face_old_2 ],
+["flemish_heavy_crossbowman", "Flemish_Heavy_Crossbowman", "Flemish_Heavy_Crossbowmen", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_ranged, no_scene, reserved, fac_flemish_mercenaries, [itm_h_kettlehat_mail,itm_h_kettlehat_gorget,itm_h_kettlehat_2_mail,itm_h_kettlehat_2_gorget,itm_h_kettlehat_3_mail,itm_h_kettlehat_3_gorget,itm_h_kettlehat_4_mail,itm_h_kettlehat_4_gorget,itm_a_hauberk_narf,itm_a_hauberk_narf_plate_hose,itm_a_hauberk_narf_full_plate_hose,itm_a_hauberk_narf_jackchain,itm_a_hauberk_narf_jackchain_plate_hose,itm_a_hauberk_narf_jackchain_full_plate_hose,itm_b_leather_boots,itm_g_leather_gauntlet,itm_b_hosen_shoes_custom,itm_heavy_crossbow,itm_steel_bolts,itm_w_onehanded_sword_flemish,itm_w_onehanded_messer,itm_w_onehanded_sword_ritter,itm_w_onehanded_sword_ritter_2,itm_w_onehanded_sword_flemish,itm_w_onehanded_war_axe,itm_w_onehanded_war_axe_4,itm_w_warhammer_1,itm_w_warhammer_2,itm_tab_shield_pavise_e], level(22)|str_17|agi_15, wpex(140,80,80,80,180,80), knows_ironflesh_4|knows_power_strike_3|knows_shield_3|knows_athletics_3|knows_weapon_master_3, swadian_face_young_1, swadian_face_old_2 ],
 
-#,
+["flemish_militia_pikeman", "Flemish Infantry", "Flemish Infantries", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_flemish_mercenaries, [itm_h_padded_coif_black,itm_h_padded_coif_yellow,itm_h_padded_coif_black,itm_h_mail_coif_balaclava,itm_h_mail_coif,itm_h_chapel_de_fer_1_hood_custom,itm_h_chapel_de_fer_2_hood_custom,itm_h_chapel_de_fer_3_hood_custom,itm_h_chapel_de_fer_4_hood_custom,itm_a_gambeson_narf_custom,itm_b_hosen_shoes_custom,itm_b_leather_boots,itm_g_leather_gauntlet,itm_w_pike_1,itm_w_onehanded_sword_a,itm_w_onehanded_sword_c,itm_w_onehanded_sword_c_small,itm_w_onehanded_sword_d,itm_s_steel_buckler,itm_h_highlander_beret_yellow,itm_h_highlander_beret_black,itm_h_highlander_beret_black_2,itm_h_highlander_beret_yellow_2], level(10)|str_14|agi_10, wpex(100,100,120,100,100,100), knows_ironflesh_3|knows_power_strike_2|knows_athletics_3|knows_weapon_master_1, swadian_face_young_1, swadian_face_old_2 ],
+ ["flemish_pikeman", "Flemish Pikeman", "Flemish Pikemen", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_flemish_mercenaries, [itm_h_chapel_de_fer_1_padded,itm_h_chapel_de_fer_2_padded,itm_h_chapel_de_fer_3_padded,itm_h_chapel_de_fer_4_padded,itm_a_brigandine_narf_padded_custom,itm_a_brigandine_narf_padded_plate_hose_custom,itm_b_leather_boots,itm_g_leather_gauntlet,itm_w_pike_1,itm_w_onehanded_messer,itm_w_onehanded_sword_ritter,itm_w_onehanded_sword_ritter_2,itm_w_onehanded_sword_flemish,itm_s_steel_buckler,itm_h_sallet_padded], level(15)|str_16|agi_12, wpex(100,100,150,100,100,100), knows_ironflesh_4|knows_power_strike_3|knows_athletics_3|knows_weapon_master_2, swadian_face_young_1, swadian_face_old_2 ],
+["flemish_heavy_pikeman", "Flemish Heavy Pikeman", "Flemish Heavy Pikemen", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_flemish_mercenaries, [itm_h_chapel_de_fer_1_mail,itm_h_chapel_de_fer_1_gorget,itm_h_chapel_de_fer_2_mail,itm_h_chapel_de_fer_2_gorget,itm_h_chapel_de_fer_3_mail,itm_h_chapel_de_fer_3_gorget,itm_h_chapel_de_fer_4_mail,itm_h_chapel_de_fer_4_gorget,itm_a_brigandine_narf_padded_plate_disc_plate_hose_custom,itm_a_brigandine_narf_padded_plate_disc_full_plate_hose_custom,itm_a_brigandine_narf_padded_plate_custom,itm_a_brigandine_narf_padded_plate_plate_hose_custom,itm_b_steel_greaves,itm_b_steel_greaves_full,itm_s_steel_buckler,itm_w_pike_1,itm_w_onehanded_sword_flemish,itm_w_onehanded_sword_flemish,itm_w_onehanded_messer,itm_w_onehanded_sword_ritter,itm_w_onehanded_sword_ritter_2,itm_h_sallet_mail,itm_h_sallet_gorget,itm_g_finger_gauntlets,itm_g_demi_gauntlets], level(20)|str_18|agi_15, wpex(100,100,180,100,100,100), knows_warrior_basic2|knows_ironflesh_5|knows_power_strike_4|knows_athletics_3|knows_weapon_master_3, swadian_face_young_1, swadian_face_old_2 ],
 
-["coulveriners","Couleuvrinier","Couleuvriniers",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged,0,0,fac_neutral,[],def_attrib3,wp(160),knows_warrior_elite,0x000000003e1010d236d26cbb59a5e6db00000000001db6db0000000000000000,0x000000000010311236d26cbb59a5e6db00000000001db6db0000000000000000],
-["arquebusier","Arquebusier","Arquebusiers",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged,0,0,fac_neutral,[],def_attrib2_b,wp(160),knows_warrior_veteran,0x000000000010419236d26cbb59a5e6db00000000001db6db0000000000000000,0x000000000010521236d26cbb59a5e6db00000000001db6db0000000000000000],
+ ["flemish_halberdier", "Flemish Halberdier", "Flemish Halberdier", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_polearm, no_scene, reserved, fac_flemish_mercenaries, [itm_h_kettlehat_eyeslot_padded,itm_h_kettlehat_padded,itm_h_kettlehat_2_padded,itm_h_kettlehat_3_padded,itm_h_kettlehat_4_padded,itm_h_round_kettlehat_padded,itm_a_churburg_narf_custom,itm_b_leather_boots,itm_g_leather_gauntlet,itm_b_hosen_poulaines_custom,itm_w_halberd_9,itm_w_halberd_10,itm_w_halberd_11,itm_w_halberd_12,itm_h_sallet_padded], level(15)|str_15|agi_13, wpex(100,100,140,100,100,100), knows_ironflesh_3|knows_power_strike_4|knows_athletics_3|knows_weapon_master_2, swadian_face_young_1, swadian_face_old_2 ],
+["flemish_heavy_halberdier", "Flemish Heavy Halberdier", "Flemish Heavy Halberdiers", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_polearm, no_scene, reserved, fac_flemish_mercenaries, [itm_h_kettlehat_eyeslot_mail,itm_h_kettlehat_eyeslot_gorget,itm_h_kettlehat_gorget,itm_h_kettlehat_mail,itm_h_kettlehat_2_mail,itm_h_kettlehat_2_gorget,itm_h_kettlehat_3_mail,itm_h_kettlehat_3_gorget,itm_h_kettlehat_4_mail,itm_h_kettlehat_4_gorget,itm_h_round_kettlehat_mail,itm_h_round_kettlehat_gorget,itm_a_corrazina_narf_custom,itm_b_steel_greaves,itm_w_halberd_flemish,itm_h_sallet_mail,itm_h_sallet_gorget,itm_g_demi_gauntlets,itm_g_finger_gauntlets], level(20)|str_17|agi_16, wpex(100,100,160,100,100,100), knows_ironflesh_4|knows_power_strike_5|knows_athletics_3|knows_weapon_master_3, swadian_face_young_1, swadian_face_old_2 ],
+
+["mercenary_german_knight", "German Knight", "German Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_flemish_mercenaries, [itm_h_bascinet_great_fi,itm_h_klappvisier_pigface,itm_h_houndskull_fi,itm_a_gothic_armour_narf,itm_b_shynbaulds,itm_g_hourglass_gauntlets,itm_w_lance_1,itm_w_lance_2,itm_w_lance_3,itm_w_lance_4,itm_w_lance_5,itm_w_lance_6,itm_w_onehanded_sword_knight,itm_w_onehanded_sword_ritter,itm_w_onehanded_sword_knight_2,itm_w_onehanded_sword_ritter_2,itm_w_german_knight_axe,itm_w_german_knight_axe_2,itm_s_heater_shield_a2,itm_s_heater_shield_c1,itm_s_heater_shield_c2,itm_ho_horse_barded_brown,itm_ho_horse_barded_brown_chamfrom,itm_ho_horse_barded_black_chamfrom,itm_ho_horse_barded_black], def_attrib3, wp_melee(110), knows_warrior_normal, swadian_face_middle_1, swadian_face_older_2 ],
+["mercenary_german_dismounted_knight", "German Dismounted Knight", "German Dismounted Knights", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_flemish_mercenaries, [itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_fi,itm_a_early_transitional_narf_custom,itm_b_shynbaulds,itm_g_wisby_gauntlets_black,itm_g_wisby_gauntlets_red,itm_w_bastard_sword_german,itm_w_german_knight_axe,itm_w_german_knight_axe_2,itm_s_heater_shield_a2,itm_s_heater_shield_c1,itm_s_heater_shield_c2,itm_w_polehammer_lucern,itm_w_bec_de_corbin,itm_w_bastard_sword_german], def_attrib3, wp_melee(110), knows_warrior_normal, swadian_face_middle_1, swadian_face_older_2 ],
+
+############################################################################################################### HYW New Mercenaries End
+# ["coulveriners","Couleuvrinier","Couleuvriniers",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged,0,0,fac_neutral,[],def_attrib3,wp(160),knows_warrior_elite,0x000000003e1010d236d26cbb59a5e6db00000000001db6db0000000000000000,0x000000000010311236d26cbb59a5e6db00000000001db6db0000000000000000],
+# ["arquebusier","Arquebusier","Arquebusiers",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged,0,0,fac_neutral,[],def_attrib2_b,wp(160),knows_warrior_veteran,0x000000000010419236d26cbb59a5e6db00000000001db6db0000000000000000,0x000000000010521236d26cbb59a5e6db00000000001db6db0000000000000000],
 ["sang_lysrecruit","Mercenaire du SansLys","Mercenaire du SansLys",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield,0,0,fac_commoners,[],def_attrib2_b,wp(130),knows_warrior_veteran,0x000000000010614036d26cbb59a5e6db00000000001db6db0000000000000000,0x000000000010714036d26cbb59a5e6db00000000001db6db0000000000000000],
 
 ["mercenaries_end","mercenaries_end","mercenaries_end",0,no_scene,reserved,fac_commoners,[],def_attrib|level(4),wp(60),knows_common,mercenary_face_1,mercenary_face_2],
@@ -358,19 +373,6 @@ troops = [
 #Not used
 ["recruiter","Recruiter","Recruiter",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_neutral,[],def_attrib|agi_21|int_30|cha_21|level(25),wp(130),knows_common|knows_riding_7|knows_horse_archery_5|knows_leadership_7,swadian_face_young_1,swadian_face_old_2],
 
-#Farmer Upgrades
-["monk","Millicien","Millicien",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib_b,wp(75),knows_warrior_basic,man_face_young_1,man_face_older_2],
-["lumberman","Boureau","Boureau",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib2,wp(80),knows_warrior_basic2,swadian_face_young_1,swadian_face_old_2],
-["priest","Piquier millicien","Piquiers milliciens",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib2,wp(80),knows_warrior_basic2,man_face_young_1,man_face_older_2],
-["executioner","Executioner","Executioners",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib2,wp(95),knows_warrior_normal,swadian_face_young_1,swadian_face_old_2],
-["sentry","Sentry","Sentries",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib2,wp(95),knows_warrior_normal,swadian_face_young_1,swadian_face_old_2],
-["chaplain","Piquier millicien lourd","Piquiers milliciens lourds",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib2,wp(95),knows_warrior_normal,swadian_face_young_1,swadian_face_old_2],
-["torturer","Tortionaire","Tortionaires",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib2_b,wp(110),knows_warrior_veteran,swadian_face_young_1,swadian_face_old_2],
-["city_guard","City_Guard","City_Guards",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[],def_attrib2_b,wp(110),knows_warrior_veteran,swadian_face_young_1,swadian_face_old_2],
-["bishop","Hallbardier","Hallbardiers",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves,0,0,fac_commoners,[],def_attrib2_b,wp(110),knows_warrior_veteran,swadian_face_young_1,swadian_face_old_2],
-["rider","Rider","Riders",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_commoners,[],def_attrib2,wp(95),knows_warrior_normal,swadian_face_young_1,swadian_face_old_2],
-["master_rider","Master_Rider","Master_Riders",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse,0,0,fac_commoners,[],def_attrib2_b,wp(110),knows_warrior_veteran,swadian_face_young_1,swadian_face_old_2],
-#Farmer Upgrades END
 
 ##################################################################################################################################################################################################################################################################################################################
 ###################################################################################################### HYW FRENCH TROOPS #########################################################################################################################################################################################
@@ -404,10 +406,10 @@ troops = [
 ["french_chevalier_banneret_a_pied", "French_Chevalier_Banneret_a_Pieds", "French_Chevalier_Banneret_a_Pieds", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield, no_scene, reserved, fac_kingdom_1, [itm_h_klappvisier_pigface_open,itm_h_klappvisier_pigface,itm_h_hounskull_narf,itm_h_zitta_bascinet,itm_heraldic_churburg_13_tabard,itm_heraldic_churburg_13_brass_tabard,itm_b_steel_greaves_full,itm_g_hourglass_gauntlets,itm_g_plate_mittens,itm_w_bastard_sword_duke,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_sempach,itm_w_bastard_sword_duke_2,itm_w_bastard_sword_landgraf_2,itm_w_bastard_sword_sempach_2,itm_w_twohanded_sword_steward,itm_w_twohanded_talhoffer,itm_w_twohanded_sword_steward_2,itm_w_twohanded_talhoffer_2,itm_w_poleaxe_3,itm_w_poleaxe_2,itm_w_poleaxe_1,itm_w_polehammer_1,itm_w_polehammer_2,itm_w_bec_de_corbin,itm_w_twohanded_war_axe_3,itm_s_heraldic_shield_a1,itm_s_heraldic_shield_c1,itm_s_heraldic_shield_c2,itm_h_bascinet_great_fi], def_attrib3_b, wp_melee(120), knows_warrior_veteran, swadian_face_young_1, swadian_face_old_2 ],
 ["french_chevalier_lancier_a_pied", "Lancier_francais_a_pieds", "Lancier_francais_a_pieds", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield, no_scene, reserved, fac_kingdom_1, [itm_h_bascinet_great,itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_heraldic_plate,itm_b_shynbaulds,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_w_twohanded_war_axe_3,itm_w_twohanded_talhoffer_2,itm_w_twohanded_sword_steward_2,itm_w_twohanded_talhoffer,itm_w_twohanded_sword_steward,itm_w_poleaxe_3,itm_w_poleaxe_2,itm_w_poleaxe_1,itm_w_polehammer_2,itm_w_polehammer_1,itm_w_bec_de_corbin,itm_h_bascinet_great_fi], def_attrib3_b, wp_melee(140), knows_warrior_elite, swadian_face_young_1, swadian_face_old_2 ],
 
-["french_squire", "French_Ecuyer", "French_Ecuyers", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_1, [itm_h_mail_coif,itm_h_mail_coif_balaclava,itm_h_kettlehat_painted_hood_custom,itm_h_kettlehat_hood_custom,itm_h_bascinet_fi_hood_custom,itm_heraldic_tunic_new,itm_heraldic_mail_tabard,itm_b_steel_greaves,itm_b_mail_boots,itm_b_mail_chausses,itm_g_mail_gauntlets], def_attrib2_b, wp_melee(95), knows_warrior_normal, swadian_face_middle_1, swadian_face_older_2 ],
-["french_knight_bachelier","French_Chevalier_Bachelier","French_Chevalier_Bacheliers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm,0,0,fac_kingdom_1,[],def_attrib3,wp_melee(110),knows_warrior_normal,swadian_face_middle_1,swadian_face_older_2],
-["french_chevalier_banneret","French_Chevalier_Banneret","French_Chevalier_Bannerets",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm,0,0,fac_kingdom_1,[],def_attrib3_b,wp_melee(120),knows_warrior_veteran,swadian_face_middle_1,swadian_face_older_2],
-["french_chevalier_lancier","Lancier_francais","Lancier_francais",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm,0,0,fac_kingdom_1,[],def_attrib3_b,wp_melee(140),knows_warrior_elite,swadian_face_middle_1,swadian_face_older_2],
+["french_squire", "French_Ecuyer", "French_Ecuyers", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_1, [itm_h_mail_coif,itm_h_mail_coif_balaclava,itm_h_kettlehat_painted_hood_custom,itm_h_kettlehat_hood_custom,itm_h_bascinet_fi_hood_custom,itm_heraldic_tunic_new,itm_heraldic_mail_tabard,itm_b_mail_boots,itm_b_mail_chausses,itm_g_mail_gauntlets,itm_w_onehanded_sword_squire,itm_w_onehanded_sword_squire_2,itm_w_onehanded_sword_hospitaller_2,itm_w_onehanded_sword_templar,itm_w_onehanded_sword_templar_2,itm_w_onehanded_sword_hospitaller,itm_w_onehanded_sword_d_long,itm_w_onehanded_sword_c_long,itm_w_onehanded_sword_a_long,itm_w_light_lance,itm_w_native_spear_b,itm_w_native_spear_f,itm_w_horseman_axe_1,itm_tab_shield_kite_cav_a,itm_w_mace_winged,itm_w_mace_spiked,itm_ho_rouncey_1,itm_ho_rouncey_2,itm_ho_rouncey_3,itm_ho_rouncey_4,itm_ho_rouncey_5,itm_ho_rouncey_6], def_attrib2_b, wp_melee(95), knows_warrior_normal, swadian_face_middle_1, swadian_face_older_2 ],
+["french_knight_bachelier", "French_Chevalier_Bachelier", "French_Chevalier_Bacheliers", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_1, [itm_h_bascinet_fi_noseguard,itm_h_zitta_bascinet_novisor,itm_h_bascinet_oniontop,itm_h_bascinet_fi_mail,itm_h_houndskull_fi,itm_h_klappvisier_pigface_open,itm_h_klappvisier_pigface,itm_h_hounskull_narf,itm_a_coat_of_plates_custom,itm_b_mail_boots,itm_b_mail_chausses,itm_g_mail_gauntlets,itm_w_onehanded_sword_knight,itm_w_onehanded_sword_squire,itm_w_onehanded_sword_laird,itm_w_onehanded_sword_poitiers,itm_w_onehanded_sword_knight_2,itm_w_onehanded_sword_poitiers_2,itm_w_onehanded_sword_squire_2,itm_w_onehanded_sword_laird_2,itm_w_horseman_axe_1,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_w_knight_warhammer_1,itm_w_knight_winged_mace,itm_w_knight_warhammer_2,itm_w_lance_1,itm_w_lance_2,itm_w_lance_3,itm_w_lance_4,itm_w_lance_5,itm_w_lance_6,itm_ho_courser_1,itm_ho_courser_2,itm_ho_courser_3,itm_ho_courser_4,itm_ho_courser_5,itm_ho_courser_6,itm_ho_courser_7,itm_ho_courser_8,itm_ho_courser_9,itm_ho_courser_10,itm_s_heater_shield_b2,itm_s_heater_shield_d1,itm_s_heraldic_shield_a1,itm_s_heraldic_shield_c1,itm_s_heraldic_shield_c2], def_attrib3, wp_melee(110), knows_warrior_normal, swadian_face_middle_1, swadian_face_older_2 ],
+["french_chevalier_banneret", "French_Chevalier_Banneret", "French_Chevalier_Bannerets", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_1, [itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_fi,itm_h_zitta_bascinet_novisor,itm_h_bascinet_oniontop,itm_heraldic_churburg_13_tabard,itm_heraldic_churburg_13_brass_tabard,itm_heraldic_early_transitional,itm_b_steel_greaves,itm_b_shynbaulds,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_w_onehanded_sword_knight,itm_w_onehanded_sword_laird,itm_w_onehanded_sword_poitiers,itm_w_onehanded_sword_prince,itm_w_onehanded_sword_knight_2,itm_w_onehanded_sword_laird_2,itm_w_onehanded_sword_poitiers_2,itm_w_onehanded_sword_prince_2,itm_w_bastard_sword_agincourt,itm_w_bastard_sword_crecy,itm_w_bastard_sword_agincourt_2,itm_w_bastard_sword_crecy_2,itm_w_horseman_axe_3,itm_w_horseman_axe_2,itm_w_knight_warhammer_2,itm_w_knight_warhammer_1,itm_w_knight_winged_mace,itm_w_lance_colored_french_1,itm_w_lance_colored_french_2,itm_w_lance_colored_french_3,itm_ho_horse_barded_white,itm_ho_horse_barded_blue,itm_ho_horse_barded_white_chamfrom,itm_ho_horse_barded_blue_chamfrom,itm_s_heraldic_shield_c1,itm_s_heraldic_shield_c2,itm_s_heraldic_shield_a1], def_attrib3_b, wp_melee(120), knows_warrior_veteran, swadian_face_middle_1, swadian_face_older_2 ],
+["french_chevalier_lancier", "Lancier_francais", "Lancier_francais", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_1, [itm_h_bascinet_great,itm_h_bascinet_great_fi,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_houndskull_fi,itm_heraldic_plate,itm_g_plate_mittens,itm_b_steel_greaves_full,itm_b_shynbaulds,itm_w_lance_colored_french_1,itm_w_lance_colored_french_2,itm_w_lance_colored_french_3,itm_w_bastard_sword_d,itm_w_bastard_sword_c,itm_w_bastard_sword_agincourt,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_sempach,itm_w_bastard_sword_crecy,itm_w_bastard_sword_agincourt_2,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_landgraf_2,itm_w_bastard_sword_sempach_2,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_w_knight_battle_axe,itm_w_knight_warhammer_2,itm_w_knight_warhammer_1,itm_w_knight_winged_mace,itm_s_kite_shield_a1,itm_s_kite_shield_c1,itm_s_kite_shield_c2,itm_s_kite_shield_d1,itm_s_kite_shield_d2,itm_ho_war_horse_france_1,itm_ho_war_horse_france_2,itm_ho_war_horse_france_3], def_attrib3_b, wp_melee(140), knows_warrior_elite, swadian_face_middle_1, swadian_face_older_2 ],
 
 ## END French Main Troops
 
@@ -453,10 +455,10 @@ troops = [
 ["three_lions_guard", "Three_Lions_Guard", "Three_Lions_Guards", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_english, no_scene, reserved, fac_kingdom_2, [itm_h_bascinet_great,itm_h_bascinet_great_fi,itm_h_zitta_bascinet_novisor,itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_fi,itm_a_plate_english,itm_b_shynbaulds,itm_b_steel_greaves_full,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_g_plate_mittens,itm_a_churburg_narf_mail,itm_heraldic_churburg_13_tabard,itm_heraldic_churburg_13_brass_tabard,itm_w_poleaxe_english,itm_w_poleaxe_3,itm_w_poleaxe_2,itm_w_poleaxe_1,itm_w_polehammer_1,itm_w_polehammer_2,itm_w_bec_de_corbin,itm_w_twohanded_sword_steward,itm_w_twohanded_talhoffer,itm_w_twohanded_sword_steward_2,itm_w_twohanded_talhoffer_2,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_w_bastard_sword_d,itm_w_bastard_sword_english,itm_w_bastard_sword_agincourt,itm_w_bastard_sword_crecy,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_agincourt_2,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_landgraf_2,itm_s_battle_shield_a1,itm_s_battle_shield_a2,itm_s_battle_shield_b1,itm_s_battle_shield_b2], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_older_1 ],
 ["english_longbowman_captain", "English_Longbowman_Captain", "English_Longbowman_Captains", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged|tf_english, no_scene, reserved, fac_kingdom_2, [itm_h_zitta_bascinet_novisor,itm_h_bascinet_fi_noseguard,itm_h_bascinet_fi_mail,itm_a_brigandine_narf_padded_plate_hose_custom,itm_a_brigandine_narf_padded_full_plate_hose_custom,itm_b_leather_boots,itm_g_demi_gauntlets,itm_g_finger_gauntlets,itm_b_steel_greaves,itm_w_long_bow_yew,itm_arrows_b,itm_arrows_b,itm_arrows_b,itm_w_onehanded_sword_longbowman,itm_w_onehanded_sword_knight,itm_w_onehanded_sword_poitiers,itm_w_onehanded_sword_squire,itm_w_onehanded_sword_knight_2,itm_w_onehanded_sword_poitiers_2,itm_w_onehanded_sword_squire_2,itm_s_steel_buckler], def_attrib3_b, wp(155), knows_weapon_master_10|knows_ironflesh_7|knows_athletics_7|knows_riding_4|knows_power_strike_6|knows_shield_4|knows_inventory_management_4|knows_power_throw_5|knows_power_draw_10, vaegir_face_middle_2, vaegir_face_older_2 ],
 
-["english_squire", "English_Squire", "English_Squires", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_english, no_scene, reserved, fac_kingdom_2, [], def_attrib2_b, wp_melee(95), knows_warrior_normal, vaegir_face_young_2, vaegir_face_older_1 ],
-["english_knight", "English_Knight", "English_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_english, no_scene, reserved, fac_kingdom_2, [], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_old_2 ],
-["english_heavy_knight", "English_Heavy_Knight", "English_Heavy_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_english, no_scene, reserved, fac_kingdom_2, [], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_old_2 ],
-["saint_georges_knight", "Order_Of_Saint_Georges_Knight", "Order_Of_Saint_Georges_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_english, no_scene, reserved, fac_kingdom_2, [], def_attrib3_b, wp_melee(140), knows_warrior_elite, vaegir_face_middle_2, vaegir_face_older_2 ],
+["english_squire", "English_Squire", "English_Squires", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_english, no_scene, reserved, fac_kingdom_2, [itm_h_round_kettlehat_painted_hood_custom,itm_h_round_kettlehat_hood_custom,itm_h_cerveliere_hood_custom,itm_heraldic_tunic_new,itm_b_mail_boots,itm_b_mail_chausses,itm_g_mail_gauntlets,itm_h_mail_coif,itm_h_mail_coif_balaclava,itm_w_onehanded_sword_a_long,itm_w_onehanded_sword_c_long,itm_w_onehanded_sword_d_long,itm_w_onehanded_sword_hospitaller,itm_w_onehanded_sword_squire,itm_w_onehanded_sword_templar,itm_w_onehanded_sword_hospitaller_2,itm_w_onehanded_sword_squire_2,itm_w_onehanded_sword_templar_2,itm_w_horseman_axe_1,itm_w_mace_english,itm_w_mace_winged,itm_w_light_lance,itm_w_native_spear_b,itm_w_native_spear_f,itm_tab_shield_kite_cav_a,itm_ho_rouncey_6,itm_ho_rouncey_5,itm_ho_rouncey_4,itm_ho_rouncey_3,itm_ho_rouncey_2,itm_ho_rouncey_1], def_attrib2_b, wp_melee(95), knows_warrior_normal, vaegir_face_young_2, vaegir_face_older_1 ],
+["english_knight", "English_Knight", "English_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_english, no_scene, reserved, fac_kingdom_2, [itm_h_bascinet_fi_mail,itm_h_bascinet_oniontop,itm_h_zitta_bascinet_novisor,itm_h_bascinet_fi_noseguard,itm_h_klappvisier_pigface_open,itm_h_klappvisier_pigface,itm_heraldic_early_transitional,itm_a_coat_of_plates_custom,itm_b_mail_boots,itm_b_mail_chausses,itm_g_mail_gauntlets,itm_w_onehanded_sword_caithness,itm_w_onehanded_sword_knight,itm_w_onehanded_sword_laird,itm_w_onehanded_sword_hospitaller,itm_w_onehanded_sword_templar,itm_w_onehanded_sword_squire,itm_w_onehanded_sword_knight_2,itm_w_onehanded_sword_laird_2,itm_w_onehanded_sword_caithness_2,itm_w_onehanded_sword_squire_2,itm_w_onehanded_sword_templar_2,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_w_horseman_axe_1,itm_w_knight_winged_mace,itm_w_mace_english,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_battle_axe,itm_w_lance_1,itm_w_lance_6,itm_w_lance_5,itm_w_lance_4,itm_w_lance_3,itm_w_lance_2,itm_ho_rouncey_1,itm_ho_rouncey_2,itm_ho_rouncey_3,itm_ho_rouncey_4,itm_ho_rouncey_5,itm_ho_rouncey_6,itm_s_heater_shield_d2,itm_s_heraldic_shield_a2,itm_s_heraldic_shield_b1,itm_s_heraldic_shield_b2,itm_s_heraldic_shield_d2], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_old_2 ],
+["english_heavy_knight", "English_Heavy_Knight", "English_Heavy_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_english, no_scene, reserved, fac_kingdom_2, [itm_h_bascinet_great_fi,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_fi,itm_h_bascinet_fi_noseguard,itm_h_zitta_bascinet_novisor,itm_heraldic_early_transitional,itm_b_steel_greaves,itm_b_shynbaulds,itm_g_finger_gauntlets,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_ho_horse_barded_red,itm_ho_horse_barded_white,itm_ho_horse_barded_red,itm_ho_horse_barded_brown,itm_w_bastard_sword_english,itm_w_bastard_sword_agincourt,itm_w_bastard_sword_baron,itm_w_bastard_sword_crecy,itm_w_bastard_sword_agincourt_2,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_crecy_2,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_w_mace_english,itm_w_lance_colored_english_1,itm_w_lance_colored_english_2,itm_w_lance_colored_english_3,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_w_horseman_axe_1,itm_tab_shield_heater_cav_a], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_old_2 ],
+["saint_georges_knight", "Order_Of_Saint_Georges_Knight", "Order_Of_Saint_Georges_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_english, no_scene, reserved, fac_kingdom_2, [itm_h_bascinet_great,itm_h_bascinet_great_fi,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_houndskull_fi,itm_heraldic_churburg_13_brass_tabard,itm_heraldic_churburg_13_tabard,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_b_steel_greaves_full,itm_b_shynbaulds,itm_w_bastard_sword_d,itm_w_bastard_sword_english,itm_w_bastard_sword_agincourt,itm_w_bastard_sword_count,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_agincourt_2,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_count_2,itm_w_bastard_sword_sempach_2,itm_w_horseman_axe_3,itm_w_horseman_axe_2,itm_w_horseman_axe_1,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_w_mace_english,itm_s_heraldic_shield_a2,itm_s_heraldic_shield_b1,itm_s_heraldic_shield_b2,itm_s_heraldic_shield_d2,itm_ho_war_horse_england_1,itm_ho_war_horse_england_2,itm_ho_war_horse_england_3,itm_w_lance_colored_english_1,itm_w_lance_colored_english_2,itm_w_lance_colored_english_3], def_attrib3_b, wp_melee(140), knows_warrior_elite, vaegir_face_middle_2, vaegir_face_older_2 ],
 
 ## END English Main Troops
 ["vaegir_messenger", "English Messenger", "Vaegir Messengers", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged|tf_english, no_scene, reserved, fac_kingdom_2, [], def_attrib|agi_21|level(25), wp(130), knows_common|knows_riding_7|knows_horse_archery_5|knows_power_draw_5, vaegir_face_young_1, vaegir_face_older_2 ],
@@ -496,12 +498,12 @@ troops = [
 ["burgundian_guard", "Burgundian_Guard", "Burgundian_Guards", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_fi,itm_h_bascinet_fi_noseguard,itm_h_zitta_bascinet_novisor,itm_a_corrazina_narf_custom,itm_b_steel_greaves,itm_g_demi_gauntlets,itm_g_finger_gauntlets,itm_w_glaive_burgundy,itm_w_guisarme_burgundy,itm_w_polehammer_1,itm_w_polehammer_2,itm_w_polehammer_lucern,itm_w_poleaxe_3,itm_w_poleaxe_2,itm_w_poleaxe_1,itm_w_bastard_sword_d,itm_w_bastard_sword_c,itm_w_bastard_sword_baron,itm_w_bastard_sword_duke,itm_w_bastard_sword_count,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_duke_2,itm_w_bastard_sword_count_2,itm_w_knight_battle_axe,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_tab_shield_heater_d], def_attrib3, wp_melee(120), knows_warrior_normal, vaegir_face_young_2, vaegir_face_old_2 ],
 ["burgundian_elite_guard", "Burgundian_Elite_Guard", "Burgundian_Elite_Guards", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_polearm|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_h_bascinet_great,itm_h_bascinet_great_fi,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_houndskull_fi,itm_h_zitta_bascinet,itm_heraldic_churburg_13_tabard,itm_heraldic_churburg_13_brass_tabard,itm_b_steel_greaves_full,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_g_plate_mittens,itm_w_twohanded_sword_steward,itm_w_twohanded_talhoffer,itm_w_twohanded_sword_steward_2,itm_w_twohanded_talhoffer_2,itm_w_glaive_burgundy,itm_w_guisarme_burgundy,itm_w_bec_de_corbin,itm_w_halberd_flemish,itm_w_knight_battle_axe,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_w_bastard_sword_d,itm_w_bastard_sword_baron,itm_w_bastard_sword_count,itm_w_bastard_sword_duke,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_count_2,itm_w_bastard_sword_duke_2,itm_w_bastard_sword_landgraf_2,itm_tab_shield_heater_d], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_older_1 ],
 
-["burgundian_squire", "Burgundian_Squire", "Burgundian_Squires", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [], def_attrib2_b, wp_melee(95), knows_warrior_normal, vaegir_face_young_2, vaegir_face_older_1 ],
-["burgundian_knight", "Burgundian Knight", "Burgundian Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [], def_attrib3, wp_melee(110), knows_warrior_normal, vaegir_face_middle_2, vaegir_face_older_2 ],
-["burgundian_heavy_knight", "Burgundian_Heavy_Knight", "Burgundian_Heavy_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_old_2 ],
-["burgundian_iron_knight", "Burgundian_Iron_Knight", "Burgundian_Iron_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [], def_attrib3_b, wp_melee(140), knows_warrior_elite, vaegir_face_middle_2, vaegir_face_older_2 ],
+["burgundian_squire", "Burgundian_Squire", "Burgundian_Squires", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_h_chapel_de_fer_1_hood_custom,itm_h_chapel_de_fer_2_hood_custom,itm_h_chapel_de_fer_3_hood_custom,itm_heraldic_tunic_new,itm_h_mail_coif,itm_b_mail_chausses,itm_g_mail_gauntlets,itm_w_onehanded_sword_a_long,itm_w_onehanded_sword_c_long,itm_w_onehanded_sword_d_long,itm_w_onehanded_sword_squire,itm_w_onehanded_sword_squire_2,itm_w_onehanded_sword_ritter_2,itm_w_onehanded_sword_ritter,itm_w_horseman_axe_1,itm_w_mace_winged,itm_w_light_lance,itm_w_native_spear_b,itm_w_native_spear_f,itm_ho_rouncey_4,itm_ho_rouncey_5,itm_ho_rouncey_6,itm_ho_rouncey_1,itm_ho_rouncey_2,itm_ho_rouncey_3,itm_tab_shield_heater_cav_a], def_attrib2_b, wp_melee(95), knows_warrior_normal, vaegir_face_young_2, vaegir_face_older_1 ],
+["burgundian_knight", "Burgundian Knight_Bachelier", "Burgundian Knights_Bachelier", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_thick,itm_h_bascinet_fi_noseguard,itm_h_zitta_bascinet_novisor,itm_h_bascinet_oniontop,itm_h_bascinet_fi_mail,itm_g_finger_gauntlets,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_b_steel_greaves,itm_w_horseman_axe_1,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_tab_shield_heater_cav_b,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_w_lance_4,itm_w_lance_5,itm_w_lance_6,itm_w_lance_3,itm_w_lance_2,itm_w_lance_1,itm_w_onehanded_sword_baron,itm_w_onehanded_sword_constable,itm_w_onehanded_sword_knight,itm_w_onehanded_sword_laird,itm_w_onehanded_sword_baron_2,itm_w_onehanded_sword_constable_2,itm_w_onehanded_sword_knight_2,itm_w_onehanded_sword_laird_2,itm_ho_courser_5,itm_ho_courser_6,itm_ho_courser_7,itm_ho_courser_8,itm_ho_courser_9,itm_ho_courser_10,itm_ho_courser_5,itm_ho_courser_4,itm_ho_courser_3,itm_ho_courser_2,itm_ho_courser_1,itm_a_brigandine_narf_padded_plate_hose_custom,itm_a_brigandine_narf_padded_full_plate_hose_custom], def_attrib3, wp_melee(110), knows_warrior_normal, vaegir_face_middle_2, vaegir_face_older_2 ],
+["burgundian_heavy_knight", "Burgundian_Knight_Banneret", "Burgundian_Knights_Banneret", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_thick,itm_h_bascinet_fi_noseguard,itm_h_houndskull_fi,itm_h_zitta_bascinet,itm_b_steel_greaves,itm_b_steel_greaves_full,itm_g_hourglass_gauntlets_ornate,itm_g_hourglass_gauntlets,itm_w_bastard_sword_c,itm_w_bastard_sword_d,itm_w_bastard_sword_baron,itm_w_bastard_sword_count,itm_w_bastard_sword_duke,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_count_2,itm_w_bastard_sword_duke_2,itm_tab_shield_kite_cav_b,itm_w_knight_winged_mace,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_w_lance_colored_english_1,itm_w_lance_colored_english_2,itm_w_lance_colored_english_3,itm_ho_horse_barded_red,itm_ho_horse_barded_brown,itm_ho_horse_barded_white,itm_ho_horse_barded_red,itm_ho_horse_barded_brown,itm_heraldic_early_transitional], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_old_2 ],
+["burgundian_iron_knight", "Burgundian_Iron_Knight", "Burgundian_Iron_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_h_bascinet_great,itm_h_bascinet_great_fi,itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_houndskull_fi,itm_heraldic_churburg_13_brass_tabard,itm_heraldic_churburg_13_tabard,itm_g_plate_mittens,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_b_shynbaulds,itm_b_steel_greaves_full,itm_w_bastard_sword_english,itm_w_bastard_sword_d,itm_w_bastard_sword_baron,itm_w_bastard_sword_count,itm_w_bastard_sword_duke,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_count_2,itm_w_bastard_sword_duke_2,itm_w_bastard_sword_landgraf_2,itm_tab_shield_kite_cav_b,itm_w_knight_winged_mace,itm_w_knight_warhammer_2,itm_w_knight_warhammer_1,itm_w_knight_battle_axe,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_ho_horse_barded_brown_chamfrom,itm_ho_horse_barded_brown_chamfrom,itm_ho_horse_barded_red_chamfrom,itm_ho_horse_barded_red_chamfrom,itm_ho_horse_barded_white_chamfrom,itm_w_lance_colored_english_1,itm_w_lance_colored_english_2,itm_w_lance_colored_english_3], def_attrib3_b, wp_melee(140), knows_warrior_elite, vaegir_face_middle_2, vaegir_face_older_2 ],
 
-["burgundian_mounted_crossbowman_captain", "Burgundian_Mounted_Crossbowman_Captain", "Burgundian_Mounted_Crossbowman_Captains", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_ranged|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [], def_attrib3_b, wp(155), knows_weapon_master_10|knows_ironflesh_7|knows_athletics_7|knows_riding_6|knows_power_strike_6|knows_shield_4|knows_inventory_management_4|knows_power_throw_5|knows_power_draw_10, vaegir_face_middle_2, vaegir_face_older_2 ],
+["burgundian_mounted_crossbowman_captain", "Burgundian_Mounted_Crossbowman_Captain", "Burgundian_Mounted_Crossbowman_Captains", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_ranged|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [itm_ho_courser_1,itm_ho_courser_2,itm_ho_courser_3,itm_ho_courser_4,itm_ho_courser_5,itm_ho_courser_6,itm_ho_courser_7,itm_ho_courser_8,itm_ho_courser_9,itm_ho_courser_10,itm_h_kettlehat_3_mail,itm_h_kettlehat_4_mail,itm_h_chapel_de_fer_1_mail,itm_h_chapel_de_fer_2_mail,itm_h_chapel_de_fer_3_mail,itm_a_churburg_narf_custom,itm_a_churburg_brass_narf_custom,itm_g_mail_gauntlets,itm_b_steel_greaves,itm_light_crossbow,itm_steel_bolts,itm_w_bastard_sword_d,itm_w_bastard_sword_english,itm_w_bastard_sword_c,itm_w_bastard_sword_b,itm_w_bastard_sword_a,itm_w_horseman_axe_3,itm_w_horseman_axe_2,itm_w_mace_winged], def_attrib3_b, wp(155), knows_weapon_master_10|knows_ironflesh_7|knows_athletics_7|knows_riding_6|knows_power_strike_6|knows_shield_4|knows_inventory_management_4|knows_power_throw_5|knows_power_draw_10, vaegir_face_middle_2, vaegir_face_older_2 ],
 ## END Burgundy Main Troops
 
 ["bourg_messenger", "Messager_Bourguignon", "Messagers Bourguignons", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged|tf_bourgignon, no_scene, reserved, fac_kingdom_3, [], def_attrib|agi_21|level(25), wp(130), knows_common|knows_riding_7|knows_horse_archery_5|knows_power_draw_5, vaegir_face_young_1, vaegir_face_older_2 ],
@@ -530,15 +532,15 @@ troops = [
 ["breton_pikeman", "Breton Pikeman", "Breton Pikemen", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_kettlehat_eyeslot_mail,itm_h_chapel_de_fer_1_mail,itm_h_kettlehat_mail,itm_h_round_kettlehat_mail,itm_h_pot_helmet_mail,itm_b_mail_boots,itm_b_steel_greaves,itm_g_mail_gauntlets,itm_w_onehanded_sword_c_small,itm_w_onehanded_sword_c_long,itm_w_onehanded_sword_c,itm_w_pike_1,itm_a_brigandine_narf_padded_custom,itm_a_brigandine_narf_padded_plate_hose_custom,itm_a_brigandine_narf_padded_full_plate_hose_custom,itm_a_brigandine_narf_padded_jackchain_custom,itm_a_brigandine_narf_padded_jackchain_plate_hose_custom,itm_a_brigandine_narf_padded_jackchain_full_plate_hose_custom,itm_h_bascinet_fi_noseguard,itm_h_bascinet_fi_mail,itm_h_kettlehat_eyeslot_gorget,itm_h_kettlehat_2_gorget,itm_h_kettlehat_2_mail,itm_h_kettlehat_gorget,itm_h_round_kettlehat_gorget,itm_h_chapel_de_fer_1_gorget], level(20)|str_18|agi_15, wpex(100,100,180,100,100,100), knows_warrior_basic2|knows_ironflesh_5|knows_power_strike_4|knows_athletics_3|knows_weapon_master_3, swadian_face_young_1, swadian_face_old_2 ],
 
 ### Noble Line
- ["breton_captain", "Breton_Captain", "Breton_Captains", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_kettlehat_eyeslot_gorget,itm_h_chapel_de_fer_1_gorget,itm_h_kettlehat_gorget,itm_h_kettlehat_2_gorget,itm_h_round_kettlehat_gorget,itm_h_zitta_bascinet_novisor,itm_h_bascinet_oniontop,itm_h_bascinet_fi_mail,itm_a_churburg_narf_custom,itm_a_churburg_brass_narf_custom,itm_b_steel_greaves,itm_g_mail_gauntlets,itm_g_leather_gauntlet,itm_w_twohanded_war_axe,itm_w_twohanded_war_axe_2,itm_w_twohanded_war_axe_3,itm_w_voulge_8,itm_w_onehanded_war_axe,itm_w_onehanded_war_axe_4,itm_w_warhammer_2,itm_w_warhammer_1,itm_w_mace_winged,itm_w_bastard_sword_a,itm_w_bastard_sword_b,itm_w_bastard_sword_baron,itm_w_bastard_sword_crecy,itm_w_bastard_sword_duke,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_duke_2,itm_s_kite_shield_1,itm_s_kite_shield_b1,itm_s_kite_shield_d2], def_attrib3, wp_melee(120), knows_warrior_normal, vaegir_face_young_2, vaegir_face_old_2 ],
- ["breton_dismounted_noble", "Breton_Dismounted_Noble", "Breton_Dismounted_Nobles", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_fi,itm_h_bascinet_fi_noseguard,itm_h_zitta_bascinet_novisor,itm_h_bascinet_fi_mail,itm_h_bascinet_oniontop,itm_b_shynbaulds,itm_g_wisby_gauntlets_black,itm_g_wisby_gauntlets_red,itm_w_bastard_sword_c,itm_w_bastard_sword_d,itm_w_bastard_sword_crecy,itm_w_bastard_sword_duke,itm_w_bastard_sword_mercenary,itm_w_bastard_sword_sempach,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_duke_2,itm_w_bastard_sword_mercenary_2,itm_w_bastard_sword_sempach_2,itm_w_twohanded_war_axe_3,itm_w_twohanded_war_axe_2,itm_w_twohanded_war_axe,itm_w_bec_de_corbin,itm_w_poleaxe_3,itm_w_poleaxe_2,itm_w_poleaxe_1,itm_w_ranseur_1,itm_w_ranseur_2,itm_w_knight_battle_axe,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_s_kite_shield_1,itm_s_kite_shield_b1,itm_s_kite_shield_d2,itm_a_early_transitional_narf_custom], def_attrib3, wp_melee(120), knows_warrior_normal, vaegir_face_young_2, vaegir_face_old_2 ],
- ["breton_noble_swordsman", "Breton_Noble_Swordsman", "Breton_Noble_Swordsmen", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield, no_scene, reserved, fac_kingdom_4, [itm_h_bascinet_great,itm_h_bascinet_great_fi,itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_zitta_bascinet,itm_heraldic_churburg_13_brass_tabard,itm_heraldic_churburg_13_tabard,itm_b_steel_greaves_full,itm_g_hourglass_gauntlets_ornate,itm_g_hourglass_gauntlets,itm_g_plate_mittens,itm_w_twohanded_talhoffer,itm_w_twohanded_sword_steward,itm_w_twohanded_sword_steward_2,itm_w_twohanded_talhoffer_2,itm_w_bastard_sword_agincourt,itm_w_bastard_sword_d,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_sempach,itm_w_bastard_sword_crecy,itm_w_bastard_sword_agincourt_2,itm_w_bastard_sword_landgraf_2,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_sempach_2], def_attrib3_b, wp(155), knows_warrior_elite, vaegir_face_middle_2, vaegir_face_older_2 ],
- ["breton_honour_guard", "Breton_Honour_Guard", "Breton_Honour_Guards", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_houndskull_fi,itm_h_bascinet_fi_noseguard,itm_a_corrazina_narf_custom,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_b_shynbaulds,itm_w_awlpike_1,itm_w_awlpike_2,itm_w_awlpike_4,itm_w_awlpike_3,itm_w_awlpike_5,itm_w_bec_de_corbin,itm_w_halberd_13,itm_w_polehammer_1,itm_w_voulge_3], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_older_1 ],
+["breton_captain", "Breton_Captain", "Breton_Captains", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_kettlehat_eyeslot_gorget,itm_h_chapel_de_fer_1_gorget,itm_h_kettlehat_gorget,itm_h_kettlehat_2_gorget,itm_h_round_kettlehat_gorget,itm_h_zitta_bascinet_novisor,itm_h_bascinet_oniontop,itm_h_bascinet_fi_mail,itm_a_churburg_narf_custom,itm_a_churburg_brass_narf_custom,itm_b_steel_greaves,itm_g_mail_gauntlets,itm_g_leather_gauntlet,itm_w_twohanded_war_axe,itm_w_twohanded_war_axe_2,itm_w_twohanded_war_axe_3,itm_w_voulge_8,itm_w_onehanded_war_axe,itm_w_onehanded_war_axe_4,itm_w_warhammer_2,itm_w_warhammer_1,itm_w_mace_winged,itm_w_bastard_sword_a,itm_w_bastard_sword_b,itm_w_bastard_sword_baron,itm_w_bastard_sword_crecy,itm_w_bastard_sword_duke,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_duke_2,itm_s_kite_shield_1,itm_s_kite_shield_b1,itm_s_kite_shield_d2], def_attrib3, wp_melee(120), knows_warrior_normal, vaegir_face_young_2, vaegir_face_old_2 ],
+["breton_dismounted_noble", "Breton_Dismounted_Noble", "Breton_Dismounted_Nobles", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_klappvisier_pigface_open,itm_h_houndskull_fi,itm_h_bascinet_fi_noseguard,itm_h_zitta_bascinet_novisor,itm_h_bascinet_fi_mail,itm_h_bascinet_oniontop,itm_b_shynbaulds,itm_g_wisby_gauntlets_black,itm_g_wisby_gauntlets_red,itm_w_bastard_sword_c,itm_w_bastard_sword_d,itm_w_bastard_sword_crecy,itm_w_bastard_sword_duke,itm_w_bastard_sword_mercenary,itm_w_bastard_sword_sempach,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_duke_2,itm_w_bastard_sword_mercenary_2,itm_w_bastard_sword_sempach_2,itm_w_twohanded_war_axe_3,itm_w_twohanded_war_axe_2,itm_w_twohanded_war_axe,itm_w_bec_de_corbin,itm_w_poleaxe_3,itm_w_poleaxe_2,itm_w_poleaxe_1,itm_w_ranseur_1,itm_w_ranseur_2,itm_w_knight_battle_axe,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_s_kite_shield_1,itm_s_kite_shield_b1,itm_s_kite_shield_d2,itm_a_early_transitional_narf_custom], def_attrib3, wp_melee(120), knows_warrior_normal, vaegir_face_young_2, vaegir_face_old_2 ],
+["breton_noble_swordsman", "Breton_Noble_Swordsman", "Breton_Noble_Swordsmen", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield, no_scene, reserved, fac_kingdom_4, [itm_h_bascinet_great,itm_h_bascinet_great_fi,itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_zitta_bascinet,itm_heraldic_churburg_13_brass_tabard,itm_heraldic_churburg_13_tabard,itm_b_steel_greaves_full,itm_g_hourglass_gauntlets_ornate,itm_g_hourglass_gauntlets,itm_g_plate_mittens,itm_w_twohanded_talhoffer,itm_w_twohanded_sword_steward,itm_w_twohanded_sword_steward_2,itm_w_twohanded_talhoffer_2,itm_w_bastard_sword_agincourt,itm_w_bastard_sword_d,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_sempach,itm_w_bastard_sword_crecy,itm_w_bastard_sword_agincourt_2,itm_w_bastard_sword_landgraf_2,itm_w_bastard_sword_crecy_2,itm_w_bastard_sword_sempach_2], def_attrib3_b, wp(155), knows_warrior_elite, vaegir_face_middle_2, vaegir_face_older_2 ],
+["breton_honour_guard", "Breton_Honour_Guard", "Breton_Honour_Guards", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_houndskull_fi,itm_h_bascinet_fi_noseguard,itm_a_corrazina_narf_custom,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_b_shynbaulds,itm_w_awlpike_1,itm_w_awlpike_2,itm_w_awlpike_4,itm_w_awlpike_3,itm_w_awlpike_5,itm_w_bec_de_corbin,itm_w_halberd_13,itm_w_polehammer_1,itm_w_voulge_3], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_older_1 ],
 
-["breton_squire", "Breton_Squire", "Breton_Squires", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [], def_attrib2_b, wp_melee(95), knows_warrior_normal, vaegir_face_young_2, vaegir_face_older_1 ],
-["breton_knight", "Breton_Knight", "Breton_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [], def_attrib3, wp_melee(110), knows_warrior_normal, vaegir_face_middle_2, vaegir_face_older_2 ],
-["breton_heavy_knight", "Breton_Heavy_Knight", "Breton_Heavy_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_old_2 ],
-["breton_hermine_knight", "Order_Of_The_Ermine_Knight", "Order_Of_The_Ermine_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [], def_attrib3_b, wp_melee(140), knows_warrior_elite, vaegir_face_middle_2, vaegir_face_older_2 ],
+["breton_squire", "Breton_Squire", "Breton_Squires", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_kettlehat_hood_custom,itm_h_round_kettlehat_hood_custom,itm_h_kettlehat_hood_custom,itm_h_mail_coif,itm_heraldic_tunic_new,itm_g_mail_gauntlets,itm_b_mail_chausses,itm_tab_shield_kite_cav_a,itm_w_onehanded_sword_a_long,itm_w_onehanded_sword_c_long,itm_w_onehanded_sword_d_long,itm_w_onehanded_sword_squire,itm_w_onehanded_sword_templar,itm_w_onehanded_sword_squire_2,itm_w_onehanded_sword_templar_2,itm_w_horseman_axe_1,itm_w_native_spear_f,itm_w_native_spear_b,itm_w_light_lance,itm_w_mace_winged,itm_ho_rouncey_2,itm_ho_rouncey_3,itm_ho_rouncey_4,itm_ho_rouncey_5,itm_ho_rouncey_6,itm_ho_rouncey_1], def_attrib2_b, wp_melee(95), knows_warrior_normal, vaegir_face_young_2, vaegir_face_older_1 ],
+["breton_knight", "Breton_Knight", "Breton_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_bascinet_fi_mail,itm_h_bascinet_oniontop,itm_h_zitta_bascinet_novisor,itm_h_bascinet_fi_noseguard,itm_a_churburg_narf_custom,itm_a_churburg_brass_narf_custom,itm_g_finger_gauntlets,itm_g_demi_gauntlets,itm_b_steel_greaves,itm_w_onehanded_sword_constable,itm_w_onehanded_sword_hospitaller,itm_w_onehanded_sword_knight,itm_w_onehanded_sword_laird,itm_w_onehanded_sword_constable_2,itm_w_onehanded_sword_hospitaller_2,itm_w_onehanded_sword_knight_2,itm_w_onehanded_sword_laird_2,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_tab_shield_heater_cav_b,itm_w_lance_1,itm_w_lance_2,itm_w_lance_3,itm_w_lance_6,itm_w_lance_5,itm_w_lance_4,itm_ho_courser_4,itm_ho_courser_5,itm_ho_courser_6,itm_ho_courser_7,itm_ho_courser_8,itm_ho_courser_9,itm_ho_courser_10,itm_ho_courser_1,itm_ho_courser_2,itm_ho_courser_3], def_attrib3, wp_melee(110), knows_warrior_normal, vaegir_face_middle_2, vaegir_face_older_2 ],
+["breton_heavy_knight", "Breton_Heavy_Knight", "Breton_Heavy_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_zitta_bascinet,itm_h_hounskull_narf,itm_h_klappvisier_pigface,itm_h_houndskull_fi,itm_a_corrazina_narf_custom,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_b_steel_greaves,itm_b_shynbaulds,itm_w_bastard_sword_d,itm_w_bastard_sword_c,itm_w_bastard_sword_b,itm_w_bastard_sword_mercenary,itm_w_bastard_sword_mercenary_2,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_count_2,itm_w_bastard_sword_baron,itm_w_bastard_sword_count,itm_w_lance_1,itm_w_lance_2,itm_w_lance_3,itm_w_lance_4,itm_w_lance_6,itm_w_lance_5,itm_s_heater_shield_c1,itm_s_heater_shield_c2,itm_ho_horse_barded_black,itm_ho_horse_barded_brown,itm_ho_horse_barded_brown,itm_ho_horse_barded_black,itm_ho_horse_barded_white], def_attrib3_b, wp_melee(120), knows_warrior_veteran, vaegir_face_young_2, vaegir_face_old_2 ],
+["breton_hermine_knight", "Order_Of_The_Ermine_Knight", "Order_Of_The_Ermine_Knights", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield|tf_guarantee_polearm, no_scene, reserved, fac_kingdom_4, [itm_h_bascinet_great,itm_h_bascinet_great_fi,itm_h_zitta_bascinet,itm_h_zitta_bascinet,itm_heraldic_plate,itm_g_plate_mittens,itm_g_hourglass_gauntlets,itm_g_hourglass_gauntlets_ornate,itm_b_steel_greaves_full,itm_w_lance_1,itm_w_lance_2,itm_w_lance_3,itm_w_lance_4,itm_w_lance_5,itm_w_lance_6,itm_w_bastard_sword_d,itm_w_bastard_sword_baron,itm_w_bastard_sword_count,itm_w_bastard_sword_landgraf,itm_w_bastard_sword_sempach,itm_w_bastard_sword_baron_2,itm_w_bastard_sword_count_2,itm_w_bastard_sword_landgraf_2,itm_w_bastard_sword_sempach_2,itm_w_knight_battle_axe,itm_w_knight_warhammer_1,itm_w_knight_warhammer_2,itm_w_knight_winged_mace,itm_w_horseman_axe_2,itm_w_horseman_axe_3,itm_s_heater_shield_c1,itm_s_heater_shield_c2,itm_ho_war_horse_breton,itm_ho_charger_breton,itm_ho_horse_barded_black_chamfrom,itm_ho_horse_barded_white_chamfrom], def_attrib3_b, wp_melee(140), knows_warrior_elite, vaegir_face_middle_2, vaegir_face_older_2 ],
 
 ## END Breton Main Troops
 
@@ -707,7 +709,7 @@ troops = [
 
 
 ["musican_male", "Habitant du Bourg", "Habitant du bourg", tf_guarantee_boots|tf_guarantee_armor, no_scene, reserved, fac_commoners, [itm_dedal_lutnia,itm_h_highlander_beret_black_2,itm_h_highlander_beret_blue_2,itm_h_highlander_beret_brown_2,itm_h_highlander_beret_green_2,itm_h_highlander_beret_red_2,itm_h_highlander_beret_white_2,itm_h_highlander_beret_yellow_2,itm_a_noble_shirt_black,itm_a_noble_shirt_blue,itm_a_noble_shirt_brown,itm_a_noble_shirt_red,itm_a_noble_shirt_green,itm_a_noble_shirt_white,itm_b_hosen_shoes_custom,itm_b_hosen_poulaines_custom], def_attrib|level(4), wp(60), knows_common, man_face_young_1, man_face_old_2 ],
-["musican_female", "Villageois", "Villageois", tf_guarantee_boots|tf_guarantee_armor, no_scene, reserved, fac_commoners, [itm_dedal_lutnia,itm_a_woman_common_dress_1,itm_a_woman_common_dress_2,itm_a_woman_common_dress_3,itm_a_woman_common_dress_4,itm_a_woman_common_dress_5,itm_a_woman_common_dress_6,itm_b_hosen_shoes_custom,itm_b_hosen_poulaines_custom], def_attrib|level(2), wp(40), knows_common, man_face_young_1, man_face_young_2 ],
+["musican_female", "Villageois", "Villageois", tf_female|tf_guarantee_boots|tf_guarantee_armor, no_scene, reserved, fac_commoners, [itm_dedal_lutnia,itm_a_woman_common_dress_1,itm_a_woman_common_dress_2,itm_a_woman_common_dress_3,itm_a_woman_common_dress_4,itm_a_woman_common_dress_5,itm_a_woman_common_dress_6,itm_b_hosen_shoes_custom,itm_b_hosen_poulaines_custom], def_attrib|level(2), wp(40), knows_common, man_face_young_1, man_face_young_2 ],
 ["musicans_end","Villageois","Villageois",tf_inactive|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[itm_dedal_lira,],def_attrib|level(4),wp(60),knows_common,man_face_young_1, man_face_old_2],
 
 #NPC system changes begin
@@ -1723,9 +1725,9 @@ troops = [
 
 
 
-["spy","Ordinary Townsman","Ordinary Townsmen", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse,0,0,fac_neutral,[itm_courser,itm_a_tabard,itm_b_hosen_poulaines_custom],def_attrib|agi_11|level(20),wp(130),knows_common,man_face_middle_1,man_face_older_2],
+["spy","Ordinary Townsman","Ordinary Townsmen", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse,0,0,fac_neutral,[itm_a_tabard,itm_b_hosen_poulaines_custom],def_attrib|agi_11|level(20),wp(130),knows_common,man_face_middle_1,man_face_older_2],
 
-["spy_partner","Unremarkable Townsman","Unremarkable Townsmen", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse,0,0,fac_neutral,[itm_courser,itm_a_tabard,itm_b_hosen_poulaines_custom],def_attrib|agi_11|level(10),wp(130),knows_common,vaegir_face1,vaegir_face2],
+["spy_partner","Unremarkable Townsman","Unremarkable Townsmen", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse,0,0,fac_neutral,[itm_a_tabard,itm_b_hosen_poulaines_custom],def_attrib|agi_11|level(10),wp(130),knows_common,vaegir_face1,vaegir_face2],
 
 ["nurse_for_lady","Nurse","Nurse",tf_female|tf_guarantee_armor,0,reserved,fac_commoners,[itm_a_woman_common_dress_1,itm_b_hosen_poulaines_custom],def_attrib|level(4),wp(60),knows_common,woman_face_1,woman_face_2],
 ["temporary_minister","Minister","Minister",tf_guarantee_armor|tf_guarantee_boots,0,reserved,fac_commoners,[itm_a_merchant_outfit,itm_b_hosen_shoes_custom],def_attrib|level(4),wp(60),knows_common,man_face_middle_1,man_face_older_2],
@@ -2786,63 +2788,6 @@ troops = [
 
 ]
 
-###
-
-#Troop upgrade declarations
-
-# upgrade(troops,"farmer", "watchman")
-upgrade(troops,"townsman","watchman")
-upgrade(troops,"watchman","caravan_guard")
-upgrade2(troops,"caravan_guard","caravan_master","mercenary_horseman")
-upgrade(troops,"city_guard","hired_blade")
-# upgrade(troops,"mercenary_horseman","mercenary_cavalry")
-
-upgrade2  (troops,"farmer","townsman","monk")
-upgrade2  (troops,"townsman","lumberman","watchman")
-upgrade2  (troops,"watchman","sentry","rider")
-upgrade  (troops,"rider","master_rider")
-#upgrade (troops,"mercenary","hired_blade")
-upgrade2(troops,"caravan_guard","rider","master_rider")
-
-upgrade(troops,"lumberman","executioner")
-
-upgrade(troops,"priest","chaplain")
-upgrade(troops,"monk","priest")
-upgrade(troops,"executioner","torturer")
-upgrade(troops,"sentry","city_guard")
-
-upgrade(troops,"chaplain","bishop")
-#upgrade(troops,"swiss_halberdier","swiss_veteran_halberdier")
-
-upgrade(troops,"caravan_guard","caravan_master")
-
-upgrade2(troops,"looter","mountain_bandit","forest_bandit")
-
-#new tree connections
-
-upgrade(troops,"forest_bandit","mercenary_bowman")
-
-
-
-# upgrade(troops,"desert_bandit","sarranid_recruit")
-#new tree connections ended
-
-upgrade2(troops,"bandit","brigand","mercenary_swordsman")
-upgrade(troops,"manhunter","slave_driver")
-
-#upgrade(troops,"forest_bandit","mercenary_bowman")
-
-upgrade(troops,"slave_driver","slave_hunter")
-upgrade(troops,"slave_hunter","slave_crusher")
-upgrade(troops,"slave_crusher","slaver_chief")
-
-# upgrade(troops,"follower_woman","hunter_woman")
-# upgrade(troops,"hunter_woman","fighter_woman")
-
-# upgrade(troops,"fighter_woman","sword_sister")
-# upgrade(troops,"refugee","follower_woman#")
-# upgrade(troops,"peasant_woman","follower_woman#")
-
 #upgrade cranes de fer
 upgrade(troops,"crane_de_fer_mercenaire","crane_de_fer_mercenaire_up1")
 upgrade(troops,"crane_de_fer_mercenaire_up1","crane_de_fer_mercenaire_up2")
@@ -2946,172 +2891,14 @@ upgrade(troops,"breton_knight","breton_heavy_knight")
 upgrade(troops,"breton_heavy_knight","breton_hermine_knight")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+###################################################### NEW FLEMISH MERCENARIES
+upgrade(troops,"flemish_peasant_crossbowman","flemish_militia_crossbowman")
+upgrade(troops,"flemish_militia_crossbowman","flemish_crossbowman")
+upgrade(troops,"flemish_crossbowman","flemish_heavy_crossbowman")
+
+upgrade2(troops,"flemish_militia_pikeman","flemish_pikeman","flemish_halberdier")
+upgrade(troops,"flemish_pikeman","flemish_heavy_pikeman")
+upgrade(troops,"flemish_halberdier","flemish_heavy_halberdier")
 
 
 

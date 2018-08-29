@@ -1113,8 +1113,11 @@ scripts = [
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_begin, "str_a_padded_cloth_red"),
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_end, "str_a_padded_cloth_black"),
 # Brittany		
-      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_begin, "str_a_padded_cloth_black"),
-      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_end, "str_a_padded_cloth_end"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_begin, "str_a_padded_cloth_half_black"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_end, "str_a_padded_cloth_yellow"),
+# Brittany		
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_begin, "str_a_padded_cloth_black"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_end, "str_a_padded_cloth_end"),		
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_num_components, 1),
       
 ## Peasant Clothes
@@ -1127,11 +1130,14 @@ scripts = [
       (item_set_slot, "itm_a_peasant_man_custom", slot_item_english_materials_begin, "str_a_peasant_man_green"),
       (item_set_slot, "itm_a_peasant_man_custom", slot_item_english_materials_end, "str_a_peasant_man_brown"),
 # Burgundy
-      (item_set_slot, "itm_a_peasant_man_custom", slot_item_burgundy_materials_begin, "str_a_peasant_man_brown"),
-      (item_set_slot, "itm_a_peasant_man_custom", slot_item_burgundy_materials_end, "str_a_peasant_man_black"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_burgundy_materials_begin, "str_a_peasant_man_yellow_2"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_burgundy_materials_end, "str_a_peasant_man_black_3"),
 # Brittany		
-      (item_set_slot, "itm_a_peasant_man_custom", slot_item_breton_materials_begin, "str_a_peasant_man_black"),
-      (item_set_slot, "itm_a_peasant_man_custom", slot_item_breton_materials_end, "str_a_peasant_man_end"),		
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_breton_materials_begin, "str_a_peasant_man_brown_2"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_breton_materials_end, "str_a_peasant_man_black"),	
+# Flemish Mercenaries		
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_flemish_materials_begin, "str_a_peasant_man_black"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_flemish_materials_end, "str_a_peasant_man_end"),			
       (item_set_slot, "itm_a_peasant_man_custom", slot_item_num_components, 1),    
 				
 ## Gambeson
@@ -1164,8 +1170,11 @@ scripts = [
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_burgundy_materials_begin, "str_a_gambeson_narf_red"),
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_burgundy_materials_end, "str_a_gambeson_narf_black"),
 # Brittany		
-      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_breton_materials_begin, "str_a_gambeson_narf_black"),
-      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_breton_materials_end, "str_a_gambeson_narf_end"),			
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_breton_materials_begin, "str_a_gambeson_narf_half_black"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_breton_materials_end, "str_a_gambeson_narf_yellow_black"),	
+# Flemish Mercenaries		
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_flemish_materials_begin, "str_a_gambeson_narf_black"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_flemish_materials_end, "str_a_gambeson_narf_end"),			
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_num_components, 1),   
 
 ## Bogmir Brigandine 
@@ -1238,10 +1247,13 @@ scripts = [
       (item_set_slot, "itm_a_churburg_narf_custom", slot_item_english_materials_end, "str_a_churburg_brown"),	
 # Burgundy
       (item_set_slot, "itm_a_churburg_narf_custom", slot_item_burgundy_materials_begin, "str_a_churburg_red"),
-      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_burgundy_materials_end, "str_a_churburg_black"),		
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_burgundy_materials_end, "str_a_churburg_white_2"),		
 # Brittany		
-      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_begin, "str_a_churburg_black"),
-      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_end, "str_a_churburg_end"),			
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_begin, "str_a_churburg_white_2"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_end, "str_a_churburg_yellow_black"),	
+# Flemish Mercenaries		
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_flemish_materials_begin, "str_a_churburg_black"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_flemish_materials_end, "str_a_churburg_end"),			
       (item_set_slot, "itm_a_churburg_narf_custom", slot_item_num_components, 1),   	
 		
 ## Churburg Brass
@@ -1274,8 +1286,11 @@ scripts = [
       (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_burgundy_materials_begin, "str_a_corrazina_red"),
       (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_burgundy_materials_end, "str_a_corrazina_black"),		
 # Brittany		
-      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_breton_materials_begin, "str_a_corrazina_black"),
-      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_breton_materials_end, "str_a_corrazina_end"),			
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_breton_materials_begin, "str_a_corrazina_white_2"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_breton_materials_end, "str_a_corrazina_yellow_black"),		
+# Flemish Mercenaries		
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_flemish_materials_begin, "str_a_corrazina_black"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_flemish_materials_end, "str_a_corrazina_end"),			
       (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_num_components, 1),   
 		
 ## Early Transitional Plate
@@ -1292,7 +1307,10 @@ scripts = [
       (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_burgundy_materials_end, "str_a_early_transitional_breton"),		
 # Brittany		
       (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_breton_materials_begin, "str_a_early_transitional_breton"),
-      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_breton_materials_end, "str_a_early_transitional_end"),			
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_breton_materials_end, "str_a_early_transitional_black"),		
+# Flemish Mercenaries		
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_flemish_materials_begin, "str_a_early_transitional_black"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_flemish_materials_end, "str_a_early_transitional_end"),				
       (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_num_components, 1),   		
 				
 ## Narf Brigandine 
@@ -1307,10 +1325,13 @@ scripts = [
 			(item_set_slot, ":item_no", slot_item_english_materials_end, "str_a_brigandine_narf_brown"),
 	# Burgundy
 			(item_set_slot, ":item_no", slot_item_burgundy_materials_begin, "str_a_brigandine_narf_red"),
-			(item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_a_brigandine_narf_black"),
+			(item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_a_brigandine_narf_black_white"),
 	# Brittany		
 			(item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_a_brigandine_narf_brown"),
-			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_brigandine_narf_end"),			
+			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_brigandine_narf_yellow_black"),	
+	# Flemish Mercenaries		
+			(item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_a_brigandine_narf_black"),
+			(item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_a_brigandine_narf_end"),			
 			(item_set_slot, ":item_no", slot_item_num_components, 1),   	
       (try_end),
 		
@@ -1329,7 +1350,10 @@ scripts = [
 			(item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_a_aketon_narf_black"),
 	# Brittany		
 			(item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_a_aketon_narf_brown"),
-			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_aketon_narf_end"),			
+			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_aketon_narf_yellow_black"),	
+	# Flemish		
+			(item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_a_aketon_narf_black"),
+			(item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_a_aketon_narf_end"),				
 			(item_set_slot, ":item_no", slot_item_num_components, 1),   	
       (try_end),
 
@@ -1348,7 +1372,10 @@ scripts = [
 			(item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_h_hood_narf_white_2"),
 	# Brittany		
 			(item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_h_hood_narf_white_2"),
-			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_h_hood_narf_end"),			
+			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_h_hood_narf_yellow_black"),		
+	# Flemish Mercenaries	
+			(item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_h_hood_narf_black"),
+			(item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_h_hood_narf_end"),					
 			(item_set_slot, ":item_no", slot_item_num_components, 1),   	
       (try_end),			
 		
@@ -52614,7 +52641,7 @@ scripts = [
         (troop_add_item, "trp_player", "itm_h_highlander_beret_black_2", 0), #      Coiffe de noble a plumes
       (else_try),
         (eq,"$rand2",7),
-        (troop_add_item, "trp_player", "itm_warhorse", 0),  #    Cheval de guerre en plates completes
+        (troop_add_item, "trp_player", "itm_ho_horse_barded_white", 0),  #    Cheval de guerre en plates completes
       (else_try),
         (eq,"$rand2",8),
         (troop_add_item, "trp_player", "itm_h_hounskull_narf", 0),  #     Armet
@@ -63922,4 +63949,5 @@ scripts = [
     ),	 
 
 ]
+
 

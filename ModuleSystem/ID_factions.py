@@ -32,3 +32,4 @@ fac_noble_refugees = 30
 fac_convoi_weapons = 31
 fac_viland_quest_bourges = 32
 fac_cane_de_fer = 33
+fac_flemish_mercenaries = 34

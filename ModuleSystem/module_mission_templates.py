@@ -24666,7 +24666,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_warhorse_f1"),###<<<<<<<<<< Seek: itm_new_joutes_horse_fr
+            (eq, ":horse_item_id", "itm_ho_horse_barded_blue"),###<<<<<<<<<< Seek: itm_new_joutes_horse_fr
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -25158,7 +25158,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_warhorse_en1"),###<<<<<<<<<< Seek: new_joutes_horse_red
+            (eq, ":horse_item_id", "itm_ho_horse_barded_red"),###<<<<<<<<<< Seek: new_joutes_horse_red
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -25651,7 +25651,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_warhorse_en2"),###<<<<<<<<<< Seek: new_bourgogne_warhorse
+            (eq, ":horse_item_id", "itm_ho_horse_barded_brown"),###<<<<<<<<<< Seek: new_bourgogne_warhorse
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -26150,7 +26150,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_breton_war_horse"),###<<<<<<<<<< Seek: new_breton_warhorse_2
+            (eq, ":horse_item_id", "itm_ho_horse_barded_white"),###<<<<<<<<<< Seek: new_breton_warhorse_2
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;

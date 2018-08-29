@@ -2471,7 +2471,7 @@ game_menus = [
             (troop_add_item, "trp_player","itm_w_dagger_pikeman", 0),
             (troop_add_item, "trp_player","itm_hunting_crossbow",0),
             (troop_add_item, "trp_player","itm_bolts",0),
-            (troop_add_item, "trp_player","itm_courser", imod_spirited),
+            (troop_add_item, "trp_player","itm_ho_sumpter_1", imod_spirited),
             (troop_add_item, "trp_player","itm_h_court_lady_hood",imod_sturdy),
             (troop_add_item, "trp_player","itm_a_woman_common_dress_3",imod_sturdy),
             ##    (troop_add_gold, "trp_player", 100),

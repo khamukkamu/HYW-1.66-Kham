@@ -4127,8 +4127,11 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_padded_cloth_brown", "a_padded_cloth_brown"),
 ("a_padded_cloth_half_brown", "a_padded_cloth_half_brown"),
 # Breton
-("a_padded_cloth_black", "a_padded_cloth_black"),
 ("a_padded_cloth_half_black", "a_padded_cloth_half_black"),
+("a_padded_cloth_black", "a_padded_cloth_black"),
+# Flemish
+("a_padded_cloth_yellow", "a_padded_cloth_yellow"),
+("a_padded_cloth_yellow_black", "a_padded_cloth_yellow_black"),
 ("a_padded_cloth_end", "a_padded_cloth_end"),
 
 ## Peasant Clothes
@@ -4142,16 +4145,17 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_peasant_man_yellow_2", "a_peasant_man_yellow_2"),  
 # Burgundian
 ("a_peasant_man_brown", "a_peasant_man_brown"),  
-("a_peasant_man_brown_2", "a_peasant_man_brown_2"),  
 ("a_peasant_man_brown_3", "a_peasant_man_brown_3"),  
+("a_peasant_man_brown_2", "a_peasant_man_brown_2"),  
 # Breton
-("a_peasant_man_black", "a_peasant_man_black"),  
-("a_peasant_man_black_2", "a_peasant_man_black_2"),  
 ("a_peasant_man_black_3", "a_peasant_man_black_3"),  
 ("a_peasant_man_white", "a_peasant_man_white"),  
+# Flemish
+("a_peasant_man_black", "a_peasant_man_black"),  
+("a_peasant_man_black_2", "a_peasant_man_black_2"),  
 ("a_peasant_man_end", "a_peasant_man_end"),
 
-## Gambeson
+## Native Gambeson
 # French 
 ("a_gambeson_blue", "a_gambeson_blue"),  
 ("a_gambeson_white", "a_gambeson_white"),  
@@ -4175,11 +4179,14 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_gambeson_narf_brown", "a_gambeson_narf_brown"),  
 ("a_gambeson_narf_half_yellow", "a_gambeson_narf_half_yellow"),  
 # Breton
-("a_gambeson_narf_black", "a_gambeson_narf_black"),  
 ("a_gambeson_narf_half_black", "a_gambeson_narf_half_black"),  
+("a_gambeson_narf_black", "a_gambeson_narf_black"),  
+# Flemish
+("a_gambeson_narf_yellow_black", "a_gambeson_narf_yellow_black"),  
+("a_gambeson_narf_yellow", "a_gambeson_narf_yellow"),  
 ("a_gambeson_narf_end", "a_gambeson_narf_end"),
 
-## Native Brigandine
+## Bogmir Brigandine
 # French 
 ("a_brigandine_french", "a_brigandine_french"),  
 ("a_brigandine_french_2", "a_brigandine_french_2"),  
@@ -4213,9 +4220,12 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Burgundian
 ("a_brigandine_narf_brown", "a_brigandine_narf_brown"),  
 # Breton
-("a_brigandine_narf_black", "a_brigandine_narf_black"),  
 ("a_brigandine_narf_black_white", "a_brigandine_narf_black_white"),  
 ("a_brigandine_narf_white_2", "a_brigandine_narf_white"),  
+("a_brigandine_narf_black", "a_brigandine_narf_black"),  
+# Flemish
+("a_brigandine_narf_yellow_black", "a_brigandine_narf_yellow_black"),  
+("a_brigandine_narf_yellow", "a_brigandine_narf_yellow"),  
 ("a_brigandine_narf_end", "a_brigandine_narf_end"),
 
 ## Narf Aketon
@@ -4232,8 +4242,11 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_aketon_narf_half_brown", "a_aketon_narf_half_brown"),  
 ("a_aketon_narf_2", "a_aketon_narf"),  
 # Breton
-("a_aketon_narf_black", "a_aketon_narf_black"),  
 ("a_aketon_narf_half_black", "a_aketon_narf_half_black"),  
+("a_aketon_narf_black", "a_aketon_narf_black"),  
+# Flemish
+("a_aketon_narf_yellow_black", "a_aketon_narf_yellow_black"),  
+("a_aketon_narf_yellow", "a_aketon_narf_yellow"),  
 ("a_aketon_narf_end", "a_aketon_narf_end"),
 
 ## Padded Over Mail
@@ -4280,8 +4293,11 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Burgundian
 ("a_churburg_brown", "a_churburg_brown"),  
 # Breton  
-("a_churburg_black", "a_churburg_black"),  
 ("a_churburg_white_2", "a_churburg_white"),
+("a_churburg_black", "a_churburg_black"),  
+# Flemish  
+("a_churburg_yellow_black", "a_churburg_yellow_black"),  
+("a_churburg_yellow", "a_churburg_yellow"),
 ("a_churburg_end", "a_churburg_end"),
 
 ## Churburg Brass
@@ -4305,9 +4321,12 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_corrazina_red", "a_corrazina_red"),  
 # Burgundian
 ("a_corrazina_brown", "a_corrazina_brown"),  
-# Breton  
-("a_corrazina_black", "a_corrazina_black"),  
+# Breton    
 ("a_corrazina_white_2", "a_corrazina_white"),
+("a_corrazina_black", "a_corrazina_black"),
+# Flemish  
+("a_corrazina_yellow_black", "a_corrazina_yellow_black"),  
+("a_corrazina_yellow", "a_corrazina_yellow"),
 ("a_corrazina_end", "a_corrazina_end"),
 
 ## Early Transitional Plate
@@ -4323,6 +4342,10 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Breton  
 ("a_early_transitional_breton", "a_early_transitional_breton"),  
 ("a_early_transitional_white_2", "a_early_transitional_white"),
+# Flemish
+("a_early_transitional_black", "a_early_transitional_black"),
+("a_early_transitional_yellow", "a_early_transitional_yellow"),
+("a_early_transitional_yellow_black", "a_early_transitional_yellow_black"),
 ("a_early_transitional_end", "a_early_transitional_end"),
 
 ## Narf Hoods for the Helmets
@@ -4339,8 +4362,11 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Breton  
 ("h_hood_narf_white_2", "h_hood_narf_white"),  
 ("h_hood_narf_brown_2", "h_hood_narf_brown"),
-("h_hood_narf_black", "h_hood_narf_black"),  
 ("h_hood_narf_black_white", "h_hood_narf_black_white"),
+("h_hood_narf_black", "h_hood_narf_black"),  
+# Flemish
+("h_hood_narf_yellow_black", "h_hood_narf_yellow_black"),  
+("h_hood_narf_yellow", "h_hood_narf_yellow"),  
 ("h_hood_narf_end", "h_hood_narf_end"),
 
 ###################################################################################################### HYW CUSTOM ARMORS VERTEX COLORED
