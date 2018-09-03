@@ -101,16 +101,16 @@ scripts = [
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_2_troop, "trp_french_militia"),
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_3_troop, "trp_french_voulgier"),
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_4_troop, "trp_french_man_at_arms"),
-      (faction_set_slot, "fac_culture_1",  slot_faction_tier_5_troop, "trp_french_knight_bachelier"),
-      (faction_set_slot, "fac_culture_1",  slot_faction_tier_6_troop, "trp_french_chevalier_bachelier_a_pied"),
+      (faction_set_slot, "fac_culture_1",  slot_faction_tier_5_troop, "trp_french_captain"),
+      (faction_set_slot, "fac_culture_1",  slot_faction_tier_6_troop, "trp_french_squire"),
       (faction_set_slot, "fac_culture_1",  slot_faction_tier_1_archer, "trp_french_peasant_archer"),
       
       (faction_set_slot, "fac_culture_2", slot_faction_tier_1_troop, "trp_english_peasant"),
       (faction_set_slot, "fac_culture_2", slot_faction_tier_2_troop, "trp_english_yeoman"),
-      (faction_set_slot, "fac_culture_2", slot_faction_tier_3_troop, "trp_english_militia_billman"),
+      (faction_set_slot, "fac_culture_2", slot_faction_tier_3_troop, "trp_english_spearman"),
       (faction_set_slot, "fac_culture_2", slot_faction_tier_4_troop, "trp_english_heavy_infantry"),
-      (faction_set_slot, "fac_culture_2", slot_faction_tier_5_troop, "trp_english_heavy_spearman"),
-      (faction_set_slot, "fac_culture_2", slot_faction_tier_6_troop, "trp_english_sergeant"),
+      (faction_set_slot, "fac_culture_2", slot_faction_tier_5_troop, "trp_english_captain"),
+      (faction_set_slot, "fac_culture_2", slot_faction_tier_6_troop, "trp_english_squire"),
       (faction_set_slot, "fac_culture_2",  slot_faction_tier_1_archer, "trp_english_peasant_archer"),
       
       (faction_set_slot, "fac_culture_3", slot_faction_tier_1_troop, "trp_burgundian_peasant"),
@@ -126,8 +126,8 @@ scripts = [
       (faction_set_slot, "fac_culture_4", slot_faction_tier_2_troop, "trp_breton_militia"),
       (faction_set_slot, "fac_culture_4", slot_faction_tier_3_troop, "trp_breton_infantry"),
       (faction_set_slot, "fac_culture_4", slot_faction_tier_4_troop, "trp_breton_man_at_arms"),
-      (faction_set_slot, "fac_culture_4", slot_faction_tier_5_troop, "trp_breton_dismounted_noble"),
-      (faction_set_slot, "fac_culture_4", slot_faction_tier_6_troop, "trp_breton_knight"),
+      (faction_set_slot, "fac_culture_4", slot_faction_tier_5_troop, "trp_breton_captain"),
+      (faction_set_slot, "fac_culture_4", slot_faction_tier_6_troop, "trp_breton_squire"),
       (faction_set_slot, "fac_culture_4",  slot_faction_tier_1_archer, "trp_breton_peasant_archer"),
       #HYW
       #HYW
@@ -1106,11 +1106,11 @@ scripts = [
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_english_materials_end, "str_a_padded_cloth_brown"),
 # Burgundy
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_begin, "str_a_padded_cloth_red"),
-      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_end, "str_a_padded_cloth_black"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_end, "str_a_padded_cloth_half_black"),
 # Brittany		
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_begin, "str_a_padded_cloth_half_black"),
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_end, "str_a_padded_cloth_yellow"),
-# Brittany		
+# Flemish Mercenaries		
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_begin, "str_a_padded_cloth_black"),
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_end, "str_a_padded_cloth_end"),		
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_num_components, 1),
@@ -32883,7 +32883,7 @@ scripts = [
       ##      (str_store_faction_name, s5, ":center_culture"),
       ##      (display_message, "str_updating_volunteers_for_s4_faction_is_s5"),
       ##     (try_end),
-      
+      (faction_get_slot, ":volunteer_troop_dismounted", ":center_culture", slot_faction_tier_5_troop),      
       (faction_get_slot, ":volunteer_troop", ":center_culture", slot_faction_tier_6_troop),
       
       (assign, ":volunteer_troop_tier", 1),
@@ -32919,8 +32919,10 @@ scripts = [
       
       (store_random_in_range, ":amount", 0, ":upper_limit"),
       (party_set_slot, ":center_no", slot_center_volunteer_troop_type, ":volunteer_troop"),
+      (party_set_slot, ":center_no", slot_center_volunteer_troop_type_ranged, ":volunteer_troop_dismounted"),	# Re-using slots created for the archer recruitment code	
       (party_set_slot, ":center_no", slot_center_volunteer_troop_amount, ":amount"),
   ]),
+  
   #script_update_companion_candidates_in_taverns
   # INPUT: none
   # OUTPUT: none
@@ -50333,13 +50335,30 @@ scripts = [
       (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
       (val_min, ":volunteer_amount", ":free_capacity"),
       (store_troop_gold, ":gold", "trp_player"),
-      (store_div, ":gold_capacity", ":gold", 80),#200 denars per man
+      (store_div, ":gold_capacity", ":gold", 200),#200 denars per man
       (val_min, ":volunteer_amount", ":gold_capacity"),
       (party_add_members, "p_main_party", ":volunteer_troop", ":volunteer_amount"),
       (party_set_slot, "$current_town", slot_center_volunteer_troop_amount, -1),
-      (store_mul, ":cost", ":volunteer_amount", 80),#200 denars per man
+      (store_mul, ":cost", ":volunteer_amount", 200),#200 denars per man
       (troop_remove_gold, "trp_player", ":cost"),
   ]),
+  
+  ("town_castle_recruit_captain",
+    [(store_faction_of_party, ":cur_faction", "$current_town"),
+      
+      (faction_get_slot, ":volunteer_troop", ":cur_faction", slot_faction_tier_5_troop),
+      
+      (party_get_slot, ":volunteer_amount", "$current_town", slot_center_volunteer_troop_amount),
+      (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
+      (val_min, ":volunteer_amount", ":free_capacity"),
+      (store_troop_gold, ":gold", "trp_player"),
+      (store_div, ":gold_capacity", ":gold", 125),#125 denars per man
+      (val_min, ":volunteer_amount", ":gold_capacity"),
+      (party_add_members, "p_main_party", ":volunteer_troop", ":volunteer_amount"),
+      (party_set_slot, "$current_town", slot_center_volunteer_troop_amount, -1),
+      (store_mul, ":cost", ":volunteer_amount", 125),#125 denars per man
+      (troop_remove_gold, "trp_player", ":cost"),
+  ]),  
   
   # script_cf_turn_windmill_fans
   # Input: arg1 = instance_no (none = 0)

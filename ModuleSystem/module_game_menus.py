@@ -10470,6 +10470,7 @@ game_menus = [
       (store_div, ":gold_capacity", ":gold", 10),#10 denars per man
       (assign, ":party_capacity", ":free_capacity"),
       (val_min, ":party_capacity", ":gold_capacity"),
+      (assign, reg9, ":gold"),		
       (try_begin),
         (gt, ":party_capacity", 0),
         (val_min, ":volunteer_amount", ":party_capacity"),
@@ -10501,7 +10502,7 @@ game_menus = [
         [
           (eq, reg7, 1),
         ],
-        "I don't have enough money...",
+        "I don't have enough crowns...",
         [
           (jump_to_menu,"mnu_village"),
       ]),
@@ -10522,7 +10523,7 @@ game_menus = [
           (eq, reg7, 0),
           (gt, reg5, 0),
         ],
-        "Recruit as Infantry ({reg6} denars).",
+        "Recruit as Infantry ({reg6} crowns).",
         [
           (call_script, "script_village_recruit_volunteers_recruit"),
           
@@ -10533,8 +10534,9 @@ game_menus = [
         [
           (eq, reg7, 0),
           (gt, reg5, 0),
+          (gt, reg9, reg8),			 
         ],
-        "Recruit as Archer ({reg8} denars).",
+        "Recruit as Archer ({reg8} crowns).",
         [
           (call_script, "script_village_recruit_volunteers_recruit_ranged"),
           
@@ -14012,7 +14014,7 @@ game_menus = [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (call_script, "script_cf_town_castle_recruit_volunteers_cond"),
         ]
-        ,"Recruter des miliciens.",
+        ,"Recruit local militia.",
         [
           #(try_begin),
           #  (call_script, "script_cf_enter_center_location_bandit_check"),
@@ -14028,7 +14030,7 @@ game_menus = [
           (party_slot_eq,"$current_town",slot_party_type, spt_castle),
           (call_script, "script_cf_town_castle_recruit_volunteers_cond"),
         ]
-        ,"Recruter des ecuyers.",
+        ,"Recruit local nobles.",
         [
           #(try_begin),
           #  (call_script, "script_cf_enter_center_location_bandit_check"),
@@ -23570,9 +23572,10 @@ game_menus = [
       (party_get_slot, ":volunteer_amount", "$current_town", slot_center_volunteer_troop_amount),
       (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
       (store_troop_gold, ":gold", "trp_player"),
-      (store_div, ":gold_capacity", ":gold", 80),
+      (store_div, ":gold_capacity", ":gold", 200),
       (assign, ":party_capacity", ":free_capacity"),
       (val_min, ":party_capacity", ":gold_capacity"),
+      (assign, reg9, ":gold"),			
       (try_begin),
         (gt, ":party_capacity", 0),
         (val_min, ":volunteer_amount", ":party_capacity"),
@@ -23585,15 +23588,16 @@ game_menus = [
       (try_end),
       (try_begin),
         (eq, ":volunteer_amount", 0),
-        (str_store_string, s18, "@Personne ici ne veut rejoindre votre groupe."),
+        (str_store_string, s18, "@No one wishes to accompany you."),
       (else_try),
-        (store_mul, reg6, ":volunteer_amount", 80),
+        (store_mul, reg6, ":volunteer_amount", 200),
+        (store_mul, reg8, ":volunteer_amount", 125),		  
         (str_store_troop_name_by_count, s3, ":volunteer_troop", ":volunteer_amount"),
         (try_begin),
           (eq, reg5, 1),
-          (str_store_string, s18, "@{s3} est l'unique volontaire ?vouloir rejoindre votre groupe."),
+          (str_store_string, s18, "@One {s3} will follow you."),
         (else_try),
-          (str_store_string, s18, "@{reg5} {s3} souhaitent vous suivre."),
+          (str_store_string, s18, "@{reg5} {s3} will follow you."),
         (try_end),
         (set_background_mesh, "mesh_pic_ecuyer"),
       (try_end),
@@ -23603,7 +23607,7 @@ game_menus = [
         [
           (eq, reg7, 1),
         ],
-        "Je n'ai pas assez d'argent...",
+        "I don't have enough crowns...",
         [
           (jump_to_menu,"mnu_town"),
       ]),
@@ -23624,12 +23628,25 @@ game_menus = [
           (eq, reg7, 0),
           (gt, reg5, 0),
         ],
-        "Les recruter pour ({reg6} écus).",
+        "Recruit as Mounted Nobles ({reg6} crowns).",
         [
           (call_script, "script_town_castle_recruit_ecuyer"),
           
           (jump_to_menu,"mnu_town"),
       ]),
+		
+      ("recruit_them_dismounted",
+        [
+          (eq, reg7, 0),
+          (gt, reg5, 0),
+          (gt, reg9, reg8),			 
+        ],
+        "Recruit as Dismounted Nobles ({reg8} crowns).",
+        [
+          (call_script, "script_town_castle_recruit_captain"),
+          
+          (jump_to_menu,"mnu_town"),
+      ]),			
       
       ("forget_it",
         [

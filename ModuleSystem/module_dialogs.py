@@ -4633,15 +4633,15 @@ dialogs = [
   [anyone,"start", [(eq, "$g_talk_troop", "trp_provence5"),
       (eq, "$quetedurebelmontpelier", 1),
     ],
-    "Un long voyage nous attend,je vais dormire un peut en éspérant que tu ne nous trahira pas.", "provence_notrahison", []],
-  [anyone|plyr,"provence_notrahison", [], "Tu peut dormire tranquile.", "close_window",[]],
+    "Un long voyage nous attend,je vais dormir un peu en éspérant que tu ne nous trahiras pas.", "provence_notrahison", []],
+  [anyone|plyr,"provence_notrahison", [], "Tu peut dormir tranquile.", "close_window",[]],
   
   ###rebel !doit debloquer la variable pour parler au capitaine et donner la mission 1
   [anyone,"start", [(eq, "$g_talk_troop", "trp_provence5"),
     ],
     "Eh! Compagnon,approche par ici.", "provence_rebel_3", [(play_sound, "snd_rebels_greetings"),]],
   
-  [anyone|plyr,"provence_rebel_3", [], "Encore un voleur,que dirais tu de nager au fond du fleuve?", "provence_debut_quete",
+  [anyone|plyr,"provence_rebel_3", [], "Encore un voleur, que dirais tu de nager au fond du fleuve?", "provence_debut_quete",
     [
       (assign, "$talk_to_rebel", 1),
   ]],
@@ -14645,7 +14645,7 @@ dialogs = [
   #banquiers dials
   #si pas pu remboursser
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pret en cour  ,remetre a 0 :    (assign, "$pret_banque", 0),
       (eq, "$pret_banque", 1),
       (check_quest_failed, "qst_banque30"),
@@ -14710,7 +14710,7 @@ dialogs = [
   #banquiers dials
   #si pas pu remboursser
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pret en cour  ,remetre a 0 :    (assign, "$pret_banque", 0),
       (eq, "$pret_banque", 1),
       #(check_quest_failed, "qst_banque30"),
@@ -14776,7 +14776,7 @@ dialogs = [
   #banquiers dials
   #si pas pu remboursser
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pret en cour  ,remetre a 0 :    (assign, "$pret_banque", 0),
       (eq, "$pret_banque", 1),
       #(check_quest_failed, "qst_banque30"),
@@ -14841,7 +14841,7 @@ dialogs = [
   #banquiers dials
   #si pas pu remboursser
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pret en cour  ,remetre a 0 :    (assign, "$pret_banque", 0),
       (eq, "$pret_banque", 1),
       #(check_quest_failed, "qst_banque30"),
@@ -14905,7 +14905,7 @@ dialogs = [
   ############################################################################################################################
   #si je doit 3300
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pret en cour  ,remetre a 0 :    (assign, "$pret_banque", 0),
       (eq, "$pret_banque", 1),
       (check_quest_active, "qst_banque30"),
@@ -14933,7 +14933,7 @@ dialogs = [
   #
   #si je doit 6600
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pret en cour  ,remetre a 0 :    (assign, "$pret_banque", 0),
       (eq, "$pret_banque", 1),
       (check_quest_active, "qst_banque60"),
@@ -14961,7 +14961,7 @@ dialogs = [
   #
   #si je doit 9900
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pret en cour  ,remetre a 0 :    (assign, "$pret_banque", 0),
       (eq, "$pret_banque", 1),
       (check_quest_active, "qst_banque90"),
@@ -14989,7 +14989,7 @@ dialogs = [
   #
   #si je doit 15.400
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pret en cour  ,remetre a 0 :    (assign, "$pret_banque", 0),
       (eq, "$pret_banque", 1),
       (check_quest_active, "qst_banque14"),
@@ -15246,7 +15246,7 @@ dialogs = [
   
   #bourges
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       #si pat de pret en cour
       (eq, "$quete_jhoan_ready_orleans", 1),
       
@@ -15303,7 +15303,7 @@ dialogs = [
   
   
   [anyone,"start", [
-      (eq, "$g_talk_troop", "trp_Bourges_banquier"),
+      (eq, "$g_talk_troop", "trp_bourges_banquier"),
       (eq, "$quete_jhoan_ready_orleans", 0),
       #si pat de pret en cour
       (eq, "$pret_banque", 0),
