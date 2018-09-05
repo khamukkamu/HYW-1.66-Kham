@@ -96,6 +96,9 @@ def custom_reskin(item):
     (item_get_slot, ":flemish_start", item, slot_item_flemish_materials_begin),
     (item_get_slot, ":flemish_end", item, slot_item_flemish_materials_end),	 
 
+    (item_get_slot, ":rebel_start", item, slot_item_rebel_materials_begin),
+    (item_get_slot, ":rebel_end", item, slot_item_rebel_materials_end),	 	 
+	 
     (store_troop_faction, ":faction", ":troop_no"),
 	 
     (store_sub, ":total", ":end", ":start"),
@@ -122,7 +125,10 @@ def custom_reskin(item):
     	(store_random_in_range, ":value", ":breton_start", ":breton_end"),
     (else_try),
     	(eq, ":faction", "fac_flemish_mercenaries"),
-    	(store_random_in_range, ":value", ":flemish_start", ":flemish_end"),		
+    	(store_random_in_range, ":value", ":flemish_start", ":flemish_end"),	
+    (else_try),
+    	(eq, ":faction", "fac_rebels"),
+    	(store_random_in_range, ":value", ":rebel_start", ":rebel_end"),			
     (else_try),
       (store_random_in_range, ":value", ":start", ":end"), #Anyone else gets a random mix of everything
     (try_end),
@@ -154,6 +160,9 @@ def custom_remodel(item):
 	 
     (item_get_slot, ":flemish_start", item, slot_item_flemish_materials_begin),
     (item_get_slot, ":flemish_end", item, slot_item_flemish_materials_end),		 
+	 
+    (item_get_slot, ":rebel_start", item, slot_item_rebel_materials_begin),
+    (item_get_slot, ":rebel_end", item, slot_item_rebel_materials_end),	 	 
 
     (store_troop_faction, ":faction", ":troop_no"),
 	 
@@ -181,7 +190,10 @@ def custom_remodel(item):
     	(store_random_in_range, ":value", ":breton_start", ":breton_end"),
     (else_try),
     	(eq, ":faction", "fac_flemish_mercenaries"),
-    	(store_random_in_range, ":value", ":flemish_start", ":flemish_end"),			
+    	(store_random_in_range, ":value", ":flemish_start", ":flemish_end"),	
+    (else_try),
+    	(eq, ":faction", "fac_rebels"),
+    	(store_random_in_range, ":value", ":rebel_start", ":rebel_end"),			
     (else_try),
       (store_random_in_range, ":value", ":start", ":end"), #Anyone else gets a random mix of everything
     (try_end),

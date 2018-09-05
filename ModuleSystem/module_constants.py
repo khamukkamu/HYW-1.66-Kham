@@ -2102,11 +2102,11 @@ freelancer_can_use_item = "script_dplmc_troop_can_use_item"
 
 #Party Slots
 slot_party_orig_morale = slot_party_ai_rationale
-slot_freelancer_equip_start = 100 #only used for freelancer_party_backup
+slot_freelancer_equip_start = 166 #only used for freelancer_party_backup
 slot_freelancer_version     = slot_freelancer_equip_start - 2 #only used for freelancer_party_backup
 
 #Faction Slot
-slot_faction_freelancer_troop = 101 #should be unused
+slot_faction_freelancer_troop = 165 #should be unused
 slot_faction_freelancer_captain = 163 #Kham - To Check if Player is Sarge/Captain (1 or 2)
 #kham added
 slot_faction_tier_1_archer        = 164
@@ -2175,6 +2175,8 @@ slot_item_breton_materials_begin	=	99
 slot_item_breton_materials_end		=	100
 slot_item_flemish_materials_begin	=	101
 slot_item_flemish_materials_end		=	102
+slot_item_rebel_materials_begin	=	103
+slot_item_rebel_materials_end		=	104
 # Seek end
 
 custom_item_color_mask = 0xf

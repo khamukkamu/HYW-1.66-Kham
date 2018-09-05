@@ -1112,7 +1112,10 @@ scripts = [
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_end, "str_a_padded_cloth_yellow"),
 # Flemish Mercenaries		
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_begin, "str_a_padded_cloth_black"),
-      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_end, "str_a_padded_cloth_end"),		
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_end, "str_a_padded_cloth_green"),	
+# Rebels	
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_rebel_materials_begin, "str_a_padded_cloth_green"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_rebel_materials_end, "str_a_padded_cloth_end"),			
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_num_components, 1),
       
 ## Peasant Clothes
@@ -1146,10 +1149,13 @@ scripts = [
       (item_set_slot, "itm_a_gambeson_custom", slot_item_english_materials_end, "str_a_gambeson_brown"),
 # Burgundy
       (item_set_slot, "itm_a_gambeson_custom", slot_item_burgundy_materials_begin, "str_a_gambeson_red"),
-      (item_set_slot, "itm_a_gambeson_custom", slot_item_burgundy_materials_end, "str_a_gambeson_brown"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_burgundy_materials_end, "str_a_gambeson_black"),
 # Brittany		
       (item_set_slot, "itm_a_gambeson_custom", slot_item_breton_materials_begin, "str_a_gambeson_brown"),
-      (item_set_slot, "itm_a_gambeson_custom", slot_item_breton_materials_end, "str_a_gambeson_end"),			
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_breton_materials_end, "str_a_gambeson_green"),	
+# Rebels		
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_rebel_materials_begin, "str_a_gambeson_green"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_rebel_materials_end, "str_a_gambeson_end"),			
       (item_set_slot, "itm_a_gambeson_custom", slot_item_num_components, 1),    		
 		
 ## Narf Gambeson 
@@ -1169,7 +1175,10 @@ scripts = [
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_breton_materials_end, "str_a_gambeson_narf_yellow_black"),	
 # Flemish Mercenaries		
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_flemish_materials_begin, "str_a_gambeson_narf_black"),
-      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_flemish_materials_end, "str_a_gambeson_narf_end"),			
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_flemish_materials_end, "str_a_gambeson_narf_green"),	
+# Rebels		
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_rebel_materials_begin, "str_a_gambeson_narf_green"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_rebel_materials_end, "str_a_gambeson_narf_end"),			
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_num_components, 1),   
 
 ## Bogmir Brigandine 
@@ -1370,7 +1379,10 @@ scripts = [
 			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_h_hood_narf_yellow_black"),		
 	# Flemish Mercenaries	
 			(item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_h_hood_narf_black"),
-			(item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_h_hood_narf_end"),					
+			(item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_h_hood_narf_green"),
+	# Rebels	
+			(item_set_slot, ":item_no", slot_item_rebel_materials_begin, "str_h_hood_narf_green"),
+			(item_set_slot, ":item_no", slot_item_rebel_materials_end, "str_h_hood_narf_end"),				
 			(item_set_slot, ":item_no", slot_item_num_components, 1),   	
       (try_end),			
 		
@@ -1390,7 +1402,10 @@ scripts = [
       (item_set_slot, "itm_a_leather_vest_custom", slot_item_burgundy_materials_end, "str_a_leather_vest_arms_black"),
 # Brittany		
       (item_set_slot, "itm_a_leather_vest_custom", slot_item_breton_materials_begin, "str_a_leather_vest_arms_black"),
-      (item_set_slot, "itm_a_leather_vest_custom", slot_item_breton_materials_end, "str_a_leather_vest_arms_end"),				
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_breton_materials_end, "str_a_leather_vest_arms_green"),	
+# Rebels		
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_rebel_materials_begin, "str_a_leather_vest_arms_green"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_rebel_materials_end, "str_a_leather_vest_arms_end"),			
       (item_set_slot, "itm_a_leather_vest_custom", slot_item_num_components, 1),      
 		
 ## Vertex Coloured Leather Armor
@@ -1407,7 +1422,10 @@ scripts = [
       (item_set_slot, "itm_a_leather_armor_custom", slot_item_burgundy_materials_end, "str_a_leather_armor_arms_black"),
 # Brittany		
       (item_set_slot, "itm_a_leather_armor_custom", slot_item_breton_materials_begin, "str_a_leather_armor_arms_black"),
-      (item_set_slot, "itm_a_leather_armor_custom", slot_item_breton_materials_end, "str_a_leather_armor_arms_end"),				
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_breton_materials_end, "str_a_leather_armor_arms_green"),	
+# Rebels		
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_rebel_materials_begin, "str_a_leather_armor_arms_green"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_rebel_materials_end, "str_a_leather_armor_arms_end"),			
       (item_set_slot, "itm_a_leather_armor_custom", slot_item_num_components, 1),     
 
 ## Vertex Coloured Mail shirt
@@ -1424,7 +1442,10 @@ scripts = [
       (item_set_slot, "itm_a_mail_shirt_custom", slot_item_burgundy_materials_end, "str_a_mail_shirt_arms_black"),
 # Brittany		
       (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_begin, "str_a_mail_shirt_arms_black"),
-      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_end, "str_a_mail_shirt_arms_end"),			
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_end, "str_a_mail_shirt_arms_green"),	
+# Rebels		
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_rebel_materials_begin, "str_a_mail_shirt_arms_green"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_rebel_materials_end, "str_a_mail_shirt_arms_end"),			
       (item_set_slot, "itm_a_mail_shirt_custom", slot_item_num_components, 1),     		
 
       #Init Custom Armors

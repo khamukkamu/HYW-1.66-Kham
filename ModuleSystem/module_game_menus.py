@@ -2536,6 +2536,7 @@ game_menus = [
             (eq,"$background_item_mercenaire",1),
             (troop_add_item, "trp_player","itm_a_gambeson_custom",0),
             (troop_add_item, "trp_player","itm_w_pike_1",0),
+            (troop_add_item, "trp_player","itm_s_steel_buckler",0),
           (else_try),
             (eq,"$background_item_rebel",1),
             (troop_add_item, "trp_player","itm_a_peasant_shirt_white",0),

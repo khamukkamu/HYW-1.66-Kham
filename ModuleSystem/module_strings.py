@@ -4132,6 +4132,9 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Flemish
 ("a_padded_cloth_yellow", "a_padded_cloth_yellow"),
 ("a_padded_cloth_yellow_black", "a_padded_cloth_yellow_black"),
+# Flemish
+("a_padded_cloth_green", "a_padded_cloth_green"),
+("a_padded_cloth_half_green", "a_padded_cloth_half_green"),
 ("a_padded_cloth_end", "a_padded_cloth_end"),
 
 ## Peasant Clothes
@@ -4164,7 +4167,10 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Burgundian
 ("a_gambeson_brown", "a_gambeson_brown"),  
 # Breton
+("a_gambeson_white_2", "a_gambeson_white"),  
 ("a_gambeson_black", "a_gambeson_black"),  
+# Rebel
+("a_gambeson_green", "a_gambeson_green"),  
 ("a_gambeson_end", "a_gambeson_end"),
 
 ## Narf Gambeson
@@ -4184,6 +4190,9 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Flemish
 ("a_gambeson_narf_yellow_black", "a_gambeson_narf_yellow_black"),  
 ("a_gambeson_narf_yellow", "a_gambeson_narf_yellow"),  
+# Rebel
+("a_gambeson_narf_green", "a_gambeson_narf_green"),  
+("a_gambeson_narf_half_green", "a_gambeson_narf_half_green"),  
 ("a_gambeson_narf_end", "a_gambeson_narf_end"),
 
 ## Bogmir Brigandine
@@ -4367,6 +4376,9 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Flemish
 ("h_hood_narf_yellow_black", "h_hood_narf_yellow_black"),  
 ("h_hood_narf_yellow", "h_hood_narf_yellow"),  
+# Rebel
+("h_hood_narf_green", "h_hood_narf_green"),  
+("h_hood_narf_green_white", "h_hood_narf_green_white"),  
 ("h_hood_narf_end", "h_hood_narf_end"),
 
 ###################################################################################################### HYW CUSTOM ARMORS VERTEX COLORED
@@ -4381,6 +4393,8 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_leather_vest_arms_brown", "a_leather_vest_arms_brown"),
 # Breton
 ("a_leather_vest_arms_black", "a_leather_vest_arms_black"),  
+# Rebel
+("a_leather_vest_arms_green", "a_leather_vest_arms_green"),  
 ("a_leather_vest_arms_end", "a_leather_vest_arms_end"),
 
 ## Vertex Coloured Leather Armor
@@ -4393,6 +4407,8 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_leather_armor_arms_brown", "a_leather_armor_arms_brown"),
 # Breton
 ("a_leather_armor_arms_black", "a_leather_armor_arms_black"),  
+# Rebel
+("a_leather_armor_arms_green", "a_leather_armor_arms_green"), 
 ("a_leather_armor_arms_end", "a_leather_armor_arms_end"),
 
 ## Vertex Coloured Mail Shirt
@@ -4405,5 +4421,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_mail_shirt_arms_brown", "a_mail_shirt_arms_brown"),
 # Breton
 ("a_mail_shirt_arms_black", "a_mail_shirt_arms_black"),  
+# Rebel
+("a_mail_shirt_arms_green", "a_mail_shirt_arms_green"),  
 ("a_mail_shirt_arms_end", "a_mail_shirt_arms_end"),
 ]

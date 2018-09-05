@@ -323,14 +323,14 @@ parties = [
 
 #1429 foret de verzy camp
  # ("camp_ofrebels","Camp des Rebels", icon_camp|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(71.50,55.60),[],100),
- ("camp_ofrebels","Camp des Rebels", icon_camp|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_black_khergits,0,ai_bhvr_hold,0,(71.50,55.60),[],100),
+ ("camp_ofrebels","Camp des Rebels", icon_camp|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_rebels,0,ai_bhvr_hold,0,(71.50,55.60),[],100),
 
 #1429 place forte
   ("place_forte_b","Place forte Bourgignone", icon_castle_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.69,-20.78),[],100),
  # ("place_forte_b","Place forte Bourgignone", icon_castle_d|pf_always_visible|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.69,-20.78),[],100),
 
 #1429 tour des pins
-  ("tour_despins","Tour des pins", icon_town_desert|pf_always_visible|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_black_khergits,0,ai_bhvr_hold,0,(38.85,-83.50),[],100),
+  ("tour_despins","Tour des pins", icon_town_desert|pf_always_visible|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_rebels,0,ai_bhvr_hold,0,(38.85,-83.50),[],100),
 
 #1429 assasinat ferme mathieu
   ("fermemat","Ferme de Mathieu", icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53.60,29.36),[],100),
@@ -386,8 +386,8 @@ parties = [
   ("sea_raider_spawn_point_2"   ,"sea_raider_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-41,-39.76),[(trp_looter,15,0)]),
 #  ("desert_bandit_spawn_point"  ,"the deserts",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(110, -100),[(trp_looter,15,0)]),
  #   rebels spawn
-  ("black_khergit_spawn_point_1"  ,"black_khergit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_black_khergits,0,ai_bhvr_hold,0,(27.27,-24.93),[(trp_looter,15,0)]),# centre
-  ("black_khergit_spawn_point_2"  ,"black_khergit_sp2",pf_disabled|pf_is_static, no_menu, pt_none, fac_black_khergits,0,ai_bhvr_hold,0,(83.75,43.79),[(trp_looter,15,0)]),#METZ
+  ("black_khergit_spawn_point_1"  ,"black_khergit_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_rebels,0,ai_bhvr_hold,0,(27.27,-24.93),[(trp_looter,15,0)]),# centre
+  ("black_khergit_spawn_point_2"  ,"black_khergit_sp2",pf_disabled|pf_is_static, no_menu, pt_none, fac_rebels,0,ai_bhvr_hold,0,(83.75,43.79),[(trp_looter,15,0)]),#METZ
 #####sang lys spawn
 
  # add extra towns before this point 

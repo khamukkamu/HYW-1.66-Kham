@@ -47,7 +47,7 @@ party_templates = [
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
 #rebels
-("black_khergit", "Rebelles", icon_axeman|carries_goods(2), 0, fac_black_khergits, soldier_personality, [(trp_rebel_heros,1,1),(trp_rebel_archer,2,14),(trp_rebel_arbaletier,2,11),(trp_rebel_fantassin,4,12),(trp_rebel_piquier,3,10),(trp_rebel_paysan,1,20)] ),
+("black_khergit", "Rebelles", icon_axeman|carries_goods(2), 0, fac_rebels, soldier_personality, [(trp_rebel_hunter,2,14),(trp_rebel_scout,2,11),(trp_rebel_agent,4,12),(trp_rebel_soldier,3,10),(trp_rebel_peasant,1,20)] ),
 #rebels fin
 ("steppe_bandits", "Plundering Bandits", icon_axeman|carries_goods(2), 0, fac_outlaws, bandit_personality, [(trp_steppe_bandit,10,38)] ),
 ("taiga_bandits", "Tundra Bandits", icon_axeman|carries_goods(2), 0, fac_outlaws, bandit_personality, [(trp_taiga_bandit,4,30),(trp_taiga_bandit_2,4,15),(trp_taiga_bandit_3,4,15)] ),
@@ -152,7 +152,7 @@ party_templates = [
 ("quest_viland_bourges", "La grande Compagnie de Vilandrandro", icon_axeman|carries_goods(2), 0, fac_viland_quest_bourges, bandit_personality, [(trp_vilandrandro_quest_fanta,1,1),(trp_vilandrandro_quest_fanta2,70,90),(trp_vilandrandro_quest_arbaletier,20,40)] ),
 
 #rebels des catas exterieur
-("catareb", "Rebelles de Paris", icon_axeman|carries_goods(2), 0, fac_black_khergits, soldier_personality, [(trp_parisassau_rchef,1,1),(trp_parisassau_troop1,4,26),(trp_parisassau_troop2,4,26),(trp_parisassau_troop_wo,4,16)] ),
+("catareb", "Rebelles de Paris", icon_axeman|carries_goods(2), 0, fac_rebels, soldier_personality, [(trp_parisassau_rchef,1,1),(trp_parisassau_troop1,4,26),(trp_parisassau_troop2,4,26),(trp_parisassau_troop_wo,4,16)] ),
 
 #crane_de_fer
 ("cranede_fer", "Compagnie des Cranes de Fer", icon_gray_knight|carries_goods(2), 0, fac_kingdom_4, bandit_personality, [(trp_crane_de_fer_sergent,1,1),(trp_crane_de_fer_fantassin,5,21),(trp_crane_de_fer_archer,4,17)] ),
