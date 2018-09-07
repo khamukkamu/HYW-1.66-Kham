@@ -10208,6 +10208,370 @@ mission_templates = [
       (ti_before_mission_start, 0, 0, [],
         [
           (scene_set_day_time, 15),
+
+          ## Padded Cloth
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_materials_begin, "str_a_padded_cloth_blue"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_materials_end, "str_a_padded_cloth_end"),
+# France
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_france_materials_begin, "str_a_padded_cloth_blue"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_france_materials_end, "str_a_padded_cloth_english"),
+# England
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_english_materials_begin, "str_a_padded_cloth_white"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_english_materials_end, "str_a_padded_cloth_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_begin, "str_a_padded_cloth_red"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_burgundy_materials_end, "str_a_padded_cloth_half_black"),
+# Brittany    
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_begin, "str_a_padded_cloth_half_black"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_breton_materials_end, "str_a_padded_cloth_yellow"),
+# Flemish Mercenaries   
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_begin, "str_a_padded_cloth_black"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_end, "str_a_padded_cloth_green"),  
+# Rebels  
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_rebel_materials_begin, "str_a_padded_cloth_green"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_rebel_materials_end, "str_a_padded_cloth_end"),      
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_num_components, 1),
+      
+## Peasant Clothes
+       (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_begin, "str_a_peasant_man_blue"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_materials_end, "str_a_peasant_man_end"),
+# France
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_france_materials_begin, "str_a_peasant_man_blue"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_france_materials_end, "str_a_peasant_man_green_2"),
+# England
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_english_materials_begin, "str_a_peasant_man_green"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_english_materials_end, "str_a_peasant_man_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_burgundy_materials_begin, "str_a_peasant_man_yellow_2"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_burgundy_materials_end, "str_a_peasant_man_black_3"),
+# Brittany    
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_breton_materials_begin, "str_a_peasant_man_brown_2"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_breton_materials_end, "str_a_peasant_man_black"), 
+# Flemish Mercenaries   
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_flemish_materials_begin, "str_a_peasant_man_black"),
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_flemish_materials_end, "str_a_peasant_man_end"),      
+      (item_set_slot, "itm_a_peasant_man_custom", slot_item_num_components, 1),    
+        
+## Gambeson
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_begin, "str_a_gambeson_blue"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_materials_end, "str_a_gambeson_end"),
+# France
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_france_materials_begin, "str_a_gambeson_blue"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_france_materials_end, "str_a_gambeson_red"),
+# England
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_english_materials_begin, "str_a_gambeson_white"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_english_materials_end, "str_a_gambeson_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_burgundy_materials_begin, "str_a_gambeson_red"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_burgundy_materials_end, "str_a_gambeson_black"),
+# Brittany    
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_breton_materials_begin, "str_a_gambeson_brown"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_breton_materials_end, "str_a_gambeson_green"), 
+# Rebels    
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_rebel_materials_begin, "str_a_gambeson_green"),
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_rebel_materials_end, "str_a_gambeson_end"),      
+      (item_set_slot, "itm_a_gambeson_custom", slot_item_num_components, 1),        
+    
+## Narf Gambeson 
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_materials_begin, "str_a_gambeson_narf_blue"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_materials_end, "str_a_gambeson_narf_end"),
+# France
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_france_materials_begin, "str_a_gambeson_narf_blue"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_france_materials_end, "str_a_gambeson_narf_english"),
+# England
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_english_materials_begin, "str_a_gambeson_narf"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_english_materials_end, "str_a_gambeson_narf_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_burgundy_materials_begin, "str_a_gambeson_narf_red"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_burgundy_materials_end, "str_a_gambeson_narf_black"),
+# Brittany    
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_breton_materials_begin, "str_a_gambeson_narf_half_black"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_breton_materials_end, "str_a_gambeson_narf_yellow_black"),  
+# Flemish Mercenaries   
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_flemish_materials_begin, "str_a_gambeson_narf_black"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_flemish_materials_end, "str_a_gambeson_narf_green"),  
+# Rebels    
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_rebel_materials_begin, "str_a_gambeson_narf_green"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_rebel_materials_end, "str_a_gambeson_narf_end"),      
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_num_components, 1),   
+
+## Bogmir Brigandine 
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_materials_begin, "str_a_brigandine_french"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_materials_end, "str_a_brigandine_end"),
+# France
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_france_materials_begin, "str_a_brigandine_french"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_france_materials_end, "str_a_brigandine_english"),
+# England
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_english_materials_begin, "str_a_brigandine_english"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_english_materials_end, "str_a_brigandine_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_burgundy_materials_begin, "str_a_brigandine_red"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_burgundy_materials_end, "str_a_brigandine_black"),
+# Brittany    
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_breton_materials_begin, "str_a_brigandine_brown"),
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_breton_materials_end, "str_a_brigandine_end"),      
+      (item_set_slot, "itm_a_brigandine_bogmir_custom", slot_item_num_components, 1),     
+    
+## Padded Over Mail (Mail Hauberk)
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_materials_begin, "str_a_padded_over_mail_blue"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_materials_end, "str_a_padded_over_mail_end"),
+# France
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_france_materials_begin, "str_a_padded_over_mail_blue"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_france_materials_end, "str_a_padded_over_mail_red"),
+# England
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_english_materials_begin, "str_a_padded_over_mail"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_english_materials_end, "str_a_padded_over_mail_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_burgundy_materials_begin, "str_a_padded_over_mail_red"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_burgundy_materials_end, "str_a_padded_over_mail_black"),
+# Brittany    
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_breton_materials_begin, "str_a_padded_over_mail_brown"),
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_breton_materials_end, "str_a_padded_over_mail_end"),     
+      (item_set_slot, "itm_a_padded_over_mail_custom", slot_item_num_components, 1),      
+    
+## Coat of Plates
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_materials_begin, "str_a_coat_of_plates_french_1"),
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_materials_end, "str_a_coat_of_plates_end"),
+# France
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_france_materials_begin, "str_a_coat_of_plates_french_1"),
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_france_materials_end, "str_a_coat_of_plates_english_1"),
+# England
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_english_materials_begin, "str_a_coat_of_plates_english_1"),
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_english_materials_end, "str_a_coat_of_plates_end"),  
+      (item_set_slot, "itm_a_coat_of_plates_custom", slot_item_num_components, 1),        
+
+## Surcoat Over Mail
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_materials_begin, "str_a_surcoat_over_mail_french_1"),
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_materials_end, "str_a_surcoat_over_mail_end"),
+# France
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_france_materials_begin, "str_a_surcoat_over_mail_french_1"),
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_france_materials_end, "str_a_surcoat_over_mail_english_1"),
+# England
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_english_materials_begin, "str_a_surcoat_over_mail_english_1"),
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_english_materials_end, "str_a_surcoat_over_mail_breton_1"), 
+# Brittany    
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_breton_materials_begin, "str_a_surcoat_over_mail_breton_1"),
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_breton_materials_end, "str_a_surcoat_over_mail_end"),     
+      (item_set_slot, "itm_a_surcoat_over_mail_custom", slot_item_num_components, 1),     
+    
+## Churburg
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_materials_begin, "str_a_churburg_blue"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_materials_end, "str_a_churburg_end"),
+# France
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_france_materials_begin, "str_a_churburg_blue"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_france_materials_end, "str_a_churburg_red"),
+# England
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_english_materials_begin, "str_a_churburg_white"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_english_materials_end, "str_a_churburg_brown"), 
+# Burgundy
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_burgundy_materials_begin, "str_a_churburg_red"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_burgundy_materials_end, "str_a_churburg_white_2"),    
+# Brittany    
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_begin, "str_a_churburg_white_2"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_end, "str_a_churburg_yellow_black"), 
+# Flemish Mercenaries   
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_flemish_materials_begin, "str_a_churburg_black"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_flemish_materials_end, "str_a_churburg_end"),     
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_num_components, 1),     
+    
+## Churburg Brass
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_materials_begin, "str_a_churburg_brass_blue"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_materials_end, "str_a_churburg_brass_end"),
+# France
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_france_materials_begin, "str_a_churburg_brass_blue"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_france_materials_end, "str_a_churburg_brass_red"),
+# England
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_english_materials_begin, "str_a_churburg_brass_white"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_english_materials_end, "str_a_churburg_brass_brown"), 
+# Burgundy
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_burgundy_materials_begin, "str_a_churburg_brass_red"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_burgundy_materials_end, "str_a_churburg_brass_black"),    
+# Brittany    
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_breton_materials_begin, "str_a_churburg_brass_black"),
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_breton_materials_end, "str_a_churburg_brass_end"),      
+      (item_set_slot, "itm_a_churburg_brass_narf_custom", slot_item_num_components, 1),       
+        
+## Corrazina
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_materials_begin, "str_a_corrazina_blue"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_materials_end, "str_a_corrazina_end"),
+# France
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_france_materials_begin, "str_a_corrazina_blue"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_france_materials_end, "str_a_corrazina_red"),
+# England
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_english_materials_begin, "str_a_corrazina_white"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_english_materials_end, "str_a_corrazina_brown"), 
+# Burgundy
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_burgundy_materials_begin, "str_a_corrazina_red"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_burgundy_materials_end, "str_a_corrazina_black"),    
+# Brittany    
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_breton_materials_begin, "str_a_corrazina_white_2"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_breton_materials_end, "str_a_corrazina_yellow_black"),   
+# Flemish Mercenaries   
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_flemish_materials_begin, "str_a_corrazina_black"),
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_flemish_materials_end, "str_a_corrazina_end"),     
+      (item_set_slot, "itm_a_corrazina_narf_custom", slot_item_num_components, 1),   
+    
+## Early Transitional Plate
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_materials_begin, "str_a_early_transitional_french_1"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_materials_end, "str_a_early_transitional_end"),
+# France
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_france_materials_begin, "str_a_early_transitional_french_1"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_france_materials_end, "str_a_early_transitional_english_1"),
+# England
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_english_materials_begin, "str_a_early_transitional_white"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_english_materials_end, "str_a_early_transitional_english_2"), 
+# Burgundy
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_burgundy_materials_begin, "str_a_early_transitional_burgundian"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_burgundy_materials_end, "str_a_early_transitional_breton"),   
+# Brittany    
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_breton_materials_begin, "str_a_early_transitional_breton"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_breton_materials_end, "str_a_early_transitional_black"),    
+# Flemish Mercenaries   
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_flemish_materials_begin, "str_a_early_transitional_black"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_flemish_materials_end, "str_a_early_transitional_end"),       
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_num_components, 1),       
+        
+## Narf Brigandine 
+      (try_for_range, ":item_no", "itm_a_brigandine_narf_padded_custom", "itm_a_churburg_narf_custom"), # Seek: All the Brigandines share the same base
+      (item_set_slot, ":item_no", slot_item_materials_begin, "str_a_brigandine_narf_blue"),
+      (item_set_slot, ":item_no", slot_item_materials_end, "str_a_brigandine_narf_end"),
+  # France
+      (item_set_slot, ":item_no", slot_item_france_materials_begin, "str_a_brigandine_narf_blue"),
+      (item_set_slot, ":item_no", slot_item_france_materials_end, "str_a_brigandine_narf_english"),
+  # England
+      (item_set_slot, ":item_no", slot_item_english_materials_begin, "str_a_brigandine_narf_white"),
+      (item_set_slot, ":item_no", slot_item_english_materials_end, "str_a_brigandine_narf_brown"),
+  # Burgundy
+      (item_set_slot, ":item_no", slot_item_burgundy_materials_begin, "str_a_brigandine_narf_red"),
+      (item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_a_brigandine_narf_black_white"),
+  # Brittany    
+      (item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_a_brigandine_narf_brown"),
+      (item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_brigandine_narf_yellow_black"),  
+  # Flemish Mercenaries   
+      (item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_a_brigandine_narf_black"),
+      (item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_a_brigandine_narf_end"),      
+      (item_set_slot, ":item_no", slot_item_num_components, 1),     
+      (try_end),
+    
+## Narf Aketon 
+      (try_for_range, ":item_no", "itm_a_aketon_narf_custom", "itm_a_brigandine_bogmir_custom"), # Seek: All the Aketons share the same base
+      (item_set_slot, ":item_no", slot_item_materials_begin, "str_a_aketon_narf_blue"),
+      (item_set_slot, ":item_no", slot_item_materials_end, "str_a_aketon_narf_end"),
+  # France
+      (item_set_slot, ":item_no", slot_item_france_materials_begin, "str_a_aketon_narf_blue"),
+      (item_set_slot, ":item_no", slot_item_france_materials_end, "str_a_aketon_narf_english"),
+  # England
+      (item_set_slot, ":item_no", slot_item_english_materials_begin, "str_a_aketon_narf"),
+      (item_set_slot, ":item_no", slot_item_english_materials_end, "str_a_aketon_narf_brown"),
+  # Burgundy
+      (item_set_slot, ":item_no", slot_item_burgundy_materials_begin, "str_a_aketon_narf_red"),
+      (item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_a_aketon_narf_black"),
+  # Brittany    
+      (item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_a_aketon_narf_brown"),
+      (item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_aketon_narf_yellow_black"),  
+  # Flemish   
+      (item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_a_aketon_narf_black"),
+      (item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_a_aketon_narf_end"),        
+      (item_set_slot, ":item_no", slot_item_num_components, 1),     
+      (try_end),
+
+## Custom Hoods for the helmets
+      (try_for_range, ":item_no", "itm_h_bascinet_fi_hood_custom", "itm_a_peasant_man_custom"), # Seek: All the Helmets share the same base
+      (item_set_slot, ":item_no", slot_item_materials_begin, "str_h_hood_narf_blue"),
+      (item_set_slot, ":item_no", slot_item_materials_end, "str_h_hood_narf_end"),
+  # France
+      (item_set_slot, ":item_no", slot_item_france_materials_begin, "str_h_hood_narf_blue"),
+      (item_set_slot, ":item_no", slot_item_france_materials_end, "str_h_hood_narf_red"),
+  # England
+      (item_set_slot, ":item_no", slot_item_english_materials_begin, "str_h_hood_narf_white"),
+      (item_set_slot, ":item_no", slot_item_english_materials_end, "str_h_hood_narf_yellow_blue"),
+  # Burgundy
+      (item_set_slot, ":item_no", slot_item_burgundy_materials_begin, "str_h_hood_narf_white"),
+      (item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_h_hood_narf_white_2"),
+  # Brittany    
+      (item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_h_hood_narf_white_2"),
+      (item_set_slot, ":item_no", slot_item_breton_materials_end, "str_h_hood_narf_yellow_black"),    
+  # Flemish Mercenaries 
+      (item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_h_hood_narf_black"),
+      (item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_h_hood_narf_green"),
+  # Rebels  
+      (item_set_slot, ":item_no", slot_item_rebel_materials_begin, "str_h_hood_narf_green"),
+      (item_set_slot, ":item_no", slot_item_rebel_materials_end, "str_h_hood_narf_end"),        
+      (item_set_slot, ":item_no", slot_item_num_components, 1),     
+      (try_end),      
+    
+###################################################################################################### HYW CUSTOM ARMORS VERTEX COLORED
+    
+## Vertex Coloured Leather Vest
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_materials_begin, "str_a_leather_vest_arms_blue"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_materials_end, "str_a_leather_vest_arms_end"),
+# France
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_france_materials_begin, "str_a_leather_vest_arms_blue"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_france_materials_end, "str_a_leather_vest_arms_red"),
+# England
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_english_materials_begin, "str_a_leather_vest_arms_white"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_english_materials_end, "str_a_leather_vest_arms_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_burgundy_materials_begin, "str_a_leather_vest_arms_red"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_burgundy_materials_end, "str_a_leather_vest_arms_black"),
+# Brittany    
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_breton_materials_begin, "str_a_leather_vest_arms_black"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_breton_materials_end, "str_a_leather_vest_arms_green"),  
+# Rebels    
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_rebel_materials_begin, "str_a_leather_vest_arms_green"),
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_rebel_materials_end, "str_a_leather_vest_arms_end"),     
+      (item_set_slot, "itm_a_leather_vest_custom", slot_item_num_components, 1),      
+    
+## Vertex Coloured Leather Armor
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_materials_begin, "str_a_leather_armor_arms_blue"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_materials_end, "str_a_leather_armor_arms_end"),
+# France
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_france_materials_begin, "str_a_leather_armor_arms_blue"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_france_materials_end, "str_a_leather_armor_arms_red"),
+# England
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_english_materials_begin, "str_a_leather_armor_arms_white"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_english_materials_end, "str_a_leather_armor_arms_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_burgundy_materials_begin, "str_a_leather_armor_arms_red"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_burgundy_materials_end, "str_a_leather_armor_arms_black"),
+# Brittany    
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_breton_materials_begin, "str_a_leather_armor_arms_black"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_breton_materials_end, "str_a_leather_armor_arms_green"),  
+# Rebels    
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_rebel_materials_begin, "str_a_leather_armor_arms_green"),
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_rebel_materials_end, "str_a_leather_armor_arms_end"),     
+      (item_set_slot, "itm_a_leather_armor_custom", slot_item_num_components, 1),     
+
+## Vertex Coloured Mail shirt
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_materials_begin, "str_a_mail_shirt_arms_blue"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_materials_end, "str_a_mail_shirt_arms_end"),
+# France
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_france_materials_begin, "str_a_mail_shirt_arms_blue"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_france_materials_end, "str_a_mail_shirt_arms_red"),
+# England
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_english_materials_begin, "str_a_mail_shirt_arms_white"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_english_materials_end, "str_a_mail_shirt_arms_brown"),
+# Burgundy
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_burgundy_materials_begin, "str_a_mail_shirt_arms_red"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_burgundy_materials_end, "str_a_mail_shirt_arms_black"),
+# Brittany    
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_begin, "str_a_mail_shirt_arms_black"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_breton_materials_end, "str_a_mail_shirt_arms_green"),  
+# Rebels    
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_rebel_materials_begin, "str_a_mail_shirt_arms_green"),
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_rebel_materials_end, "str_a_mail_shirt_arms_end"),     
+      (item_set_slot, "itm_a_mail_shirt_custom", slot_item_num_components, 1),        
+
+      #Init Custom Armors
+      (try_for_range, ":item_no", "itm_a_peasant_man_custom", "itm_items_end"), # Seek: Changed the range
+          (item_get_slot, ":materials_begin", ":item_no", slot_item_materials_begin),
+          (item_get_slot, ":materials_end", ":item_no", slot_item_materials_end),
+          (store_random_in_range, ":random_material", ":materials_begin", ":materials_end"),
+          (item_set_slot, ":item_no", slot_item_player_color, ":random_material"), # Kham: Set to a Random Colour.
+          (item_set_slot, ":item_no", slot_item_num_components, 1), #allows it to be customized
+      (try_end),
+
+      
       ]),
       
       common_battle_init_banner,

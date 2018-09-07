@@ -1271,7 +1271,7 @@ spr_banner_kingdom_e 0 0 banner_kingdom_e 0 0
 spr_banner_kingdom_f 0 0 banner_kingdom_f 0 0
 
 
-spr_banner_f21 0 0 banner_a15 0 0
+spr_banner_f21 0 0 banner_bretagne 0 0
 
 
 spr_tavern_chair_a 0 0 tavern_chair_a bo_tavern_chair_a 0

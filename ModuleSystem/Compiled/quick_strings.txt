@@ -1,4 +1,4 @@
-1165
+1168
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1164,3 +1164,6 @@ qstr_Reset_to_Current Reset_to_Current
 qstr_Apologies_this_is_n Apologies,_this_is_not_one_of_our_approved_colours,_therefore_it_will_be_treason_to_make._Please_choose_another
 qstr_Begin:_{reg68}_=_End Begin:_{reg68}_=_End:_{reg69}
 qstr_Change_Color Change_Color
+qstr_No_one_wishes_to_acc No_one_wishes_to_accompany_you.
+qstr_One_{s3}_will_follow One_{s3}_will_follow_you.
+qstr_{reg5}_{s3}_will_fol {reg5}_{s3}_will_follow_you.

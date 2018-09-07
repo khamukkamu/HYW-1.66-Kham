@@ -25465,7 +25465,7 @@ game_menus = [
       (set_spawn_radius, 1),
       (spawn_around_party, "p_main_party", "pt_looters"),
       (assign, "$g_encountered_party", reg0),
-      (remove_party, reg0),],
+      ],
     [
       ("looter_attack", [
           (store_troop_faction, ":commander_faction", "$enlisted_lord"),
@@ -25549,7 +25549,7 @@ game_menus = [
       (try_end),],
     [
       ("freelancer_training_finish",[],"Go back to your post...",
-        [(change_screen_map)],
+        [(remove_party, "$g_encountered_party"),(change_screen_map)],
       ),
   ]),
   
@@ -25592,8 +25592,7 @@ game_menus = [
       (try_end),
       (set_spawn_radius, 1),
       (spawn_around_party, "p_main_party", "pt_steppe_bandits"),
-      (assign, "$g_encountered_party", reg0),
-      (remove_party, reg0),],
+      (assign, "$g_encountered_party", reg0),,],
     [
       ("bandit_attack", [
           (store_troop_faction, ":commander_faction", "$enlisted_lord"),
@@ -25692,7 +25691,7 @@ game_menus = [
       (try_end),],
     [
       ("freelancer_bandit_finish",[],"Go back to your post...",
-        [(change_screen_map)],
+        [(remove_party, "$g_encountered_party"),(change_screen_map)],
       ),
   ]),
   
