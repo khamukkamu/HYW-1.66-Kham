@@ -325,14 +325,14 @@ strings = [
   ("other_party_lost_morale",   "{s1} loses {reg1} morale."),
 
   ("qst_follow_spy_noticed_you", "The spy has spotted you! He's making a run for it!"),
-  ("father", "father"),
-  ("husband", "husband"),
-  ("wife", "wife"),
-  ("daughter", "daughter"),
-  ("mother", "mother"),
-  ("son", "son"),
-  ("brother", "brother"),
-  ("sister", "sister"),
+  # ("father", "father"),
+  # ("husband", "husband"),
+  # ("wife", "wife"),
+  # ("daughter", "daughter"),
+  # ("mother", "mother"),
+  # ("son", "son"),
+  # ("brother", "brother"),
+  # ("sister", "sister"),
   ("he", "He"),
   ("she", "She"),
   ("s3s_s2", "{s3}'s {s2}"),
@@ -1130,7 +1130,7 @@ strings = [
   ("npc11_personalitymatch_speech", "Ach, captain! A fight like that one sets my old joints a-creaking. Still, we licked them pretty good, didn't we?"),
   ("npc12_personalitymatch_speech", "My good captain, I am quite happy when it comes to some of the members of our righteous company. {s11}, especially shares my belief that cleansing sinners by fire is the best way to save them in the end."),
   ("npc13_personalitymatch_speech", "I was thinking, sir, about {s11}. He is, in many ways, like me. He may not be scorned by his own people like I am, yet he makes his own way in the world and he is brave despite the odds he faces."),
-  ("npc14_personalityclash_speech", "Commander. It is pleasing to march forth into battle with brave men like {s11} by my side."),
+  ("npc14_personalitymatch_speech", "Commander. It is pleasing to march forth into battle with brave men like {s11} by my side."),
   ("npc15_personalitymatch_speech", "Captain. I was just having a word with {s11} after our last battle, and he seems to be a good man. He even taught me some moves I could use in the next battle! Rather flamboyant and tiring, but I must say that he is a good trainer."),
   ("npc16_personalitymatch_speech", "Oy -- captain. I was just having a chat with {s11}, as we picked through the bodies after our last little scrap."),
    
@@ -1147,7 +1147,7 @@ strings = [
   ("npc11_personalitymatch_speech_b", "Old {s11} in particular showed them a thing or two, I thought. Not bad for the pair of us, I thought, given that between us we've probably seen close to a hundred winters."),
   ("npc12_personalitymatch_speech_b", "Though his faith, great as it is, falters and he sometimes feels his lust for vengeance is sated, I quickly bring him back on the right path. A good Christian must never rest when it comes to saving his fellow man. In that, we two, you and I, are blessed. May God bless you, captain."),
   ("npc13_personalitymatch_speech_b", "And all this, despite the fact he is a bastard. And so open he is about this! Other bastards take offence if you call them as such, but he makes no mistake about the world around him. Though he may not seem so, he is most wise. Wise beyond his station if I may say so. His faith, however, seems lacking."),
-  ("npc14_personalityclash_speech_b", "He might not be as masterful in the martial domain as we are, but he is a trustworthy companion to go into battle with. And he will also give you a shave the likes of which you can hardly find even in Genoa. When I return to my city and regain my title as count, I will take him to be my doctor and barber. You were wise to enlist him in the company."),
+  ("npc14_personalitymatch_speech_b", "He might not be as masterful in the martial domain as we are, but he is a trustworthy companion to go into battle with. And he will also give you a shave the likes of which you can hardly find even in Genoa. When I return to my city and regain my title as count, I will take him to be my doctor and barber. You were wise to enlist him in the company."),
   ("npc15_personalitymatch_speech_b", "The men also seem to like him for the way he treats them. He actually told me that, when he will leave your company to reclaim his place as a count of Genoa, he would take me at his side to be the surgeon of his Free Lance and his personal barber. I didn't know whether to accept or not, but it was certainly a gracious offer."),
   ("npc16_personalitymatch_speech_b", "Have you heard her story? Can you believe the wrongs done to her? I tell you, it makes my blood boil. I want to cut off all the little bits of those bastards who mistreated her -- and I'll do it, too, if we ever run into them in our travels."),
 
@@ -1343,7 +1343,7 @@ strings = [
   ("npc16_kingsupport_2b", "No offense, but I'm not sure that's the approach I'd take"), #klethi
   
   ("npc1_kingsupport_3", "If I could go about this land for a few weeks, telling the common folk that you were going to amnesty their kinfolk like the emperors of old -- well, they would start talking of you as the Emperor, and that would pave your way to the throne. Shall I do that, Boss?"), #Borcha
-  ("npc2_kingsupport_2", "If you like, captain, I can take a few weeks to visit the guildhalls and caravanseries where I have contacts, and explain to them that, in you, they will have a {king/ruler} who will check the rapacious nobles, who, with their tariffs and taxes, would strangle commerce for the sake of a few extra denars to spend on their wars and their feasts. What do you say to that, captain?"), #marnid
+  ("npc2_kingsupport_3", "If you like, captain, I can take a few weeks to visit the guildhalls and caravanseries where I have contacts, and explain to them that, in you, they will have a {king/ruler} who will check the rapacious nobles, who, with their tariffs and taxes, would strangle commerce for the sake of a few extra denars to spend on their wars and their feasts. What do you say to that, captain?"), #marnid
   ("npc3_kingsupport_3", "If you were to make such a pledge, {sir/madame}, I think that it would help many of the lords of this land overcome any reluctance that they might have. If your aim is to restore the old Calradic system, then arguably you are a more legitimate {king/ruler} then any of these come-lately usurpers. Give me leave for several weeks, {sir/madame}, and I will let it be known in the noble courts and merchant houses of this land that you intend to restore their ancient rights."), #ymira
   ("npc4_kingsupport_3", "Yes -- I think I have heard of that line, In fact, I can envision {his/her} entire genealogy. If you give me leave, 'Majesty', I shall travel about the villages and castles of this realm over the next several weeks, spreading word of your royal birth. Of course, I would hope that you would remember your faithful subject, when it comes to distributing lands..."),
   ("npc5_kingsupport_3", "Anyway, lord, in these sorry times the men of the great estates have taken to blocking our passage, charging us huge fees to cross. It is a great burden on my people, Bahadur. If I could take a few weeks to let the men of the steppes know that you would support the restoration of our ancient rights, well, then, I think you would find many who would support you as khan, And when men speak of you as khan, that's the first step to becoming one."), #beheshtur
@@ -1434,7 +1434,7 @@ strings = [
   ("npc2_turn_against", "This is a sad day. I never thought that I might meet my old captain on the field of battle. Even if I triumph, it will bring me no joy."), #marnid
   ("npc3_turn_against", "Oh {playername} -- what a tragic turn our lives have taken! I can only hope that the tides of war that have made us enemies, will one day allow us to be friends."), #ymira
   ("npc4_turn_against", "Aye, well.... I'm not sure what to say. If we must fight, let's get it over with."), #rolf
-  ("npc4_turn_against", "{playername} Bahadur! I took your salt, and was well rewarded for it! However, I will remind you of an old truth -- that while a Khergit may be an ardent follower, and a devoted friend, he will never be your slave.... Anyway, today I come against you with my sword raised. But I hope that one day we raise a glass together, to a friendship renewed."), #beheshtur
+  ("npc5_turn_against", "{playername} Bahadur! I took your salt, and was well rewarded for it! However, I will remind you of an old truth -- that while a Khergit may be an ardent follower, and a devoted friend, he will never be your slave.... Anyway, today I come against you with my sword raised. But I hope that one day we raise a glass together, to a friendship renewed."), #beheshtur
   ("npc6_turn_against", "It grieves me more than anything I can say to meet you like this, {playername}. I shall not dwell on the circumstances that have led us to this point. I can only hope that we may one day be reconciled."), #firentis
   ("npc7_turn_against", "Well, captain. You made of me a great lady, and for that I am grateful. However, you did not buy me, and now the circumstances have caused us our interests to clash, I can meet you in battle with a clear conscience. Still, I hope some day that circumstances may change again, and we may meet as friends."), #deshavi
   ("npc8_turn_against", "So we now we meet as enemies, and may shortly face each other over the rims of our shields. A grim day this is. Sometimes, the spinners of our fate have a dark sense of humor."), #matheld
@@ -1672,8 +1672,8 @@ strings = [
   ("comment_you_helped_my_ally_chivalrous",                   "I heard that you got {s54} out of a tight spot. That was a noble deed."), 
   ("comment_you_helped_my_ally_default",                   "I heard that you got {s54} out of a tight spot. Good work!"), 
  
-  ("comment_you_were_defeated_allied_unfriendly",             "I heard that {s54} defeated you. Look, try not to get too many of our men killed, will you?"), 
-  ("comment_you_were_defeated_allied",                        "I heard that {s54} defeated you. But take heart -- the tables will soon be turned!"), 
+  # ("comment_you_were_defeated_allied_unfriendly",             "I heard that {s54} defeated you. Look, try not to get too many of our men killed, will you?"), 
+  # ("comment_you_were_defeated_allied",                        "I heard that {s54} defeated you. But take heart -- the tables will soon be turned!"), 
 
   ("comment_you_abandoned_us_unfriendly_spiteful",     "You worm! You left us alone to face {s54}, didn't you? I spit at you."), 
   ("comment_you_abandoned_us_unfriendly_pitiless",     "Well... You abandoned me in the middle of a battle with {s54}, didn't you? I'll see you buried in a traitor's grave."), 
@@ -2041,11 +2041,11 @@ strings = [
   ("rebellion_refuse_default",              "{!}[liege]"),
   ("rebellion_refuse_martial",              "I am sorry. {s45} has a good claim, but it's not enough for me to turn my back on {s46}. I will remain loyal to my liege."),
   ("rebellion_refuse_quarrelsome",          "Nah. Your whelp {s45} doesn't have what it takes to rule this realm. I'm sticking with {s46}."),
-  ("rebellion_agree_pitiless",              "No. I will not join your rebellion. I count it little more than the tantrum of a child, denied a bauble which {reg3?she:he} thinks should be {reg3?hers:his}. I will stick with {s46}, whose ability to rule is well-tested."),
-  ("rebellion_agree_cunning",               "I am sorry. You do not give me reason for confidence that you will win. Many will die, but I do not wish to be among them. I will continue to back {s46}."),
-  ("rebellion_agree_sadistic",              "No. I won't play your little game. You grasp at a crown, but I think instead you'll get a quick trip to the scaffold, and I'll be there by {s46}'s side to watch the headsman's axe drop."),
-  ("rebellion_agree_goodnatured",           "I am sorry. I don't feel right turning my back on {s46}. No hard feelings when me meet on the battlefield."),
-  ("rebellion_agree_upstanding",            "I am sorry. {s45}'s claim is not strong enough for me to inflict the curse of civil disorder on the poor wretches of this land. I will continue to back {s46}. May the Heavens forgive me if I do wrong."),
+  ("rebellion_refuse_pitiless",              "No. I will not join your rebellion. I count it little more than the tantrum of a child, denied a bauble which {reg3?she:he} thinks should be {reg3?hers:his}. I will stick with {s46}, whose ability to rule is well-tested."),
+  ("rebellion_refuse_cunning",               "I am sorry. You do not give me reason for confidence that you will win. Many will die, but I do not wish to be among them. I will continue to back {s46}."),
+  ("rebellion_refuse_sadistic",              "No. I won't play your little game. You grasp at a crown, but I think instead you'll get a quick trip to the scaffold, and I'll be there by {s46}'s side to watch the headsman's axe drop."),
+  ("rebellion_refuse_goodnatured",           "I am sorry. I don't feel right turning my back on {s46}. No hard feelings when me meet on the battlefield."),
+  ("rebellion_refuse_upstanding",            "I am sorry. {s45}'s claim is not strong enough for me to inflict the curse of civil disorder on the poor wretches of this land. I will continue to back {s46}. May the Heavens forgive me if I do wrong."),
 
   ("talk_later_default",                    "{!}[liege]"),
   ("talk_later_martial",                    "Now is not the time to talk politics! I am here today with my fellow lords, armed for battle. You'd better prepare to fight."),
@@ -2135,8 +2135,9 @@ strings = [
   ("sarranid_rebellion_monarch_response_1", "Our scholars have long agreed that there is one overriding principle in politics. Men should accept the authority of the ruler, because tyranny is better than civil war. It was for that reason that I accepted the authority of both Baybak and Arwa, to whom I gave my oath as co-rulers."),
 
   ("swadian_rebellion_monarch_response_2", "His ancestors may have been the daughters or cousins of kings, but it is clear that the blood of kings has been all but spent in Charles. True enough, my own grandsire was merely the brother of a king, but France was in danger and he couldn't just leave the crown of France to the King of England and his treacherous mother. So he did what any Frenchman should and ensured that the crown stayed on the brow of a Frenchman. What Charles is doing now is sowing chaos in an already bloodied land."),
-  ("vaegir_rebellion_monarch_response_2",  "Truth be told, the Welsh have had no true leader since Llywelyn the Great. After Llywelyn, his horde of heirs and bastards tore their father's realm between themselves, each and every one of them hungry for power. Owain of the Red Hand is just the descendant of one of these heirs or maybe even bastards and much like his sires he desires one thing. Power. And I pity the man who will try and help him achieve his goals, for he is an enemy of England and of its people."),  ("khergit_rebellion_monarch_response_2", "Dustum would make a fine assessor of flocks, or adjudicator of land disputes. But can you imagine such a man as khan? We would be run off of our land in no time by our neighbors, and return to our old days of starving and freezing on the steppe."),
+  ("vaegir_rebellion_monarch_response_2",  "Truth be told, the Welsh have had no true leader since Llywelyn the Great. After Llywelyn, his horde of heirs and bastards tore their father's realm between themselves, each and every one of them hungry for power. Owain of the Red Hand is just the descendant of one of these heirs or maybe even bastards and much like his sires he desires one thing. Power. And I pity the man who will try and help him achieve his goals, for he is an enemy of England and of its people."),  
   ("khergit_rebellion_monarch_response_2", "Dustum would make a fine assessor of flocks, or adjudicator of land disputes. But can you imagine such a man as khan? We would be run off of our land in no time by our neighbors, and return to our old days of starving and freezing on the steppe."),
+  # ("khergit_rebellion_monarch_response_2", "Dustum would make a fine assessor of flocks, or adjudicator of land disputes. But can you imagine such a man as khan? We would be run off of our land in no time by our neighbors, and return to our old days of starving and freezing on the steppe."),
   ("nord_rebellion_monarch_response_2",    "Old Hakrim may have had fancy ideas about how to dispose of his kingdom, but it is not just royal blood that makes a King of the Nords. I am king by acclamation of the thanes, and by right of being the strongest. That counts for more than blood, and woe to any man in this land who says otherwise."),
   ("rhodok_rebellion_monarch_response_2",  "The only liberty that concerns them is their liberty to grow fat. Meanwhile, my men sleep out on the steppe, and eat dry bread and salt fish, and scan the horizon for burning villages, and shed our blood to keep the caravan routes open. Here's an idea -- if I ever meet a merchant who limps from a Khergit arrow-wound or a Swadian sword-stroke, then I'll say, 'Here's a man whose counsel is worth taking.'"),
   ("sarranid_rebellion_monarch_response_2", "You should know, however, that Arwa was not chosen as Baybak's partner because of her wisdom or love of justice. No, she was chosen because she was a witch, who could transform men like Ayzar and Baybak into stammering fools. No matter -- I was true to my oath, and respected her usurpation, until the very hour that it was invalidated by the death of her puppet. Now she must respect mine."),
@@ -2593,7 +2594,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("choose_number_of_bots_for_team_reg0", "Choose number of bots for team {reg0}:"),
   ("spectator", "Spectator"),
   ("spectators", "Spectators"),
-  ("score", "Score"),
+  # ("score", "Score"),
   ("command", "Command:"),
   ("profile_banner_selection_text", "Choose a banner for your profile:"),
   ("use_default_banner", "Use Faction's Banner"),
@@ -2608,7 +2609,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("us_", "Us "),
   ("allies_", "Allies "),
   ("enemies_", "Enemies "),
-  ("routed", "Routed"),
+  # ("routed", "Routed"),
   ("weekly_budget", "Weekly Budget"),
   ("income_from_s0", "Income from {s0}:"),
   ("mercenary_payment_from_s0", "Mercenary payment from {s0}:"),
@@ -2787,7 +2788,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("trade_explanation_leatherwork", "I work in the tanneries outside the walls, turning cured hides from the countryside into good, supple leather. It's foul work, and I come home stinking of urine, dung, and lime -- but that's where your boots, saddles, and bridles come from, {sir/my lady}."),
   ("trade_explanation_flax", "I sew and harvest linseed, and rot the stems to make flax fibers. That's the source of your fine linens, {sir/my lady} -- a rotting pit on the edge of a field."),
   ("trade_explanation_dates", "I tend to a grove of date palms. I hope you don't mind me saying so, but it takes great skill to tend them, as we must climb to the tops of the palms to ensure that the trees will flower. We export the fruit far and wide, as they keep for many months when properly dried. As sweet as honey, and they grant the eater health and strength."),
-  ("trade_explanation_dates", "I tend to a grove of date palms. We grow them using well-water, and export the fruit far and wide, as they keep for many months when properly dried. As sweet as honey, and they grant the eater health and vigor."),
+  # ("trade_explanation_dates", "I tend to a grove of date palms. We grow them using well-water, and export the fruit far and wide, as they keep for many months when properly dried. As sweet as honey, and they grant the eater health and vigor."),
   ("trade_explanation_olives", "I tend to a grove of olive trees. You can eat the fruit or preserve it in brine, but we end up sending most of it to be pressed, to be made into oil."),
   
   
@@ -3443,7 +3444,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("forgive_me_but_id_prefer_to_keep_our_conversations_in_the_open", "Forgive me, but I'd prefer to keep our conversations in the open."),
   ("please_do_not_take_this_amiss_but_im_not_sure_you_and_i_are_still_on_those_terms", "Please do not take this amiss, but I'm not sure you and I are still on those terms."),
   ("persuasion__relation_less_than_5", "{!}Persuasion + relation less than -5)"),
-  ("s15", "{!}{s15}"),
+  # ("s15", "{!}{s15}"),
   ("persuasion__2__lord_reputation_modifier__relation_less_than_10", "{!}Persuasion * 2 + lord reputation modifier + relation less than 10)"),
   ("s13", "{!}{s13}"),
   ("placeholder", "{!}[placeholder]..."),
@@ -3472,9 +3473,9 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   #("bring_peace_reg3", "Bring peace: {reg3}"),
   #("only_best_counsel_reg3", "Only best counsel: {reg3}"),
   #("reward_lords_reg3", "Reward lords: {reg3}"),
-  ("he", "he"),
+  # ("he", "he"),
   ("king", "king"),
-  ("she", "she"),
+  # ("she", "she"),
   ("queen", "queen"),
   ("khan", "khan"),
   ("i", "I"),
@@ -3598,7 +3599,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("i_am", "I am"),
   ("s12", "{!}{s12},"),
   ("s12_s11_to_s14", "{s12} {s11} to {s14}"),
-  ("s12", "{!}{s12}."),
+  # ("s12", "{!}{s12}."),
   ("s12_i_am_here_for_the_feast", "{s12}. I am here for the feast."),
   ("another_tournament_dedication_oh_i_suppose_it_is_always_flattering", "Another tournament dedication? Oh, I suppose it is always flattering..."),
   ("do_you_why_what_a_most_gallant_thing_to_say", "Do you? Why, what a most gallant thing to say."),
@@ -3843,7 +3844,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
   ("we_are_conducting_recce", "We will first scout the area, and then decide what to do."),
   
-  ("_family_", "^Family:"),
+  # ("_family_", "^Family:"),
   ("s49_s12_s11_end", "{s49} {s12} ({s11})."),
   
   ("center_party_not_active", "is not our target, because we don't have a leader who has taken the field."),
@@ -4019,11 +4020,11 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
   ("attempting_to_rejoin_party", "Attempting to rejoin party,"),
   ("separated_from_party", "Separated from party,"),
-  ("whereabouts_unknown", "whereabouts unknown"),
+  # ("whereabouts_unknown", "whereabouts unknown"),
   
   ("none_yet_gathered", "{!}None yet gathered"),
   
-  ("betrothed", " Betrothed "),
+  # ("betrothed", " Betrothed "),
   ("leading_party", "leading a party"),
   ("court_disbanded", "As you no longer rule an independent kingdom, your court has been disbanded"), 
   ("i_am_not_accompanying_the_marshal_because_will_be_reappointment", " I am not accompanying the marshal, because I suspect that our ruler will shortly appoint another to that post."),
@@ -4132,9 +4133,12 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Flemish
 ("a_padded_cloth_yellow", "a_padded_cloth_yellow"),
 ("a_padded_cloth_yellow_black", "a_padded_cloth_yellow_black"),
-# Flemish
+# Rebels
 ("a_padded_cloth_green", "a_padded_cloth_green"),
 ("a_padded_cloth_half_green", "a_padded_cloth_half_green"),
+# Ironskulls
+("a_padded_cloth_ironskull", "a_padded_cloth_ironskull"),
+("a_padded_cloth_ironskull_2", "a_padded_cloth_ironskull_2"),
 ("a_padded_cloth_end", "a_padded_cloth_end"),
 
 ## Peasant Clothes
@@ -4193,6 +4197,9 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Rebel
 ("a_gambeson_narf_green", "a_gambeson_narf_green"),  
 ("a_gambeson_narf_half_green", "a_gambeson_narf_half_green"),  
+# Ironskulls
+("a_gambeson_narf_ironskull", "a_gambeson_narf_ironskull"),  
+("a_gambeson_narf_ironskull_2", "a_gambeson_narf_ironskull_2"),  
 ("a_gambeson_narf_end", "a_gambeson_narf_end"),
 
 ## Bogmir Brigandine
@@ -4235,6 +4242,9 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Flemish
 ("a_brigandine_narf_yellow_black", "a_brigandine_narf_yellow_black"),  
 ("a_brigandine_narf_yellow", "a_brigandine_narf_yellow"),  
+# Ironskull
+("a_brigandine_narf_ironskull", "a_brigandine_narf_ironskull"),  
+("a_brigandine_narf_ironskull_2", "a_brigandine_narf_ironskull_2"),  
 ("a_brigandine_narf_end", "a_brigandine_narf_end"),
 
 ## Narf Aketon
@@ -4307,6 +4317,9 @@ Even in the last case, the player can make formations up to four lines by orderi
 # Flemish  
 ("a_churburg_yellow_black", "a_churburg_yellow_black"),  
 ("a_churburg_yellow", "a_churburg_yellow"),
+# Ironskulls  
+("a_churburg_ironskull", "a_churburg_ironskull"),  
+("a_churburg_ironskull_2", "a_churburg_ironskull_2"),
 ("a_churburg_end", "a_churburg_end"),
 
 ## Churburg Brass
@@ -4355,6 +4368,9 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_early_transitional_black", "a_early_transitional_black"),
 ("a_early_transitional_yellow", "a_early_transitional_yellow"),
 ("a_early_transitional_yellow_black", "a_early_transitional_yellow_black"),
+# Ironskulls
+("a_early_transitional_ironskull", "a_early_transitional_ironskull"),
+("a_early_transitional_ironskull_2", "a_early_transitional_ironskull_2"),
 ("a_early_transitional_end", "a_early_transitional_end"),
 
 ## Narf Hoods for the Helmets

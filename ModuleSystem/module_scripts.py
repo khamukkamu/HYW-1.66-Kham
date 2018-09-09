@@ -1115,7 +1115,10 @@ scripts = [
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_flemish_materials_end, "str_a_padded_cloth_green"),	
 # Rebels	
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_rebel_materials_begin, "str_a_padded_cloth_green"),
-      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_rebel_materials_end, "str_a_padded_cloth_end"),			
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_rebel_materials_end, "str_a_padded_cloth_ironskull"),	
+# Ironskulls	
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_ironskulls_materials_begin, "str_a_padded_cloth_ironskull"),
+      (item_set_slot, "itm_a_padded_cloth_custom", slot_item_ironskulls_materials_end, "str_a_padded_cloth_end"),			
       (item_set_slot, "itm_a_padded_cloth_custom", slot_item_num_components, 1),
       
 ## Peasant Clothes
@@ -1178,7 +1181,10 @@ scripts = [
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_flemish_materials_end, "str_a_gambeson_narf_green"),	
 # Rebels		
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_rebel_materials_begin, "str_a_gambeson_narf_green"),
-      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_rebel_materials_end, "str_a_gambeson_narf_end"),			
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_rebel_materials_end, "str_a_gambeson_narf_ironskull"),	
+# Ironskulls		
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_ironskulls_materials_begin, "str_a_gambeson_narf_ironskull"),
+      (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_ironskulls_materials_end, "str_a_gambeson_narf_end"),			
       (item_set_slot, "itm_a_gambeson_narf_custom", slot_item_num_components, 1),   
 
 ## Bogmir Brigandine 
@@ -1257,7 +1263,10 @@ scripts = [
       (item_set_slot, "itm_a_churburg_narf_custom", slot_item_breton_materials_end, "str_a_churburg_yellow_black"),	
 # Flemish Mercenaries		
       (item_set_slot, "itm_a_churburg_narf_custom", slot_item_flemish_materials_begin, "str_a_churburg_black"),
-      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_flemish_materials_end, "str_a_churburg_end"),			
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_flemish_materials_end, "str_a_churburg_ironskull"),	
+# Ironskulls		
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_ironskulls_materials_begin, "str_a_churburg_ironskull"),
+      (item_set_slot, "itm_a_churburg_narf_custom", slot_item_ironskulls_materials_end, "str_a_churburg_end"),			
       (item_set_slot, "itm_a_churburg_narf_custom", slot_item_num_components, 1),   	
 		
 ## Churburg Brass
@@ -1314,7 +1323,10 @@ scripts = [
       (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_breton_materials_end, "str_a_early_transitional_black"),		
 # Flemish Mercenaries		
       (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_flemish_materials_begin, "str_a_early_transitional_black"),
-      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_flemish_materials_end, "str_a_early_transitional_end"),				
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_flemish_materials_end, "str_a_early_transitional_ironskull"),
+# Ironskulls		
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_ironskulls_materials_begin, "str_a_early_transitional_ironskull"),
+      (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_ironskulls_materials_end, "str_a_early_transitional_end"),		
       (item_set_slot, "itm_a_early_transitional_narf_custom", slot_item_num_components, 1),   		
 				
 ## Narf Brigandine 
@@ -1335,7 +1347,10 @@ scripts = [
 			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_a_brigandine_narf_yellow_black"),	
 	# Flemish Mercenaries		
 			(item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_a_brigandine_narf_black"),
-			(item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_a_brigandine_narf_end"),			
+			(item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_a_brigandine_narf_ironskull"),	
+	# Ironskull		
+			(item_set_slot, ":item_no", slot_item_ironskulls_materials_begin, "str_a_brigandine_narf_ironskull"),
+			(item_set_slot, ":item_no", slot_item_ironskulls_materials_end, "str_a_brigandine_narf_end"),				
 			(item_set_slot, ":item_no", slot_item_num_components, 1),   	
       (try_end),
 		
@@ -1376,7 +1391,10 @@ scripts = [
 			(item_set_slot, ":item_no", slot_item_burgundy_materials_end, "str_h_hood_narf_white_2"),
 	# Brittany		
 			(item_set_slot, ":item_no", slot_item_breton_materials_begin, "str_h_hood_narf_white_2"),
-			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_h_hood_narf_yellow_black"),		
+			(item_set_slot, ":item_no", slot_item_breton_materials_end, "str_h_hood_narf_yellow_black"),	
+	# Ironskulls		
+			(item_set_slot, ":item_no", slot_item_ironskulls_materials_begin, "str_h_hood_narf_white_2"),
+			(item_set_slot, ":item_no", slot_item_ironskulls_materials_end, "str_h_hood_narf_yellow_black"),				
 	# Flemish Mercenaries	
 			(item_set_slot, ":item_no", slot_item_flemish_materials_begin, "str_h_hood_narf_black"),
 			(item_set_slot, ":item_no", slot_item_flemish_materials_end, "str_h_hood_narf_green"),

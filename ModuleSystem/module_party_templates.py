@@ -155,7 +155,7 @@ party_templates = [
 ("catareb", "Rebelles de Paris", icon_axeman|carries_goods(2), 0, fac_rebels, soldier_personality, [(trp_parisassau_rchef,1,1),(trp_parisassau_troop1,4,26),(trp_parisassau_troop2,4,26),(trp_parisassau_troop_wo,4,16)] ),
 
 #crane_de_fer
-("cranede_fer", "Compagnie des Cranes de Fer", icon_gray_knight|carries_goods(2), 0, fac_kingdom_4, bandit_personality, [(trp_crane_de_fer_sergent,1,1),(trp_crane_de_fer_fantassin,5,21),(trp_crane_de_fer_archer,4,17)] ),
+("cranede_fer", "Compagnie des Cranes de Fer", icon_gray_knight|carries_goods(2), 0, fac_kingdom_4, bandit_personality, [(trp_ironskull_captain,1,1),(trp_ironskull_journeyman,6,12),(trp_crane_de_fer_mercenaire,5,15),(trp_ironskull_veteran,3,8),(trp_ironskull_sergeant,1,2),(trp_ironskull_archer,3,12)] ),
 
  ("bandits_rennes", "Tueurs de caravaniers", icon_axeman|carries_goods(2), 0, fac_viland_quest_bourges, soldier_personality, [(trp_tueur_caravane_chef,1,1),(trp_tueur_caravane_1,4,8),(trp_tueur_caravane_2,4,8)] ),
 

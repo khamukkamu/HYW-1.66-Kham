@@ -51,3 +51,4 @@ prsnt_troop_tree = 49
 prsnt_troop_detail = 50
 prsnt_all_items = 51
 prsnt_customize_armor = 52
+prsnt_jrider_faction_relations_report = 53

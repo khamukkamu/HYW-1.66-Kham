@@ -352,8 +352,8 @@ scenes = [
     [],[], "outer_terrain_snow"),  
     
 #######
-  ("random_scene_desert",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000229602800000691a400003efe00004b34000059be",
-    [],[], "outer_terrain_plain"),
+  # ("random_scene_desert",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000229602800000691a400003efe00004b34000059be",
+    # [],[], "outer_terrain_plain"),
 #######
   ("random_scene_steppe_forest1",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x00000000a0034a0740025896000078f00000356b00002c27",
     [],[], "paris_outer_terrain_plain9"),  
@@ -407,8 +407,8 @@ scenes = [
     [],[], "outer_terrain_snow_mix"),
   ("random_scene_snow_forest4",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x400211130001e07800002ad400001172000035c4",
     [],[], "outer_terrain_snow_mix"),
-  ("random_scene_desert_forest",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x00000000400446e34003e8fa0000034e00004b34000071b8",
-    [],[], "outer_terrain_plain"),
+  # ("random_scene_desert_forest",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x00000000400446e34003e8fa0000034e00004b34000071b8",
+    # [],[], "outer_terrain_plain"),
   ("random_scene_snow_forest5",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x400211130001e07800002ad400001172000035c4",
     [],[], "outer_terrain_snow_mix"),
   ("random_scene_snow_forest6",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x400211130001e07800002ad400001172000035c4",

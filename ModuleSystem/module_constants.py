@@ -2164,7 +2164,7 @@ slot_item_player_slots_begin = 85
 slot_item_player_slots_end = slot_item_player_slots_begin + custom_armor_maximum_submaterial
 slot_item_player_color = slot_item_player_slots_end
 
-# Seek: Added slots for faction specific colors
+# HYW Seek: Added slots for faction specific colors
 slot_item_france_materials_begin	=	93
 slot_item_france_materials_end		=	94
 slot_item_english_materials_begin	=	95
@@ -2177,7 +2177,9 @@ slot_item_flemish_materials_begin	=	101
 slot_item_flemish_materials_end		=	102
 slot_item_rebel_materials_begin	=	103
 slot_item_rebel_materials_end		=	104
-# Seek end
+slot_item_ironskulls_materials_begin	=	105
+slot_item_ironskulls_materials_end		=	106
+# HYW Seek end
 
 custom_item_color_mask = 0xf
 custom_item_color_bits = 4

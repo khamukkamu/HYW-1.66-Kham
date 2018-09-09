@@ -678,11 +678,19 @@ game_menus = [
       ),
       
       #NPC companion changes end
-      
-      ("view_faction_relations_report",[],"View faction relations report.",
-        [(jump_to_menu, "mnu_faction_relations_report"),
+### HYW Seek: Replaced Native relation report with Jrider's      
+      # ("view_faction_relations_report",[],"View faction relations report.",
+        # [(jump_to_menu, "mnu_faction_relations_report"),
+        # ]
+      # ),
+		
+     ("view_faction_relations_report",[],"View faction relations report.",
+       [
+           # Jrider + REPORTS PRESENTATIONS 1.2, comment to hook faction report presentation
+           (start_presentation, "prsnt_jrider_faction_relations_report"),
+           # Jrider -
         ]
-      ),
+       ),		
       
       #menu faim aqaqa
       ("view_hungry_report",[],"Rapport de santé.",
@@ -2535,7 +2543,7 @@ game_menus = [
           (try_begin),
             (eq,"$background_item_mercenaire",1),
             (troop_add_item, "trp_player","itm_a_gambeson_custom",0),
-            (troop_add_item, "trp_player","itm_w_pike_1",0),
+            (troop_add_item, "trp_player","itm_w_awlpike_4",0),
             (troop_add_item, "trp_player","itm_s_steel_buckler",0),
           (else_try),
             (eq,"$background_item_rebel",1),
@@ -25592,7 +25600,7 @@ game_menus = [
       (try_end),
       (set_spawn_radius, 1),
       (spawn_around_party, "p_main_party", "pt_steppe_bandits"),
-      (assign, "$g_encountered_party", reg0),,],
+      (assign, "$g_encountered_party", reg0),],
     [
       ("bandit_attack", [
           (store_troop_faction, ":commander_faction", "$enlisted_lord"),

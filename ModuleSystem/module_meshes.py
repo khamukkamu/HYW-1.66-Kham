@@ -680,5 +680,9 @@ meshes = [
 ###VC presentations
     ("pic_troop_trees", 0, "meeting_window", 0, 0, 0, 0, 0, 0, 1, 1, 1),
     ("pic_units_details", 0, "meeting_window", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+	 
+  # Jrider + REPORTS PRESENTATIONS 1.0
+  ("message_window", 0, "message_window", 0, 0, 0, 0, 0, 0, 0.8, 0.5, 0.5), # in core_ui_meshes.brf, same one as in 1st presentation
+  # Jrider -	 
 
 ]

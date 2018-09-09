@@ -438,3 +438,4 @@ mesh_pic_soldier_rebel = 436
 mesh_pic_soldier_desert = 437
 mesh_pic_troop_trees = 438
 mesh_pic_units_details = 439
+mesh_message_window = 440
