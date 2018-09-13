@@ -35410,7 +35410,7 @@ scripts = [
       (troop_set_slot, "trp_npc8", slot_troop_personalityclash2_object, "trp_npc3"), #matheld - ymira
       (troop_set_slot, "trp_npc8", slot_troop_personalitymatch_object, "trp_npc13"),  #matheld - nizar
       (troop_set_slot, "trp_npc8", slot_troop_home, "p_sea_raider_spawn_point_2"), #Gundig's Point
-      (troop_set_slot, "trp_npc8", slot_troop_payment_request, 500),
+      (troop_set_slot, "trp_npc8", slot_troop_payment_request, 150),
       (troop_set_slot, "trp_npc8", slot_troop_kingsupport_argument, argument_lords),
       (troop_set_slot, "trp_npc8", slot_troop_kingsupport_opponent, "trp_npc2"), #marnid
       (troop_set_slot, "trp_npc8", slot_troop_town_with_contacts, "p_town_12"), #wercheg
