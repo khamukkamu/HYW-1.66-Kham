@@ -62,7 +62,7 @@ qstr_Licorne_m_envoie_a_l|Unicorn sends you out to kill again, he wants you to p
 qstr_Licorne_me_payeras_1|Unicorn pays 1000 denars if you get rid of the English governor, who is hunting near Senlis. You'll have to improvise because the camp can only be entered unarmed.
 qstr_Licorne_m_a_demandé|Unicorn told you to assassinate important people or general enemies for the good of the cause. You have to get rid of the Count of Caen. Fake an invitation to a banquet, guard the entrance and close in on the Count for a kill.
 qstr_Villandrandro_m_as_c|Rodrigue de Villandrandro asked you to kill a traitor called Mathieu the Spinner. He lives on a farm near Rennes.
-qstr_Villandrandro_m_as_ch|Rodrigue de Villandrandro told you to collect his extortion money. Ask for protection money from the armorer, the wholesaler, and the weaponsmith.
+qstr_Villandrandro_m_as_ch|Rodrigue de Villandrandro told you to collect his extortion money. Ask for protection money from the armorer, the wench and the weaponsmith.
 qstr_Villandrandro_veux_q|Rodrigue de Villandrandro wants you to steal a ring from the vault of an old castle in Tours. Better not get caught because the Kingdom of France will never forgive you.
 qstr_Rodrigue_de_Villandr|Rodrigue de Villandrandro wants you to pickpocket a key for him. It's carried by a noble living in the house of the three Sirens in Tours.
 qstr_Le_chef_des_Rebelles_c|The leader of the rebels in Paris asked you to get rid of the English troops stationed in a crypt near the rebel camp.
@@ -680,22 +680,22 @@ qstr_Moreover_you_earn_{|Moreover, you earn {reg8} denars from the clever bets y
 qstr_Les_frais_de_l_inscr|The registration fee for the tournament and rental equipment amounts to {reg5} denars. Winner gets {reg6} denars and an item prize.
 qstr_Victory_is_yours!_Yo|Victory is yours! You have won this melee, but now you must prepare yourself for the next round. 
 qstr_You_have_been_bested|You have been bested in this melee, but the master of ceremonies declares a recognition of your skill and bravery, allowing you to take part in the next round. 
-qstr_Vous_êtes_au_tour_1|You are in the 1st round of Group A in the tournament. 16 participants remain.^Next fight:^Groupe A: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_2|You are in the 2nd round of Group A in the tournament. 14 participants remain.^Next fight:^Groupe A: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_3|You are in the 3rd round of Group A in the tournament. 12 participants remain.^Next fight:^Groupe A: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_4|You are in the 4th round of Group A in the tournament. 10 participants remain.^Next fight:^Groupe A: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_5|You are in the 5th round of Group A in the tournament. 8 participants remain.^Next fight:^Groupe A: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_6|You are in the quarter-final round of Group A in the tournament. 6 participants remain.^Next fight:^Groupe A: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_7|You are in the semi-final round of Group A in the tournament. 4 participants remain.^Next fight:^Groupe A: {s30} versus {s31}.
-qstr_Vous_êtes_en_finale|You are in the final of the tournament in Group A. 2 participants remain.^Next fight:^Groupe A: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_1_|You are in the 1st round of Group B in the tournament. 16 participants remain.^Next fight:^Groupe B: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_2_|You are in the 2nd round of Group B in the tournament. 14 participants remain.^Next fight:^Groupe B: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_3_|You are in the 3rd round of Group B in the tournament. 12 participants remain.^Next fight:^Groupe B: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_4_|You are in the 4th round of Group B in the tournament. 10 participants remain.^Next fight:^Groupe B: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_5_|You are in the 5th round of Group B in the tournament. 8 participants remain.^Next fight:^Groupe B: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_6_|You are in the quarter-final round of Group B in the tournament. 6 participants remain.^Next fight:^Groupe B: {s30} versus {s31}.
-qstr_Vous_êtes_au_tour_7_|You are in the semi-final round of Group B in the tournament. 4 participants remain.^Next fight:^Groupe B: {s30} versus {s31}.
-qstr_Vous_êtes_en_finale_|You are in the final of the tournament in Group B. 2 participants remain.^Next fight:^Groupe B: {s30} versus {s31}.
+qstr_Vous_êtes_au_tour_1|You are in the 1st round of Group A in the tournament. 16 participants remain.^Prochain combat:^Groupe A: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_2|You are in the 2nd round of Group A in the tournament. 14 participants remain.^Prochain combat:^Groupe A: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_3|You are in the 3rd round of Group A in the tournament. 12 participants remain.^Prochain combat:^Groupe A: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_4|You are in the 4th round of Group A in the tournament. 10 participants remain.^Prochain combat:^Groupe A: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_5|You are in the 5th round of Group A in the tournament. 8 participants remain.^Prochain combat:^Groupe A: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_6|You are in the quarter-final round of Group A in the tournament. 6 participants remain.^Prochain combat:^Groupe A: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_7|You are in the semi-final round of Group A in the tournament. 4 participants remain.^Prochain combat:^Groupe A: {s30} contre {s31}.
+qstr_Vous_êtes_en_finale|You are in the final of the tournament in Group A. 2 participants remain.^Prochain combat:^Groupe A: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_1_|You are in the 1st round of Group B in the tournament. 16 participants remain.^Prochain combat:^Groupe B: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_2_|You are in the 2nd round of Group B in the tournament. 14 participants remain.^Prochain combat:^Groupe B: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_3_|You are in the 3rd round of Group B in the tournament. 12 participants remain.^Prochain combat:^Groupe B: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_4_|You are in the 4th round of Group B in the tournament. 10 participants remain.^Prochain combat:^Groupe B: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_5_|You are in the 5th round of Group B in the tournament. 8 participants remain.^Prochain combat:^Groupe B: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_6_|You are in the quarter-final round of Group B in the tournament. 6 participants remain.^Prochain combat:^Groupe B: {s30} contre {s31}.
+qstr_Vous_êtes_au_tour_7_|You are in the semi-final round of Group B in the tournament. 4 participants remain.^Prochain combat:^Groupe B: {s30} contre {s31}.
+qstr_Vous_êtes_en_finale_|You are in the final of the tournament in Group B. 2 participants remain.^Prochain combat:^Groupe B: {s30} contre {s31}.
 qstr_You_were_beaten._The|You were beaten. The peasants are heartened by their success, but the lesson you wanted to teach them probably didn't get through...
 qstr_After_beating_your_l|After beating your last opponent, you explain to the peasants how to better defend themselves against such an attack. Hopefully they'll take the experience on board and will be prepared next time.
 qstr_The_bandits_are_brok|The bandits are broken! Those few who remain alive and conscious run off with their tails between their legs, terrified of the peasants and their new champion.

@@ -175,7 +175,6 @@ skins = [
      ]
   ),
 
-
   (
     "woman", skf_use_morph_key_10,
     "woman_body",  "woman_calf_l", "f_handL",
@@ -220,7 +219,6 @@ skins = [
     psys_game_blood,psys_game_blood_2,
   ),
   
-
   (
     "english", 0,
     "man_body", "man_calf_l", "m_handL",
@@ -264,7 +262,6 @@ skins = [
      [2.7, comp_greater_than, (1.0,chin_size), (1.0,mouth_nose_distance), (1.0,nose_height), (-1.0,face_width)],
      ]
   ),
-
 
   (
     "bourgignon", 0,
@@ -310,7 +307,6 @@ skins = [
      ]
   ),
 
-
   (
     "bandit", 0,
     "man_body", "man_calf_l", "m_handL",
@@ -354,9 +350,6 @@ skins = [
      [2.7, comp_greater_than, (1.0,chin_size), (1.0,mouth_nose_distance), (1.0,nose_height), (-1.0,face_width)],
      ]
   ),  
-  
-  
-
   
 ##  (
 ##    "undead", 0,

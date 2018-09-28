@@ -32829,9 +32829,9 @@ dialogs = [
 
   #### Kham - Armour Customization Dialogues START #####
 
-  [anyone|plyr,"town_merchant_talk",[(is_between,"$g_talk_troop",armor_merchants_begin,armor_merchants_end)], "I'd like to Customize my Armour", "tailor_custom_armor_start",[]],
+  [anyone|plyr,"town_merchant_talk",[(is_between,"$g_talk_troop",armor_merchants_begin,armor_merchants_end)], "Je voudrais customiser mon équipement.", "tailor_custom_armor_start",[]],
   
-  [anyone,"tailor_custom_armor_start",[], "What do you want to customize?", "tailor_custom_armor_ask",[]],
+  [anyone,"tailor_custom_armor_start",[], "Que voulez-vous customiser?", "tailor_custom_armor_ask",[]],
 
   [anyone|plyr|repeat_for_100, "tailor_custom_armor_ask", 
     [
@@ -32847,7 +32847,7 @@ dialogs = [
    ],
   ],
 
-  [anyone|plyr,"tailor_custom_armor_ask",[], "Nothing right now.", "close_window",[(assign, "$g_current_opened_item_details", -1)]],
+  [anyone|plyr,"tailor_custom_armor_ask",[], "Pour l'instant, rien.", "close_window",[(assign, "$g_current_opened_item_details", -1)]],
   
 ### HYW Seek: Made some changes to pricing, added skillchecks
 # Price Announcement
@@ -32858,7 +32858,7 @@ dialogs = [
 	(val_div, ":price", 100),
 	(assign,reg0, ":price"),  
 	
-  ], "Very well {sir/madam}, it will cost you {reg0} crowns.", "tailor_custom_armor_confirm",[]],
+  ], "{sire/madame}, cela vous coûteras {reg0} couronnes.", "tailor_custom_armor_confirm",[]],
   
 # Deal or no deal  
   [anyone|plyr,"tailor_custom_armor_confirm",
@@ -32869,7 +32869,7 @@ dialogs = [
 	(store_skill_level, ":trade_level", "skl_trade", "trp_player"),	
 	(eq, ":persuasion_level", 0),
 	(eq, ":trade_level", 0),	
-  ],	"The price seems fair to me.", "town_merchant_finish",[
+  ],	"Le prix me semble raisonable.", "town_merchant_finish",[
 	(troop_remove_gold, "trp_player", reg0), 
   ]
   ],  
@@ -32887,7 +32887,7 @@ dialogs = [
 	(val_div, ":price", 100),
 	(assign,reg0, ":price"),  	
 	
-  ],	"[Persuasion {reg1}] Make it {reg0} crowns and I'll put out a good word about your shop.", "town_merchant_finish",[
+  ],	"[Persuasion {reg1}] Disons {reg0} couronnes et je recommanderais votre étal.", "town_merchant_finish",[
 	(troop_remove_gold, "trp_player", reg0), 
   ]
   ],    
@@ -32905,7 +32905,7 @@ dialogs = [
 	(val_div, ":price", 100),
 	(assign,reg0, ":price"),  	
 	
-  ],	"[Trade {reg1}] I'm certain {reg0} crowns would be a more appropriate price, you will still make a profit and earn a new customer.", "town_merchant_finish",[
+  ],	"[Commerce {reg1}] Je suis certain que {reg0} couronnes est un prix plus que raisonnable.", "town_merchant_finish",[
 	(troop_remove_gold, "trp_player", reg0), 
   ]
   ],      
@@ -32915,11 +32915,11 @@ dialogs = [
   [
 	(store_troop_gold, ":gold", "trp_player"),  
 	(le, ":gold", reg0),
-  ],	"I'm afraid that I can't afford it...", "close_window",[(assign, "$g_current_opened_item_details", -1)]],
+  ],	"Je n'ai pas les moyens pour le moment.", "close_window",[(assign, "$g_current_opened_item_details", -1)]],
   
-  [anyone|plyr,"tailor_custom_armor_confirm",[], "Perhaps later.","close_window",[(assign, "$g_current_opened_item_details", -1)]],  
+  [anyone|plyr,"tailor_custom_armor_confirm",[], "Plus tard peut-être.","close_window",[(assign, "$g_current_opened_item_details", -1)]],  
   
-  [anyone,"town_merchant_finish",[], "I'll work on it straight away.", "close_window",
+  [anyone,"town_merchant_finish",[], "Je prends votre commande tout de suite.", "close_window",
     [
 	(item_get_slot, "$custom_armour_current_colour", "$g_current_opened_item_details", slot_item_player_color), 
 	(start_presentation, "prsnt_customize_armor"),
