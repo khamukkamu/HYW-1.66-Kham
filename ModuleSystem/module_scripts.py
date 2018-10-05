@@ -49692,9 +49692,9 @@ scripts = [
       (set_visitor, 41, "trp_pirate_troupe_8"),
       (set_visitor, 41, "trp_pirate_troupe_9"),
       (set_visitor, 41, "trp_pirate_troupe_10"),
-      (set_visitor, 41, "trp_pirate_troupe_11"),
-      (set_visitor, 41, "trp_pirate_troupe_12"),
-      (set_visitor, 41, "trp_pirate_troupe_13"),
+      # (set_visitor, 41, "trp_pirate_troupe_11"),
+      # (set_visitor, 41, "trp_pirate_troupe_12"),
+      # (set_visitor, 41, "trp_pirate_troupe_13"),
       # (set_visitor, 41, "trp_pirate_troupe_14"),
       
       
