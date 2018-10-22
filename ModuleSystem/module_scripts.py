@@ -62076,6 +62076,7 @@ scripts = [
       (try_end),
       (call_script, "script_finish_quest", ":quest", 100),
       (call_script, "script_freelancer_attach_party"),
+      (assign, "$freelancer_state", 1),
       (display_message, "@You have rejoined your commander!"),
   ]),
   

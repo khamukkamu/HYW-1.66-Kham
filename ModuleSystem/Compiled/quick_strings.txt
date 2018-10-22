@@ -1,4 +1,4 @@
-1168
+1192
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1167,3 +1167,27 @@ qstr_Change_Color Change_Color
 qstr_No_one_wishes_to_acc No_one_wishes_to_accompany_you.
 qstr_One_{s3}_will_follow One_{s3}_will_follow_you.
 qstr_{reg5}_{s3}_will_fol {reg5}_{s3}_will_follow_you.
+qstr_a_surcoat_over_mail_ a_surcoat_over_mail_havrincourt
+qstr_Burgundian_Squire Burgundian_Squire
+qstr_Burgundian_Captain Burgundian_Captain
+qstr__Faction_Relations_R _Faction_Relations_Report_
+qstr__Return_to_menu_ _Return_to_menu_
+qstr_Player^Relation Player^Relation
+qstr_Status Status
+qstr_Relation Relation
+qstr_War War
+qstr_Casus_Belli Casus_Belli
+qstr_Peace Peace
+qstr_Truce Truce
+qstr_Alliance Alliance
+qstr_Defense_Pact Defense_Pact
+qstr_Trade_Agreement Trade_Agreement
+qstr_{s60} {s60}
+qstr_{reg59?{reg59}_days: {reg59?{reg59}_days:}
+qstr_{reg61} {reg61}
+qstr_{s9} {s9}
+qstr_{reg1} {reg1}
+qstr_{s3} {s3}
+qstr_{reg61}_{reg58?_{reg {reg61}_{reg58?({reg58}_U)_:}Centers
+qstr_{reg62}_Caravans {reg62}_Caravans
+qstr_{reg60}_{reg59?_{reg {reg60}_{reg59?({reg59}_P)_:}Lords
