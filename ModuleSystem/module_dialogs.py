@@ -11922,44 +11922,126 @@ dialogs = [
   ]],
   [anyone|plyr ,"comp_bourgslqstok", [],  "Je ne puis payer une telle somme, peut etre plus tard.", "close_window", []],
   
-  
-  #en attente
+##################################################################################################################################################################################################################################################################################################################
+###################################################################################################### HYW DYNAMIC CAMP COMPANIONS ###############################################################################################################################################################################
+##################################################################################################################################################################################################################################################################################################################
+
+###################################################### BOURGES MONK
+
+### Camp dialog
+
   [anyone,"start", [(eq, "$g_talk_troop", "trp_comps_dijon"),
-      (eq, "$comp_dijon_avecmoi", 1),
+	(troop_get_slot, ":recruitment_status", "$g_talk_troop", slot_troop_recruited_to_camp),
+	(eq, ":recruitment_status", 1),
+	(eq, "$entre_camp", 1),
     ],
-    "Et bien, qu'attendons nous ?", "depart_perededij", []],
+    "{playername}, vous voulez quelque chose ou vous allez continuer à me regarder ainsi?", "camp_monk_discuss", []],
+	 
+  [anyone|plyr ,"camp_monk_discuss", [(eq, "$blesse_a_tete", 1),],  "Je suis bléssé à la tête, faites quelque chose je vous en prie.", "camp_monk_heal_head", []],
+  [anyone|plyr ,"camp_monk_discuss", [(eq, "$blesse_au_bras", 1),],  "J'ai une bléssure au bras, ça commence à sentir...", "camp_monk_heal_arm", []],
+  [anyone|plyr ,"camp_monk_discuss", [(eq, "$blesse_a_jambe", 1),],  "Ma jambe me fait un mal de chien à chaque pas.", "dijon_removebelessjambe", []],	 
   
-  [anyone|plyr ,"depart_perededij", [],  "En route mon pere...", "close_window", []],
+  [anyone ,"camp_monk_heal_head", [],"Quand je me disais que vous étiez atteint de la tête je ne pensais pas que ce serrait aussi littéral. Asseyez-vous et tenez vous droit que je vous examine. Bien, je vais avoir besoin de plus de matériel ce qui va couter 200 écus.", "camp_monk_pay", []],
+  [anyone ,"camp_monk_heal_arm", [],"Avez-vous pensé à nettoyer la blessure? Sacristi, un jour de plus et vous voilà manchot. Bien, je vais avoir besoin de plus de matériel ce qui va couter 150 écus.", "camp_monk_pay", []],
+  [anyone ,"camp_monk_heal_leg", [],"Montrez-moi cette jambe. Si vous voulez continuer à marcher je vous conseille de nétoyer cette bléssure. Bien, je vais avoir besoin de plus de matériel ce qui va couter 100 écus.", "camp_monk_pay", []],
+ 
+  [anyone|plyr ,"camp_monk_pay",
+    [
+	(store_troop_gold,":player_gold", "trp_player"),
+	(try_begin),
+		(eq, "$blesse_a_tete", 1),
+		(ge, ":player_gold", 200),
+	(else_try),
+		(eq, "$blesse_au_bras", 1),
+		(ge, ":player_gold", 150),
+	(else_try),
+		(eq, "$blesse_a_jambe", 1),
+		(ge, ":player_gold", 100),
+	(try_end),
+    ],  "Très bien, voici l'argent, faites vite car la douleur est insupportable.", "camp_monk_heal",
+    [
+	(try_begin),
+		(eq, "$blesse_a_tete", 1),
+		(troop_remove_gold,"trp_player",200),
+	(else_try),
+		(eq, "$blesse_au_bras", 1),
+		(troop_remove_gold,"trp_player",150),
+	(else_try),
+		(eq, "$blesse_a_jambe", 1),
+		(troop_remove_gold,"trp_player",100),
+	(try_end),
+  ]],
+  
+  [anyone|plyr ,"camp_monk_pay", [],  "Je n'ai pas la somme que vous demandez.", "camp_monk_pay_denied", []],
+  [anyone ,"camp_monk_pay_denied", [],"Je ne peut faire grand chose sans matériel, je ferais de mon mieux pour que vous ne succombez pas de vos bléssure mais sans traitement ça risque de ne jamais guérir.", "close_window", []],
+  
+  [anyone ,"camp_monk_heal", [],"C'est fait, faites plus attention au futur.", "close_window",
+    [
+	(try_begin),
+		(eq, "$blesse_a_tete", 1),
+		(call_script, "script_rest_bless_tete"),
+	(else_try),
+		(eq, "$blesse_au_bras", 1),
+		(call_script, "script_rest_bless_bras"),
+	(else_try),
+		(eq, "$blesse_a_jambe", 1),
+		(call_script, "script_rest_bless_jambe"),
+	(try_end),
+  ]],  
+  
+  [anyone|plyr ,"camp_monk_discuss", [],  "Vous êtes assez désagréable pour un moine, c'est quoi votre histoire?", "camp_monk_backstory_fail", []],	   
+  [anyone ,"camp_monk_backstory_fail", [],  "J'ai Dieu à qui parler pour mes péchés, les affaires des Hommes ne m'intéressent point.", "camp_monk_backstory_fail_2", []],	   
+  [anyone|plyr ,"camp_monk_backstory_fail_2", [],  "Pourquoi avez-vous rejoint ma compagnie si vous fuyez les gens? Cela me semble assez contraditoire pour un moine médecin.", "camp_monk_backstory_fail_3", []],	   
+  [anyone ,"camp_monk_backstory_fail_3", [],  "C'est la meilleure manière pour moi d'accomplir Sa mission, j'ai une dette envers Lui mais je ne souhaite pas en discutter avec vous.", "camp_monk_discuss", []],	   
+
+  [anyone|plyr ,"camp_monk_discuss", [],  "Au revoir.", "close_window", []],  
+  
+### Dijon dialog
+
+  [anyone,"start", [(eq, "$g_talk_troop", "trp_comps_dijon"),
+	(troop_get_slot, ":recruitment_status", "$g_talk_troop", slot_troop_recruited_to_camp),
+	(eq, ":recruitment_status", 1),
+	(neq, "$entre_camp", 1),
+
+    ],
+    "Et bien, qu'attendons-nous?", "depart_perededij", []],
+  
+  [anyone|plyr ,"depart_perededij", [],  "En route mon père...", "close_window", []],
   
   ## compagnon comps_dijon moine guerrier
   [anyone,"start", [(eq, "$g_talk_troop", "trp_comps_dijon"),
     ],
-    "Le bonjour Messire, etes vous un mercenaire ?", "comp_dijtropper", []],
+    "Parlez à Père Jacob si vous voulez quelque chose. À moins que vous soyez un mercenaire...", "comp_dijtropper", []],
   
-  [anyone|plyr ,"comp_dijtropper", [],  "Je suis {playername} et il m'es arrivé d'etre mercenaire en effet.", "comp_dijtropper2", []],
-  [anyone|plyr ,"comp_dijtropper", [],  "Je ne me permeterais pas de blaisser les créatures du seigneur mon père, vous devez vous tromper.", "close_window", []],
+  [anyone|plyr ,"comp_dijtropper", [],  "Je suis {playername} et il m'est arrivé d'être mercenaire en effet.", "comp_dijtropper2", []],
+  [anyone|plyr ,"comp_dijtropper", [],  "Je ne me permettrait pas de blesser les créatures du seigneur mon père, vous devez vous tromper.", "close_window", []],
   
-  [anyone ,"comp_dijtropper2", [],"Bien, Je recherche voyez vous une troupe a rejoindre pour perfectioner mes compétences en médecine de premiers soins, il va sans dire que vous n'etes pas un tyran qui envoie ses troupes a une mort dertaine n'es ce pas ? etes vous intéressé ?", "comp_dijtropper3", []],
+  [anyone ,"comp_dijtropper2", [],"Bien, je recherche voyez vous une troupe à rejoindre pour perfectioner mes compétences en médecine et premiers soins. S'il est que vous n'êtes pas un tyrant sanguinaire.", "comp_dijtropper3", []],
   
-  [anyone|plyr ,"comp_dijtropper3", [],  "Un guerisseur sur le champ de bataille pourais m'etre utile en effet, combien cela va t'il me couter ?", "comp_dijtropperhow", []],
-  [anyone|plyr ,"comp_dijtropper3", [],  "J'es besoin de combatants, pas d'un pretre, merci bien...", "close_window", []],
+  [anyone|plyr ,"comp_dijtropper3", [],  "Un guerisseur pourais m'être utile en effet, mais je n'oserais vous risquer sur le champ de bataille. Vous pourez cependant rester au camp pour traiter les bléssés. Que voulez-vous en échange?", "comp_dijtropperhow", []],
+  [anyone|plyr ,"comp_dijtropper3", [],  "J'ai besoin de combattants, pas d'un prêtre, merci bien...", "close_window", []],
   
-  [anyone ,"comp_dijtropperhow", [],"Simplement du pain et de la cervoise pour les bléssés ici présents, faites un bon geste et je vous suivrais, je pourais également m'assurer que j'entrerais au service d'un bon crétien et pas d'une brute.", "comp_dijtropperhowok", []],
+  [anyone ,"comp_dijtropperhow", [],"Je n'ai pas besoin d'écus mais vous pourriez donner du pain et de la cervoise à l'église en échange de mes services. J'espère aussi gîte et couvert dans votre campement ainsi que les outils nécéssaires à ma profession.", "comp_dijtropperhowok", []],
   
   [anyone|plyr ,"comp_dijtropperhowok",
     [
       (player_has_item, "itm_bread"),
       (this_or_next|player_has_item, "itm_bier"),
       (player_has_item, "itm_ale"),
-    ],  "voila votre pain et votre cervoise mon pere, rejoignez ma troupe si vous etes toujours d'accord.", "close_window",
+    ],  "voila votre pain et votre cervoise mon père, rejoignez mon camp si vous êtes toujours d'accord.", "close_window",
     [
       (troop_remove_item, "trp_player", "itm_bread"),
       (this_or_next|troop_remove_item, "trp_player", "itm_bier"),
       (troop_remove_item, "trp_player", "itm_ale"),
-      (party_add_members, "p_main_party","trp_comps_dijon",1),
+### HYW Seek: Dynamic Camp companion
+      # (party_add_members, "p_main_party","trp_comps_dijon",1),
+      (troop_set_slot, "$g_talk_troop", slot_troop_recruited_to_camp, 1),	
+### HYW END
       (assign,"$comp_dijon_avecmoi",1),
   ]],
   [anyone|plyr ,"comp_dijtropperhowok", [],  "Je reviens avec la marchandise dans ce cas.", "close_window", []],
+  
+######################################################
   
   
   #en attente

@@ -17576,12 +17576,12 @@ mission_templates = [
     "Campement.",
     [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
       (1,mtef_scene_source|mtef_team_0,0,0,1,[]),
-      (2,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
-      (3,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
-      (4,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
-      (5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
-      (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
-      (7,mtef_scene_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
+      (2,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
+      (3,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
+      (4,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
+      (5,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
+      (6,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
+      (7,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,pilgrim_disguise),
       (8,mtef_visitor_source,af_override_horse,0,1,[]),
       (9,mtef_visitor_source,af_override_horse,0,1,[]),
       (10,mtef_visitor_source,af_override_horse,0,1,[]),
@@ -17607,7 +17607,7 @@ mission_templates = [
     ],
     [
       
-      
+
       (0, 0, 0,
         [
           (scene_prop_get_instance, ":cur_instance_id", "spr_sound_player_camps", 0),
@@ -17683,6 +17683,34 @@ mission_templates = [
           (set_trigger_result,1)
         ],
         []),
+
+### HYW Seek: Dynamic camp levels		  
+      (ti_before_mission_start, 0, 0, [],
+        [
+          (call_script, "script_party_count_members_with_full_health", "p_main_party"),
+			 
+	(try_begin),		 
+		(le, reg0, 5),			 
+		(assign, "$g_camp_level", 0),
+	(else_try),
+		(is_between, reg0, 6, 15),
+		(assign, "$g_camp_level", 1),	
+	(else_try),
+		(is_between, reg0, 16, 30),
+		(assign, "$g_camp_level", 2),	
+	(else_try),
+		(is_between, reg0, 31, 45),
+		(assign, "$g_camp_level", 3),	
+	(else_try),
+		(is_between, reg0, 46, 60),
+		(assign, "$g_camp_level", 4),	
+	(else_try),
+		(ge, reg0, 61),
+		(assign, "$g_camp_level", 5),			
+	(try_end),		
+	
+      	(call_script, "script_camp_display_props"),
+      ]),		  
       
     ],
   ),

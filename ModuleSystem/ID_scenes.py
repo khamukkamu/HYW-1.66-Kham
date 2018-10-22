@@ -834,4 +834,5 @@ scn_duel_scene = 831
 scn_conversation_scene_tld_plain = 832
 scn_conversation_scene_tld_snow = 833
 scn_conversation_scene_tld_forest = 834
+scn_camp_plains = 835
 scn_exit = 100000

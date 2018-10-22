@@ -64010,6 +64010,81 @@ scripts = [
             (try_end),
         ]
     ),	 
+	 
+### HYW Seek: Script to display props on the dynamic camp scenes
+  # script_camp_display_props
+  # Input: none
+  # Output: none
+  ("camp_display_props",
+    [
+	(try_begin),
+		(lt, "$g_camp_level", 1),
+		(replace_scene_props, "spr_camp_tent_1", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_1", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_small_1", "spr_empty"),
+		(replace_scene_props, "spr_camp_bed_1", "spr_empty"),
+		(replace_scene_props, "spr_camp_chair_1", "spr_empty"),
+		(replace_scene_props, "spr_camp_cauldron_1", "spr_empty"),
+	(try_end),	
+
+	(try_begin),
+		(lt, "$g_camp_level", 2),
+		(replace_scene_props, "spr_camp_tent_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_small_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_bed_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_chair_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_cauldron_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_large_tent_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_jug_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_cup_2", "spr_empty"),
+		(replace_scene_props, "spr_camp_table_2", "spr_empty"),
+	(try_end),	
+		
+	(try_begin),
+		(lt, "$g_camp_level", 3),
+		(replace_scene_props, "spr_camp_tent_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_small_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_bed_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_chair_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_cauldron_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_large_tent_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_jug_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_cup_3", "spr_empty"),
+		(replace_scene_props, "spr_camp_table_3", "spr_empty"),		
+	(try_end),	
+	
+	(try_begin),
+		(lt, "$g_camp_level", 4),
+		(replace_scene_props, "spr_camp_tent_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_small_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_bed_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_chair_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_cauldron_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_large_tent_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_jug_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_cup_4", "spr_empty"),
+		(replace_scene_props, "spr_camp_table_4", "spr_empty"),		
+	(try_end),	
+
+	(try_begin),
+		(lt, "$g_camp_level", 5),
+		(replace_scene_props, "spr_camp_tent_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_fire_small_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_bed_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_chair_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_cauldron_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_large_tent_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_jug_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_cup_5", "spr_empty"),
+		(replace_scene_props, "spr_camp_table_5", "spr_empty"),		
+	(try_end),			
+
+
+  ]),	 
 
 ]
 

@@ -959,6 +959,10 @@ slot_troop_recent_offense_object           = 152 #to whom it happened
 slot_troop_recent_offense_time             = 153
 slot_troop_stance_on_faction_issue         = 154 #when it happened
 
+### HYW Seek: 
+slot_troop_recruited_to_camp	= 155
+### HYW END
+
 tro_failed_to_join_army                    = 1
 tro_failed_to_support_colleague            = 2
 

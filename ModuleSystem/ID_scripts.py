@@ -817,3 +817,4 @@ script_list_clear = 815
 script_add_troop_to_custom_armor_tableau = 816
 script_setup_heraldry = 817
 script_get_banner_mesh_for_party = 818
+script_camp_display_props = 819

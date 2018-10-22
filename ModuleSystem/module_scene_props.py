@@ -4389,5 +4389,61 @@ scene_props = [
 	("battlement_a_pente_destroy_b",0,"battlement_a_pente_destroy_b","bo_battlement_a_pente_destroy", []),
 
     ("battlement_a_pente_destroy_tas",0,"battlement_a_pente_destroy_tas","bo_battlement_a_pente_destroy_tas", []),
+
+### HYW Seek: Dynamic camp props	 
+  ("camp_tent_1",0,"camp_tent2_bleu","bo_camp_tent2", []),	 
+  ("camp_tent_2",0,"camp_tent2_bandits","bo_camp_tent2", []),	 
+  ("camp_tent_3",0,"camp_tent2","bo_camp_tent2", []),	 
+  ("camp_tent_4",0,"camp_tent2_bleu","bo_camp_tent2", []),	 
+  ("camp_tent_5",0,"camp_tent2","bo_camp_tent2", []),	 
   
+  ("camp_large_tent_2",0,"arabian_tent","bo_arabian_tent", []),	 
+  ("camp_large_tent_3",0,"arabian_tent","bo_arabian_tent", []),	 
+  ("camp_large_tent_4",0,"arabian_tent","bo_arabian_tent", []),	 
+  ("camp_large_tent_5",0,"arabian_tent","bo_arabian_tent", []),	 
+  
+  ("camp_fire_1",0,"camp_campfire","bo_camp_campfire", []),  
+  ("camp_fire_2",0,"camp_campfire","bo_camp_campfire", []),  
+  ("camp_fire_3",0,"camp_campfire","bo_camp_campfire", []),  
+  ("camp_fire_4",0,"camp_campfire","bo_camp_campfire", []),  
+  ("camp_fire_5",0,"camp_campfire","bo_camp_campfire", []),  
+  
+  ("camp_cauldron_1",0,"tripod_cauldron_a","bo_tripod_cauldron_a", []),  
+  ("camp_cauldron_2",0,"tripod_cauldron_b","bo_tripod_cauldron_b", []),  
+  ("camp_cauldron_3",0,"tripod_cauldron_a","bo_tripod_cauldron_a", []),  
+  ("camp_cauldron_4",0,"tripod_cauldron_b","bo_tripod_cauldron_b", []),  
+  ("camp_cauldron_5",0,"tripod_cauldron_a","bo_tripod_cauldron_a", []),    
+  
+  ("camp_fire_small_1",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_fireplace_fire_small"),]),]),  
+  ("camp_fire_small_2",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_fireplace_fire_small"),]),]),  
+  ("camp_fire_small_3",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_fireplace_fire_small"),]),]),  
+  ("camp_fire_small_4",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_fireplace_fire_small"),]),]),  
+  ("camp_fire_small_5",0,"0","0",[(ti_on_scene_prop_init,[(particle_system_add_new, "psys_fireplace_fire_small"),]),]),  
+  
+  ("camp_bed_1",0,"bed_b","bo_bed_b", []),  
+  ("camp_bed_2",0,"bed_b","bo_bed_b", []),  
+  ("camp_bed_3",0,"bed_b","bo_bed_b", []),  
+  ("camp_bed_4",0,"bed_b","bo_bed_b", []),  
+  ("camp_bed_5",0,"bed_b","bo_bed_b", []),  
+  
+  ("camp_chair_1",0,"tavern_chair_b","bo_tavern_chair_b", []),
+  ("camp_chair_2",0,"tavern_chair_b","bo_tavern_chair_b", []),
+  ("camp_chair_3",0,"tavern_chair_b","bo_tavern_chair_b", []),  
+  ("camp_chair_4",0,"tavern_chair_b","bo_tavern_chair_b", []),  
+  ("camp_chair_5",0,"tavern_chair_b","bo_tavern_chair_b", []),  
+  
+  ("camp_jug_2",0,"jug","0", []),	 
+  ("camp_jug_3",0,"jug","0", []),	 
+  ("camp_jug_4",0,"jug","0", []),	 
+  ("camp_jug_5",0,"jug","0", []),	   
+  
+  ("camp_cup_2",0,"cup","0", []),	 
+  ("camp_cup_3",0,"cup","0", []),	 
+  ("camp_cup_4",0,"cup","0", []),	 
+  ("camp_cup_5",0,"cup","0", []),	     
+  
+  ("camp_table_2",0,"table_trunk_a","bo_table_trunk_a", []),  
+  ("camp_table_3",0,"table_trunk_a","bo_table_trunk_a", []),  
+  ("camp_table_4",0,"table_trunk_a","bo_table_trunk_a", []),  
+  ("camp_table_5",0,"table_trunk_a","bo_table_trunk_a", []),    
 ]
