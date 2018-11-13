@@ -36,6 +36,8 @@ triggers = [
   (0.0, 0, 168.0, [],
     [
       (call_script, "script_refresh_center_inventories"),
+### HYW Seek: refresh custom merchants		
+      (call_script, "script_refresh_custom_merchants"),
   ]),
   
   # Refresh Armor sellers

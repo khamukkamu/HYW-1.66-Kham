@@ -288,7 +288,7 @@ tf_guarantee_all_wo_ranged = tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_
 
 
 troops = [
-["player","Player","Player",tf_hero|tf_unmoveable_in_party_window,no_scene,reserved,fac_player_faction,[],str_4|agi_4|int_4|cha_4,wp(15),0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["player","Player","Player",tf_hero|tf_unmoveable_in_party_window,no_scene,reserved,fac_player_faction,[],str_4|agi_4|int_4|cha_4,wp(15),0,0x00000001ae00e38c36db6db6db6db6db00000000001db6db0000000000000000],
 ["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero|tf_guarantee_all, 0, 0,fac_commoners,[],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 ["multiplayer_profile_troop_female","multiplayer_profile_troop_female","multiplayer_profile_troop_female", tf_hero|tf_female|tf_guarantee_all, 0, 0,fac_commoners,[],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 ["temp_troop","Temp Troop","Temp Troop",tf_hero,no_scene,reserved,fac_commoners,[],def_attrib,0,knows_common|knows_inventory_management_10,0],
@@ -1718,7 +1718,7 @@ troops = [
 
 ["local_merchant","Local Merchant","Local Merchants",tf_guarantee_boots|tf_guarantee_armor, 0,0, fac_commoners,[itm_a_merchant_outfit,itm_b_hosen_shoes_custom],def_attrib|level(5),wp(40),knows_power_strike_1, merchant_face_1, merchant_face_2],
 ["tax_rebel","Peasant Rebel","Peasant Rebels",tf_guarantee_armor,0,reserved,fac_commoners,[itm_practice_staff,itm_a_commoner_apron,itm_b_leather_boots],def_attrib|level(4),wp(60),knows_common,vaegir_face1,vaegir_face2],
-["trainee_peasant","Peasant","Peasants",tf_guarantee_armor,0,reserved,fac_commoners,[itm_practice_staff],def_attrib|level(4),wp(60),knows_common,vaegir_face1,vaegir_face2],
+["trainee_peasant","Peasant","Peasants",tf_guarantee_armor,0,reserved,fac_commoners,[itm_h_leather_cap,itm_h_arming_cap,itm_h_simple_coif,itm_h_straw_hat,itm_a_farmer_tunic,itm_a_commoner_apron,itm_a_peasant_shirt_white,itm_a_peasant_shirt_green,itm_a_hunter_coat,itm_a_peasant_coat,itm_b_ankle_boots,itm_b_wrapping_boots,itm_b_wrapping_boots,itm_practice_staff],def_attrib|level(4),wp(60),knows_common,vaegir_face1,vaegir_face2],
 ["fugitive","Nervous Man","Nervous Men",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[itm_a_peasant_coat,itm_b_ankle_boots,itm_throwing_daggers,itm_w_onehanded_sword_c],def_attrib|str_24|agi_25|level(26),wp(180),knows_common|knows_power_throw_6|knows_power_strike_6|knows_ironflesh_9,man_face_middle_1,man_face_old_2],
 
 ["belligerent_drunk","Belligerent Drunk","Belligerent Drunks",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners,[itm_a_peasant_man_custom,itm_b_hosen_poulaines_custom,itm_w_onehanded_sword_c],def_attrib|str_20|agi_8|level(15),wp(120),knows_common|knows_power_strike_2|knows_ironflesh_9,bandit_face1,bandit_face2],
@@ -2417,6 +2417,7 @@ troops = [
 ["rouenf_traire3", "Garde du marchand", "Garde du marchant", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield, scn_rouen_forest|entry(42), reserved, fac_commoners, [itm_a_leather_jerkin,itm_b_leather_boots,itm_g_leather_gauntlet,itm_w_mace_spiked], def_attrib|level(20), wp(100), knows_common|knows_riding_3|knows_ironflesh_2|knows_shield_3|knows_power_strike_2, 0x000000003f0040c006db6e375b61b6db00000000001db6eb0000000000000000, 0x000000003f0040c006db6e375b61b6db00000000001db6eb0000000000000000 ],
 ["rouenf_fill", "Fille du marchand", "Fille du marchand", tf_female|tf_guarantee_boots|tf_guarantee_armor, scn_rouen_forest|entry(2), reserved, fac_commoners, [itm_a_woman_common_dress_4,itm_b_hosen_poulaines_custom], def_attrib|level(2), wp(20), knows_inventory_management_10|knows_ironflesh_8, 0x000000094400500724da81a6dd6ca6d200000000001dc7130000000000000000, 0x000000094400500724da81a6dd6ca6d200000000001dc7130000000000000000 ],
 
+### HYW Seek: Camp followers
 #demi compagnon paris
 ["comp_catas", "Chevalier solitaire", "Chevalier solitaire", tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_shield, no_scene, reserved, fac_neutral, [itm_h_cerveliere_mail,itm_a_hauberk_narf,itm_b_leather_boots,itm_g_leather_gauntlet,itm_w_bastard_sword_c], def_attrib|level(23), wp(160), knows_common|knows_riding_5|knows_shield_3|knows_ironflesh_3|knows_power_strike_3, 0x00000008690000003adbadb6db6db6db00000000001db6db0000000000000000, 0x00000008690000003adbadb6db6db6db00000000001db6db0000000000000000 ],
 ["dame_jardin", "Madeleine", "Madeleine", tf_female|tf_guarantee_boots|tf_guarantee_armor, scn_town_7_alley|entry(6), reserved, fac_commoners, [itm_a_woman_court_dress_6,itm_b_hosen_shoes_custom], def_attrib|level(2), wp(20), knows_inventory_management_10, 0x0000000d4400400124da81a6dd6ca6d200000000001dc7130000000000000000, 0x0000000d4400400124da81a6dd6ca6d200000000001dc7130000000000000000 ],
@@ -2437,7 +2438,11 @@ troops = [
 ["comps_calais", "Aventurier", "Aventurier", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield, no_scene, reserved, fac_commoners, [itm_a_tabard,itm_b_leather_boots,itm_w_onehanded_sword_squire], def_attrib|level(20), wp(130), knows_common|knows_riding_3|knows_ironflesh_2|knows_shield_3|knows_power_strike_2, mercenary_face_1, mercenary_face_1 ],
 
 #compagnon arquebusier limoge
-["comps_limoge", "Ingenieur Arquebusier", "Ingenieur Arquebusier", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged, no_scene, reserved, fac_neutral, [itm_a_commoner_apron,itm_b_leather_boots,itm_g_leather_gauntlet], def_attrib|level(22), wp(110), knows_common|knows_ironflesh_2|knows_power_draw_4|knows_athletics_3, 0x00000008690044c53adbadb6db6db6db00000000001db6db0000000000000000, 0x00000008690044c53adbadb6db6db6db00000000001db6db0000000000000000 ],
+["comps_limoge", "Jean", "Jean", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged, no_scene, reserved, fac_neutral, [itm_a_commoner_apron,itm_b_leather_boots,itm_g_leather_gauntlet], def_attrib|level(22), wp(110), knows_common|knows_ironflesh_2|knows_power_draw_4|knows_athletics_3, 0x00000008690044c53adbadb6db6db6db00000000001db6db0000000000000000, 0x00000008690044c53adbadb6db6db6db00000000001db6db0000000000000000 ],
+# Merchant camp follower
+["comps_paris", "Giovanni Conti", "Giovanni Conti", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_ranged, no_scene, reserved, fac_neutral, [itm_a_merchant_outfit,itm_b_leather_boots], def_attrib|level(22), wp(110), knows_common|knows_ironflesh_2|knows_power_draw_4|knows_athletics_3, 0x000000018000950f24a47136db4db6db00000000001d1b080000000000000000, 0x000000018000950f24a47136db4db6db00000000001d1b080000000000000000 ],
+
+### HYW  END
 
 #pnj 1429E new tavern
 ["alcolo_1", "Pilier de Taverne", "Pilier de Taverne", tf_guarantee_boots|tf_guarantee_armor, no_scene, reserved, fac_neutral, [itm_w_dagger_pikeman,itm_a_peasant_coat,itm_b_wrapping_boots], def_attrib|level(22), wp_melee(105), knows_common|knows_ironflesh_2, swadian_face_middle_1, swadian_face_old_2 ],

@@ -3871,124 +3871,117 @@ game_menus = [
         ]
         ,"Aller au campement dans les plaines.",
         [
+		  
+### Spawn points:
+### 1 | Player
+### 2 - 10 | Camp followers
+### 11 - 26 | Companions
+### 27 - 60 | Troops
+		  
           (assign, "$entre_camp", 1),
           (modify_visitors_at_site,"scn_camp_plains"),
           (reset_visitors),
-          (set_jump_entry, 1),
-          
-          # (set_visitor, 2, "trp_campement_troupe_10"),
+          (set_jump_entry, 1),		 
 			 
           (try_begin),
-	(troop_get_slot, ":recruitment_status", "trp_comps_dijon", slot_troop_recruited_to_camp),
-	(eq, ":recruitment_status", 1),			
-            (set_visitor, 2, "trp_comps_dijon"),
+		(troop_get_slot, ":recruitment_status", "trp_comps_dijon", slot_troop_recruited_to_camp),
+		(eq, ":recruitment_status", 1),			
+		(set_visitor, 2, "trp_comps_dijon"),
           (try_end),
 			 
-          (set_visitor, 3, "trp_campement_troupe_11"),
-          (set_visitor, 4, "trp_campement_troupe_12"),
-          (set_visitor, 5, "trp_campement_troupe_chant_4"),
-          (set_visitor, 6, "trp_campement_troupe_serg_4"),
-          (set_visitor, 7, "trp_campement_troupe_spec_4"),
+          (try_begin),
+		(troop_get_slot, ":recruitment_status", "trp_comps_limoge", slot_troop_recruited_to_camp),
+		(eq, ":recruitment_status", 1),			
+		(set_visitor, 3, "trp_comps_limoge"),
+          (try_end),		
+
+          (try_begin),
+		(troop_get_slot, ":recruitment_status", "trp_comps_paris", slot_troop_recruited_to_camp),
+		(eq, ":recruitment_status", 1),			
+		(set_visitor, 4, "trp_comps_paris"),
+          (try_end),				 
+	
+	(assign, ":cur_entry", 11),	
+	
+	(try_for_range, ":companion", companions_begin, companions_end),
+		(main_party_has_troop,":companion"),
+		(set_visitor,":cur_entry",":companion"),
+		(val_add, ":cur_entry", 1),
+	(try_end),	
+	
+### 16 Companions, cur_entry between 11 and 27	 
+	(assign, ":camp_max_entry", ":cur_entry"),		 
+	
+          (call_script, "script_party_count_members_with_full_health", "p_main_party"),	
+
+          # (display_message, "@{!}DEBUG : Party Members Count: {reg0}"),				 
+			 
+	(try_begin),		 
+		(le, reg0, 5),			 
+		(assign, "$g_camp_level", 0),
+		(val_add, ":camp_max_entry",  4),
+	(else_try),
+		(is_between, reg0, 6, 15),
+		(assign, "$g_camp_level", 1),	
+		(val_add, ":camp_max_entry", 10),
+	(else_try),
+		(is_between, reg0, 16, 30),
+		(assign, "$g_camp_level", 2),	
+		(val_add, ":camp_max_entry", 15),
+	(else_try),
+		(is_between, reg0, 31, 45),
+		(assign, "$g_camp_level", 3),	
+		(val_add, ":camp_max_entry", 20),
+	(else_try),
+		(is_between, reg0, 46, 60),
+		(assign, "$g_camp_level", 4),	
+		(val_add, ":camp_max_entry", 25),
+	(else_try),
+		(ge, reg0, 61),
+		(assign, "$g_camp_level", 5),			
+		(val_add, ":camp_max_entry", 33),
+	(try_end),		 
+	
+	(val_clamp, ":camp_max_entry", 27, 60),	# Make sure it's in a range between 27 and 60																			
+	(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),	
+	
+	(try_for_range, ":entry", ":cur_entry", ":camp_max_entry"),
+		(call_script, "script_cf_party_remove_random_regular_troop", "p_main_party_backup"),
+		(store_random_in_range, ":rnd",1, 100000), # some random faces/equip for background troops
+		(set_visitor,":entry",reg0,":rnd"),
+	(try_end),	
+	
+          # (assign, reg1, ":cur_entry"),
+          # (assign, reg2, ":camp_max_entry"),
+          # (display_message, "@{!}DEBUG : cur entry is {reg1}"),	
+          # (display_message, "@{!}DEBUG : max entry is {reg2}"),	
           
-          (try_begin),
-            (main_party_has_troop,"trp_npc1"),
-            (set_visitor, 8, "trp_npc1"),
-          (try_end),
+          # (try_begin),
+            # (player_has_item, "itm_cheval_praire"),
+            # (set_visitor, 24, "trp_cvalier_invisible_quete_prairie"),
+          # (try_end),
           
-          (try_begin),
-            (main_party_has_troop,"trp_npc2"),
-            (set_visitor, 9, "trp_npc2"),
-          (try_end),
+          # (try_begin),
+            # (player_has_item, "itm_cheval_praire_barder"),
+            # (set_visitor, 25, "trp_cvalier_invisible_quete_prairie_barder"),
+          # (try_end),
           
-          (try_begin),
-            (main_party_has_troop,"trp_npc3"),
-            (set_visitor, 10, "trp_npc3"),
-          (try_end),
-          
-          (try_begin),
-            (main_party_has_troop,"trp_npc4"),
-            (set_visitor, 11, "trp_npc4"),
-          (try_end),
-          
-          (try_begin),
-            (main_party_has_troop,"trp_npc5"),
-            (set_visitor, 12, "trp_npc5"),
-          (try_end),
-          
-          (try_begin),
-            (main_party_has_troop,"trp_npc6"),
-            (set_visitor, 13, "trp_npc6"),
-          (try_end),
-          
-          (try_begin),
-            (main_party_has_troop,"trp_npc7"),
-            (set_visitor, 14, "trp_npc7"),
-          (try_end),
-          
-          (try_begin),
-            (main_party_has_troop,"trp_npc8"),
-            (set_visitor, 15, "trp_npc8"),
-          (try_end),
-          
-          (try_begin),
-            (main_party_has_troop,"trp_npc9"),
-            (set_visitor, 16, "trp_npc9"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_npc10"),
-            (set_visitor, 17, "trp_npc10"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_npc11"),
-            (set_visitor, 18, "trp_npc11"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_npc12"),
-            (set_visitor, 19, "trp_npc12"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_npc13"),
-            (set_visitor, 20, "trp_npc13"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_npc14"),
-            (set_visitor, 21, "trp_npc14"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_npc15"),
-            (set_visitor, 22, "trp_npc15"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_npc16"),
-            (set_visitor, 23, "trp_npc16"),
-          (try_end),
-          
-          (try_begin),
-            (player_has_item, "itm_cheval_praire"),
-            (set_visitor, 24, "trp_cvalier_invisible_quete_prairie"),
-          (try_end),
-          
-          (try_begin),
-            (player_has_item, "itm_cheval_praire_barder"),
-            (set_visitor, 25, "trp_cvalier_invisible_quete_prairie_barder"),
-          (try_end),
-          
-          (try_begin),
-            (main_party_has_troop,"trp_volontaire_grotte1"),
-            (set_visitor, 26, "trp_volontaire_grotte1"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_volontaire_grotte2"),
-            (set_visitor, 27, "trp_volontaire_grotte2"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_volontaire_grotte3"),
-            (set_visitor, 28, "trp_volontaire_grotte3"),
-          (try_end),
-          (try_begin),
-            (main_party_has_troop,"trp_volontaire_grotte4"),
-            (set_visitor, 29, "trp_volontaire_grotte4"),
-          (try_end),
+          # (try_begin),
+            # (main_party_has_troop,"trp_volontaire_grotte1"),
+            # (set_visitor, 26, "trp_volontaire_grotte1"),
+          # (try_end),
+          # (try_begin),
+            # (main_party_has_troop,"trp_volontaire_grotte2"),
+            # (set_visitor, 27, "trp_volontaire_grotte2"),
+          # (try_end),
+          # (try_begin),
+            # (main_party_has_troop,"trp_volontaire_grotte3"),
+            # (set_visitor, 28, "trp_volontaire_grotte3"),
+          # (try_end),
+          # (try_begin),
+            # (main_party_has_troop,"trp_volontaire_grotte4"),
+            # (set_visitor, 29, "trp_volontaire_grotte4"),
+          # (try_end),				 
           
           (set_jump_mission,"mt_plain_campement"),
           (mission_tpl_entry_set_override_flags, "mt_plain_campement", 1, af_override_horse),
@@ -11241,6 +11234,15 @@ game_menus = [
           (set_visitor, 5, "trp_ribaude_2"),
           (set_visitor, 6, "trp_ribaude_3"),
           (set_visitor, 7, "trp_parisvilan_entry"),
+			 
+          (try_begin),
+### HYW Seek: Dynamic Camp companion
+	(troop_get_slot, ":recruitment_status", "trp_comps_paris", slot_troop_recruited_to_camp),
+	(eq, ":recruitment_status", 0),			
+### HYW END
+            (set_visitor, 8, "trp_comps_paris"),
+          (try_end),
+			 
           (assign, "$town_entered", 1),  ## pas sur et revoir l'ordre des lignes differentes
           (call_script, "script_init_town_walkers"),
           (set_jump_mission,"mt_town_quartiers"),
@@ -11754,7 +11756,6 @@ game_menus = [
           #compagnon
           (try_begin),
 ### HYW Seek: Dynamic Camp companion
-            # (eq, "$comp_dijon_avecmoi",0),#
 	(troop_get_slot, ":recruitment_status", "trp_comps_dijon", slot_troop_recruited_to_camp),
 	(eq, ":recruitment_status", 0),			
 ### HYW END
@@ -11919,7 +11920,10 @@ game_menus = [
           (set_visitor, 4, "trp_limoge_artisant3"),
           #compagnon
           (try_begin),
-            (eq, "$comp_limoge_avecmoi",0),#
+### HYW Seek: Dynamic Camp companion
+	(troop_get_slot, ":recruitment_status", "trp_comps_dijon", slot_troop_recruited_to_camp),
+	(eq, ":recruitment_status", 0),			
+### HYW END
             (set_visitor, 9, "trp_comps_limoge"),
           (try_end),
           #

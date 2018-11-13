@@ -2191,3 +2191,9 @@ custom_item_color_bits = 4
 message_positive = 0x33FF33
 message_negative = 0xFF3333
 message_neutral = 0xFFFF33
+
+### HYW Seek: Camp troop dialog
+camp_soldier_begin	=	"str_camp_soldier_line_1"
+camp_soldier_end	=	"str_camp_soldier_line_end"
+
+slot_agent_camp_soldier	=107

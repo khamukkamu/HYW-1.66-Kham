@@ -4108,6 +4108,12 @@ One may memorize the placement of selected divisions relative to the player by p
 - NO FORMATION^^\
 Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times."),
 
+### HYW Seek: Camp troop dialog
+("camp_soldier_line_1", "Keeping watch {sir/madam}."),  
+("camp_soldier_line_2", "Hello {sir/madam}."),
+("camp_soldier_line_3", "Do you need anything?"),
+("camp_soldier_line_4", "Will we be on the move soon?"),
+("camp_soldier_line_end", "none"),
 
 # Kham - Armor Customization Strings
 # English colors: Red | White

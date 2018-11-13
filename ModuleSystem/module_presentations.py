@@ -13769,6 +13769,10 @@ presentations = [
           (eq, ":tailor_faction", "fac_kingdom_4"), #Brittany
           (item_get_slot, ":colors_begin", "$g_current_opened_item_details", slot_item_breton_materials_begin),
           (item_get_slot, ":colors_end", "$g_current_opened_item_details", slot_item_breton_materials_end),
+### HYW Seek: Unlocked for armorers/tailors that don't have a faction			 
+        (else_try),	
+          (item_get_slot, ":colors_begin", "$g_current_opened_item_details", slot_item_materials_begin),
+          (item_get_slot, ":colors_end", "$g_current_opened_item_details", slot_item_materials_end),
         (try_end),
 
         (try_begin), #color toggler
@@ -13807,7 +13811,8 @@ presentations = [
           (assign, ":cont", 0),
           (store_sub, ":color", ":value", 1), #actual value, 0 is default
           (try_begin),
-            (is_between, "$g_talk_troop", armor_merchants_begin, armor_merchants_end),
+            (this_or_next|is_between, "$g_talk_troop", armor_merchants_begin, armor_merchants_end),
+            (eq, "$g_talk_troop", "trp_comps_limoge"),
             (this_or_next|is_between, "$g_presentation_credits_obj_4", ":colors_begin", ":colors_end"),
             (item_slot_eq, "$g_current_opened_item_details", slot_item_player_color, "$custom_armour_current_colour"),
             (assign, ":cont", 1),
