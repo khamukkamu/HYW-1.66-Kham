@@ -3919,30 +3919,30 @@ game_menus = [
 	(try_begin),		 
 		(le, reg0, 5),			 
 		(assign, "$g_camp_level", 0),
-		(val_add, ":camp_max_entry",  4),
+		(val_add, ":camp_max_entry",  5),
 	(else_try),
-		(is_between, reg0, 6, 15),
+		(is_between, reg0, 6, 12),
 		(assign, "$g_camp_level", 1),	
 		(val_add, ":camp_max_entry", 10),
 	(else_try),
-		(is_between, reg0, 16, 30),
+		(is_between, reg0, 13, 24),
 		(assign, "$g_camp_level", 2),	
-		(val_add, ":camp_max_entry", 15),
+		(val_add, ":camp_max_entry", 18),
 	(else_try),
-		(is_between, reg0, 31, 45),
+		(is_between, reg0, 25, 36),
 		(assign, "$g_camp_level", 3),	
-		(val_add, ":camp_max_entry", 20),
+		(val_add, ":camp_max_entry", 30),
 	(else_try),
-		(is_between, reg0, 46, 60),
+		(is_between, reg0, 37, 60),
 		(assign, "$g_camp_level", 4),	
-		(val_add, ":camp_max_entry", 25),
+		(val_add, ":camp_max_entry", 40),
 	(else_try),
 		(ge, reg0, 61),
 		(assign, "$g_camp_level", 5),			
-		(val_add, ":camp_max_entry", 33),
+		(val_add, ":camp_max_entry", 53),
 	(try_end),		 
 	
-	(val_clamp, ":camp_max_entry", 27, 60),	# Make sure it's in a range between 27 and 60																			
+	(val_clamp, ":camp_max_entry", 27, 64),	# Make sure it's in a range between 27 and 60																			
 	(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),	
 	
 	(try_for_range, ":entry", ":cur_entry", ":camp_max_entry"),
@@ -4049,16 +4049,18 @@ game_menus = [
       ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
       ("choose_scene",[],"** Scene Chooser **", [(jump_to_menu, "mnu_choose_scenes_0"),]),
       ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_a_leather_vest_custom"),(troop_add_item, "trp_player", "itm_a_leather_armor_custom"),(troop_add_item, "trp_player", "itm_a_peasant_man_custom"),(troop_add_item, "trp_player", "itm_a_gambeson_custom"),(troop_add_item, "trp_player", "itm_a_gambeson_narf_custom"),]),
-      ("customize_armour", [
-        (assign, ":end", ek_foot), #should add a global as iterator
-         (try_for_range, ":item_slot", ek_item_0, ":end"),
-           (troop_get_inventory_slot, ":item_no", "trp_player", ":item_slot"),
-           (gt, ":item_no", -1),
-           (item_slot_ge, ":item_no", slot_item_num_components, 1),
-           (assign, "$g_current_opened_item_details", ":item_no"),
-           (assign, ":end", -1),
-         (try_end),
-        ], "Customize Armour", [(start_presentation, "prsnt_customize_armor"),]),
+      ("camp_troops_cheat",[],"Give Troops", [
+          (jump_to_menu, "mnu_camp_give_troops")]),
+      # ("customize_armour", [
+        # (assign, ":end", ek_foot), #should add a global as iterator
+         # (try_for_range, ":item_slot", ek_item_0, ":end"),
+           # (troop_get_inventory_slot, ":item_no", "trp_player", ":item_slot"),
+           # (gt, ":item_no", -1),
+           # (item_slot_ge, ":item_no", slot_item_num_components, 1),
+           # (assign, "$g_current_opened_item_details", ":item_no"),
+           # (assign, ":end", -1),
+         # (try_end),
+        # ], "Customize Armour", [(start_presentation, "prsnt_customize_armor"),]),
       ("test_low_morale_quest",[],"Test Low Morale Freelancer Quest", [(assign, "$player_cur_troop", "trp_french_sergeant"),
           (assign, "$enlisted_lord", "trp_knight_1_5"),
           (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
@@ -4177,6 +4179,15 @@ game_menus = [
       
   ]),
   
+  ( "camp_give_troops",0,
+    "Troops to receive:","none",[],
+    [   
+      ("give_troops_france",[],"Give French Troops", [(party_add_template, "p_main_party", "pt_kingdom_1_reinforcements_a"),(party_add_template, "p_main_party", "pt_kingdom_1_reinforcements_b"),(party_add_template, "p_main_party", "pt_kingdom_1_reinforcements_c"),(party_add_template, "p_main_party", "pt_kingdom_1_reinforcements_d"),]),
+      ("give_troops_england",[],"Give English Troops", [(party_add_template, "p_main_party", "pt_kingdom_2_reinforcements_a"),(party_add_template, "p_main_party", "pt_kingdom_2_reinforcements_b"),(party_add_template, "p_main_party", "pt_kingdom_2_reinforcements_c"),(party_add_template, "p_main_party", "pt_kingdom_2_reinforcements_d"),]),
+      ("give_troops_burgundy",[],"Give Burgundian Troops", [(party_add_template, "p_main_party", "pt_kingdom_3_reinforcements_a"),(party_add_template, "p_main_party", "pt_kingdom_3_reinforcements_b"),(party_add_template, "p_main_party", "pt_kingdom_3_reinforcements_c"),(party_add_template, "p_main_party", "pt_kingdom_3_reinforcements_d"),]),
+      ("give_troops_brittany",[],"Give Breton Troops", [(party_add_template, "p_main_party", "pt_kingdom_4_reinforcements_a"),(party_add_template, "p_main_party", "pt_kingdom_4_reinforcements_b"),(party_add_template, "p_main_party", "pt_kingdom_4_reinforcements_c"),(party_add_template, "p_main_party", "pt_kingdom_4_reinforcements_d"),]),	 
+      ("resume_travelling",[],"Resume travelling.",[(change_screen_return),]), 
+ ]),  
   ## Kham Test End
   
   ("camp_cheat",0,

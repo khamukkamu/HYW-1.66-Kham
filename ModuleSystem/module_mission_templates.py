@@ -17608,7 +17608,6 @@ mission_templates = [
       (31,mtef_visitor_source,af_override_horse,0,1,[]),
       (32,mtef_visitor_source,af_override_horse,0,1,[]),
       (33,mtef_visitor_source,af_override_horse,0,1,[]),
-      (33,mtef_visitor_source,af_override_horse,0,1,[]),
       (34,mtef_visitor_source,af_override_horse,0,1,[]),
       (35,mtef_visitor_source,af_override_horse,0,1,[]),
       (36,mtef_visitor_source,af_override_horse,0,1,[]),
@@ -17636,6 +17635,10 @@ mission_templates = [
       (58,mtef_visitor_source,af_override_horse,0,1,[]),
       (59,mtef_visitor_source,af_override_horse,0,1,[]),
       (60,mtef_visitor_source,af_override_horse,0,1,[]),
+      (61,mtef_visitor_source,af_override_horse,0,1,[]),
+      (62,mtef_visitor_source,af_override_horse,0,1,[]),
+      (63,mtef_visitor_source,af_override_horse,0,1,[]),
+      (64,mtef_visitor_source,af_override_horse,0,1,[]),
     ],
     [
       
@@ -17728,6 +17731,8 @@ mission_templates = [
       (ti_tab_pressed, 0, 0,
         [
           (assign, "$entre_camp", 0),
+	### HYW Seek: Stop looping sounds
+	(stop_all_sounds, 0),	
           (set_trigger_result,1)
         ],
         []),
@@ -24789,8 +24794,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_joutes_horse_fr, itm_fr_hourglass_gauntlets,itm_new_bb_complet_plates_charles, itm_new_helmet_tournament_blue_1
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_lance_colored_french_1,itm_b_steel_greaves,itm_heraldic_churburg_13_tabard,itm_g_finger_gauntlets,itm_h_hounskull_narf,itm_ho_tournament_horse_barded_white_chamfrom]), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_lance_colored_english_1,itm_b_steel_greaves,itm_a_churburg_narf_mail,itm_g_finger_gauntlets,itm_h_klappvisier_pigface,itm_ho_tournament_horse_barded_black_chamfrom]),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_joutes_horse_fr, itm_fr_hourglass_gauntlets,itm_new_bb_complet_plates_charles, itm_new_helmet_tournament_blue_1
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -25085,7 +25090,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_ho_horse_barded_blue"),###<<<<<<<<<< Seek: itm_new_joutes_horse_fr
+            (eq, ":horse_item_id", "itm_ho_horse_barded_black"),###<<<<<<<<<< Seek: itm_new_joutes_horse_fr
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -25291,8 +25296,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_joutes_horse_red, itm_eng_hourglass_gauntlets, itm_new_helmet_tournament_red_1, itm_new_bb_complet_plates_r, itm_new_helmet_tournament_red_1
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_lance_colored_french_1,itm_b_steel_greaves,itm_heraldic_churburg_13_tabard,itm_g_finger_gauntlets,itm_h_hounskull_narf,itm_ho_tournament_horse_barded_white_chamfrom]), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_lance_colored_english_1,itm_b_steel_greaves,itm_a_churburg_narf_mail,itm_g_finger_gauntlets,itm_h_klappvisier_pigface,itm_ho_tournament_horse_barded_black_chamfrom]),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_joutes_horse_red, itm_eng_hourglass_gauntlets, itm_new_helmet_tournament_red_1, itm_new_bb_complet_plates_r, itm_new_helmet_tournament_red_1
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -25577,7 +25582,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_ho_horse_barded_red"),###<<<<<<<<<< Seek: new_joutes_horse_red
+            (eq, ":horse_item_id", "itm_ho_horse_barded_black"),###<<<<<<<<<< Seek: new_joutes_horse_red
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -25784,8 +25789,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_bourgogne_warhorse, itm_bret_hourglass_gauntlets, itm_new_bb_complet_plates_bourg, itm_new_bb_hounskull_yp
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_lance_colored_french_1,itm_b_steel_greaves,itm_heraldic_churburg_13_tabard,itm_g_finger_gauntlets,itm_h_hounskull_narf,itm_ho_tournament_horse_barded_white_chamfrom]), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_lance_colored_english_1,itm_b_steel_greaves,itm_a_churburg_narf_mail,itm_g_finger_gauntlets,itm_h_klappvisier_pigface,itm_ho_tournament_horse_barded_black_chamfrom]),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_bourgogne_warhorse, itm_bret_hourglass_gauntlets, itm_new_bb_complet_plates_bourg, itm_new_bb_hounskull_yp
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -26070,7 +26075,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_ho_horse_barded_brown"),###<<<<<<<<<< Seek: new_bourgogne_warhorse
+            (eq, ":horse_item_id", "itm_ho_horse_barded_black"),###<<<<<<<<<< Seek: new_bourgogne_warhorse
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -26280,8 +26285,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_breton_warhorse_2, itm_bret_hourglass_gauntlets, itm_new_breton_complet_plates, itm_new_bb_greathelm_bp
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_lance_colored_french_1,itm_b_steel_greaves,itm_heraldic_churburg_13_tabard,itm_g_finger_gauntlets,itm_h_hounskull_narf,itm_ho_tournament_horse_barded_white_chamfrom]), # itm_new_joutes_horse_blue, itm_fr_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1, itm_newlance_joutes_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_lance_colored_english_1,itm_b_steel_greaves,itm_a_churburg_narf_mail,itm_g_finger_gauntlets,itm_h_klappvisier_pigface,itm_ho_tournament_horse_barded_black_chamfrom]),# itm_newlance_joutes_enemi, itm_new_steel_greaves, itm_new_breton_warhorse_2, itm_bret_hourglass_gauntlets, itm_new_breton_complet_plates, itm_new_bb_greathelm_bp
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       
@@ -26569,7 +26574,7 @@ mission_templates = [
             (agent_get_item_id, ":horse_item_id", ":dead_agent_no"),
             #  (neq, ":horse_item_id", -1 ),#just to be sure that it is a horse
             #(eq, ":horse_item_id", "itm_new_joutes_horse_red"),###<<<<<<<<<< faire suivre le cheval de joute enemi version de parade
-            (eq, ":horse_item_id", "itm_ho_horse_barded_white"),###<<<<<<<<<< Seek: new_breton_warhorse_2
+            (eq, ":horse_item_id", "itm_ho_horse_barded_black"),###<<<<<<<<<< Seek: new_breton_warhorse_2
             
             ###########
             #### HERE DO WHATEVER YOU WANT IF THE HORSE DIED BECAUSE YOU KILLED IT;
@@ -26782,8 +26787,8 @@ mission_templates = [
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (64, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
-      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_plate_mittens,itm_new_bb_complet_plates_charles, itm_bb_hounskull_bp
+      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
+      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_plate_mittens,itm_new_bb_complet_plates_charles, itm_bb_hounskull_bp
       
       
     ],
@@ -27014,8 +27019,8 @@ mission_templates = [
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (64, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
-      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_new_wisby_gauntlets_red, itm_new_helmet_tournament_red_1, itm_new_bb_complet_plates_r, itm_great_helm_joust
+      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
+      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_new_wisby_gauntlets_red, itm_new_helmet_tournament_red_1, itm_new_bb_complet_plates_r, itm_great_helm_joust
       
       
     ],
@@ -27247,8 +27252,8 @@ mission_templates = [
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (64, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
-      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_plate_mittens, itm_new_bb_complet_plates_bourg, itm_new_bb_hounskull_yp
+      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
+      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_plate_mittens, itm_new_bb_complet_plates_bourg, itm_new_bb_hounskull_yp
       
       
     ],
@@ -27479,8 +27484,8 @@ mission_templates = [
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (64, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
-      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_hourglass_gauntlets, itm_new_breton_complet_plates, itm_bb_greathelm_bp
+      (65, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]),#joueur itm_duke_joutes, itm_new_hourglass_gauntlets, itm_new_steel_greaves, itm_new_churburg_13_brass_blue,itm_new_helmet_tournament_blue_1
+      (66, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]),#ennemi itm_duke_joutes, itm_new_steel_greaves, itm_hourglass_gauntlets, itm_new_breton_complet_plates, itm_bb_greathelm_bp
       
       
     ],
@@ -27705,8 +27710,8 @@ mission_templates = [
       (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (58, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (59, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
-      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []), # itm_training_joute_saddle_horse, itm_g_mail_gauntlets, itm_mail_boots, itm_mail_hauberk,itm_new_tilting_helmet, itm_newlance_joutes_training_joueur
-      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, []), # itm_training_joute_saddle_horse_enemi, itm_g_mail_gauntlets, itm_mail_boots, itm_mail_hauberk,itm_new_tilting_helmet, itm_newlance_joutes_training_enemi
+      (60, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]), # itm_training_joute_saddle_horse, itm_g_mail_gauntlets, itm_mail_boots, itm_mail_hauberk,itm_new_tilting_helmet, itm_newlance_joutes_training_joueur
+      (61, mtef_visitor_source|mtef_team_1, af_override_all, aif_start_alarmed, 1, [itm_w_bastard_sword_c,itm_g_hourglass_gauntlets,itm_heraldic_plate,itm_b_steel_greaves,itm_h_bascinet_great_fi]), # itm_training_joute_saddle_horse_enemi, itm_g_mail_gauntlets, itm_mail_boots, itm_mail_hauberk,itm_new_tilting_helmet, itm_newlance_joutes_training_enemi
       (62, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       (63, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, []),
       

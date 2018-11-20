@@ -64089,6 +64089,12 @@ scripts = [
 			(replace_scene_props, ":prop", "spr_empty"),
 		(try_end),
 	(try_end),			
+	
+          (try_begin),
+		(troop_get_slot, ":recruitment_status", "trp_comps_paris", slot_troop_recruited_to_camp),
+		(eq, ":recruitment_status", 0),			
+		(replace_scene_props, "spr_camp_merchant_carriage", "spr_empty"),
+          (try_end),		
 
 	]),	   
 

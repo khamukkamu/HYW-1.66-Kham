@@ -508,6 +508,9 @@ items = [
 ["saddle_horseparis", "Cheval faible", [("saddle_horse",0),("horse_c",imodbits_horse_good)], itp_type_horse|itp_merchandise, 0, 50, abundance(90)|hit_points(88)|body_armor(6)|difficulty(1)|horse_speed(45)|horse_maneuver(44)|horse_charge(10)|horse_scale(104), imodbits_horse_basic ],
 ["saddle_horseparis2", "Cheval faible", [("saddle_horse",0),("horse_c",imodbits_horse_good)], itp_type_horse|itp_merchandise, 0, 50, abundance(90)|hit_points(87)|body_armor(6)|difficulty(1)|horse_speed(45)|horse_maneuver(44)|horse_charge(10)|horse_scale(104), imodbits_horse_basic ],
 
+["ho_tournament_horse_barded_white_chamfrom", "Barded Horse with Chamfrom", [("ho_horse_barded_white_chamfrom",0)], itp_type_horse|itp_merchandise, 0, 983, abundance(40)|hit_points(120)|body_armor(30)|difficulty(0)|horse_speed(42)|horse_maneuver(38)|horse_charge(26)|horse_scale(108), imodbits_horse_basic|imodbit_champion ],
+["ho_tournament_horse_barded_black_chamfrom", "Barded Horse with Chamfrom", [("ho_horse_barded_black_chamfrom",0)], itp_type_horse|itp_merchandise, 0, 983, abundance(40)|hit_points(120)|body_armor(30)|difficulty(0)|horse_speed(42)|horse_maneuver(38)|horse_charge(26)|horse_scale(108), imodbits_horse_basic|imodbit_champion ],
+
 ##################################################################################################################################################################################################################################################################################################################
 ###################################################################################################### HYW HELMETS ###############################################################################################################################################################################################
 ##################################################################################################################################################################################################################################################################################################################
@@ -1370,31 +1373,31 @@ items = [
 ["w_native_spear_f",         "Light Lance", [("w_native_spear_f",0)], itp_couchable|itp_type_polearm|itp_offset_lance|itp_has_upper_stab|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_pike_upstab, 
 224 , weight(2.4)|difficulty(9)|spd_rtng(86) | weapon_length(190)|swing_damage(0 , blunt) | thrust_damage(29 ,  pierce),imodbits_polearm ],
 
-["w_lance_1", "Lance", [("w_lance_1",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_1", "Lance", [("w_lance_1",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 320, weight(4.4)|difficulty(12)|spd_rtng(82)|weapon_length(267)|swing_damage(35,cut)|thrust_damage(35,pierce), imodbits_polearm ],
-["w_lance_2", "Lance", [("w_lance_2",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_2", "Lance", [("w_lance_2",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 286, weight(4)|difficulty(12)|spd_rtng(85)|weapon_length(226)|swing_damage(31,cut)|thrust_damage(31,pierce), imodbits_polearm ],
-["w_lance_3", "Lance", [("w_lance_3",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_3", "Lance", [("w_lance_3",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 307, weight(4.2)|difficulty(12)|spd_rtng(83)|weapon_length(253)|swing_damage(32,cut)|thrust_damage(32,pierce), imodbits_polearm ],
-["w_lance_4", "Lance", [("w_lance_4",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_4", "Lance", [("w_lance_4",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 307, weight(4.2)|difficulty(12)|spd_rtng(83)|weapon_length(253)|swing_damage(32,cut)|thrust_damage(32,pierce), imodbits_polearm ],
-["w_lance_5", "Lance", [("w_lance_5",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_5", "Lance", [("w_lance_5",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 308, weight(4.2)|difficulty(12)|spd_rtng(83)|weapon_length(252)|swing_damage(34,cut)|thrust_damage(34,pierce), imodbits_polearm ],
-["w_lance_6", "Lance", [("w_lance_6",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_6", "Lance", [("w_lance_6",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 296, weight(4.3)|difficulty(12)|spd_rtng(83)|weapon_length(241)|swing_damage(30,cut)|thrust_damage(30,pierce), imodbits_polearm ],
 
-["w_lance_colored_english_1", "English Lance", [("w_lance_colored_english_1",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_colored_english_1", "English Lance", [("w_lance_colored_english_1",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 308, weight(4.2)|difficulty(12)|spd_rtng(83)|weapon_length(252)|swing_damage(34,cut)|thrust_damage(34,pierce), imodbits_polearm ],
-["w_lance_colored_english_2", "English Lance", [("w_lance_colored_english_2",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_colored_english_2", "English Lance", [("w_lance_colored_english_2",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 308, weight(4.2)|difficulty(12)|spd_rtng(83)|weapon_length(252)|swing_damage(34,cut)|thrust_damage(34,pierce), imodbits_polearm ],
-["w_lance_colored_english_3", "English Lance", [("w_lance_colored_english_3",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_colored_english_3", "English Lance", [("w_lance_colored_english_3",0)],itp_couchable| itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 320, weight(4.4)|difficulty(12)|spd_rtng(82)|weapon_length(267)|swing_damage(35,cut)|thrust_damage(35,pierce), imodbits_polearm ],
 
-["w_lance_colored_french_1", "French Lance", [("w_lance_colored_french_1",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_colored_french_1", "French Lance", [("w_lance_colored_french_1",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 308, weight(4.2)|difficulty(12)|spd_rtng(83)|weapon_length(252)|swing_damage(34,cut)|thrust_damage(34,pierce), imodbits_polearm ],
-["w_lance_colored_french_2", "French Lance", [("w_lance_colored_french_2",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_colored_french_2", "French Lance", [("w_lance_colored_french_2",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 308, weight(4.2)|difficulty(12)|spd_rtng(83)|weapon_length(252)|swing_damage(34,cut)|thrust_damage(34,pierce), imodbits_polearm ],
-["w_lance_colored_french_3", "French Lance", [("w_lance_colored_french_3",0)], itp_type_polearm|itp_primary|itp_offset_lance, itc_staff|itcf_carry_spear, 
+["w_lance_colored_french_3", "French Lance", [("w_lance_colored_french_3",0)], itp_couchable|itp_type_polearm|itp_primary|itp_offset_lance, itc_greatlance|itcf_carry_spear, 
 308, weight(4.2)|difficulty(12)|spd_rtng(83)|weapon_length(252)|swing_damage(34,cut)|thrust_damage(34,pierce), imodbits_polearm ],
 
 
