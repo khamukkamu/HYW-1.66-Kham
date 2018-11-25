@@ -3865,11 +3865,8 @@ game_menus = [
       
 ### HYW Seek: Dynamic camp scene
       ("camp_action_walk",
-        [
-	# (party_get_current_terrain,":cur_terrain","p_main_party"),
-          # (eq, ":cur_terrain", rt_plain),	 
-        ]
-        ,"Aller au campement dans les plaines.",
+        []
+        ,"Aller au campement.",
         [
 		  
 ### Spawn points:
@@ -3877,9 +3874,18 @@ game_menus = [
 ### 2 - 10 | Camp followers
 ### 11 - 26 | Companions
 ### 27 - 60 | Troops
+
+	(party_get_current_terrain,":cur_terrain","p_main_party"),
+	(try_begin),
+		(this_or_next|eq, ":cur_terrain", rt_snow),
+		(eq, ":cur_terrain", rt_snow_forest),
+		(assign, ":scene_to_use", "scn_camp_snow"),
+	(else_try),
+		(assign, ":scene_to_use", "scn_camp_plains"),	
+	(try_end),
 		  
           (assign, "$entre_camp", 1),
-          (modify_visitors_at_site,"scn_camp_plains"),
+          (modify_visitors_at_site,":scene_to_use"),
           (reset_visitors),
           (set_jump_entry, 1),		 
 			 
@@ -3986,7 +3992,7 @@ game_menus = [
           (set_jump_mission,"mt_plain_campement"),
           (mission_tpl_entry_set_override_flags, "mt_plain_campement", 1, af_override_horse),
           
-          (jump_to_scene, "scn_camp_plains"),
+          (jump_to_scene, ":scene_to_use"),
           (change_screen_mission),
         ]
       ),
@@ -11932,7 +11938,7 @@ game_menus = [
           #compagnon
           (try_begin),
 ### HYW Seek: Dynamic Camp companion
-	(troop_get_slot, ":recruitment_status", "trp_comps_dijon", slot_troop_recruited_to_camp),
+	(troop_get_slot, ":recruitment_status", "trp_comps_limoge", slot_troop_recruited_to_camp),
 	(eq, ":recruitment_status", 0),			
 ### HYW END
             (set_visitor, 9, "trp_comps_limoge"),

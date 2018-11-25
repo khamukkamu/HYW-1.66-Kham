@@ -414,3 +414,7 @@ mnu_choose_scenes_793 = 416
 mnu_choose_scenes_806 = 417
 mnu_choose_scenes_819 = 418
 mnu_choose_scenes_832 = 419
+mnu_choose_scenes_845 = 420
+mnu_choose_scenes_858 = 421
+mnu_choose_scenes_871 = 422
+mnu_choose_scenes_884 = 423

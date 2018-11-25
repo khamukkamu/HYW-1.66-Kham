@@ -34,7 +34,7 @@ party_templates = [
 # Party templates before this point are hard-wired into the game and should not be changed.
 ####################################################################################################################
 ##  ("old_garrison","Old Garrison",icon_vaegir_knight,0,fac_neutral,merchant_personality,[]),
-("village_defenders","Village Defenders",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,10,20),(trp_peasant_woman,0,4)]),
+("village_defenders","Village Defenders",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,12,24)]),
 
 ("cattle_herd","Cattle Herd",icon_cattle|carries_goods(10),0,fac_neutral,merchant_personality,[(trp_cattle,80,120)]),
 
@@ -49,7 +49,7 @@ party_templates = [
 #rebels
 ("black_khergit", "Rebelles", icon_axeman|carries_goods(2), 0, fac_rebels, soldier_personality, [(trp_rebel_hunter,2,14),(trp_rebel_scout,2,11),(trp_rebel_agent,4,12),(trp_rebel_soldier,3,10),(trp_rebel_peasant,1,20)] ),
 #rebels fin
-("steppe_bandits", "Plundering Bandits", icon_axeman|carries_goods(2), 0, fac_outlaws, bandit_personality, [(trp_steppe_bandit,10,38)] ),
+("steppe_bandits", "Plundering Bandits", icon_axeman|carries_goods(2), 0, fac_outlaws, bandit_personality, [(trp_steppe_bandit,8,38)] ),
 ("taiga_bandits", "Tundra Bandits", icon_axeman|carries_goods(2), 0, fac_outlaws, bandit_personality, [(trp_taiga_bandit,4,30),(trp_taiga_bandit_2,4,15),(trp_taiga_bandit_3,4,15)] ),
 ("desert_bandits","Desert Bandits",icon_vaegir_knight|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_desert_bandit,4,58)]),
 ("forest_bandits", "Forest Bandits", icon_axeman|carries_goods(2), 0, fac_forest_bandits, bandit_personality, [(trp_forest_bandit,4,42),(trp_forest_bandit_2,4,32)] ),
@@ -63,10 +63,10 @@ party_templates = [
 ("bandits_awaiting_ransom","Bandits Awaiting Ransom",icon_axeman|carries_goods(9)|pf_auto_remove_in_town|pf_quest_party,0,fac_neutral,bandit_personality,[(trp_bandit,24,58),(trp_kidnapped_girl,1,1,pmf_is_prisoner)]),
 ("kidnapped_girl","Kidnapped Girl",icon_woman|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_kidnapped_girl,1,1)]),
 
-("village_farmers","Village Farmers",icon_peasant|pf_civilian,0,fac_innocents,merchant_personality,[(trp_farmer,5,10),(trp_peasant_woman,3,8)]),
+("village_farmers","Village Farmers",icon_peasant|pf_civilian,0,fac_innocents,merchant_personality,[(trp_farmer,8,18)]),
 
 ("spy_partners", "Unremarkable Travellers", icon_gray_knight|carries_goods(10)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy_partner,1,1),(trp_caravan_guard,5,11)]),
-("runaway_serfs","Runaway Serfs",icon_peasant|carries_goods(8)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_farmer,6,7), (trp_peasant_woman,3,3)]),
+("runaway_serfs","Runaway Serfs",icon_peasant|carries_goods(8)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_farmer,9,10)]),
 ("spy", "Ordinary Townsman", icon_gray_knight|carries_goods(4)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_spy,1,1)]),
 ("sacrificed_messenger", "Sacrificed Messenger", icon_gray_knight|carries_goods(3)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[]),
 ##  ("conspirator", "Conspirators", icon_gray_knight|carries_goods(8)|pf_default_behavior|pf_quest_party,0,fac_neutral,merchant_personality,[(trp_conspirator,3,4)]),

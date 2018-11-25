@@ -4183,6 +4183,21 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("a_gambeson_green", "a_gambeson_green"),  
 ("a_gambeson_end", "a_gambeson_end"),
 
+## Padded Armor
+# French 
+("a_padded_armor_blue", "a_padded_armor_blue"),  
+("a_padded_armor_white", "a_padded_armor_white"),  
+# English
+("a_padded_armor_red", "a_padded_armor_red"),  
+# Burgundian
+("a_padded_armor_brown", "a_padded_armor_brown"),  
+# Breton
+("a_padded_armor_white_2", "a_padded_armor_white"),  
+("a_padded_armor_black", "a_padded_armor_black"),  
+# Rebel
+("a_padded_armor_green", "a_padded_armor_green"),  
+("a_padded_armor_end", "a_padded_armor_end"),
+
 ## Narf Gambeson
 # French 
 ("a_gambeson_narf_blue", "a_gambeson_narf_blue"),  
