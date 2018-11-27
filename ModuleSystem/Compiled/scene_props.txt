@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1587
+ 1661
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4963,5 +4963,232 @@ spr_battlement_a_pente_destroy_b 0 0 battlement_a_pente_destroy_b bo_battlement_
 
 
 spr_battlement_a_pente_destroy_tas 0 0 battlement_a_pente_destroy_tas bo_battlement_a_pente_destroy_tas 0
+
+
+spr_camp_tent_1 0 0 camp_tent2_bleu bo_camp_tent2 0
+
+
+spr_camp_fire_1 0 0 camp_campfire bo_camp_campfire 0
+
+
+spr_camp_cauldron_1 0 0 tripod_cauldron_a bo_tripod_cauldron_a 0
+
+
+spr_camp_fire_small_1 0 0 0 0 1
+-40.000000  1 1965 1 1008806316530991153 
+
+
+spr_camp_bed_1 0 0 bed_b bo_bed_b 0
+
+
+spr_camp_chair_1 0 0 tavern_chair_b bo_tavern_chair_b 0
+
+
+spr_camp_chest_1 0 0 chest_c bo_chest_c 0
+
+
+spr_camp_box_1 0 0 box_a bo_box_a 0
+
+
+spr_camp_barrel_1 0 0 barrel bobarrel 0
+
+
+spr_camp_sack_table_1 0 0 mill_flour_sack_desk_b bo_mill_flour_sack_desk_b 0
+
+
+spr_camp_cart_1 0 0 cart bo_cart 0
+
+
+spr_camp_tent_2 0 0 camp_tent2_bleu bo_camp_tent2 0
+
+
+spr_camp_large_tent_2 0 0 arabian_tent bo_arabian_tent 0
+
+
+spr_camp_fire_2 0 0 camp_campfire bo_camp_campfire 0
+
+
+spr_camp_cauldron_2 0 0 tripod_cauldron_b bo_tripod_cauldron_b 0
+
+
+spr_camp_fire_small_2 0 0 0 0 1
+-40.000000  1 1965 1 1008806316530991153 
+
+
+spr_camp_bed_2 0 0 bed_b bo_bed_b 0
+
+
+spr_camp_chair_2 0 0 tavern_chair_b bo_tavern_chair_b 0
+
+
+spr_camp_jug_2 0 0 jug 0 0
+
+
+spr_camp_cup_2 0 0 cup 0 0
+
+
+spr_camp_table_2 0 0 table_trunk_a bo_table_trunk_a 0
+
+
+spr_camp_chest_2 0 0 chest_c bo_chest_c 0
+
+
+spr_camp_box_2 0 0 box_a bo_box_a 0
+
+
+spr_camp_barrel_2 0 0 barrel bobarrel 0
+
+
+spr_camp_sack_table_2 0 0 mill_flour_sack_desk_b bo_mill_flour_sack_desk_b 0
+
+
+spr_camp_cart_2 0 0 cart bo_cart 0
+
+
+spr_camp_tent_3 0 0 camp_tent2_bleu bo_camp_tent2 0
+
+
+spr_camp_large_tent_3 0 0 arabian_tent bo_arabian_tent 0
+
+
+spr_camp_fire_3 0 0 camp_campfire bo_camp_campfire 0
+
+
+spr_camp_cauldron_3 0 0 tripod_cauldron_a bo_tripod_cauldron_a 0
+
+
+spr_camp_fire_small_3 0 0 0 0 1
+-40.000000  1 1965 1 1008806316530991153 
+
+
+spr_camp_bed_3 0 0 bed_b bo_bed_b 0
+
+
+spr_camp_chair_3 0 0 tavern_chair_b bo_tavern_chair_b 0
+
+
+spr_camp_jug_3 0 0 jug 0 0
+
+
+spr_camp_cup_3 0 0 cup 0 0
+
+
+spr_camp_table_3 0 0 table_trunk_a bo_table_trunk_a 0
+
+
+spr_camp_chest_3 0 0 chest_c bo_chest_c 0
+
+
+spr_camp_box_3 0 0 box_a bo_box_a 0
+
+
+spr_camp_barrel_3 0 0 barrel bobarrel 0
+
+
+spr_camp_sack_table_3 0 0 mill_flour_sack_desk_b bo_mill_flour_sack_desk_b 0
+
+
+spr_camp_cart_3 0 0 cart bo_cart 0
+
+
+spr_camp_tent_4 0 0 camp_tent2_bleu bo_camp_tent2 0
+
+
+spr_camp_large_tent_4 0 0 arabian_tent bo_arabian_tent 0
+
+
+spr_camp_fire_4 0 0 camp_campfire bo_camp_campfire 0
+
+
+spr_camp_cauldron_4 0 0 tripod_cauldron_b bo_tripod_cauldron_b 0
+
+
+spr_camp_fire_small_4 0 0 0 0 1
+-40.000000  1 1965 1 1008806316530991153 
+
+
+spr_camp_bed_4 0 0 bed_b bo_bed_b 0
+
+
+spr_camp_chair_4 0 0 tavern_chair_b bo_tavern_chair_b 0
+
+
+spr_camp_jug_4 0 0 jug 0 0
+
+
+spr_camp_cup_4 0 0 cup 0 0
+
+
+spr_camp_table_4 0 0 table_trunk_a bo_table_trunk_a 0
+
+
+spr_camp_chest_4 0 0 chest_c bo_chest_c 0
+
+
+spr_camp_box_4 0 0 box_a bo_box_a 0
+
+
+spr_camp_barrel_4 0 0 barrel bobarrel 0
+
+
+spr_camp_sack_table_4 0 0 mill_flour_sack_desk_b bo_mill_flour_sack_desk_b 0
+
+
+spr_camp_cart_4 0 0 cart bo_cart 0
+
+
+spr_camp_tent_5 0 0 camp_tent2_bleu bo_camp_tent2 0
+
+
+spr_camp_large_tent_5 0 0 arabian_tent bo_arabian_tent 0
+
+
+spr_camp_fire_5 0 0 camp_campfire bo_camp_campfire 0
+
+
+spr_camp_cauldron_5 0 0 tripod_cauldron_a bo_tripod_cauldron_a 0
+
+
+spr_camp_fire_small_5 0 0 0 0 1
+-40.000000  1 1965 1 1008806316530991153 
+
+
+spr_camp_bed_5 0 0 bed_b bo_bed_b 0
+
+
+spr_camp_chair_5 0 0 tavern_chair_b bo_tavern_chair_b 0
+
+
+spr_camp_jug_5 0 0 jug 0 0
+
+
+spr_camp_cup_5 0 0 cup 0 0
+
+
+spr_camp_table_5 0 0 table_trunk_a bo_table_trunk_a 0
+
+
+spr_camp_chest_5 0 0 chest_c bo_chest_c 0
+
+
+spr_camp_box_5 0 0 box_a bo_box_a 0
+
+
+spr_camp_barrel_5 0 0 barrel bobarrel 0
+
+
+spr_camp_sack_table_5 0 0 mill_flour_sack_desk_b bo_mill_flour_sack_desk_b 0
+
+
+spr_camp_cart_5 0 0 cart bo_cart 0
+
+
+spr_camp_props_end 0 0 0 0 0
+
+
+spr_camp_merchant_carriage 0 0 camp_merchant_carriage bo_camp_merchant_carriage 0
+
+
+spr_camp_weapon_carriage 0 0 camp_weapon_carriage bo_camp_weapon_carriage 0
 
 

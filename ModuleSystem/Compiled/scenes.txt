@@ -1,5 +1,5 @@
 scenesfile version 1
- 835
+ 897
 scn_random_scene random_scene 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x300028000003e8fa0000034e00004b34000059be 
   0 
   0 
@@ -3340,3 +3340,251 @@ scn_conversation_scene_tld_forest conversation_scene_tld_forest 256 none none -4
   0 
   0 
  forest_wall 
+scn_random_scene_steppe_small_1 random_scene_steppe_small_1 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022004c563400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain10 
+scn_random_scene_steppe_small_2 random_scene_steppe_small_2 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022008c563400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain3 
+scn_random_scene_steppe_small_3 random_scene_steppe_small_3 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000220018600400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain10 
+scn_random_scene_steppe_small_4 random_scene_steppe_small_4 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000220018600400691a400003efe00004b34000017e5 
+  0 
+  0 
+ outer_terrain_steppe 
+scn_random_scene_steppe_small_5 random_scene_steppe_small_5 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000220028600400691a400003efe00004b34000017e5 
+  0 
+  0 
+ outer_terrain_plain3 
+scn_random_scene_steppe_small_6 random_scene_steppe_small_6 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000220028500400691a400003efe00004b3400004543 
+  0 
+  0 
+ outer_terrain_steppe 
+scn_random_scene_steppe_small_7 random_scene_steppe_small_7 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000230028563400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain11 
+scn_random_scene_steppe_small_8 random_scene_steppe_small_8 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000022008c563400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain3 
+scn_random_scene_plain_small_1 random_scene_plain_small_1 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000230028563400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain11 
+scn_random_scene_plain_small_2 random_scene_plain_small_2 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300006e3400691a40000437e00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_3 random_scene_plain_small_3 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300285e3400691a4000043af00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_4 random_scene_plain_small_4 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300285e3400691a4000043af00004b3400001e5c 
+  0 
+  0 
+ outer_terrain_plain2 
+scn_random_scene_plain_small_5 random_scene_plain_small_5 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300285e3400691a40000612600004b3400000585 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_6 random_scene_plain_small_6 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300485e3400691a40000461c00004b3400006d3b 
+  0 
+  0 
+ outer_terrain_plain11 
+scn_random_scene_plain_small_7 random_scene_plain_small_7 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000230028563c00691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain8 
+scn_random_scene_plain_small_8 random_scene_plain_small_8 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300285e3400691a40000612600004b3400000585 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_9 random_scene_plain_small_9 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000230068563c00691a400003efe000061bb0000741e 
+  0 
+  0 
+ outer_terrain_plain7 
+scn_random_scene_plain_small_10 random_scene_plain_small_10 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300006e3400691a40000437e00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_11 random_scene_plain_small_11 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300285e3400691a4000043af00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_12 random_scene_plain_small_12 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000230028563c00691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain8 
+scn_random_scene_plain_small_13 random_scene_plain_small_13 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300285e3400691a40000612600004b3400000585 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_16 random_scene_plain_small_16 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300006e3400691a40000437e00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_17 random_scene_plain_small_17 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300485e3400691a40000461c00004b3400006d3b 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_18 random_scene_plain_small_18 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000230028563400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain11 
+scn_random_scene_plain_small_19 random_scene_plain_small_19 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000230028563400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_plain11 
+scn_random_scene_plain_small_20 random_scene_plain_small_20 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300485e3400691a40000461c00004b3400006d3b 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_21 random_scene_plain_small_21 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300485e3400691a40000461c00004b3400006d3b 
+  0 
+  0 
+ outer_terrain_plain 
+scn_random_scene_plain_small_22 random_scene_plain_small_22 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300485e3400691a40000461c00004b3400006d3b 
+  0 
+  0 
+ outer_terrain_plain3 
+scn_random_scene_plain_small_23 random_scene_plain_small_23 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300485e3400691a40000461c00004b3400006d3b 
+  0 
+  0 
+ outer_terrain_plain5 
+scn_random_scene_plain_small_24 random_scene_plain_small_24 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002300485e3400691a40000461c00004b3400006d3b 
+  0 
+  0 
+ outer_terrain_plain5 
+scn_random_scene_snow_small_1 random_scene_snow_small_1 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002400586e3400691a400003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_small_2 random_scene_snow_small_2 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002400586e3400691a400003efe00004b340000458e 
+  0 
+  0 
+ outer_terrain_snow 
+scn_random_scene_snow_small_3 random_scene_snow_small_3 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002400586e3400691a400003efe00004b34000038e2 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_small_4 random_scene_snow_small_4 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000002400c06e3400691a400003efe00004b3400003eb1 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_small_5 random_scene_snow_small_5 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x000000024011c563400691a400003efe00004b34000051ab 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_small_6 random_scene_snow_small_6 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000240034563400691a400003efe00004b34000020c2 
+  0 
+  0 
+ outer_terrain_snow 
+scn_random_scene_snow_small_7 random_scene_snow_small_7 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x0000000240034563400691a400003efe00004b34000020c2 
+  0 
+  0 
+ outer_terrain_snow 
+scn_random_scene_steppe_forest_small_1 random_scene_steppe_forest_small_1 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000a0034a0740025896000078f00000356b00002c27 
+  0 
+  0 
+ paris_outer_terrain_plain9 
+scn_random_scene_steppe_forest_small_2 random_scene_steppe_forest_small_2 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000a0034a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain_small_3 
+scn_random_scene_steppe_forest_small_3 random_scene_steppe_forest_small_3 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000a0034a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain7 
+scn_random_scene_steppe_forest_small_4 random_scene_steppe_forest_small_4 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000a0034a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain3 
+scn_random_scene_steppe_forest_small_5 random_scene_steppe_forest_small_5 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000a0034a0740025896000078f00000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain9 
+scn_random_scene_steppe_forest_small_6 random_scene_steppe_forest_small_6 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000a0034a0740025896000078f00000356b00002c27 
+  0 
+  0 
+ copy_outer_terrain_plain3 
+scn_random_scene_steppe_forest_small_7 random_scene_steppe_forest_small_7 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000a0034a0740025896000078f00000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain9 
+scn_random_scene_plain_forest_small_1 random_scene_plain_forest_small_1 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b0018a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ forest_wall 
+scn_random_scene_plain_forest_small_2 random_scene_plain_forest_small_2 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b002ca0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain7 
+scn_random_scene_plain_forest_small_3 random_scene_plain_forest_small_3 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b002ca0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain11 
+scn_random_scene_plain_forest_small_4 random_scene_plain_forest_small_4 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b0018a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ copy_outer_terrain_plain5 
+scn_random_scene_plain_forest_small_5 random_scene_plain_forest_small_5 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b0018a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain11 
+scn_random_scene_plain_forest_small_6 random_scene_plain_forest_small_6 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b0018a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain7 
+scn_random_scene_plain_forest_small_7 random_scene_plain_forest_small_7 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b002ca0740025896000000f80000356b00002c27 
+  0 
+  0 
+ forest_wall 
+scn_random_scene_plain_forest_small_8 random_scene_plain_forest_small_8 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b0018a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ copy_outer_terrain_plain5 
+scn_random_scene_plain_forest_small_9 random_scene_plain_forest_small_9 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b0018a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain11 
+scn_random_scene_plain_forest_small_10 random_scene_plain_forest_small_10 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x00000000b0018a0740025896000000f80000356b00002c27 
+  0 
+  0 
+ outer_terrain_plain7 
+scn_random_scene_snow_forest_small_1 random_scene_snow_forest_small_1 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x400211130001e07800002ad400001172000035c4 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_forest_small_2 random_scene_snow_forest_small_2 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x400211130001e07800002ad400001172000035c4 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_forest_small_3 random_scene_snow_forest_small_3 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x400211130001e07800002ad400001172000035c4 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_forest_small_4 random_scene_snow_forest_small_4 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x400211130001e07800002ad400001172000035c4 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_forest_small_5 random_scene_snow_forest_small_5 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x400211130001e07800002ad400001172000035c4 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_random_scene_snow_forest_small_6 random_scene_snow_forest_small_6 1280 none none 0.000000 0.000000 240.000000 240.000000 -0.500000 0x400211130001e07800002ad400001172000035c4 
+  0 
+  0 
+ outer_terrain_snow_mix 
+scn_camp_plains camp_plains 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000030000500000a92a600007c430000095c00000b34 
+  0 
+  1  897 
+ outer_terrain_plain 
+scn_camp_snow camp_snow 256 none none 0.000000 0.000000 100.000000 100.000000 -100.000000 0x0000000040000500000a92a600007c430000095c00000b34 
+  0 
+  1  897 
+ outer_terrain_snow 
