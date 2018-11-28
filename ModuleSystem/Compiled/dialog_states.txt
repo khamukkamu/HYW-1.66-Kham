@@ -1692,8 +1692,8 @@ comp_bourgslqstok
 camp_monk_discuss
 camp_monk_heal_head
 camp_monk_heal_arm
-camp_monk_pay
 camp_monk_heal_leg
+camp_monk_pay
 camp_monk_heal
 camp_monk_pay_denied
 camp_monk_backstory_fail

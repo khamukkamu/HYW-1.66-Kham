@@ -1777,7 +1777,7 @@ triggers = [
   ]),
   
   #Freelancer Join Tut Message
-  (0.1, 0, ti_once, [(eq, "$freelancer_state", 1)], [(dialog_box,"@You will be following the Lord/Lady you chose and will be joining in battles they get into.^ You can also get promoted as you gain experience. ^^Lastly, you can increase the map speed while enlisted by pressing the '=' key (next to the backspace key).", "@You are now enlisted!")]),
+  (0.1, 0, ti_once, [(eq, "$freelancer_state", 1)], [(dialog_box,"str_enlisted_message", "str_enlisted_header")]),
   
   #Autojoin Lord Trigger
   (2, 0, 0, 

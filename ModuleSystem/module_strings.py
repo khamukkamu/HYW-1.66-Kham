@@ -4108,6 +4108,9 @@ One may memorize the placement of selected divisions relative to the player by p
 - NO FORMATION^^\
 Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times."),
 
+# Freelancer Strings
+("enlisted_header", "You are now enlisted!"),
+("enlisted_message", "You will be following the Lord/Lady you chose and will be joining in battles they get into.^ You can also get promoted as you gain experience. ^^Lastly, you can increase the map speed while enlisted by pressing the '=' key (next to the backspace key)."),
 ### HYW Seek: Camp troop dialog
 ("camp_soldier_line_1", "Keeping watch {sir/madam}."),  
 ("camp_soldier_line_2", "Hello {sir/madam}."),
