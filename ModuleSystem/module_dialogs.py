@@ -390,12 +390,13 @@ dialogs = [
 
   #Dialogue Auto-Return from Mission (Kham)
 
-  [anyone,"event_triggered",
+  [anyone|auto_proceed,"event_triggered",
     [
       (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
+      (eq, "$g_talk_troop", "$enlisted_lord"),
       (eq, "$talk_context", tc_vacation_over),
     ],
-    "You are back, {playername}.", "lord_start",[(assign, "$talk_context", -1),],
+    "{playername}", "lord_start",[(assign, "$talk_context", -1),],
   ],
 
   #Dialogue Auto-Return from Vacation (Kham)
@@ -23600,7 +23601,7 @@ dialogs = [
       (call_script, "script_end_quest", "qst_scout_waypoints"),
       #Reactivating follow army quest - Edited for use by Freelancer Missions - Kham
       (try_begin),
-        (neq, "$freelancer_state", 2),
+        (neg|ge, "$freelancer_state", 1),
         (str_store_troop_name_link, s9, "$g_talk_troop"),
         (setup_quest_text, "qst_follow_army"),
         (str_store_string, s2, "str_follow_army_quest_brief_2"),
@@ -23609,8 +23610,8 @@ dialogs = [
       (try_end),
   ]],
 
-  [anyone|plyr, "lord_scout_waypoints_thank", [],
-    "A simple task, {s65}.", "lord_pretalk",[]],
+  [anyone|plyr, "lord_scout_waypoints_thank", [(eq, "$freelancer_state", 2)],
+    "A simple task, {s65}.", "ask_return_from_leave_other",[]],
   [anyone|plyr, "lord_scout_waypoints_thank", [],
     "Nothing I couldn't handle.", "lord_pretalk",[]],
   [anyone|plyr, "lord_scout_waypoints_thank", [],
@@ -23619,11 +23620,11 @@ dialogs = [
 #Freelancer Mission Deserters Finish - Had to put it here cause pretalk should be higher.
 
   [anyone|plyr, "lord_freelancer_deserters_thank", [],
-    "Cowardice is never an excuse for treason.", "lord_pretalk",[]],
+    "Cowardice is never an excuse for treason.", "ask_return_from_leave_other",[]],
   [anyone|plyr, "lord_freelancer_deserters_thank", [],
-    "It was a difficult task, but it had to be done.", "lord_pretalk",[]],
+    "It was a difficult task, but it had to be done.", "ask_return_from_leave_other",[]],
   [anyone|plyr, "lord_freelancer_deserters_fail", [],
-    "I will do better next time.", "lord_pretalk",[]],
+    "I will do better next time.", "ask_return_from_leave_other",[]],
 
   [anyone, "lord_start",
     [
@@ -33034,7 +33035,7 @@ dialogs = [
   #dialog_accept_ask_return_from_leave
   [anyone,"ask_return_from_leave",
     [
-      (ge, "$g_talk_troop_relation", 0),
+      #(ge, "$g_talk_troop_relation", 0),
       (neg|troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
     ],
     "Welcome back {playername}. Your regiment has missed you I daresay, Now return to your post.", "lord_pretalk",[
@@ -33048,10 +33049,24 @@ dialogs = [
   #dialog_accept_ask_return_from_leave - For Mission Completion (Kham)
   [anyone,"ask_return_from_leave",
     [
-      (ge, "$g_talk_troop_relation", 0),
+      #(ge, "$g_talk_troop_relation", 0),
       (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
     ],
     "Welcome back {playername}. Thank you for completing the mission. Now return to your post.", "close_window",[
+      (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
+      (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
+      (call_script, "script_event_player_returns_mission"),
+      (change_screen_map),
+    ],
+  ],
+
+  #dialog_accept_ask_return_from_leave - For Mission Completion - Other(Kham)
+  [anyone,"ask_return_from_leave_other",
+    [
+      #(ge, "$g_talk_troop_relation", 0),
+      (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
+    ],
+    "Thank you for completing the mission. Now return to your post.", "close_window",[
       (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
       (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
       (call_script, "script_event_player_returns_mission"),

@@ -1487,3 +1487,4 @@ g_custom_armor_mandatory
 freelancer_training_opponents
 custom_armour_current_colour
 g_jrider_faction_report_return_to_menu
+g_camp_level

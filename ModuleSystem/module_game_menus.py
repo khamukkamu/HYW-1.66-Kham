@@ -5246,7 +5246,14 @@ game_menus = [
       ("encounter_surrender",[
           (eq,"$cant_leave_encounter", 1),
           ],"Surrender.",[(assign,"$g_player_surrenders",1)]),
-    ]
+
+      ("encounter_freelancer_lord", [(eq, "$freelancer_state", 1), (eq, "$g_encountered_party", "$enlisted_party")],
+        "Return to duty.", [      
+        (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
+        (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
+        (call_script, "script_event_player_returns_mission"),
+        (change_screen_map),]),
+      ]
   ),
   (
     "encounter_retreat_confirm",0,
