@@ -1,5 +1,76 @@
+dlga_event_triggered:freelancer_sarge_1|{playername}, I've been watching you and I am quite impressed with your progress.^ I've spoken to the men and they agree with my decision.
+dlga_freelancer_sarge_1:freelancer_sarge_2|Thank you, my {reg3?Lady:Lord}, I try my best to bring honour to your house.^ What decision is that?
+dlga_freelancer_sarge_2:freelancer_sarge_3|You will now be one of my {s5}, commanding a group of 7 men. Your new salary should cover theirs, so will the improved rations I will be giving you.^ Also, as a symbol of your new authority, I will reward you a choice of a two things.^ {s6}, both made by my personal blacksmith.
+dlga_freelancer_sarge_3:freelancer_sarge_finish|I choose the shield. I will not let you nor the men down. You can count on me.
+dlga_freelancer_sarge_3:freelancer_sarge_finish.1|I choose the weapon. I will not let you nor the men down. You can count on me.
+dlga_freelancer_sarge_finish:close_window|Good to hear it, {playername}. I'll have someone deliver it to you. Now go and meet your men.
+dlga_event_triggered:freelancer_cap_1|{playername}, You have once again truly proved your worth. You are an example to all of our men.
+dlga_freelancer_cap_1:freelancer_cap_2|Thank you, my {reg3?Lady:Lord}. A soldier is only as good as their commander.
+dlga_freelancer_cap_2:freelancer_cap_3|From now on, you will be my {s5}, commanding a group of 15 men. You will also be given a considerable wage increase, as befit your station.^ I have also something to give you, choose between {s6}, straight from our family's treasures...^
+dlga_freelancer_cap_3:freelancer_cap_finish|The armour will help me defend you from your enemies. I will continue bringing honour to your house.
+dlga_freelancer_cap_3:freelancer_cap_finish.1|The weapon will help me destroy your enemies. I will continue bringing honour to your house.
+dlga_freelancer_cap_finish:close_window|I know you will, {playername}. Now go and meet your men.
+dlga_event_triggered:lord_start|You are back, {playername}.
 dlga_event_triggered:close_window|{playername}, I am here to tell you that your vacation is over. Join me and return to your post.
-dlga_event_triggered:close_window.1|There! I can see the walls of {s3} in the distance. We've made it safely. Here, take this purse of {reg3} crowns, as I promised. I hope we can travel together again someday.
+dlga_event_triggered:freelancer_pacify_duel_win|Ha! Good fight, good fight! Exactly what the men were looking for. We should do this more, eh?
+dlga_event_triggered:freelancer_pacify_duel_lose|Alright, we've entertained the men, now for the good stuff. Pay up!
+dlga_event_triggered:freelancer_pacify_start|...blood and guts everywhere, then the rats eat the blood and guts! At least they are feasting, eh! Unlike us, covered with blood, guts, and shit!{s5}
+dlga_event_triggered:freelancer_mission_start|{playername}, I have a task for you.
+dlga_freelancer_mission_start:freelancer_lord_mission_told_pacify|{playername}, as you are probably well aware, some of are troops are unhappy. Whether it is the losses we have suffered, or perhaps a lack of beer or ale, there are rumblings among the men.This cannot stand. I want you to go and placate them. Do what you must, as long as we can continue on without this air of dissatisfaction.
+dlga_freelancer_lord_mission_told_pacify:freelancer_lord_mission_pacify_accepted|I will do what I can to pacify the men.
+dlga_freelancer_lord_mission_told_pacify:freelancer_lord_mission_pacify_declined|I cannot accept this mission.
+dlga_freelancer_lord_mission_pacify_accepted:close_window|Very good. I look forward to hearing back from you.
+dlga_freelancer_lord_mission_pacify_declined:close_window|That is unfortunate, {playername}. Perhaps you are one of the unhappy ones too... Go back to your post.
+dlga_freelancer_pacify_start:freelancer_pacify_explain|{s5}
+dlga_freelancer_pacify_explain:freelancer_pacify_attempt|{s5}
+dlga_freelancer_pacify_attempt:freelancer_pacify_persuade|Perhaps I can change your mind... (Persuasion + Leadership Check)
+dlga_freelancer_pacify_persuade:freelancer_pacify_persuade_success|{s5}
+dlga_freelancer_pacify_persuade:freelancer_pacify_persuade_fail|{s5}
+dlga_freelancer_pacify_persuade_success:close_window|Good. I'll let the commander know.
+dlga_freelancer_pacify_persuade_fail:close_window|I am sorry that I cannot convince you. I'll let the commander know.
+dlga_freelancer_pacify_attempt:freelancer_pacify_fight|So, the men wants to have fun? They want a bit of entertainment? (Duel)
+dlga_freelancer_pacify_fight:freelancer_pacify_fight_ask|So, the men wants to have fun? They want a bit of entertainment? Well, we can give them a show right now. You and I have a friendly duel, and if I win, convince the men to stop their grumbling. If you win, well, I'll pay the men 15 crowns each. What do you say?
+dlga_freelancer_pacify_fight_ask:freelancer_pacify_fight_ask_weapons|Sounds good. With weapons or fists?
+dlga_freelancer_pacify_fight_ask_weapons:freelancer_pacify_fight_ask_weapons_choose_weapons|Weapons.
+dlga_freelancer_pacify_fight_ask_weapons:freelancer_pacify_fight_ask_weapons_choose_fists|Fists.
+dlga_freelancer_pacify_fight_ask_weapons_choose_weapons:close_window|Let's begin then! En garde!
+dlga_freelancer_pacify_fight_ask_weapons_choose_fists:close_window|Let's begin then! Put em up!
+dlga_freelancer_pacify_duel_win:close_window|Definitely. Now that the fun is over, the men seems to be in better spirits. I'll let the commander know. Good fight.
+dlga_freelancer_pacify_duel_lose:close_window|Good fight... I am a man of my word. Here, distribute it to the men.
+dlga_freelancer_pacify_duel_lose:close_window.1|Good fight... I am a man of my word. But I do not have enough... here, take all that I have
+dlga_freelancer_pacify_attempt:freelancer_pacify_booze|Well, it so happens that I have some booze that we can all share. What do you say?
+dlga_freelancer_pacify_booze:close_window|Now you are talking! Let the merry-making begin!
+dlga_freelancer_pacify_attempt:freelancer_pacify_bribe|If crowns are what the men want, crowns are what I can offer. How much do you think the men want?
+dlga_freelancer_pacify_bribe:freelancer_pacify_bribe_ask|Now we are talking, eh? Beer is expensive, at {reg4} for a few cases, and there are quite a lot of us men that would like to drink and enjoy ourselves. So we think {reg6} crowns should cover it and whatever extras we want.
+dlga_freelancer_pacify_bribe_ask:freelancer_pacify_bribe_pay|I see... I have that amount. Here are your {reg6} crowns. Spend it wisely, and no more grumblings.
+dlga_freelancer_pacify_bribe_ask:freelancer_pacify_bribe_not_enough|I see... I do not have enough money.
+dlga_freelancer_pacify_bribe_ask:freelancer_pacify_bribe_pay.1|I see... I do know a place where we can get your beer for cheaper. Here, for {reg6} crowns, you will get everything you need.
+dlga_freelancer_pacify_bribe_pay:close_window|Great! Let us go buy it now and distribute it to the men. Once they are all drunk, there will be no more complaining. 
+dlga_lord_start:freelancer_pacify_success|{playername}, It seems our men are of better spirits. I do not need to know what you did, just know that I am thankful.
+dlga_freelancer_pacify_success:close_window|The men just needed something to occupy their time. I will go back to my post.
+dlga_freelancer_mission_start:freelancer_lord_mission_told_deserters|{playername}, there has been a number of deserters in our ranks. In our nation, we do not tolerate cowards. Have them taste the steel they are so afraid of, make examples of them.
+dlga_freelancer_lord_mission_told_deserters:freelancer_lord_mission_deserters_accepted|I do not tolerate cowards. I will hunt them down and end them.
+dlga_freelancer_lord_mission_told_deserters:freelancer_lord_mission_deserters_declined|I cannot accept this mission.
+dlga_freelancer_lord_mission_deserters_accepted:close_window|Glad to hear it. Take some men with you, these deserters are not common bandits. I look forward to your report. They should be nearby, do not linger or else they will get away.
+dlga_freelancer_lord_mission_deserters_declined:close_window|Hm. I'm disappointed, {playername}. I might start thinking that you are a coward too. Go back to your post. I need to go and find somebody to hunt them down for us.
+dlga_lord_start:lord_freelancer_deserters_thank|I've heard from our scouts that you have defeated the party of deserters. The men will now think twice about running away from this war. Good job, {playername}. Go back to your post.
+dlga_lord_start:lord_freelancer_deserters_fail|I've heard from our scouts that you have failed to defeat the party of deserters. Quite disappointing, it may even embolden other cowards to join them. Go back to your post, I'll send other men to hunt them down.
+dlga_freelancer_mission_start:freelancer_lord_mission_told_scout_waypoints|{playername}, I need a volunteer to scout the area. We're sorely lacking on information, and I simply must have a better picture of the situation before we can proceed. Do you want to accept this mission?
+dlga_freelancer_lord_mission_told_scout_waypoints:freelancer_lord_mission_told_scout_waypoints_accepted|You've found your volunteer, sir.
+dlga_freelancer_lord_mission_told_scout_waypoints:freelancer_lord_mission_told_scout_waypoints_rejected|I cannot accept this mission.
+dlga_freelancer_lord_mission_told_scout_waypoints_accepted:close_window|Good {man/lass}! {s5} and check out what's there. Make a note of anything you find and return to me as soon as possible.
+dlga_freelancer_lord_mission_told_scout_waypoints_rejected:close_window|Hm. I'm disappointed, {playername}. Go back to your post. I need to go and find somebody to scout for us.
+dlga_freelancer_mission_start:freelancer_mission_deliver_message|I need to send a letter to {s13} who should be currently at {s4}. If you will be heading towards there, would you deliver it to him? The letter needs to be in his hands in 10 days.
+dlga_freelancer_mission_deliver_message:freelancer_mission_deliver_message_accepted|Certainly, I intend to pass by {s4} and it would be no trouble.
+dlga_freelancer_mission_deliver_message_accepted:close_window|I appreciate it, {playername}. Here's the letter, and a small sum to cover your travel expenses. Give my regards to {s13} when you see him.
+dlga_freelancer_mission_deliver_message:freelancer_mission_deliver_message_rejected|Apologies, I cannot do this mission. You'd best send it with someone else.
+dlga_freelancer_mission_deliver_message_rejected:close_window|That is too bad, {playername}. Go back to your post, then.
+dlga_freelancer_mission_start:freelancer_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}. He murdered one of my men and has been on the run from his judgment ever since. I can't let him get away with avoiding justice, so I've put a bounty of 300 denars on his head. Friends of the murdered man reckon that this assassin may have taken refuge with his kinsmen at {s3}. You might be able to hunt him down and give him what he deserves, and claim the bounty for yourself.
+dlga_freelancer_mission_hunt_down_fugitive_told:freelancer_mission_hunt_down_fugitive_accepted|Then I will hunt him down and execute the law.
+dlga_freelancer_mission_hunt_down_fugitive_told:freelancer_mission_hunt_down_fugitive_rejected|Apologies, I cannot do this mission. You'd best send it with someone else.
+dlga_freelancer_mission_hunt_down_fugitive_accepted:close_window|That's excellent, {playername}. I will be grateful to you and so will the family of the man he murdered. And of course the bounty on his head will be yours if you can get him. Well, good hunting to you.
+dlga_freelancer_mission_hunt_down_fugitive_rejected:close_window|As you wish, {playername}. Go back to your post.
+dlga_freelancer_mission_start:close_window|Nevermind... (This is an error)
 dlga_award_fief_to_vassal:award_fief_to_vassal_defer|I wish to defer the appointment of a lord, until I take the counsel of my subjects.
 dlga_award_fief_to_vassal_defer:close_window|As you wish, {sire/my lady}. You may decide this matter at a later date.
 dlga_award_fief_to_vassal_2:close_window|As you wish, {sire/my lady}. {reg6?I:{reg7?You:{s11}}} will be the new {reg3?lady:lord} of {s1}.
@@ -367,7 +438,7 @@ dlga_dijon_cher:dijon_insultepere|It is far too expensive for a single prayer. Y
 dlga_dijon_benirokok:close_window|Very well, in that case bring me to them...
 dlga_dijon_benirno:predial_dijonpere|In this case, I would be more useful treating my patients. I'm confused, but I have to go to where I am most useful.
 dlga_dijon_insultepere:close_window|Watch your words my son, everyone suffers in all camps. For my part I can not help everyone, I got this idea for a long time.
-dlga_start:dijon_freree|Inter oves locum præsta. Et ab hædis me sequestra, Statuens in parte dextra. (Grant me a place among the sheep, and take me out from among the goats, setting me on the right side).
+dlga_start:dijon_freree|Inter oves locum præsta. Et ab hædis me sequestra, Statuens in parte dextra.
 dlga_dijon_freree:dijon_frerepere|Amen. Excuse me, what can you tell me about father Jacob?
 dlga_dijon_freree:close_window|Nothing, I must go.
 dlga_dijon_frerepere:dial_dijon_frerefin|Father Jacob has suffered lately. He's seen patients die, one after another. Most were so mutilated that they couldn't do anything for them, but still he wanted to be able to save them...
@@ -824,7 +895,7 @@ dlga_ducale_armurier:caen_ou_comte_1|Where is the count?
 dlga_ducale_armurier:caen_donnerarme|I fear of a rebel attack, could you give me a weapon? I would feel much better.
 dlga_ducale_armurier:close_window|Nothing, I am completely lost.
 dlga_caen_donnerarme:caen_armechoix|But certainly, My Lord. What would you like? A dagger perhaps?
-dlga_caen_armechoix:arbalete_ok_caen|I know nothing about guns. I'm more used to holding a pen, but a crossbow or a sword should be enough to reassure me.
+dlga_caen_armechoix:arbalete_ok_caen|I know nothing about weapons. I'm more used to holding a pen, but a crossbow or a sword should be enough to reassure me.
 dlga_arbalete_ok_caen:close_window|An excellent choice. My Lord... and you say that you've never seen a gun? You are surely gifted in all disciplines. The best place to hold is here.
 dlga_caen_ou_comte_1:ducale_armurier|The Count is in his apartments at the top of the castle. I have not seen him down and that's the only way, do you want something else?
 dlga_start:ducale_monssair|My Lord, a little fresh air won't hurt, am I right?
@@ -938,7 +1009,7 @@ dlga_canglais_batpretpuy2:canglais_batpretpuy3|We have food, we have weapons and
 dlga_canglais_batpretpuy3:canglais_batpretpuy4|I suppose even you have suffered because of this war.
 dlga_canglais_batpretpuy4:canglais_batpretpuy5|No do not get me wrong, even if I have lost loved ones in this war, I do not like unless France and I work only for her own good. Before the fighting, I was the Guild Master in a quiet town. You know what happened out there? The English besieged us. We informed them of our capitulation, but were caught in a fury caused by their last battle that ended in a failure. They burned everything and killed everyone except those who were able to escape. Fortunately I was one of them. You see, people aspire to a quiet life and that requires not getting beat up. We are at peril because it's impossible to live with the Englishmen.
 dlga_canglais_batpretpuy5:canglais_batpretpuy6|What will you do then?
-dlga_canglais_batpretpuy6:canglais_batpretpuy7|A vanguard was discovered by one of our patrols not far from the castle Puy, a few miles from there. It's evident that the Englishmen intend to besiege the castle to ensure a base of operations in our sector. They probably expect the public to denounce the position of the rebels. I think the plan is to move in and conquer the south of France in due time. We desperately need to find the region's off buttons so they'll have no choice but to fall back to Guyenne. At least for a moment they are not expected to make a move. Can you take care of this, comrade?
+dlga_canglais_batpretpuy6:canglais_batpretpuy7|A vanguard was discovered by one of our patrols not far from the castle Puy, a few miles from there. It's evident that the Englishmen intend to besiege the castle to ensure a base of operations in our sector. They probably expect the public to denounce the position of the rebels. I think the plan is to move in and conquer the south of France in due time. We desperately need to weaken their grip on the region so they'll have no choice but to fall back to Guyenne. At least for a moment they are not expected to make a move. Can you take care of this, comrade?
 dlga_canglais_batpretpuy7:canglais_batpretpuy7ok|I'm not opposed to the idea of working against the English, indefinitely. 
 dlga_canglais_batpretpuy7:close_window|Your cause brings me nothing and I need gold, I'll see the camp later.
 dlga_canglais_batpretpuy7ok:canglais_batpretpuy7ok2|We thank you. The camp where they gather is located near the castle Puy, I'll mark it on your map. The operation is not very complicated, they should not expect us. Stay together and attack small groups. That should even things out with them having better training, equipment and experience. I'll ask other groups to join. Don't worry, we will have enough people, but we must act quickly before they receive reinforcements.
@@ -2634,17 +2705,93 @@ dlga_comp_bourgslqst3:close_window|Good luck.
 dlga_comp_bourgslqst4:comp_bourgslqstok|Enough, I'm in! Provided that you pay me a signing bonus, say 100 crowns.
 dlga_comp_bourgslqstok:close_window|I'm delighted to have a former member of the Freelancers in my company.
 dlga_comp_bourgslqstok:close_window.1|I can't pay that kind of money, maybe later.
-dlga_start:depart_perededij|Well, what do you expect?
+dlga_start:close_window.6|{s20}
+dlga_start:camp_monk_discuss|{playername}, do you need something or will you keep staring at me?
+dlga_camp_monk_discuss:camp_monk_heal_head|I took a hit to the head, help me please.
+dlga_camp_monk_discuss:camp_monk_heal_arm|I took a cut to the arm, it's starting to smell...
+dlga_camp_monk_discuss:camp_monk_heal_leg|My leg hurts with each step I take...
+dlga_camp_monk_heal_head:camp_monk_pay|When I said you looked like you took a few too many hits to the head I didn't expect it to be as literal as that. Take a sit and stay straight so I can take a look at it. Mhm, I can take care of that but I'll need some material worth 200 crowns.
+dlga_camp_monk_heal_arm:camp_monk_pay|Did you think for a moment to clean the wound? Lord in Heaven, a day more and you'd be a cripple. Mhm, I can take care of that but I'll need some material worth 150 crowns.
+dlga_camp_monk_heal_leg:camp_monk_pay|Show me your leg. If you still want to be able to walk we'll have to clean that wound. Mhm, I can take care of that but I'll need some material worth 100 crowns.
+dlga_camp_monk_pay:camp_monk_heal|Very well, here's the crowns, just hurry up it's starting to hurt badly.
+dlga_camp_monk_pay:camp_monk_pay_denied|I don't have that much on me right now...
+dlga_camp_monk_pay_denied:close_window|I can't heal you without the right medicine and tools, I can prevent you from dying of an infection but without the items I need you will never make a full recovery.
+dlga_camp_monk_heal:close_window|Done, just be more careful next time. 
+dlga_camp_monk_discuss:camp_monk_backstory_fail|You're not very friendly for a monk, what's your story?
+dlga_camp_monk_backstory_fail:camp_monk_backstory_fail_2|I have God to discuss my sins, the affairs of Men don't interest me.
+dlga_camp_monk_backstory_fail_2:camp_monk_backstory_fail_3|Why join my company then? A healer that avoids people seems like a contradiction to me.
+dlga_camp_monk_backstory_fail_3:camp_monk_discuss|This is the best way for me to fulfill His mission, I have a debt towards Him but I don't wish to discuss it now.
+dlga_camp_monk_discuss:close_window|Goodbye then.
+dlga_start:depart_perededij|So, what are we waiting for?
 dlga_depart_perededij:close_window|On my way, father...
-dlga_start:comp_dijtropper|Hello traveller, are you a mercenary?
+dlga_start:comp_dijtropper|Speak to Father Jacob if you need something. Unless you are a mercenary that is...
 dlga_comp_dijtropper:comp_dijtropper2|Mercenary, indeed. I'm {playername}.
 dlga_comp_dijtropper:close_window|You are mistaken. I don't allow myself to hurt creatures of God's creation.
 dlga_comp_dijtropper2:comp_dijtropper3|Good. You see, I'm seeking to join a group to practise and perfect my medical skills. It goes without saying that I won't work with a tyrant who sends troops to a certain death. Are you interested?
-dlga_comp_dijtropper3:comp_dijtropperhow|Actually, a battlefield healer could be useful. How much?
+dlga_comp_dijtropper3:comp_dijtropperhow|Actually, a healer would be of great use to me. You could stay in my camp to treat the wounded. What do you want in exchange?
 dlga_comp_dijtropper3:close_window|I need fighters, not a priest. Thank you...
-dlga_comp_dijtropperhow:comp_dijtropperhowok|Just some bread and ale for the wounded in here. Do something good and I will follow you. I'd like to make sure that I enter the service of a good christian, not an animal.
+dlga_comp_dijtropperhow:comp_dijtropperhowok|I don't need crowns but you could make a donation to the church, give me bread and ale in exchange for my services and the church would let me go. I expect food and shelter in your camp as well as the tools needed for my trade.
 dlga_comp_dijtropperhowok:close_window|This is your bread and ale, Father. Join my company if you wish.
 dlga_comp_dijtropperhowok:close_window.1|In that case, I'll come back with the goods.
+dlga_start:camp_tailor_discuss|Hello {playername}, what can I do for you?
+dlga_camp_tailor_discuss:camp_tailor_custom_armor_start|Can you modify my equipment?
+dlga_camp_tailor_discuss:camp_tailor_banter|Your prices seem higher than the ones in town.
+dlga_camp_tailor_discuss:close_window|Nothing for now.
+dlga_camp_tailor_banter:camp_tailor_banter_end|We're not in town are we?It's much more difficult to get resupplied in a camp, I can't make a contract with most suppliers without having a proper shop. So I have to pay a higher price for all the materials I purchase.
+dlga_camp_tailor_banter_end:close_window|On the other hand I guarantee you that my work is of superior quality in spite of the conditions and that I offer a better selection than most towns.
+dlga_camp_tailor_custom_armor_start:camp_tailor_custom_armor_ask|Certainly, what did you have in mind?
+dlga_camp_tailor_custom_armor_ask:camp_tailor_custom_armor_choose|{s1}
+dlga_camp_tailor_custom_armor_ask:close_window|Nevermind.
+dlga_camp_tailor_custom_armor_choose:camp_tailor_custom_armor_confirm|{playername}, I'll need {reg0} crowns to make up for the materials.
+dlga_camp_tailor_custom_armor_confirm:camp_tailor_finish|Fine by me.
+dlga_camp_tailor_custom_armor_confirm:close_window|I can't afford it at the moment.
+dlga_camp_tailor_custom_armor_confirm:close_window.1|Perhaps later.
+dlga_camp_tailor_finish:close_window|{playername}, consider it done.
+dlga_start:comp_limoges_leave|I packed my tools and personnal belonging, just help me carry this crate.
+dlga_comp_limoges_leave:close_window|Let's move...
+dlga_start:comp_limoges_greeting|Greetings {sir/madam}, what brings you to a siege workshop?
+dlga_comp_limoges_greeting:comp_limoge_role|What do you do here?
+dlga_comp_limoges_greeting:comp_limoges_trade|Simple curiosity, do you have any pieces for sale?
+dlga_comp_limoges_greeting:close_window|I just got lost, I thought this was the tavern.
+dlga_comp_limoges_trade:comp_limoges_trade_cont|We do, the bigger pieces are only on command though. Talk to the Master Engineer if you want to purchase a handgonne.
+dlga_comp_limoges_trade_cont:comp_limoges_trade_question|What's a handgonne?
+dlga_comp_limoges_trade_cont:close_window|I'll speak to him them.
+dlga_comp_limoges_trade_question:comp_limoges_trade_question_end|A hand cannon, a firearm. It's like a crossbow but much more powerful, noisy and... expensive.
+dlga_comp_limoges_trade_question_end:close_window|That's quite interesting.
+dlga_comp_limoge_role:comp_limoge_hire|I'm the Master Engineer's assistant, not for long as he has taken another apprentice. I've previously learned smithing, tailoring and tanning. Now I'm thinking of seeking employment until I can afford my own workshop.
+dlga_comp_limoge_hire:comp_limoge_hire_cont|You could work for me, there's always plenty to do in a camp.
+dlga_comp_limoge_hire:close_window|Good luck then.
+dlga_comp_limoge_hire_cont:comp_limoge_hire_cont_2|I don't see why not... It would allow me to travel a bit, see the world before I decide where to settle.
+dlga_comp_limoge_hire_cont_2:comp_limoge_hire_end|We'll sign a contract of dwelling, protection, access to food and to a workshop as well as a payment of 100 crowns up front.
+dlga_comp_limoge_hire_end:close_window|Alright but no special treatment outside of having your workshop.
+dlga_comp_limoge_hire_end:close_window.1|I need to think about this.
+dlga_start:camp_merchant_discuss|Buongiorno {playername}! What can I do for you amico mio?
+dlga_camp_merchant_discuss:camp_merchant_trade|Show me your wares.
+dlga_camp_merchant_trade:camp_merchant_trade_end|Certamente {Signore/Signora}, only the best at the best prices for you!
+dlga_camp_merchant_trade_end:close_window|Grazie {playername}
+dlga_camp_merchant_discuss:camp_merchant_banter|How's the bussiness going?
+dlga_camp_merchant_discuss:close_window|Nothing for now.
+dlga_camp_merchant_banter:camp_merchant_banter_end|Bene {playername}, I hope to make enough profit to return to Italy. No offense, things are a bit too wild here.
+dlga_camp_merchant_banter_end:close_window|Not enought for my taste!
+dlga_camp_merchant_banter_end:close_window.1|I understand what you mean.
+dlga_start:comp_paris_leave|Grazie mille {Signore/Signora). Let's trade!
+dlga_comp_paris_leave:close_window|On the way...
+dlga_start:comp_paris_greeting|Buongiorno {Signore/Signora}, may I interest you in an trade opportunity that you can't possibly miss?
+dlga_comp_paris_greeting:comp_paris_discuss|Spit it out, merchant, crook, whoever you are I can smell it's a scam.
+dlga_comp_paris_greeting:close_window|Go bother someone else.
+dlga_comp_paris_discuss:comp_paris_discuss_cont|Molto bene, I'm a merchant of good reputation I swear! I just need an investor to get my caravan bussiness going again.
+dlga_comp_paris_discuss_cont:comp_paris_discuss_cont_2|Let me guess, I just happen to look like the right person for it?
+dlga_comp_paris_discuss_cont:close_window|Ah! Heard that one before, I'm not falling for it.
+dlga_comp_paris_discuss_cont_2:comp_paris_discuss_cont_3|{Signore/Signora} per favore! I understand the skepticism, I've been stuck here for days trying to look for someone to help me out but I'm stuck here since my little misadventure.
+dlga_comp_paris_discuss_cont_3:comp_paris_discuss_cont_4|Giovanni Conti is my name and I am a merchant from Firenze. My caravan got sacked by those cruel scuoiatori, flayers as you call them, I managed to run away with my life but I lost everything I had.
+dlga_comp_paris_discuss_cont_4:comp_paris_discuss_hire|I'm trying to set up a new caravan but I don't have the means for it. I'm trying to leave this wretched place but I can't... Of the very few caravans that cross this place, none is taking in new members.
+dlga_comp_paris_discuss_hire:comp_paris_hire_cont|I'm not going to invest in a stranger but if you want I have a camp.
+dlga_comp_paris_discuss_hire:close_window|I've heard better sob stories.
+dlga_comp_paris_hire_cont:comp_paris_hire_cont_2|Grazie, I'll do it just to leave this place but that doesn't get me back on bussiness. You see, I'm not the fighting type, do you get me? I pray you listen to my following offer.
+dlga_comp_paris_hire_cont_2:comp_paris_hire_end|500 crows, that's all I'm asking. I buy some goods and join your camp, I set up shop there and trade with you and the places we visit. Cosa dice?
+dlga_comp_paris_hire_end:close_window|Deal. Here's the money but I'm accompanying you until we reach the camp.
+dlga_comp_paris_hire_end:close_window.1|Stay put, I'll gather some crowns and I'll be back.
+dlga_comp_paris_hire_end:close_window.2|Certainly not!
 dlga_start:depart_nobatea|Well, what do you expect?
 dlga_depart_nobatea:close_window|We should depart...
 dlga_start:comp_callaiss|How sad it is to venture to another country and realize that you've passed from one dimension into another. I should take the next boat to England
@@ -2656,19 +2803,6 @@ dlga_comp_callaiss3:close_window|Good luck in England. Greet the Queen for me.
 dlga_comp_callaissok:comp_callaissokpay|Well, it looks like I won't leave the good old France early, it will cost 150 crowns though.
 dlga_comp_callaissokpay:close_window|Here are your crowns. Hold fast on the battlefield, I ask of you. No unnecessary deaths.
 dlga_comp_callaissokpay:close_window.1|I can't pay that kind of money, maybe later.
-dlga_start:depart_atelierat|Well, I'm looking forward to a demonstration. When are we going to be able to travel and meet some robbers?
-dlga_depart_atelierat:close_window|We leave Messire, but keep this thing away from me ...
-dlga_start:comp_ateklier|Messire ?
-dlga_comp_ateklier:comp_ateklier2|What strange weapon do you have?
-dlga_comp_ateklier:close_window|Greetings.
-dlga_comp_ateklier2:comp_ateklier3|Ho, I understand that you are impressed, this is a hand arquebus, the mechanism approaches a flame of powder when I press this lever like a crossbow, and a metal projectile is launched.
-dlga_comp_ateklier3:comp_ateklier4|Why not take a crossbow in this case?
-dlga_comp_ateklier3:close_window|It's very impressive, farewell.
-dlga_comp_ateklier4:comp_ateklier5|I see that you do not reject progress. This weapon can pierce the thickest armor while staying at a distance.
-dlga_comp_ateklier5:comp_ateklier6|Like a crossbow?
-dlga_comp_ateklier6:comp_ateklier7|Yes that's it, T... ho, but that is being ignorant, let me show you the power of my arquebus on the battlefield, you will see if it is not more powerful than a crossbow.
-dlga_comp_ateklier7:close_window|Certainly, travel some time with me and we shall see.
-dlga_comp_ateklier7:close_window.1|Out of question, this only inspires fear, farewell.
 dlga_start:mess_retourde_monpel_terminner|Greetings, I hope that the letter for Montpellier is well in the hands of the Maistre of the Guild of merchants.
 dlga_mess_retourde_monpel_terminner:mess_retourde_monpel_terminner2|Well obviously, do you doubt me?
 dlga_mess_retourde_monpel_terminner2:close_window|Perfect, I could dine and sleep better tonight thanks to you, here is your payment. See you soon, I hope.
@@ -3036,7 +3170,7 @@ dlga_dial_camp_base_12:jeu_pile_face_generique_2|Let's play for some crowns...
 dlga_dial_camp_base_12:foret_combat|In the forest or elsewhere, the main thing is that we are superior in number or quality.
 dlga_foret_combat:close_window|Well said Captain! Let's hope we match one of the two cases.
 dlga_dial_camp_base_12:close_window|Stay cautious, even if we are hidden in the forest, other troops could hide there too...
-dlga_jeu_pile_face_generique_2:generique_des|Éxéllente idea! Nothing better to relax.
+dlga_jeu_pile_face_generique_2:generique_des|Excellent idea! Nothing better to relax.
 dlga_start:dial_camp_base_13|Captain... you should relax, we're watching the camp. Why don't you go around and look?
 dlga_dial_camp_base_13:jeu_pile_face_generique_3|Let's play for some crowns...
 dlga_dial_camp_base_13:environs_campagne|You're right, I'm going to explore the surroundings.
@@ -3050,7 +3184,7 @@ dlga_belles_contres:close_window|No, but if I live long enough to have enough cr
 dlga_dial_camp_base_14:close_window|We're leaving soon.
 dlga_jeu_pile_face_generique_4:generique_des|Good idea captain, if you have the crowns to lose, I would never have enough.
 dlga_start:dial_camp_discute_1p|My lord... Finally, captain as they say, I do not know too much how it is that we must call you, I was just peasant sometimes, and here I am, armed... what a story!
-dlga_pre_dial_camp_discute:dial_camp_discute_1p|Anything else, Captain? Is that right (captain)?.
+dlga_pre_dial_camp_discute:dial_camp_discute_1p|Anything else, Captain? Is that right (captain)?
 dlga_dial_camp_discute_1p:dial_camp_discute_simple|Call me what you feel at the moment.
 dlga_dial_camp_discute_1p:dial_camp_discute_captaine|Captain will suffice for now... and behave like an infantryman.
 dlga_dial_camp_discute_1p:close_window|See you later...
@@ -3134,7 +3268,7 @@ dlga_dial_camp_sent_2:dial_camp_sent_cerf|Who's that?
 dlga_dial_camp_sent_cerf:dial_camp_sentcerfok|A serf! Of all beauty, I almost shot him but he ran away.
 dlga_dial_camp_sentcerfok:dial_camp_sent_nocerf|It was his day and not yours.
 dlga_dial_camp_sent_nocerf:close_window|It's a pity.
-dlga_start:close_window.6|Don't worry, I'll keep the entrances to the camp, you can sleep quietly.
+dlga_start:close_window.7|Let's leave whenever you are ready.
 dlga_start:dial_camp_sent_route|Nothing to report, the road is quiet.
 dlga_dial_camp_sent_route:dial_camp_sent_marchant|Not even a merchant convoy?
 dlga_dial_camp_sent_marchant:close_window|No, I hope we have everything we need.
@@ -3288,6 +3422,7 @@ dlga_quel_place_chateautent:ren_PontBourges|Pont de Blanzy
 dlga_quel_place_chateautent:ren_PontTourelles|Pont des Tourelles
 dlga_quel_place_chateautent:ren_ForteresseChinon|Forteresse de Chinon
 dlga_ren_Dieppe:generiquequelchateautent|The walls of Dieppe seem to be able to be climbed by ladders, it will not require a long preparation, unless you decide to hold a siege to starve them.
+dlga_ren_Paris:generiquequelchateautent|Les murs de Paris semblent pouvoir etre franchis par des échéles, cela ne demandera pas une longue préparation, a moin que vous décidiez de tenire un siège pour les affamer.
 dlga_ren_Nevers:generiquequelchateautent|The walls of Nevers seem to be able to be climbed by ladders, it will not require a long preparation, unless you decide to hold a siege to starve them.
 dlga_ren_Laval:generiquequelchateautent|The walls of Laval seem to be able to be climbed by ladders, it will not require a long preparation, unless you decide to hold a siege to starve them.
 dlga_ren_Peronne:generiquequelchateautent|The walls of Peronne seem to be able to be climbed by ladders, it will not require a long preparation, unless you decide to hold a siege to starve them.
@@ -3777,8 +3912,8 @@ dlga_member_fief_grant_1:member_fief_grant_2|Which fief did you have in mind?
 dlga_member_fief_grant_2:member_fief_grant_3|{s11}
 dlga_member_fief_grant_2:do_member_trade|Never mind -- there is no fief I can offer.
 dlga_member_fief_grant_3:close_window|{s5}
-dlga_start:close_window.7|Let's leave whenever you are ready.
 dlga_start:close_window.8|Please do not waste any more of my time today, {sir/madame}. Perhaps we shall meet again in our travels.
+dlga_start:close_window.9|Very well. You've made your point. I have nothing more to say.
 dlga_start:companion_recruit_intro_response|{s5}
 dlga_companion_recruit_intro_response:companion_recruit_backstory_a|{s6}
 dlga_companion_recruit_intro_response:close_window|{s7}
@@ -4091,12 +4226,12 @@ dlga_lord_groom_vows:female_pc_marriage_vow|My lady, with this assembly as my wi
 dlga_female_pc_marriage_vow:lord_groom_wedding_complete|I vow to take you as my husband.
 dlga_female_pc_marriage_vow:close_window|Wait -- I need to think about this.
 dlga_lord_groom_wedding_complete:close_window|We are now husband and wife. Let the festivities commence!
-dlga_start:close_window.9|Very well. You've made your point. I have nothing more to say.
 dlga_start:close_window.10|Well, {sir/my lady}! Please, do not trouble yourself to rise from the ground, as I would simply have to knock you down again. I shall take your silence as an apology. Good day to you.
 dlga_start:close_window.11|Very well. You've made your point. I retract what I said. I hope you have obtained satisfaction.
 dlga_start:close_window.12|Hah! Not so gallant now, are we? Now trouble me no more.
 dlga_start:close_window.13|Very well -- you have won. Let all those present today witness that you have defeated me, and I shall abandon my suit of {s10}. Are you satisfied, you heartless bastard?
 dlga_start:close_window.14|Get up. Let all those present today witness that I have defeated you, and you are now bound to relinquish your suit of the {s10}. I will permit you one final visit, to make your farewells. After that, if you persist in attempting to see her, everyone shall know that you are a man of scant honor.
+dlga_start:close_window.15|How wonderful it is... In a short while we shall be married! However, I should point out that, in the remaining few days, it is not customary for us to speak too much together.
 dlga_start:player_siege_castle_commander_1|What do you want?
 dlga_player_siege_castle_commander_1:player_siege_ask_surrender|Surrender! Your situation is hopeless!
 dlga_player_siege_castle_commander_1:close_window|Nothing. I'll leave you now.
@@ -4681,6 +4816,9 @@ dlga_lord_start:lord_scout_waypoints_thank|You make a good scout, {playername}. 
 dlga_lord_scout_waypoints_thank:lord_pretalk|A simple task, {s65}.
 dlga_lord_scout_waypoints_thank:lord_pretalk.1|Nothing I couldn't handle.
 dlga_lord_scout_waypoints_thank:lord_pretalk.2|My pleasure, {s65}.
+dlga_lord_freelancer_deserters_thank:lord_pretalk|Cowardice is never an excuse for treason.
+dlga_lord_freelancer_deserters_thank:lord_pretalk.1|It was a difficult task, but it had to be done.
+dlga_lord_freelancer_deserters_fail:lord_pretalk|I will do better next time.
 dlga_lord_start:lord_mission_told_deliver_cattle_to_army|The army's supplies are dwindling too quickly, {playername}. I need you to bring me {reg3} heads of cattle so I can keep the troops fed. I care very little about where you get them, just bring them to me as soon as you can.
 dlga_lord_mission_told_deliver_cattle_to_army:lord_mission_told_deliver_cattle_to_army_accepted|Very well, I can find you some cattle.
 dlga_lord_mission_told_deliver_cattle_to_army:lord_mission_told_deliver_cattle_to_army_rejected|Sorry, sir, I have other plans.
@@ -5479,6 +5617,18 @@ dlga_lord_request_enlistment:lord_pretalk|I do not trust you enough to allow you
 dlga_lord_request_retire:lord_pretalk|Very well {playername}. You are relieved of duty.
 dlga_lord_request_vacation:lord_pretalk|Very well {playername}. You shall take some time off from military duty. Return in {reg3} days.
 dlga_ask_return_from_leave:lord_pretalk|Welcome back {playername}. Your regiment has missed you I daresay, Now return to your post.
+dlga_ask_return_from_leave:close_window|Welcome back {playername}. Thank you for completing the mission. Now return to your post.
+dlga_town_merchant_talk:tailor_custom_armor_start|I'd like to Customize my equipment.
+dlga_tailor_custom_armor_start:tailor_custom_armor_ask|What do you want to customize?
+dlga_tailor_custom_armor_ask:tailor_custom_armor_choose|{s1}
+dlga_tailor_custom_armor_ask:close_window|Nothing right now.
+dlga_tailor_custom_armor_choose:tailor_custom_armor_confirm|Very well {sir/madam}, it will cost you {reg0} crowns.
+dlga_tailor_custom_armor_confirm:town_merchant_finish|The price seems fair to me.
+dlga_tailor_custom_armor_confirm:town_merchant_finish.1|[Persuasion {reg1}] Make it {reg0} crowns and I'll put out a good word about your shop.
+dlga_tailor_custom_armor_confirm:town_merchant_finish.2|[Trade {reg1}] I'm certain {reg0} crowns would be a more appropriate price.
+dlga_tailor_custom_armor_confirm:close_window|I'm afraid that I can't afford it...
+dlga_tailor_custom_armor_confirm:close_window.1|Perhaps later.
+dlga_town_merchant_finish:close_window|I'll work on it straight away.
 dlga_lord_leave_prison:close_window|We'll meet again.
 dlga_lord_leave:close_window|Farewell, my lady. I shall remain your most ardent admirer.
 dlga_lord_leave:close_window.1|Of course, {playername}. Farewell.
@@ -5514,17 +5664,17 @@ dlga_spouse_feast_confirm:spouse_feast_confirm_yes|Let us dispatch the invitatio
 dlga_spouse_feast_confirm:spouse_pretalk|Let us wait, then
 dlga_spouse_feast_confirm_yes:spouse_pretalk|I shall send word, then, that we will host a feast as soon as conditions in the realm permit. You perhaps should continue to stock our larder, so that we may do justice to our reputation for hospitality.
 dlga_spouse_feast_confirm_yes:spouse_pretalk.1|Very well, then. Let the feast begin immediately at our court {reg4?here:} in {s9}. You perhaps should continue to stock our larder, so that we may do justice to our reputation for hospitality. You may declare the feast to be concluded at any time, either by beginning a campaign or by letting it be known that the vassals can return to their homes.
-dlga_start:close_window.15|How wonderful it is... In a short while we shall be married! However, I should point out that, in the remaining few days, it is not customary for us to speak too much together.
 dlga_start:close_window.16|Em, {playername}, you might not be used to our wedding customs, but I had hoped that someone would tell you... Speak first to my {s11}, {s4}.
 dlga_start:close_window.17|I do not know where to find my {s11} {s10}, who by tradition should preside over our wedding. Perhaps we should wait until he can be found...
 dlga_start:close_window.18|The honorable {s12} has agreed to allow us to return home to our families. We shall be departing shortly.
+dlga_start:close_window.19|We will shortly depart{s5}. It is good to know that some people in this world retain a sense of honor.
 dlga_start:kingdom_lady_captive|So great is my loneliness! How I miss my family!
 dlga_start:kingdom_lady_captive.1|You are a cad, {sir/madame}, to hold a lady like this...
 dlga_start:kingdom_lady_captive.2|It is strange. On occasion you have shown me such kindness, and yet you continue to hold me here against my will.
 dlga_start:kingdom_lady_captive.3|Why haven't my family paid my ransom? You may hold me as prisoner, but it seems that you care for me more than they do!
 dlga_lady_stranded_next:close_window|Greetings, {sir/my lady}. The tides of war have left me stranded here in this fortress, but I will shortly be departing. 
 dlga_start:lady_talk_refugee|{playername} -- I assume that you, as a {man/lady} of honor, will accord gentle-born ladies such as ourselves the right to return to our families, and not demand a ransom.
-dlga_start:close_window.19|We will shortly depart{s5}. It is good to know that some people in this world retain a sense of honor.
+dlga_start:close_window.20|Well, {playername} -- you fought a duel with {s10}, and lost. According to our custom and tradition, I should no longer receive you. Farewell, {playername}.
 dlga_lady_talk_refugee:close_window|Of course, my lady
 dlga_lady_talk_refugee:lady_captive_talk|You assume wrong, my lady!
 dlga_lady_captive_talk:lady_captive_confirm|What?! What infamy is this?
@@ -5532,7 +5682,7 @@ dlga_lady_captive_confirm:close_window|My apologies - you must have misunderstoo
 dlga_lady_captive_confirm:close_window.1|Contact your family to arrange for a ransom, my lady.
 dlga_kingdom_lady_captive:close_window|Then write to your family, and ask them to hurry up with the ransom!
 dlga_kingdom_lady_captive:close_window.1|I have changed my mind -- you are free to go
-dlga_start:close_window.20|Well, {playername} -- you fought a duel with {s10}, and lost. According to our custom and tradition, I should no longer receive you. Farewell, {playername}.
+dlga_start:close_window.21|Ah, {playername}. How good it is to see you again. However, I believe that I am required elsewhere.
 dlga_start:lady_duel_lost|Oh {playername} -- I heard of your duel with {s10}. I wish now that you had never fought him, for our honor and tradition demand that, having lost to him, you now break off your suit with me. Farewell, {playername}.
 dlga_lady_duel_lost:close_window|Very well - we must do as tradition demands... Farewell, my lady
 dlga_lady_duel_lost:lady_duel_lost_flaunt_conventions|Let honor and tradition hang!
@@ -5561,7 +5711,7 @@ dlga_rescue_prisoner_succeed_1:lady_pretalk|Always an honour to serve, {s65}.
 dlga_start:lady_meet_end|You must be {playername}. We have just had the honor of watching you distinguish yourself in the recent tournament{s8}.
 dlga_start:lady_meet_end.1|You must be {playername}. My {s15} {s16} has spoken most highly of you. I am delighted to make your acquaintance.
 dlga_start:lady_premeet|I say, you don't look familiar...
-dlga_start:close_window.21|Ah, {playername}. How good it is to see you again. However, I believe that I am required elsewhere.
+dlga_start:close_window.22|There! I can see the walls of {s3} in the distance. We've made it safely. Here, take this purse of {reg3} crowns, as I promised. I hope we can travel together again someday.
 dlga_start:lady_start.3|{playername} -- how good it is to see you. (Whispers:) I still remember your visits fondly.
 dlga_start:lady_meet_end.2|Ah, {playername}. How splendid it was to see you distinguish yourself in the recent tournament.
 dlga_start:lady_start.4|{s12}
@@ -5748,7 +5898,7 @@ dlga_seneschal_ask_location:seneschal_ask_location_2|Well, a man in my position 
 dlga_seneschal_ask_location_2:seneschal_ask_location_3|{s1}
 dlga_seneschal_ask_location_2:seneschal_pretalk|Never mind.
 dlga_seneschal_ask_location_3:seneschal_pretalk|{s1}
-dlga_start:close_window.22|There! I can see the walls of {s3} in the distance. We've made it safely. Here, take this purse of {reg3} crowns, as I promised. I hope we can travel together again someday.
+dlga_start:close_window.23|Get lost before I lose my temper you vile beggar!
 dlga_start:talk_caravan_escort|We've made it this far... Is everything clear up ahead?
 dlga_talk_caravan_escort:talk_caravan_escort_2a|There might be bandits nearby. Stay close.
 dlga_talk_caravan_escort_2a:close_window|Trust me, {playername}, we're already staying as close to you as we can. Lead the way.
@@ -5827,7 +5977,7 @@ dlga_start:castle_guard_players|Your orders, {Lord/Lady}?
 dlga_castle_guard_players:close_window|Open the door. I'll go in.
 dlga_castle_guard_players:close_window.1|Never mind.
 dlga_start:castle_guard_sneaked_intro_1|Get out of my sight, beggar! You stink!
-dlga_start:close_window.23|Get lost before I lose my temper you vile beggar!
+dlga_start:close_window.24|You have come just in time. Let us join our forces now and teach our enemy a lesson.
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|I want to enter the hall and speak to the lord.
 dlga_castle_guard_sneaked_intro_1:close_window|[Leave]
 dlga_castle_guard_sneaked_intro_2:close_window|Are you out of your mind, {man/woman}? Beggars are not allowed into the hall. Now get lost or I'll beat you bloody.
@@ -5859,8 +6009,8 @@ dlga_castle_gate_open:close_window.1|My lord {s2} is not in the castle now. But 
 dlga_castle_gate_open:close_window.2|Come on in. I am opening the gates for you.
 dlga_castle_gate_open:close_window.3|Come on in. But make sure your men behave sensibly within the walls. My lord {s2} does not want trouble here.
 dlga_castle_gate_open:close_window.4|My lord {s2} does not want you here. Begone now.
-dlga_start:close_window.24|You have come just in time. Let us join our forces now and teach our enemy a lesson.
 dlga_start:close_window.25|You are making a big mistake by fighting against us.
+dlga_start:close_window.26|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
 dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
 dlga_start:ally_thanks_meet.1|Your help was most welcome stranger. My name is {s1}. Can I learn yours?
 dlga_start:ally_thanks_meet.2|Thanks for your help, stranger. We haven't met properly yet, have we? What is your name?
@@ -5868,7 +6018,6 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|My name is {playername}.
 dlga_ally_thanks_meet_2:close_window|Well met indeed {playername}. My name is {s1} and I am forever in your debt. If there is ever anything I can help you with, just let me know...
 dlga_ally_thanks_meet_2:close_window.1|Well met {playername}. I am in your debt for what you just did. I hope one day I will find a way to repay it.
 dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
-dlga_start:close_window.26|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
 dlga_start:close_window.27|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
 dlga_start:close_window.28|You turned up just in time, {playername}. I will not forget your help. {s43}
 dlga_start:close_window.29|Good to see you here, {playername}. {s43}
@@ -5876,6 +6025,7 @@ dlga_start:close_window.30|{s43}
 dlga_start:close_window.31|{s43}
 dlga_start:close_window.32|Thank you for your help {sir/madam}. You saved {reg1?our lives:my life} out there.
 dlga_start:close_window.33|Thank you for your help {sir/madam}. Things didn't look very well for us but then you came up and everything changed.
+dlga_start:close_window.34|Thank you for your help, {sir/madam}. It was fortunate to have you nearby.
 dlga_start:kidnapped_girl_liberated_battle|Oh {sir/madam}. Thank you so much for rescuing me. Will you take me to my family now?
 dlga_start:freed_hero_answer|I am in your debt for freeing me friend.
 dlga_freed_hero_answer:freed_hero_answer_1|You're not going anywhere. You'll be my prisoner now!
@@ -5936,7 +6086,7 @@ dlga_sacrificed_messenger_3:sacrificed_messenger_cancel|Aargh! I can't do this. 
 dlga_sacrificed_messenger_cancel:sacrificed_messenger_cancel_2|What do you mean {sir/madam}
 dlga_sacrificed_messenger_cancel_2:sacrificed_messenger_cancel_3|There's a trap set up for you in the town. {s3} ordered me to sacrifice one of my chosen warriors to fool the enemy, but he will just need to find another way.
 dlga_sacrificed_messenger_cancel_3:close_window|Thank you, {sir/madam}. I will follow you to the gates of hell. But this would not be a good death.
-dlga_start:close_window.34|Thank you for your help, {sir/madam}. It was fortunate to have you nearby.
+dlga_start:close_window.35|Don't worry, {sir/madam}, I'm on my way.
 dlga_start:follow_spy_talk|Good day {sir/madam}. Such fine weather don't you think? If you'll excuse me now I must go on my way.
 dlga_follow_spy_talk:follow_spy_talk_2|In the name of {s1}, you are under arrest!
 dlga_follow_spy_talk_2:close_window|You won't get me alive!
@@ -6467,7 +6617,7 @@ dlga_farmer_from_bandit_village_5:farmer_from_bandit_village_barter|Why would I 
 dlga_farmer_from_bandit_village_accepted:close_window|God bless you, {sir/madam}. Our village is {s7}. It is not too far from here.
 dlga_farmer_from_bandit_village_denied:close_window|As you say {sir/madam}. Forgive me for bothering you.
 dlga_farmer_from_bandit_village_barter:farmer_from_bandit_village_5|We are but poor farmers {sir/madam}, and the bandits have already got most of what we have on this world. But we'll be glad to share with you whatever we have got. And we'll always be in your gratitude if you help us.
-dlga_start:close_window.35|Don't worry, {sir/madam}, I'm on my way.
+dlga_start:close_window.36|Thank you for helping us {sir/madam}. Crush those bandits!
 dlga_start:tw_sante|For your health, my lord.
 dlga_tw_sante:close_window|Cheers.
 dlga_start:mercenary_tavern_talk|Do you have a need for mercenaries, {sir/madam}? {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a master. We'll join you for {reg5} crowns.
@@ -6678,8 +6828,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|I am going to send
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Alright. I will escort the caravan.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|I am afraid I don't have that many soldiers with me.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Sorry. I can't do that right now
-dlga_start:close_window.36|Thank you for helping us {sir/madam}. Crush those bandits!
 dlga_start:close_window.37|We can cover the rest of the way ourselves. Thanks.
+dlga_start:close_window.38|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Here's your pay... {reg14} crowns. Thanks for escorting us. Good luck.
 dlga_start:merchant_caravan_intro_1|Greetings. You must be our escort, right?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Yes. My name is {playername}. I will lead you to {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Well, It is good to know we won't travel alone. What do you want us to do now?
@@ -6698,7 +6848,7 @@ dlga_merchant_quest_brief:kidnapped_girl_quest_brief|The amount the bandits ask 
 dlga_kidnapped_girl_quest_brief:kidnapped_girl_quest_taken|All right. I will take the ransom money to the bandits and bring back the girl.
 dlga_kidnapped_girl_quest_taken:close_window|Good. I knew we could trust you at this. Here is the ransom money, {reg12} crowns. Count it before taking it. And please, don't attempt to do anything rash. Keep in mind that the girl's well being is more important than anything else...
 dlga_kidnapped_girl_quest_brief:merchant_quest_stall|Sorry. I don't have time for this right now.
-dlga_start:close_window.38|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Here's your pay... {reg14} crowns. Thanks for escorting us. Good luck.
+dlga_start:close_window.39|Thank you so much for bringing me back!  I can't wait to see my family. Good-bye.
 dlga_kidnapped_girl_liberated_map:kidnapped_girl_liberated_map_2a|Yes. Come with me. We are going home.
 dlga_kidnapped_girl_liberated_map_2a:close_window|Unfortunately. You do not have room in your party for me.
 dlga_kidnapped_girl_liberated_map_2a:close_window.1|Oh really? Thank you so much!
@@ -7416,10 +7566,10 @@ dlga_start:player_castle_guard_talk|Yes {sir/madam}?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|How goes the watch, soldier?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|All is quiet {sir/madam}. Nothing to report.
 dlga_player_castle_guard_talk_3:close_window|Good. Keep your eyes open.
-dlga_start:close_window.39|Thank you so much for bringing me back!  I can't wait to see my family. Good-bye.
 dlga_start:close_window.40|Good day, {sir/madame}. Always an honor to have you here in {s10}.
-dlga_start:hall_guard_talk|Your orders, {my lord/my lady}?
 dlga_start:close_window.41|Mind your manners within the walls and we'll have no trouble.
+dlga_start:hall_guard_talk|Your orders, {my lord/my lady}?
+dlga_start:close_window.42|We are not supposed to talk while on guard, {sir/madam}.
 dlga_hall_guard_talk:hall_guard_duty|Stay on duty and let me know if anyone comes to see me.
 dlga_hall_guard_duty:close_window|Yes, {my lord/my lady}. As you wish.
 dlga_hall_guard_talk:hall_guard_arrest|I want you to arrest this man immediately!
@@ -7490,4 +7640,4 @@ dlga_mayor_wealth_comparison_3:mayor_wealth_comparison_4|In terms of the output 
 dlga_mayor_wealth_comparison_4:mayor_wealth_comparison_5|In terms of trade, the town of {s4} is believed to have received the most visits from caravans over the past few months. Here in {s5}, we are less visited than {reg4} towns, and more visited than {reg5}. 
 dlga_mayor_wealth_comparison_5:mayor_pretalk|In terms of attacks on travellers, the town of {s4} is believed to be the most dangerous. Here in {s5}, we are less afflicted by bandits and raiders than {reg4} towns, and more afflicted than {reg5}. 
 dlga_free:close_window|Good-bye.
-dlga_free:close_window.1|[Leave]
+dlga_free:close_window.1|[Leave

@@ -26477,7 +26477,7 @@ scripts = [
       (assign, ":scene_to_use", "scn_random_scene"),
 		
           (call_script, "script_party_count_members_with_full_health", "p_main_party"),	
-	(val_add, reg1, reg0),
+	(assign, reg1, reg0),
 	(call_script, "script_party_count_members_with_full_health", "$g_encountered_party"),	
 	(val_add, reg1, reg0),
 

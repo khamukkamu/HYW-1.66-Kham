@@ -2705,17 +2705,93 @@ dlga_comp_bourgslqst3:close_window|Good luck.
 dlga_comp_bourgslqst4:comp_bourgslqstok|Enough, I'm in! Provided that you pay me a signing bonus, say 100 crowns.
 dlga_comp_bourgslqstok:close_window|I'm delighted to have a former member of the Freelancers in my company.
 dlga_comp_bourgslqstok:close_window.1|I can't pay that kind of money, maybe later.
-dlga_start:depart_perededij|Well, what do you expect?
+dlga_start:close_window.6|{s20}
+dlga_start:camp_monk_discuss|{playername}, do you need something or will you keep staring at me?
+dlga_camp_monk_discuss:camp_monk_heal_head|I took a hit to the head, help me please.
+dlga_camp_monk_discuss:camp_monk_heal_arm|I took a cut to the arm, it's starting to smell...
+dlga_camp_monk_discuss:camp_monk_heal_leg|My leg hurts with each step I take...
+dlga_camp_monk_heal_head:camp_monk_pay|When I said you looked like you took a few too many hits to the head I didn't expect it to be as literal as that. Take a sit and stay straight so I can take a look at it. Mhm, I can take care of that but I'll need some material worth 200 crowns.
+dlga_camp_monk_heal_arm:camp_monk_pay|Did you think for a moment to clean the wound? Lord in Heaven, a day more and you'd be a cripple. Mhm, I can take care of that but I'll need some material worth 150 crowns.
+dlga_camp_monk_heal_leg:camp_monk_pay|Show me your leg. If you still want to be able to walk we'll have to clean that wound. Mhm, I can take care of that but I'll need some material worth 100 crowns.
+dlga_camp_monk_pay:camp_monk_heal|Very well, here's the crowns, just hurry up it's starting to hurt badly.
+dlga_camp_monk_pay:camp_monk_pay_denied|I don't have that much on me right now...
+dlga_camp_monk_pay_denied:close_window|I can't heal you without the right medicine and tools, I can prevent you from dying of an infection but without the items I need you will never make a full recovery.
+dlga_camp_monk_heal:close_window|Done, just be more careful next time. 
+dlga_camp_monk_discuss:camp_monk_backstory_fail|You're not very friendly for a monk, what's your story?
+dlga_camp_monk_backstory_fail:camp_monk_backstory_fail_2|I have God to discuss my sins, the affairs of Men don't interest me.
+dlga_camp_monk_backstory_fail_2:camp_monk_backstory_fail_3|Why join my company then? A healer that avoids people seems like a contradiction to me.
+dlga_camp_monk_backstory_fail_3:camp_monk_discuss|This is the best way for me to fulfill His mission, I have a debt towards Him but I don't wish to discuss it now.
+dlga_camp_monk_discuss:close_window|Goodbye then.
+dlga_start:depart_perededij|So, what are we waiting for?
 dlga_depart_perededij:close_window|On my way, father...
-dlga_start:comp_dijtropper|Hello traveller, are you a mercenary?
+dlga_start:comp_dijtropper|Speak to Father Jacob if you need something. Unless you are a mercenary that is...
 dlga_comp_dijtropper:comp_dijtropper2|Mercenary, indeed. I'm {playername}.
 dlga_comp_dijtropper:close_window|You are mistaken. I don't allow myself to hurt creatures of God's creation.
 dlga_comp_dijtropper2:comp_dijtropper3|Good. You see, I'm seeking to join a group to practise and perfect my medical skills. It goes without saying that I won't work with a tyrant who sends troops to a certain death. Are you interested?
-dlga_comp_dijtropper3:comp_dijtropperhow|Actually, a battlefield healer could be useful. How much?
+dlga_comp_dijtropper3:comp_dijtropperhow|Actually, a healer would be of great use to me. You could stay in my camp to treat the wounded. What do you want in exchange?
 dlga_comp_dijtropper3:close_window|I need fighters, not a priest. Thank you...
-dlga_comp_dijtropperhow:comp_dijtropperhowok|Just some bread and ale for the wounded in here. Do something good and I will follow you. I'd like to make sure that I enter the service of a good christian, not an animal.
+dlga_comp_dijtropperhow:comp_dijtropperhowok|I don't need crowns but you could make a donation to the church, give me bread and ale in exchange for my services and the church would let me go. I expect food and shelter in your camp as well as the tools needed for my trade.
 dlga_comp_dijtropperhowok:close_window|This is your bread and ale, Father. Join my company if you wish.
 dlga_comp_dijtropperhowok:close_window.1|In that case, I'll come back with the goods.
+dlga_start:camp_tailor_discuss|Hello {playername}, what can I do for you?
+dlga_camp_tailor_discuss:camp_tailor_custom_armor_start|Can you modify my equipment?
+dlga_camp_tailor_discuss:camp_tailor_banter|Your prices seem higher than the ones in town.
+dlga_camp_tailor_discuss:close_window|Nothing for now.
+dlga_camp_tailor_banter:camp_tailor_banter_end|We're not in town are we?It's much more difficult to get resupplied in a camp, I can't make a contract with most suppliers without having a proper shop. So I have to pay a higher price for all the materials I purchase.
+dlga_camp_tailor_banter_end:close_window|On the other hand I guarantee you that my work is of superior quality in spite of the conditions and that I offer a better selection than most towns.
+dlga_camp_tailor_custom_armor_start:camp_tailor_custom_armor_ask|Certainly, what did you have in mind?
+dlga_camp_tailor_custom_armor_ask:camp_tailor_custom_armor_choose|{s1}
+dlga_camp_tailor_custom_armor_ask:close_window|Nevermind.
+dlga_camp_tailor_custom_armor_choose:camp_tailor_custom_armor_confirm|{playername}, I'll need {reg0} crowns to make up for the materials.
+dlga_camp_tailor_custom_armor_confirm:camp_tailor_finish|Fine by me.
+dlga_camp_tailor_custom_armor_confirm:close_window|I can't afford it at the moment.
+dlga_camp_tailor_custom_armor_confirm:close_window.1|Perhaps later.
+dlga_camp_tailor_finish:close_window|{playername}, consider it done.
+dlga_start:comp_limoges_leave|I packed my tools and personnal belonging, just help me carry this crate.
+dlga_comp_limoges_leave:close_window|Let's move...
+dlga_start:comp_limoges_greeting|Greetings {sir/madam}, what brings you to a siege workshop?
+dlga_comp_limoges_greeting:comp_limoge_role|What do you do here?
+dlga_comp_limoges_greeting:comp_limoges_trade|Simple curiosity, do you have any pieces for sale?
+dlga_comp_limoges_greeting:close_window|I just got lost, I thought this was the tavern.
+dlga_comp_limoges_trade:comp_limoges_trade_cont|We do, the bigger pieces are only on command though. Talk to the Master Engineer if you want to purchase a handgonne.
+dlga_comp_limoges_trade_cont:comp_limoges_trade_question|What's a handgonne?
+dlga_comp_limoges_trade_cont:close_window|I'll speak to him them.
+dlga_comp_limoges_trade_question:comp_limoges_trade_question_end|A hand cannon, a firearm. It's like a crossbow but much more powerful, noisy and... expensive.
+dlga_comp_limoges_trade_question_end:close_window|That's quite interesting.
+dlga_comp_limoge_role:comp_limoge_hire|I'm the Master Engineer's assistant, not for long as he has taken another apprentice. I've previously learned smithing, tailoring and tanning. Now I'm thinking of seeking employment until I can afford my own workshop.
+dlga_comp_limoge_hire:comp_limoge_hire_cont|You could work for me, there's always plenty to do in a camp.
+dlga_comp_limoge_hire:close_window|Good luck then.
+dlga_comp_limoge_hire_cont:comp_limoge_hire_cont_2|I don't see why not... It would allow me to travel a bit, see the world before I decide where to settle.
+dlga_comp_limoge_hire_cont_2:comp_limoge_hire_end|We'll sign a contract of dwelling, protection, access to food and to a workshop as well as a payment of 100 crowns up front.
+dlga_comp_limoge_hire_end:close_window|Alright but no special treatment outside of having your workshop.
+dlga_comp_limoge_hire_end:close_window.1|I need to think about this.
+dlga_start:camp_merchant_discuss|Buongiorno {playername}! What can I do for you amico mio?
+dlga_camp_merchant_discuss:camp_merchant_trade|Show me your wares.
+dlga_camp_merchant_trade:camp_merchant_trade_end|Certamente {Signore/Signora}, only the best at the best prices for you!
+dlga_camp_merchant_trade_end:close_window|Grazie {playername}
+dlga_camp_merchant_discuss:camp_merchant_banter|How's the bussiness going?
+dlga_camp_merchant_discuss:close_window|Nothing for now.
+dlga_camp_merchant_banter:camp_merchant_banter_end|Bene {playername}, I hope to make enough profit to return to Italy. No offense, things are a bit too wild here.
+dlga_camp_merchant_banter_end:close_window|Not enought for my taste!
+dlga_camp_merchant_banter_end:close_window.1|I understand what you mean.
+dlga_start:comp_paris_leave|Grazie mille {Signore/Signora). Let's trade!
+dlga_comp_paris_leave:close_window|On the way...
+dlga_start:comp_paris_greeting|Buongiorno {Signore/Signora}, may I interest you in an trade opportunity that you can't possibly miss?
+dlga_comp_paris_greeting:comp_paris_discuss|Spit it out, merchant, crook, whoever you are I can smell it's a scam.
+dlga_comp_paris_greeting:close_window|Go bother someone else.
+dlga_comp_paris_discuss:comp_paris_discuss_cont|Molto bene, I'm a merchant of good reputation I swear! I just need an investor to get my caravan bussiness going again.
+dlga_comp_paris_discuss_cont:comp_paris_discuss_cont_2|Let me guess, I just happen to look like the right person for it?
+dlga_comp_paris_discuss_cont:close_window|Ah! Heard that one before, I'm not falling for it.
+dlga_comp_paris_discuss_cont_2:comp_paris_discuss_cont_3|{Signore/Signora} per favore! I understand the skepticism, I've been stuck here for days trying to look for someone to help me out but I'm stuck here since my little misadventure.
+dlga_comp_paris_discuss_cont_3:comp_paris_discuss_cont_4|Giovanni Conti is my name and I am a merchant from Firenze. My caravan got sacked by those cruel scuoiatori, flayers as you call them, I managed to run away with my life but I lost everything I had.
+dlga_comp_paris_discuss_cont_4:comp_paris_discuss_hire|I'm trying to set up a new caravan but I don't have the means for it. I'm trying to leave this wretched place but I can't... Of the very few caravans that cross this place, none is taking in new members.
+dlga_comp_paris_discuss_hire:comp_paris_hire_cont|I'm not going to invest in a stranger but if you want I have a camp.
+dlga_comp_paris_discuss_hire:close_window|I've heard better sob stories.
+dlga_comp_paris_hire_cont:comp_paris_hire_cont_2|Grazie, I'll do it just to leave this place but that doesn't get me back on bussiness. You see, I'm not the fighting type, do you get me? I pray you listen to my following offer.
+dlga_comp_paris_hire_cont_2:comp_paris_hire_end|500 crows, that's all I'm asking. I buy some goods and join your camp, I set up shop there and trade with you and the places we visit. Cosa dice?
+dlga_comp_paris_hire_end:close_window|Deal. Here's the money but I'm accompanying you until we reach the camp.
+dlga_comp_paris_hire_end:close_window.1|Stay put, I'll gather some crowns and I'll be back.
+dlga_comp_paris_hire_end:close_window.2|Certainly not!
 dlga_start:depart_nobatea|Well, what do you expect?
 dlga_depart_nobatea:close_window|We should depart...
 dlga_start:comp_callaiss|How sad it is to venture to another country and realize that you've passed from one dimension into another. I should take the next boat to England
@@ -2727,19 +2803,6 @@ dlga_comp_callaiss3:close_window|Good luck in England. Greet the Queen for me.
 dlga_comp_callaissok:comp_callaissokpay|Well, it looks like I won't leave the good old France early, it will cost 150 crowns though.
 dlga_comp_callaissokpay:close_window|Here are your crowns. Hold fast on the battlefield, I ask of you. No unnecessary deaths.
 dlga_comp_callaissokpay:close_window.1|I can't pay that kind of money, maybe later.
-dlga_start:depart_atelierat|Well, I'm looking forward to a demonstration. When are we going to be able to travel and meet some robbers?
-dlga_depart_atelierat:close_window|We leave Messire, but keep this thing away from me ...
-dlga_start:comp_ateklier|Messire ?
-dlga_comp_ateklier:comp_ateklier2|What strange weapon do you have?
-dlga_comp_ateklier:close_window|Greetings.
-dlga_comp_ateklier2:comp_ateklier3|Ho, I understand that you are impressed, this is a hand arquebus, the mechanism approaches a flame of powder when I press this lever like a crossbow, and a metal projectile is launched.
-dlga_comp_ateklier3:comp_ateklier4|Why not take a crossbow in this case?
-dlga_comp_ateklier3:close_window|It's very impressive, farewell.
-dlga_comp_ateklier4:comp_ateklier5|I see that you do not reject progress. This weapon can pierce the thickest armor while staying at a distance.
-dlga_comp_ateklier5:comp_ateklier6|Like a crossbow?
-dlga_comp_ateklier6:comp_ateklier7|Yes that's it, T... ho, but that is being ignorant, let me show you the power of my arquebus on the battlefield, you will see if it is not more powerful than a crossbow.
-dlga_comp_ateklier7:close_window|Certainly, travel some time with me and we shall see.
-dlga_comp_ateklier7:close_window.1|Out of question, this only inspires fear, farewell.
 dlga_start:mess_retourde_monpel_terminner|Greetings, I hope that the letter for Montpellier is well in the hands of the Maistre of the Guild of merchants.
 dlga_mess_retourde_monpel_terminner:mess_retourde_monpel_terminner2|Well obviously, do you doubt me?
 dlga_mess_retourde_monpel_terminner2:close_window|Perfect, I could dine and sleep better tonight thanks to you, here is your payment. See you soon, I hope.
@@ -3107,7 +3170,7 @@ dlga_dial_camp_base_12:jeu_pile_face_generique_2|Let's play for some crowns...
 dlga_dial_camp_base_12:foret_combat|In the forest or elsewhere, the main thing is that we are superior in number or quality.
 dlga_foret_combat:close_window|Well said Captain! Let's hope we match one of the two cases.
 dlga_dial_camp_base_12:close_window|Stay cautious, even if we are hidden in the forest, other troops could hide there too...
-dlga_jeu_pile_face_generique_2:generique_des|Éxéllente idea! Nothing better to relax.
+dlga_jeu_pile_face_generique_2:generique_des|Excellent idea! Nothing better to relax.
 dlga_start:dial_camp_base_13|Captain... you should relax, we're watching the camp. Why don't you go around and look?
 dlga_dial_camp_base_13:jeu_pile_face_generique_3|Let's play for some crowns...
 dlga_dial_camp_base_13:environs_campagne|You're right, I'm going to explore the surroundings.
@@ -3121,7 +3184,7 @@ dlga_belles_contres:close_window|No, but if I live long enough to have enough cr
 dlga_dial_camp_base_14:close_window|We're leaving soon.
 dlga_jeu_pile_face_generique_4:generique_des|Good idea captain, if you have the crowns to lose, I would never have enough.
 dlga_start:dial_camp_discute_1p|My lord... Finally, captain as they say, I do not know too much how it is that we must call you, I was just peasant sometimes, and here I am, armed... what a story!
-dlga_pre_dial_camp_discute:dial_camp_discute_1p|Anything else, Captain? Is that right (captain)?.
+dlga_pre_dial_camp_discute:dial_camp_discute_1p|Anything else, Captain? Is that right (captain)?
 dlga_dial_camp_discute_1p:dial_camp_discute_simple|Call me what you feel at the moment.
 dlga_dial_camp_discute_1p:dial_camp_discute_captaine|Captain will suffice for now... and behave like an infantryman.
 dlga_dial_camp_discute_1p:close_window|See you later...
@@ -3205,7 +3268,7 @@ dlga_dial_camp_sent_2:dial_camp_sent_cerf|Who's that?
 dlga_dial_camp_sent_cerf:dial_camp_sentcerfok|A serf! Of all beauty, I almost shot him but he ran away.
 dlga_dial_camp_sentcerfok:dial_camp_sent_nocerf|It was his day and not yours.
 dlga_dial_camp_sent_nocerf:close_window|It's a pity.
-dlga_start:close_window.6|Don't worry, I'll keep the entrances to the camp, you can sleep quietly.
+dlga_start:close_window.7|Let's leave whenever you are ready.
 dlga_start:dial_camp_sent_route|Nothing to report, the road is quiet.
 dlga_dial_camp_sent_route:dial_camp_sent_marchant|Not even a merchant convoy?
 dlga_dial_camp_sent_marchant:close_window|No, I hope we have everything we need.
@@ -3849,8 +3912,8 @@ dlga_member_fief_grant_1:member_fief_grant_2|Which fief did you have in mind?
 dlga_member_fief_grant_2:member_fief_grant_3|{s11}
 dlga_member_fief_grant_2:do_member_trade|Never mind -- there is no fief I can offer.
 dlga_member_fief_grant_3:close_window|{s5}
-dlga_start:close_window.7|Let's leave whenever you are ready.
 dlga_start:close_window.8|Please do not waste any more of my time today, {sir/madame}. Perhaps we shall meet again in our travels.
+dlga_start:close_window.9|Very well. You've made your point. I have nothing more to say.
 dlga_start:companion_recruit_intro_response|{s5}
 dlga_companion_recruit_intro_response:companion_recruit_backstory_a|{s6}
 dlga_companion_recruit_intro_response:close_window|{s7}
@@ -3878,134 +3941,134 @@ dlga_companion_recruit_backstory_delayed:companion_recruit_backstory_delayed_res
 dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|I might be able to use you in my company.
 dlga_companion_recruit_backstory_delayed_response:close_window|I'll let you know if I hear of anything.
 dlga_companion_recruit_signup_confirm:close_window|Good! Give me a few moments to prepare and I'll be ready to move.
-dlga_start:dial_camp_npc1|J'espére ne pas moisir ici pendant des journées entières, sur ce comment allez-vous capitaine ?
-dlga_dial_camp_npc1:dial_camp_npc1_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc1:dial_camp_npc1_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc1:dial_camp_npc1_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc1:close_window|Ça sera tout, a plus tard.
-dlga_dial_camp_npc1_skill:dial_camp_npc1_retour|Cela dépend, j'ai des préférences, mais vous plairont t'elles.
-dlga_dial_camp_npc1_story:dial_camp_npc1_retour|Bien que je sois noble ou de petite noblesse, j'ai grandi dans l'exploitation agricole de mes parents ? Blois, mais très tôt j'ai préféré l'épée ? la fourche.
-dlga_dial_camp_npc1_retour:dial_camp_npc1|Autre chose ?
-dlga_start:dial_camp_npc2|C'est un endroit calme ici, cela ferait du bien de retirer un peu ces armures qui empestent la rouille.
-dlga_dial_camp_npc2:dial_camp_npc2_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc2:dial_camp_npc2_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc2:dial_camp_npc2_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc2:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc2_skill:dial_camp_npc2_retour|Mais certainement, voyons cela.
-dlga_dial_camp_npc2_story:dial_camp_npc2_retour|Je suis né ? Paris, où j'y ai passé le plus clair de ma vie, c'est l?-bas dans les casernes où j'ai appris le métier des armes. Tout petit j'amenais de la cervoise aux soldats en échange de quoi, ils me montraient quelques passes ? l'épée.
-dlga_dial_camp_npc2_retour:dial_camp_npc2|Avez-vous autre chose ? me dire?
-dlga_start:dial_camp_npc3|N'ayez craintes capitaine, je veille sur vous, si un homme s'approchait discretement je le verrai ? temps.
-dlga_dial_camp_npc3:dial_camp_npc3_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc3:dial_camp_npc3_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc3:dial_camp_npc3_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc3:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc3_skill:dial_camp_npc3_retour|Et bien ? vous de me dire ce que vous attendez de moi.
-dlga_dial_camp_npc3_story:dial_camp_npc3_retour|La Bretagne est ma terre de naissance, j'y ai grandi tel un chêneê, je suis de naissance noble, de par mes deux parents.
-dlga_dial_camp_npc3_retour:dial_camp_npc3|Ça sera tout ?
-dlga_start:dial_camp_npc4|Capitaine ?
-dlga_dial_camp_npc4:dial_camp_npc4_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc4:dial_camp_npc4_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc4:dial_camp_npc4_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc4:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc4_skill:dial_camp_npc4_retour|Je sais me battre, point d'inquiétudes capitaine.
-dlga_dial_camp_npc4_story:dial_camp_npc4_retour|Je suis Enguerrand, on avait une exploitation prospère, mais ma ferme a été brûlée et ma famille masacrée par des militaires. J'ai un grand désir de revanche que je dois assouvir.
-dlga_dial_camp_npc4_retour:dial_camp_npc4|Autre chose ?
-dlga_start:dial_camp_npc5|Nous devrions songer ? toutes les possibilités de nous faire un peu d'or Messire. Je ne voudrais point vous ennuyer pendant que vous vous reposez, mais songez ? toutes les affaires que nous pourrions faire si nous nous préparons ? l'avance. Marcher nous fait perdre du temps, de ce fait il est bon de regrouper plusieurs affaires sur une même route.
-dlga_dial_camp_npc5:dial_camp_npc5_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc5:dial_camp_npc5_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc5:dial_camp_npc5_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc5:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc5_skill:dial_camp_npc5_retour|À vrai dire je suis surtout marchand vous savez.
-dlga_dial_camp_npc5_story:dial_camp_npc5_retour|Je m'appelle Hermance, je viens de Bordeaux, et j'en suis parti animé par la haine de ceux qui m'ont dépossédés et aussi attiré par l'aventure.
-dlga_dial_camp_npc5_retour:dial_camp_npc5|Autre chose ?
-dlga_start:dial_camp_npc6|Rapide ? l'épée et rapide pour vider ma choppe, êtes vous venu admirer le travail capitaine ? Vous vous joignez ? moi ?
-dlga_dial_camp_npc6:dial_camp_npc6_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc6:dial_camp_npc6_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc6:dial_camp_npc6_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc6:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc6_skill:dial_camp_npc6_retour|Je suis mercenaire de métier capitaine, le combat sera toute ma vie jusqu'? ma mort.
-dlga_dial_camp_npc6_story:dial_camp_npc6_retour|Je suis Guillaume de Bourges, capitaine. Je m'en veux d'être le seul survivant du massacre de mon ancienne compagnie de mercenaires. Je suis une victime de cette stupide guerre il y a des moments où j'aurais préféré être tué au combat plutôt que d'être le seul survivant de la bataille qui a coutée la vie de mes camarades, mais parfois je pense que la vie est une belle chose.
-dlga_dial_camp_npc6_retour:dial_camp_npc6|Autre chose ? me dire capitaine ?
-dlga_start:dial_camp_npc7|Un peu de silence, enfin...seulement le bruit de la nature.
-dlga_dial_camp_npc7:dial_camp_npc7_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc7:dial_camp_npc7_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc7:dial_camp_npc7_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc7:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc7_skill:dial_camp_npc7_retour|Je suis chasseur et pisteur, ça peut vous être utile pour retrouver un groupe.
-dlga_dial_camp_npc7_story:dial_camp_npc7_retour|On m'appelle Pierrick, je viens de Nemours et je suis un chasseur, nomez les ennemis qui tentent de se cacher de vous et je retrouverai leurs traces pour vous.
-dlga_dial_camp_npc7_retour:dial_camp_npc7|Quoi d'autre ?
-dlga_start:dial_camp_npc8|Au revoir capitaine, comment ça va ?
-dlga_dial_camp_npc8:dial_camp_npc8_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc8:dial_camp_npc8_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc8:dial_camp_npc8_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc8:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc8_skill:dial_camp_npc8_retour|Je suis Renaud, Renaud est trés fort, Renaud c'est la mort comme dit le roi d'Angleterre, le tavernier de mon village aussi il pense comme moi.
-dlga_dial_camp_npc8_story:dial_camp_npc8_retour|Ma mère m'a donné la vie en écosse, et elle y est restée avec mon soi-disant père.
-dlga_dial_camp_npc8_retour:dial_camp_npc8|De quoi ?
-dlga_start:dial_camp_npc9|Ah messire! Comment faire pour ne pas perdre son temps d'après vous? Je veux dire comment ne pas rater sa vie ? Comment réussir chaque instant et comment vivre chaque secondes du mieux que l'on peut ? Je me pose tellement de questions, pas vous ?
-dlga_dial_camp_npc9:dial_camp_npc9_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc9:dial_camp_npc9_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc9:dial_camp_npc9_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc9:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc9_skill:dial_camp_npc9_retour|Je suis chevalier Capitaine, le l'oubliez point je vous prie, c'est ? cheval et avec la lance que le Chevalier se bat pour des causes.
-dlga_dial_camp_npc9_story:dial_camp_npc9_retour|Je suis Gael de Bourbon, noble de France, chevalier de Toulouse où je suis né, où j'ai grandi et fondé de faux éspoirs sur un monde corrompu, mais que joie et détermination sois miennes, je suis sur la vraie route de la chevalerie loing de toute corruption, je suis sur la voie de la rédemption.
-dlga_dial_camp_npc9_retour:dial_camp_npc9|Austre chose ?
-dlga_start:dial_camp_npc10|Le tranchant des lames laissent ? désirer le saviez-vous capitaine ? Il serait bon de mettre quelques unes de ces limages au travail d'affûtage.
-dlga_dial_camp_npc10:dial_camp_npc10_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc10:dial_camp_npc10_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc10:dial_camp_npc10_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc10:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc10_skill:dial_camp_npc10_retour|Ma fonction est maistre d'armes, je suis un guerrier avant tout, mais mon rôle est de transmettre mon savoir aux recrues.
-dlga_dial_camp_npc10_story:dial_camp_npc10_retour|Je suis né près de Monterean. J'ai été maistre d'armes pour de nombreux seigneurs et chevaliers au château  depuis l'âge de vingt ans.
-dlga_dial_camp_npc10_retour:dial_camp_npc10|Autre chose ?
-dlga_start:dial_camp_npc11|Non je ne dors pas debout Messire, est-ce cela que vous alliez me dire ? Je me repose un peu voil? tout.
-dlga_dial_camp_npc11:dial_camp_npc11_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc11:dial_camp_npc11_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc11:dial_camp_npc11_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc11:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc11_skill:dial_camp_npc11_retour|Un peu de marchandage de temps ? autre, je sais aussi me battre ne vous en faites pas.
-dlga_dial_camp_npc11_story:dial_camp_npc11_retour|Je suis forgeron, ou du moins je l'étais, ? présent je suis chasseur de prime, et ce sont les marauds de la pire éspèce que je frappe sur mon enclume.
-dlga_dial_camp_npc11_retour:dial_camp_npc11|Autre chose ?
-dlga_start:dial_camp_npc12|Messire, il y a quelques cas de blessures infectées mais nous allons régler cela n'ayez craintes.
-dlga_dial_camp_npc12:dial_camp_npc12_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc12:dial_camp_npc12_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc12:dial_camp_npc12_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc12:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc12_skill:dial_camp_npc12_retour|Je suis médecin Messire, je vous tirerais vous et vos hommes des griffes de la mort autant de fois que vous ne pourrais les compter, ? condition que je me tienne ? distance. Qui pourrait je sauver si je suis moi même inconscient.
-dlga_dial_camp_npc12_story:dial_camp_npc12_retour|Je suis Médecin, et ma mission est de sauver tous les patients quels qu'ils soient atteints de divers fléaux, aux prétres et ? Dieu de les juger par la suite.
-dlga_dial_camp_npc12_retour:dial_camp_npc12|De quoi voulez-vous me parler ?
-dlga_start:dial_camp_npc13|À la gloire! A...notre joli camp pour le moment Messire, buvez-vous quelque chose avec nous ?
-dlga_dial_camp_npc13:dial_camp_npc13_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc13:dial_camp_npc13_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc13:dial_camp_npc13_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc13:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc13_skill:dial_camp_npc13_retour|Si vous avez besoin d'un fantassin digne de ce nom, je suis vostre homme capitane.
-dlga_dial_camp_npc13_story:dial_camp_npc13_retour|Je suis Mathieu, tueur de sang froid, mercenaire et tant d'autres choses qui ne valent pas la peine d'être citées, et si nous nous contentions seulement de boire avant qu'une lame nous transperce le ventre.
-dlga_dial_camp_npc13_retour:dial_camp_npc13|Autre chose ?
-dlga_start:dial_camp_npc14|Capitaine, vous n'oubiez pas la cause de la résistance dans tout ceci n'est-ce pas ? Je vous rappelle juste que c'est pour soutenir la résistance de France que je vous ai rejoins.
-dlga_dial_camp_npc14:dial_camp_npc14_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc14:dial_camp_npc14_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc14:dial_camp_npc14_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc14:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc14_skill:dial_camp_npc14_retour|Je suis archer la plupart du temps, mais je compte sur vous pour m'apprendre les ficéles du métier de mercenaire.
-dlga_dial_camp_npc14_story:dial_camp_npc14_retour|Je suis Michel de Chartres fils de Simon le forgeron, je suis un rebelle, et je n'aurais de cesse de me battre tant que l'envahisseur ne sera pas jeté ? la mer.
-dlga_dial_camp_npc14_retour:dial_camp_npc14|Autre chose ?
-dlga_start:dial_camp_npc15|Capitaine! Nous allons enfin pouvoir avoir une conversation. Depuis ce matin on m'a parlé de poules et de leurs oeufs, de charpentes qui sont mordues par des insectes et d'un seau où le niveau de l'eau a été jugé ? un niveau insuffisant, allons-nous parler plus sérieusement de guerre sous cette tenture ?
-dlga_dial_camp_npc15:dial_camp_npc15_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc15:dial_camp_npc15_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc15:dial_camp_npc15_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc15:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc15_skill:dial_camp_npc15_retour|Je suis ingénieur en siège capitaine, aucun château ne me résiste, il y a toujours une faille dans les défenses voyez-vous, cela prend du temps mais on fini toujours par la trouver et par l'exploiter.
-dlga_dial_camp_npc15_story:dial_camp_npc15_retour|Je suis né ? Paris et j'ai étudié les engins de guerre modèrnes. J'ai aussi certaines compétences en litérature et en latin.
-dlga_dial_camp_npc15_retour:dial_camp_npc15|Autre chose ?
-dlga_start:dial_camp_npc16|Mon bon Messire ? Je ne me moque pas de vous, je suis juste d'humeur joyeuse, j'en profiterai si j'étais vous.
-dlga_dial_camp_npc16:dial_camp_npc16_retour|Puisque nous avons le temps, voyons votre équipement plus en détail.
-dlga_dial_camp_npc16:dial_camp_npc16_skill|Nous devrions parler de vos spécialités, que savez-vous faire ?
-dlga_dial_camp_npc16:dial_camp_npc16_story|Rappelez-moi votre histoire.
-dlga_dial_camp_npc16:close_window|Ça sera tout, ? plus tard.
-dlga_dial_camp_npc16_skill:dial_camp_npc16_retour|Je sais manier le couteau et les petites lames aussi bien que ma langue et ce dans le sens propre comme au sens figuré ce qui pourrait vous être utile si vous avez des affaires de diplomatie. Je peux tuer un homme de sang froid juste après lui avoir dit que je lui offre mon âme. Mais de grâce capitaine évitez de m'envoyer ? la bataille contre une montagne de muscles, avez-vous regardé la forme réelle de mes muscles ?
-dlga_dial_camp_npc16_story:dial_camp_npc16_retour|Et bien capitaine, je m'appelle Blanche, juste Blanche. Je suis née dans un village près de Peronne, ma mère et mes soeurs étaient servantes dans le château d'un noble pervers, jusqu'? ce que je m'en empare ? moi toute seule par mes...charmes. Ainsi l? où une compagnie n'aurait pas pu prendre ce château j'y suis parvenue. On m'a donné beaucoup de surnoms, mais celui qui me va le mieux est la vipère blanche.
-dlga_dial_camp_npc16_retour:dial_camp_npc15|Autre chose ?
+dlga_start:dial_camp_npc1|I hope we don't have to rot here for days. How about you, captain?
+dlga_dial_camp_npc1:dial_camp_npc1_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc1:dial_camp_npc1_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc1:dial_camp_npc1_story|Tell me your story.
+dlga_dial_camp_npc1:close_window|That's about it, see you later.
+dlga_dial_camp_npc1_skill:dial_camp_npc1_retour|It depends. I have some, but you won't like them.
+dlga_dial_camp_npc1_story:dial_camp_npc1_retour|Although I'm noble or of noble nobility, I grew up on the farm of my parents in Blois. I preferred the sword instead of pitchfork.
+dlga_dial_camp_npc1_retour:dial_camp_npc1|Something else?
+dlga_start:dial_camp_npc2|It's a quiet place. It'd be nice to be able to remove the armor, which stinks of rust.
+dlga_dial_camp_npc2:dial_camp_npc2_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc2:dial_camp_npc2_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc2:dial_camp_npc2_story|Tell me your story.
+dlga_dial_camp_npc2:close_window|That's about it, see you later.
+dlga_dial_camp_npc2_skill:dial_camp_npc2_retour|Certainly, let's see.
+dlga_dial_camp_npc2_story:dial_camp_npc2_retour|I was born in Paris, where I have spent most of my life. I learned the trade of arms at the barracks. When I was little, I brought a sword to the soldiers and they showed me some moves with it.
+dlga_dial_camp_npc2_retour:dial_camp_npc2|Do you have anything else to say?
+dlga_start:dial_camp_npc3|Don't worry captain, I'll keep my eye on you. If a man approaches discreetly, I'll spot him early enough.
+dlga_dial_camp_npc3:dial_camp_npc3_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc3:dial_camp_npc3_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc3:dial_camp_npc3_story|Tell me your story.
+dlga_dial_camp_npc3:close_window|That'll be all, see you later.
+dlga_dial_camp_npc3_skill:dial_camp_npc3_retour|It's up to you to tell me what you expect from me.
+dlga_dial_camp_npc3_story:dial_camp_npc3_retour|I was born in Brittany, where I grew up strong as an oak. I am of noble birth, from the both sides of my parents.
+dlga_dial_camp_npc3_retour:dial_camp_npc3|That's all?
+dlga_start:dial_camp_npc4|Captain?
+dlga_dial_camp_npc4:dial_camp_npc4_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc4:dial_camp_npc4_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc4:dial_camp_npc4_story|Tell me your story.
+dlga_dial_camp_npc4:close_window|That's about it, see you later.
+dlga_dial_camp_npc4_skill:dial_camp_npc4_retour|No worries captain, I know how to fight.
+dlga_dial_camp_npc4_story:dial_camp_npc4_retour|I'm Enguerrand. We had a prosperous farm, but soldiers burned it down and massacred the rest of my family. I have a great desire for revenge that I must satiate.
+dlga_dial_camp_npc4_retour:dial_camp_npc4|Anything else?
+dlga_start:dial_camp_npc5|My friends, we should think of all the possibilities to make some money. I don't want to bore you while you are resting, but think of all the things we could do if we just prepare in advance. Marching is mostly a waste of time, so it might be a good idea to group up for some businesses opportunities while on the road.
+dlga_dial_camp_npc5:dial_camp_npc5_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc5:dial_camp_npc5_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc5:dial_camp_npc5_story|Tell me your story.
+dlga_dial_camp_npc5:close_window|That's about it, see you later.
+dlga_dial_camp_npc5_skill:dial_camp_npc5_retour|Actually, I'm just a merchant.
+dlga_dial_camp_npc5_story:dial_camp_npc5_retour|My name is Hermance, I come from Bordeaux. I left it animated by the hatred of those who dispossessed me. I was also also attracted by the adventure.
+dlga_dial_camp_npc5_retour:dial_camp_npc5|Anything else?
+dlga_start:dial_camp_npc6|Fast sword and fast to empty my mug. Have you come to admire the work, captain? Will you join me?
+dlga_dial_camp_npc6:dial_camp_npc6_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc6:dial_camp_npc6_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc6:dial_camp_npc6_story|Tell me your story.
+dlga_dial_camp_npc6:close_window|That's about it, see you later.
+dlga_dial_camp_npc6_skill:dial_camp_npc6_retour|I am a mercenary captain. Fighting until I die.
+dlga_dial_camp_npc6_story:dial_camp_npc6_retour|I'm Guillaume de Bourges, captain. I blame myself for being the sole survivor of the massacre of my old mercenary company. I'm a victim of this stupid war. There are times when I'd prefer to be killed in combat, rather than being the sole survivor of the battle that cost the lives of my comrades. Sometimes I think that life can still be a beautiful thing.
+dlga_dial_camp_npc6_retour:dial_camp_npc6|Anything else to tell me, captain?
+dlga_start:dial_camp_npc7|A little silence, finally... only the sound of nature.
+dlga_dial_camp_npc7:dial_camp_npc7_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc7:dial_camp_npc7_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc7:dial_camp_npc7_story|Tell me your story.
+dlga_dial_camp_npc7:close_window|That's about it, see you later.
+dlga_dial_camp_npc7_skill:dial_camp_npc7_retour|I'm a hunter and tracker, it can be useful for finding a group.
+dlga_dial_camp_npc7_story:dial_camp_npc7_retour|My name is Pierrick, I come from Nemours and I am a hunter. Name the enemies who try to hide from you and I'll find their tracks for you.
+dlga_dial_camp_npc7_retour:dial_camp_npc7|What else?
+dlga_start:dial_camp_npc8|Goodbye captain, how are you?
+dlga_dial_camp_npc8:dial_camp_npc8_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc8:dial_camp_npc8_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc8:dial_camp_npc8_story|Tell me your story.
+dlga_dial_camp_npc8:close_window|That's about it, see you later.
+dlga_dial_camp_npc8_skill:dial_camp_npc8_retour|I'm John. John is very strong, John is death, like the King of England says. The innkeeper of my village also agrees.
+dlga_dial_camp_npc8_story:dial_camp_npc8_retour|My mother gave me life in Scotland. She stayed there with my so-called father.
+dlga_dial_camp_npc8_retour:dial_camp_npc8|What?
+dlga_start:dial_camp_npc9|Oh, sir! How not to waste time? I mean how not to waste life? How to succeed and how to live every second the best we can? I ask myself so many questions, don't you?
+dlga_dial_camp_npc9:dial_camp_npc9_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc9:dial_camp_npc9_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc9:dial_camp_npc9_story|Tell me your story.
+dlga_dial_camp_npc9:close_window|That's about it, see you later.
+dlga_dial_camp_npc9_skill:dial_camp_npc9_retour|I'm a knight, Captain. Just forget the past, I beg you. It's on horseback and with a spear how the knight fights for causes.
+dlga_dial_camp_npc9_story:dial_camp_npc9_retour|I'm Gael de Bourbon, French noble and knight. I was born in Toulouse, where I also grew up and developed false hopes. The joy and determination are mine. I'm on the true road of chivalry in a corrupted world. I'm on the path to redemption.
+dlga_dial_camp_npc9_retour:dial_camp_npc9|Anything else?
+dlga_start:dial_camp_npc10|The sharpness of the blades is unsatisfactory. Did you know that, Captain? It would be good to put some of these limestones to work.
+dlga_dial_camp_npc10:dial_camp_npc10_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc10:dial_camp_npc10_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc10:dial_camp_npc10_story|Tell me your story.
+dlga_dial_camp_npc10:close_window|That's about it, see you later.
+dlga_dial_camp_npc10_skill:dial_camp_npc10_retour|My job is a master of weapons. I'm a warrior first and foremost, but my role is to pass on my knowledge to recruits.
+dlga_dial_camp_npc10_story:dial_camp_npc10_retour|I was born near Monterean. I've been a master of arms for many lords and knights at the castle since the age of twenty.
+dlga_dial_camp_npc10_retour:dial_camp_npc10|Anything else?
+dlga_start:dial_camp_npc11|No, I'm not sleeping. Sir, is that what you're telling me? I'm just resting a little bit, that's all.
+dlga_dial_camp_npc11:dial_camp_npc11_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc11:dial_camp_npc11_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc11:dial_camp_npc11_story|Tell me your story.
+dlga_dial_camp_npc11:close_window|That's about it, see you later.
+dlga_dial_camp_npc11_skill:dial_camp_npc11_retour|A little haggling from time to time. I also know how to fight, do not worry.
+dlga_dial_camp_npc11_story:dial_camp_npc11_retour|I'm a blacksmith, or at least I was. Now I'm a bounty hunter, and I hit on my anvil only the worst of the worst.
+dlga_dial_camp_npc11_retour:dial_camp_npc11|Anything else?
+dlga_start:dial_camp_npc12|There are some cases of infected wounds, but rest assured we will handle them.
+dlga_dial_camp_npc12:dial_camp_npc12_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc12:dial_camp_npc12_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc12:dial_camp_npc12_story|Tell me your story.
+dlga_dial_camp_npc12:close_window|That's about it, see you later.
+dlga_dial_camp_npc12_skill:dial_camp_npc12_retour|I'm a doctor. I'd pull you and your men out of the clutches of death as many times as you could count. Provided I keep myself at bay. Who can I save if I'm unconscious?
+dlga_dial_camp_npc12_story:dial_camp_npc12_retour|I'm a doctor. My mission is to save all the patients who are afflicted with various plagues. For the priests and the God to judge them afterwards.
+dlga_dial_camp_npc12_retour:dial_camp_npc12|What do you want to talk to me about?
+dlga_start:dial_camp_npc13|To the glory! To... our pretty camp for the moment. Will you drink something with us?
+dlga_dial_camp_npc13:dial_camp_npc13_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc13:dial_camp_npc13_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc13:dial_camp_npc13_story|Tell me your story.
+dlga_dial_camp_npc13:close_window|That's about it, see you later.
+dlga_dial_camp_npc13_skill:dial_camp_npc13_retour|If you need a good foot soldier. I'm yours, captain.
+dlga_dial_camp_npc13_story:dial_camp_npc13_retour|I'm Mathieu, a cold-blooded mercenary killer, and so many other things that are not worth mentioning. How about we just drink before a blade pierces our bellies?
+dlga_dial_camp_npc13_retour:dial_camp_npc13|Anything else?
+dlga_start:dial_camp_npc14|Captain, I hope you aren't forgetting the cause of resistance in the middle of all this? Just a reminder, I joined you to support the French resistance.
+dlga_dial_camp_npc14:dial_camp_npc14_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc14:dial_camp_npc14_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc14:dial_camp_npc14_story|Tell me your story.
+dlga_dial_camp_npc14:close_window|That's about it, see you later.
+dlga_dial_camp_npc14_skill:dial_camp_npc14_retour|I'm archer most of the time, but I'm counting on you to teach me the tricks of the mercenary profession.
+dlga_dial_camp_npc14_story:dial_camp_npc14_retour|I'm Michel de Chartres, son of Simon the Blacksmith. I am a rebel, and I'll never stop fighting until the invader is thrown to the sea.
+dlga_dial_camp_npc14_retour:dial_camp_npc14|Anything else?
+dlga_start:dial_camp_npc15|Captain! We'll finally be able to have a conversation. Since this morning I've been told about chickens and their eggs, carpenters bitten by insects and a bucket where the water level was judged to be insufficient. Are we finally going to talk more seriously about the war?
+dlga_dial_camp_npc15:dial_camp_npc15_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc15:dial_camp_npc15_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc15:dial_camp_npc15_story|Tell me your story.
+dlga_dial_camp_npc15:close_window|That's about it, see you later.
+dlga_dial_camp_npc15_skill:dial_camp_npc15_retour|I'm a siege engineer, no castle can resist me. There's always a flaw in the defenses, you see. It takes time, but we always end up finding a flaw and exploiting it.
+dlga_dial_camp_npc15_story:dial_camp_npc15_retour|I was born in Paris and studied modern war machines. I also have some skills in literature and Latin.
+dlga_dial_camp_npc15_retour:dial_camp_npc15|Anything else?
+dlga_start:dial_camp_npc16|My good sir? I don't make fun of you, I'm just in a happy mood, I'd take advantage of it if I were you.
+dlga_dial_camp_npc16:dial_camp_npc16_retour|Since we have time, let's take a closer look at your equipment.
+dlga_dial_camp_npc16:dial_camp_npc16_skill|We should talk about your skills. What are those?
+dlga_dial_camp_npc16:dial_camp_npc16_story|Tell me your story.
+dlga_dial_camp_npc16:close_window|That's about it, see you later.
+dlga_dial_camp_npc16_skill:dial_camp_npc16_retour|I know how to handle knife and small blades, as well as my tongue, in both the literal and the figurative sense, which could be useful if you need diplomacy. I can kill a man in cold-blood, right after telling him that I offer him my soul. But please, captain, avoid sending me to battle against a mountain of muscle since mine pale in comparison.
+dlga_dial_camp_npc16_story:dial_camp_npc16_retour|Well captain, my name is Blanche, just Blanche. I was born in a village near Peronne. My mother and my sisters were servants in the castle of a perverse nobleman, until I seized it all to myself by my... charms. So where a company couldn't have taken this castle I managed it. I have been given many nicknames, but the one that suits me best is the white viper. 
+dlga_dial_camp_npc16_retour:dial_camp_npc15|Anything else?
 dlga_start:companion_rehire|My offer to rejoin you still stands, if you'll have me.
 dlga_start:companion_rehire.1|It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been roaming around since then, looking for you. Shall I get my gear together and rejoin your company?
 dlga_start:companion_prison_break_chains|I've come to break you out of here.
@@ -4163,12 +4226,12 @@ dlga_lord_groom_vows:female_pc_marriage_vow|My lady, with this assembly as my wi
 dlga_female_pc_marriage_vow:lord_groom_wedding_complete|I vow to take you as my husband.
 dlga_female_pc_marriage_vow:close_window|Wait -- I need to think about this.
 dlga_lord_groom_wedding_complete:close_window|We are now husband and wife. Let the festivities commence!
-dlga_start:close_window.9|Very well. You've made your point. I have nothing more to say.
 dlga_start:close_window.10|Well, {sir/my lady}! Please, do not trouble yourself to rise from the ground, as I would simply have to knock you down again. I shall take your silence as an apology. Good day to you.
 dlga_start:close_window.11|Very well. You've made your point. I retract what I said. I hope you have obtained satisfaction.
 dlga_start:close_window.12|Hah! Not so gallant now, are we? Now trouble me no more.
 dlga_start:close_window.13|Very well -- you have won. Let all those present today witness that you have defeated me, and I shall abandon my suit of {s10}. Are you satisfied, you heartless bastard?
 dlga_start:close_window.14|Get up. Let all those present today witness that I have defeated you, and you are now bound to relinquish your suit of the {s10}. I will permit you one final visit, to make your farewells. After that, if you persist in attempting to see her, everyone shall know that you are a man of scant honor.
+dlga_start:close_window.15|How wonderful it is... In a short while we shall be married! However, I should point out that, in the remaining few days, it is not customary for us to speak too much together.
 dlga_start:player_siege_castle_commander_1|What do you want?
 dlga_player_siege_castle_commander_1:player_siege_ask_surrender|Surrender! Your situation is hopeless!
 dlga_player_siege_castle_commander_1:close_window|Nothing. I'll leave you now.
@@ -4366,10 +4429,10 @@ dlga_eppe_dejeanne_where2:eppe_dejeanne_whereyes|Well... I don't know. Improvise
 dlga_eppe_dejeanne_whereyes:eppe_dejeanne_whereyes22|Well, if it's possible, I'll return with it, Joan.
 dlga_eppe_dejeanne_whereyes22:lord_pretalk|Thank you, I knew I could count on you.
 dlga_eppe_dejeanne_whereyes:lord_pretalk|Not enough time, I'm sorry, but I can't take part.
-dlga_lord_start:quest_Jranneattendrorrff|La France a besoin d'hardis hommes de guerre telle que vostre personne, entendez la voix des cieux et rejoignez cette banière,enssembles nous libererons ce pays et tous ces gens qui souffres.
-dlga_quest_Jranneattendrorrff:lord_introjj2questgg2|Je suis avec vous Madame, ce serais un honneur de combattre a vos cotés.
+dlga_lord_start:quest_jranneattendrorrff|France needs brave warriors such as you. Hear the voice of heaven and join under this banner, together we will free this country and all the people who suffer.
+dlga_quest_jranneattendrorrff:lord_introjj2questgg2|I'm with you, madam. It would be an honor to fight at your side.
 dlga_lord_introjj2questgg2:close_window|Thank God. Be ready, I'll summon for you when it's time, and one last thing... just call me Joan.
-dlga_quest_Jranneattendrorrff:lord_pretalk|C'est une idée fixe, vous feriez mieux de retourner a vos taches ménagères et de laisser les champs de batailles aux hommes.
+dlga_quest_jranneattendrorrff:lord_pretalk|It's an obsession, you'd better go back to your chores and leave the battlefields for men.
 dlga_lord_start:deu_chance_queteduc_bret|Well mercenary, have you thought about my proposal?
 dlga_deu_chance_queteduc_bret:deu_chance_queteduc_bretok|I am with you, noble Duke.
 dlga_deu_chance_queteduc_bret:lord_pretalk|I'm sorry, your excellency, but I don't think I am ready.
@@ -5601,17 +5664,17 @@ dlga_spouse_feast_confirm:spouse_feast_confirm_yes|Let us dispatch the invitatio
 dlga_spouse_feast_confirm:spouse_pretalk|Let us wait, then
 dlga_spouse_feast_confirm_yes:spouse_pretalk|I shall send word, then, that we will host a feast as soon as conditions in the realm permit. You perhaps should continue to stock our larder, so that we may do justice to our reputation for hospitality.
 dlga_spouse_feast_confirm_yes:spouse_pretalk.1|Very well, then. Let the feast begin immediately at our court {reg4?here:} in {s9}. You perhaps should continue to stock our larder, so that we may do justice to our reputation for hospitality. You may declare the feast to be concluded at any time, either by beginning a campaign or by letting it be known that the vassals can return to their homes.
-dlga_start:close_window.15|How wonderful it is... In a short while we shall be married! However, I should point out that, in the remaining few days, it is not customary for us to speak too much together.
 dlga_start:close_window.16|Em, {playername}, you might not be used to our wedding customs, but I had hoped that someone would tell you... Speak first to my {s11}, {s4}.
 dlga_start:close_window.17|I do not know where to find my {s11} {s10}, who by tradition should preside over our wedding. Perhaps we should wait until he can be found...
 dlga_start:close_window.18|The honorable {s12} has agreed to allow us to return home to our families. We shall be departing shortly.
+dlga_start:close_window.19|We will shortly depart{s5}. It is good to know that some people in this world retain a sense of honor.
 dlga_start:kingdom_lady_captive|So great is my loneliness! How I miss my family!
 dlga_start:kingdom_lady_captive.1|You are a cad, {sir/madame}, to hold a lady like this...
 dlga_start:kingdom_lady_captive.2|It is strange. On occasion you have shown me such kindness, and yet you continue to hold me here against my will.
 dlga_start:kingdom_lady_captive.3|Why haven't my family paid my ransom? You may hold me as prisoner, but it seems that you care for me more than they do!
 dlga_lady_stranded_next:close_window|Greetings, {sir/my lady}. The tides of war have left me stranded here in this fortress, but I will shortly be departing. 
 dlga_start:lady_talk_refugee|{playername} -- I assume that you, as a {man/lady} of honor, will accord gentle-born ladies such as ourselves the right to return to our families, and not demand a ransom.
-dlga_start:close_window.19|We will shortly depart{s5}. It is good to know that some people in this world retain a sense of honor.
+dlga_start:close_window.20|Well, {playername} -- you fought a duel with {s10}, and lost. According to our custom and tradition, I should no longer receive you. Farewell, {playername}.
 dlga_lady_talk_refugee:close_window|Of course, my lady
 dlga_lady_talk_refugee:lady_captive_talk|You assume wrong, my lady!
 dlga_lady_captive_talk:lady_captive_confirm|What?! What infamy is this?
@@ -5619,7 +5682,7 @@ dlga_lady_captive_confirm:close_window|My apologies - you must have misunderstoo
 dlga_lady_captive_confirm:close_window.1|Contact your family to arrange for a ransom, my lady.
 dlga_kingdom_lady_captive:close_window|Then write to your family, and ask them to hurry up with the ransom!
 dlga_kingdom_lady_captive:close_window.1|I have changed my mind -- you are free to go
-dlga_start:close_window.20|Well, {playername} -- you fought a duel with {s10}, and lost. According to our custom and tradition, I should no longer receive you. Farewell, {playername}.
+dlga_start:close_window.21|Ah, {playername}. How good it is to see you again. However, I believe that I am required elsewhere.
 dlga_start:lady_duel_lost|Oh {playername} -- I heard of your duel with {s10}. I wish now that you had never fought him, for our honor and tradition demand that, having lost to him, you now break off your suit with me. Farewell, {playername}.
 dlga_lady_duel_lost:close_window|Very well - we must do as tradition demands... Farewell, my lady
 dlga_lady_duel_lost:lady_duel_lost_flaunt_conventions|Let honor and tradition hang!
@@ -5648,7 +5711,7 @@ dlga_rescue_prisoner_succeed_1:lady_pretalk|Always an honour to serve, {s65}.
 dlga_start:lady_meet_end|You must be {playername}. We have just had the honor of watching you distinguish yourself in the recent tournament{s8}.
 dlga_start:lady_meet_end.1|You must be {playername}. My {s15} {s16} has spoken most highly of you. I am delighted to make your acquaintance.
 dlga_start:lady_premeet|I say, you don't look familiar...
-dlga_start:close_window.21|Ah, {playername}. How good it is to see you again. However, I believe that I am required elsewhere.
+dlga_start:close_window.22|There! I can see the walls of {s3} in the distance. We've made it safely. Here, take this purse of {reg3} crowns, as I promised. I hope we can travel together again someday.
 dlga_start:lady_start.3|{playername} -- how good it is to see you. (Whispers:) I still remember your visits fondly.
 dlga_start:lady_meet_end.2|Ah, {playername}. How splendid it was to see you distinguish yourself in the recent tournament.
 dlga_start:lady_start.4|{s12}
@@ -5835,7 +5898,7 @@ dlga_seneschal_ask_location:seneschal_ask_location_2|Well, a man in my position 
 dlga_seneschal_ask_location_2:seneschal_ask_location_3|{s1}
 dlga_seneschal_ask_location_2:seneschal_pretalk|Never mind.
 dlga_seneschal_ask_location_3:seneschal_pretalk|{s1}
-dlga_start:close_window.22|There! I can see the walls of {s3} in the distance. We've made it safely. Here, take this purse of {reg3} crowns, as I promised. I hope we can travel together again someday.
+dlga_start:close_window.23|Get lost before I lose my temper you vile beggar!
 dlga_start:talk_caravan_escort|We've made it this far... Is everything clear up ahead?
 dlga_talk_caravan_escort:talk_caravan_escort_2a|There might be bandits nearby. Stay close.
 dlga_talk_caravan_escort_2a:close_window|Trust me, {playername}, we're already staying as close to you as we can. Lead the way.
@@ -5914,7 +5977,7 @@ dlga_start:castle_guard_players|Your orders, {Lord/Lady}?
 dlga_castle_guard_players:close_window|Open the door. I'll go in.
 dlga_castle_guard_players:close_window.1|Never mind.
 dlga_start:castle_guard_sneaked_intro_1|Get out of my sight, beggar! You stink!
-dlga_start:close_window.23|Get lost before I lose my temper you vile beggar!
+dlga_start:close_window.24|You have come just in time. Let us join our forces now and teach our enemy a lesson.
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|I want to enter the hall and speak to the lord.
 dlga_castle_guard_sneaked_intro_1:close_window|[Leave]
 dlga_castle_guard_sneaked_intro_2:close_window|Are you out of your mind, {man/woman}? Beggars are not allowed into the hall. Now get lost or I'll beat you bloody.
@@ -5946,8 +6009,8 @@ dlga_castle_gate_open:close_window.1|My lord {s2} is not in the castle now. But 
 dlga_castle_gate_open:close_window.2|Come on in. I am opening the gates for you.
 dlga_castle_gate_open:close_window.3|Come on in. But make sure your men behave sensibly within the walls. My lord {s2} does not want trouble here.
 dlga_castle_gate_open:close_window.4|My lord {s2} does not want you here. Begone now.
-dlga_start:close_window.24|You have come just in time. Let us join our forces now and teach our enemy a lesson.
 dlga_start:close_window.25|You are making a big mistake by fighting against us.
+dlga_start:close_window.26|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
 dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
 dlga_start:ally_thanks_meet.1|Your help was most welcome stranger. My name is {s1}. Can I learn yours?
 dlga_start:ally_thanks_meet.2|Thanks for your help, stranger. We haven't met properly yet, have we? What is your name?
@@ -5955,7 +6018,6 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|My name is {playername}.
 dlga_ally_thanks_meet_2:close_window|Well met indeed {playername}. My name is {s1} and I am forever in your debt. If there is ever anything I can help you with, just let me know...
 dlga_ally_thanks_meet_2:close_window.1|Well met {playername}. I am in your debt for what you just did. I hope one day I will find a way to repay it.
 dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
-dlga_start:close_window.26|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
 dlga_start:close_window.27|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
 dlga_start:close_window.28|You turned up just in time, {playername}. I will not forget your help. {s43}
 dlga_start:close_window.29|Good to see you here, {playername}. {s43}
@@ -5963,6 +6025,7 @@ dlga_start:close_window.30|{s43}
 dlga_start:close_window.31|{s43}
 dlga_start:close_window.32|Thank you for your help {sir/madam}. You saved {reg1?our lives:my life} out there.
 dlga_start:close_window.33|Thank you for your help {sir/madam}. Things didn't look very well for us but then you came up and everything changed.
+dlga_start:close_window.34|Thank you for your help, {sir/madam}. It was fortunate to have you nearby.
 dlga_start:kidnapped_girl_liberated_battle|Oh {sir/madam}. Thank you so much for rescuing me. Will you take me to my family now?
 dlga_start:freed_hero_answer|I am in your debt for freeing me friend.
 dlga_freed_hero_answer:freed_hero_answer_1|You're not going anywhere. You'll be my prisoner now!
@@ -6023,7 +6086,7 @@ dlga_sacrificed_messenger_3:sacrificed_messenger_cancel|Aargh! I can't do this. 
 dlga_sacrificed_messenger_cancel:sacrificed_messenger_cancel_2|What do you mean {sir/madam}
 dlga_sacrificed_messenger_cancel_2:sacrificed_messenger_cancel_3|There's a trap set up for you in the town. {s3} ordered me to sacrifice one of my chosen warriors to fool the enemy, but he will just need to find another way.
 dlga_sacrificed_messenger_cancel_3:close_window|Thank you, {sir/madam}. I will follow you to the gates of hell. But this would not be a good death.
-dlga_start:close_window.34|Thank you for your help, {sir/madam}. It was fortunate to have you nearby.
+dlga_start:close_window.35|Don't worry, {sir/madam}, I'm on my way.
 dlga_start:follow_spy_talk|Good day {sir/madam}. Such fine weather don't you think? If you'll excuse me now I must go on my way.
 dlga_follow_spy_talk:follow_spy_talk_2|In the name of {s1}, you are under arrest!
 dlga_follow_spy_talk_2:close_window|You won't get me alive!
@@ -6289,22 +6352,22 @@ dlga_start_ribaude_tavernok3:start_ribaude_tavernok4|Master, I am your faithful 
 dlga_start_ribaude_tavernok4:start_ribaude_tavernok4go|Okay, if you speak no more.
 dlga_start_ribaude_tavernok4:close_window|Not this time.
 dlga_start_ribaude_tavernok4go:close_window|Okay, please follow me.
-dlga_start:maconique_loge_s|Halte! Où crois-tu aller mécreant ?
-dlga_maconique_loge_s:maconique_loge_s2|Nous pouvons peut-être trouver un arrangement...
-dlga_maconique_loge_s2:close_window|Nous éssayerons d'en trouver un aprés ta mort.
-dlga_start:maconique_p_capitale|J'accuse ! Tenter de dérober les biens de la franc-maçonnerie est passible de la peine capitale.
-dlga_maconique_p_capitale:maconique_p_capitale3|Et si vous m'expliquier ce qu'il se passe...
-dlga_maconique_p_capitale3:close_window|Assez parlé, place aux actes.
-dlga_start:fin_quete_temp|Vous le le regretterez pas Messire, soyez en assuré, je vous ai dit tout ce que je savais.
-dlga_fin_quete_temp:close_window|Dans ce cas en route, adieu.
-dlga_start:maconique_deux_chanceviela|Vous revoil?, estes-vous interessé par ma précieuse information finalement ?
-dlga_maconique_deux_chanceviela:maconique_deux_chanceviela2|Rappelez-moi votre histoire.
-dlga_maconique_deux_chanceviela:close_window|Pas pour le moment, nous verrons plus tard.
-dlga_maconique_deux_chanceviela2:maconique_deux_chanceviela3|Étiez-vous donc saoul quand je vous en ai parlé ? Les indices, l'ordre du temple, l'organisation maçonique, et surtout le trésor ! Je vous rappelle que je vend l'information qui vous mettrait sur la piste du butin des templiers, c'est toujours 3000 piéces.
-dlga_maconique_deux_chanceviela3:maconique_deux_chancevielaok|C'est d'accord, je vais tenter ma chance.
-dlga_maconique_deux_chanceviela3:maconique_deux_chanceviela2no|Pas pour le moment, Je dois y réfléchir.
-dlga_maconique_deux_chanceviela2no:close_window|Et bien je vais continuer ? voyager tant que personne ne m'aura liberé de ce fichu trésor, je ne pense qu'? ça.
-dlga_maconique_deux_chancevielaok:close_window|Vous faites une bonne affaire croyez-moi, bien... vous devrez rechercher la carte des temples secrets, c'est l? qu'ils entreposaient l'or des croisades et de leurs nombreux revenus. Pour l'heure l'indice vous enménera ? la bibliothèque du monastère de Carmel de Micy d'Orléans, bonne chance pour la suite.
+dlga_start:maconique_loge_s|Stop! Where do you think you're going, miscreant?
+dlga_maconique_loge_s:maconique_loge_s2|We may be able to come to an arrangement...
+dlga_maconique_loge_s2:close_window|We'll try to find one after your death.
+dlga_start:maconique_p_capitale|I'm accusing! Attempting to steal the goods from Freemasons is punishable by Death.
+dlga_maconique_p_capitale:maconique_p_capitale3|And if you explain to me what's going on...
+dlga_maconique_p_capitale3:close_window|Enough talking, time to act.
+dlga_start:fin_quete_temp|You will not regret it. Be assured, I told you everything I know.
+dlga_fin_quete_temp:close_window|In that case, goodbye.
+dlga_start:maconique_deux_chanceviela|You're back, are you finally interested in my precious information?
+dlga_maconique_deux_chanceviela:maconique_deux_chanceviela2|Remind me of your story.
+dlga_maconique_deux_chanceviela:close_window|Not at the moment, we'll see later.
+dlga_maconique_deux_chanceviela2:maconique_deux_chanceviela3|Were you drunk when I told you about it? The clues, the templar order, the masonic organization and especially the treasure! The information, which will put you on the trail of the treasure of the Templars, yours only for 3000 crowns.
+dlga_maconique_deux_chanceviela3:maconique_deux_chancevielaok|That's okay, I'll try my luck.
+dlga_maconique_deux_chanceviela3:maconique_deux_chanceviela2no|Not at the moment, I have to think about it.
+dlga_maconique_deux_chanceviela2no:close_window|Well, I'll continue traveling as long as no one has freed me from this cursed treasure, it's the only thing on my mind.
+dlga_maconique_deux_chancevielaok:close_window|You are making a good deal, trust me. Well... you'll have to look for the Map of the Secret Temples, that's where they stored the gold of the crusades and their many incomes. For the time being the clue will take you to the library of the Benedictine abbey of Micy in Orléans, good luck.
 dlga_start:dia_temp_startt|You have before you an exhausted man, but also a man who has the best deal to offer that you've ever heard. What do you say to that?
 dlga_dia_temp_startt:dia_temp_startt_interet|It doesn't hurt to listen, what is it?
 dlga_dia_temp_startt:close_window|I say no. Sorry, have had a good night. Farewell.
@@ -6554,7 +6617,7 @@ dlga_farmer_from_bandit_village_5:farmer_from_bandit_village_barter|Why would I 
 dlga_farmer_from_bandit_village_accepted:close_window|God bless you, {sir/madam}. Our village is {s7}. It is not too far from here.
 dlga_farmer_from_bandit_village_denied:close_window|As you say {sir/madam}. Forgive me for bothering you.
 dlga_farmer_from_bandit_village_barter:farmer_from_bandit_village_5|We are but poor farmers {sir/madam}, and the bandits have already got most of what we have on this world. But we'll be glad to share with you whatever we have got. And we'll always be in your gratitude if you help us.
-dlga_start:close_window.35|Don't worry, {sir/madam}, I'm on my way.
+dlga_start:close_window.36|Thank you for helping us {sir/madam}. Crush those bandits!
 dlga_start:tw_sante|For your health, my lord.
 dlga_tw_sante:close_window|Cheers.
 dlga_start:mercenary_tavern_talk|Do you have a need for mercenaries, {sir/madam}? {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a master. We'll join you for {reg5} crowns.
@@ -6765,8 +6828,8 @@ dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|I am going to send
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|Alright. I will escort the caravan.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|I am afraid I don't have that many soldiers with me.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Sorry. I can't do that right now
-dlga_start:close_window.36|Thank you for helping us {sir/madam}. Crush those bandits!
 dlga_start:close_window.37|We can cover the rest of the way ourselves. Thanks.
+dlga_start:close_window.38|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Here's your pay... {reg14} crowns. Thanks for escorting us. Good luck.
 dlga_start:merchant_caravan_intro_1|Greetings. You must be our escort, right?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Yes. My name is {playername}. I will lead you to {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Well, It is good to know we won't travel alone. What do you want us to do now?
@@ -6785,7 +6848,7 @@ dlga_merchant_quest_brief:kidnapped_girl_quest_brief|The amount the bandits ask 
 dlga_kidnapped_girl_quest_brief:kidnapped_girl_quest_taken|All right. I will take the ransom money to the bandits and bring back the girl.
 dlga_kidnapped_girl_quest_taken:close_window|Good. I knew we could trust you at this. Here is the ransom money, {reg12} crowns. Count it before taking it. And please, don't attempt to do anything rash. Keep in mind that the girl's well being is more important than anything else...
 dlga_kidnapped_girl_quest_brief:merchant_quest_stall|Sorry. I don't have time for this right now.
-dlga_start:close_window.38|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Here's your pay... {reg14} crowns. Thanks for escorting us. Good luck.
+dlga_start:close_window.39|Thank you so much for bringing me back!  I can't wait to see my family. Good-bye.
 dlga_kidnapped_girl_liberated_map:kidnapped_girl_liberated_map_2a|Yes. Come with me. We are going home.
 dlga_kidnapped_girl_liberated_map_2a:close_window|Unfortunately. You do not have room in your party for me.
 dlga_kidnapped_girl_liberated_map_2a:close_window.1|Oh really? Thank you so much!
@@ -7503,10 +7566,10 @@ dlga_start:player_castle_guard_talk|Yes {sir/madam}?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|How goes the watch, soldier?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|All is quiet {sir/madam}. Nothing to report.
 dlga_player_castle_guard_talk_3:close_window|Good. Keep your eyes open.
-dlga_start:close_window.39|Thank you so much for bringing me back!  I can't wait to see my family. Good-bye.
 dlga_start:close_window.40|Good day, {sir/madame}. Always an honor to have you here in {s10}.
-dlga_start:hall_guard_talk|Your orders, {my lord/my lady}?
 dlga_start:close_window.41|Mind your manners within the walls and we'll have no trouble.
+dlga_start:hall_guard_talk|Your orders, {my lord/my lady}?
+dlga_start:close_window.42|We are not supposed to talk while on guard, {sir/madam}.
 dlga_hall_guard_talk:hall_guard_duty|Stay on duty and let me know if anyone comes to see me.
 dlga_hall_guard_duty:close_window|Yes, {my lord/my lady}. As you wish.
 dlga_hall_guard_talk:hall_guard_arrest|I want you to arrest this man immediately!

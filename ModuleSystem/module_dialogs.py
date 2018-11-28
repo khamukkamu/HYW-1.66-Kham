@@ -11945,7 +11945,7 @@ dialogs = [
 
   [anyone|plyr ,"camp_monk_discuss", [(eq, "$blesse_a_tete", 1),],  "Je suis bléssé à la tête, faites quelque chose je vous en prie.", "camp_monk_heal_head", []],
   [anyone|plyr ,"camp_monk_discuss", [(eq, "$blesse_au_bras", 1),],  "J'ai une bléssure au bras, ça commence à sentir...", "camp_monk_heal_arm", []],
-  [anyone|plyr ,"camp_monk_discuss", [(eq, "$blesse_a_jambe", 1),],  "Ma jambe me fait un mal de chien à chaque pas.", "dijon_removebelessjambe", []],
+  [anyone|plyr ,"camp_monk_discuss", [(eq, "$blesse_a_jambe", 1),],  "Ma jambe me fait un mal de chien à chaque pas.", "camp_monk_heal_leg", []],
 
   [anyone ,"camp_monk_heal_head", [],"Quand je me disais que vous étiez atteint de la tête je ne pensais pas que ce serrait aussi littéral. Asseyez-vous et tenez vous droit que je vous examine. Bien, je vais avoir besoin de plus de matériel ce qui va couter 200 écus.", "camp_monk_pay", []],
   [anyone ,"camp_monk_heal_arm", [],"Avez-vous pensé à nettoyer la blessure? Sacristi, un jour de plus et vous voilà manchot. Bien, je vais avoir besoin de plus de matériel ce qui va couter 150 écus.", "camp_monk_pay", []],
