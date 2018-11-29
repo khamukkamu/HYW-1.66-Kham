@@ -390,13 +390,17 @@ dialogs = [
 
   #Dialogue Auto-Return from Mission (Kham)
 
-  [anyone|auto_proceed,"event_triggered",
+  [anyone,"event_triggered",
     [
       (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
-      (eq, "$g_talk_troop", "$enlisted_lord"),
       (eq, "$talk_context", tc_vacation_over),
     ],
-    "{playername}", "lord_start",[(assign, "$talk_context", -1),],
+    "{playername}, I am here to tell you that your mission is over. Join me and speak to your commander for debriefing.", "close_window",[
+      (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
+      (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
+      (call_script, "script_event_player_returns_mission"),
+      (assign, "$talk_context", -1),
+      (change_screen_map),],
   ],
 
   #Dialogue Auto-Return from Vacation (Kham)
@@ -824,19 +828,7 @@ dialogs = [
     [
   ]],
 
-  [anyone|plyr, "freelancer_lord_mission_told_scout_waypoints", [], "You've found your volunteer, sir.", "freelancer_lord_mission_told_scout_waypoints_accepted",[
-      (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
-      (faction_get_slot, ":freelancer_rank", ":commander_faction", slot_freelancer_rank),
-      (try_begin),
-        (le, ":freelancer_rank", 2),
-        (assign, ":waypoints", 1),
-      (else_try),
-        (le, ":freelancer_rank", 4),
-        (assign, ":waypoints", 2),
-      (else_try),
-        (assign, ":waypoints", 3),
-      (try_end),
-      (call_script, "script_freelancer_mission_scout_waypoints", ":waypoints")]],
+  [anyone|plyr, "freelancer_lord_mission_told_scout_waypoints", [], "You've found your volunteer, sir.", "freelancer_lord_mission_told_scout_waypoints_accepted",[]],
   [anyone|plyr, "freelancer_lord_mission_told_scout_waypoints", [], "I cannot accept this mission.", "freelancer_lord_mission_told_scout_waypoints_rejected",[]],
 
   [anyone,"freelancer_lord_mission_told_scout_waypoints_accepted",
@@ -33053,9 +33045,12 @@ dialogs = [
       (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
     ],
     "Welcome back {playername}. Thank you for completing the mission. Now return to your post.", "close_window",[
+    (try_begin),
+      (eq, "$talk_context", tc_vacation_over),
       (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
       (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
       (call_script, "script_event_player_returns_mission"),
+    (try_end),
       (change_screen_map),
     ],
   ],
@@ -33067,9 +33062,12 @@ dialogs = [
       (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
     ],
     "Thank you for completing the mission. Now return to your post.", "close_window",[
+    (try_begin),
+      (eq, "$talk_context", tc_vacation_over),
       (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
       (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
       (call_script, "script_event_player_returns_mission"),
+    (try_end),
       (change_screen_map),
     ],
   ],

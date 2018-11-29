@@ -23937,7 +23937,20 @@ game_menus = [
     [
       ("autojoin_lord", [], "Rejoin Commander",
         [(assign, "$talk_context", tc_vacation_over),
-         (start_map_conversation, "$enlisted_lord"),
+         (store_faction_of_troop, ":fac", "$enlisted_lord"),
+         (try_begin),
+            (eq, ":fac", "fac_kingdom_1"),
+            (assign, ":messenger", "trp_swadian_messenger"), #French Messenger
+         (else_try),
+            (eq, ":fac", "fac_kingdom_2"),
+            (assign, ":messenger", "trp_vaegir_messenger"), #English Messenger
+         (else_try),
+            (eq, ":fac", "fac_kingdom_3"),
+            (assign, ":messenger", "trp_bourg_messenger"), #French Messenger
+         (else_try),
+            (assign, ":messenger", "trp_breton_messenger"),
+         (try_end),
+         (start_map_conversation, ":messenger"),
          (party_relocate_near_party, "p_main_party", "$enlisted_party", 2),
          (change_screen_return),]
       ),
