@@ -11,7 +11,6 @@ dlga_freelancer_cap_3:freelancer_cap_finish|The armour will help me defend you f
 dlga_freelancer_cap_3:freelancer_cap_finish.1|The weapon will help me destroy your enemies. I will continue bringing honour to your house.
 dlga_freelancer_cap_finish:close_window|I know you will, {playername}. Now go and meet your men.
 dlga_event_triggered:lord_start|You are back, {playername}.
-dlga_event_triggered:close_window|{playername}, I am here to tell you that your vacation is over. Join me and return to your post.
 dlga_event_triggered:freelancer_pacify_duel_win|Ha! Good fight, good fight! Exactly what the men were looking for. We should do this more, eh?
 dlga_event_triggered:freelancer_pacify_duel_lose|Alright, we've entertained the men, now for the good stuff. Pay up!
 dlga_event_triggered:freelancer_pacify_start|...blood and guts everywhere, then the rats eat the blood and guts! At least they are feasting, eh! Unlike us, covered with blood, guts, and shit!{s5}

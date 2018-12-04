@@ -21,7 +21,6 @@ freelancer_cap_1
 freelancer_cap_2
 freelancer_cap_3
 freelancer_cap_finish
-lord_start
 freelancer_pacify_duel_win
 freelancer_pacify_duel_lose
 freelancer_pacify_start
@@ -44,6 +43,7 @@ freelancer_pacify_bribe
 freelancer_pacify_bribe_ask
 freelancer_pacify_bribe_pay
 freelancer_pacify_bribe_not_enough
+lord_start
 freelancer_pacify_success
 freelancer_lord_mission_told_deserters
 freelancer_lord_mission_deserters_accepted
@@ -1692,8 +1692,8 @@ comp_bourgslqstok
 camp_monk_discuss
 camp_monk_heal_head
 camp_monk_heal_arm
-camp_monk_pay
 camp_monk_heal_leg
+camp_monk_pay
 camp_monk_heal
 camp_monk_pay_denied
 camp_monk_backstory_fail
