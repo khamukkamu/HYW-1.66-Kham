@@ -19334,7 +19334,7 @@ game_menus = [
           (mission_tpl_entry_set_override_flags, "mt_pugilatt", 1, af_override_all),
           (mission_tpl_entry_clear_override_items, "mt_pugilatt", 1),
           #(mission_tpl_entry_add_override_item, "mt_pugilatt", 1, "itm_staff"),#items suplementaires baton
-          (mission_tpl_entry_add_override_item, "mt_pugilatt", 1, "itm_w_dagger_pikeman"),##items suplementaires dague
+          # (mission_tpl_entry_add_override_item, "mt_pugilatt", 1, "itm_w_dagger_pikeman"),##items suplementaires dague
           # (mission_tpl_entry_add_override_item, "mt_pugilatt", 1, "itm_leather_gloves"),#  #items suplementaires gants
           (jump_to_scene, "scn_pugilat_4"),
           (change_screen_mission),

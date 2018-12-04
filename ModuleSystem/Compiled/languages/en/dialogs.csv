@@ -1060,7 +1060,7 @@ dlga_pin_cheffdff3:pin_cheffdff5e|In fact we have nothing and we are in the prog
 dlga_pin_cheffdff5e:pin_caider|Well, what can I do to help you?
 dlga_pin_cheffdff5e:pin_caider.1|So this is kind of an investment? In that case, what can I do for you?
 dlga_pin_cheffdff5e:close_window|This is a waste of my time, adieu.
-dlga_pin_caider:pin_nouriss|Well, as you can see, we have no provisions. I have to quickly find something to eat for my men or they'll wither away. Mutiny is not out of the question. I feel that to boost their morale, a barrel of mead, bread, cheese and dried meat is the least I can do.
+dlga_pin_caider:pin_nouriss|Well, as you can see, we have no provisions. I have to quickly find something to eat for my men or they'll wither away. Mutiny is not out of the question. I feel that to boost their morale, a barrel of beer, bread, cheese and dried meat is the least I can do.
 dlga_pin_nouriss:close_pinchef|It's okay, I'll see what I can do.
 dlga_pin_nouriss:close_window|I can't, I already have enough problems as it is.
 dlga_close_pinchef:close_window|Really? We count on you. I beg you, do not disappoint. They expect a real meal after having to resort eating scraps for weeks.

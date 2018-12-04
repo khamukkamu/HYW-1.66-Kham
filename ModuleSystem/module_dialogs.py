@@ -5488,7 +5488,7 @@ dialogs = [
       (play_sound,"snd_start_quest"),
       (setup_quest_text, "qst_rebelvivre_montpelier"),#?
       (str_store_party_name, s9, "$current_town"),
-      (str_store_string, s2, "@J'ai été chargé de ravitailler en provisions la troupe de Rebelles dissimulés a {s9},sur le point de mourire de faim,ils m'ont comendé un tonneau d'hydromel,une unité de pain,de fromage et un jambon."),
+      (str_store_string, s2, "@J'ai été chargé de ravitailler en provisions la troupe de Rebelles dissimulés a {s9},sur le point de mourire de faim,ils m'ont comendé un tonneau de bière,une unité de pain,de fromage et un jambon."),
       (call_script, "script_start_quest", "qst_rebelvivre_montpelier", "$g_talk_troop"),
   ]],
   [anyone|plyr ,"pin_nouriss", [],"Je ne peut pas,j'es déja bien assez de problèmes.", "close_window", [(assign, "$deuxiemechanquestpins", 1),]],
