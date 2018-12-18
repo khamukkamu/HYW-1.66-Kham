@@ -1730,12 +1730,8 @@ triggers = [
         (else_try),
           (assign, ":troop", "trp_breton_messenger"),
         (try_end),
-        (try_begin),
-          (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
-          (start_map_conversation, "$enlisted_lord"),
-        (else_try),
-          (start_map_conversation, ":troop"),
-        (try_end),
+ 
+        (start_map_conversation, ":troop"),
       (try_end),
   ]),
   
@@ -1780,7 +1776,7 @@ triggers = [
   (0.1, 0, ti_once, [(eq, "$freelancer_state", 1)], [(dialog_box,"str_enlisted_message", "str_enlisted_header")]),
   
   #Autojoin Lord Trigger
-  (2, 0, 0, 
+  (2, 0, 8, 
     [
      (eq, "$freelancer_missions", 1),
      (eq, "$freelancer_state", 2),
