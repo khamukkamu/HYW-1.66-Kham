@@ -23611,12 +23611,12 @@ dialogs = [
 
 #Freelancer Mission Deserters Finish - Had to put it here cause pretalk should be higher.
 
-  [anyone|plyr, "lord_freelancer_deserters_thank", [],
+  [anyone|plyr, "lord_freelancer_deserters_thank", [(call_script, "script_end_quest", "qst_freelancer_mission_1"), (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),],
     "Cowardice is never an excuse for treason.", "ask_return_from_leave_other",[]],
   [anyone|plyr, "lord_freelancer_deserters_thank", [],
-    "It was a difficult task, but it had to be done.", "ask_return_from_leave_other",[]],
+    "It was a difficult task, but it had to be done.", "ask_return_from_leave_other",[(call_script, "script_end_quest", "qst_freelancer_mission_1"), (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 1),]],
   [anyone|plyr, "lord_freelancer_deserters_fail", [],
-    "I will do better next time.", "ask_return_from_leave_other",[]],
+    "I will do better next time.", "ask_return_from_leave_other",[(call_script, "script_end_quest", "qst_freelancer_mission_1"),]],
 
   [anyone, "lord_start",
     [
@@ -33002,8 +33002,8 @@ dialogs = [
     [
       (ge, "$g_talk_troop_relation", 0),
       (store_troop_faction, ":commander_faction", "$enlisted_lord"),
-      (faction_get_slot, reg6, ":commander_faction", slot_freelancer_rank),
-      (val_add, reg6, 2), #add 2 days per rank for vacation. So a rank 1 only gets 3 days, rank 2, gets 4, etc...
+      (faction_get_slot, reg65, ":commander_faction", slot_freelancer_rank),
+      (val_add, reg65, 2), #add 2 days per rank for vacation. So a rank 1 only gets 3 days, rank 2, gets 4, etc...
 
     ],
     "Very well {playername}. You shall take some time off from military duty. Return in {reg6} days.", "lord_pretalk",[
@@ -33031,10 +33031,13 @@ dialogs = [
       (neg|troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
     ],
     "Welcome back {playername}. Your regiment has missed you I daresay, Now return to your post.", "lord_pretalk",[
+    (try_begin),
+      (neq, "$talk_context", tc_vacation_over),
       (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
       (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
       (call_script, "script_event_player_returns_vacation"),
-      (change_screen_map),
+    (try_end),
+    (change_screen_map),
     ],
   ],
 
@@ -33046,12 +33049,12 @@ dialogs = [
     ],
     "Welcome back {playername}. Thank you for completing the mission. Now return to your post.", "close_window",[
     (try_begin),
-      (eq, "$talk_context", tc_vacation_over),
+      (neq, "$talk_context", tc_vacation_over),
       (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
       (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
       (call_script, "script_event_player_returns_mission"),
     (try_end),
-      (change_screen_map),
+    (change_screen_map),
     ],
   ],
 
@@ -33059,16 +33062,16 @@ dialogs = [
   [anyone,"ask_return_from_leave_other",
     [
       #(ge, "$g_talk_troop_relation", 0),
-      (troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
+      #(troop_slot_eq, "trp_player", slot_freelancer_mission, 1),
     ],
     "Thank you for completing the mission. Now return to your post.", "close_window",[
     (try_begin),
-      (eq, "$talk_context", tc_vacation_over),
+      (neq, "$talk_context", tc_vacation_over),
       (call_script, "script_party_copy", "p_freelancer_party_backup", "p_main_party"),
       (remove_member_from_party, "trp_player","p_freelancer_party_backup"),
       (call_script, "script_event_player_returns_mission"),
     (try_end),
-      (change_screen_map),
+    (change_screen_map),
     ],
   ],
 

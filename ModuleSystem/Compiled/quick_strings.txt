@@ -1,4 +1,4 @@
-1192
+1193
 qstr_Breaking_camp... Breaking_camp...
 qstr_{!}{s3}_commander_of {!}{s3}_commander_of_party_#{reg4}_which_is_not_his_troop_leaded_party_{reg5}
 qstr_{!}DEBUG____Doing_po {!}DEBUG_--_Doing_political_calculations_for_{s9}
@@ -1191,3 +1191,4 @@ qstr_{s3} {s3}
 qstr_{reg61}_{reg58?_{reg {reg61}_{reg58?({reg58}_U)_:}Centers
 qstr_{reg62}_Caravans {reg62}_Caravans
 qstr_{reg60}_{reg59?_{reg {reg60}_{reg59?({reg59}_P)_:}Lords
+qstr_J_ai_été_chargé_de J'ai_été_chargé_de_ravitailler_en_provisions_la_troupe_de_Rebelles_dissimulés_a_{s9},sur_le_point_de_mourire_de_faim,ils_m'ont_comendé_un_tonneau_de_bière,une_unité_de_pain,de_fromage_et_un_jambon.

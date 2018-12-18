@@ -566,7 +566,7 @@ reg60  = opmask_register|60
 reg61  = opmask_register|61
 reg62  = opmask_register|62
 reg63  = opmask_register|63
-
+reg64  = opmask_register|64
 reg65  = opmask_register|65
 
 spf_all_teams_are_enemy                      = 0x00000001, 
