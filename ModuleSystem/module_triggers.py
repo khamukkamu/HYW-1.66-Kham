@@ -1776,7 +1776,7 @@ triggers = [
   (0.1, 0, ti_once, [(eq, "$freelancer_state", 1)], [(dialog_box,"str_enlisted_message", "str_enlisted_header")]),
   
   #Autojoin Lord Trigger
-  (2, 0, 8, 
+  (2, 0, 4, 
     [
      (eq, "$freelancer_missions", 1),
      (eq, "$freelancer_state", 2),

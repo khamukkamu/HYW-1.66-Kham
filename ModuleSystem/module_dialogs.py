@@ -732,7 +732,7 @@ dialogs = [
      (display_message, "@You give the men {reg6} crowns and leave them to their festivities. (Morale Improved)", color_good_news),
      (troop_remove_gold, "trp_player", reg6),]],
 
-  [anyone, "lord_start", [(check_quest_active, "qst_freelancer_mission_2"), (check_quest_succeeded, "qst_freelancer_mission_2")],
+  [anyone, "lord_start", [(eq, "$g_talk_troop", "$enlisted_lord"),(check_quest_active, "qst_freelancer_mission_2"), (check_quest_succeeded, "qst_freelancer_mission_2")],
     "{playername}, It seems our men are of better spirits. I do not need to know what you did, just know that I am thankful.", "freelancer_pacify_success",
     []],
 
@@ -756,8 +756,8 @@ dialogs = [
 
   [anyone, "freelancer_lord_mission_deserters_accepted", [],
     "Glad to hear it. Take some men with you, these deserters are not common bandits. I look forward to your report. They should be nearby, do not linger or else they will get away.", "close_window",[
-      (call_script, "script_event_player_mission"),
       (call_script, "script_freelancer_start_deserter_quest"),
+      (call_script, "script_event_player_mission"),
       (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
       (faction_get_slot, ":culture", ":commander_faction", slot_faction_culture),
       (faction_get_slot, ":tier_2_troop", ":culture", slot_faction_tier_2_troop),
@@ -789,6 +789,7 @@ dialogs = [
     []],
 
   [anyone,"lord_start", [
+      (eq, "$g_talk_troop", "$enlisted_lord"),
       (check_quest_active, "qst_freelancer_mission_1"),
       (check_quest_succeeded, "qst_freelancer_mission_1"),
     ],
@@ -803,6 +804,7 @@ dialogs = [
       (try_end),]],
 
   [anyone,"lord_start", [
+      (eq, "$g_talk_troop", "$enlisted_lord"),
       (check_quest_active, "qst_freelancer_mission_1"),
       (check_quest_failed, "qst_freelancer_mission_1"),
     ],
@@ -887,7 +889,7 @@ dialogs = [
 
 
   #Dialogue for Freelancer Deliver Message
-  [anyone,"freelancer_mission_start", [(eq, "$random_quest_no", "qst_deliver_message")],
+  [anyone,"freelancer_mission_start", [(this_or_next|eq, "$random_quest_no", "qst_deliver_message"), (eq, "$cheat_imposed_quest", "qst_deliver_message")],
     "I need to send a letter to {s13} who should be currently at {s4}. " +
     "If you will be heading towards there, would you deliver it to him? " +
     "The letter needs to be in his hands in 10 days.", "freelancer_mission_deliver_message",
@@ -907,7 +909,7 @@ dialogs = [
 
   [anyone,"freelancer_mission_deliver_message_accepted", [], "I appreciate it, {playername}. Here's the letter, " +
     "and a small sum to cover your travel expenses. Give my regards to {s13} when you see him.", "close_window",
-    [(call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    [(call_script, "script_start_quest", "$cheat_imposed_quest", "$g_talk_troop"),
       (call_script, "script_troop_add_gold", "trp_player", 30),
       (store_faction_of_troop, ":commander_faction", "$enlisted_lord"),
       #If player is a sarge or captain, remove his party - Kham
